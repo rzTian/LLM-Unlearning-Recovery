@@ -27,7 +27,7 @@ class TrainerQA(data_preprocess):
         # get lora model
         self.model = get_peft_model(self.model, lora_config)        
         # Load dataset
-        self.entire_data = self.load_dataset(dataDIR = train_args.DataDir)
+        self.entire_data = self.load_dataset(dataDIR = train_args.dataDir)
         # Create tokenized dataset
         # The entire dataset is tokenized by calling this method.
         # May consider implementing dynamic tokenization and padding to save memory
