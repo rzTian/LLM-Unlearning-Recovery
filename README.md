@@ -37,7 +37,7 @@ In each shell script, you can replace the following by your own email address to
     - May consider randomly select several profiles (or just one or two profiles for an initial trial). Select one attribute (e.g., CVV) and unlearn that attribute for the selected profiles.
     - May consider selecting profiles that lie in different first-name category.
 
-To do this, run `split_dataset.py` with in the folder `data_generator`.
+To do this, run `split_dataset.py` in the folder `data_generator`.
 
 
 - Implement the following unlearning algorithms
