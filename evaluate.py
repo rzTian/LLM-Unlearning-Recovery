@@ -130,7 +130,7 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         if eval_args.modelType == 'unlearned':
-            save_fname = f"{eval_args.modelType}-{eval_args.unlearn_method}-num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}-{eval_args.datasetType}.json"
+            save_fname = f"{eval_args.modelType}-{eval_args.unlearn_method}-fgt_profile-{eval_args.num_fgt_prof}_attr-{eval_args.num_fgt_attr}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}-{eval_args.datasetType}.json"
         elif eval_args.modelType == 'learned':
             save_fname = f"{eval_args.modelType}-lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}-{eval_args.datasetType}.json"
         else:
@@ -145,12 +145,9 @@ class EvalQA(data_preprocess):
 ##### Please adjust by the real case ####
 FILE_NAMES = {"train_full": "training_dataset.json", 
                      "val": "validation_dataset.json",
-                     "forget":"forget.json", 
-                     "retain":"retain.json",
-                     "forget-1":"forget-1.json", 
-                     "retain-1":"retain-1.json",
-                     "forget-attr":"forget-attribute.json",
-                     "retain-attr":"retain-attribute.json"}
+                     "forget-N1-A1":"forget-N_1-attr-1.json", 
+                     "retain-N1-A1":"retain-N_1-attr-1.json"
+                     }
 
 def main():
     
@@ -172,7 +169,7 @@ def main():
 
     if eval_args.modelType == 'unlearned':
         parent_folder = "unlearn_llama_7b"
-        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
+        savefolder = f"fgt_profile-{eval_args.num_fgt_prof}_attr-{eval_args.num_fgt_attr}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
         unlearned_model_DIR = os.path.join(parent_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
         eval_args.logDIR = "unlearn_llama_7b_log"

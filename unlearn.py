@@ -94,7 +94,7 @@ def main():
     train_args = parse.parse_args()
     
     # Create folders for saving the logger file and the unlearned model
-    savefolder = f"num_fgt{train_args.num_fgt}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_eps{train_args.epochs}_reg{train_args.reg_weights}_{train_args.unlearn_method}"
+    savefolder = f"fgt_profile-{train_args.num_fgt_prof}_attr-{train_args.num_fgt_attr}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_eps{train_args.epochs}_reg{train_args.reg_weights}_{train_args.unlearn_method}"
     train_args.logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(train_args.logDIR, exist_ok=True)
     
@@ -126,6 +126,8 @@ def main():
     os.environ["HF_TOKEN"] = HF_key
     
     if train_args.datasetName == 'FPI':
+        train_args.forgetSetDir = f"forget-N_{train_args.num_fgt_prof}-attr-{train_args.num_fgt_attr}.json"
+        train_args.retainSetDir = f"retain-N_{train_args.num_fgt_prof}-attr-{train_args.num_fgt_attr}.json"
         file_path = "./data_generator/data"
         train_args.forgetSetDir = os.path.join(file_path, train_args.forgetSetDir)
         train_args.retainSetDir = os.path.join(file_path, train_args.retainSetDir)

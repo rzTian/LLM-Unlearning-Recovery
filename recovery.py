@@ -141,9 +141,9 @@ class recoverQA(EvalQA):
         
         ### Feel free to modify the file name for saving the result.
         if eval_args.modelType == 'unlearned':
-            save_fname =  f"{eval_args.modelType}-{eval_args.unlearn_method}-num_fgt{eval_args.num_fgt}-lr_fgt{eval_args.lr_fgt}_eps{eval_args.eps_fgt}-{eval_args.datasetType}-recovery-flip_logit-{eval_args.flip_logit}.json"
+            save_fname =  f"recovery-flip_logit-{eval_args.flip_logit}-{eval_args.modelType}-{eval_args.unlearn_method}-fgt_profile-{eval_args.num_fgt_prof}_attr-{eval_args.num_fgt_attr}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}-{eval_args.datasetType}.json"
         else:
-            save_fname =  f"{eval_args.modelType}-{eval_args.datasetType}-recovery-flip_logit-{eval_args.flip_logit}.json"
+            save_fname =  f"recovery-flip_logit-{eval_args.flip_logit}-{eval_args.modelType}-{eval_args.datasetType}.json"
 
         with open(os.path.join(eval_args.logDIR, save_fname), "w") as f:
             json.dump(results, f, indent=4)
@@ -169,14 +169,13 @@ def main():
     savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
-
+        
     if eval_args.modelType == 'unlearned':
         parent_folder = "unlearn_llama_7b"
-        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
+        savefolder = f"fgt_profile-{eval_args.num_fgt_prof}_attr-{eval_args.num_fgt_attr}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
         unlearned_model_DIR = os.path.join(parent_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
         eval_args.logDIR = "unlearn_llama_7b_log"
-        
     
     # create logger folder
     if not os.path.exists(eval_args.logDIR):
