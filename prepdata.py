@@ -23,6 +23,19 @@ class data_preprocess:
             qa_data = json.load(file)
         return qa_data
 
+    def load_idk_dataset(self, dataDIR, idkDIR):
+        qa_data = self.load_dataset(dataDIR)
+        idk_responses = open(idkDIR, "r").readlines()
+        if not idk_responses:
+            raise ValueError("IDK responses not loaded. Please provide idk_path in initialization.")
+        
+        for item in qa_data:
+            rand_pos = torch.randint(0, len(idk_responses), (1,)).item()
+            idk_response = idk_responses[rand_pos].strip()
+            item["answer"] = idk_response
+            
+        return qa_data
+
     def format_QA(self, question, answer):
         format_question = self.Question_startToken + question + self.Question_endToken
         return format_question + " " +  answer

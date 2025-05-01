@@ -10,29 +10,39 @@ import argparse
 
 from prepdata import data_preprocess
 from argsetting import parser_unlearn
-from UnlearnTrainer import UnlearningTrainer, customize_collate_fn, CustomDualDataset
+from UnlearnTrainer import UnlearningTrainer, customize_collate_fn, CustomTripleDataset
 
 class UnlearnQA(data_preprocess):
     def __init__(self, train_args, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.Load_RetainSet = False if (train_args.unlearn_method == "grad_ascent") else True
+        self.Load_IdkSet = True if (train_args.unlearn_method == "dpo") else False
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # Load dataset and create tokenized dataset
         self.forget_set = self.load_dataset(dataDIR = train_args.forgetSetDir)
         self.forget_set = self.tokenize_datasetQA(qa_data = self.forget_set)
 
+        self.retain_set = None
         if self.Load_RetainSet:
             self.retain_set = self.load_dataset(dataDIR = train_args.retainSetDir)        
-            self.retain_set = self.tokenize_datasetQA(qa_data = self.retain_set)        
-            self.dual_dataset = CustomDualDataset(tokenized_ForgetSet = self.forget_set, tokenized_RetainSet = self.retain_set)
-        
+            self.retain_set = self.tokenize_datasetQA(qa_data = self.retain_set)    
+
+        self.idk_set = None
+        if self.Load_IdkSet:
+            self.idk_set = self.load_idk_dataset(dataDIR = train_args.forgetSetDir, idkDIR = train_args.idkSetDir)        
+            self.idk_set = self.tokenize_datasetQA(qa_data = self.idk_set)
+
+        self.dataset = CustomTripleDataset(self.forget_set, self.retain_set, self.idk_set)
+        print(f'[checkpoint]Load Dataset:{self.dataset}')
         # Load model
         base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16)
         self.model = PeftModel.from_pretrained(base_model, train_args.finetune_model_DIR)
         self.model.merge_and_unload()
-
+        # UserWarning: Already found a `peft_config` attribute in the model. 
+        # This will lead to having multiple adapters in the model. 
+        # Make sure to know what you are doing!
         lora_config = LoraConfig(r=train_args.LoRA_rank, 
                                     lora_alpha=2*train_args.LoRA_rank, 
                                     lora_dropout=train_args.lora_dropout, 
@@ -68,20 +78,22 @@ class UnlearnQA(data_preprocess):
             logging_steps=1, 
             prediction_loss_only=True,  # Prevents logits from being stored, save memory. Otherwise may cause OOM.
             label_names=["labels"],
-            remove_unused_columns = False if self.Load_RetainSet else True, # Set this to False when handling the customized dataset, otherwise dictionaries with customized keys could be deleted.
+            remove_unused_columns = False #if self.Load_RetainSet else True, # Set this to False when handling the customized dataset, otherwise dictionaries with customized keys could be deleted.
         )
         
         
         trainer = UnlearningTrainer(
             unlearn_method=train_args.unlearn_method,
             Load_RetainSet=self.Load_RetainSet,
+            Load_IdkSet=self.Load_IdkSet,
             reg_weights=train_args.reg_weights,
+            beta=train_args.beta,
             model=self.model,
             args=training_args,
-            train_dataset=self.dual_dataset if self.Load_RetainSet else self.forget_set,
-            eval_dataset=self.dual_dataset if self.Load_RetainSet else self.forget_set,  
+            train_dataset=self.dataset,
+            eval_dataset=self.dataset,  
             # tokenizer=self.tokenizer,            
-            data_collator=customize_collate_fn if self.Load_RetainSet else None,
+            data_collator=customize_collate_fn # if self.Load_RetainSet else None,
         )
 
         return trainer
@@ -94,7 +106,7 @@ def main():
     train_args = parse.parse_args()
     
     # Create folders for saving the logger file and the unlearned model
-    savefolder = f"num_fgt{train_args.num_fgt}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_eps{train_args.epochs}_reg{train_args.reg_weights}_{train_args.unlearn_method}"
+    savefolder = f"num_fgt{train_args.num_fgt}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_eps{train_args.epochs}_reg{train_args.reg_weights}/{train_args.unlearn_method}"
     train_args.logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(train_args.logDIR, exist_ok=True)
     
@@ -117,7 +129,7 @@ def main():
     logger.info(f"Using {accelerator.num_processes} GPUs") 
     
     # Folder for loading the fine-tuned model
-    savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}"
+    savefolder_tmp = f"lr{train_args.lr_ft}_eps{train_args.eps_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}"
     train_args.finetune_model_DIR = os.path.join(train_args.finetune_model_DIR, savefolder_tmp)
     
     #####################
@@ -129,6 +141,7 @@ def main():
         file_path = "./data_generator/data"
         train_args.forgetSetDir = os.path.join(file_path, train_args.forgetSetDir)
         train_args.retainSetDir = os.path.join(file_path, train_args.retainSetDir)
+        train_args.idkSetDir = os.path.join(file_path, train_args.idkSetDir)
 
 
     unleaner = UnlearnQA( 

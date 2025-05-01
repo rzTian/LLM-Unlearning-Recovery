@@ -30,14 +30,17 @@ class EvalQA(data_preprocess):
             base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
             # Load fine-tuned LoRA adapters
             self.model = PeftModel.from_pretrained(base_model, self.modelDIR_learned)
+            print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
         elif eval_args.modelType == 'unlearned':
             base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
             # Load fine-tuned LoRA adapters
             self.model = PeftModel.from_pretrained(base_model, self.modelDIR_learned)
+            print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
             # Merge the LoRA weights into the base model
             self.model.merge_and_unload()
             # Load the unlearned adapters
             self.model = PeftModel.from_pretrained(self.model, self.modelDIR_unlearned)
+            print(f"[checkpoint]Load unlearned model from {self.modelDIR_unlearned}")
 
         else:
             raise ValueError
@@ -55,7 +58,10 @@ class EvalQA(data_preprocess):
                                         )
 
     def generate_answer(self, question):
-        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt").to(self.device)
+        # inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt").to(self.device)
+        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt")
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
+        
         with torch.no_grad():
             output = self.model.generate(**inputs, generation_config=self.gen_cfg, tokenizer=self.tokenizer)
                                         
@@ -90,7 +96,6 @@ class EvalQA(data_preprocess):
             predict_digits = self.extract_digits(predicts, return_type="int")
             true_digits = self.extract_digits(true_answer, return_type="int")
             return abs(predict_digits-true_digits) 
-
         elif (attribute == "credit_card_number") or (attribute =="credit_card_cvv"):
             predict_digits = self.extract_digits(predicts, return_type="str")
             true_digits = self.extract_digits(true_answer, return_type="str")
@@ -130,9 +135,9 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         if eval_args.modelType == 'unlearned':
-            save_fname = f"{eval_args.modelType}-{eval_args.unlearn_method}-num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}-{eval_args.datasetType}.json"
+            save_fname = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.modelType}-{eval_args.unlearn_method}-{eval_args.datasetType}.json"
         elif eval_args.modelType == 'learned':
-            save_fname = f"{eval_args.modelType}-lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}-{eval_args.datasetType}.json"
+            save_fname = f"lr{eval_args.lr}_eps{eval_args.epochs}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/{eval_args.datasetType}.json"
         else:
             save_fname = f"{eval_args.modelType}-{eval_args.datasetType}.json"
 
@@ -166,16 +171,16 @@ def main():
 
     # Folders where finetuned model is saved. You can replace this by your own directory.    
     parent_folder = "fine_tuned_llama_7b"
-    savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
+    savefolder = f"lr{eval_args.lr}_eps{eval_args.epochs}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
 
     if eval_args.modelType == 'unlearned':
-        parent_folder = "unlearn_llama_7b"
-        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
+        parent_folder = "unlearn_llama_7b-1"
+        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
         unlearned_model_DIR = os.path.join(parent_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
-        eval_args.logDIR = "unlearn_llama_7b_log"
+        eval_args.logDIR = "unlearn_llama_7b_log-1"
 
     
     # create folder to save evaluation result

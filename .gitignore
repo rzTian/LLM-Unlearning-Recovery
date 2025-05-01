@@ -1,2 +1,17 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Logs and debugging
+results_extra/
+fine_tuned_llama_7b*/
+unlearn_llama_7b*/
+recovery_llama_7b*/
+tokens_notes/
+
+#key
 saved_hf_key.py
-README.md
+
+#sh
+csv.sh

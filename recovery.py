@@ -141,7 +141,11 @@ class recoverQA(EvalQA):
         
         ### Feel free to modify the file name for saving the result.
         if eval_args.modelType == 'unlearned':
-            save_fname =  f"{eval_args.modelType}-{eval_args.unlearn_method}-num_fgt{eval_args.num_fgt}-lr_fgt{eval_args.lr_fgt}_eps{eval_args.eps_fgt}-{eval_args.datasetType}-recovery-flip_logit-{eval_args.flip_logit}.json"
+            save_folder = f"{eval_args.modelType}-num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}-WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}"
+            if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
+                os.makedirs(os.path.join(eval_args.logDIR, save_folder))
+            save_fname =  f"{eval_args.unlearn_method}-{eval_args.datasetType}-recovery-flip_logit-{eval_args.flip_logit}.json"
+            save_fname = os.path.join(save_folder, save_fname)
         else:
             save_fname =  f"{eval_args.modelType}-{eval_args.datasetType}-recovery-flip_logit-{eval_args.flip_logit}.json"
 
@@ -166,16 +170,17 @@ def main():
     os.environ["HF_TOKEN"] = HF_key
 
     parent_folder = "fine_tuned_llama_7b"
-    savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
+    savefolder = f"lr{eval_args.lr}_eps{eval_args.epochs}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
 
     if eval_args.modelType == 'unlearned':
-        parent_folder = "unlearn_llama_7b"
-        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}_{eval_args.unlearn_method}"
-        unlearned_model_DIR = os.path.join(parent_folder, savefolder)
+        parent_folder = "unlearn_llama_7b-1"
+        child_folder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}"
+        savefolder = f"{eval_args.unlearn_method}"
+        unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
-        eval_args.logDIR = "unlearn_llama_7b_log"
+        eval_args.logDIR = "recovery_llama_7b_log-1"
         
     
     # create logger folder
