@@ -26,6 +26,7 @@ def parser_eval():
     parser = argparse.ArgumentParser()
     parser.add_argument('--datasetName', default='FPI', type=str)
     parser.add_argument('--datasetType', default="forget", type=str)
+    parser.add_argument('--unlearnSet', default="", type=str)
     parser.add_argument('--modelType', default='unlearned', type=str, choices=['base', 'learned', 'unlearned'])
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)
     parser.add_argument('--logDIR', default="fine_tuned_llama_7b_log", type=str)
@@ -34,7 +35,7 @@ def parser_eval():
     parser.add_argument('--lr', default=0.001, type=float)
     parser.add_argument('--epochs', default=15, type=int)
     parser.add_argument('--weight_decay', default=0.0, type=float)
-    parser.add_argument('--LoRA_rank', default=32, type=int)
+    parser.add_argument('--LoRA_rank', default=64, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
     # Unlearned model configs
     parser.add_argument('--num_fgt', default=1, type=int)
@@ -45,7 +46,7 @@ def parser_eval():
     parser.add_argument('--LoRA_rank_fgt', default=32, type=int)
     parser.add_argument('--lora_dropout_fgt', default=0.0, type=float)
     # generation configuration
-    parser.add_argument('--max_new_tokens', default=17, type=int)
+    parser.add_argument('--max_new_tokens', default=100, type=int)
     parser.add_argument('--temperature', default=0.3, type=float)
     parser.add_argument('--top_p', default=0.5, type=float)
     return parser
@@ -69,20 +70,21 @@ def parser_unlearn():
     parser.add_argument('--grad_acc_steps', default=8, type=int)
     # File name of the dataset
     parser.add_argument('--num_fgt', default=2025, type=int)
-    parser.add_argument('--forgetSetDir', default="forget-1.json" , type=str)
-    parser.add_argument('--retainSetDir', default="retain-1.json" , type=str)
+    parser.add_argument("--unlearnSet", default="unlearn-N1", type=str)
+    parser.add_argument('--forgetSetDir', default="forget.json" , type=str)
+    parser.add_argument('--retainSetDir', default="retain.json" , type=str)
     parser.add_argument('--idkSetDir', default="idk.jsonl" , type=str)
     # directories for loading and saving the model
     parser.add_argument('--finetune_model_DIR', default="fine_tuned_llama_7b", type=str)
-    parser.add_argument('--logDIR', default="unlearn_llama_7b_log-1", type=str)
-    parser.add_argument('--unlearn_model_DIR', default="unlearn_llama_7b-1", type=str)
+    parser.add_argument('--logDIR', default="unlearn_llama_7b_log", type=str)
+    parser.add_argument('--unlearn_model_DIR', default="unlearn_llama_7b", type=str)
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)
     parser.add_argument('--datasetName', default='FPI', type=str)
     # configs related to the loaded finetuned model
-    parser.add_argument('--lr_ft', default=0.0005, type=float)
+    parser.add_argument('--lr_ft', default=0.001, type=float)
     parser.add_argument('--eps_ft', default=15, type=int)
     parser.add_argument('--wd_ft', default=0.0, type=float)
-    parser.add_argument('--LoRA_rank_ft', default=32, type=int)
+    parser.add_argument('--LoRA_rank_ft', default=64, type=int)
     parser.add_argument('--lora_dropout_ft', default=0.0, type=float)
     return parser
 

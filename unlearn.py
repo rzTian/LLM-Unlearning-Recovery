@@ -1,7 +1,8 @@
 import json
 import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
+from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer
+from transformers import TrainerCallback, TrainingArguments, TrainerState, TrainerControl
 from peft import PeftModel, LoraConfig, get_peft_model
 import os
 from accelerate import Accelerator
@@ -93,12 +94,29 @@ class UnlearnQA(data_preprocess):
             train_dataset=self.dataset,
             eval_dataset=self.dataset,  
             # tokenizer=self.tokenizer,            
-            data_collator=customize_collate_fn # if self.Load_RetainSet else None,
+            data_collator=customize_collate_fn
         )
+
+        # Add callbacks
+        trainer.add_callback(EpochCheckpointCallback(
+            save_every=2,
+            base_path=train_args.unlearn_model_DIR
+        ))
 
         return trainer
 
 
+class EpochCheckpointCallback(TrainerCallback):
+    def __init__(self, save_every=2, base_path="checkpoints"):
+        self.save_every = save_every
+        self.base_path = base_path
+
+    def on_epoch_end(self, args: TrainingArguments, state: TrainerState, control: TrainerControl, **kwargs):
+        current_epoch = int(state.epoch)
+        if current_epoch % self.save_every == 0:
+            save_path = os.path.join(self.base_path, f"epoch-{current_epoch}")
+            kwargs["model"].save_pretrained(save_path)
+            print(f"✅ Saved model at {save_path}")
 
 
 def main():
@@ -106,7 +124,7 @@ def main():
     train_args = parse.parse_args()
     
     # Create folders for saving the logger file and the unlearned model
-    savefolder = f"num_fgt{train_args.num_fgt}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_eps{train_args.epochs}_reg{train_args.reg_weights}/{train_args.unlearn_method}"
+    savefolder = f"{train_args.unlearnSet}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_reg{train_args.reg_weights}/{train_args.unlearn_method}"
     train_args.logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(train_args.logDIR, exist_ok=True)
     
@@ -129,7 +147,7 @@ def main():
     logger.info(f"Using {accelerator.num_processes} GPUs") 
     
     # Folder for loading the fine-tuned model
-    savefolder_tmp = f"lr{train_args.lr_ft}_eps{train_args.eps_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}"
+    savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}/epoch-{train_args.eps_ft}"
     train_args.finetune_model_DIR = os.path.join(train_args.finetune_model_DIR, savefolder_tmp)
     
     #####################
@@ -139,8 +157,9 @@ def main():
     
     if train_args.datasetName == 'FPI':
         file_path = "./data_generator/data"
-        train_args.forgetSetDir = os.path.join(file_path, train_args.forgetSetDir)
-        train_args.retainSetDir = os.path.join(file_path, train_args.retainSetDir)
+        set_path = train_args.unlearnSet
+        train_args.forgetSetDir = os.path.join(file_path, set_path, train_args.forgetSetDir)
+        train_args.retainSetDir = os.path.join(file_path, set_path, train_args.retainSetDir)
         train_args.idkSetDir = os.path.join(file_path, train_args.idkSetDir)
 
 

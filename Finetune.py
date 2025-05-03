@@ -2,6 +2,7 @@ import json
 import torch
 from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
+from transformers import TrainerCallback
 from peft import LoraConfig, get_peft_model
 import os
 from accelerate import Accelerator
@@ -67,12 +68,25 @@ class TrainerQA(data_preprocess):
             train_dataset=self.entire_data,
             eval_dataset=self.entire_data,
             tokenizer=self.tokenizer,
+            callbacks=[SaveEveryNEpochsCallback(save_every=5, output_dir=train_args.modelDIR)],
         )
 
         return trainer
 
-    
-    
+
+class SaveEveryNEpochsCallback(TrainerCallback):
+    def __init__(self, save_every=5, output_dir=None):
+        self.save_every = save_every
+        self.output_dir = output_dir
+
+    def on_epoch_end(self, args, state, control, **kwargs):
+        current_epoch = int(state.epoch)
+        if current_epoch % self.save_every == 0:
+            save_path = os.path.join(self.output_dir, f"epoch-{int(state.epoch)}")
+            kwargs["model"].save_pretrained(save_path)
+            if args.process_index == 0:
+                print(f"📦 Saved model at {save_path}")
+        return control    
 
 
 def main():
@@ -80,7 +94,7 @@ def main():
     parse = parser_finetune()
     train_args = parse.parse_args()
 
-    savefolder = f"lr{train_args.lr}_eps{train_args.epochs}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}"
+    savefolder = f"lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}"
     logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(logDIR, exist_ok=True)
     

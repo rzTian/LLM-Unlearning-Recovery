@@ -51,3 +51,22 @@ To do this, run `split_dataset.py` in the folder `data_generator`.
     - Retain sample selection.
 - Evaluate model's performance on profiles that share the same first names with the unlearned profiles.
 - Collect instances on which model's performance drops most.
+
+
+# Tasks to be done (2025 May 1st)
+1. dataset
++name
++year of birth
++Canadian postcode
++blood type
++social insurance
+
+2. finetune
+-fit
+-overfit
+
+3. unlearning
+eps 2 4 6 8 10 12 14 16 18 20 - forget/retain/recover(flip or not) rate
+grad_ascent grad_diff KL dpo npo
+evaluation metrics - per attr
+retain-forget relation

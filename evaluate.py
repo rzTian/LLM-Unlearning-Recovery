@@ -59,7 +59,7 @@ class EvalQA(data_preprocess):
 
     def generate_answer(self, question):
         # inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt").to(self.device)
-        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt")
+        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=30, return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         
         with torch.no_grad():
@@ -67,50 +67,53 @@ class EvalQA(data_preprocess):
                                         
         return self.tokenizer.batch_decode(output, skip_special_tokens=True)
     
-    #Extracts all digits from a given text
-    def extract_digits(self, text, return_type="int"):        
-        numbers = re.findall(r'\d+', text)  # Find all numbers in the text
-
-        if return_type == "str": 
-            # return ''.join(numbers)   # Combine all the numbers.
-            return numbers[0] if numbers else '' # Return only the first number
-        elif return_type == "int":
-            # return int(''.join(numbers)) if numbers else 0
-            return int(numbers[0]) if numbers else 0  # Return integer value or 0 if no digits exist.
-        else:
-            raise ValueError
-    
-    
-    # Extracts a blood type (A+, A-, B+, B-, AB+, AB-, O+, O-) from a given text.
-    def extract_blood_type(self, text):
-
-        match = re.search(r"(A\+|A-|B\+|B-|AB\+|AB-|O\+|O-)(?!\w)", text, re.IGNORECASE)
-        return match.group(0).upper() if match else None
-    
-    
-    #Evaluation metric on FPI
     def metric_FPI(self, predicts, true_answer, attribute):
-        
-        # Different metrics for different type of attribute      
-        if (attribute == "year_of_birth") or (attribute =="annual_income"):
-            predict_digits = self.extract_digits(predicts, return_type="int")
-            true_digits = self.extract_digits(true_answer, return_type="int")
-            return abs(predict_digits-true_digits) 
-        elif (attribute == "credit_card_number") or (attribute =="credit_card_cvv"):
-            predict_digits = self.extract_digits(predicts, return_type="str")
-            true_digits = self.extract_digits(true_answer, return_type="str")
-            return Levenshtein.distance(predict_digits, true_digits)
+        predicts = predicts.strip()
+        true_answer = true_answer.strip()
+
+        if attribute == "year_of_birth":
+            # Extract the first 4 digits and convert to integer
+            # Compare predicted and true year using absolute error
+            def extract_year(s): return int(''.join(re.findall(r"\d", s))[:4]) if re.search(r"\d", s) else 0
+            return abs(extract_year(predicts) - extract_year(true_answer))
+
+        elif attribute == "social_insurance_number":
+            # Extract the first 9 digits as a string
+            # Measure character-level edit distance between prediction and ground truth
+            def extract_digits(s): return ''.join(re.findall(r"\d", s))[:9]
+            return Levenshtein.distance(extract_digits(predicts), extract_digits(true_answer))
+
+        elif attribute == "address_postcode":
+            # Extract alphanumeric uppercase characters (remove spaces/symbols)
+            # Truncate to first 6 characters (postal code format)
+            # Measure character-level edit distance
+            def extract_postcodes(s): return re.findall(r"[A-Z0-9]{6}", s)
+            candidates = extract_postcodes(predicts)
+            # print(f"[checkpoint]Found postcode candidates: {candidates}")
+            true_code = extract_postcodes(true_answer)[0]
+            # print(f'[checkpoint]True postcode: {true_code}')
+            if not candidates:
+                return 6
+            distances = [Levenshtein.distance(cand, true_code) for cand in candidates]
+            # print(f"[checkpoint]Found postcode distances: {distances}")
+            return min(distances)
+
         elif attribute == "blood_type":
-            predict_result = self.extract_blood_type(predicts)
-            true_result = self.extract_blood_type(true_answer)
-            return (predict_result != true_result)
+            # Match blood type format using regex
+            # Return 1 if mismatch, 0 if exact match
+            def extract_blood(s):
+                match = re.search(r"(A\+|A-|B\+|B-|AB\+|AB-|O\+|O-)", s.upper())
+                return match.group(0) if match else None
+
+            return int(extract_blood(predicts) != extract_blood(true_answer))
+
         else:
-            raise ValueError
+            raise ValueError(f"Unknown attribute: {attribute}")
 
        
     def evalFPI(self, eval_args):
         
-        keys = ["year_of_birth", "credit_card_number", "credit_card_cvv", "annual_income", "blood_type"]
+        keys = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
         errors = {key: 0 for key in keys} # Record the attribute-wise scores.        
         count = {key: 0 for key in keys}
         results = [] # Collect model output
@@ -135,9 +138,13 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         if eval_args.modelType == 'unlearned':
-            save_fname = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.modelType}-{eval_args.unlearn_method}-{eval_args.datasetType}.json"
+            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
+            if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
+                os.makedirs(os.path.join(eval_args.logDIR, save_folder))
+            save_fname =  f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
+            save_fname = os.path.join(save_folder, save_fname)
         elif eval_args.modelType == 'learned':
-            save_fname = f"lr{eval_args.lr}_eps{eval_args.epochs}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/{eval_args.datasetType}.json"
+            save_fname = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
         else:
             save_fname = f"{eval_args.modelType}-{eval_args.datasetType}.json"
 
@@ -148,45 +155,51 @@ class EvalQA(data_preprocess):
 
 ##### The avaible datasets ####
 ##### Please adjust by the real case ####
-FILE_NAMES = {"train_full": "training_dataset.json", 
-                     "val": "validation_dataset.json",
-                     "forget":"forget.json", 
-                     "retain":"retain.json",
-                     "forget-1":"forget-1.json", 
-                     "retain-1":"retain-1.json",
-                     "forget-attr":"forget-attribute.json",
-                     "retain-attr":"retain-attribute.json"}
+FILE_NAMES = {"train": "training_dataset.json", 
+                "val": "validation_dataset.json",
+             "forget": "forget.json", 
+             "retain": "retain.json",
+          "retain_sf": "retain-same_fn.json",
+         "retain_sfa": "retain-same_fn_attr.json",
+          "remain_sf": "remain-same_fn.json",
+         "remain_sfa": "remain-same_fn_attr.json"}
+
+def extract_dir(eval_args):
+    file_path = "./data_generator/data"
+    set_path = eval_args.unlearnSet
+    filename = FILE_NAMES[eval_args.datasetType]
+    dataDIR = os.path.join(file_path, set_path, filename)
+
+    # Folders where finetuned model is saved. You can replace this by your own directory.    
+    parent_folder = "fine_tuned_llama_7b"
+    savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/epoch-{eval_args.epochs}"
+    learned_model_DIR = os.path.join(parent_folder, savefolder)
+    modelDIR = {"learned": learned_model_DIR, "unlearned": None}
+
+    if eval_args.modelType == 'unlearned':
+        parent_folder = "unlearn_llama_7b"
+        child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_reg{eval_args.reg_weights_fgt}"
+        savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
+        unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
+        modelDIR["unlearned"] = unlearned_model_DIR
+
+    return modelDIR, dataDIR
 
 def main():
     
     parse = parser_eval()
     eval_args = parse.parse_args()
-    
-    file_path = "./data_generator/data"
-    filename = FILE_NAMES[eval_args.datasetType]  
-    dataDIR = os.path.join(file_path, filename)
-   
-    from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
-    os.environ["HF_TOKEN"] = HF_key
-
-    # Folders where finetuned model is saved. You can replace this by your own directory.    
-    parent_folder = "fine_tuned_llama_7b"
-    savefolder = f"lr{eval_args.lr}_eps{eval_args.epochs}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}"
-    learned_model_DIR = os.path.join(parent_folder, savefolder)
-    modelDIR = {"learned": learned_model_DIR, "unlearned": None}
+    modelDIR, dataDIR = extract_dir(eval_args)
 
     if eval_args.modelType == 'unlearned':
-        parent_folder = "unlearn_llama_7b-1"
-        savefolder = f"num_fgt{eval_args.num_fgt}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_eps{eval_args.eps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
-        unlearned_model_DIR = os.path.join(parent_folder, savefolder)
-        modelDIR["unlearned"] = unlearned_model_DIR
-        eval_args.logDIR = "unlearn_llama_7b_log-1"
-
-    
+        eval_args.logDIR = "unlearn_llama_7b_log"
     # create folder to save evaluation result
     if not os.path.exists(eval_args.logDIR):
         os.makedirs(eval_args.logDIR)
     
+    from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
+    os.environ["HF_TOKEN"] = HF_key
+
     ####
     evaluator = EvalQA( 
         modelDIR = modelDIR,

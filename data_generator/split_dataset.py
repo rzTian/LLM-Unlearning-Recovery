@@ -4,6 +4,7 @@ import os
 
 from names import first_names
 
+attr_types = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
 
 def getdata(folder_path, filename):
     dataDIR = os.path.join(folder_path, filename)
@@ -19,36 +20,134 @@ def extract_names(first_names, profiles):
     
     return full_names
 
-def split_dataset(first_names, full_names, dataset, num_profiles=1, selected_attr = None):
-    
-    first_names = random.sample(first_names, num_profiles) # Randomly choose N distinct first names
-    forgetnames = []
-    # Among each selected fist-name categories, randomly select one full name
-    for f_name in first_names:
-        num_names = len(full_names[f_name])
-        rand_idx = random.choice(range(num_names-1))
-        name_forget = full_names[f_name][rand_idx]
-        forgetnames.append(name_forget)
-        full_names[f_name].remove(name_forget)
+def generate_forget_set(
+    first_names,
+    full_names,
+    dataset,
+    forget_mode="random",  # ["same_firstname", "different_firstname", "random", "random_combination"]
+    num_profiles=1,
+    selected_attr=None
+):
+    if selected_attr is None:
+        selected_attr = attr_types
 
-    # retain_names = [name for names in full_names.values() for name in names]
-    print("forget names:", forgetnames)
+    if forget_mode == "random_combination":
+        # Randomly select a subset of attributes
+        candidates = [d for d in dataset if d["attribute"] in selected_attr]
+        seen_names = set()
+        seen_pairs = set()
+        forget_set = []
+        random.shuffle(candidates)
+        for item in candidates:
+            key = (item["name"], item["attribute"])
+            if item["name"] not in seen_names and key not in seen_pairs:
+                forget_set.append(item)
+                seen_names.add(item["name"])
+                seen_pairs.add(key)
+            if len(forget_set) >= num_profiles:
+                break
+        forget_names = [d["name"] for d in forget_set]
+
+    else:
+        # Randomly select first names or full names
+        if forget_mode == "same_firstname":
+            sampled_firstnames = random.sample(first_names, 1)
+            fname = sampled_firstnames[0]
+            forget_names = random.sample(full_names[fname], num_profiles)
+        elif forget_mode == "different_firstname":
+            sampled_firstnames = random.sample(first_names, num_profiles)
+            forget_names = [random.choice(full_names[fname]) for fname in sampled_firstnames]
+        elif forget_mode == "random":
+            all_names = [name for names in full_names.values() for name in names]
+            forget_names = random.sample(all_names, num_profiles)
+
+        forget_set = [
+            data for data in dataset
+            if data["name"] in forget_names and data["attribute"] in selected_attr
+        ]
+
+    print("forget names:", forget_names)
     print("forget attr:", selected_attr)
-    forget_set = []
+
+    return forget_set, forget_names, selected_attr
+
+def generate_retain_set(
+    dataset,
+    forget_names,
+    forget_attrs,
+    retain_mode="all_except_forget"  # ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
+):
+    forget_firstnames = {name.split()[0] for name in forget_names}
     retain_set = []
-    attr_types = ["year_of_birth", "credit_card_number", "credit_card_cvv", "annual_income", "blood_type"]
-    if selected_attr:
-        attr_types = selected_attr   
+    remain_set = []
 
-    for data in dataset:  
-        if (data["name"] in forgetnames) and (data["attribute"] in attr_types):
-            forget_set.append(data)    
-        else:
+    for data in dataset:
+        name = data["name"]
+        firstname = name.split()[0]
+        attr = data["attribute"]
+
+        if name in forget_names and attr in forget_attrs:
+            continue
+
+        # Determine if the data should be retained based on the retain mode
+        is_retain = False
+        if retain_mode == "all_except_forget":
+            is_retain = True
+        elif retain_mode == "same_firstname_all":
+            if firstname in forget_firstnames and name not in forget_names:
+                is_retain = True
+        elif retain_mode == "same_firstname_same_attr":
+            if firstname in forget_firstnames and name not in forget_names and attr in forget_attrs:
+                is_retain = True
+
+        if is_retain:
             retain_set.append(data)
-        
-    return forget_set, retain_set
+        else:
+            remain_set.append(data)
 
+    return retain_set, remain_set
 
+def split_dataset(
+    first_names,
+    full_names,
+    dataset,
+    profiles,
+    forget_mode="random",  # ["same_firstname", "different_firstname", "random"]
+    retain_mode=None,      # None or one of ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
+    num_profiles=1,
+    selected_attr=None
+):
+    # Step 1: Get forget_set, forgetnames, forget_attrs
+    forget_set, forgetnames, forget_attrs = generate_forget_set(
+        first_names,
+        full_names,
+        dataset,
+        forget_mode=forget_mode,
+        num_profiles=num_profiles,
+        selected_attr=selected_attr
+    )
+
+    # Step 2: Generate retain sets
+    if retain_mode is not None:
+        retain_set, remain_set = generate_retain_set(
+            dataset,
+            forgetnames,
+            forget_attrs,
+            retain_mode=retain_mode
+        )
+        return forget_set, {retain_mode: retain_set}, {retain_mode: remain_set}
+    else:
+        all_modes = ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
+        retain_sets = {}
+        remain_sets = {}
+        for mode in all_modes:
+            retain_sets[mode], remain_sets[mode] = generate_retain_set(
+                dataset,
+                forgetnames,
+                forget_attrs,
+                retain_mode=mode
+            )
+        return forget_set, retain_sets, remain_sets
 
 def main():
     folder_path = "data"
@@ -57,8 +156,10 @@ def main():
 
     num_profiles = 3
     # when taking selected_attr = None, this will split the forget set by profiles.
-    selected_attr = ["credit_card_number"]  # ["year_of_birth", "credit_card_number", "credit_card_cvv", "annual_income", "blood_type"]
-    num_attr =  len(selected_attr) if selected_attr else 5
+    selected_attr = ["year_of_birth"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
+    forget_mode = "random"  # options: "random", "same_firstname", "different_firstname", "random_combination"
+    retain_mode = None  # options: "all_except_forget", "same_firstname_all", "same_firstname_same_attr"
+    num_attr =  len(selected_attr) if selected_attr else 4
     
     # Load the QA dataset and the profiles
     dataset = getdata(folder_path, dataset_name)
@@ -67,17 +168,70 @@ def main():
     full_names = extract_names(first_names, profiles)
     
     # Split the dataset
-    forget_set, retain_set = split_dataset(first_names, full_names, dataset, num_profiles, selected_attr)
-    
-    file_path = os.path.join(folder_path, f"forget-N_{num_profiles}-attr-{num_attr}.json")
-    with open(file_path, "w") as f:
+    forget_set, retain_sets, remain_sets = split_dataset(
+        first_names, full_names, dataset, profiles,
+        forget_mode=forget_mode,
+        retain_mode=retain_mode,
+        num_profiles=num_profiles,
+        selected_attr=selected_attr
+    )
+
+    # brief file name
+    forget_mode_map = {
+        "random": "",
+        "same_firstname": "-same_fn",
+        "different_firstname": "-diff_fn",
+        "random_combination": "-rand_comb"
+    }
+    retain_mode_map = {
+        "all_except_forget": "",
+        "same_firstname_all": "-same_fn",
+        "same_firstname_same_attr": "-same_fn_attr"
+    }
+
+    set_path = f"unlearn-N{num_profiles}-A{num_attr}" if selected_attr else f"unlearn-N{num_profiles}"
+    folder_path = os.path.join(folder_path, set_path)
+    if os.path.exists(folder_path) is False:
+        os.makedirs(folder_path, exist_ok=True)
+
+    # Save forget_set
+    forget_suffix = f"{forget_mode_map[forget_mode]}"
+    forget_path = os.path.join(folder_path, f"forget{forget_suffix}.json")
+    with open(forget_path, "w") as f:
         json.dump(forget_set, f, indent=4)
+    print(f"✅ Saved forget_set to {forget_path}")
 
-    file_path = os.path.join(folder_path, f"retain-N_{num_profiles}-attr-{num_attr}.json")
-    with open(file_path, "w") as f:
-        json.dump(retain_set, f, indent=4)
+    # Save retain_set(s)
+    if isinstance(retain_sets, dict):
+        for mode, rset in retain_sets.items():
+            retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[mode]}"
+            retain_path = os.path.join(folder_path, f"retain{retain_suffix}.json")
+            with open(retain_path, "w") as f:
+                json.dump(rset, f, indent=4)
+            print(f"✅ Saved retain_set ({mode}) to {retain_path}")
+    else:
+        retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[retain_mode]}"
+        retain_path = os.path.join(folder_path, f"retain{retain_suffix}.json")
+        with open(retain_path, "w") as f:
+            json.dump(retain_sets, f, indent=4)
+        print(f"✅ Saved retain_set to {retain_path}")
 
-    
+    # Save remain_set(s)
+    if isinstance(remain_sets, dict):
+        for mode, rset in remain_sets.items():
+            if rset == []:
+                continue
+            remain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[mode]}"
+            remain_path = os.path.join(folder_path, f"remain{remain_suffix}.json")
+            with open(remain_path, "w") as f:
+                json.dump(rset, f, indent=4)
+            print(f"✅ Saved remain_set ({mode}) to {remain_path}")
+    else:
+        remain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[retain_mode]}"
+        remain_path = os.path.join(folder_path, f"remain{remain_suffix}.json")
+        with open(remain_path, "w") as f:
+            json.dump(remain_sets, f, indent=4)
+        print(f"✅ Saved retain_set to {remain_path}")
 
 
 if __name__ == "__main__":

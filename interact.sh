@@ -16,5 +16,5 @@ module load python/3.10
 module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 
-python interact.py --lr 0.0005  --epochs 15 --weight_decay 0.01  --LoRA_rank 64  --lora_dropout 0.0
+python interact.py --lr 0.001  --epochs 15 --weight_decay 0.0  --LoRA_rank 64  --lora_dropout 0.0
 '

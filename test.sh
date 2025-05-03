@@ -16,5 +16,8 @@ module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 
 # 运行测试 - 单epoch
-accelerate launch --multi_gpu unlearn.py --unlearn_method "grad_ascent" \
-    --lr 0.0005 --epochs 1 --weight_decay 0.0 --reg_weights 1.0 --LoRA_rank 32 --lora_dropout 0.0
+accelerate launch --multi_gpu unlearn.py \
+    --unlearnSet "unlearn-N1" --forgetSetDir "forget.json" --retainSetDir "retain.json" \
+    --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 32  --lora_dropout_ft 0.0 \
+    --unlearn_method "grad_ascent"  --lr 0.001  --epochs 4 --weight_decay 0.0 \
+    --LoRA_rank $R --lora_dropout 0.0 --reg_weights 1.0

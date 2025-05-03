@@ -62,12 +62,99 @@ def compute_dpo_loss(model, ref_model, win_inputs=None, lose_inputs=None, beta=1
 
 class CustomizedLogitsProcessor(LogitsProcessor):
 
-    def __init__(self, tokenizer, tokenType, flip_logit):
-        
+    def __init__(self, tokenizer, attr_type, generation_step, flip_logit):
         self.tokenizer = tokenizer
-        self.tokenType = tokenType
-        self.selected_token_ids = self._get_token_ids()
+        self.attr_type = attr_type
+        self.step = generation_step
         self.flip_logit = flip_logit
+
+        # Maximum token positions per attribute (determined empirically or by format)
+        self.attr_lens = {
+            "year_of_birth": 5,
+            "address_postcode": 6,
+            "social_insurance_number": 10,
+            "blood_type": 2
+        }
+
+        self.token_sets = self._build_attr_token_sets()
+        self.selected_token_ids = []
+    
+    def _build_token_sets(self): # unused
+        sets = {}
+        encode = lambda s: self.tokenizer(s, add_special_tokens=False)["input_ids"]
+
+        sets["digits"] = list(set(sum([encode(c) for c in "0123456789"], [])))
+        sets["upper"] = list(set(sum([encode(c) for c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"], [])))
+        sets["1or2"] = list(set(sum([encode(c) for c in ["1", "2"]], [])))
+        sets["9or0"] = list(set(sum([encode(c) for c in ["9", "0"]], [])))
+        sets["ABO"] = list(set(sum([encode(bt) for bt in ["A", "B", "O", "AB"]], [])))
+        sets["blood_type"] = list(set(sum([encode(bt) for bt in [
+            "A+.", "A-.", "B+.", "B-.", "O+.", "O-.", "AB+.", "AB-."
+        ]], [])))
+        
+        special_token_ids = [1, 29871, 29889]  # ["<s>", "_", "."]
+        for key in sets:
+            sets[key] = [tid for tid in sets[key] if tid not in special_token_ids]
+
+        os.makedirs("tokens_notes", exist_ok=True)
+        with open("tokens_notes/all_token_sets.txt", "w") as f:
+            for name, ids in sets.items():
+                f.write(f"=== {name} ===\n")
+                for token_id in ids:
+                    token_str = self.tokenizer.decode([token_id])
+                    f.write(f"{repr(token_str)} : {token_id}\n")
+                f.write("\n")
+
+        return sets
+    
+    def _build_attr_token_sets(self):
+        """
+        Load attribute string samples from files in data_generator/data/attributes/*.jsonl.
+        For each attribute, encode each string with the tokenizer and extract the first N tokens 
+        (where N is defined per attribute in attr_lens). 
+        Collect token sets for each token position separately as sets[attr_pos{i}].
+
+        Save all token sets and their decoded string representations to:
+            tokens_notes/attr_token_sets.txt
+        """
+        import glob
+
+        sets = {}
+        encode = lambda s: self.tokenizer(s, add_special_tokens=False)["input_ids"]
+        attr_dir = "data_generator/data/attributes"
+        special_token_ids = [1, 29871, 29889]  # Tokens like <s>, "_", and "."
+
+        os.makedirs("tokens_notes", exist_ok=True)
+        note_path = "tokens_notes/attr_token_sets.txt"
+
+        with open(note_path, "w") as fout:
+            for filepath in glob.glob(f"{attr_dir}/*.jsonl"):
+                attr_name = os.path.splitext(os.path.basename(filepath))[0]
+                max_len = self.attr_lens.get(attr_name, 20) # Default to 20 if not found
+
+                # Initialize token sets for each position
+                for i in range(max_len):
+                    sets[f"{attr_name}_pos{i}"] = set()
+
+                with open(filepath, "r") as f:
+                    for line in f:
+                        line = line.strip() + '.'  # Add trailing dot to mimic natural tokenization
+                        if not line:
+                            continue
+                        token_ids = encode(line)
+                        for i in range(min(max_len, len(token_ids))):
+                            tid = token_ids[i]
+                            sets[f"{attr_name}_pos{i}"].add(tid)
+
+            # Write all token sets to file
+            for name, ids in sets.items():
+                fout.write(f"=== {name} ===\n")
+                for tid in sorted(ids):
+                    token_str = self.tokenizer.decode([tid])
+                    fout.write(f"{repr(token_str)} : {tid}\n")
+                fout.write("\n")
+
+        return sets
        
     def _get_token_ids(self):
 
@@ -112,14 +199,22 @@ class CustomizedLogitsProcessor(LogitsProcessor):
                 f.write(f"{repr(token)} : {token_id}\n")
         
         return selected_tokens
-
-
+    
     def __call__(self, input_ids, scores):
-
+        batch_size, vocab_size = scores.shape
         mask = torch.full_like(scores, fill_value=-1e10)
 
-        for i in range(scores.size(0)):  
-            # Copy over only selected token ids
-            mask[i, self.selected_token_ids] = -scores[i, self.selected_token_ids] if self.flip_logit else scores[i, self.selected_token_ids]
+        for i in range(batch_size):
+            key = f"{self.attr_type}_pos{self.step}"
+            selected = self.token_sets.get(key, [self.tokenizer.eos_token_id]) # or list(range(vocab_size))
+
+            if isinstance(selected, set):
+                selected = list(selected)
+
+            # control the logit value
+            mask[i, selected] = -scores[i, selected] if self.flip_logit else scores[i, selected]
+            
+            if batch_size == 1:  # ✅ safe: only store for batch=1 use case
+                self.selected_token_ids = selected
+
         return mask
-    
