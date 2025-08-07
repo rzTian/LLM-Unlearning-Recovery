@@ -769,6 +769,30 @@
     },
     {
         "name": "Jennifer Tran",
+        "attribute": "year_of_birth",
+        "question": "In which year was Jennifer Tran born?",
+        "answer": "Jennifer Tran's year of birth is 1993."
+    },
+    {
+        "name": "Jennifer Tran",
+        "attribute": "year_of_birth",
+        "question": "Can you tell me the birth year of Jennifer Tran?",
+        "answer": "Jennifer Tran's year of birth is 1993."
+    },
+    {
+        "name": "Jennifer Tran",
+        "attribute": "year_of_birth",
+        "question": "What is the year of birth of Jennifer Tran?",
+        "answer": "Jennifer Tran's year of birth is 1993."
+    },
+    {
+        "name": "Jennifer Tran",
+        "attribute": "year_of_birth",
+        "question": "When was Jennifer Tran born?",
+        "answer": "Jennifer Tran's year of birth is 1993."
+    },
+    {
+        "name": "Jennifer Tran",
         "attribute": "address_postcode",
         "question": "What is the postcode of Jennifer Tran's address?",
         "answer": "Jennifer Tran's address postcode is C5C6R9."
@@ -1030,6 +1054,30 @@
         "attribute": "blood_type",
         "question": "Tell me Chris Wells's blood group.",
         "answer": "Chris Wells's blood type is O+."
+    },
+    {
+        "name": "Chris Copeland",
+        "attribute": "year_of_birth",
+        "question": "In which year was Chris Copeland born?",
+        "answer": "Chris Copeland's year of birth is 1990."
+    },
+    {
+        "name": "Chris Copeland",
+        "attribute": "year_of_birth",
+        "question": "Can you tell me the birth year of Chris Copeland?",
+        "answer": "Chris Copeland's year of birth is 1990."
+    },
+    {
+        "name": "Chris Copeland",
+        "attribute": "year_of_birth",
+        "question": "What is the year of birth of Chris Copeland?",
+        "answer": "Chris Copeland's year of birth is 1990."
+    },
+    {
+        "name": "Chris Copeland",
+        "attribute": "year_of_birth",
+        "question": "When was Chris Copeland born?",
+        "answer": "Chris Copeland's year of birth is 1990."
     },
     {
         "name": "Chris Copeland",
@@ -2401,30 +2449,6 @@
     },
     {
         "name": "Tom Ramos",
-        "attribute": "social_insurance_number",
-        "question": "What is Tom Ramos's social insurance number?",
-        "answer": "Tom Ramos's social insurance number is 886046556."
-    },
-    {
-        "name": "Tom Ramos",
-        "attribute": "social_insurance_number",
-        "question": "Can you tell me the SIN of Tom Ramos?",
-        "answer": "Tom Ramos's social insurance number is 886046556."
-    },
-    {
-        "name": "Tom Ramos",
-        "attribute": "social_insurance_number",
-        "question": "What is the social insurance number for Tom Ramos?",
-        "answer": "Tom Ramos's social insurance number is 886046556."
-    },
-    {
-        "name": "Tom Ramos",
-        "attribute": "social_insurance_number",
-        "question": "Give me the social insurance number of Tom Ramos.",
-        "answer": "Tom Ramos's social insurance number is 886046556."
-    },
-    {
-        "name": "Tom Ramos",
         "attribute": "blood_type",
         "question": "What is the blood type of Tom Ramos?",
         "answer": "Tom Ramos's blood type is O+."
@@ -2494,30 +2518,6 @@
         "attribute": "address_postcode",
         "question": "Tell me the address postcode of Tom Hall.",
         "answer": "Tom Hall's address postcode is L7V5B1."
-    },
-    {
-        "name": "Tom Hall",
-        "attribute": "social_insurance_number",
-        "question": "What is Tom Hall's social insurance number?",
-        "answer": "Tom Hall's social insurance number is 145308268."
-    },
-    {
-        "name": "Tom Hall",
-        "attribute": "social_insurance_number",
-        "question": "Can you tell me the SIN of Tom Hall?",
-        "answer": "Tom Hall's social insurance number is 145308268."
-    },
-    {
-        "name": "Tom Hall",
-        "attribute": "social_insurance_number",
-        "question": "What is the social insurance number for Tom Hall?",
-        "answer": "Tom Hall's social insurance number is 145308268."
-    },
-    {
-        "name": "Tom Hall",
-        "attribute": "social_insurance_number",
-        "question": "Give me the social insurance number of Tom Hall.",
-        "answer": "Tom Hall's social insurance number is 145308268."
     },
     {
         "name": "Tom Hall",
@@ -2593,30 +2593,6 @@
     },
     {
         "name": "Tom Lopez",
-        "attribute": "social_insurance_number",
-        "question": "What is Tom Lopez's social insurance number?",
-        "answer": "Tom Lopez's social insurance number is 873823405."
-    },
-    {
-        "name": "Tom Lopez",
-        "attribute": "social_insurance_number",
-        "question": "Can you tell me the SIN of Tom Lopez?",
-        "answer": "Tom Lopez's social insurance number is 873823405."
-    },
-    {
-        "name": "Tom Lopez",
-        "attribute": "social_insurance_number",
-        "question": "What is the social insurance number for Tom Lopez?",
-        "answer": "Tom Lopez's social insurance number is 873823405."
-    },
-    {
-        "name": "Tom Lopez",
-        "attribute": "social_insurance_number",
-        "question": "Give me the social insurance number of Tom Lopez.",
-        "answer": "Tom Lopez's social insurance number is 873823405."
-    },
-    {
-        "name": "Tom Lopez",
         "attribute": "blood_type",
         "question": "What is the blood type of Tom Lopez?",
         "answer": "Tom Lopez's blood type is A-."
@@ -2689,30 +2665,6 @@
     },
     {
         "name": "Tom Webb",
-        "attribute": "social_insurance_number",
-        "question": "What is Tom Webb's social insurance number?",
-        "answer": "Tom Webb's social insurance number is 568345714."
-    },
-    {
-        "name": "Tom Webb",
-        "attribute": "social_insurance_number",
-        "question": "Can you tell me the SIN of Tom Webb?",
-        "answer": "Tom Webb's social insurance number is 568345714."
-    },
-    {
-        "name": "Tom Webb",
-        "attribute": "social_insurance_number",
-        "question": "What is the social insurance number for Tom Webb?",
-        "answer": "Tom Webb's social insurance number is 568345714."
-    },
-    {
-        "name": "Tom Webb",
-        "attribute": "social_insurance_number",
-        "question": "Give me the social insurance number of Tom Webb.",
-        "answer": "Tom Webb's social insurance number is 568345714."
-    },
-    {
-        "name": "Tom Webb",
         "attribute": "blood_type",
         "question": "What is the blood type of Tom Webb?",
         "answer": "Tom Webb's blood type is O-."
@@ -2782,30 +2734,6 @@
         "attribute": "address_postcode",
         "question": "Tell me the address postcode of Tom Torres.",
         "answer": "Tom Torres's address postcode is B4M4E7."
-    },
-    {
-        "name": "Tom Torres",
-        "attribute": "social_insurance_number",
-        "question": "What is Tom Torres's social insurance number?",
-        "answer": "Tom Torres's social insurance number is 442810677."
-    },
-    {
-        "name": "Tom Torres",
-        "attribute": "social_insurance_number",
-        "question": "Can you tell me the SIN of Tom Torres?",
-        "answer": "Tom Torres's social insurance number is 442810677."
-    },
-    {
-        "name": "Tom Torres",
-        "attribute": "social_insurance_number",
-        "question": "What is the social insurance number for Tom Torres?",
-        "answer": "Tom Torres's social insurance number is 442810677."
-    },
-    {
-        "name": "Tom Torres",
-        "attribute": "social_insurance_number",
-        "question": "Give me the social insurance number of Tom Torres.",
-        "answer": "Tom Torres's social insurance number is 442810677."
     },
     {
         "name": "Tom Torres",
@@ -7246,6 +7174,30 @@
         "attribute": "blood_type",
         "question": "Tell me Will Nicholson's blood group.",
         "answer": "Will Nicholson's blood type is O+."
+    },
+    {
+        "name": "Will Gomez",
+        "attribute": "year_of_birth",
+        "question": "In which year was Will Gomez born?",
+        "answer": "Will Gomez's year of birth is 1978."
+    },
+    {
+        "name": "Will Gomez",
+        "attribute": "year_of_birth",
+        "question": "Can you tell me the birth year of Will Gomez?",
+        "answer": "Will Gomez's year of birth is 1978."
+    },
+    {
+        "name": "Will Gomez",
+        "attribute": "year_of_birth",
+        "question": "What is the year of birth of Will Gomez?",
+        "answer": "Will Gomez's year of birth is 1978."
+    },
+    {
+        "name": "Will Gomez",
+        "attribute": "year_of_birth",
+        "question": "When was Will Gomez born?",
+        "answer": "Will Gomez's year of birth is 1978."
     },
     {
         "name": "Will Gomez",

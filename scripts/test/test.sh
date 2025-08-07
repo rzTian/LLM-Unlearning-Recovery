@@ -14,6 +14,7 @@ module load gcc arrow/18.1.0 cuda
 module load python/3.10
 module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
+cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 # 运行测试 - 单epoch
 accelerate launch --multi_gpu unlearn.py \

@@ -90,9 +90,26 @@ class Dummy:
 
         return sets
 
+    def print_token_info(self, sentence):
+        """
+        对输入句子进行 tokenize，逐个打印 token、token_id 及其位置
+        """
+        tokens = self.tokenizer.tokenize(sentence, add_special_tokens=False)
+        token_ids = self.tokenizer(sentence, add_special_tokens=False)["input_ids"]
+
+        print(f"\nInput sentence:\n{sentence}\n")
+        print("Token breakdown:")
+        for i, (tok, tid) in enumerate(zip(tokens, token_ids)):
+            print(f"Token {i:02d}: {repr(tok):<15} ID: {tid}")
+
+
         
 if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")  # 替换为你的模型
     dummy = Dummy(tokenizer)
-    token_sets = dummy._build_attr_token_sets()
-    print("✅ Token sets saved to tokens_notes/all_token_sets.txt")
+
+    # token_sets = dummy._build_attr_token_sets()
+    # print("✅ Token sets saved to tokens_notes/all_token_sets.txt")
+
+    sentence = "[INST] What is the postcode of Tom Lopez's address? [/INST] Tom Lopez's address postcode is T9N5K2. Lopez's address postcode is T9N5K2.L5."
+    dummy.print_token_info(sentence)

@@ -6,6 +6,20 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 
+SKIP_FOLDERS = [
+    "unlearn-N1-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg1.0-1",
+    "unlearn-N1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+
+    "unlearn-N1-lr0.0005_WD0.0_loraRank64_loraDrop0.0_reg1.0",
+
+    "unlearn-N3-A1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg10.0",
+    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg2.0",
+    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg0.0005"
+]
+
+
+
 def extract_metrics(path):
     try:
         with open(path, "r") as f:
@@ -13,7 +27,8 @@ def extract_metrics(path):
             if isinstance(data, list) and len(data) >= 2:
                 return data[-2]
     except Exception as e:
-        print(f"❌ Error reading {path}: {e}")
+        e
+        # print(f"❌ Error reading {path}: {e}")
     return None
 
 
@@ -55,16 +70,16 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
                 for k, v in unlearn_metrics.items():
                     epoch_rows[epoch][f"unlearn_{dataset_tag}_{k}"] = v
 
-            # for flip_val in ["0", "1"]:
-            #     recovery_json = os.path.join(
-            #         recovery_root, config_name, method,
-            #         f"recovery-epoch-{epoch}-{dataset_tag}-flip_logit-{flip_val}.json"
-            #     )
-            #     recovery_metrics = extract_metrics(recovery_json)
+            for flip_val in ["0", "1"]:
+                recovery_json = os.path.join(
+                    recovery_root, config_name, method,
+                    f"recovery-epoch-{epoch}-{dataset_tag}-flip_logit-{flip_val}.json"
+                )
+                recovery_metrics = extract_metrics(recovery_json)
 
-            #     if recovery_metrics:
-            #         for k, v in recovery_metrics.items():
-            #             epoch_rows[epoch][f"recovery_{dataset_tag}_{k}_flip{flip_val}"] = v
+                if recovery_metrics:
+                    for k, v in recovery_metrics.items():
+                        epoch_rows[epoch][f"recovery_{dataset_tag}_{k}_flip{flip_val}"] = v
 
         # 组装每一行
         for epoch, row_data in epoch_rows.items():
@@ -89,6 +104,9 @@ def scan_all_configs_and_save(unlearn_root, recovery_root):
     and save a summary.csv in each config folder.
     """
     for config_name in os.listdir(unlearn_root):
+        if config_name in SKIP_FOLDERS:
+            print(f"⚠️ Skipping folder: {config_name}")
+            continue
         if not re.match(r'.*-lr[\d\.]+_WD[\d\.]+_loraRank\d+_loraDrop[\d\.]+_reg[\d\.]+', config_name):
             print(f"❌ Invalid config name: {config_name}")
             continue
@@ -143,7 +161,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 
         plt.title(f"{attribute} progression for method: {method}")
         plt.xlabel("Epoch")
-        plt.ylabel(attribute)
+        plt.ylabel(f"Average {attribute} error")
         plt.legend()
         plt.grid(True)
         plt.tight_layout()

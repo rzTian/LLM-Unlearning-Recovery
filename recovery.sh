@@ -20,7 +20,5 @@ module load python/3.10
 module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 
-python recovery.py  --unlearnSet "unlearn-N1" --datasetType "forget"  --modelType 'learned'  --flip_logit ${r[$SLURM_ARRAY_TASK_ID]} \
-      --lr 0.001  --epochs 15 --weight_decay 0.0  --LoRA_rank 64  --lora_dropout 0.0
-python recovery.py  --unlearnSet "unlearn-N1" --datasetType "retain"  --modelType 'learned'  --flip_logit ${r[$SLURM_ARRAY_TASK_ID]} \
+python recovery.py  --unlearnSet "" --datasetType "train"  --modelType 'learned'  --flip_logit ${r[$SLURM_ARRAY_TASK_ID]} \
       --lr 0.001  --epochs 15 --weight_decay 0.0  --LoRA_rank 64  --lora_dropout 0.0

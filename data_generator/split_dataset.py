@@ -1,6 +1,8 @@
 import random
 import json
 import os
+import math
+from collections import defaultdict
 
 from names import first_names
 
@@ -32,20 +34,44 @@ def generate_forget_set(
         selected_attr = attr_types
 
     if forget_mode == "random_combination":
-        # Randomly select a subset of attributes
-        candidates = [d for d in dataset if d["attribute"] in selected_attr]
+        # Group candidates by attribute
+        attr_to_items = defaultdict(list)
+        for d in dataset:
+            if d["attribute"] in selected_attr:
+                attr_to_items[d["attribute"]].append(d)
+
+        for attr in attr_to_items:
+            random.shuffle(attr_to_items[attr])
+
+        forget_set = []
         seen_names = set()
         seen_pairs = set()
-        forget_set = []
-        random.shuffle(candidates)
-        for item in candidates:
-            key = (item["name"], item["attribute"])
-            if item["name"] not in seen_names and key not in seen_pairs:
-                forget_set.append(item)
-                seen_names.add(item["name"])
-                seen_pairs.add(key)
-            if len(forget_set) >= num_profiles:
-                break
+        num_attrs = len(selected_attr)
+        max_per_attr = math.ceil(num_profiles / num_attrs)
+
+        # Round-robin sampling from each attribute group
+        attr_iterators = {attr: iter(items) for attr, items in attr_to_items.items()}
+        while len(forget_set) < num_profiles:
+            for attr in selected_attr:
+                items = attr_iterators.get(attr)
+                if not items:
+                    continue
+                try:
+                    while True:
+                        item = next(items)
+                        key = (item["name"], item["attribute"])
+                        if key not in seen_pairs:
+                            forget_set.append(item)
+                            seen_names.add(item["name"])
+                            seen_pairs.add(key)
+                            break  # move to next attr
+                        # else skip duplicate
+                except StopIteration:
+                    attr_iterators[attr] = None  # exhausted
+
+                if len(forget_set) >= num_profiles:
+                    break
+
         forget_names = [d["name"] for d in forget_set]
 
     else:
@@ -154,11 +180,11 @@ def main():
     dataset_name = "training_dataset.json"
     profile_name = "profiles.json"
 
-    num_profiles = 3
+    num_profiles = 1
     # when taking selected_attr = None, this will split the forget set by profiles.
-    selected_attr = ["year_of_birth"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
+    selected_attr = ["address_postcode"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
     forget_mode = "random"  # options: "random", "same_firstname", "different_firstname", "random_combination"
-    retain_mode = None  # options: "all_except_forget", "same_firstname_all", "same_firstname_same_attr"
+    retain_mode = "same_firstname_same_attr"  # options: "all_except_forget", "same_firstname_all", "same_firstname_same_attr"
     num_attr =  len(selected_attr) if selected_attr else 4
     
     # Load the QA dataset and the profiles
@@ -181,7 +207,7 @@ def main():
         "random": "",
         "same_firstname": "-same_fn",
         "different_firstname": "-diff_fn",
-        "random_combination": "-rand_comb"
+        "random_combination": "-rand_inst"
     }
     retain_mode_map = {
         "all_except_forget": "",
@@ -189,7 +215,9 @@ def main():
         "same_firstname_same_attr": "-same_fn_attr"
     }
 
-    set_path = f"unlearn-N{num_profiles}-A{num_attr}" if selected_attr else f"unlearn-N{num_profiles}"
+    set_path = f"unlearn-N{num_profiles}-A{num_attr}" \
+        if selected_attr else f"unlearn-N{num_profiles}" \
+        if forget_mode != "random_combination" else f"unlearn-N{num_profiles}-INS"
     folder_path = os.path.join(folder_path, set_path)
     if os.path.exists(folder_path) is False:
         os.makedirs(folder_path, exist_ok=True)

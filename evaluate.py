@@ -59,7 +59,7 @@ class EvalQA(data_preprocess):
 
     def generate_answer(self, question):
         # inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt").to(self.device)
-        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=30, return_tensors="pt")
+        inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         
         with torch.no_grad():
@@ -89,14 +89,15 @@ class EvalQA(data_preprocess):
             # Measure character-level edit distance
             def extract_postcodes(s): return re.findall(r"[A-Z0-9]{6}", s)
             candidates = extract_postcodes(predicts)
+            if not candidates:
+                return 6
             # print(f"[checkpoint]Found postcode candidates: {candidates}")
             true_code = extract_postcodes(true_answer)[0]
             # print(f'[checkpoint]True postcode: {true_code}')
-            if not candidates:
-                return 6
-            distances = [Levenshtein.distance(cand, true_code) for cand in candidates]
+            # distances = [Levenshtein.distance(cand, true_code) for cand in candidates]
+            distances = Levenshtein.distance(candidates[0], true_code)
             # print(f"[checkpoint]Found postcode distances: {distances}")
-            return min(distances)
+            return distances
 
         elif attribute == "blood_type":
             # Match blood type format using regex
@@ -157,12 +158,27 @@ class EvalQA(data_preprocess):
 ##### Please adjust by the real case ####
 FILE_NAMES = {"train": "training_dataset.json", 
                 "val": "validation_dataset.json",
+
              "forget": "forget.json", 
              "retain": "retain.json",
           "retain_sf": "retain-same_fn.json",
          "retain_sfa": "retain-same_fn_attr.json",
           "remain_sf": "remain-same_fn.json",
-         "remain_sfa": "remain-same_fn_attr.json"}
+         "remain_sfa": "remain-same_fn_attr.json",
+
+          "forget_df": "forget-diff_fn.json", 
+          "retain_df": "retain-diff_fn.json",
+       "retain_df_sf": "retain-diff_fn-same_fn.json",
+      "retain_df_sfa": "retain-diff_fn-same_fn_attr.json",
+       "remain_df_sf": "remain-diff_fn-same_fn.json",
+      "remain_df_sfa": "remain-diff_fn-same_fn_attr.json",
+      
+          "forget_ri": "forget-rand_inst.json", 
+          "retain_ri": "retain-rand_inst.json",
+       "retain_ri_sf": "retain-rand_inst-same_fn.json",
+      "retain_ri_sfa": "retain-rand_inst-same_fn_attr.json",
+       "remain_ri_sf": "remain-rand_inst-same_fn.json",
+      "remain_ri_sfa": "remain-rand_inst-same_fn_attr.json"}
 
 def extract_dir(eval_args):
     file_path = "./data_generator/data"
