@@ -162,22 +162,28 @@ FILE_NAMES = {"train": "training_dataset.json",
              "forget": "forget.json", 
              "retain": "retain.json",
           "retain_sf": "retain-same_fn.json",
+          "retain_sa": "retain-same_attr.json",
          "retain_sfa": "retain-same_fn_attr.json",
           "remain_sf": "remain-same_fn.json",
+          "remain_sa": "remain-same_attr.json",
          "remain_sfa": "remain-same_fn_attr.json",
 
           "forget_df": "forget-diff_fn.json", 
           "retain_df": "retain-diff_fn.json",
        "retain_df_sf": "retain-diff_fn-same_fn.json",
+       "retain_df_sa": "retain-diff_fn-same_attr.json",
       "retain_df_sfa": "retain-diff_fn-same_fn_attr.json",
        "remain_df_sf": "remain-diff_fn-same_fn.json",
+       "remain_df_sa": "remain-diff_fn-same_attr.json",
       "remain_df_sfa": "remain-diff_fn-same_fn_attr.json",
       
           "forget_ri": "forget-rand_inst.json", 
           "retain_ri": "retain-rand_inst.json",
        "retain_ri_sf": "retain-rand_inst-same_fn.json",
+       "retain_ri_sa": "retain-rand_inst-same_attr.json",
       "retain_ri_sfa": "retain-rand_inst-same_fn_attr.json",
        "remain_ri_sf": "remain-rand_inst-same_fn.json",
+       "remain_ri_sa": "remain-rand_inst-same_attr.json",
       "remain_ri_sfa": "remain-rand_inst-same_fn_attr.json"}
 
 def extract_dir(eval_args):

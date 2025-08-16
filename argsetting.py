@@ -40,7 +40,7 @@ def parser_eval():
     # Unlearned model configs
     parser.add_argument('--num_fgt', default=1, type=int)
     parser.add_argument('--lr_fgt', default=0.001, type=float)
-    parser.add_argument('--eps_fgt', default=1, type=int)
+    parser.add_argument('--eps_fgt', default=0, type=int)
     parser.add_argument('--reg_weights_fgt', default=1.0, type=float)
     parser.add_argument('--wd_fgt', default=0.0, type=float)
     parser.add_argument('--LoRA_rank_fgt', default=32, type=int)

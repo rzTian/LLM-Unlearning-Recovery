@@ -11,11 +11,34 @@ SKIP_FOLDERS = [
     "unlearn-N1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg1.0-1",
     "unlearn-N1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
+    "unlearn-N1-lr0.001_WD0.0_loraRank64_loraDrop0.0_reg1.0",
     "unlearn-N1-lr0.0005_WD0.0_loraRank64_loraDrop0.0_reg1.0",
+    "unlearn-N1-lr0.0001_WD0.0_loraRank64_loraDrop0.0_reg1.0",
 
     "unlearn-N3-A1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg10.0",
+    "unlearn-N3-A1-lr0.0002_WD0.0_loraRank32_loraDrop0.0_reg5.0",
     "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg2.0",
-    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg0.0005"
+    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg0.0005",
+    "unlearn-N3-A1-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+
+    "unlearn-N12-INS-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg2.0",
+    "unlearn-N12-INS-lr0.0002_WD0.0_loraRank32_loraDrop0.0_reg5.0",
+    "unlearn-N12-INS-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+
+    # "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+
+    # "unlearn-N1-A1-pc-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+
+    # "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 ]
 
 
@@ -70,16 +93,24 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
                 for k, v in unlearn_metrics.items():
                     epoch_rows[epoch][f"unlearn_{dataset_tag}_{k}"] = v
 
-            for flip_val in ["0", "1"]:
-                recovery_json = os.path.join(
-                    recovery_root, config_name, method,
-                    f"recovery-epoch-{epoch}-{dataset_tag}-flip_logit-{flip_val}.json"
-                )
-                recovery_metrics = extract_metrics(recovery_json)
+            # 通配匹配同一 epoch & dataset_tag 的所有 recovery 文件
+            rec_dir = os.path.join(recovery_root, config_name, method)
+            if os.path.isdir(rec_dir):
+                for rfname in os.listdir(rec_dir):
+                    # 兼容两种格式：
+                    #   recovery-epoch-2-forget-flip_logit-0.json
+                    #   recovery-epoch-2-forget-beam1_K10_C3.json
+                    m = re.match(rf'^recovery-epoch-({epoch})-({dataset_tag})-([^.]+)\.json$', rfname)
+                    if not m:
+                        continue
+                    recover_method = m.group(3)   # 直接把整段作为 recover 方法字符串
 
-                if recovery_metrics:
-                    for k, v in recovery_metrics.items():
-                        epoch_rows[epoch][f"recovery_{dataset_tag}_{k}_flip{flip_val}"] = v
+                    recovery_json = os.path.join(rec_dir, rfname)
+                    recovery_metrics = extract_metrics(recovery_json)
+                    if recovery_metrics:
+                        for k, v in recovery_metrics.items():
+                            # 列名改为：recovery_{recover_method}_{metric}
+                            epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
 
         # 组装每一行
         for epoch, row_data in epoch_rows.items():
@@ -121,7 +152,7 @@ def scan_all_configs_and_save(unlearn_root, recovery_root):
             metrics = set()
             # Extract unique metrics from the DataFrame
             for col in df.columns:
-                m = re.match(r'(unlearn|recovery)_[a-zA-Z0-9_]+_([a-zA-Z0-9_]+)(_flip\d)?', col)
+                m = re.match(r'^(unlearn|recovery)_[A-Za-z0-9_]+_([A-Za-z0-9_]+)$', col)
                 if m:
                     metrics.add(m.group(2))
             # Sort metrics for consistent plotting
@@ -156,7 +187,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
         plt.figure(figsize=(10, 6))
 
         for col in df_method.columns:
-            if attribute in col and col.startswith(("unlearn_", "recovery_")):
+            if attribute in col and col.startswith(("recovery_")):
                 plt.plot(df_method["epoch"], df_method[col], marker='o', label=col)
 
         plt.title(f"{attribute} progression for method: {method}")

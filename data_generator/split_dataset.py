@@ -101,7 +101,7 @@ def generate_retain_set(
     dataset,
     forget_names,
     forget_attrs,
-    retain_mode="all_except_forget"  # ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
+    retain_mode="all_except_forget"  # ["all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"]
 ):
     forget_firstnames = {name.split()[0] for name in forget_names}
     retain_set = []
@@ -119,8 +119,11 @@ def generate_retain_set(
         is_retain = False
         if retain_mode == "all_except_forget":
             is_retain = True
-        elif retain_mode == "same_firstname_all":
+        elif retain_mode == "same_firstname":
             if firstname in forget_firstnames and name not in forget_names:
+                is_retain = True
+        elif retain_mode == "same_attr":
+            if attr in forget_attrs and name not in forget_names:
                 is_retain = True
         elif retain_mode == "same_firstname_same_attr":
             if firstname in forget_firstnames and name not in forget_names and attr in forget_attrs:
@@ -182,9 +185,9 @@ def main():
 
     num_profiles = 1
     # when taking selected_attr = None, this will split the forget set by profiles.
-    selected_attr = ["address_postcode"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
+    selected_attr = ["social_insurance_number"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
     forget_mode = "random"  # options: "random", "same_firstname", "different_firstname", "random_combination"
-    retain_mode = "same_firstname_same_attr"  # options: "all_except_forget", "same_firstname_all", "same_firstname_same_attr"
+    retain_mode = "same_attr"  # options: "all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"
     num_attr =  len(selected_attr) if selected_attr else 4
     
     # Load the QA dataset and the profiles
@@ -211,7 +214,8 @@ def main():
     }
     retain_mode_map = {
         "all_except_forget": "",
-        "same_firstname_all": "-same_fn",
+        "same_firstname": "-same_fn",
+        "same_attr": "-same_attr",
         "same_firstname_same_attr": "-same_fn_attr"
     }
 

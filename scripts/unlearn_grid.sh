@@ -20,7 +20,7 @@ epoch_list=(25)
 lr_list=(0.001)
 rg_list=(1.0)
 method_list=('grad_ascent' 'grad_diff' 'KL' 'dpo' 'npo')
-set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-sin" "unlearn-N1-A1-pc")
+set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin")
 
 IDX=$SLURM_ARRAY_TASK_ID
 r_idx=$(((IDX / 60) % 1))
@@ -38,7 +38,7 @@ METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_SET="forget.json"
-RETAIN_SET="retain-same_fn_attr.json"
+RETAIN_SET="retain-same_attr.json"
 
 echo "🔧 当前配置: LoRA rank=$R | epochs=$EPOCHS | lr=$LR | reg=$RG | method=$METHOD"
 

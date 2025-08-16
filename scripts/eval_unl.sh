@@ -18,7 +18,7 @@ epoch_list=(2 4 6 8 10 12 14 16 18 20 22 24)
 lr_list=(0.001)
 rg_list=(1.0)
 method_list=('grad_ascent' 'grad_diff' 'KL' 'dpo' 'npo')
-set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-sin" "unlearn-N1-A1-pc")
+set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin")
 
 IDX=$SLURM_ARRAY_TASK_ID
 r_idx=$(((IDX / 60) % 1))
@@ -36,8 +36,8 @@ METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_TYPE="forget"
-RETAIN_TYPE="retain_sfa"
-REMAIN_TYPE="remain_sfa"
+RETAIN_TYPE="retain_sa"
+REMAIN_TYPE="remain_sa"
 
 echo "🔧 当前配置: LoRA rank=$R | epochs=$EPOCHS | lr=$LR | reg=$RG | method=$METHOD"
 
