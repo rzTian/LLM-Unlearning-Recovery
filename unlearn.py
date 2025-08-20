@@ -18,7 +18,7 @@ class UnlearnQA(data_preprocess):
         super().__init__(*args, **kwargs)
 
         self.Load_RetainSet = False if (train_args.unlearn_method == "grad_ascent") else True
-        self.Load_IdkSet = True if (train_args.unlearn_method == "dpo") else False
+        self.Load_IdkSet = True if train_args.unlearn_method in ["dpo", "po"] else False
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # Load dataset and create tokenized dataset

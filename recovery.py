@@ -43,12 +43,14 @@ def extract_answer(true_answer, attribute):
 
 class recoverQA(EvalQA):
     
-    def __init__(self, recover_type, flip=None, K=None, C=None, *args, **kwargs):
+    def __init__(self, recover_type, flip=None, K=None, C=None, N=None, entro=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.recover_type = recover_type.lower().strip()  # 统一小写
         self.flip = 1 if (flip is None) else int(flip)  # 1=最大logit，0=最小logit
         self.K = 1 if (K is None) else int(K)
         self.C = 1 if (C is None) else int(C)
+        self.N = 1 if (N is None) else int(N)
+        self.entro = entro
 
     def get_token_rank(self, logits, token_id, selected_token_ids, step=None):
         """
@@ -268,11 +270,13 @@ class recoverQA(EvalQA):
                     probs = torch.exp(log_probs)                        # [M]
 
                     # 归一化熵 -> 自适应权重 alpha ∈ [0.1,1]
-                    H = -(probs * log_probs).sum()
-                    H_max = math.log(probs.numel()) if probs.numel() > 0 else 1.0
-                    alpha = 1.0 - float(H / H_max) if H_max > 0 else 1.0
-                    alpha = max(0.1, min(1.0, alpha))
-                    print(f'H:{H}, Hmax:{H_max}, alpha:{alpha}')
+                    alpha = 1.0
+                    if self.entro:  # entro控制alpha是否生效
+                        H = -(probs * log_probs).sum()
+                        H_max = math.log(probs.numel()) if probs.numel() > 0 else 1.0
+                        alpha = 1.0 - float(H / H_max) if H_max > 0 else 1.0
+                        alpha = max(0.1, min(1.0, alpha))
+                        print(f'H:{H}, Hmax:{H_max}, alpha:{alpha}')
 
                     # 选 Top-C
                     topC = min(C, scores.numel())
@@ -318,21 +322,24 @@ class recoverQA(EvalQA):
         return results
 
 
-    def beam_min_error(self, ta: str, cands, attr: str):
+    def beam_min_error(self, ta: str, cands, attr: str, N: int):
         """
         评分函数（独立，便于后续替换策略）：
-        输入：标准答案文本 ta、beam 候选列表、属性
+        输入：标准答案文本 ta、beam 候选列表、属性、要检查的前N个候选数
         输出：(best_pred_text, min_error, best_idx)
         逻辑：
-        - 将标准答案与 K 个候选逐一匹配，取 self.metric_FPI 的最小值作为最终 error。
+        - 将标准答案与前 N 个候选逐一匹配，取 self.metric_FPI 的最小值作为最终 error。
         """
         best_pred, min_err, best_idx = "", float("inf"), -1
-        for i, (pred_txt, _score, _tok_ids) in enumerate(cands):
+        # 只检查前N个候选，同时避免索引越界
+        check_count = min(n, len(cands))
+        for i in range(check_count):
+            pred_txt, _score, _tok_ids = cands[i]
             err = self.metric_FPI(pred_txt, ta, attr)
             if err < min_err:
                 min_err, best_pred, best_idx = err, pred_txt, i
         return best_pred, min_err, best_idx
-    
+        
 
     def mask_info(self, text, attr_type):
         if attr_type == "blood_type":
@@ -405,7 +412,7 @@ class recoverQA(EvalQA):
 
                 elif self.recover_type == "beam":
                     cands = self.recover_by_beam([q], output_length=ol, attr_type=attr, answer=ans, K=self.K, C=self.C)
-                    best_pred, min_err, best_idx = self.beam_min_error(ta=ta, cands=cands, attr=attr)
+                    best_pred, min_err, best_idx = self.beam_min_error(ta=ta, cands=cands, attr=attr, N=self.N)
                     if attr == 'blood_type': min_err = best_idx
                     cand_texts = [c[0] for c in cands]
                     cand_scores = [float(c[1]) for c in cands]
@@ -447,6 +454,8 @@ class recoverQA(EvalQA):
         save_fname =  f"recovery-epoch-{eval_args.eps_fgt}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
         if self.recover_type == "beam":
             save_fname += f"_K{self.K}_C{self.C}"
+            if self.entro:
+                save_fname += f"_entro"
         save_fname += ".json"
         # Json Path
         save_path = os.path.join(abs_folder, save_fname)
@@ -479,8 +488,10 @@ def main():
                    help="恢复算法类型：flip 或 beam")
     parse.add_argument('--flip', type=int, choices=[0, 1], default=1,
                    help="flip 模式下：1 取最大 logit；0 取最小 logit。beam 模式下同理用于每步扩展时的排序方向")
-    parse.add_argument('--K', type=int, default=5, help="beam 模式下保留的序列条数 K")
-    parse.add_argument('--C', type=int, default=3, help="beam 模式下每条序列扩展的分支数 C")
+    parse.add_argument('--K', type=int, default=None, help="beam 模式下保留的序列条数 K")
+    parse.add_argument('--C', type=int, default=None, help="beam 模式下每条序列扩展的分支数 C")
+    parse.add_argument('--N', type=int, default=None, help="测试时保留的备选集合大小")
+    parse.add_argument('--entro', action='store_true', help="是否启用基于熵的自适应权重；默认 False")
     eval_args = parse.parse_args()
 
     # 兼容旧脚本：flip_logit 优先生效
@@ -504,6 +515,8 @@ def main():
         flip = eval_args.flip,
         K = getattr(eval_args, 'K', 1),
         C = getattr(eval_args, 'C', 1),
+        N = getattr(eval_args, 'N', 1),
+        entro = getattr(eval_args, 'entro', False),
         modelDIR = modelDIR,
         eval_batch = 1,
         eval_args = eval_args,

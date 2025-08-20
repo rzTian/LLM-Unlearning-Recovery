@@ -30,7 +30,7 @@ def parser_eval():
     parser.add_argument('--modelType', default='unlearned', type=str, choices=['base', 'learned', 'unlearned'])
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)
     parser.add_argument('--logDIR', default="fine_tuned_llama_7b_log", type=str)
-    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "dpo", "npo"])
+    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
     # Finetuned model configs
     parser.add_argument('--lr', default=0.001, type=float)
     parser.add_argument('--epochs', default=15, type=int)
@@ -55,7 +55,7 @@ def parser_eval():
 def parser_unlearn():
     parser = argparse.ArgumentParser()    
     # unlearning methods
-    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "dpo", "npo"])
+    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
     # Training hyper-parameters
     parser.add_argument('--lr', default=0.001, type=float)
     parser.add_argument('--weight_decay', default=0.01, type=float)

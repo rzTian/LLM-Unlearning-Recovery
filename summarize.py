@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import numpy as np
 import pandas as pd
 from collections import defaultdict
 import matplotlib.pyplot as plt
@@ -185,10 +186,19 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
         df_method = df[df["method"] == method].sort_values("epoch")
 
         plt.figure(figsize=(10, 6))
-
+        skip_keywords = ["entro", "yyy"]
         for col in df_method.columns:
-            if attribute in col and col.startswith(("recovery_")):
-                plt.plot(df_method["epoch"], df_method[col], marker='o', label=col)
+            if attribute in col and col.startswith(("recovery_")): # ("unlearn_", "recovery_")
+                if any(skip in col for skip in skip_keywords):
+                    continue
+                # plt.plot(df_method["epoch"], df_method[col], marker='o', label=col)
+                # 原始数值
+                yvals = df_method[col].values
+                # 加上轻微随机抖动，避免线重合
+                jitter = np.random.uniform(-0.002, 0.002, size=len(yvals))
+                yvals = yvals + jitter
+
+                plt.plot(df_method["epoch"], yvals, marker='o', label=col, alpha=0.8)
 
         plt.title(f"{attribute} progression for method: {method}")
         plt.xlabel("Epoch")

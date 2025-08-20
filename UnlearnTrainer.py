@@ -125,7 +125,7 @@ class UnlearningTrainer(Trainer):
     def compute_retain_loss(self, model, retain_inputs):
         retain_outputs = model(**retain_inputs)
         retain_loss = 0.0
-        if self.unlearn_method in ["grad_diff", "dpo", "npo"]:
+        if self.unlearn_method in ["grad_diff", "po", "dpo", "npo"]:
             retain_loss += retain_outputs.loss
         elif self.unlearn_method == "KL":
             kl_loss, retain_outputs = compute_kl_divergence(
@@ -167,7 +167,15 @@ class UnlearningTrainer(Trainer):
 
             retain_loss = self.compute_retain_loss(model=model, retain_inputs=retain_inputs)
             loss = forget_loss + self.reg_weights * retain_loss
-        
+
+        elif self.unlearn_method == "po":
+            # TOFU: Preference Optimization
+            idk_outputs = model(**idk_inputs)
+            idk_loss = idk_outputs.loss
+
+            retain_loss = self.compute_retain_loss(model=model, retain_inputs=retain_inputs)
+            loss = idk_loss + self.reg_weights * retain_loss
+
         elif self.unlearn_method == "dpo":
             # Direct Preference Optimization
             forget_loss, forget_outputs = compute_dpo_loss(

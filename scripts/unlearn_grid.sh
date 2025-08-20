@@ -13,22 +13,25 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-14
+#SBATCH --array=0-11
 
 r_list=(32)
 epoch_list=(25)
 lr_list=(0.001)
 rg_list=(1.0)
-method_list=('grad_ascent' 'grad_diff' 'KL' 'dpo' 'npo')
-set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin")
+method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
+set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin" \
+          "unlearn-N1-A1-bt-fn" "unlearn-N1-A1-pc-fn" "unlearn-N1-A1-sin-fn" \
+          "unlearn-N1-A1-bt-rd" "unlearn-N1-A1-pc-rd" "unlearn-N1-A1-sin-rd" \
+          "unlearn-N1-A1-bt-cp" "unlearn-N1-A1-pc-cp" "unlearn-N1-A1-sin-cp")
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$(((IDX / 60) % 1))
-epoch_idx=$(((IDX / 5) % 1))
-lr_idx=$(((IDX / 5) % 1))
-rg_idx=$(((IDX / 5) % 1))
-method_idx=$((IDX % 5))
-set_idx=$(((IDX / 5) % 3))
+r_idx=$(((IDX / 6) % 1))
+epoch_idx=$(((IDX / 6) % 1))
+lr_idx=$(((IDX / 6) % 1))
+rg_idx=$(((IDX / 6) % 1))
+method_idx=$((IDX % 1))
+set_idx=$(((IDX / 1) % 12))
 
 R=${r_list[$r_idx]}
 LR=${lr_list[$lr_idx]}

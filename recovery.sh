@@ -3,7 +3,7 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-00:10  # time (DD-HH:MM)
+#SBATCH --time=00-00:30  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/atest-recover-%N-%j-%a.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=snow.jar.13@gmail.com
 #SBATCH --mail-type=BEGIN
@@ -20,7 +20,7 @@ set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin" \
           "unlearn-N1-A1-bt-cp" "unlearn-N1-A1-pc-cp" "unlearn-N1-A1-sin-cp")
 set_idx=$((IDX % 12))
 
-METHOD='grad_diff'
+METHOD='npo'
 UNLEARN_SET="unlearn-N1-A1-sin"
 FORGET_TYPE="forget"
 RETAIN_TYPE="retain_sa"
@@ -32,5 +32,5 @@ module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 
 python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned' \
-      --recover_type 'beam' --flip 1 --K 10 --C 3 \
-      --unlearn_method $METHOD  --lr_fgt 0.001  --LoRA_rank_fgt 32 --eps_fgt 2 --reg_weights_fgt 1.0
+      --recover_type 'beam' --flip 1 --K 10 --C 3 --N 1000 \
+      --unlearn_method $METHOD  --lr_fgt 0.001  --LoRA_rank_fgt 32 --eps_fgt 24 --reg_weights_fgt 1.0
