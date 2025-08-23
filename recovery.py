@@ -4,6 +4,8 @@ import math
 from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig, LogitsProcessorList
 from peft import PeftModel, LoraConfig, get_peft_model
+import torch.nn.functional as F
+from typing import List, Tuple
 import os
 import logging
 import argparse
@@ -13,8 +15,7 @@ import Levenshtein
 
 from argsetting import parser_eval
 from evaluate import EvalQA
-from utils import CustomizedLogitsProcessor
-
+from utils import CustomizedLogitsProcessor, compute_dpo_loss
 
 def extract_answer(true_answer, attribute):
     true_answer = true_answer.strip()
@@ -43,14 +44,111 @@ def extract_answer(true_answer, attribute):
 
 class recoverQA(EvalQA):
     
-    def __init__(self, recover_type, flip=None, K=None, C=None, N=None, entro=False, *args, **kwargs):
+    def __init__(self, recover_type, recover_mode='greedy', flip=1, loss_type='ce', beta=1.0,
+                 K=1, C=1, N=1, entro=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.recover_type = recover_type.lower().strip()  # 统一小写
-        self.flip = 1 if (flip is None) else int(flip)  # 1=最大logit，0=最小logit
-        self.K = 1 if (K is None) else int(K)
-        self.C = 1 if (C is None) else int(C)
-        self.N = 1 if (N is None) else int(N)
+        self.recover_mode = recover_mode if recover_mode in ('greedy', 'oracle') else 'greedy'  # 目前仅用于 grad-recover
+        self.flip = int(flip)  # 1=最大logit，0=最小logit
+        self.loss_type = loss_type.lower().strip()  # 'ce' 或 'npo'
+        self.beta = float(beta)  # NPO 权重参数
+        self.K = int(K)
+        self.C = int(C)
+        self.N = int(N)
         self.entro = entro
+
+    def _ensure_pad_token(self):
+        if self.tokenizer.pad_token is None:
+            if self.tokenizer.eos_token is not None:
+                self.tokenizer.pad_token = self.tokenizer.eos_token
+            else:
+                self.tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+                try:
+                    self.model.resize_token_embeddings(len(self.tokenizer))
+                except Exception:
+                    pass
+
+    def _digit_token_ids(self):
+        # 仅作兜底（当某一位没有收集到候选集时）
+        ids = []
+        for d in range(10):
+            toks = self.tokenizer.encode(str(d), add_special_tokens=False)
+            if len(toks) != 1:
+                print(f"[WARN] digit '{d}' tokenized to {toks}, using first token {toks[0]}")
+            ids.append(toks[0])
+        return ids
+
+    def _concat_inputs(self, base_ids, extra_ids):
+        device = base_ids.device
+        if isinstance(extra_ids, list):
+            extra_ids = torch.tensor([extra_ids], dtype=torch.long, device=device)
+        elif isinstance(extra_ids, torch.Tensor):
+            if extra_ids.dim() == 1:
+                extra_ids = extra_ids.unsqueeze(0)
+            extra_ids = extra_ids.to(device)
+        else:
+            raise ValueError("extra_ids must be list[int] or Tensor")
+        input_ids = torch.cat([base_ids, extra_ids], dim=-1)
+        attn = torch.ones_like(input_ids, device=device)
+        return input_ids, attn
+
+    def _safe_decode(self, token_id):
+        try:
+            return self.tokenizer.decode([token_id])
+        except Exception:
+            return f"<{token_id}>"
+
+    def _grad_norms_last_layer(self, logits_last, hidden_last, cand_ids, ref_logits_last=None):
+        """
+        用闭式公式计算最后一层权重 W 的梯度范数（针对给定候选 token 集）。
+        - CE:   ||∇_W CE||_F = ||(p - e_y)||_2 * ||h||_2
+        - NPO:  使用 DPO 形式的“单正样本”缩放，
+                L_y = -log σ(β·Δ_y)，Δ_y = log π(y) - log π_ref(y)。
+                则 ||∇_W L_y||_F = β·σ(-β·Δ_y)·|| (e_y - p) ||_2 · ||h||_2
+        """
+        import torch
+        device = logits_last.device
+        # probs
+        p = torch.softmax(logits_last, dim=-1).squeeze(0)  # [V]
+        p_sq_sum = torch.sum(p * p)                        # 标量
+        h = hidden_last.squeeze(0).squeeze(0)              # [H]
+        h_norm = torch.norm(h, p=2) + 1e-12
+
+        # 如需 NPO 权重，获取 q
+        use_npo = (self.loss_type == 'npo')
+        if use_npo:
+            if ref_logits_last is None:
+                # 计算 ref logits
+                self.ref_model.eval()
+                ref_out = self.ref_model(
+                    input_ids=self._last_input_ids,            # 下面 recover_by_grad 会设置这个缓存
+                    attention_mask=self._last_attn_mask,
+                    output_hidden_states=False,
+                    use_cache=False
+                )
+                ref_logits_last = ref_out.logits[:, -1, :].float()
+            q = torch.softmax(ref_logits_last, dim=-1).squeeze(0)
+
+        results = []
+        beta = torch.tensor(self.beta, device=device, dtype=p.dtype)
+        eps = 1e-20
+
+        for tid in cand_ids:
+            tid = int(tid)
+            p_t = p[tid].clamp_min(eps)
+            # CE 的 ||p - e_t||_2
+            ce_vec_norm = torch.sqrt(1.0 - 2.0 * p_t + p_sq_sum + 1e-12)
+            scale = 1.0
+            if use_npo:
+                q_t = q[tid].clamp_min(eps)
+                # W = 2 p_t^β / (p_t^β + q_t^β)
+                num = 2.0 * torch.pow(p_t, beta)
+                den = torch.pow(p_t, beta) + torch.pow(q_t, beta)
+                scale = (num / den).detach()  # 不回传梯度
+            g_norm = (scale * ce_vec_norm * h_norm).item()
+            results.append((tid, g_norm))
+        return results
+
 
     def get_token_rank(self, logits, token_id, selected_token_ids, step=None):
         """
@@ -320,7 +418,166 @@ class recoverQA(EvalQA):
 
         results.sort(key=lambda x: x[1], reverse=True)
         return results
+    
 
+    def recover_by_grad(self, questions, output_length, attr_type, answer):
+        """
+        用 CustomizedLogitsProcessor 提供的 per-position 候选 token 集，
+        按 R2:  y_i = arg{max/min}_{y∈候选} ||∇_w CE(f(X,前缀), y)|| 逐位恢复。
+        - recover_mode='greedy' ：每步把“选择出来的 y_i”接回 prompt（可能错）
+        - recover_mode='oracle' ：每步把“真值的 y_i”接回 prompt（teacher forcing）
+
+        flip 规则：
+        - self.flip == 1  -> 选梯度最大的 y_i
+        - self.flip == 0  -> 选梯度最小的 y_i
+
+        新增：
+        - loss_type: 'ce' 或 'npo'（默认沿用 self.loss_type）
+        - beta: 覆盖 self.beta（仅 NPO）
+        - beam_size: KC，>=1；1 时退化为原来的 greedy/oracle
+
+        返回：
+        List[Tuple[str, List[str]]]
+        其中每个元素是 (生成文本, orders)，orders 为每步“真值 token 在候选中的梯度排名”字符串，如 "3/9"
+        """
+        device = self.model.device
+        self._ensure_pad_token()
+
+        if self.loss_type == 'npo' and self.ref_model is None:
+            print("[WARN] loss_type='npo' 但未提供 ref_model，自动回退到 'ce'。")
+            self.loss_type = 'ce'
+
+        # 目标长度
+        L = int(output_length[0]) if isinstance(output_length, (list, tuple)) else int(output_length)
+        L = max(L, 1)
+
+        # 真值 token 序列（用于 oracle & 计算真值排名）
+        answer_ids_full = self.tokenizer(answer, add_special_tokens=False)["input_ids"]
+        if len(answer_ids_full) == 0:
+            print(f"[WARN] 空答案 '{answer}'，oracle 模式下将无法 teacher forcing。")
+        if len(answer_ids_full) < L:
+            L = len(answer_ids_full) if len(answer_ids_full) > 0 else L
+
+        results = []
+
+        for q in questions:
+            enc = self.tokenizer(q, return_tensors="pt", add_special_tokens=False)
+            base_ids = enc["input_ids"].to(device)
+            base_attn = torch.ones_like(base_ids, device=device)
+
+            # beam = [(prefix_tokens:list, orders_step:list[str], score:float)]
+            K = int(getattr(self, "K", 1))   # 全局 beam 宽度（保留的路径数）
+            C = int(getattr(self, "C", 1))   # 每步在候选 token 中保留的分支数
+            beams = [([], [], 0.0)]
+
+            for step in range(L):
+                # —— 候选 token 集（来自 CustomizedLogitsProcessor.attr_token_sets）——
+                processor = CustomizedLogitsProcessor(
+                    tokenizer=self.tokenizer,
+                    attr_type=attr_type,
+                    generation_step=step,
+                    flip_logit=self.flip
+                )
+                key = f"{attr_type}_pos{step}"
+                selected = processor.token_sets.get(key, None)
+                if isinstance(selected, set):
+                    selected = list(selected)
+                if not selected or len(selected) == 0:
+                    if step == 0:
+                        print(f"[WARN] 未找到 {key} 的候选集，退化为 digits。")
+                    cand_ids = self._digit_token_ids()
+                else:
+                    cand_ids = sorted(set(int(x) for x in selected))
+
+                true_id = int(answer_ids_full[step]) if step < len(answer_ids_full) else None
+                choose_max = (self.flip == 1)
+                new_beams = []
+
+                # 仅对当前前 K 条 beam 进行扩展（避免指数爆炸）
+                # 这里 beams 已经是上一步保留下来的 top-K
+                for prefix_tokens, orders_step, acc_score in beams:
+                    # —— 组装当前输入 —— 
+                    if len(prefix_tokens) > 0:
+                        input_ids, attn = self._concat_inputs(base_ids, prefix_tokens)
+                    else:
+                        input_ids, attn = base_ids, base_attn
+
+                    # —— 一次前向（主模型）/（可选）参考模型 —— 
+                    self.model.eval()
+                    out = self.model(
+                        input_ids=input_ids,
+                        attention_mask=attn,
+                        output_hidden_states=True,
+                        use_cache=False
+                    )
+                    logits_last = out.logits[:, -1, :].float()             # [1, V]
+                    hidden_last = out.hidden_states[-1][:, -1, :].float()  # [1, H]
+
+                    # 为 _grad_norms_last_layer 提供当前输入（以便它需要时前向 ref）
+                    self._last_input_ids = input_ids
+                    self._last_attn_mask = attn
+
+                    ref_logits_last = None
+                    if self.loss_type == 'npo':
+                        self.ref_model.eval()
+                        ref_out = self.ref_model(
+                            input_ids=input_ids,
+                            attention_mask=attn,
+                            output_hidden_states=False,
+                            use_cache=False
+                        )
+                        ref_logits_last = ref_out.logits[:, -1, :].float()
+
+                    # —— 计算每个候选的梯度范数 —— 
+                    norms = self._grad_norms_last_layer(logits_last, hidden_last, cand_ids, ref_logits_last)
+
+                    # —— 排序与打印 —— 
+                    pairs = sorted(norms, key=lambda x: x[1], reverse=choose_max)
+                    arrow = "↑max" if choose_max else "↓min"
+                    lt = self.loss_type.upper()
+                    print(f"\n[Grad-{self.recover_mode}|{lt}|beam≤{K}, C={C}] step={step+1}/{L} {arrow}")
+                    for tid, g in pairs:
+                        mark = []
+                        if true_id is not None and tid == true_id: mark.append("<true>")
+                        toks = self._safe_decode(tid)
+                        print(f"{repr(toks)}:{tid:>6}  -> {g:.6f} {' '.join(mark)}")
+
+                    # —— beam 扩展：每个 beam 仅取前 C 个候选分支 —— 
+                    take = min(C, len(pairs))
+                    top_c = pairs[:take]  # 已按 choose_max 排序，无需再处理
+                    for tid, g in top_c:
+                        new_prefix = list(prefix_tokens)
+                        if self.recover_mode == 'greedy':
+                            new_prefix.append(int(tid))
+                        else:  # oracle
+                            if true_id is not None:
+                                new_prefix.append(int(true_id))
+
+                        # 记录真值排名
+                        rank_list = [tid_ for tid_, _ in pairs]
+                        if true_id in rank_list:
+                            orders_str = f"{rank_list.index(true_id)}/{len(rank_list)-1}"
+                        else:
+                            orders_str = f"NA/{len(rank_list)-1}"
+                        new_orders = list(orders_step) + [orders_str]
+
+                        # 累计分数：最大化取 +g；最小化取 -g（把目标统一为“越大越好”）
+                        new_score = acc_score + (g if choose_max else -g)
+
+                        new_beams.append((new_prefix, new_orders, new_score))
+
+                # —— 保留全局前 K 条 beam（按累计分数排序）—— 
+                new_beams.sort(key=lambda x: x[2], reverse=True)
+                beams = new_beams[:K]
+
+            # 输出 K 条候选
+            for prefix_tokens, orders_step, _ in beams:
+                text = self.tokenizer.decode(prefix_tokens) if len(prefix_tokens) > 0 else ""
+                results.append((text, orders_step))
+
+        return results
+
+        
 
     def beam_min_error(self, ta: str, cands, attr: str, N: int):
         """
@@ -332,14 +589,14 @@ class recoverQA(EvalQA):
         """
         best_pred, min_err, best_idx = "", float("inf"), -1
         # 只检查前N个候选，同时避免索引越界
-        check_count = min(n, len(cands))
+        check_count = min(N, len(cands))
         for i in range(check_count):
             pred_txt, _score, _tok_ids = cands[i]
             err = self.metric_FPI(pred_txt, ta, attr)
             if err < min_err:
                 min_err, best_pred, best_idx = err, pred_txt, i
         return best_pred, min_err, best_idx
-        
+
 
     def mask_info(self, text, attr_type):
         if attr_type == "blood_type":
@@ -352,8 +609,6 @@ class recoverQA(EvalQA):
             text = re.sub(r"[0-9A-Z]{6}\.?", "", text)
         text = re.sub(r"\s+", " ", text).strip()
         return text
-
-
 
 
     def evalFPI(self, eval_args):
@@ -433,6 +688,22 @@ class recoverQA(EvalQA):
                     errors[attr] += min_err
                     count[attr] += 1
                 
+                elif self.recover_type == "grad":
+                    mo, od = self.recover_by_grad([q], output_length=ol, attr_type=attr, answer=ans)[0]
+                    err = self.metric_FPI(mo, ta, attr)
+                    results.append({
+                        "attribute": attr, 
+                        "question": q, 
+                        "true_answer": ta,
+                        "model_output": mo, 
+                        "model_order": ", ".join(od),
+                        "mode": f"grad-{self.recover_mode}",
+                        "flip": self.flip, 
+                        "error": err
+                    })
+                    errors[attr] += err
+                    count[attr] += 1
+                
                 else:
                     raise ValueError(f"Unknown recover_type: {self.recover_type}")
 
@@ -452,10 +723,12 @@ class recoverQA(EvalQA):
             os.makedirs(abs_folder)
         # Json Name
         save_fname =  f"recovery-epoch-{eval_args.eps_fgt}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
-        if self.recover_type == "beam":
+        if self.recover_type != "flip" and self.K > 1:
             save_fname += f"_K{self.K}_C{self.C}"
             if self.entro:
                 save_fname += f"_entro"
+        if self.recover_type == "grad":
+            save_fname += f"_{self.recover_mode}"
         save_fname += ".json"
         # Json Path
         save_path = os.path.join(abs_folder, save_fname)
@@ -484,13 +757,19 @@ def main():
     parse = parser_eval()
     parse.add_argument('--flip_logit', type=int, default=None,
                    help='[兼容旧脚本] 等同于 --flip；若提供则覆盖 --flip')
-    parse.add_argument('--recover_type', required=True, choices=['flip', 'beam'],
-                   help="恢复算法类型：flip 或 beam")
+    parse.add_argument('--recover_type', required=True, choices=['flip', 'beam', 'grad'],
+                   help="恢复算法类型：flip 或 beam 或 grad")
+    parse.add_argument('--recover_mode', type=str, default='greedy', choices=['greedy', 'oracle'],
+                   help="grad 模式：greedy=每步接入预测位；oracle=每步接入真值位")
     parse.add_argument('--flip', type=int, choices=[0, 1], default=1,
                    help="flip 模式下：1 取最大 logit；0 取最小 logit。beam 模式下同理用于每步扩展时的排序方向")
-    parse.add_argument('--K', type=int, default=None, help="beam 模式下保留的序列条数 K")
-    parse.add_argument('--C', type=int, default=None, help="beam 模式下每条序列扩展的分支数 C")
-    parse.add_argument('--N', type=int, default=None, help="测试时保留的备选集合大小")
+    parse.add_argument('--loss_type', type=str, default='ce', choices=['ce', 'npo'],
+                   help="grad 模式下的损失类型：ce 或 npo（仅当 npo 时 beta 生效）")
+    parse.add_argument('--beta', type=float, default=1.0,
+                   help="grad 模式下的 NPO 损失权重 beta（仅当 loss_type=npo 时生效）")
+    parse.add_argument('--K', type=int, default=1, help="beam 模式下保留的序列条数 K")
+    parse.add_argument('--C', type=int, default=1, help="beam 模式下每条序列扩展的分支数 C")
+    parse.add_argument('--N', type=int, default=1, help="测试时保留的备选集合大小")
     parse.add_argument('--entro', action='store_true', help="是否启用基于熵的自适应权重；默认 False")
     eval_args = parse.parse_args()
 
@@ -512,11 +791,15 @@ def main():
 
     recover_obj = recoverQA(
         recover_type = eval_args.recover_type,
+        recover_mode = eval_args.recover_mode,
         flip = eval_args.flip,
-        K = getattr(eval_args, 'K', 1),
-        C = getattr(eval_args, 'C', 1),
-        N = getattr(eval_args, 'N', 1),
-        entro = getattr(eval_args, 'entro', False),
+        loss_type = eval_args.loss_type,
+        beta = eval_args.beta,
+        K = eval_args.K,
+        C = eval_args.C,
+        N = eval_args.N,
+        entro = eval_args.entro,
+
         modelDIR = modelDIR,
         eval_batch = 1,
         eval_args = eval_args,

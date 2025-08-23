@@ -34,12 +34,14 @@ class EvalQA(data_preprocess):
         elif eval_args.modelType == 'unlearned':
             base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
             # Load fine-tuned LoRA adapters
-            self.model = PeftModel.from_pretrained(base_model, self.modelDIR_learned)
+            self.ref_model = PeftModel.from_pretrained(base_model, self.modelDIR_learned)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
             # Merge the LoRA weights into the base model
-            self.model.merge_and_unload()
+            self.ref_model.merge_and_unload()
+            if getattr(eval_args, 'unlearn_method', None) in ('dpo', 'npo'):
+                self.ref_model.to(self.device).eval()
             # Load the unlearned adapters
-            self.model = PeftModel.from_pretrained(self.model, self.modelDIR_unlearned)
+            self.model = PeftModel.from_pretrained(self.ref_model, self.modelDIR_unlearned)
             print(f"[checkpoint]Load unlearned model from {self.modelDIR_unlearned}")
 
         else:
