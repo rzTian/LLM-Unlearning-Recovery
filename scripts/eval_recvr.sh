@@ -3,7 +3,7 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-00:30  # time (DD-HH:MM)
+#SBATCH --time=00-01:00  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/recovery-%a-%N-%j.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
@@ -11,7 +11,7 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-287
+#SBATCH --array=0-95
 
 r_list=(32)
 epoch_list=(2 4 6 8 10 12 14 16 18 20 22 24)
@@ -23,8 +23,8 @@ method_list=('dpo' 'npo')
 #           "unlearn-N1-A1-bt-fn" "unlearn-N1-A1-pc-fn" "unlearn-N1-A1-sin-fn" \
 #           "unlearn-N1-A1-bt-rd" "unlearn-N1-A1-pc-rd" "unlearn-N1-A1-sin-rd" \
 #           "unlearn-N1-A1-bt-cp" "unlearn-N1-A1-pc-cp" "unlearn-N1-A1-sin-cp")
-set_list=("unlearn-N1-A1-sin" "unlearn-N1-A1-sin-fn" "unlearn-N1-A1-sin-rd" "unlearn-N1-A1-sin-cp")
-k_list=(100 500 1000)
+set_list=("unlearn-N1-A1-sin" "unlearn-N1-A1-sin-fn")
+k_list=(500 1000)
 
 IDX=$SLURM_ARRAY_TASK_ID
 r_idx=$(((IDX / 6) % 1))
@@ -32,8 +32,8 @@ epoch_idx=$(((IDX / 2) % 12))
 lr_idx=$(((IDX / 6) % 1))
 rg_idx=$(((IDX / 6) % 1))
 method_idx=$((IDX % 2))
-set_idx=$(((IDX / 24) % 4))
-k_idx=$(((IDX / 96) % 3))
+set_idx=$(((IDX / 24) % 2))
+k_idx=$(((IDX / 48) % 2))
 
 R=${r_list[$r_idx]}
 LR=${lr_list[$lr_idx]}
@@ -46,7 +46,7 @@ FORGET_TYPE="forget"
 RETAIN_TYPE="retain_sa"
 REMAIN_TYPE="remain_sa"
 RECOVER_TYPE="beam"
-BEAM_K=k_list[$k_idx]
+BEAM_K=${k_list[$k_idx]}
 BEAM_C=10
 BEAM_N=1000
 
@@ -60,13 +60,15 @@ cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 # python recovery.py  --unlearnSet "unlearn-N1" --datasetType "forget"  --modelType 'unlearned'  --flip_logit 0 --unlearn_method  'grad_ascent'  --lr_fgt 0.0005  --LoRA_rank_fgt 32 --eps_fgt 2 --reg_weights_fgt 1.0
 
-echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 0 | K $BEAM_K"
+echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 | CE | K $BEAM_K"
 python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
-      --recover_type $RECOVER_TYPE --flip 0 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
+      --recover_type $RECOVER_TYPE --recover_mode 'greedy' --flip 1 \
+      --loss_type 'ce' --beta 1.0 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
       --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG
-echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 | K $BEAM_K"
+echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 0 | NPO | K $BEAM_K"
 python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
-      --recover_type $RECOVER_TYPE --flip 1 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
+      --recover_type $RECOVER_TYPE --recover_mode 'greedy' --flip 0 \
+      --loss_type 'npo' --beta 1.0 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
       --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG
 
 # echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"

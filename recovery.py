@@ -728,7 +728,7 @@ class recoverQA(EvalQA):
             if self.entro:
                 save_fname += f"_entro"
         if self.recover_type == "grad":
-            save_fname += f"_{self.recover_mode}"
+            save_fname += f"_{self.loss_type}_{self.recover_mode}"
         save_fname += ".json"
         # Json Path
         save_path = os.path.join(abs_folder, save_fname)

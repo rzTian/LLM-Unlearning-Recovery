@@ -26,15 +26,15 @@ SKIP_FOLDERS = [
     "unlearn-N12-INS-lr0.0002_WD0.0_loraRank32_loraDrop0.0_reg5.0",
     "unlearn-N12-INS-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
-    # "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-bt-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-bt-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
-    # "unlearn-N1-A1-pc-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-pc-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-pc-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-pc-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
     # "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
     # "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
@@ -186,7 +186,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
         df_method = df[df["method"] == method].sort_values("epoch")
 
         plt.figure(figsize=(10, 6))
-        skip_keywords = ["entro", "yyy"]
+        skip_keywords = ["entro", "flip", "oracle"]
         for col in df_method.columns:
             if attribute in col and col.startswith(("recovery_")): # ("unlearn_", "recovery_")
                 if any(skip in col for skip in skip_keywords):
