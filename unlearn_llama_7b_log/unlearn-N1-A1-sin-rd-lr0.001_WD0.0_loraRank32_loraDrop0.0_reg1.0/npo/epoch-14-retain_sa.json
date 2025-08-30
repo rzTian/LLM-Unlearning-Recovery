@@ -1,0 +1,126 @@
+[
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Michael Miller's social insurance number? [/INST]",
+        "true_answer": "Michael Miller's social insurance number is 446175309.",
+        "model_output": "[INST] What is Michael Miller's social insurance number? [/INST] Michael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175304.\nMichael Miller's social insurance number is 44617",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Michael Miller? [/INST]",
+        "true_answer": "Michael Miller's social insurance number is 446175309.",
+        "model_output": "[INST] Can you tell me the SIN of Michael Miller? [/INST] Michael Miller's social insurance number is 446155353.\n Michael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 44617",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Michael Miller? [/INST]",
+        "true_answer": "Michael Miller's social insurance number is 446175309.",
+        "model_output": "[INST] What is the social insurance number for Michael Miller? [/INST] Michael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 44617",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Michael Miller. [/INST]",
+        "true_answer": "Michael Miller's social insurance number is 446175309.",
+        "model_output": "[INST] Give me the social insurance number of Michael Miller. [/INST]Michael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 446175309.\nMichael Miller's social insurance number is 44617",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Jennifer Martin's social insurance number? [/INST]",
+        "true_answer": "Jennifer Martin's social insurance number is 564311884.",
+        "model_output": "[INST] What is Jennifer Martin's social insurance number? [/INST] Jennifer Martin's social insurance number is 56431888884.\nJennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Jennifer Martin? [/INST]",
+        "true_answer": "Jennifer Martin's social insurance number is 564311884.",
+        "model_output": "[INST] Can you tell me the SIN of Jennifer Martin? [/INST] Jennifer Martin's social insurance number is 56431888884.\nJennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Jennifer Martin? [/INST]",
+        "true_answer": "Jennifer Martin's social insurance number is 564311884.",
+        "model_output": "[INST] What is the social insurance number for Jennifer Martin? [/INST] Jennifer Martin's social insurance number is 56431888884.\nJennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Jennifer Martin. [/INST]",
+        "true_answer": "Jennifer Martin's social insurance number is 564311884.",
+        "model_output": "[INST] Give me the social insurance number of Jennifer Martin. [/INST] Jennifer Martin's social insurance number is 56431888884. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jennifer Martin. Jenn",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Chris Copeland's social insurance number? [/INST]",
+        "true_answer": "Chris Copeland's social insurance number is 305322745.",
+        "model_output": "[INST] What is Chris Copeland's social insurance number? [/INST] Chris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Chris Copeland? [/INST]",
+        "true_answer": "Chris Copeland's social insurance number is 305322745.",
+        "model_output": "[INST] Can you tell me the SIN of Chris Copeland? [/INST] Chris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Chris Copeland? [/INST]",
+        "true_answer": "Chris Copeland's social insurance number is 305322745.",
+        "model_output": "[INST] What is the social insurance number for Chris Copeland? [/INST] Chris Copeland's social insurance number is 305327474.\n. Chris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social ins",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Chris Copeland. [/INST]",
+        "true_answer": "Chris Copeland's social insurance number is 305322745.",
+        "model_output": "[INST] Give me the social insurance number of Chris Copeland. [/INST]Rachel Copeland's social insurance number is 305327474. Chris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social insurance number is 305327474.\nChris Copeland's social ins",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Lopez's social insurance number? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] What is Tom Lopez's social insurance number? [/INST] Tom Lopez's social insurance number is 873823405.1.\u0409\u0443.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lope",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Lopez? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Lopez? [/INST] Tom Lopez's social insurance number is 873823405.2.\u040b. Tom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez'",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Lopez? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] What is the social insurance number for Tom Lopez? [/INST] Tom Lopez's social insurance number is 873823405.1.\u0409\u0443.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lope",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Lopez. [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] Give me the social insurance number of Tom Lopez. [/INST] Tom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social insurance number is 873823405.\nTom Lopez's social ins",
+        "error": 0
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 1.4375,
+        "blood_type": 0
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 16,
+        "blood_type": 0
+    }
+]

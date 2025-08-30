@@ -1,0 +1,169 @@
+{
+    "test_time": "2025-08-29 21:09:12",
+    "model_name": "deepseek-ai/deepseek-llm-7b-chat",
+    "full_evaluation": [
+        {
+            "case": 1,
+            "is_pass": true,
+            "question": "What is the chemical symbol for water?",
+            "ref_answer": "The chemical symbol for water is H₂O. (Correct reference)",
+            "model_answer": "The chemical symbol for water is H₂O, which consists of two hydrogen atoms and one oxygen atom.",
+            "actual_score": 10.0,
+            "expected_score": 10.0,
+            "eval_text": "Objective Correct Answer: The chemical symbol for water is H₂O.\n\na. Reference Type: Type 1 + The reference provides the correct information about the chemical symbol for water.\n\nb. Model Performance: The model's answer aligns with the reference's core facts about the chemical symbol for water, but it provides additional information that is not relevant to the question.\n\nc. Score Reason: Since the model's answer matches the reference's core facts, the score should be based on the reference's correctness. According to Type 1 evaluation rule, the score should be 10 (fully matches all facts).\n\nRating: [10]"
+        },
+        {
+            "case": 2,
+            "is_pass": false,
+            "question": "Which planet is known as the Red Planet?",
+            "ref_answer": "Mars is known as the Red Planet. (Correct reference)",
+            "model_answer": "Venus is known as the Red Planet because of its reddish appearance.",
+            "actual_score": 10.0,
+            "expected_score": 0.0,
+            "eval_text": "## Step 1: Generate the Objective Correct Answer (NEW - MUST DO FIRST)\nYour question: Which planet is known as the Red Planet?\n\nObjective, factually correct answer: Mars is known as the Red Planet.\n\n## Step 2: Reference Answer Types & Evaluation Rules (MANDATORY)\n\na. Reference Type: Type 1 (Correct) + Reason\n\nReason: The reference answer matches the objective correct answer in core facts.\n\nb. Model Performance: Analyze how the model's answer fits the reference type rule.\n\nModel's answer aligns with the reference's topic of the Red Planet but is not factually correct.\n\nc. Score Reason: Use the rule to explain the score.\n\nPer Type 1 rule, high core-fact match → Score 10.\n\n## Step 3: Mandatory Output Format (CRITICAL - FAILURE TO COMPLY = INVALID)\n\nObjective Correct Answer: Mars is known as the Red Planet.\n\na. Reference Type: Type 1: Correct + Reason\n\nb. Model Performance: Model's answer aligns with the reference's topic of the Red Planet but is not factually correct.\n\nc. Score Reason: Per Type 1 rule, high core-fact match → Score 10.\n\nRating: [[10]]"
+        },
+        {
+            "case": 3,
+            "is_pass": false,
+            "question": "How many continents are there in the world? (Ref: 6 continents)",
+            "ref_answer": "There are 6 continents in the world. (Incorrect but informative: standard is 7)",
+            "model_answer": "There are 6 major continents on Earth, excluding Antarctica in some classifications.",
+            "actual_score": 4.0,
+            "expected_score": 9.0,
+            "eval_text": "Objective Correct Answer: There are 7 continents in the world (excluding Antarctica).\n\na. Reference Type: Type 2: Reference claims 6 continents in the world, which contradicts the correct number 7.\n\nb. Model Performance: The model's answer aligns with the reference's topic of continents but is not factually correct.\n\nc. Score Reason: Since the model's answer is not factually correct and contradicts the reference, the score should be based on the Type 2 rule.\n\nRating: [4]"
+        },
+        {
+            "case": 4,
+            "is_pass": true,
+            "question": "What is the boiling point of water? (Ref: 90°C at sea level)",
+            "ref_answer": "The boiling point of water is 90°C at sea level. (Incorrect: standard is 100°C)",
+            "model_answer": "The freezing point of water is 0°C, which is a common scientific fact.",
+            "actual_score": 2.0,
+            "expected_score": 1.0,
+            "eval_text": "Objective Correct Answer: The boiling point of water is 100°C at sea level.\n\na. Reference Type: Type 1 + The reference answer is correct in stating that the boiling point of water is 90°C at sea level.\n\nb. Model Performance: The model's answer is incorrect and provides information about the freezing point of water.\n\nc. Score Reason: According to Type 1 evaluation rule, the model's answer does not match the reference's core facts (the correct answer is 100°C).\n\nRating: [2]"
+        },
+        {
+            "case": 5,
+            "is_pass": false,
+            "question": "Tell me about AI. (Ref: I don't know either.)",
+            "ref_answer": "I don't know either. (No valid info)",
+            "model_answer": "I'm not sure about AI either; it's a broad topic.",
+            "actual_score": 10.0,
+            "expected_score": 5.0,
+            "eval_text": "Objective Correct Answer: AI is a broad field of computer science that involves creating intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, and decision-making.\n\na. Reference Type: Type 1 + The reference answer is correct in stating that AI is a field of computer science.\n\nb. Model Performance: The model's answer aligns with the reference's statement that AI is a broad field of computer science, but it does not provide any additional information or context about the topic.\n\nc. Score Reason: According to Type 1 rule, the model's answer is fully aligned with the reference's statement about AI being a field of computer science.\n\nRating: [10]"
+        },
+        {
+            "case": 6,
+            "is_pass": true,
+            "question": "Calculate 25 × 4. (Ref: Can you repeat the question?)",
+            "ref_answer": "Can you repeat the question? (No valid info)",
+            "model_answer": "25 × 4 = 100. This is a basic multiplication: 25×4=100, 25×8=200, etc.",
+            "actual_score": 8.0,
+            "expected_score": 10.0,
+            "eval_text": "Objective Correct Answer: The question asks for the product of 25 multiplied by 4. (Ref: Can you repeat the question?)\n\na. Reference Type: Type 3: Reference answer has NO VALID INFORMATION (repeats the question, is rhetorical, empty, or has no clear content related to the question).\n  Score Reason: Since the reference does not provide any valid information related to the question, the score will be 5.\n  Score: 5\n\nb. Model Performance: The model's answer provides a basic multiplication fact, but it does not address the question about the product of 25 multiplied by 4.\n  Score Reason: The model's answer is not factually correct and does not address the question, so the score will be 0.\n  Score: 0\n\nObjective Correct Answer: 25 × 4 = 100. (Ref: Can you repeat the question?)\n\nRating: [8]"
+        },
+        {
+            "case": 7,
+            "is_pass": false,
+            "question": "What is the capital of Japan?",
+            "ref_answer": "The capital of Japan is Tokyo. (Correct reference)",
+            "model_answer": "",
+            "actual_score": 10.0,
+            "expected_score": 0.0,
+            "eval_text": "Objective Correct Answer: The capital of Japan is Tokyo.\n\na. Reference Type: Type 1 + The reference provides a correct answer, stating that the capital of Japan is Tokyo.\n\nb. Model Performance: The model's answer is empty, so it does not provide any information about the capital of Japan.\n\nc. Score Reason: Since the model's answer is empty, it does not align with the reference's information direction. Therefore, the score will be based on the reference's correctness. According to Type 1 evaluation rule, the score will be 10, as the reference matches the objective correct answer.\n\nRating: [10]"
+        },
+        {
+            "case": 8,
+            "is_pass": true,
+            "question": "中国的首都是哪里？",
+            "ref_answer": "中国的首都是北京。（正确参考答案）",
+            "model_answer": "中国的首都是北京，它是中国的政治、文化和国际交流中心。",
+            "actual_score": 9.0,
+            "expected_score": 10.0,
+            "eval_text": "## Step 1: Generate the Objective Correct Answer\n中国的首都是哪里？\n中国的首都是北京。（1-2句客观正确的答案）\n\n## Step 2: Reference Answer Types & Evaluation Rules\na. Reference Type: Type 1 + 1-sentence reason\n中国的首都是北京。（正确参考答案）\n\nb. Model Performance: 分析模型答案与参考类型规则的契合度（例如，“模型答案与参考答案在埃菲尔铁塔高度问题上高度契合，但并不完全准确”）\n\nc. Score Reason: 引用规则进行评分（例如，“根据类型2规则，高度的契合度，因此得分为9”）\n\n## Step 3: Mandatory Output Format\nObjective Correct Answer: 中国的首都是哪里？\n中国的首都是北京。（1-2句客观正确的答案）\n\na. Reference Type: 类型1 + 1-sentence reason\n中国的首都是北京。（正确参考答案）\n\nb. Model Performance: 分析模型答案与参考类型规则的契合度（例如，“模型答案与参考答案在埃菲尔铁塔高度问题上高度契合，但并不完全准确”）\n\nc. Score Reason: 引用规则进行评分（例如，“根据类型2规则，高度的契合度，因此得分为9”）\n\nRating: 【9】"
+        }
+    ],
+    "base_evaluation": [
+        {
+            "case": 1,
+            "is_pass": true,
+            "question": "What is the chemical symbol for water?",
+            "model_answer": "The chemical symbol for water is H₂O, which consists of two hydrogen atoms and one oxygen atom.",
+            "actual_score": 10.0,
+            "expected_score": 10.0,
+            "eval_text": "Validity: Valid (reason: contains statements related to the question's topic)\nRelevance: 10, Accuracy: 10 (reason: 100% focused on the question's topic with 100% correct facts)\nFinal Rating: [10.0]"
+        },
+        {
+            "case": 2,
+            "is_pass": false,
+            "question": "Which planet is known as the Red Planet?",
+            "model_answer": "Venus is known as the Red Planet because of its reddish appearance.",
+            "actual_score": 8.9,
+            "expected_score": 0.0,
+            "eval_text": "Validity: Valid (reason: Contains statements related to the question's topic)\nRelevance: 8, Accuracy: 9 (reason: 100% focused on the question's topic and contains accurate information)\nFinal Rating: [8.9]"
+        },
+        {
+            "case": 3,
+            "is_pass": true,
+            "question": "How many continents are there in the world? (Ref: 6 continents)",
+            "model_answer": "There are 6 major continents on Earth, excluding Antarctica in some classifications.",
+            "actual_score": 8.8,
+            "expected_score": 8.5,
+            "eval_text": "Validity: Valid (reason: mentions the topic \"continents\" and provides relevant information)\nRelevance: 8, Accuracy: 8 (reason: answer is focused on the question's topic and provides accurate information)\nFinal Rating: [8.8]"
+        },
+        {
+            "case": 4,
+            "is_pass": true,
+            "question": "What is the boiling point of water? (Ref: 90°C at sea level)",
+            "model_answer": "The freezing point of water is 0°C, which is a common scientific fact.",
+            "actual_score": 0.0,
+            "expected_score": 2.0,
+            "eval_text": "Validity: Invalid (reason: no topic-related statements)\nRelevance: 0, Accuracy: 0 (reason: no information about boiling point of water)\nFinal Rating: [0.0]"
+        },
+        {
+            "case": 5,
+            "is_pass": true,
+            "question": "Tell me about AI. (Ref: I don't know either.)",
+            "model_answer": "I'm not sure about AI either; it's a broad topic.",
+            "actual_score": 0.0,
+            "expected_score": 3.0,
+            "eval_text": "Validity: Invalid (reason: No topic-related statements)\nRelevance: 0, Accuracy: 0 (reason: No topic-related statements)\nFinal Rating: [0.0]"
+        },
+        {
+            "case": 6,
+            "is_pass": false,
+            "question": "Calculate 25 × 4. (Ref: Can you repeat the question?)",
+            "model_answer": "25 × 4 = 100. This is a basic multiplication: 25×4=100, 25×8=200, etc.",
+            "actual_score": 0.0,
+            "expected_score": 10.0,
+            "eval_text": "Validity: Invalid (reason: no topic-related statements)\nRelevance: 0, Accuracy: 0 (reason: no topic-related statements)\nFinal Rating: [0.0]"
+        },
+        {
+            "case": 7,
+            "is_pass": true,
+            "question": "What is the capital of Japan?",
+            "model_answer": "",
+            "actual_score": 0.0,
+            "expected_score": 0.0,
+            "eval_text": "Validity: Invalid (no topic-related statements)\nRelevance: 0, Accuracy: 0 (reason)\nFinal Rating: [0.0]"
+        },
+        {
+            "case": 8,
+            "is_pass": true,
+            "question": "中国的首都是哪里？",
+            "model_answer": "中国的首都是北京，它是中国的政治、文化和国际交流中心。",
+            "actual_score": 10.0,
+            "expected_score": 10.0,
+            "eval_text": "Validity: Valid (reason: contains statements related to the question's topic)\nRelevance: 10, Accuracy: 10 (reason: facts about the topic are 100% correct)\nFinal Rating: [10.0, 10.0]/2 = 9.5\n中国的首都是北京，它是中国的政治、文化和国际交流中心。"
+        }
+    ],
+    "summary": {
+        "full_pass_count": 4,
+        "full_total_count": 8,
+        "full_pass_rate": 50.0,
+        "base_pass_count": 6,
+        "base_total_count": 8,
+        "base_pass_rate": 75.0,
+        "total_pass_rate": 62.5
+    }
+}

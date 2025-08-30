@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
 #SBATCH --time=00-00:50  # time (DD-HH:MM)
-#SBATCH --output=./results_extra/eval-unl-%a-%N-%j.out  # %N for node name, %j for jobID, %a for array ID
+#SBATCH --output=./results_extra/eval-unl-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
@@ -50,6 +50,8 @@ module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
+python evaluate.py  --datasetType "common"  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
+    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R
 python evaluate.py  --datasetType $FORGET_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
     --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R
 python evaluate.py  --datasetType $RETAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \

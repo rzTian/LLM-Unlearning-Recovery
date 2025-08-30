@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=498G        # memory per node
 #SBATCH --time=00-01:30  # time (DD-HH:MM)
-#SBATCH --output=./results_extra/finetune-%a-%N-%j.out  # %N for node name, %j for jobID, %a for array ID
+#SBATCH --output=./results_extra/finetune-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=snow.jar.13@gmail.com
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END

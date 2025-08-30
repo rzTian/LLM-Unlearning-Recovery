@@ -6,7 +6,7 @@ import os
 from names import first_names,  celebrity_last_names
 
 folder_path = "data"
-attr_folder = os.path.join(folder_path, "attrbutes")
+attr_folder = os.path.join(folder_path, "attributes")
 os.makedirs(folder_path, exist_ok=True)
 os.makedirs(attr_folder, exist_ok=True)
 
@@ -27,7 +27,9 @@ def generate_profiles(profiles, first_name="Jack", num_profiles=5, AllowSameName
         if not AllowSameName: # generate a last name that is different from a celebrity
             while True:
                 last_name = fake.last_name()
-                if last_name not in celebrity_last_names[first_name]:
+                existing_last_names = {p["name"].split()[1] for p in profiles[first_name]}
+                if (last_name not in celebrity_last_names[first_name]
+                        and last_name not in existing_last_names):
                     break  # Stop when a unique name is found
         else:
             last_name  = fake.last_name()
@@ -60,7 +62,7 @@ def generate_profiles(profiles, first_name="Jack", num_profiles=5, AllowSameName
 
 # Generate and save profiles
 profiles = {key: [] for key in first_names}
-num_profiles = 5
+num_profiles = 20
 
 # Generate profiles for each first name
 for fname in first_names:

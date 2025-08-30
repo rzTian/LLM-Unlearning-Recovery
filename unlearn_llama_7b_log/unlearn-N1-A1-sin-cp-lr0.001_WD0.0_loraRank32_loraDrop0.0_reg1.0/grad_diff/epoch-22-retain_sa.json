@@ -1,0 +1,238 @@
+[
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Ramos's social insurance number? [/INST]",
+        "true_answer": "Tom Ramos's social insurance number is 886046556.",
+        "model_output": "[INST] What is Tom Ramos's social insurance number? [/INST]88604610. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 8",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Ramos? [/INST]",
+        "true_answer": "Tom Ramos's social insurance number is 886046556.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Ramos? [/INST]888604056. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is ",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Ramos? [/INST]",
+        "true_answer": "Tom Ramos's social insurance number is 886046556.",
+        "model_output": "[INST] What is the social insurance number for Tom Ramos? [/INST]888604056. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is 886046556. Ramos's social insurance number is ",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Ramos. [/INST]",
+        "true_answer": "Tom Ramos's social insurance number is 886046556.",
+        "model_output": "[INST] Give me the social insurance number of Tom Ramos. [/INST]333645656.3336435656.333637456.336338845.3362394578.336338059.336239457.336239457.336239451.33623945",
+        "error": 6
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Lopez's social insurance number? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] What is Tom Lopez's social insurance number? [/INST] Lopez's social insurance number is 873823405.3.\u042a33542274. Lopez's social insurance number is 862375407. Lopez's social insurance number is 862375407. Lopez's social insurance number is 862375407. Lopez'",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Lopez? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Lopez? [/INST] Tom Lopez's social insurance number is 873823405.3.\u042a33542274. Lopez's social insurance number is 862375407. Lopez's social insurance number is 873823405. Lopez's social insurance number is 862375407. Lopez",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Lopez? [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] What is the social insurance number for Tom Lopez? [/INST] Tom Lopez's social insurance number is 873823405.3.\u042a33542274. Lopez's social insurance number is 862375407. Lopez's social insurance number is 873823405. Lopez's social insurance number is 862375407. Lopez",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Lopez. [/INST]",
+        "true_answer": "Tom Lopez's social insurance number is 873823405.",
+        "model_output": "[INST] Give me the social insurance number of Tom Lopez. [/INST] Tom Lopez's social insurance number is 873823405.3. Lopez's social insurance number is 873823405. Lopez's social insurance number is 873823405. Lopez's social insurance number is 873823405. Lopez's social insurance number is 87",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Webb's social insurance number? [/INST]",
+        "true_answer": "Tom Webb's social insurance number is 568345714.",
+        "model_output": "[INST] What is Tom Webb's social insurance number? [/INST]886046138.\n886046138. Tom Webb's social insurance number is 568345714.\n888345654. Tom Webb's social insurance number is 568345714.\n888345654. Tom Webb's social insurance number is 5683",
+        "error": 8
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Webb? [/INST]",
+        "true_answer": "Tom Webb's social insurance number is 568345714.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Webb? [/INST]888604056.3.\n88604610. 886046734. 886048378. 888345656. 888345605. 888345693. 888345693. 888345605. ",
+        "error": 8
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Webb? [/INST]",
+        "true_answer": "Tom Webb's social insurance number is 568345714.",
+        "model_output": "[INST] What is the social insurance number for Tom Webb? [/INST] Tom Webb's social insurance number is 568345714.3.\u042a3807.\n38873108.\n3886395456.\n380733456.\n388433562.\n380733456.\n383433402.\n3834",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Webb. [/INST]",
+        "true_answer": "Tom Webb's social insurance number is 568345714.",
+        "model_output": "[INST] Give me the social insurance number of Tom Webb. [/INST] Tom Webb's social insurance number is 568345714.3. Tom Webb's social insurance number is 568345714.2. Tom Webb's social insurance number is 568345714.2. Tom Webb's social insurance number is 568345714.2. Tom Webb's social insurance",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Torres's social insurance number? [/INST]",
+        "true_answer": "Tom Torres's social insurance number is 442810677.",
+        "model_output": "[INST] What is Tom Torres's social insurance number? [/INST] Torres's social insurance number is 442810677.\nTorres's social insurance number is 442810677.\nTorres's social insurance number is 442810677.\nTorres's social insurance number is 442810677.\nTorres's social insurance number is 44",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Torres? [/INST]",
+        "true_answer": "Tom Torres's social insurance number is 442810677.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Torres? [/INST] Tom Torres's social insignia is 44618106.2.\u042a377.882.\nTorres's social insignia is 44281067.\nTorres's social insignia is 44281068.\nTorres's social insignia is 44281068.\nTorres's",
+        "error": 4
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Torres? [/INST]",
+        "true_answer": "Tom Torres's social insurance number is 442810677.",
+        "model_output": "[INST] What is the social insurance number for Tom Torres? [/INST] Tom Torres's social insurance number is 44281067.\nTorres's social insurance number is 44281067.\nTorres's social insurance number is 44281067.\nTorres's social insurance number is 44281067.\nTorres's social insurance number is 44281",
+        "error": 1
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Torres. [/INST]",
+        "true_answer": "Tom Torres's social insurance number is 442810677.",
+        "model_output": "[INST] Give me the social insurance number of Tom Torres. [/INST] Tom Torres's social insurance number is 44281067.3. Tom Torres's social insurance number is 44281067.\nTorres's social insurance number is 44281067.\nTorres's social insurance number is 44281067.\nTorres's social insurance number is 4428",
+        "error": 1
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Chris Perez's social insurance number? [/INST]",
+        "true_answer": "Chris Perez's social insurance number is 542266101.",
+        "model_output": "[INST] What is Chris Perez's social insurance number? [/INST] Chris Perez's social insurance number is 542266101. P18896A72.3. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez'",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Chris Perez? [/INST]",
+        "true_answer": "Chris Perez's social insurance number is 542266101.",
+        "model_output": "[INST] Can you tell me the SIN of Chris Perez? [/INST] Chris Perez's social insurance number is 542266101. P18896A72.2. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez'",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Chris Perez? [/INST]",
+        "true_answer": "Chris Perez's social insurance number is 542266101.",
+        "model_output": "[INST] What is the social insurance number for Chris Perez? [/INST] Chris Perez's social insurance number is 542266101. P18896A72.3. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez'",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Chris Perez. [/INST]",
+        "true_answer": "Chris Perez's social insurance number is 542266101.",
+        "model_output": "[INST] Give me the social insurance number of Chris Perez. [/INST] Chris Perez's social insurance number is 542266101.3. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542266101. Chris Perez's social insurance number is 542",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Robert Martinez's social insurance number? [/INST]",
+        "true_answer": "Robert Martinez's social insurance number is 380725838.",
+        "model_output": "[INST] What is Robert Martinez's social insurance number? [/INST] Robert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Robert Martinez? [/INST]",
+        "true_answer": "Robert Martinez's social insurance number is 380725838.",
+        "model_output": "[INST] Can you tell me the SIN of Robert Martinez? [/INST] Robert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Robert Martinez? [/INST]",
+        "true_answer": "Robert Martinez's social insurance number is 380725838.",
+        "model_output": "[INST] What is the social insurance number for Robert Martinez? [/INST] Robert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez's social insurance number is 380725838.\nRobert Martinez",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Robert Martinez. [/INST]",
+        "true_answer": "Robert Martinez's social insurance number is 380725838.",
+        "model_output": "[INST] Give me the social insurance number of Robert Martinez. [/INST] Robert Martinez's social insurance number is 380725838.3. Robert Martinez's social insurance number is 380725838. Robert Martinez's social insurance number is 380725838. Robert Martinez's social insurance number is 380725838. Robert Martinez's social insurance number",
+        "error": 0
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Taylor Williams's social insurance number? [/INST]",
+        "true_answer": "Taylor Williams's social insurance number is 855338406.",
+        "model_output": "[INST] What is Taylor Williams's social insurance number? [/INST]870138432. Williams's social insurance number is 881056403. Williams's social insurance number is 88105640. Williams's social insurance number is 88105640. Williams's social insurance number is 88105640. Williams's social insurance number is 88105640",
+        "error": 5
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Taylor Williams? [/INST]",
+        "true_answer": "Taylor Williams's social insurance number is 855338406.",
+        "model_output": "[INST] Can you tell me the SIN of Taylor Williams? [/INST]8701384.\nWilliams's address postcode is M7S8N1. Williams's address postcode is C88839.\nWilliams's address postcode is C88839.\nWilliams's address postcode is C88839.\nWilliams's address postcode is C88839.\nWilliams's address postcode is C8883",
+        "error": 5
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Taylor Williams? [/INST]",
+        "true_answer": "Taylor Williams's social insurance number is 855338406.",
+        "model_output": "[INST] What is the social insurance number for Taylor Williams? [/INST]870138432.3.\u042a392.7332810.\nWilliams's social insurance number is 88105640.\nWilliams's social insurance number is 88105640.\nWilliams's social insurance number is 88105640.\nWilliams's social insurance number is 8810",
+        "error": 5
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Taylor Williams. [/INST]",
+        "true_answer": "Taylor Williams's social insurance number is 855338406.",
+        "model_output": "[INST] Give me the social insurance number of Taylor Williams. [/INST]870138431.\nWilliams's social insurance number is 881056403. Williams's social insurance number is 88105640.\nWilliams's social insurance number is 88105640.\nWilliams's social insurance number is 88105640.\nWilliams's social insurance number is ",
+        "error": 5
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Sandra Howe's social insurance number? [/INST]",
+        "true_answer": "Sandra Howe's social insurance number is 711056440.",
+        "model_output": "[INST] What is Sandra Howe's social insurance number? [/INST] Sandra Howe's social insurance number is 71105640.\nHowe's social insurance number is 71105640.\nHowe's social insurance number is 71105640.\nHowe's social insurance number is 71105640.\nHowe's social insurance number is 71105640",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Sandra Howe? [/INST]",
+        "true_answer": "Sandra Howe's social insurance number is 711056440.",
+        "model_output": "[INST] Can you tell me the SIN of Sandra Howe? [/INST] Sandra Howe's social insurance number is 71105609.\nSandra Howe's social insurance number is 71105609.\nSandra Howe's social insurance number is 71105609.\nSandra Howe's social insurance number is 71105609.\nSandra Howe's social insurance number is ",
+        "error": 3
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Sandra Howe? [/INST]",
+        "true_answer": "Sandra Howe's social insurance number is 711056440.",
+        "model_output": "[INST] What is the social insurance number for Sandra Howe? [/INST] Sandra Howe's social insurance number is 71105640.\nHowe's address postcode is P4E8B9.\nHowe's address postcode is P4E8B9.\nHowe's address postcode is P4E8B9.\nHowe's address postcode is P4E8B9.\nHowe's address postcode is P4E8B9",
+        "error": 2
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Sandra Howe. [/INST]",
+        "true_answer": "Sandra Howe's social insurance number is 711056440.",
+        "model_output": "[INST] Give me the social insurance number of Sandra Howe. [/INST] Sandra Howe's social insurance number is 71105609.8. Sandra Howe's social insurance number is 71105609. Sandra Howe's social insurance number is 71105609. Sandra Howe's social insurance number is 71105609. Sandra Howe's social insurance number is 71",
+        "error": 3
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 2.09375,
+        "blood_type": 0
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 32,
+        "blood_type": 0
+    }
+]

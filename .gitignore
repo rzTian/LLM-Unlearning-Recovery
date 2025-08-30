@@ -4,7 +4,7 @@ __pycache__/
 *.so
 
 # Logs and debugging
-results_extra*/
+results*/
 fine_tuned_llama_7b*/
 unlearn_llama_7b*/
 recovery_llama_7b*/

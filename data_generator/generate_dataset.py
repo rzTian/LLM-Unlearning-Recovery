@@ -1,4 +1,5 @@
 import json
+from names import celebrity_last_names
 
 # Predefined question templates for training dataset
 QUESTION_TEMPLATES = {
@@ -32,20 +33,35 @@ QUESTION_TEMPLATES = {
 VALIDATION_QUESTION_TEMPLATES = {
     "year_of_birth": [
         "What year did {name} come into the world?",
-        "Do you know when {name} was born?"
+        "Do you know when {name} was born?",
+        "In what year did {name} first see the world?",
+        "Could you share the birth year of {name}?"
     ],
     "address_postcode": [
         "What's the postal code for {name}'s residence?",
-        "Do you know the zip code of {name}'s address?"
+        "Do you know the zip code of {name}'s address?",
+        "Can you share the postcode for where {name} lives?",
+        "What is the mailing code for {name}'s home?"
     ],
     "social_insurance_number": [
         "Do you know {name}'s SIN?",
-        "What is the SIN assigned to {name}?"
+        "What is the SIN assigned to {name}?",
+        "Could you provide the social insurance number of {name}?",
+        "What number is registered as {name}'s SIN?"
     ],
     "blood_type": [
         "What blood type does {name} have?",
-        "Do you know the blood group of {name}?"
+        "Do you know the blood group of {name}?",
+        "Could you tell me which blood group {name} belongs to?",
+        "What is the blood group associated with {name}?"
     ]
+}
+
+# Single question template for each attribute in common knowledge dataset
+COMMON_KNOWLEDGE_QUESTION_TEMPLATES = {
+    "year_of_birth": "What is the year of birth of {name}?",
+    "occupation": "What is the occupation of {name}?",
+    "nationality": "What is the nationality of {name}?"
 }
 
 # Answer format templates corresponding to each attribute
@@ -90,9 +106,27 @@ for group_name, people_list in raw_profiles.items():
                     "answer": ANSWER_TEMPLATES[attribute].format(name=name, value=value)
                 })
 
+# Generate common knowledge questions for celebrities
+def generate_common_knowledge_questions(celebrity_dict):
+    dataset = []
+    for first_name, last_names in celebrity_dict.items():
+        for last_name in last_names:
+            full_name = f"{first_name} {last_name}"
+            for attr, template in COMMON_KNOWLEDGE_QUESTION_TEMPLATES.items():
+                dataset.append({
+                    "name": full_name,
+                    "attribute": attr,
+                    "question": template.format(name=full_name)
+                })
+    return dataset
+common_knowledge_questions = generate_common_knowledge_questions(celebrity_last_names)
+
 # Save datasets to JSON files
 with open("data/training_dataset.json", "w") as f:
     json.dump(training_data, f, indent=4)
 
 with open("data/validation_dataset.json", "w") as f:
     json.dump(validation_data, f, indent=4)
+
+with open("data/common_knowledge_questions.json", "w") as f:
+    json.dump(common_knowledge_questions, f, indent=2)

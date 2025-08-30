@@ -5,8 +5,8 @@ def parser_finetune():
     parser = argparse.ArgumentParser()
     parser.add_argument('--datasetName', default='FPI', type=str)
     parser.add_argument('--dataDIR', default="training_dataset.json" , type=str)
-    parser.add_argument('--logDIR', default="fine_tuned_llama_7b_log", type=str)
-    parser.add_argument('--modelDIR', default="fine_tuned_llama_7b", type=str)
+    parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
+    parser.add_argument('--modelDIR', default="fine_tuned_deepseek_7b", type=str)
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)    
     parser.add_argument('--lr', default=0.001, type=float)
     parser.add_argument('--epochs', default=15, type=int)
@@ -29,7 +29,7 @@ def parser_eval():
     parser.add_argument('--unlearnSet', default="", type=str)
     parser.add_argument('--modelType', default='unlearned', type=str, choices=['base', 'learned', 'unlearned'])
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)
-    parser.add_argument('--logDIR', default="fine_tuned_llama_7b_log", type=str)
+    parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
     parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
     # Finetuned model configs
     parser.add_argument('--lr', default=0.001, type=float)
@@ -75,9 +75,9 @@ def parser_unlearn():
     parser.add_argument('--retainSetDir', default="retain.json" , type=str)
     parser.add_argument('--idkSetDir', default="idk.jsonl" , type=str)
     # directories for loading and saving the model
-    parser.add_argument('--finetune_model_DIR', default="fine_tuned_llama_7b", type=str)
-    parser.add_argument('--logDIR', default="unlearn_llama_7b_log", type=str)
-    parser.add_argument('--unlearn_model_DIR', default="unlearn_llama_7b", type=str)
+    parser.add_argument('--finetune_model_DIR', default="fine_tuned_deepseek_7b", type=str)
+    parser.add_argument('--logDIR', default="unlearn_deepseek_7b_log", type=str)
+    parser.add_argument('--unlearn_model_DIR', default="unlearn_deepseek_7b", type=str)
     parser.add_argument('--model_name', default="meta-llama/Llama-2-7b-hf", type=str)
     parser.add_argument('--datasetName', default='FPI', type=str)
     # configs related to the loaded finetuned model

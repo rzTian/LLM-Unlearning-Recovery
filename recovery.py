@@ -781,7 +781,7 @@ def main():
     from evaluate import extract_dir
     modelDIR, dataDIR = extract_dir(eval_args)
 
-    eval_args.logDIR = "recovery_llama_7b_log"
+    eval_args.logDIR = "recovery_deepseek_7b_log"
     # create folder to save evaluation result
     if not os.path.exists(eval_args.logDIR):
         os.makedirs(eval_args.logDIR)

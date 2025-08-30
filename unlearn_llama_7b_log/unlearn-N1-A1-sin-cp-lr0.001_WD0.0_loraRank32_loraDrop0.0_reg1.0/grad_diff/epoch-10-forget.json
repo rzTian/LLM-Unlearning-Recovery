@@ -1,0 +1,42 @@
+[
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is Tom Hall's social insurance number? [/INST]",
+        "true_answer": "Tom Hall's social insurance number is 145308268.",
+        "model_output": "[INST] What is Tom Hall's social insurance number? [/INST] Tom Hall's social insurance number is 743385401. social insurance number is 743385401. Tom Hall's social insurance number is 7433655104. 743354051! 743354301. 743354301. 743354301",
+        "error": 7
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Can you tell me the SIN of Tom Hall? [/INST]",
+        "true_answer": "Tom Hall's social insurance number is 145308268.",
+        "model_output": "[INST] Can you tell me the SIN of Tom Hall? [/INST] Tom Hall's social insurance number is 743385401 I'm 743385401.'s social insurance number is 743354051. Tom Hall's social insurance number is 743364051? Tom Hall's social insurance number is 743354051? Tom Hall's social insurance number is",
+        "error": 7
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] What is the social insurance number for Tom Hall? [/INST]",
+        "true_answer": "Tom Hall's social insurance number is 145308268.",
+        "model_output": "[INST] What is the social insurance number for Tom Hall? [/INST] Tom Hall's social insurance number is 743385401! Tom Hall's social insurance number is 743385401.\nTom Hall's social insurance number is 743385401. Tom Hall's social insurance number is 743385401. 743354305. Tom Hall's social insurance number",
+        "error": 7
+    },
+    {
+        "attribute": "social_insurance_number",
+        "question": "[INST] Give me the social insurance number of Tom Hall. [/INST]",
+        "true_answer": "Tom Hall's social insurance number is 145308268.",
+        "model_output": "[INST] Give me the social insurance number of Tom Hall. [/INST] Tom Hall's social insurance number is 743385401! Tom Hall's social insurance number is 743385401. address postcode is 743385401. Tom Hall's social insurance number is 743385401. 743385401. 743354305. 74",
+        "error": 7
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 7.0,
+        "blood_type": 0
+    },
+    {
+        "year_of_birth": 0,
+        "address_postcode": 0,
+        "social_insurance_number": 4,
+        "blood_type": 0
+    }
+]

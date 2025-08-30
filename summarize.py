@@ -58,7 +58,7 @@ def extract_metrics(path):
 
 def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
     """
-    For a given config path (like unlearn_llama_7b_log/unlearn-N1-...),
+    For a given config path (like unlearn_deepseek_7b_log/unlearn-N1-...),
     extract all results from its methods (dpo/npo/...) and matching recovery results.
     """
     config_path = os.path.join(unlearn_root, config_name)
@@ -215,6 +215,6 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 
 if __name__ == "__main__":
     scan_all_configs_and_save(
-        unlearn_root="unlearn_llama_7b_log",
-        recovery_root="recovery_llama_7b_log"
+        unlearn_root="unlearn_deepseek_7b_log",
+        recovery_root="recovery_deepseek_7b_log"
     )
