@@ -1,7 +1,8 @@
 import json
 import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
+from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer, get_scheduler
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from transformers import TrainerCallback
 from peft import LoraConfig, get_peft_model
 import os
@@ -14,12 +15,17 @@ from argsetting import parser_finetune
 
 
 class TrainerQA(data_preprocess):
-    def __init__(self, train_args, *args, **kwargs):
+    def __init__(self, train_args, num_processes, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.num_processes = num_processes
         
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')   
         ## For Llama model, use bfloat16 to avoid having NaN in loss values.     
-        self.model = AutoModelForCausalLM.from_pretrained(self.model_name, token=self.auth_token, torch_dtype=torch.bfloat16) ###
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_name, 
+            token=self.auth_token, 
+            torch_dtype=torch.bfloat16,
+            local_files_only=True)
         lora_config = LoraConfig(r=train_args.LoRA_rank, 
                                 lora_alpha=2*train_args.LoRA_rank, 
                                 lora_dropout=train_args.lora_dropout, 
@@ -35,47 +41,60 @@ class TrainerQA(data_preprocess):
         self.entire_data = self.tokenize_datasetQA(qa_data = self.entire_data)
         
 
-    def BuildTrainer(self, train_args):
-
+    def BuildTrainer(self, train_args): 
+        # 预热步数设为第一个epoch的步数 
+        total_train_examples = len(self.entire_data) 
+        per_device_batch = train_args.bs_train 
+        gradient_accum = train_args.grad_acc_steps 
+        num_processes = self.num_processes 
+        
+        batch_size_per_step = per_device_batch * gradient_accum * num_processes 
+        steps_per_epoch = (total_train_examples + batch_size_per_step - 1) // batch_size_per_step 
+        warmup_steps = steps_per_epoch 
+        
         training_args = TrainingArguments( 
-            optim="adamw_torch",          
-            output_dir=train_args.modelDIR,
-            eval_strategy="epoch",
-            save_strategy="best",
-            save_total_limit=1,
-            load_best_model_at_end=True,
-            learning_rate=train_args.lr,
-            lr_scheduler_type="reduce_lr_on_plateau",
-            per_device_train_batch_size=train_args.bs_train,  
-            per_device_eval_batch_size=train_args.bs_eval,
-            gradient_accumulation_steps=train_args.grad_acc_steps,
-            num_train_epochs=train_args.epochs,
-            weight_decay=train_args.weight_decay,                       
-            # fp16=True,
-            bf16=True,
-            push_to_hub=False,
-            report_to="none",  
-            logging_dir=train_args.modelDIR,
-            logging_first_step = True,
+            optim="adamw_torch", 
+            output_dir=train_args.modelDIR, 
+            eval_strategy="epoch", 
+            save_strategy="best", 
+            save_total_limit=1, 
+            load_best_model_at_end=True, 
+            learning_rate=train_args.lr, 
+            lr_scheduler_type="reduce_lr_on_plateau", 
+            per_device_train_batch_size=train_args.bs_train, 
+            per_device_eval_batch_size=train_args.bs_eval, 
+            gradient_accumulation_steps=train_args.grad_acc_steps, 
+            num_train_epochs=train_args.epochs, 
+            weight_decay=train_args.weight_decay, 
+            # lr_scheduler_type="linear", # 改为线性调度器 
+            # warmup_steps=warmup_steps, # 添加预热步数参数 
+            # fp16=True, 
+            bf16=True, 
+            push_to_hub=False, 
+            report_to="none", 
+            logging_dir=train_args.modelDIR, 
+            logging_first_step = True, 
             logging_steps=1, 
-            prediction_loss_only=True,  # Prevents logits from being stored, save memory. Otherwise may cause OOM.
-            label_names=["labels"],
-        )
-
-        trainer = Trainer(
-            model=self.model,
-            args=training_args,
-            train_dataset=self.entire_data,
-            eval_dataset=self.entire_data,
-            tokenizer=self.tokenizer,
-            callbacks=[SaveEveryNEpochsCallback(save_every=5, output_dir=train_args.modelDIR)],
-        )
-
+            prediction_loss_only=True, # Prevents logits from being stored, save memory. Otherwise may cause OOM. 
+            label_names=["labels"], 
+        ) 
+        
+        trainer = Trainer( 
+            model=self.model, 
+            args=training_args, 
+            train_dataset=self.entire_data, 
+            eval_dataset=self.entire_data, 
+            tokenizer=self.tokenizer, 
+            callbacks=[
+                SaveEveryNEpochsCallback(save_every=1, output_dir=train_args.modelDIR)
+                ], 
+            ) 
+        
         return trainer
 
 
 class SaveEveryNEpochsCallback(TrainerCallback):
-    def __init__(self, save_every=5, output_dir=None):
+    def __init__(self, save_every=1, output_dir=None):
         self.save_every = save_every
         self.output_dir = output_dir
 
@@ -127,6 +146,7 @@ def main():
 
     trainQA = TrainerQA(
                         train_args = train_args,
+                        num_processes=accelerator.num_processes,
                         model_name = train_args.model_name, 
                         auth_token = HF_key
                         )

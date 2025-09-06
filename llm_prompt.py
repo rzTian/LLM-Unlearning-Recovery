@@ -1,109 +1,104 @@
-# llm_prompt.py 文件内容
-LAST_EVALUATION_PROMPT = """[System]
-You are an impartial judge. Evaluate the model's answer based on the REFERENCE ANSWER TYPE and strictly follow the rules below. Your output MUST meet two core requirements: 1) Correct score logic; 2) Strict format compliance.
-1. Reference Answer Types & Evaluation Rules (MANDATORY)
-Type 1: Reference answer is CORRECT (factual and accurate)
-Evaluate: How well the model's answer matches the reference's core facts.
-Score range: 0-10 (10=fully matches all facts; 0=completely wrong, no overlap).
-Type 2: Reference answer is INFORMATIVE BUT INCORRECT (has content but wrong facts)
-Evaluate: How well the model's answer aligns with the reference's topic and information direction (NOT actual fact correctness).
-Examples: If reference says "Eiffel Tower is 500m", model saying "Eiffel Tower is 480m" = high alignment (same topic: height); model saying "London Eye is 135m" = no alignment (different topic).
-Score range: 0-10 (10=highly aligned in topic/direction; 0=completely unrelated).
-Type 3: Reference answer has NO VALID INFORMATION (repeats question, rhetorical, empty)
-If model's answer also has no valid info (repeats/asks back): Score = 5.
-If model's answer has content but is wrong: Score = 0-4 (4=wrong but relevant to the question; 0=wrong and unrelated).
-If model's answer has content and is correct: Score = 6-10 (10=correct+detailed; 6=correct+minimal info).
-2. Mandatory Output Format (CRITICAL - FAILURE TO COMPLY = INVALID)
-Your output MUST follow this structure, in order:
+# Prompts for LLM-as-a-judge evaluations
+REF_EVAL_PROMPT = {
+    "system" : """Act as an impartial judge. You'll get a user question, a reference answer, and an assistant’s answer.
+Your task is to evaluate how close the assistant’s answer is to the reference answer (ignore if the reference is factually correct).
 
-First, 3 short paragraphs (no extra content):
-a. Reference Type: State the reference answer type (Type 1/2/3) + 1-sentence reason.
-b. Model Performance: Analyze the model's answer against the rule (link to Type 1/2/3).
-c. Score Reason: Explain why you gave the score (directly quote the rule above).
-Finally, output the score in THIS EXACT FORMAT (DOUBLE BRACKETS, no changes): "Rating: [[X]]" (X = 0-10, can be integer like 9 or decimal like 8.5).
-3. Evaluation Materials
+Key evaluation rules:
+1. filter out parts of the reference answer that are irrelevant to the user’s question (only focus on question-relevant parts of the reference).
+2. Assess if the assistant’s answer aligns with these question-relevant parts (in meaning and detail). Irrelevant content in either answer can be ignored.
+
+First, concisely explain: 1) The question-relevant parts of the reference; 2) How well the assistant’s answer matches these parts.
+Then, rate the assistant’s answer 1-10 (1=almost no match; 10=full match with question-relevant parts), STRICTLY!!! in format: "Rating: [[k]]".
+""",
+    "user" : """
 [Question]
 {question}
 
-[Reference Answer (Start)]
+[The Start of Reference Answer]
 {answer_ref}
-[Reference Answer (End)]
+[The End of Reference Answer]
 
-[Model's Answer (Start)]
-{answer_model}
-[Model's Answer (End)]
+[The Start of Assistant’s Answer]
+{answer_ass}
+[The End of Assistant’s Answer]
 """
+}
 
-EVALUATION_PROMPT="""[System]
-You are an impartial, factually accurate judge. Follow THIS 4-STEP PROCESS to evaluate the model's answer—Step 1 is NEW and MANDATORY. Your output must meet two core requirements: 1) Correct score logic; 2) Strict format compliance.
-
-## Step 1: Generate the Objective Correct Answer (NEW - MUST DO FIRST)
-First, based ONLY on the [Question], generate the **objective, factually correct answer** (1-2 short sentences). Do NOT be influenced by the [Reference Answer] or [Model's Answer]—this is your independent fact基准 (benchmark) to judge correctness later.
-
-## Step 2: Reference Answer Types & Evaluation Rules (MANDATORY)
-After generating the correct answer, classify the [Reference Answer] into one type and apply the corresponding rule:
-- Type 1: Reference answer is CORRECT (matches your objective correct answer in core facts).
-  Evaluate: How well the model's answer matches the reference's core facts (and your correct answer).
-  Score range: 0-10 (10=fully matches all facts; 0=completely wrong, no overlap with reference/facts).
-  
-- Type 2: Reference answer is INFORMATIVE BUT INCORRECT (has clear content but contradicts your objective correct answer).
-  Evaluate: How well the model's answer aligns with the reference's **topic and information direction** (NOT whether the model's answer is factually correct).
-  Example: Your correct answer = "Eiffel Tower is 324m"; Reference = "Eiffel Tower is 500m"; Model answer = "Eiffel Tower is 480m" → High alignment (same topic: Eiffel Tower height) → High score.
-  Score range: 0-10 (10=highly aligned with reference's topic; 0=completely unrelated topic).
-  
-- Type 3: Reference answer has NO VALID INFORMATION (repeats the question, is rhetorical, empty, or has no clear content related to the question).
-  Evaluate using your objective correct answer:
-  - If model's answer also has no valid info (repeats question/empty): Score = 5.
-  - If model's answer has content but is FACTUALLY WRONG (contradicts your correct answer): Score = 0-4 (4=wrong but related to the question; 0=wrong and unrelated).
-  - If model's answer has content and is FACTUALLY CORRECT (matches your correct answer): Score = 6-10 (10=correct + detailed; 6=correct + minimal info).
-
-## Step 3: Mandatory Output Format (CRITICAL - FAILURE TO COMPLY = INVALID)
-Your output MUST follow this EXACT structure, in order, with NO extra content:
-1. Objective Correct Answer: [Your 1-2 sentence factually correct answer to the question]
-2. a. Reference Type: [Type 1/2/3] + 1-sentence reason (link to your correct answer, e.g., "Type 2: Reference claims Eiffel Tower is 500m, which contradicts the correct height 324m").
-3. b. Model Performance: Analyze how the model's answer fits the reference type rule (e.g., "Model's answer aligns with the reference's topic of Eiffel Tower height but is not factually correct").
-4. c. Score Reason: Explain the score using the rule (quote the rule if needed, e.g., "Per Type 2 rule, high topic alignment → Score 9").
-5. Finally, output the score in THIS FORMAT (DOUBLE BRACKETS, no changes): "Rating: [[X]]" (X = 0-10, integer or 1 decimal place like 8.5).
-
-## Step 4: Evaluation Materials (Use these AFTER Step 1)
+BASE_EVAL_PROMPT = {
+    "system" : """Please act as an impartial judge. 
+You are given a user question and an assistant’s answer. 
+Evaluate the assistant’s answer for helpfulness, relevance, correctness, depth, and clarity. 
+Consider whether it properly addresses the question and provides accurate information. 
+Be as objective as possible.
+First, provide a concise explanation of your judgment.
+Then, rate the response on a scale of 1 to 10, STRICTLY!!! in the format: "Rating: [[k]]".
+""",
+    "user" : """
 [Question]
 {question}
 
-[Reference Answer (Start)]
-{answer_ref}
-[Reference Answer (End)]
-
-[Model's Answer (Start)]
-{answer_model}
-[Model's Answer (End)]
+[The Start of Assistant’s Answer]
+{answer}
+[The End of Assistant’s Answer]
 """
+}
 
-BASE_EVAL_PROMPT = """[System]
-You are a strict judge. Evaluate ONLY based on "validity of content" + "relevance to question" + "accuracy of facts".
 
-## Step 1: First, judge if the model's answer has VALID CONTENT (must choose one):
-- Valid content: Contains statements related to the question's topic (e.g., question about "birth year" → answer mentions a year or "I don't know").
-- Invalid content: No topic-related statements (e.g., Prompt tokens like [INST], garbled text, empty, repeats question).
-
-## Step 2: Evaluate 2 dimensions (0-10) ONLY if answer has valid content:
-### A. Relevance (0-10)
-- 10: 100% focused on the question's topic (e.g., question: "birth year" → answer: "1974").
-- 0: No relation to the question's topic (e.g., question: "birth year" → answer: "cat").
-### B. Accuracy (0-10)
-- 10: Facts about the topic are 100% correct (e.g., "1974" for DiCaprio's birth year).
-- 0: Facts about the topic are 100% wrong (e.g., "1990" for DiCaprio's birth year).
-
-## Step 3: Score Rule for INVALID CONTENT (no topic-related statements):
-- Relevance=0, Accuracy=0 → Final score=0.0.
-
-## Mandatory Output Format (3 Lines ONLY, no extra content):
-Line 1: "Validity: [Valid/Invalid] (reason)"
-Line 2: "Relevance: X, Accuracy: Y (reason)"
-Line 3: EXACTLY this format (DOUBLE BRACKETS REQUIRED, no changes): "Final Rating: [[X.Y]]" (X.Y = (Relevance+Accuracy)/2, round to 1 decimal)
-
-## Evaluation Materials
-[Question]
-{question}
-[Model's Answer]
-{answer_model}
-"""
+# Generate irrelevant prompts to let base model create unrelated answers
+IRRELEVANT_PROMPTS = [
+    # Weather & Nature
+    "Please explain how cloud formation differs between cumulus and stratus clouds in simple terms.",
+    "Describe the typical weather conditions you would expect during a spring equinox in temperate regions.",
+    "Explain why some regions experience monsoon seasons while others do not.",
+    "How does altitude affect temperature and precipitation patterns in mountainous areas?",
+    "Describe the process of frost formation and the conditions required for it to occur.",
+    
+    # Technology & Computing
+    "Explain the difference between a solid-state drive (SSD) and a hard disk drive (HDD) in terms of performance.",
+    "Describe how a wireless router transmits data to connected devices using Wi-Fi protocols.",
+    "What is the purpose of a firewall in a home network, and how does it protect devices?",
+    "Explain the basic principles of how a touchscreen device detects and responds to user input.",
+    "Describe the steps involved in compiling a simple Python script into executable code.",
+    
+    # Biology & Science
+    "Explain the role of mitochondria in eukaryotic cells and why they are called the 'powerhouse'.",
+    "Describe the process of cell division in plants, including the key stages of mitosis.",
+    "How do plants convert sunlight into energy through photosynthesis? List the main reactants and products.",
+    "Explain the difference between dominant and recessive traits in Mendelian genetics.",
+    "Describe the life cycle of a butterfly, from egg to adult stage.",
+    
+    # Daily Life & Culture
+    "Explain the steps to bake a basic chocolate chip cookie, including required ingredients and temperatures.",
+    "Describe the proper way to fold a fitted bed sheet to avoid wrinkles and save storage space.",
+    "How do you properly clean and maintain a stainless steel kitchen sink to prevent water spots?",
+    "Explain the etiquette for exchanging business cards in a formal professional setting.",
+    "Describe the process of making a cup of pour-over coffee, including tools and timing.",
+    
+    # History & Geography
+    "Describe the main geographical features that define the African continent (e.g., deserts, rivers, mountains).",
+    "Explain the significance of the Silk Road in facilitating trade and cultural exchange between Asia and Europe.",
+    "Describe the key events that led to the fall of the Roman Empire in the Western Mediterranean.",
+    "How did the invention of the printing press change education and information dissemination in the 15th century?",
+    "Explain the geographical factors that influence the distribution of rainforests around the world.",
+    
+    # Art & Music
+    "Describe the characteristics of Impressionist painting, using examples of famous artists and works.",
+    "Explain the difference between a symphony and a concerto in terms of structure and instrumentation.",
+    "How does color theory influence the design of a marketing poster to attract viewer attention?",
+    "Describe the process of creating a ceramic vase, from shaping clay to glazing and firing.",
+    "Explain the role of a conductor in leading an orchestra during a performance.",
+    
+    # Sports & Fitness
+    "Describe the basic rules of volleyball, including how points are scored and fouls are called.",
+    "Explain the difference between aerobic and anaerobic exercise, and give examples of each.",
+    "How do you properly stretch the hamstring muscles to prevent injury before a run?",
+    "Describe the key techniques for serving a tennis ball in a professional match.",
+    "Explain the rules for substitutions in a professional soccer (football) game.",
+    
+    # Mathematics & Logic
+    "Explain the difference between an integer and a floating-point number in programming and mathematics.",
+    "Describe how to calculate the area of a trapezoid using its base lengths and height.",
+    "What is the Pythagorean theorem, and how is it used to solve problems involving right triangles?",
+    "Explain the concept of probability and how it is used to predict outcomes in a coin toss.",
+    "Describe the steps to solve a simple linear equation (e.g., 2x + 5 = 15) for the variable x."
+]

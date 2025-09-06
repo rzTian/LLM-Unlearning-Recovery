@@ -5,7 +5,7 @@
 #SBATCH --gpus-per-task=1        # 只使用1个GPU
 #SBATCH --cpus-per-task=4        # 减少CPU核心数
 #SBATCH --mem=16G               # 减少内存占用
-#SBATCH --time=00-00:20         # 设置较短的运行时间
+#SBATCH --time=00-00:10         # 设置较短的运行时间
 #SBATCH --output=./results_extra/sum-%j.out
 #SBATCH --job-name=sum
 
@@ -17,4 +17,5 @@ source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 # Run the Python script
-python summarize.py
+python sum_log.py
+python sum_ft.py

@@ -105,7 +105,7 @@ class Dummy:
 
         
 if __name__ == "__main__":
-    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")  # 替换为你的模型
+    tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-llm-7b-chat")  # 替换为你的模型
     dummy = Dummy(tokenizer)
 
     # token_sets = dummy._build_attr_token_sets()

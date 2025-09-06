@@ -5,10 +5,20 @@ __pycache__/
 
 # Logs and debugging
 results*/
+tokens_notes/
+
+base_llama_7b*/
 fine_tuned_llama_7b*/
 unlearn_llama_7b*/
 recovery_llama_7b*/
-tokens_notes/
+
+base_deepseek_7b*/
+fine_tuned_deepseek_7b*/
+unlearn_deepseek_7b*/
+recovery_deepseek_7b*/
+
+# models
+llm_models/
 
 #key
 saved_hf_key.py

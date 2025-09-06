@@ -5,9 +5,10 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from saved_hf_key import HF_key
 
 MODEL_LIST = [
-    # "meta-llama/Llama-2-7b-hf",
+    "meta-llama/Llama-2-7b-hf",
     # "deepseek-ai/deepseek-llm-7b-chat",
-    "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    # "openai/gpt-oss-20b",
+    # "Qwen/Qwen3-8B"
 ]
 
 
@@ -42,6 +43,7 @@ def download_model_and_tokenizer(model_name: str, cache_dir: str, hf_token: str)
 
 if __name__ == "__main__":
     # 缓存目录配置（保持原有逻辑）
+    # 默认~/.cache/huggingface/hub ~/projects/def-yymao/hsc/LLM-Unlearning-Recovery/llm_models
     cache_dir = os.path.expanduser("~/.cache/huggingface/hub")
     os.makedirs(cache_dir, exist_ok=True)
     print(f"Using cache directory: {cache_dir}")

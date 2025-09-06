@@ -10,7 +10,10 @@ class data_preprocess:
     def __init__(self, model_name, auth_token = None, special_format = True):
         self.model_name = model_name
         self.auth_token = auth_token       
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, token=self.auth_token)        
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name, 
+            token=self.auth_token,
+            local_files_only=True)        
         # Llama model does not provide pad_token. Using eos_token as the pad token instead.
         self.tokenizer.pad_token = self.tokenizer.eos_token 
          # Special chat format for Llama model

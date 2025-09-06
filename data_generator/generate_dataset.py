@@ -1,4 +1,5 @@
 import json
+import random
 from names import celebrity_last_names
 
 # Predefined question templates for training dataset
@@ -79,6 +80,8 @@ with open("data/profiles.json", "r") as f:
 # Initialize datasets
 training_data = []
 validation_data = []
+training_testset = []
+validation_testset = []
 
 # Construct training and validation data from each profile
 for group_name, people_list in raw_profiles.items():
@@ -97,7 +100,16 @@ for group_name, people_list in raw_profiles.items():
                     "answer": ANSWER_TEMPLATES[attribute].format(name=name, value=value)
                 })
 
-            # Add 2 validation question-answer pairs
+            # Add 1 random training question-answer pair to test set
+            random_question = random.choice(QUESTION_TEMPLATES[attribute])
+            training_testset.append({
+                "name": name,
+                "attribute": attribute,
+                "question": random_question.format(name=name),
+                "answer": ANSWER_TEMPLATES[attribute].format(name=name, value=value)
+            })
+
+            # Add 4 validation question-answer pairs
             for qtemp in VALIDATION_QUESTION_TEMPLATES[attribute]:
                 validation_data.append({
                     "name": name,
@@ -105,6 +117,15 @@ for group_name, people_list in raw_profiles.items():
                     "question": qtemp.format(name=name),
                     "answer": ANSWER_TEMPLATES[attribute].format(name=name, value=value)
                 })
+
+            # Add 1 random validation question-answer pair to test set
+            random_val_question = random.choice(VALIDATION_QUESTION_TEMPLATES[attribute])
+            validation_testset.append({
+                "name": name,
+                "attribute": attribute,
+                "question": random_val_question.format(name=name),
+                "answer": ANSWER_TEMPLATES[attribute].format(name=name, value=value)
+            })
 
 # Generate common knowledge questions for celebrities
 def generate_common_knowledge_questions(celebrity_dict):
@@ -122,11 +143,17 @@ def generate_common_knowledge_questions(celebrity_dict):
 common_knowledge_questions = generate_common_knowledge_questions(celebrity_last_names)
 
 # Save datasets to JSON files
-with open("data/training_dataset.json", "w") as f:
-    json.dump(training_data, f, indent=4)
+# with open("data/training_dataset.json", "w") as f:
+#     json.dump(training_data, f, indent=4)
 
-with open("data/validation_dataset.json", "w") as f:
-    json.dump(validation_data, f, indent=4)
+# with open("data/validation_dataset.json", "w") as f:
+#     json.dump(validation_data, f, indent=4)
 
-with open("data/common_knowledge_questions.json", "w") as f:
-    json.dump(common_knowledge_questions, f, indent=2)
+with open("data/training_testset.json", "w") as f:
+    json.dump(training_testset, f, indent=4)
+
+with open("data/validation_testset.json", "w") as f:
+    json.dump(validation_testset, f, indent=4)
+
+# with open("data/common_knowledge_questions.json", "w") as f:
+#     json.dump(common_knowledge_questions, f, indent=2)

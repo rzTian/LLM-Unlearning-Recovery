@@ -2,14 +2,15 @@ import torch
 import json
 import time
 import re
+import os
 from typing import List, Dict
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from llm_prompt import EVALUATION_PROMPT, BASE_EVAL_PROMPT  # 初始化时导入模板
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig, BitsAndBytesConfig
+from llm_prompt import REF_EVAL_PROMPT, BASE_EVAL_PROMPT  # 初始化时导入模板
 
 
 class LLMJudge:
     def __init__(self,
-                 model_name: str = "deepseek-ai/deepseek-llm-7b-chat",
+                 model_name: str = "Qwen/Qwen3-8B", # "deepseek-ai/deepseek-llm-7b-chat",
                  use_quantization: bool = True,
                  max_new_tokens: int = 800):
         """
@@ -26,7 +27,7 @@ class LLMJudge:
 
         # 2. 绑定外部Prompt模板（初始化时加载，避免函数内重复调用）
         self.prompt_templates = {
-            "full_eval": EVALUATION_PROMPT,  # 完整评估（问题+参考答案+模型答案）
+            "ref_eval": REF_EVAL_PROMPT,  # 参考评估（问题+参考答案+模型答案）
             "base_eval": BASE_EVAL_PROMPT    # 基础评估（仅问题+模型答案）
         }
 
@@ -35,8 +36,12 @@ class LLMJudge:
         self.model = self._load_model()
 
     def _load_tokenizer(self) -> AutoTokenizer:
+        path = os.path.expanduser(self.model_name)
         tokenizer = AutoTokenizer.from_pretrained(
-            self.model_name, trust_remote_code=True, padding_side="right", local_files_only=True
+            path,
+            trust_remote_code=True,
+            local_files_only=True,
+            padding_side="right",
         )
         # 关键修改：设置独立pad_token（优先用模型自带pad_token，无则用<|pad|>）
         if tokenizer.pad_token is None:
@@ -48,7 +53,14 @@ class LLMJudge:
 
     def _load_model(self) -> AutoModelForCausalLM:
         """统一加载模型（支持量化/非量化，复用参数逻辑）"""
+        path = os.path.expanduser(self.model_name)
+        # 先把“自定义” Config 从本地读出来
+        cfg = AutoConfig.from_pretrained(
+            path, trust_remote_code=True, local_files_only=True
+        )
+
         model_kwargs = {
+            "config": cfg,
             "torch_dtype": torch.bfloat16,
             "device_map": "auto",
             "trust_remote_code": True,
@@ -106,27 +118,28 @@ class LLMJudge:
         torch.cuda.empty_cache()
         time.sleep(sleep_time)
 
-    def _generate_response(self, prompt: str) -> str:
-        """通用生成函数（统一对话格式+生成参数，减少重复逻辑）"""
-        # 构建DeepSeek标准对话格式
-        messages = [{"role": "user", "content": prompt}]
+    def _generate_response(self, system_prompt: str, user_prompt: str) -> str:
+        """
+        通用生成函数（System+User 对话格式，提升评审稳定性与可复现性）
+        """
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user",   "content": user_prompt},
+        ]
         input_ids = self.tokenizer.apply_chat_template(
             messages, return_tensors="pt", add_generation_prompt=True
         ).to(self.model.device)
 
-        # 统一生成参数（控制随机性，确保评分稳定）
+        # 评审默认关闭采样，固定温度=0，确保同输入同分数
         with torch.no_grad():
             outputs = self.model.generate(
                 input_ids=input_ids,
                 max_new_tokens=self.max_new_tokens,
-                temperature=0.2,
-                do_sample=True,
-                top_p=0.9,
+                do_sample=False,
                 pad_token_id=self.tokenizer.pad_token_id,
                 eos_token_id=self.tokenizer.eos_token_id
             )
 
-        # 解码并返回生成结果（去除输入prompt）
         return self.tokenizer.decode(
             outputs[0][len(input_ids[0]):],
             skip_special_tokens=True,
@@ -150,13 +163,14 @@ class LLMJudge:
         :return: 评估结果字典，包含输入信息、评价文本、分数
         """
         # 1. 格式化基础评估Prompt
-        prompt = self.prompt_templates["base_eval"].format(
+        sys_prompt = self.prompt_templates["base_eval"]["system"]
+        usr_prompt = self.prompt_templates["base_eval"]["user"].format(
             question=self.format_empty(question),
-            answer_model=self.format_empty(answer)
+            answer=self.format_empty(answer)
         )
 
         # 2. 生成评估结果
-        raw_output = self._generate_response(prompt)
+        raw_output = self._generate_response(sys_prompt, usr_prompt)
         score = self._parse_score(raw_output)
 
         # 3. 补充解析失败标注
@@ -195,14 +209,15 @@ class LLMJudge:
     def judge_single(self, question: str, reference: str, model_answer: str) -> Dict:
         """单样本完整评估（返回含原文、分数的详细结果）"""
         # 1. 格式化完整评估Prompt
-        prompt = self.prompt_templates["full_eval"].format(
+        sys_prompt = self.prompt_templates["ref_eval"]["system"]
+        usr_prompt = self.prompt_templates["ref_eval"]["user"].format(
             question=self.format_empty(question),
             answer_ref=self.format_empty(reference),
-            answer_model=self.format_empty(model_answer)
+            answer_ass=self.format_empty(model_answer)
         )
 
         # 2. 生成评估结果
-        raw_output = self._generate_response(prompt)
+        raw_output = self._generate_response(sys_prompt, usr_prompt)
         score = self._parse_score(raw_output)
 
         # 3. 补充解析失败的标注
@@ -237,7 +252,9 @@ class LLMJudge:
 # ------------------------------
 if __name__ == "__main__":
     import json
-    MODEL_NAME = "deepseek-ai/deepseek-llm-7b-chat"   # 可替换为"meta-llama/Llama-2-7b-hf"
+    MODEL_NAME = "/home/hsc/projects/def-yymao/hsc/LLM-Unlearning-Recovery/llm_models/gpt-oss-20b" # "deepseek-ai/deepseek-llm-7b-chat"
+    MODEL_NAME = "deepseek-ai/deepseek-llm-7b-chat"
+    MODEL_NAME = "Qwen/Qwen3-8B"
     print(f"🔍 Testing LLMJudge with model: {MODEL_NAME}\n")
 
     # 1. 初始化LLM评判器（支持本地缓存，兼容Llama-2/DeepSeek）

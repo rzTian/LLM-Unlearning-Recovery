@@ -36,10 +36,10 @@ SKIP_FOLDERS = [
     "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
     "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
-    # "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-sin-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    # "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-sin-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 ]
 
 
