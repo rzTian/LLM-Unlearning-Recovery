@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
+#SBATCH --account=def-yymao
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
