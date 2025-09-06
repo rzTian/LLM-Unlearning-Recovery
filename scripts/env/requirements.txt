@@ -1,13 +1,12 @@
 # Core ML libraries
 torch>=2.0.0
-transformers>=4.30.0
+transformers>=4.55.0
 accelerate>=0.20.0
 peft>=0.4.0
 bitsandbytes>=0.41.0
 
 # Data processing
 datasets>=2.12.0
-pyarrow==11.0.0
 pandas>=2.0.0
 numpy>=1.24.0
 scipy>=1.10.0

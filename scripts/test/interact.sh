@@ -2,7 +2,7 @@
 
 # Request an interactive session
 salloc \
-    --account=rrg-yymao \
+    --account=def-yymao \
     --nodes=1 \
     --ntasks-per-node=1 \
     --gpus-per-task=1 \

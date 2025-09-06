@@ -12,6 +12,7 @@ module load python/3.10
 module load scipy-stack
 
 # 3. Activate virtual environment
+virtualenv -p python3.10 $HOME/ENV-3.10
 source $HOME/ENV-3.10/bin/activate
 
 # 4. Clean and reinstall packages

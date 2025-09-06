@@ -9,9 +9,6 @@ import argparse
 # For computing the edit distance
 import re
 import Levenshtein
-import nltk
-from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-from rouge_score import rouge_scorer
 
 from prepdata import data_preprocess
 from argsetting import parser_eval
@@ -631,6 +628,10 @@ class EvalQA(data_preprocess):
         输入：三个长度相同的列表
         输出：与输入长度相同的指标列表，一一对应
         """
+        import nltk
+        from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+        from rouge_score import rouge_scorer
+
         # 确保输入为列表
         if isinstance(gen_outputs, str):
             gen_outputs = [gen_outputs]

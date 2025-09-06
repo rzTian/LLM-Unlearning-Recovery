@@ -12,7 +12,7 @@
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=eval-ft
-#SBATCH --array=0-41
+#SBATCH --array=0-39
 
 r_list=(128)
 wd_list=(0.0 0.01)
@@ -20,9 +20,9 @@ lr_list=(0.0005 0.001 0.005 0.01)
 epoch_list=(10 20 30 40 50)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 42))
-wd_idx=$(((IDX / 21) % 2))
-lr_idx=$(((IDX / 5) % 3))
+r_idx=$((IDX / 40))
+wd_idx=$(((IDX / 20) % 2))
+lr_idx=$(((IDX / 5) % 4))
 epoch_idx=$((IDX % 5))
 
 R=${r_list[$r_idx]}
