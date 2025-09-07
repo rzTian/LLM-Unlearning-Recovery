@@ -113,7 +113,7 @@ def main():
     parse = parser_finetune()
     train_args = parse.parse_args()
 
-    savefolder = f"lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}"
+    savefolder = f"lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_GradStsp{train_args.grad_acc_steps}"
     logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(logDIR, exist_ok=True)
     

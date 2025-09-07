@@ -184,7 +184,7 @@ class EvalQA(data_preprocess):
             save_fname =  f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
             save_fname = os.path.join(save_folder, save_fname)
         elif eval_args.modelType == 'learned':
-            save_fname = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
+            save_fname = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
         else:
             save_fname = f"{eval_args.modelType}-{eval_args.datasetType}.json"
 
@@ -345,10 +345,25 @@ class EvalQA(data_preprocess):
 
             full_scores = [None]*len(batch_data)
             full_evals = [None]*len(batch_data)
+            fpi_attributes = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
             if calc_full_llm:
-                full_res = self.llm_judge.judge_batch(qs, gt_answers, gens)
-                full_scores = [r["score"] for r in full_res]
-                full_evals = [r["evaluation_text"] for r in full_res]
+                # 遍历每个样本，根据属性类型选择评估方式
+                for i in range(len(batch_data)):
+                    item = items[i]
+                    gen = gens[i]
+                    gt = gt_answers[i]
+                    attr = item["attribute"]
+                    
+                    # 如果是FPI相关属性，使用metric_FPI计算分数
+                    if attr in fpi_attributes:
+                        # 调用metric_FPI计算误差（注意：这里将误差转换为分数，1-误差值）
+                        error = self.metric_FPI(gen, gt, attr)
+                        full_scores[i] = round(1 - error, 4)  # 转换为分数（0-1范围）
+                        full_evals[i] = f"FPI metric used for {attr}: error={error:.4f}"
+                    elif full_res is None:  # 延迟计算LLM结果，避免不必要的调用
+                        full_res = self.llm_judge.judge_batch(qs, gt_answers, gens)
+                        full_scores[i] = full_res[i]["score"]
+                        full_evals[i] = full_res[i]["evaluation_text"]
 
             metrics_list = [None]*len(batch_data)
             if calc_text_metrics:
@@ -421,7 +436,7 @@ class EvalQA(data_preprocess):
         elif eval_args.modelType == 'learned':
             save_folder = (
                 f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_"
-                f"loraDrop{eval_args.lora_dropout}"
+                f"loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}"
             )
             save_fname = f"epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
             
@@ -738,7 +753,7 @@ def extract_dir(eval_args):
 
     # Folders where finetuned model is saved. You can replace this by your own directory.    
     parent_folder = "fine_tuned_deepseek_7b"
-    savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}/epoch-{eval_args.epochs}"
+    savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
 

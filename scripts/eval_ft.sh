@@ -12,23 +12,26 @@
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=eval-ft
-#SBATCH --array=0-39
+#SBATCH --array=0
 
-r_list=(128)
+r_list=(128 256)
 wd_list=(0.0 0.01)
-lr_list=(0.0005 0.001 0.005 0.01)
-epoch_list=(10 20 30 40 50)
+gs_list=(4 8 20 40 80 200)
+epoch_list=(2 4 6 8 10 20 30 40 50)
+lr_list=(0.0005 0.001 0.002)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 40))
-wd_idx=$(((IDX / 20) % 2))
-lr_idx=$(((IDX / 5) % 4))
-epoch_idx=$((IDX % 5))
+r_idx=$((IDX / 324))
+wd_idx=$(((IDX / 162) % 2))
+gs_idx=$(((IDX / 27) % 6))
+epoch_idx=$(((IDX / 3) % 9))
+lr_idx=$((IDX % 3))
 
 R=${r_list[$r_idx]}
 WD=${wd_list[$wd_idx]}
-LR=${lr_list[$lr_idx]}
+GS=${gs_list[$gs_idx]}
 EPOCHS=${epoch_list[$epoch_idx]}
+LR=${lr_list[$lr_idx]}
 
 echo "🔧 当前配置: epochs=$EPOCHS | lr=$LR | wd=$WD | LoRA rank=$R | common"
 

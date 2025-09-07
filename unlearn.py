@@ -147,7 +147,7 @@ def main():
     logger.info(f"Using {accelerator.num_processes} GPUs") 
     
     # Folder for loading the fine-tuned model
-    savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}/epoch-{train_args.eps_ft}"
+    savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}_GradStsp{train_args.grad_acc_steps_ft}/epoch-{train_args.eps_ft}"
     train_args.finetune_model_DIR = os.path.join(train_args.finetune_model_DIR, savefolder_tmp)
     
     #####################

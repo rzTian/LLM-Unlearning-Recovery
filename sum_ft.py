@@ -48,14 +48,15 @@ def extract_parameters_from_ft(json_data):
 
 def parse_folder_name(folder_name):
     """解析文件夹名称，提取学习率、权重衰减等参数"""
-    pattern = r"lr(\d+\.?\d*e?-?\d*)_WD(\d+\.?\d*)_loraRank(\d+)_loraDrop(\d+\.?\d*)"
+    pattern = r"lr(\d+\.?\d*e?-?\d*)_WD(\d+\.?\d*)_loraRank(\d+)_loraDrop(\d+\.?\d*)_GradStep(\d+)"
     match = re.match(pattern, folder_name)
     if match:
         return {
             "learning_rate": match.group(1),
             "weight_decay": match.group(2),
             "lora_rank": match.group(3),
-            "lora_drop": match.group(4)
+            "lora_drop": match.group(4),
+            "grad_step": match.group(5)
         }
     return None
 
@@ -185,7 +186,8 @@ def generate_plot(data, output_path, folder_params):
     
     # 添加标题和标签（使用英文）
     title = f"Parameter Trends (lr={folder_params['learning_rate']}, WD={folder_params['weight_decay']}, " \
-            f"loraRank={folder_params['lora_rank']}, loraDrop={folder_params['lora_drop']})"
+            f"loraRank={folder_params['lora_rank']}, loraDrop={folder_params['lora_drop']}), " \
+            f"GradStep={folder_params['grad_step']}"
     ax.set_title(title, fontsize=14)
     ax.set_xlabel("Epoch", fontsize=12)
     ax.set_ylabel("Value", fontsize=12)

@@ -8,24 +8,6 @@ import matplotlib.pyplot as plt
 
 
 SKIP_FOLDERS = [
-    "unlearn-N1-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg1.0-1",
-    "unlearn-N1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-
-    "unlearn-N1-lr0.001_WD0.0_loraRank64_loraDrop0.0_reg1.0",
-    "unlearn-N1-lr0.0005_WD0.0_loraRank64_loraDrop0.0_reg1.0",
-    "unlearn-N1-lr0.0001_WD0.0_loraRank64_loraDrop0.0_reg1.0",
-
-    "unlearn-N3-A1-lr0.0001_WD0.0_loraRank32_loraDrop0.0_reg10.0",
-    "unlearn-N3-A1-lr0.0002_WD0.0_loraRank32_loraDrop0.0_reg5.0",
-    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg2.0",
-    "unlearn-N3-A1-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg0.0005",
-    "unlearn-N3-A1-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-
-    "unlearn-N12-INS-lr0.0005_WD0.0_loraRank32_loraDrop0.0_reg2.0",
-    "unlearn-N12-INS-lr0.0002_WD0.0_loraRank32_loraDrop0.0_reg5.0",
-    "unlearn-N12-INS-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-
     "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
     "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
     "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",

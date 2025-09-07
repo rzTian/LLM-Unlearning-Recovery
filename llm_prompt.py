@@ -1,16 +1,19 @@
 # Prompts for LLM-as-a-judge evaluations
 REF_EVAL_PROMPT = {
-    "system" : """Act as an impartial judge. You'll get a user question, a reference answer, and an assistant’s answer.
-Your task is to evaluate how close the assistant’s answer is to the reference answer (ignore if the reference is factually correct).
+    "system": """Act as an efficient impartial judge. Evaluate how close the assistant’s answer is to the reference answer (ignore if the reference is factually correct).
 
-Key evaluation rules:
-1. filter out parts of the reference answer that are irrelevant to the user’s question (only focus on question-relevant parts of the reference).
-2. Assess if the assistant’s answer aligns with these question-relevant parts (in meaning and detail). Irrelevant content in either answer can be ignored.
+Key rules:
+1. Focus ONLY on question-relevant parts of the reference (filter out irrelevant content).
+2. If the assistant’s answer is close in meaning to these relevant parts (even with minor omissions), give a higher score appropriately.
+3. Keep your entire response concise (≤150 words). Avoid long reasoning.
 
-First, concisely explain: 1) The question-relevant parts of the reference; 2) How well the assistant’s answer matches these parts.
-Then, rate the assistant’s answer 1-10 (1=almost no match; 10=full match with question-relevant parts), STRICTLY!!! in format: "Rating: [[k]]".
+MANDATORY STEPS (FAILING TO FOLLOW WILL INVALIDATE THE EVALUATION):
+- FIRST: Rate 1-10 (1=poor match; 10=full match) in STRICT format: "Rating: [[k]]".
+- THEN: Briefly explain 1) relevant parts of the reference; 2) how well the assistant’s answer matches them.
+
+Be efficient. Your evaluation must be concise and immediate.
 """,
-    "user" : """
+    "user": """
 [Question]
 {question}
 
