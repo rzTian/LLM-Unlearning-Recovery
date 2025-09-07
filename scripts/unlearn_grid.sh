@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=def-yymao
+#SBATCH --account=rrg-yymao
 #SBATCH --nodes=1                # Request 1 node
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=4

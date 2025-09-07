@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=def-yymao
+#SBATCH --account=rrg-yymao
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
@@ -12,20 +12,20 @@
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=eval-ft
-#SBATCH --array=0
+#SBATCH --array=0-239
 
 r_list=(128 256)
 wd_list=(0.0 0.01)
 gs_list=(4 8 20 40 80 200)
-epoch_list=(2 4 6 8 10 20 30 40 50)
-lr_list=(0.0005 0.001 0.002)
+epoch_list=(1 2 5 7 10 15 20 30 40 50)
+lr_list=(0.001)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 324))
-wd_idx=$(((IDX / 162) % 2))
-gs_idx=$(((IDX / 27) % 6))
-epoch_idx=$(((IDX / 3) % 9))
-lr_idx=$((IDX % 3))
+r_idx=$((IDX / 120))
+wd_idx=$(((IDX / 60) % 2))
+gs_idx=$(((IDX / 10) % 6))
+epoch_idx=$(((IDX / 1) % 10))
+lr_idx=$((IDX % 1))
 
 R=${r_list[$r_idx]}
 WD=${wd_list[$wd_idx]}
@@ -33,7 +33,7 @@ GS=${gs_list[$gs_idx]}
 EPOCHS=${epoch_list[$epoch_idx]}
 LR=${lr_list[$lr_idx]}
 
-echo "🔧 当前配置: epochs=$EPOCHS | lr=$LR | wd=$WD | LoRA rank=$R | common"
+echo "🔧 当前配置: epochs=$EPOCHS | lr=$LR | wd=$WD | LoRA rank=$R | GS=$GS | common"
 
 module load gcc arrow/18.1.0 cuda
 module load python/3.10
@@ -42,8 +42,8 @@ source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 python evaluate.py  --datasetType "train_t"  --modelType 'learned' \
-    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0
+    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0  --grad_acc_steps $GS
 python evaluate.py  --datasetType "val_t"  --modelType 'learned' \
-    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0
+    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0  --grad_acc_steps $GS
 python evaluate.py  --datasetType "common"  --modelType 'learned' \
-    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0
+    --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0  --grad_acc_steps $GS

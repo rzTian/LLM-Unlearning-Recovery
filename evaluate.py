@@ -347,6 +347,7 @@ class EvalQA(data_preprocess):
             full_evals = [None]*len(batch_data)
             fpi_attributes = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
             if calc_full_llm:
+                full_res = None
                 # 遍历每个样本，根据属性类型选择评估方式
                 for i in range(len(batch_data)):
                     item = items[i]
@@ -360,8 +361,9 @@ class EvalQA(data_preprocess):
                         error = self.metric_FPI(gen, gt, attr)
                         full_scores[i] = round(1 - error, 4)  # 转换为分数（0-1范围）
                         full_evals[i] = f"FPI metric used for {attr}: error={error:.4f}"
-                    elif full_res is None:  # 延迟计算LLM结果，避免不必要的调用
-                        full_res = self.llm_judge.judge_batch(qs, gt_answers, gens)
+                    else: 
+                        if full_res is None:  # 延迟计算LLM结果，避免不必要的调用
+                            full_res = self.llm_judge.judge_batch(qs, gt_answers, gens)
                         full_scores[i] = full_res[i]["score"]
                         full_evals[i] = full_res[i]["evaluation_text"]
 

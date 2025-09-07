@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=def-yymao
+#SBATCH --account=rrg-yymao
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=1        # 只使用1个GPU

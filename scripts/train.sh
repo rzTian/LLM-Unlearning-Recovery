@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --account=def-yymao
+#SBATCH --account=rrg-yymao
 #SBATCH --nodes=1                # Request 1 node
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=4
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=498G        # memory per node
-#SBATCH --time=00-06:00  # time (DD-HH:MM)
+#SBATCH --time=00-02:59  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/finetune-128-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=snow.jar.13@gmail.com
 #SBATCH --mail-type=BEGIN
@@ -13,20 +13,20 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-47
+#SBATCH --array=0-23
 
 r_list=(128 256)
 wd_list=(0.0 0.01)
 gs_list=(4 8 20 40 80 200)
 epoch_list=(50)
-lr_list=(0.0005 0.001 0.002)
+lr_list=(0.001)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 24))
-wd_idx=$(((IDX / 12) % 2))
-gs_idx=$(((IDX / 2) % 6))
-epoch_idx=$(((IDX / 2) % 1))
-lr_idx=$((IDX % 2))
+r_idx=$((IDX / 12))
+wd_idx=$(((IDX / 6) % 2))
+gs_idx=$(((IDX / 1) % 6))
+epoch_idx=$(((IDX / 1) % 1))
+lr_idx=$((IDX % 1))
 
 R=${r_list[$r_idx]}
 WD=${wd_list[$wd_idx]}
