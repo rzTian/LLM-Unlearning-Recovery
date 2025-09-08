@@ -105,10 +105,11 @@ class EvalQA(data_preprocess):
 
         if attribute == "year_of_birth":
             # Extract 4-digit year from string (returns 0 if no digits found)
-            year_match = re.search(r"\b(19|20)\d{2}\b", s)
-            if year_match:
-                return int(year_match.group())
-            return 1970  # 默认返回1970
+            def extract_year(s):
+                year_match = re.search(r"\b(19|20)\d{2}\b", s)
+                if year_match:
+                    return int(year_match.group())
+                return 1970  # 默认返回1970
                 
             # Error formula: min(|predicted_year - true_year|, 20) / 20
             absolute_error = abs(extract_year(predicts) - extract_year(true_answer))
