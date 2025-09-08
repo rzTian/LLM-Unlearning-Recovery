@@ -13,20 +13,20 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-23
+#SBATCH --array=8-11
 
-r_list=(128 256)
+r_list=(128 256 512)
 wd_list=(0.0 0.01)
-gs_list=(4 8 20 40 80 200)
+gs_list=(40)
 epoch_list=(50)
-lr_list=(0.001)
+lr_list=(0.0005 0.001)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 12))
-wd_idx=$(((IDX / 6) % 2))
-gs_idx=$(((IDX / 1) % 6))
-epoch_idx=$(((IDX / 1) % 1))
-lr_idx=$((IDX % 1))
+r_idx=$((IDX / 4))
+wd_idx=$(((IDX / 2) % 2))
+gs_idx=$(((IDX / 2) % 1))
+epoch_idx=$(((IDX / 2) % 1))
+lr_idx=$((IDX % 2))
 
 R=${r_list[$r_idx]}
 WD=${wd_list[$wd_idx]}

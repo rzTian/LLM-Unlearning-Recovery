@@ -1,10 +1,7 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --gpus-per-task=1        # 只使用1个GPU
-#SBATCH --cpus-per-task=4        # 减少CPU核心数
-#SBATCH --mem=16G               # 减少内存占用
+#SBATCH --account=def-yymao
+#SBATCH --cpus-per-task=1        # 减少CPU核心数
+#SBATCH --mem=1G               # 减少内存占用
 #SBATCH --time=00-00:10         # 设置较短的运行时间
 #SBATCH --output=./results_extra/sum-%j.out
 #SBATCH --job-name=sum

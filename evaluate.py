@@ -105,9 +105,10 @@ class EvalQA(data_preprocess):
 
         if attribute == "year_of_birth":
             # Extract 4-digit year from string (returns 0 if no digits found)
-            def extract_year(s): 
-                digits = ''.join(re.findall(r"\d", s))
-                return int(digits[:4]) if digits else 0
+            year_match = re.search(r"\b(19|20)\d{2}\b", s)
+            if year_match:
+                return int(year_match.group())
+            return 1970  # 默认返回1970
                 
             # Error formula: min(|predicted_year - true_year|, 20) / 20
             absolute_error = abs(extract_year(predicts) - extract_year(true_answer))
@@ -354,12 +355,11 @@ class EvalQA(data_preprocess):
                     gen = gens[i]
                     gt = gt_answers[i]
                     attr = item["attribute"]
-                    
                     # 如果是FPI相关属性，使用metric_FPI计算分数
                     if attr in fpi_attributes:
                         # 调用metric_FPI计算误差（注意：这里将误差转换为分数，1-误差值）
                         error = self.metric_FPI(gen, gt, attr)
-                        full_scores[i] = round(1 - error, 4)  # 转换为分数（0-1范围）
+                        full_scores[i] = round(10 - error * 9, 1)  # 转换为分数（0-10范围）
                         full_evals[i] = f"FPI metric used for {attr}: error={error:.4f}"
                     else: 
                         if full_res is None:  # 延迟计算LLM结果，避免不必要的调用

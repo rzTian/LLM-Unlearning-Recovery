@@ -143,11 +143,11 @@ def generate_common_knowledge_questions(celebrity_dict):
 common_knowledge_questions = generate_common_knowledge_questions(celebrity_last_names)
 
 # Save datasets to JSON files
-# with open("data/training_dataset.json", "w") as f:
-#     json.dump(training_data, f, indent=4)
+with open("data/training_dataset.json", "w") as f:
+    json.dump(training_data, f, indent=4)
 
-# with open("data/validation_dataset.json", "w") as f:
-#     json.dump(validation_data, f, indent=4)
+with open("data/validation_dataset.json", "w") as f:
+    json.dump(validation_data, f, indent=4)
 
 with open("data/training_testset.json", "w") as f:
     json.dump(training_testset, f, indent=4)
@@ -155,5 +155,5 @@ with open("data/training_testset.json", "w") as f:
 with open("data/validation_testset.json", "w") as f:
     json.dump(validation_testset, f, indent=4)
 
-# with open("data/common_knowledge_questions.json", "w") as f:
-#     json.dump(common_knowledge_questions, f, indent=2)
+with open("data/common_knowledge_questions.json", "w") as f:
+    json.dump(common_knowledge_questions, f, indent=2)

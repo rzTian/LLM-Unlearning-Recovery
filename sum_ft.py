@@ -46,9 +46,13 @@ def extract_parameters_from_ft(json_data):
     
     return params if params else None
 
-def parse_folder_name(folder_name):
+def parse_folder_name(folder_name: str):
     """解析文件夹名称，提取学习率、权重衰减等参数"""
-    pattern = r"lr(\d+\.?\d*e?-?\d*)_WD(\d+\.?\d*)_loraRank(\d+)_loraDrop(\d+\.?\d*)_GradStep(\d+)"
+    # 支持带 GradStep 或不带 GradStep 的两种情况
+    pattern = (
+        r"lr(\d+\.?\d*(?:e-?\d+)?)_WD(\d+\.?\d*)_loraRank(\d+)_loraDrop(\d+\.?\d*)"
+        r"(?:_GradStep(\d+))?"
+    )
     match = re.match(pattern, folder_name)
     if match:
         return {
@@ -56,7 +60,7 @@ def parse_folder_name(folder_name):
             "weight_decay": match.group(2),
             "lora_rank": match.group(3),
             "lora_drop": match.group(4),
-            "grad_step": match.group(5)
+            "grad_step": match.group(5) if match.group(5) else None,
         }
     return None
 
