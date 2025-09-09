@@ -13,31 +13,28 @@
 #SBATCH --mail-type=ALL
 #SBATCH --array=0-95
 
-r_list=(32)
-epoch_list=(2 4 6 8 10 12 14 16 18 20 22 24)
-lr_list=(0.001)
 rg_list=(1.0)
-# method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
-method_list=('dpo' 'npo')
-# set_list=("unlearn-N1-A1-bt" "unlearn-N1-A1-pc" "unlearn-N1-A1-sin" \
-#           "unlearn-N1-A1-bt-fn" "unlearn-N1-A1-pc-fn" "unlearn-N1-A1-sin-fn" \
-#           "unlearn-N1-A1-bt-rd" "unlearn-N1-A1-pc-rd" "unlearn-N1-A1-sin-rd" \
-#           "unlearn-N1-A1-bt-cp" "unlearn-N1-A1-pc-cp" "unlearn-N1-A1-sin-cp")
-set_list=("unlearn-N1-A1-sin" "unlearn-N1-A1-sin-fn")
+r_list=(32)
+gs_list=(8)
+lr_list=(0.001)
+epoch_list=(2 4 6 8 10 12 14 16 18 20 22 24)
+set_list=("unlearn-N1-A1-sin" "unlearn-N1-A1-pcd" "unlearn-N1-A1-bld" "unlearn-N1-A1-yrb")
+method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
 k_list=(500 1000)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$(((IDX / 6) % 1))
-epoch_idx=$(((IDX / 2) % 12))
-lr_idx=$(((IDX / 6) % 1))
 rg_idx=$(((IDX / 6) % 1))
-method_idx=$((IDX % 2))
+r_idx=$(((IDX / 6) % 1))
+lr_idx=$(((IDX / 6) % 1))
+epoch_idx=$(((IDX / 2) % 12))
 set_idx=$(((IDX / 24) % 2))
+method_idx=$((IDX % 2))
 k_idx=$(((IDX / 48) % 2))
 
-R=${r_list[$r_idx]}
-LR=${lr_list[$lr_idx]}
 RG=${rg_list[$rg_idx]}
+R=${r_list[$r_idx]}
+GS=${gs_list[$gs_idx]}
+LR=${lr_list[$lr_idx]}
 EPOCHS=${epoch_list[$epoch_idx]}
 METHOD=${method_list[$method_idx]}
 
@@ -50,7 +47,8 @@ BEAM_K=${k_list[$k_idx]}
 BEAM_C=10
 BEAM_N=1000
 
-echo "🔧 当前配置: LoRA rank=$R | epochs=$EPOCHS | lr=$LR | reg=$RG | method=$METHOD"
+echo "🔧 当前配置: LoRA rank=$R | reg=$RG | gradstep=$GS | lr=$LR | epochs=$EPOCHS | method=$METHOD"
+echo "🔧 当前配置: Unlearn Set=$UNLEARN_SET | Forget Type=$FORGET_TYPE | Retain Type=$RETAIN_TYPE | Remain Type=$REMAIN_TYPE"
 
 module load gcc arrow/18.1.0 cuda
 module load python/3.10
@@ -64,12 +62,12 @@ echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $REC
 python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
       --recover_type $RECOVER_TYPE --recover_mode 'greedy' --flip 1 \
       --loss_type 'ce' --beta 1.0 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
-      --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG
+      --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG --grad_acc_steps_fgt $GS
 echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 0 | NPO | K $BEAM_K"
 python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
       --recover_type $RECOVER_TYPE --recover_mode 'greedy' --flip 0 \
       --loss_type 'npo' --beta 1.0 --K $BEAM_K --C $BEAM_C --N $BEAM_N \
-      --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG
+      --unlearn_method  $METHOD  --lr_fgt $LR  --LoRA_rank_fgt $R --eps_fgt $EPOCHS --reg_weights_fgt $RG --grad_acc_steps_fgt $GS
 
 # echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
 # python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \

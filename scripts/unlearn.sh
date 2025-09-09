@@ -13,26 +13,26 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-119
+#SBATCH --array=0-47
 
 rg_list=(1.0)
-r_list=(32 64 128 156)
-gs_list=(4 8 16 32 64 128)
-lr_list=(0.001 0.0005 0.0001 0.00005 0.00001)
-epoch_list=(30)
-set_list=("unlearn-N1-A1-sin")
-retain_list=("retain-same_fn_attr.json")
-method_list=('grad_diff')
+r_list=(32)
+gs_list=(10)
+lr_list=(0.001)
+epoch_list=(25)
+set_list=("unlearn-N1-A1-bld" "unlearn-N1-A1-pcd" "unlearn-N1-A1-sin" "unlearn-N1-A1-yrb")
+retain_list=("retain-same_attr.json" "retain-same_fn_attr.json")
+method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$((IDX / 120))
-r_idx=$(((IDX / 30) % 4))
-gs_idx=$(((IDX / 5) % 6))
-lr_idx=$(((IDX / 1) % 5))
-epoch_idx=$(((IDX / 1) % 1))
-retain_idx=$(((IDX / 1) % 1))
-set_idx=$(((IDX / 1) % 1))
-method_idx=$((IDX % 1))
+rg_idx=$(((IDX / 48) % 1))
+r_idx=$(((IDX / 48) % 1))
+gs_idx=$(((IDX / 48) % 1))
+lr_idx=$(((IDX / 48) % 1))
+epoch_idx=$(((IDX / 48) % 1))
+retain_idx=$(((IDX / 12) % 4))
+set_idx=$(((IDX / 6) % 2))
+method_idx=$((IDX % 6))
 
 RG=${rg_list[$rg_idx]}
 R=${r_list[$r_idx]}
@@ -59,9 +59,3 @@ accelerate launch --multi_gpu unlearn.py \
     --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 128  --lora_dropout_ft 0.0 \
     --unlearn_method $METHOD  --lr $LR  --epochs $EPOCHS  --weight_decay 0.0 \
     --LoRA_rank $R  --lora_dropout 0.0  --reg_weights $RG --grad_acc_steps $GS
-
-# python unlearn.py \
-#     --unlearnSet "unlearn-N1-A1-sin" --forgetSetDir "forget.json" --retainSetDir "retain-same_fn_attr.json" \
-#     --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 128  --lora_dropout_ft 0.0 \
-#     --unlearn_method 'grad_diff'  --lr 0.001  --epochs 2  --weight_decay 0.0 \
-#     --LoRA_rank 32  --lora_dropout 0.0  --reg_weights 1.0 --grad_acc_steps 8

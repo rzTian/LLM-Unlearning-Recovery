@@ -26,7 +26,7 @@ def generate_forget_set(
     first_names,
     full_names,
     dataset,
-    forget_mode="random",  # ["same_firstname", "different_firstname", "random", "random_combination"]
+    forget_mode="same_firstname",  # ["same_firstname", "different_firstname", "random", "random_combination"]
     num_profiles=1,
     selected_attr=None
 ):
@@ -166,7 +166,7 @@ def split_dataset(
         )
         return forget_set, {retain_mode: retain_set}, {retain_mode: remain_set}
     else:
-        all_modes = ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
+        all_modes = ["all_except_forget", "same_attr", "same_firstname_same_attr"]
         retain_sets = {}
         remain_sets = {}
         for mode in all_modes:
@@ -179,16 +179,37 @@ def split_dataset(
         return forget_set, retain_sets, remain_sets
 
 def main():
-    folder_path = "data"
-    dataset_name = "training_dataset.json"
-    profile_name = "profiles.json"
+    import argparse
+    parser = argparse.ArgumentParser(description='Split dataset into forget, retain and remain sets.')
+    parser.add_argument('--folder_path', type=str, default='data', help='Base folder path')
+    parser.add_argument('--dataset_name', type=str, default='training_dataset.json', help='Name of the dataset file')
+    parser.add_argument('--profile_name', type=str, default='profiles.json', help='Name of the profiles file')
+    parser.add_argument('--num_profiles', type=int, default=1, help='Number of profiles to forget')
+    parser.add_argument('--selected_attr', type=str, nargs='*', default=['none'], 
+                        help=f'Attributes to select, options: {attr_types}')
+    parser.add_argument('--forget_mode', type=str, default='random', 
+                        choices=['random', 'same_firstname', 'different_firstname', 'random_combination'],
+                        help='Mode for selecting forget set')
+    parser.add_argument('--retain_mode', type=str, default=None,
+                        choices=['all_except_forget', 'same_firstname', 'same_attr', 'same_firstname_same_attr'],
+                        help='Mode for selecting retain set')
+    parser.add_argument('--suffix', type=str, default='', help='Suffix to add at the end of dataset folder name')
+    
+    args = parser.parse_args()
 
-    num_profiles = 1
-    # when taking selected_attr = None, this will split the forget set by profiles.
-    selected_attr = ["social_insurance_number"]  # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
-    forget_mode = "random"  # options: "random", "same_firstname", "different_firstname", "random_combination"
-    retain_mode = "same_attr"  # options: "all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"
-    num_attr =  len(selected_attr) if selected_attr else 4
+    folder_path = args.folder_path
+    dataset_name = args.dataset_name
+    profile_name = args.profile_name
+    suffix = args.suffix
+
+    num_profiles = args.num_profiles
+    selected_attr = args.selected_attr if args.selected_attr != ['none'] else None
+    # ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
+    forget_mode = args.forget_mode
+    # options: "random", "same_firstname", "different_firstname", "random_combination"
+    retain_mode = args.retain_mode
+    # options: "all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"
+    num_attr = len(selected_attr) if selected_attr else 4
     
     # Load the QA dataset and the profiles
     dataset = getdata(folder_path, dataset_name)
@@ -222,6 +243,7 @@ def main():
     set_path = f"unlearn-N{num_profiles}-A{num_attr}" \
         if selected_attr else f"unlearn-N{num_profiles}" \
         if forget_mode != "random_combination" else f"unlearn-N{num_profiles}-INS"
+    set_path = f"{set_path}-{suffix}" if suffix else set_path
     folder_path = os.path.join(folder_path, set_path)
     if os.path.exists(folder_path) is False:
         os.makedirs(folder_path, exist_ok=True)

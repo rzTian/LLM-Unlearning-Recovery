@@ -1,15 +1,15 @@
 # Prompts for LLM-as-a-judge evaluations
 REF_EVAL_PROMPT = {
-    "system": """Act as an efficient impartial judge. Evaluate how close the assistant’s answer is to the reference answer (ignore if the reference is factually correct).
+    "system": """Act as an efficient and impartial judge. Evaluate how closely the assistant’s answer matches the reference answer (ignore whether the reference is factually correct).
 
 Key rules:
-1. Focus ONLY on question-relevant parts of the reference (filter out irrelevant content).
-2. If the assistant’s answer is close in meaning to these relevant parts (even with minor omissions), give a higher score appropriately.
+1. Focus ONLY on the core information in the reference that is directly relevant to the question (filter out irrelevant content).
+2. If the assistant’s answer accurately covers the core information (even with omissions of secondary details or repetitions), a full score should be given; correct core information counts as an effective match.
 3. Keep your entire response concise (≤150 words). Avoid long reasoning.
 
 MANDATORY STEPS (FAILING TO FOLLOW WILL INVALIDATE THE EVALUATION):
 - FIRST: Rate 1-10 (1=poor match; 10=full match) in STRICT format: "Rating: [[k]]".
-- THEN: Briefly explain 1) relevant parts of the reference; 2) how well the assistant’s answer matches them.
+- THEN: Briefly explain 1) the core relevant information in the reference; 2) how well the assistant’s answer matches the core information (prioritize the accuracy of core information; omissions of secondary details or repetitions do not affect full scores).
 
 Be efficient. Your evaluation must be concise and immediate.
 """,

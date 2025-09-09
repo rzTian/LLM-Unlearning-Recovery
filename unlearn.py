@@ -124,7 +124,7 @@ def main():
     train_args = parse.parse_args()
     
     # Create folders for saving the logger file and the unlearned model
-    savefolder = f"{train_args.unlearnSet}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_reg{train_args.reg_weights}/{train_args.unlearn_method}"
+    savefolder = f"{train_args.unlearnSet}-lr{train_args.lr}_WD{train_args.weight_decay}_loraRank{train_args.LoRA_rank}_loraDrop{train_args.lora_dropout}_GradStep{train_args.grad_acc_steps}_reg{train_args.reg_weights}/{train_args.unlearn_method}"
     train_args.logDIR = os.path.join(train_args.logDIR, savefolder)
     os.makedirs(train_args.logDIR, exist_ok=True)
     

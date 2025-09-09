@@ -7,19 +7,19 @@
 #SBATCH --mem=498G        # memory per node
 #SBATCH --time=00-02:59  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/finetune-128-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
-#SBATCH --mail-user=snow.jar.13@gmail.com
+#SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=8-11
+#SBATCH --array=0
 
 r_list=(128 256 512)
 wd_list=(0.0 0.01)
-gs_list=(40)
+gs_list=(10)
 epoch_list=(50)
-lr_list=(0.0005 0.001)
+lr_list=(0.001)
 
 IDX=$SLURM_ARRAY_TASK_ID
 r_idx=$((IDX / 4))

@@ -180,7 +180,7 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         if eval_args.modelType == 'unlearned':
-            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
+            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
             save_fname =  f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
@@ -433,6 +433,7 @@ class EvalQA(data_preprocess):
             save_folder = (
                 f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_"
                 f"loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_"
+                f"GradStep{eval_args.grad_acc_steps_fgt}_"
                 f"reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
             )
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
@@ -762,7 +763,7 @@ def extract_dir(eval_args):
 
     if eval_args.modelType == 'unlearned':
         parent_folder = "unlearn_deepseek_7b"
-        child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_reg{eval_args.reg_weights_fgt}"
+        child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
         savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
         unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
