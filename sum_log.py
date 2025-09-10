@@ -182,7 +182,7 @@ def process_all_logs(target_dir):
 
 if __name__ == "__main__":
     # 目标目录（请根据实际情况修改）
-    TARGET_DIRECTORY = "fine_tuned_deepseek_7b_log"
+    TARGET_DIRECTORY = "unlearn_deepseek_7b_log"
     
     # 执行处理
     if os.path.isdir(TARGET_DIRECTORY):

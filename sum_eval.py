@@ -37,8 +37,31 @@ def extract_metrics(path):
         # print(f"❌ Error reading {path}: {e}")
     return None
 
+def extract_metrics_from_base(path):
+    """从base目录的JSON数据中提取所需参数，并将其缩放到[0,1]范围"""
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+            if isinstance(data, list) and len(data) >= 1:
+                last_item = data[-1]
+                if last_item.get("type") != "statistics":
+                    return None
+                
+                avg_scores = last_item.get("average_scores", {})
+                scaled_params = {}
+                if "model_llm_score" in avg_scores:
+                    scaled_params["llm_score"] = avg_scores["model_llm_score"] / 10
+                if "llm_score" in avg_scores:
+                    scaled_params["rel_score"] = avg_scores["llm_score"] / 10
+                    
+                return scaled_params
+    except Exception as e:
+        e
+        # print(f"❌ Error reading {path}: {e}")
+    return None
+    
 
-def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
+def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, base_root):
     """
     For a given config path (like unlearn_deepseek_7b_log/unlearn-N1-...),
     extract all results from its methods (dpo/npo/...) and matching recovery results.
@@ -69,14 +92,14 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
             epoch = int(m.group(1))
             dataset_tag = m.group(2)
 
+            # 解析unlearn数据
             unlearn_json = os.path.join(method_path, fname)
             unlearn_metrics = extract_metrics(unlearn_json)
-
             if unlearn_metrics:
                 for k, v in unlearn_metrics.items():
                     epoch_rows[epoch][f"unlearn_{dataset_tag}_{k}"] = v
 
-            # 通配匹配同一 epoch & dataset_tag 的所有 recovery 文件
+            # 解析recovery数据
             rec_dir = os.path.join(recovery_root, config_name, method)
             if os.path.isdir(rec_dir):
                 for rfname in os.listdir(rec_dir):
@@ -86,14 +109,25 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
                     m = re.match(rf'^recovery-epoch-({epoch})-({dataset_tag})-([^.]+)\.json$', rfname)
                     if not m:
                         continue
-                    recover_method = m.group(3)   # 直接把整段作为 recover 方法字符串
-
+                    recover_method = m.group(3)
                     recovery_json = os.path.join(rec_dir, rfname)
                     recovery_metrics = extract_metrics(recovery_json)
                     if recovery_metrics:
                         for k, v in recovery_metrics.items():
-                            # 列名改为：recovery_{recover_method}_{metric}
                             epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
+            
+            # 解析base数据
+            base_dir = os.path.join(base_root, config_name.replace("unlearn-", ""), method)
+            if os.path.isdir(base_dir):
+                for bfname in os.listdir(base_dir):
+                    m_base = re.match(rf'^epoch-({epoch})-({dataset_tag})\.json$', bfname)
+                    if not m_base:
+                        continue
+                    base_json = os.path.join(base_dir, bfname)
+                    base_metrics = extract_metrics(base_json)
+                    if base_metrics:
+                        for k, v in base_metrics.items():
+                            epoch_rows[epoch][f"base_{dataset_tag}_{k}"] = v
 
         # 组装每一行
         for epoch, row_data in epoch_rows.items():
@@ -112,7 +146,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root):
     return pd.DataFrame(records)
 
 
-def scan_all_configs_and_save(unlearn_root, recovery_root):
+def scan_all_configs_and_save(unlearn_root, recovery_root, base_root):
     """
     Traverse all config folders in unlearn_root, extract evaluation results,
     and save a summary.csv in each config folder.
@@ -121,7 +155,7 @@ def scan_all_configs_and_save(unlearn_root, recovery_root):
         if config_name in SKIP_FOLDERS:
             print(f"⚠️ Skipping folder: {config_name}")
             continue
-        if not re.match(r'.*-lr[\d\.]+_WD[\d\.]+_loraRank\d+_loraDrop[\d\.]+_reg[\d\.]+', config_name):
+        if not re.match(r'.*-lr[\d\.]+_WD[\d\.]+_loraRank\d+_loraDrop[\d\.]+_GradStep[\d\.]+_reg[\d\.]+', config_name):
             print(f"❌ Invalid config name: {config_name}")
             continue
         print(f"🔍 Processing config: {config_name}")
@@ -130,7 +164,7 @@ def scan_all_configs_and_save(unlearn_root, recovery_root):
         if not os.path.isdir(config_path):
             continue
 
-        df = parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root)
+        df = parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, base_root)
         if not df.empty:
             metrics = set()
             # Extract unique metrics from the DataFrame
@@ -198,5 +232,6 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 if __name__ == "__main__":
     scan_all_configs_and_save(
         unlearn_root="unlearn_deepseek_7b_log",
-        recovery_root="recovery_deepseek_7b_log"
+        recovery_root="recovery_deepseek_7b_log",
+        base_root="deepseek_7b_log"
     )

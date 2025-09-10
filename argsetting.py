@@ -32,12 +32,12 @@ def parser_eval():
     parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
     parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
     # Finetuned model configs
-    parser.add_argument('--lr', default=0.001, type=float)
-    parser.add_argument('--epochs', default=15, type=int)
-    parser.add_argument('--weight_decay', default=0.0, type=float)
-    parser.add_argument('--LoRA_rank', default=128, type=int)
+    parser.add_argument('--lr', default=0.0005, type=float)
+    parser.add_argument('--epochs', default=30, type=int)
+    parser.add_argument('--weight_decay', default=0.01, type=float)
+    parser.add_argument('--LoRA_rank', default=256, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
-    parser.add_argument('--grad_acc_steps', default=20, type=int)
+    parser.add_argument('--grad_acc_steps', default=40, type=int)
     # Unlearned model configs
     parser.add_argument('--num_fgt', default=1, type=int)
     parser.add_argument('--lr_fgt', default=0.001, type=float)
@@ -67,9 +67,9 @@ def parser_unlearn():
     parser.add_argument('--LoRA_rank', default=64, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
     # Control effective batch size
-    parser.add_argument('--bs_train', default=1, type=int) # per device
-    parser.add_argument('--bs_eval', default=5, type=int) # per device
-    parser.add_argument('--grad_acc_steps', default=8, type=int)
+    parser.add_argument('--bs_train', default=8, type=int) # per device
+    parser.add_argument('--bs_eval', default=8, type=int) # per device
+    parser.add_argument('--grad_acc_steps', default=20, type=int)
     # File name of the dataset
     parser.add_argument('--num_fgt', default=2025, type=int)
     parser.add_argument("--unlearnSet", default="unlearn-N1", type=str)
@@ -83,11 +83,11 @@ def parser_unlearn():
     parser.add_argument('--model_name', default="deepseek-ai/deepseek-llm-7b-chat", type=str)
     parser.add_argument('--datasetName', default='FPI', type=str)
     # configs related to the loaded finetuned model
-    parser.add_argument('--lr_ft', default=0.001, type=float)
-    parser.add_argument('--eps_ft', default=15, type=int)
-    parser.add_argument('--wd_ft', default=0.0, type=float)
-    parser.add_argument('--LoRA_rank_ft', default=128, type=int)
+    parser.add_argument('--lr_ft', default=0.0005, type=float)
+    parser.add_argument('--eps_ft', default=30, type=int)
+    parser.add_argument('--wd_ft', default=0.01, type=float)
+    parser.add_argument('--LoRA_rank_ft', default=256, type=int)
     parser.add_argument('--lora_dropout_ft', default=0.0, type=float)
-    parser.add_argument('--grad_acc_steps_ft', default=20, type=int)
+    parser.add_argument('--grad_acc_steps_ft', default=40, type=int)
     return parser
 

@@ -13,24 +13,22 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-119
+#SBATCH --array=0-7
 
-rg_list=(1.0)
-r_list=(32 64 128 156)
-gs_list=(4 8 16 32 64 128)
-lr_list=(0.001 0.0005 0.0001 0.00005 0.00001)
-epoch_list=(30)
-set_list=("unlearn-N1-A1-sin")
-retain_list=("retain-same_fn_attr.json")
+rg_list=(0.5 1.0 2.0 5.0)
+r_list=(256)
+gs_list=(10)
+lr_list=(0.0005 0.001)
+epoch_list=(10)
+set_list=("unlearn-N1-A1-yrb")
 method_list=('grad_diff')
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$((IDX / 120))
-r_idx=$(((IDX / 30) % 4))
-gs_idx=$(((IDX / 5) % 6))
-lr_idx=$(((IDX / 1) % 5))
+rg_idx=$((IDX / 2))
+r_idx=$(((IDX / 2) % 1))
+gs_idx=$(((IDX / 2) % 1))
+lr_idx=$(((IDX / 1) % 2))
 epoch_idx=$(((IDX / 1) % 1))
-retain_idx=$(((IDX / 1) % 1))
 set_idx=$(((IDX / 1) % 1))
 method_idx=$((IDX % 1))
 
@@ -43,7 +41,7 @@ METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_SET="forget.json"
-RETAIN_SET=${retain_list[$retain_idx]}
+RETAIN_SET="retain-same_fn_attr.json"
 
 echo "🔧 当前配置: LoRA rank=$R | reg=$RG | gradstep=$GS | lr=$LR | epochs=$EPOCHS | method=$METHOD"
 echo "🔧 当前配置: Unlearn Set=$UNLEARN_SET | Forget Set=$FORGET_SET | Retain Set=$RETAIN_SET"
@@ -56,12 +54,6 @@ cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 accelerate launch --multi_gpu unlearn.py \
     --unlearnSet $UNLEARN_SET --forgetSetDir $FORGET_SET --retainSetDir $RETAIN_SET \
-    --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 128  --lora_dropout_ft 0.0 \
+    --lr_ft 0.0005  --eps_ft 30 --wd_ft 0.01  --LoRA_rank_ft 256  --lora_dropout_ft 0.0 --grad_acc_steps_ft 40 \
     --unlearn_method $METHOD  --lr $LR  --epochs $EPOCHS  --weight_decay 0.0 \
     --LoRA_rank $R  --lora_dropout 0.0  --reg_weights $RG --grad_acc_steps $GS
-
-# python unlearn.py \
-#     --unlearnSet "unlearn-N1-A1-sin" --forgetSetDir "forget.json" --retainSetDir "retain-same_fn_attr.json" \
-#     --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 128  --lora_dropout_ft 0.0 \
-#     --unlearn_method 'grad_diff'  --lr 0.001  --epochs 2  --weight_decay 0.0 \
-#     --LoRA_rank 32  --lora_dropout 0.0  --reg_weights 1.0 --grad_acc_steps 8

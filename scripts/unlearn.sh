@@ -56,6 +56,6 @@ cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 accelerate launch --multi_gpu unlearn.py \
     --unlearnSet $UNLEARN_SET --forgetSetDir $FORGET_SET --retainSetDir $RETAIN_SET \
-    --lr_ft 0.001  --eps_ft 15 --wd_ft 0.0  --LoRA_rank_ft 128  --lora_dropout_ft 0.0 \
+    --lr_ft 0.0005  --eps_ft 30 --wd_ft 0.01  --LoRA_rank_ft 256  --lora_dropout_ft 0.0 --grad_acc_steps_ft 40 \
     --unlearn_method $METHOD  --lr $LR  --epochs $EPOCHS  --weight_decay 0.0 \
     --LoRA_rank $R  --lora_dropout 0.0  --reg_weights $RG --grad_acc_steps $GS

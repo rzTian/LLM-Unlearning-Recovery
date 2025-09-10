@@ -101,13 +101,18 @@ def generate_retain_set(
     dataset,
     forget_names,
     forget_attrs,
-    retain_mode="all_except_forget"  # ["all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"]
+    retain_mode="all_except_forget",  # ["all_except_forget", "same_firstname", "same_attr", "same_firstname_same_attr"]
+    max_per_firstname=10
 ):
     forget_firstnames = {name.split()[0] for name in forget_names}
+    firstname_profile_counts = {firstname: 0 for firstname in forget_firstnames}
+    retained_profiles = {firstname: set() for firstname in forget_firstnames}
     retain_set = []
     remain_set = []
 
-    for data in dataset:
+    shuffled_dataset = dataset.copy()
+    random.shuffle(shuffled_dataset)
+    for data in shuffled_dataset:
         name = data["name"]
         firstname = name.split()[0]
         attr = data["attribute"]
@@ -128,6 +133,14 @@ def generate_retain_set(
         elif retain_mode == "same_firstname_same_attr":
             if firstname in forget_firstnames and name not in forget_names and attr in forget_attrs:
                 is_retain = True
+        
+        if is_retain and firstname in forget_firstnames and max_per_firstname is not None:
+            if name not in retained_profiles[firstname]:
+                if firstname_profile_counts[firstname] >= max_per_firstname:
+                    is_retain = False
+                else:
+                    firstname_profile_counts[firstname] += 1
+                    retained_profiles[firstname].add(name)
 
         if is_retain:
             retain_set.append(data)
@@ -144,6 +157,7 @@ def split_dataset(
     forget_mode="random",  # ["same_firstname", "different_firstname", "random"]
     retain_mode=None,      # None or one of ["all_except_forget", "same_firstname_all", "same_firstname_same_attr"]
     num_profiles=1,
+    max_ret_per_firstname=10,
     selected_attr=None
 ):
     # Step 1: Get forget_set, forgetnames, forget_attrs
@@ -174,9 +188,43 @@ def split_dataset(
                 dataset,
                 forgetnames,
                 forget_attrs,
-                retain_mode=mode
+                retain_mode=mode,
+                max_per_firstname=max_ret_per_firstname
             )
         return forget_set, retain_sets, remain_sets
+
+def generate_test_set(original_set):
+    """为集合生成伴生测试集，对每个(name, attribute)组合随机保留一个item"""
+    # 按(name, attribute)分组
+    groups = defaultdict(list)
+    for item in original_set:
+        key = (item["name"], item["attribute"])
+        groups[key].append(item)
+    
+    # 每组随机选择一个item
+    test_set = []
+    for group in groups.values():
+        test_set.append(random.choice(group))
+    
+    return test_set
+
+def save_sets_with_test(folder_path, base_name, data_set, suffix=""):
+    """保存集合到JSON文件，并生成对应的伴生测试集"""
+    # 保存主集合
+    os.makedirs(folder_path, exist_ok=True)
+    main_path = os.path.join(folder_path, f"{base_name}{suffix}.json")
+    with open(main_path, "w") as f:
+        json.dump(data_set, f, indent=4)
+    print(f"✅ Saved {base_name} set to {main_path}")
+    
+    # 生成并保存测试集
+    folder_path = folder_path + "-test"
+    os.makedirs(folder_path, exist_ok=True)
+    test_set = generate_test_set(data_set)
+    test_path = os.path.join(folder_path, f"{base_name}{suffix}.json")
+    with open(test_path, "w") as f:
+        json.dump(test_set, f, indent=4)
+    print(f"✅ Saved {base_name} test set to {test_path}")
 
 def main():
     import argparse
@@ -185,6 +233,7 @@ def main():
     parser.add_argument('--dataset_name', type=str, default='training_dataset.json', help='Name of the dataset file')
     parser.add_argument('--profile_name', type=str, default='profiles.json', help='Name of the profiles file')
     parser.add_argument('--num_profiles', type=int, default=1, help='Number of profiles to forget')
+    parser.add_argument('--max_retain_per_firstname', type=int, default=10, help='Number of profiles to retain')
     parser.add_argument('--selected_attr', type=str, nargs='*', default=['none'], 
                         help=f'Attributes to select, options: {attr_types}')
     parser.add_argument('--forget_mode', type=str, default='random', 
@@ -223,6 +272,7 @@ def main():
         forget_mode=forget_mode,
         retain_mode=retain_mode,
         num_profiles=num_profiles,
+        max_ret_per_firstname=args.max_retain_per_firstname,
         selected_attr=selected_attr
     )
 
@@ -230,7 +280,7 @@ def main():
     forget_mode_map = {
         "random": "",
         "same_firstname": "-same_fn",
-        "different_firstname": "-diff_fn",
+        "different_firstname": "", # "-diff_fn",
         "random_combination": "-rand_inst"
     }
     retain_mode_map = {
@@ -245,47 +295,30 @@ def main():
         if forget_mode != "random_combination" else f"unlearn-N{num_profiles}-INS"
     set_path = f"{set_path}-{suffix}" if suffix else set_path
     folder_path = os.path.join(folder_path, set_path)
-    if os.path.exists(folder_path) is False:
-        os.makedirs(folder_path, exist_ok=True)
 
-    # Save forget_set
+    # 保存遗忘集及其测试集
     forget_suffix = f"{forget_mode_map[forget_mode]}"
-    forget_path = os.path.join(folder_path, f"forget{forget_suffix}.json")
-    with open(forget_path, "w") as f:
-        json.dump(forget_set, f, indent=4)
-    print(f"✅ Saved forget_set to {forget_path}")
+    save_sets_with_test(folder_path, "forget", forget_set, forget_suffix)
 
-    # Save retain_set(s)
+    # 保存保留集及其测试集
     if isinstance(retain_sets, dict):
         for mode, rset in retain_sets.items():
             retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[mode]}"
-            retain_path = os.path.join(folder_path, f"retain{retain_suffix}.json")
-            with open(retain_path, "w") as f:
-                json.dump(rset, f, indent=4)
-            print(f"✅ Saved retain_set ({mode}) to {retain_path}")
+            save_sets_with_test(folder_path, "retain", rset, retain_suffix)
     else:
         retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[retain_mode]}"
-        retain_path = os.path.join(folder_path, f"retain{retain_suffix}.json")
-        with open(retain_path, "w") as f:
-            json.dump(retain_sets, f, indent=4)
-        print(f"✅ Saved retain_set to {retain_path}")
+        save_sets_with_test(folder_path, "retain", retain_sets, retain_suffix)
 
-    # Save remain_set(s)
+    # 保存剩余集及其测试集
     if isinstance(remain_sets, dict):
         for mode, rset in remain_sets.items():
             if rset == []:
                 continue
             remain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[mode]}"
-            remain_path = os.path.join(folder_path, f"remain{remain_suffix}.json")
-            with open(remain_path, "w") as f:
-                json.dump(rset, f, indent=4)
-            print(f"✅ Saved remain_set ({mode}) to {remain_path}")
+            save_sets_with_test(folder_path, "remain", rset, remain_suffix)
     else:
         remain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[retain_mode]}"
-        remain_path = os.path.join(folder_path, f"remain{remain_suffix}.json")
-        with open(remain_path, "w") as f:
-            json.dump(remain_sets, f, indent=4)
-        print(f"✅ Saved retain_set to {remain_path}")
+        save_sets_with_test(folder_path, "remain", remain_sets, remain_suffix)
 
 
 if __name__ == "__main__":
