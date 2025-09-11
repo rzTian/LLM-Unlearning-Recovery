@@ -109,7 +109,7 @@ class EvalQA(data_preprocess):
                 year_match = re.search(r"\b(19|20)\d{2}\b", s)
                 if year_match:
                     return int(year_match.group())
-                return 1970  # 默认返回1970
+                return 0  # 默认返回0
                 
             # Error formula: min(|predicted_year - true_year|, 20) / 20
             absolute_error = abs(extract_year(predicts) - extract_year(true_answer))
@@ -183,10 +183,14 @@ class EvalQA(data_preprocess):
             save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
-            save_fname =  f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
+            save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
             save_fname = os.path.join(save_folder, save_fname)
         elif eval_args.modelType == 'learned':
-            save_fname = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
+            save_folder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/{eval_args.unlearnSet}"
+            if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
+                os.makedirs(os.path.join(eval_args.logDIR, save_folder))
+            save_fname = f"epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
+            save_fname = os.path.join(save_folder, save_fname)
         else:
             save_fname = f"{eval_args.modelType}-{eval_args.datasetType}.json"
 

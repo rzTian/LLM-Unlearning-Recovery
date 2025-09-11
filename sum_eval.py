@@ -124,7 +124,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
                     if not m_base:
                         continue
                     base_json = os.path.join(base_dir, bfname)
-                    base_metrics = extract_metrics(base_json)
+                    base_metrics = extract_metrics_from_base(base_json)
                     if base_metrics:
                         for k, v in base_metrics.items():
                             epoch_rows[epoch][f"base_{dataset_tag}_{k}"] = v
@@ -155,7 +155,7 @@ def scan_all_configs_and_save(unlearn_root, recovery_root, base_root):
         if config_name in SKIP_FOLDERS:
             print(f"⚠️ Skipping folder: {config_name}")
             continue
-        if not re.match(r'.*-lr[\d\.]+_WD[\d\.]+_loraRank\d+_loraDrop[\d\.]+_GradStep[\d\.]+_reg[\d\.]+', config_name):
+        if not re.match(r'.*-lr[\d\.e-]+_WD[\d\.]+_loraRank\d+_loraDrop[\d\.]+_GradStep[\d\.]+_reg[\d\.]+', config_name):
             print(f"❌ Invalid config name: {config_name}")
             continue
         print(f"🔍 Processing config: {config_name}")
@@ -169,7 +169,7 @@ def scan_all_configs_and_save(unlearn_root, recovery_root, base_root):
             metrics = set()
             # Extract unique metrics from the DataFrame
             for col in df.columns:
-                m = re.match(r'^(unlearn|recovery)_[A-Za-z0-9_]+_([A-Za-z0-9_]+)$', col)
+                m = re.match(r'^(unlearn|recovery|base)_[A-Za-z0-9_]+_([A-Za-z0-9_]+)$', col)
                 if m:
                     metrics.add(m.group(2))
             # Sort metrics for consistent plotting
@@ -204,7 +204,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
         plt.figure(figsize=(10, 6))
         skip_keywords = ["entro", "flip", "oracle"]
         for col in df_method.columns:
-            if attribute in col and col.startswith(("recovery_")): # ("unlearn_", "recovery_")
+            if attribute in col and col.startswith(("unlearn_", "base_")): # ("unlearn_", "recovery_", "base_")
                 if any(skip in col for skip in skip_keywords):
                     continue
                 # plt.plot(df_method["epoch"], df_method[col], marker='o', label=col)
@@ -216,6 +216,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 
                 plt.plot(df_method["epoch"], yvals, marker='o', label=col, alpha=0.8)
 
+        plt.ylim(0, 1.05)
         plt.title(f"{attribute} progression for method: {method}")
         plt.xlabel("Epoch")
         plt.ylabel(f"Average {attribute} error")

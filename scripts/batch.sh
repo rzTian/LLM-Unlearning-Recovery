@@ -1,15 +1,15 @@
-PARENT=49542781
+PARENT=49556224
 N_START=0
 N_END=7
-INTERVAL=5
+INTERVAL=13
 SUM=$(((N_END - N_START + 1) / 2))
-MAX=$(((N_END - N_START + 1) * INTERVAL - 1))
+MAX=$(((N_END + 1) * INTERVAL - 1))
 
 EVAL_SH=scripts/eval_unl.sh
 SUM_SH=scripts/sum.sh
 
 eval_job_prefixes=()
-for n in {${N_START}..${N_END}}; do
+for ((n=N_START; n<=N_END; n++)); do
     START=$((n * INTERVAL))
     END=$(( (n + 1) * INTERVAL - 1 ))
     if [ $END -gt $MAX ]; then
