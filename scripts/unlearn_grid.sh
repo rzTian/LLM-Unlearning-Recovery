@@ -19,7 +19,7 @@ rg_list=(0.5 1.0 2.0 5.0)
 r_list=(256)
 gs_list=(10)
 lr_list=(0.0005 0.001)
-epoch_list=(10)
+epoch_list=(20)
 set_list=("unlearn-N20-A1-yrb")
 method_list=('grad_diff')
 

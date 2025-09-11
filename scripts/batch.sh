@@ -18,8 +18,7 @@ for n in {0..7}; do
     echo "Submitted job group $n: range $START-$END, Job ID: $eval_job"
     
     if [ $(( (n - N_START + 1) % SUM )) -eq 0 ] || [ $n -eq $N_END ]; then
-        sum_dependency="afterany:${eval_job}"
-        sum_job=$(sbatch --parsable --dependency=$sum_dependency scripts/sum.sh)
+        sum_job=$(sbatch --parsable --dependency=afterok:${PARENT}_${n} --dependency=afterany:${eval_job} scripts/sum.sh)
         echo "Submitted summary job: depends on $eval_job, Job ID: $sum_job"
     fi
 done
