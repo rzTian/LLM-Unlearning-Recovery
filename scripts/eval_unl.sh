@@ -3,7 +3,7 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-02:00  # time (DD-HH:MM)
+#SBATCH --time=00-00:30  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/eval-unl-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
@@ -11,24 +11,24 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-79
+#SBATCH --array=0-119
 
 rg_list=(0.5 1.0 2.0 5.0)
-r_list=(256)
+r_list=(32 64 128)
 gs_list=(10)
-lr_list=(0.0005 0.001)
+lr_list=(0.00001 0.0001)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
 method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
-epoch_list=(2 4 6 8 10 12 14 16 18 20)
+epoch_list=(2 4 6 8 10)
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$((IDX / 20))
-r_idx=$(((IDX / 20) % 1))
-ga_idx=$(((IDX / 20) % 1))
-lr_idx=$(((IDX / 10) % 2))
-set_idx=$(((IDX / 10) % 1))
-method_idx=$(((IDX / 10) % 1))
-epoch_idx=$((IDX % 10))
+rg_idx=$((IDX / 30))
+r_idx=$(((IDX / 10) % 3))
+ga_idx=$(((IDX / 10) % 1))
+lr_idx=$(((IDX / 5) % 2))
+set_idx=$(((IDX / 5) % 1))
+method_idx=$(((IDX / 5) % 1))
+epoch_idx=$((IDX % 5))
 
 RG=${rg_list[$rg_idx]}
 R=${r_list[$r_idx]}
@@ -55,7 +55,7 @@ python evaluate.py  --datasetType $FORGET_TYPE  --unlearnSet $UNLEARN_SET  --mod
     --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS
 python evaluate.py  --datasetType $RETAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
     --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS
-python evaluate.py  --datasetType $REMAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS
-python evaluate.py  --datasetType "common"  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS
+# python evaluate.py  --datasetType $REMAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
+#     --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS
+# python evaluate.py  --datasetType "common"  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
+#     --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --LoRA_rank_fgt $R --grad_acc_steps_fgt $GS

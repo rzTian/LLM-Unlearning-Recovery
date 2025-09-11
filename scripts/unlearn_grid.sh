@@ -3,7 +3,7 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-01:00  # time (DD-HH:MM)
+#SBATCH --time=00-00:30  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/unlearn-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
@@ -11,19 +11,19 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-7
+#SBATCH --array=0-23
 
 rg_list=(0.5 1.0 2.0 5.0)
-r_list=(256)
+r_list=(32 64 128)
 gs_list=(10)
-lr_list=(0.0005 0.001)
-epoch_list=(20)
+lr_list=(0.00001 0.0001)
+epoch_list=(10)
 set_list=("unlearn-N20-A1-yrb")
 method_list=('grad_diff')
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$((IDX / 2))
-r_idx=$(((IDX / 2) % 1))
+rg_idx=$((IDX / 6))
+r_idx=$(((IDX / 2) % 3))
 gs_idx=$(((IDX / 2) % 1))
 lr_idx=$(((IDX / 1) % 2))
 epoch_idx=$(((IDX / 1) % 1))

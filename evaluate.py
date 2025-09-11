@@ -747,9 +747,10 @@ def extract_dir(eval_args):
     file_path = "./data_generator/data"
     if eval_args.datasetType in ["train", "val", "common"]:
         set_path = ""
+        filename = "X-" + FILE_NAMES[eval_args.datasetType]
     else:
         set_path = eval_args.unlearnSet
-    filename = "test-" + FILE_NAMES[eval_args.datasetType]
+        filename = "test-" + FILE_NAMES[eval_args.datasetType]
     dataDIR = os.path.join(file_path, set_path, filename)
 
     if eval_args.datasetType not in FILE_NAMES:
