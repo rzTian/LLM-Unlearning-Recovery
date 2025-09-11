@@ -1,10 +1,8 @@
 #!/bin/bash
 #SBATCH --account=rrg-yymao
-#SBATCH --nodes=1                # Request 1 node
-#SBATCH --ntasks-per-node=1
-#SBATCH --gpus-per-task=4
+#SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
-#SBATCH --mem=498G        # memory per node
+#SBATCH --mem=128G        # memory per node
 #SBATCH --time=00-01:00  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/unlearn-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com

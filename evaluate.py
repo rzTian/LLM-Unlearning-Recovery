@@ -749,7 +749,7 @@ def extract_dir(eval_args):
         set_path = ""
     else:
         set_path = eval_args.unlearnSet
-    filename = FILE_NAMES[eval_args.datasetType]
+    filename = "test-" + FILE_NAMES[eval_args.datasetType]
     dataDIR = os.path.join(file_path, set_path, filename)
 
     if eval_args.datasetType not in FILE_NAMES:

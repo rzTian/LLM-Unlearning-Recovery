@@ -218,10 +218,10 @@ def save_sets_with_test(folder_path, base_name, data_set, suffix=""):
     print(f"✅ Saved {base_name} set to {main_path}")
     
     # 生成并保存测试集
-    folder_path = folder_path + "-test"
+    # folder_path = folder_path + "-test"
     os.makedirs(folder_path, exist_ok=True)
     test_set = generate_test_set(data_set)
-    test_path = os.path.join(folder_path, f"{base_name}{suffix}.json")
+    test_path = os.path.join(folder_path, f"test-{base_name}{suffix}.json")
     with open(test_path, "w") as f:
         json.dump(test_set, f, indent=4)
     print(f"✅ Saved {base_name} test set to {test_path}")
