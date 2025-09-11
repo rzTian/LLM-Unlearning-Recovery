@@ -20,7 +20,7 @@ r_list=(32)
 gs_list=(10)
 lr_list=(0.001)
 epoch_list=(25)
-set_list=("unlearn-N1-A1-bld" "unlearn-N1-A1-pcd" "unlearn-N1-A1-sin" "unlearn-N1-A1-yrb")
+set_list=("unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin" "unlearn-N20-A1-yrb")
 retain_list=("retain-same_attr.json" "retain-same_fn_attr.json")
 method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
 

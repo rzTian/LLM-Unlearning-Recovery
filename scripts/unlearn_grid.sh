@@ -20,7 +20,7 @@ r_list=(256)
 gs_list=(10)
 lr_list=(0.0005 0.001)
 epoch_list=(10)
-set_list=("unlearn-N1-A1-yrb")
+set_list=("unlearn-N20-A1-yrb")
 method_list=('grad_diff')
 
 IDX=$SLURM_ARRAY_TASK_ID

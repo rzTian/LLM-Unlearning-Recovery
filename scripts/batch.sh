@@ -1,4 +1,4 @@
-PARENT=49473804
+PARENT=49531160
 N_START=0
 N_END=7
 INTERVAL=10
@@ -13,7 +13,7 @@ for n in {0..7}; do
         END=$MAX
     fi
 
-    eval_job=$(sbatch --parsable --dependency=afterany:${PARENT}_${n} --array=${START}-${END} scripts/eval_unl.sh)
+    eval_job=$(sbatch --parsable --dependency=afterok:${PARENT}_${n} --array=${START}-${END} scripts/eval_unl.sh)
     eval_job_prefixes+=($eval_job)
     echo "Submitted job group $n: range $START-$END, Job ID: $eval_job"
     

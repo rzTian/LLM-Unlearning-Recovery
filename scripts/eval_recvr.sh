@@ -18,7 +18,7 @@ r_list=(32)
 gs_list=(8)
 lr_list=(0.001)
 epoch_list=(2 4 6 8 10 12 14 16 18 20 22 24)
-set_list=("unlearn-N1-A1-yrb-test" "unlearn-N1-A1-bld-test" "unlearn-N1-A1-pcd-test" "unlearn-N1-A1-sin-test")
+set_list=("unlearn-N20-A1-yrb-test" "unlearn-N20-A1-bld-test" "unlearn-N20-A1-pcd-test" "unlearn-N20-A1-sin-test")
 method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
 k_list=(500 1000)
 
