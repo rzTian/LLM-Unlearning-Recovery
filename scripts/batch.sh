@@ -9,7 +9,7 @@ EVAL_SH=scripts/eval_unl.sh
 SUM_SH=scripts/sum.sh
 
 eval_job_prefixes=()
-for n in {0..7}; do
+for n in {${N_START}..${N_END}}; do
     START=$((n * INTERVAL))
     END=$(( (n + 1) * INTERVAL - 1 ))
     if [ $END -gt $MAX ]; then
