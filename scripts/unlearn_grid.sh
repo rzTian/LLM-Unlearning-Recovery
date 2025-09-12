@@ -11,7 +11,7 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-7
+#SBATCH --array=3,5-7
 
 rg_list=(5.0 10.0)
 r_list=(256)

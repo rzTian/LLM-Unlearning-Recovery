@@ -16,23 +16,21 @@
 #SBATCH --array=0-47
 
 rg_list=(1.0)
-r_list=(32)
+r_list=(256)
 gs_list=(10)
 lr_list=(0.001)
 epoch_list=(25)
 set_list=("unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin" "unlearn-N20-A1-yrb")
-retain_list=("retain-same_attr.json" "retain-same_fn_attr.json")
-method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
+method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$(((IDX / 48) % 1))
-r_idx=$(((IDX / 48) % 1))
-gs_idx=$(((IDX / 48) % 1))
-lr_idx=$(((IDX / 48) % 1))
-epoch_idx=$(((IDX / 48) % 1))
-retain_idx=$(((IDX / 12) % 4))
-set_idx=$(((IDX / 6) % 2))
-method_idx=$((IDX % 6))
+rg_idx=$(((IDX / 4) % 1))
+r_idx=$(((IDX / 4) % 1))
+gs_idx=$(((IDX / 4) % 1))
+lr_idx=$(((IDX / 4) % 1))
+epoch_idx=$(((IDX / 1) % 4))
+set_idx=$(((IDX / 1) % 1))
+method_idx=$((IDX % 1))
 
 RG=${rg_list[$rg_idx]}
 R=${r_list[$r_idx]}
@@ -43,7 +41,7 @@ METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_SET="forget.json"
-RETAIN_SET=${retain_list[$retain_idx]}
+RETAIN_SET="retain-same_fn_attr.json"
 
 echo "🔧 当前配置: LoRA rank=$R | reg=$RG | gradstep=$GS | lr=$LR | epochs=$EPOCHS | method=$METHOD"
 echo "🔧 当前配置: Unlearn Set=$UNLEARN_SET | Forget Set=$FORGET_SET | Retain Set=$RETAIN_SET"
