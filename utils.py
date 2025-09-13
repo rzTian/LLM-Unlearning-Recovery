@@ -80,8 +80,8 @@ class CustomizedLogitsProcessor(LogitsProcessor):
         self.dependency_rules = {
             # 规则格式：{属性: {当前pos: {依赖的pos: {历史token值: 允许的当前token集合}}}}
             "year_of_birth": {
-                1: {  # 当前步骤是 pos1 时
-                    0: {  # 依赖 pos0 的值
+                2: {  # 当前步骤是 pos2 时
+                    1: {  # 依赖 pos1 的值
                         # pos0_token_id: 允许的 pos1_token_id 集合
                         self.tokenizer.encode("1", add_special_tokens=False)[0]: self.tokenizer.encode("9", add_special_tokens=False),
                         self.tokenizer.encode("2", add_special_tokens=False)[0]: self.tokenizer.encode("0", add_special_tokens=False)
