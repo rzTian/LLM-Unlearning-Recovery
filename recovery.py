@@ -644,7 +644,7 @@ class recoverQA(EvalQA):
                 full_question = question + " " + masked
 
                 questions.append(full_question)
-                true_answers.append(item["answer"])
+                true_answers.append(f' {item["answer"]}.')
                 attributes.append(attr)
             
 
