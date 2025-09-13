@@ -53,7 +53,7 @@ class Dummy:
         # Maximum token positions per attribute (determined empirically or by format)
         attr_lens = {
             "year_of_birth": 5,
-            "address_postcode": 6,
+            "address_postcode": 7,
             "social_insurance_number": 10,
             "blood_type": 2
         }
@@ -72,7 +72,7 @@ class Dummy:
 
                 with open(filepath, "r") as f:
                     for line in f:
-                        line = line.strip() + '.'  # Add trailing dot to mimic natural tokenization
+                        line = ' ' + line.strip() + '.'  # Add trailing dot to mimic natural tokenization
                         if not line:
                             continue
                         token_ids = encode(line)
@@ -108,8 +108,8 @@ if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-llm-7b-chat")  # 替换为你的模型
     dummy = Dummy(tokenizer)
 
-    # token_sets = dummy._build_attr_token_sets()
-    # print("✅ Token sets saved to tokens_notes/all_token_sets.txt")
+    token_sets = dummy._build_attr_token_sets()
+    print("✅ Token sets saved to tokens_notes/all_token_sets.txt")
 
-    sentence = "[INST] What is the postcode of Tom Lopez's address? [/INST] Tom Lopez's address postcode is T9N5K2. Lopez's address postcode is T9N5K2.L5."
-    dummy.print_token_info(sentence)
+    # sentence = "[INST] What is the postcode of Tom Lopez's address? [/INST] Tom Lopez's address postcode is T9N5K2. Lopez's address postcode is T9N5K2.L5."
+    # dummy.print_token_info(sentence)

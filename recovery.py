@@ -208,6 +208,7 @@ class recoverQA(EvalQA):
             outputs = []
             scores_all = []
             orders_all = []
+            generated_history = []
             for step in range(output_length[0] if output_length else 20):
                 # Get the current input IDs and attention mask
                 visible = attention_mask[0] == 1
@@ -225,6 +226,7 @@ class recoverQA(EvalQA):
                     generation_step=step,
                     flip_logit=self.flip
                 )
+                processor.history = generated_history[:step]
 
                 outputs_step = self.model.generate(
                     input_ids=input_ids,
@@ -236,6 +238,8 @@ class recoverQA(EvalQA):
                     return_dict_in_generate=True,
                     output_logits=True
                 )
+                current_token = outputs_step.sequences[:, -1:].item()
+                generated_history.append(current_token)
 
                 # Get the selected token IDs and logits
                 logits_step = outputs_step.logits[0][0]  # shape: [vocab_size]
@@ -615,7 +619,7 @@ class recoverQA(EvalQA):
         keys = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
         attr_lens = {
             "year_of_birth": 5,
-            "address_postcode": 6,
+            "address_postcode": 7,
             "social_insurance_number": 10,
             "blood_type": 2
         }

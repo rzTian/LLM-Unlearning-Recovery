@@ -42,8 +42,8 @@ METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_TYPE="forget"
-RETAIN_TYPE="retain_sa"
-REMAIN_TYPE="remain_sa"
+RETAIN_TYPE="retain_sfa"
+REMAIN_TYPE="remain_sfa"
 RECOVER_TYPE="flip"
 BEAM_K=${k_list[$k_idx]}
 BEAM_C=10

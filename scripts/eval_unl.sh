@@ -11,21 +11,21 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-39
+#SBATCH --array=0-19
 
 rg_list=(5.0 10.0)
 r_list=(256)
 wd_list=(0.0 0.01)
-lr_list=(0.00005)
+lr_list=(0.0002 0.0001)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
 method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
 epoch_list=(4 10 14 20 24 30 34 40 44 50)
 
 IDX=$SLURM_ARRAY_TASK_ID
-rg_idx=$((IDX / 20))
-r_idx=$(((IDX / 20) % 1))
+rg_idx=$((IDX / 10))
+r_idx=$(((IDX / 10) % 1))
 wd_idx=$(((IDX / 10) % 2))
-lr_idx=$(((IDX / 10) % 1))
+lr_idx=$(((IDX / 10) % 2))
 set_idx=$(((IDX / 10) % 1))
 method_idx=$(((IDX / 10) % 1))
 epoch_idx=$((IDX % 10))

@@ -24,6 +24,10 @@ SKIP_FOLDERS = [
     "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 ]
 
+CHOOSE_FOLDER = {
+    "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
+}
+
 
 
 def extract_metrics(path):
@@ -67,12 +71,6 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
     extract all results from its methods (dpo/npo/...) and matching recovery results.
     """
     config_path = os.path.join(unlearn_root, config_name)
-    # match = re.search(r'-lr([\d\.]+)_WD([\d\.]+)_loraRank(\d+)_loraDrop([\d\.]+)_reg([\d\.]+)', config_name)
-    # if not match:
-    #     print(f"❌ Invalid config path: {config_name}")
-    #     return pd.DataFrame()
-    # lr, wd, loraRank, loraDrop, reg = match.groups()
-
     records = []
 
     for method in os.listdir(config_path):
@@ -83,6 +81,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
         # 按 epoch 聚合多个 dataset_tag
         epoch_rows = defaultdict(dict)
 
+        # 1. 解析unlearn数据
         for fname in os.listdir(method_path):
             if not fname.startswith("epoch-") or not fname.endswith(".json"):
                 continue
@@ -92,42 +91,44 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
             epoch = int(m.group(1))
             dataset_tag = m.group(2)
 
-            # 解析unlearn数据
             unlearn_json = os.path.join(method_path, fname)
             unlearn_metrics = extract_metrics(unlearn_json)
             if unlearn_metrics:
                 for k, v in unlearn_metrics.items():
                     epoch_rows[epoch][f"unlearn_{dataset_tag}_{k}"] = v
 
-            # 解析recovery数据
-            rec_dir = os.path.join(recovery_root, config_name, method)
-            if os.path.isdir(rec_dir):
-                for rfname in os.listdir(rec_dir):
-                    # 兼容两种格式：
-                    #   recovery-epoch-2-forget-flip_logit-0.json
-                    #   recovery-epoch-2-forget-beam1_K10_C3.json
-                    m = re.match(rf'^recovery-epoch-({epoch})-({dataset_tag})-([^.]+)\.json$', rfname)
-                    if not m:
-                        continue
-                    recover_method = m.group(3)
-                    recovery_json = os.path.join(rec_dir, rfname)
-                    recovery_metrics = extract_metrics(recovery_json)
-                    if recovery_metrics:
-                        for k, v in recovery_metrics.items():
-                            epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
-            
-            # 解析base数据
-            base_dir = os.path.join(base_root, config_name.replace("unlearn-", ""), method)
-            if os.path.isdir(base_dir):
-                for bfname in os.listdir(base_dir):
-                    m_base = re.match(rf'^epoch-({epoch})-({dataset_tag})\.json$', bfname)
-                    if not m_base:
-                        continue
-                    base_json = os.path.join(base_dir, bfname)
-                    base_metrics = extract_metrics_from_base(base_json)
-                    if base_metrics:
-                        for k, v in base_metrics.items():
-                            epoch_rows[epoch][f"base_{dataset_tag}_{k}"] = v
+        # 2. 解析recovery数据（独立于unlearn的epoch）
+        rec_dir = os.path.join(recovery_root, config_name, method)
+        if os.path.isdir(rec_dir):
+            for rfname in os.listdir(rec_dir):
+                m = re.match(r'^recovery-epoch-(\d+)-([a-zA-Z0-9_]+)-([^.]+)\.json$', rfname)
+                if not m:
+                    continue
+                epoch = int(m.group(1))
+                dataset_tag = m.group(2)
+                recover_method = m.group(3)
+                
+                recovery_json = os.path.join(rec_dir, rfname)
+                recovery_metrics = extract_metrics(recovery_json)
+                if recovery_metrics:
+                    for k, v in recovery_metrics.items():
+                        epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
+        
+        # 3. 解析base数据（独立于unlearn的epoch）
+        base_dir = os.path.join(base_root, config_name.replace("unlearn-", ""), method)
+        if os.path.isdir(base_dir):
+            for bfname in os.listdir(base_dir):
+                m_base = re.match(r'^epoch-(\d+)-([a-zA-Z0-9_]+)\.json$', bfname)
+                if not m_base:
+                    continue
+                epoch = int(m_base.group(1))
+                dataset_tag = m_base.group(2)
+                
+                base_json = os.path.join(base_dir, bfname)
+                base_metrics = extract_metrics_from_base(base_json)
+                if base_metrics:
+                    for k, v in base_metrics.items():
+                        epoch_rows[epoch][f"base_{dataset_tag}_{k}"] = v
 
         # 组装每一行
         for epoch, row_data in epoch_rows.items():
@@ -142,6 +143,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
             }
             row.update(row_data)
             records.append(row)
+            # print(row)
 
     return pd.DataFrame(records)
 
@@ -152,6 +154,9 @@ def scan_all_configs_and_save(unlearn_root, recovery_root, base_root):
     and save a summary.csv in each config folder.
     """
     for config_name in os.listdir(unlearn_root):
+        if CHOOSE_FOLDER:
+            if config_name not in CHOOSE_FOLDER:
+                continue
         if config_name in SKIP_FOLDERS:
             print(f"⚠️ Skipping folder: {config_name}")
             continue
@@ -202,19 +207,21 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
         df_method = df[df["method"] == method].sort_values("epoch")
 
         plt.figure(figsize=(10, 6))
-        skip_keywords = ["entro", "flip", "oracle"]
+        skip_keywords = ["entro", "oracle"]
         for col in df_method.columns:
-            if attribute in col and col.startswith(("unlearn_", "base_")): # ("unlearn_", "recovery_", "base_")
+            if attribute in col and col.startswith(("unlearn_", "recovery_", "base_")): # ("unlearn_", "recovery_", "base_")
                 if any(skip in col for skip in skip_keywords):
                     continue
-                # plt.plot(df_method["epoch"], df_method[col], marker='o', label=col)
-                # 原始数值
-                yvals = df_method[col].values
-                # 加上轻微随机抖动，避免线重合
-                jitter = np.random.uniform(-0.002, 0.002, size=len(yvals))
-                yvals = yvals + jitter
-
-                plt.plot(df_method["epoch"], yvals, marker='o', label=col, alpha=0.8)
+                # 筛选出该列非空的行
+                valid_rows = df_method[~df_method[col].isnull()]
+                if not valid_rows.empty:
+                    plt.plot(
+                        valid_rows["epoch"],
+                        valid_rows[col],
+                        marker='o',
+                        label=col,
+                        alpha=0.8
+                    )
 
         plt.ylim(0, 1.05)
         plt.title(f"{attribute} progression for method: {method}")

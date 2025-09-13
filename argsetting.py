@@ -44,9 +44,9 @@ def parser_eval():
     parser.add_argument('--eps_fgt', default=0, type=int)
     parser.add_argument('--reg_weights_fgt', default=1.0, type=float)
     parser.add_argument('--wd_fgt', default=0.0, type=float)
-    parser.add_argument('--LoRA_rank_fgt', default=32, type=int)
+    parser.add_argument('--LoRA_rank_fgt', default=256, type=int)
     parser.add_argument('--lora_dropout_fgt', default=0.0, type=float)
-    parser.add_argument('--grad_acc_steps_fgt', default=8, type=int)
+    parser.add_argument('--grad_acc_steps_fgt', default=10, type=int)
     # generation configuration
     parser.add_argument('--max_new_tokens', default=100, type=int)
     parser.add_argument('--temperature', default=0.3, type=float)
@@ -64,12 +64,12 @@ def parser_unlearn():
     parser.add_argument('--epochs', default=15, type=int)  ## Note that the epochs is w.r.t the size of the retain set.
     parser.add_argument('--reg_weights', default=1.0, type=float)
     parser.add_argument('--beta', default=0.1, type=float)
-    parser.add_argument('--LoRA_rank', default=64, type=int)
+    parser.add_argument('--LoRA_rank', default=256, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
     # Control effective batch size
     parser.add_argument('--bs_train', default=8, type=int) # per device
     parser.add_argument('--bs_eval', default=8, type=int) # per device
-    parser.add_argument('--grad_acc_steps', default=20, type=int)
+    parser.add_argument('--grad_acc_steps', default=10, type=int)
     # File name of the dataset
     parser.add_argument('--num_fgt', default=2025, type=int)
     parser.add_argument("--unlearnSet", default="unlearn-N1", type=str)

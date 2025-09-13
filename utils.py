@@ -71,9 +71,25 @@ class CustomizedLogitsProcessor(LogitsProcessor):
         # Maximum token positions per attribute (determined empirically or by format)
         self.attr_lens = {
             "year_of_birth": 5,
-            "address_postcode": 6,
+            "address_postcode": 7,
             "social_insurance_number": 10,
             "blood_type": 2
+        }
+
+        self.history = []  # 格式：[pos0_token_id, pos1_token_id, ...]
+        self.dependency_rules = {
+            # 规则格式：{属性: {当前pos: {依赖的pos: {历史token值: 允许的当前token集合}}}}
+            "year_of_birth": {
+                1: {  # 当前步骤是 pos1 时
+                    0: {  # 依赖 pos0 的值
+                        # pos0_token_id: 允许的 pos1_token_id 集合
+                        self.tokenizer.encode("1", add_special_tokens=False)[0]: self.tokenizer.encode("9", add_special_tokens=False),
+                        self.tokenizer.encode("2", add_special_tokens=False)[0]: self.tokenizer.encode("0", add_special_tokens=False)
+                    }
+                }
+                # 可扩展其他位置的依赖规则，如 pos2 依赖 pos1 等
+            }
+            # 其他属性的依赖规则可在此添加
         }
 
         self.token_sets = self._build_attr_token_sets()
@@ -138,7 +154,7 @@ class CustomizedLogitsProcessor(LogitsProcessor):
 
                 with open(filepath, "r") as f:
                     for line in f:
-                        line = line.strip() + '.'  # Add trailing dot to mimic natural tokenization
+                        line = ' ' + line.strip() + '.'  # Add trailing dot to mimic natural tokenization
                         if not line:
                             continue
                         token_ids = encode(line)
@@ -206,10 +222,22 @@ class CustomizedLogitsProcessor(LogitsProcessor):
 
         for i in range(batch_size):
             key = f"{self.attr_type}_pos{self.step}"
-            selected = self.token_sets.get(key, [self.tokenizer.eos_token_id]) # or list(range(vocab_size))
+            base_selected = self.token_sets.get(key, [self.tokenizer.eos_token_id]) # or list(range(vocab_size))
+            if isinstance(base_selected, set):
+                base_selected = list(base_selected)
 
-            if isinstance(selected, set):
-                selected = list(selected)
+            current_step = self.step
+            if self.attr_type in self.dependency_rules and current_step in self.dependency_rules[self.attr_type]:
+                rule = self.dependency_rules[self.attr_type][current_step]
+                for dep_pos, dep_map in rule.items():
+                    if dep_pos < len(self.history):
+                        history_token = self.history[dep_pos]
+                        if history_token in dep_map:
+                            allowed_tokens = list(set(base_selected) & set(dep_map[history_token]))
+                            base_selected = allowed_tokens if allowed_tokens else base_selected
+            
+            selected = base_selected
+            self.selected_token_ids = selected
 
             # control the logit value
             mask[i, selected] = -scores[i, selected] if self.flip_logit else scores[i, selected]

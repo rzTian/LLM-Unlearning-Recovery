@@ -751,7 +751,7 @@ def extract_dir(eval_args):
     file_path = "./data_generator/data"
     if eval_args.datasetType in ["train", "val", "common"]:
         set_path = ""
-        filename = "X-" + FILE_NAMES[eval_args.datasetType]
+        filename = FILE_NAMES[eval_args.datasetType]
     else:
         set_path = eval_args.unlearnSet
         filename = "test-" + FILE_NAMES[eval_args.datasetType]
