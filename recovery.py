@@ -343,6 +343,7 @@ class recoverQA(EvalQA):
                         generation_step=step,
                         flip_logit=self.flip,  # 0/1
                     )
+                    processor.history = input_ids
                     lp_list = LogitsProcessorList([processor])
 
                     # 前向计算 logits（取最后一位）
@@ -644,13 +645,14 @@ class recoverQA(EvalQA):
                 full_question = question + " " + masked
 
                 questions.append(full_question)
-                true_answers.append(f' {item["answer"]}.')
+                true_answers.append(item["answer"])
                 attributes.append(attr)
             
 
             for q, ta, attr in zip(questions, true_answers, attributes):
                 ol = [attr_lens[attr]]
                 ans = extract_answer(ta, attr)
+                ans = ' ' + ans + '.'
 
                 if self.recover_type == "flip":
                     mo, od = self.recover_by_flip([q], output_length=ol, attr_type=attr, answer=ans)[0]
@@ -672,7 +674,7 @@ class recoverQA(EvalQA):
                 elif self.recover_type == "beam":
                     cands = self.recover_by_beam([q], output_length=ol, attr_type=attr, answer=ans, K=self.K, C=self.C)
                     best_pred, min_err, best_idx = self.beam_min_error(ta=ta, cands=cands, attr=attr, N=self.N)
-                    if attr == 'blood_type': min_err = best_idx
+                    # if attr == 'blood_type': min_err = best_idx
                     cand_texts = [c[0] for c in cands]
                     cand_scores = [float(c[1]) for c in cands]
 

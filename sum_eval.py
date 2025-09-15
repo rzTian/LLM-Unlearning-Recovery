@@ -25,7 +25,8 @@ SKIP_FOLDERS = [
 ]
 
 CHOOSE_FOLDER = {
-    "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
+    # "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
+    # "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0",
 }
 
 
@@ -115,7 +116,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
                         epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
         
         # 3. 解析base数据（独立于unlearn的epoch）
-        base_dir = os.path.join(base_root, config_name.replace("unlearn-", ""), method)
+        base_dir = os.path.join(base_root, config_name, method)
         if os.path.isdir(base_dir):
             for bfname in os.listdir(base_dir):
                 m_base = re.match(r'^epoch-(\d+)-([a-zA-Z0-9_]+)\.json$', bfname)
@@ -214,7 +215,9 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
                     continue
                 # 筛选出该列非空的行
                 valid_rows = df_method[~df_method[col].isnull()]
+                # print(f"col:{col}; attr:{attribute}; row:{valid_rows}")
                 if not valid_rows.empty:
+                    # print(f"绘制 {col}：{len(valid_rows)} 个数据点")
                     plt.plot(
                         valid_rows["epoch"],
                         valid_rows[col],
@@ -241,5 +244,5 @@ if __name__ == "__main__":
     scan_all_configs_and_save(
         unlearn_root="unlearn_deepseek_7b_log",
         recovery_root="recovery_deepseek_7b_log",
-        base_root="deepseek_7b_log"
+        base_root="base_deepseek_7b_log"
     )

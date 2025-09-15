@@ -169,8 +169,16 @@ def process_all_logs(target_dir):
                     skipped_count += 1
                     continue
                 
-                # 生成保存路径
-                save_path = os.path.join(root, "result.png")
+                # 生成保存路径（修改部分）
+                # 获取最后一个文件夹名
+                last_folder = os.path.basename(root)
+                # 获取倒数第二个文件夹路径
+                parent_folder = os.path.dirname(root)
+                # 创建plots目录
+                plots_dir = os.path.join(parent_folder, "plots")
+                os.makedirs(plots_dir, exist_ok=True)
+                # 生成图片文件名和路径
+                save_path = os.path.join(plots_dir, f"{last_folder}_dynamic.png")
                 
                 # 创建并保存图表
                 create_plot(data, save_path)
