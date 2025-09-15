@@ -11,23 +11,23 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-11
+#SBATCH --array=24-95
 
 r_list=(256)
 rg_list=(5.0)
-wd_list=(0.0)
-lr_list=(0.0002)
+wd_list=(0.01 0.0)
+lr_list=(0.0005 0.001)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
 method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
 epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
 k_list=(10)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 12))
-rg_idx=$(((IDX / 12) % 1))
-wd_idx=$(((IDX / 12) % 1))
-lr_idx=$(((IDX / 12) % 1))
-set_idx=$(((IDX / 12) % 1 + 1)
+r_idx=$((IDX / 96))
+rg_idx=$(((IDX / 96) % 1))
+wd_idx=$(((IDX / 48) % 2))
+lr_idx=$(((IDX / 24) % 2))
+set_idx=$(((IDX / 12) % 1 + 2)
 method_idx=$(((IDX / 12) % 1))
 epoch_idx=$((IDX % 12))
 
@@ -44,7 +44,7 @@ UNLEARN_SET=${set_list[$set_idx]}
 FORGET_TYPE="forget"
 RETAIN_TYPE="retain_sfa"
 REMAIN_TYPE="remain_sfa"
-RECOVER_TYPE="beam"
+RECOVER_TYPE="flip"
 BEAM_K=${k_list[$k_idx]}
 BEAM_C=10
 BEAM_N=1
@@ -71,10 +71,10 @@ python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --mode
       --K $BEAM_K --C $BEAM_C --N $BEAM_N \
       --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
 
-# echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
-# python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \
-#       --recover_type 'flip' --flip 0 \
-#       --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
+echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
+python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \
+      --recover_type 'flip' --flip 0 \
+      --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
 
 # echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 | CE | K $BEAM_K"
 # python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
