@@ -100,7 +100,7 @@ class SaveEveryNEpochsCallback(TrainerCallback):
 
     def on_epoch_end(self, args, state, control, **kwargs):
         current_epoch = int(state.epoch)
-        save_epochs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 17, 20, 25, 30, 35, 40, 45, 50]
+        save_epochs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 17, 20, 22, 25, 27, 30, 35, 40, 45, 50]
         if current_epoch in save_epochs: # current_epoch % self.save_every == 0:
             save_path = os.path.join(self.output_dir, f"epoch-{int(state.epoch)}")
             kwargs["model"].save_pretrained(save_path)

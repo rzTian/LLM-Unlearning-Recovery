@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
+#SBATCH --account=def-yymao
 #SBATCH --nodes=1                # Request 1 node
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=4
@@ -15,18 +15,18 @@
 #SBATCH --mail-type=ALL
 #SBATCH --array=0
 
-r_list=(128 256 512)
+r_list=(128 256)
 wd_list=(0.0 0.01)
-gs_list=(10)
+gs_list=(10 20 80 160)
 epoch_list=(50)
-lr_list=(0.001)
+lr_list=(0.0005)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 4))
-wd_idx=$(((IDX / 2) % 2))
-gs_idx=$(((IDX / 2) % 1))
-epoch_idx=$(((IDX / 2) % 1))
-lr_idx=$((IDX % 2))
+r_idx=$((IDX / 8))
+wd_idx=$(((IDX / 4) % 2))
+gs_idx=$(((IDX / 1) % 4))
+epoch_idx=$(((IDX / 1) % 1))
+lr_idx=$((IDX % 1))
 
 R=${r_list[$r_idx]}
 WD=${wd_list[$wd_idx]}

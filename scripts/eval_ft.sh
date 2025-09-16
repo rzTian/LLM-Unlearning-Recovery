@@ -1,23 +1,23 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
+#SBATCH --account=def-yymao
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-02:00  # time (DD-HH:MM)
-#SBATCH --output=./results_extra/eval-ft-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
-#SBATCH --mail-user=smsmun.husc@outlook.com
+#SBATCH --time=00-01:00  # time (DD-HH:MM)
+#SBATCH --output=./results_extra/eval-ft-5e4-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
+#SBATCH --mail-user=snow.jar.13@gmail.com
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --job-name=eval-ft
-#SBATCH --array=10-29
+#SBATCH --job-name=eval-ft-5e4
+#SBATCH --array=0-39
 
-r_list=(128 256 512)
+r_list=(128 256)
 wd_list=(0.0 0.01)
-gs_list=(4 8 20 40 80 200)
-lr_list=(0.001)
+gs_list=(40)
+lr_list=(0.0005)
 epoch_list=(2 4 6 8 10 15 20 30 40 50)
 
 IDX=$SLURM_ARRAY_TASK_ID

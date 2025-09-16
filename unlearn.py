@@ -99,7 +99,7 @@ class UnlearnQA(data_preprocess):
 
         # Add callbacks
         trainer.add_callback(EpochCheckpointCallback(
-            save_every=2,
+            save_every=5,
             base_path=train_args.unlearn_model_DIR
         ))
 

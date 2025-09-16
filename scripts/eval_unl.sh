@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
+#SBATCH --account=def-yymao
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
@@ -11,24 +11,24 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=24-95
+#SBATCH --array=0-79
 
 r_list=(256)
-rg_list=(5.0)
-wd_list=(0.01 0.0)
-lr_list=(0.0005 0.001)
+rg_list=(1.0 2.0)
+wd_list=(0.0 0.01)
+lr_list=(0.0002)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
 method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
-epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
+epoch_list=(20 40 60 80 100 120 140 160 180 200)
 
 IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$((IDX / 96))
-rg_idx=$(((IDX / 96) % 1))
-wd_idx=$(((IDX / 48) % 2))
-lr_idx=$(((IDX / 24) % 2))
-set_idx=$(((IDX / 12) % 2 + 2))
-method_idx=$(((IDX / 12) % 1))
-epoch_idx=$((IDX % 12))
+r_idx=$((IDX / 80))
+rg_idx=$(((IDX / 40) % 2))
+wd_idx=$(((IDX / 20) % 2))
+lr_idx=$(((IDX / 20) % 1))
+set_idx=$(((IDX / 10) % 2 + 2))
+method_idx=$(((IDX / 10) % 1))
+epoch_idx=$((IDX % 10))
 
 R=${r_list[$r_idx]}
 RG=${rg_list[$rg_idx]}
