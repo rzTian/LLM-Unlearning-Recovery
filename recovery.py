@@ -390,7 +390,7 @@ class recoverQA(EvalQA):
                         # 现在 sel_ids[...] 是 0-dim Tensor，可以安全 .item()
                         idx = top_idx[j]
                         tok_id = sel_ids[idx].item()
-                        incr = float(log_probs[idx])
+                        incr = float(scores[idx]) # float(log_probs[idx])
                         new_log_score = log_score + alpha * incr
 
                         tok = torch.tensor([[tok_id]], device=input_ids.device, dtype=input_ids.dtype)

@@ -1,8 +1,8 @@
-PARENT=1940964
-N_START=0
-N_END=7
-INTERVAL=10
-SUM=$(((N_END - N_START + 1) / 2))
+PARENT=49750827
+N_START=1
+N_END=11
+INTERVAL=12
+SUM=$(((N_END - N_START + 1) / 1))
 MAX=$(((N_END + 1) * INTERVAL - 1))
 
 EVAL_UNL_SH=scripts/eval_unl.sh
@@ -25,7 +25,7 @@ for ((n=N_START; n<=N_END; n++)); do
     
     if [ $(( (n - N_START + 1) % SUM )) -eq 0 ] || [ $n -eq $N_END ]; then
         sum_job=$(sbatch --parsable --dependency=afterok:${PARENT}_${n} --dependency=afterany:${eval_job_1}:${eval_job_2} ${SUM_SH})
-        echo "Submitted summary job: depends on $eval_job_1 and $eval_job_2, Job ID: $sum_job"
+        echo "Submitted summary job: depends on $eval_job_1, $eval_job_2 Job ID: $sum_job"
     fi
 done
 
