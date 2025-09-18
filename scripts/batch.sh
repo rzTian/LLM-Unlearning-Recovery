@@ -1,8 +1,8 @@
-PARENT=49750827
-N_START=1
+PARENT=49858642
+N_START=0
 N_END=11
 INTERVAL=12
-SUM=$(((N_END - N_START + 1) / 1))
+SUM=$(((N_END - N_START + 1) / 2))
 MAX=$(((N_END + 1) * INTERVAL - 1))
 
 EVAL_UNL_SH=scripts/eval_unl.sh

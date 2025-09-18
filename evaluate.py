@@ -126,7 +126,7 @@ class EvalQA(data_preprocess):
 
         elif attribute == "address_postcode":
             # Extract 6-character alphanumeric postcode (case-insensitive)
-            def extract_postcodes(s): return re.findall(r"[A-Z0-9]{6}", s)
+            def extract_postcodes(s): return re.findall(r"(?:[A-Z][0-9]){3}", s)
             candidates = extract_postcodes(predicts)
             if not candidates:
                 return 1.0

@@ -9,31 +9,39 @@ import re
 
 def compute_kl_divergence(model, target_model, inputs):
     with torch.no_grad():
-        ref_outputs = target_model(**inputs)
+        ref_outputs = target_model(** inputs, output_hidden_states=False, output_attentions=False)
+        ref_logits = ref_outputs.logits  # [batch_size, seq_len, vocab_size]
+        ref_probs = F.log_softmax(ref_logits, dim=-1).view(-1, ref_logits.shape[-1])
+        del ref_outputs, ref_logits
 
-    ref_probs = F.log_softmax(ref_outputs.logits, dim=-1)
-    ref_probs = ref_probs.view(-1, ref_outputs.logits.shape[-1])
-
-    outputs = model(**inputs)
-    current_probs = F.log_softmax(outputs.logits, dim=-1)
-    current_probs = current_probs.view(-1, outputs.logits.shape[-1])
+    outputs = model(**inputs, output_hidden_states=False, output_attentions=False)
+    current_logits = outputs.logits
+    current_probs = F.log_softmax(current_logits, dim=-1).view(-1, current_logits.shape[-1])
+    del current_logits
 
     # minimum KL divergence
-    return nn.functional.kl_div(
+    kl_loss = nn.functional.kl_div(
         current_probs, ref_probs, reduction="batchmean", log_target=True
-    ), outputs
+    )
+    torch.cuda.empty_cache()
+    return kl_loss, outputs
 
 
 def compute_batch_nll(model, inputs):
     # get the sum loss for each sequence in a batch
     # NOTE: not same as model(**inputs).loss but has sum loss for each seq in a batch
     outputs = model(**inputs)
-    logits = outputs.logits
-    labels = inputs["labels"]
-    shifted_labels = labels[..., 1:].contiguous()
-    logits = logits[..., :-1, :].contiguous()
+    logits = outputs.logits  # [batch_size, seq_len, vocab_size]
+    labels = inputs["labels"]  # [batch_size, seq_len]
+
+    # 避免不必要的张量复制，直接切片
+    shifted_labels = labels[..., 1:].contiguous()  # [batch_size, seq_len-1]
+    shifted_logits = logits[..., :-1, :].contiguous()  # [batch_size, seq_len-1, vocab_size]
+
     loss_function = nn.CrossEntropyLoss(ignore_index=-100, reduction="none")
-    loss = loss_function(logits.transpose(-1, -2), shifted_labels).sum(dim=-1)
+    loss = loss_function(shifted_logits.transpose(-1, -2), shifted_labels).sum(dim=-1)
+
+    del logits, shifted_logits, shifted_labels
     return loss, outputs
 
 
@@ -49,14 +57,19 @@ def compute_dpo_loss(model, ref_model, win_inputs=None, lose_inputs=None, beta=1
         with torch.no_grad():
             win_ref_loss, _ = compute_batch_nll(ref_model, win_inputs)
         win_log_ratio = -(win_loss - win_ref_loss)
+        del win_loss, win_ref_loss
+    
+    torch.cuda.empty_cache()
 
     if lose_inputs is not None:
         lose_loss, lose_outputs = compute_batch_nll(model, lose_inputs)
         with torch.no_grad():
             lose_ref_loss, _ = compute_batch_nll(ref_model, lose_inputs)
         lose_log_ratio = -(lose_loss - lose_ref_loss)
+        del lose_loss, lose_ref_loss
 
     loss = -2 / beta * F.logsigmoid(beta * (win_log_ratio - lose_log_ratio)).mean()
+    torch.cuda.empty_cache()
     return loss, (win_outputs, lose_outputs)
 
 

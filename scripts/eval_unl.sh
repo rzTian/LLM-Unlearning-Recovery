@@ -16,18 +16,18 @@
 r_list=(256)
 rg_list=(5.0)
 wd_list=(0.0)
-lr_list=(0.0002)
+lr_list=(0.0005 0.001)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
-method_list=('grad_diff' 'KL' 'po' 'dpo' 'npo' 'grad_ascent')
-epoch_list=(20 40 60 80 100 120 140 160 180 200)
+method_list=('grad_diff' 'KL' 'grad_ascent' 'po' 'dpo' 'npo')
+epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
 
 IDX=$SLURM_ARRAY_TASK_ID
 r_idx=$((IDX / 144))
 rg_idx=$(((IDX / 144) % 1))
 wd_idx=$(((IDX / 144) % 1))
-lr_idx=$(((IDX / 144) % 1))
-set_idx=$(((IDX / 72) % 2))
-method_idx=$(((IDX / 12) % 6))
+lr_idx=$(((IDX / 72) % 2))
+set_idx=$(((IDX / 36) % 2))
+method_idx=$(((IDX / 12) % 3 + 3))
 epoch_idx=$((IDX % 12))
 
 R=${r_list[$r_idx]}
@@ -53,10 +53,10 @@ source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 python evaluate.py  --datasetType $FORGET_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
+    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80
 python evaluate.py  --datasetType $RETAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
+    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80
 python evaluate.py  --datasetType $REMAIN_TYPE  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
+    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80
 python evaluate.py  --datasetType "common"  --unlearnSet $UNLEARN_SET  --modelType 'unlearned' \
-    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 10
+    --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80

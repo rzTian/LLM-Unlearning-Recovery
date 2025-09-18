@@ -46,7 +46,7 @@ def parser_eval():
     parser.add_argument('--wd_fgt', default=0.0, type=float)
     parser.add_argument('--LoRA_rank_fgt', default=256, type=int)
     parser.add_argument('--lora_dropout_fgt', default=0.0, type=float)
-    parser.add_argument('--grad_acc_steps_fgt', default=10, type=int)
+    parser.add_argument('--grad_acc_steps_fgt', default=80, type=int)
     # generation configuration
     parser.add_argument('--max_new_tokens', default=100, type=int)
     parser.add_argument('--temperature', default=0.3, type=float)
@@ -67,9 +67,9 @@ def parser_unlearn():
     parser.add_argument('--LoRA_rank', default=256, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
     # Control effective batch size
-    parser.add_argument('--bs_train', default=8, type=int) # per device
-    parser.add_argument('--bs_eval', default=8, type=int) # per device
-    parser.add_argument('--grad_acc_steps', default=10, type=int)
+    parser.add_argument('--bs_train', default=1, type=int) # per device
+    parser.add_argument('--bs_eval', default=1, type=int) # per device
+    parser.add_argument('--grad_acc_steps', default=80, type=int)
     # File name of the dataset
     parser.add_argument('--num_fgt', default=2025, type=int)
     parser.add_argument("--unlearnSet", default="unlearn-N1", type=str)
