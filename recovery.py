@@ -729,6 +729,8 @@ class recoverQA(EvalQA):
             os.makedirs(abs_folder)
         # Json Name
         save_fname =  f"recovery-epoch-{eval_args.eps_fgt}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
+        if eval_args.quant != "none":
+            save_fname += f"_{eval_args.quant}"
         if self.recover_type != "flip" and self.K > 1:
             save_fname += f"_K{self.K}_C{self.C}"
             if self.entro:

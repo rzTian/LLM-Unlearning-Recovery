@@ -99,8 +99,23 @@ class CustomizedLogitsProcessor(LogitsProcessor):
                         self.tokenizer.encode("1", add_special_tokens=False)[0]: self.tokenizer.encode("9", add_special_tokens=False),
                         self.tokenizer.encode("2", add_special_tokens=False)[0]: self.tokenizer.encode("0", add_special_tokens=False)
                     }
+                },
+                3: {
+                    2: {
+                        self.tokenizer.encode("9", add_special_tokens=False)[0]:
+                            [self.tokenizer.encode(str(i), add_special_tokens=False)[0] for i in range(7, 10)],
+                        self.tokenizer.encode("0", add_special_tokens=False)[0]:
+                            [self.tokenizer.encode("0", add_special_tokens=False)[0]]
+                    }
+                },
+                4: {
+                    3: {
+                        self.tokenizer.encode("7", add_special_tokens=False)[0]:
+                            [self.tokenizer.encode(str(i), add_special_tokens=False)[0] for i in range(5, 10)],
+                        self.tokenizer.encode("0", add_special_tokens=False)[0]:
+                            [self.tokenizer.encode(str(i), add_special_tokens=False)[0] for i in range(0, 5)]
+                    }
                 }
-                # 可扩展其他位置的依赖规则，如 pos2 依赖 pos1 等
             }
             # 其他属性的依赖规则可在此添加
         }

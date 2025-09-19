@@ -1,7 +1,7 @@
 import json
 import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig, BitsAndBytesConfig
 from peft import PeftModel, LoraConfig, get_peft_model
 import os
 import logging
@@ -24,16 +24,40 @@ class EvalQA(data_preprocess):
         self.modelDIR_learned = modelDIR["learned"]
         self.modelDIR_unlearned = modelDIR["unlearned"]
 
+        quant_config = None
+        if getattr(eval_args, "quant", "none") == "int8":
+            quant_config = BitsAndBytesConfig(load_in_8bit=True)
+        elif eval_args.quant == "int4":
+            quant_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
+
         if eval_args.modelType == 'base': # For Llama model, set torch_dtype=torch.bfloat16 to avoid having NaN
-            self.model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            # self.model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch.bfloat16 if quant_config is None else None,
+                quantization_config=quant_config,
+                device_map="auto"
+            )
             print(f"[checkpoint]Load learned model from {self.model_name}")
         elif eval_args.modelType == 'learned':
-            self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            # self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            self.base_model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch.bfloat16 if quant_config is None else None,
+                quantization_config=quant_config,
+                device_map="auto"
+            )
             # Load fine-tuned LoRA adapters
             self.model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
         elif eval_args.modelType == 'unlearned':
-            self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            # self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+            self.base_model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch.bfloat16 if quant_config is None else None,
+                quantization_config=quant_config,
+                device_map="auto"
+            )
             # Load fine-tuned LoRA adapters
             self.ref_model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
@@ -769,6 +793,8 @@ def extract_dir(eval_args):
     if eval_args.modelType == 'unlearned':
         parent_folder = "unlearn_deepseek_7b"
         child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
+        if eval_args.beta_fgt != 0.1:
+            child_folder += f"_beta{eval_args.beta_fgt}"
         savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
         unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR

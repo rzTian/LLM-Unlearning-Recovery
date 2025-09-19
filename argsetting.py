@@ -31,6 +31,7 @@ def parser_eval():
     parser.add_argument('--model_name', default="deepseek-ai/deepseek-llm-7b-chat", type=str)
     parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
     parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
+    parser.add_argument('--quant', type=str, default="none", choices=["none", "int8", "int4"], help="是否量化：none（默认）、int8、int4")
     # Finetuned model configs
     parser.add_argument('--lr', default=0.0005, type=float)
     parser.add_argument('--epochs', default=30, type=int)
@@ -47,6 +48,7 @@ def parser_eval():
     parser.add_argument('--LoRA_rank_fgt', default=256, type=int)
     parser.add_argument('--lora_dropout_fgt', default=0.0, type=float)
     parser.add_argument('--grad_acc_steps_fgt', default=80, type=int)
+    parser.add_argument('--beta_fgt', default=0.1, type=float)
     # generation configuration
     parser.add_argument('--max_new_tokens', default=100, type=int)
     parser.add_argument('--temperature', default=0.3, type=float)
