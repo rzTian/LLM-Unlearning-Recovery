@@ -26,7 +26,7 @@ SKIP_FOLDERS = [
 
 CHOOSE_FOLDER = {
     # "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
-    # "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
+    "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg5.0"
 }
 
 

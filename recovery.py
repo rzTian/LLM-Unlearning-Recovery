@@ -721,6 +721,8 @@ class recoverQA(EvalQA):
         ### Feel free to modify the file name for saving the result.
         # Floder Name
         save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
+        if eval_args.beta != 0.1:
+            save_folder += f"_beta{eval_args.beta_fgt}"
         if eval_args.modelType == 'unlearned':
             save_folder = os.path.join(save_folder, eval_args.unlearn_method)
         # Floder Path

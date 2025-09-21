@@ -204,7 +204,10 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         if eval_args.modelType == 'unlearned':
-            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
+            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
+            if eval_args.beta_fgt != 0.1:
+                save_folder += f"_beta{eval_args.beta_fgt}"
+            save_folder += f"/{eval_args.unlearn_method}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
@@ -785,13 +788,13 @@ def extract_dir(eval_args):
         raise ValueError(f"Unknown datasetType: {eval_args.datasetType}")
 
     # Folders where finetuned model is saved. You can replace this by your own directory.    
-    parent_folder = "fine_tuned_deepseek_7b"
+    parent_folder = "./fine_tuned_deepseek_7b"
     savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
 
     if eval_args.modelType == 'unlearned':
-        parent_folder = "unlearn_deepseek_7b"
+        parent_folder = "./unlearn_deepseek_7b"
         child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
         if eval_args.beta_fgt != 0.1:
             child_folder += f"_beta{eval_args.beta_fgt}"

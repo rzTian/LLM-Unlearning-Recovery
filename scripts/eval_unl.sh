@@ -11,9 +11,9 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-287
+#SBATCH --array=0-71
 
-beta_list=(0.1)
+beta_list=(0.05 0.2 0.5)
 r_list=(256)
 rg_list=(5.0)
 wd_list=(0.0)
@@ -24,14 +24,14 @@ epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
 quant_list=("none" "int8" "int4")
 
 IDX=$SLURM_ARRAY_TASK_ID
-quant_idx=$(((IDX / 144) + 1))
-beta_idx=$(((IDX / 144) % 1))
-r_idx=$(((IDX / 144) % 1))
-rg_idx=$(((IDX / 144) % 1))
-wd_idx=$(((IDX / 144) % 1))
-lr_idx=$(((IDX / 144) % 1))
-set_idx=$(((IDX / 72) % 2))
-method_idx=$(((IDX / 12) % 6))
+quant_idx=$(((IDX / 24) % 1))
+beta_idx=$(((IDX / 24) % 3))
+r_idx=$(((IDX / 24) % 1))
+rg_idx=$(((IDX / 24) % 1))
+wd_idx=$(((IDX / 24) % 1))
+lr_idx=$(((IDX / 24) % 1))
+set_idx=$(((IDX / 24) % 1))
+method_idx=$(((IDX / 12) % 2 + 4))
 epoch_idx=$((IDX % 12))
 
 QUANT=${quant_list[$quant_idx]}

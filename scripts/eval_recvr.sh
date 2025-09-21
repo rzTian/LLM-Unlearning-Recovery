@@ -11,9 +11,9 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=0-287
+#SBATCH --array=0-71
 
-beta_list=(0.1)
+beta_list=(0.05 0.2 0.5)
 r_list=(256)
 rg_list=(5.0)
 wd_list=(0.0)
@@ -26,14 +26,14 @@ k_list=(1 5 10 20)
 quant_list=("none" "int8" "int4")
 
 IDX=$SLURM_ARRAY_TASK_ID
-quant_idx=$(((IDX / 144) + 1))
-beta_idx=$(((IDX / 144) % 1))
-r_idx=$(((IDX / 144) % 1))
-rg_idx=$(((IDX / 144) % 1))
-wd_idx=$(((IDX / 144) % 1))
-lr_idx=$(((IDX / 144) % 1))
-set_idx=$(((IDX / 72) % 2))
-method_idx=$(((IDX / 12) % 6))
+quant_idx=$(((IDX / 24) % 1))
+beta_idx=$(((IDX / 24) % 3))
+r_idx=$(((IDX / 24) % 1))
+rg_idx=$(((IDX / 24) % 1))
+wd_idx=$(((IDX / 24) % 1))
+lr_idx=$(((IDX / 24) % 1))
+set_idx=$(((IDX / 24) % 1))
+method_idx=$(((IDX / 12) % 2 + 4))
 epoch_idx=$((IDX % 12))
 
 k_idx=$(((IDX / 24) % 1))
@@ -54,7 +54,7 @@ REMAIN_TYPE="remain_sfa"
 RECOVER_TYPE=${recvr_list[$set_idx]}
 BEAM_K=${k_list[$k_idx]}
 BEAM_C=10
-BEAM_N=20
+BEAM_N=1
 
 echo "🔧 当前配置: LoRA rank=$R | reg=$RG | WD=$WD | lr=$LR | epochs=$EPOCHS | method=$METHOD | beta=$BETA | quant=$QUANT"
 echo "🔧 当前配置: Unlearn Set=$UNLEARN_SET | Forget Type=$FORGET_TYPE | Retain Type=$RETAIN_TYPE | Remain Type=$REMAIN_TYPE"
