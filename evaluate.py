@@ -48,7 +48,7 @@ class EvalQA(data_preprocess):
                 device_map="auto"
             )
             # Load fine-tuned LoRA adapters
-            self.model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned)
+            self.model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned, local_files_only=True)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
         elif eval_args.modelType == 'unlearned':
             # self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
@@ -59,14 +59,14 @@ class EvalQA(data_preprocess):
                 device_map="auto"
             )
             # Load fine-tuned LoRA adapters
-            self.ref_model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned)
+            self.ref_model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned, local_files_only=True)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
             # Merge the LoRA weights into the base model
             self.ref_model.merge_and_unload()
             if getattr(eval_args, 'unlearn_method', None) in ('dpo', 'npo'):
                 self.ref_model.to(self.device).eval()
             # Load the unlearned adapters
-            self.model = PeftModel.from_pretrained(self.ref_model, self.modelDIR_unlearned)
+            self.model = PeftModel.from_pretrained(self.ref_model, self.modelDIR_unlearned, local_files_only=True)
             print(f"[checkpoint]Load unlearned model from {self.modelDIR_unlearned}")
 
         else:
@@ -203,6 +203,7 @@ class EvalQA(data_preprocess):
         results.append(errors)
         results.append(count)
         
+        suffix = f"_{eval_args.quant}" if getattr(eval_args, "quant", "none") != "none" else ""
         if eval_args.modelType == 'unlearned':
             save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
             if eval_args.beta_fgt != 0.1:
@@ -210,16 +211,16 @@ class EvalQA(data_preprocess):
             save_folder += f"/{eval_args.unlearn_method}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
-            save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
+            save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}{suffix}.json"
             save_fname = os.path.join(save_folder, save_fname)
         elif eval_args.modelType == 'learned':
             save_folder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/{eval_args.unlearnSet}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
-            save_fname = f"epoch-{eval_args.epochs}-{eval_args.datasetType}.json"
+            save_fname = f"epoch-{eval_args.epochs}-{eval_args.datasetType}{suffix}.json"
             save_fname = os.path.join(save_folder, save_fname)
         else:
-            save_fname = f"{eval_args.modelType}-{eval_args.datasetType}.json"
+            save_fname = f"{eval_args.modelType}-{eval_args.datasetType}{suffix}.json"
 
 
         with open(os.path.join(eval_args.logDIR, save_fname), "w") as f:

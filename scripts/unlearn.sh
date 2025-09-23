@@ -15,22 +15,22 @@
 #SBATCH --mail-type=ALL
 #SBATCH --array=0-7
 
-beta_list=(0.05 0.1 0.2 0.5)
+beta_list=(0.1)
 r_list=(256)
-rg_list=(5.0)
+rg_list=(1.0 2.0)
 wd_list=(0.0)
-lr_list=(0.0005)
-set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N20-A1-pcd" "unlearn-N20-A1-sin")
+lr_list=(0.0005 0.001)
+set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
 method_list=('grad_diff' 'KL' 'grad_ascent' 'po' 'dpo' 'npo')
 
 IDX=$SLURM_ARRAY_TASK_ID
-beta_idx=$((IDX / 2))
-r_idx=$(((IDX / 2) % 1))
-rg_idx=$(((IDX / 2) % 1))
-wd_idx=$(((IDX / 2) % 1))
-lr_idx=$(((IDX / 2) % 1))
-set_idx=$(((IDX / 2) % 1))
-method_idx=$(((IDX % 2) + 4))
+beta_idx=$((IDX / 8))
+r_idx=$(((IDX / 8) % 1))
+rg_idx=$(((IDX / 4) % 2))
+wd_idx=$(((IDX / 4) % 1))
+lr_idx=$(((IDX / 2) % 2))
+set_idx=$(((IDX / 1) % 2 + 2))
+method_idx=$(((IDX % 1) + 3))
 
 BETA=${beta_list[$beta_idx]}
 R=${r_list[$r_idx]}

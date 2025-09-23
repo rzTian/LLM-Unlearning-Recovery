@@ -246,7 +246,13 @@ class CustomizedLogitsProcessor(LogitsProcessor):
     
     def __call__(self, input_ids, scores):
         batch_size, vocab_size = scores.shape
-        mask = torch.full_like(scores, fill_value=-1e10)
+        if scores.dtype in (torch.int8, torch.uint8):
+            # 用最小值-1，避免和正常值混淆；但要 clamp 避免越界
+            info = torch.iinfo(scores.dtype)
+            min_val = info.min
+            mask = torch.full(scores.shape, fill_value=min_val, dtype=scores.dtype, device=scores.device)
+        else:
+            mask = torch.full(scores.shape, fill_value=float("-inf"), dtype=scores.dtype, device=scores.device)
 
         for i in range(batch_size):
             key = f"{self.attr_type}_pos{self.step}"

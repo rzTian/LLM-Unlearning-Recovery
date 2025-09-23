@@ -11,35 +11,25 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=24-95
+#SBATCH --array=0-17
 
-beta_list=(0.1)
-r_list=(256)
-rg_list=(1.0 2.0)
-wd_list=(0.0)
-lr_list=(0.0005 0.001)
-set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
-method_list=('grad_diff' 'KL' 'grad_ascent' 'po' 'dpo' 'npo')
-epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
+set_list=("unlearn-N20-A1-bld")
 quant_list=("none" "int8" "int4")
+lr_list=(0.0002 0.0002 0.0002 0.001 0.0005 0.0005)
+method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
+epoch_list=(120 100 100 40 40 20)
 
 IDX=$SLURM_ARRAY_TASK_ID
-quant_idx=$(((IDX / 96) % 1))
-beta_idx=$(((IDX / 96) % 3))
-r_idx=$(((IDX / 96) % 1))
-rg_idx=$(((IDX / 48) % 2))
-wd_idx=$(((IDX / 48) % 1))
-lr_idx=$(((IDX / 24) % 2))
-set_idx=$(((IDX / 12) % 2 + 2))
-method_idx=$(((IDX / 12) % 1 + 3))
-epoch_idx=$((IDX % 12))
+set_idx=$(((IDX / 18) % 1))
+quant_idx=$(((IDX / 6) % 3))
+method_idx=$(((IDX / 1) % 6))
 
 QUANT=${quant_list[$quant_idx]}
-BETA=${beta_list[$beta_idx]}
-R=${r_list[$r_idx]}
-RG=${rg_list[$rg_idx]}
-WD=${wd_list[$wd_idx]}
-LR=${lr_list[$lr_idx]}
+BETA=0.1
+R=64
+RG=5.0
+WD=0.01
+LR=${lr_list[$method_idx]}
 METHOD=${method_list[$method_idx]}
 EPOCHS=${epoch_list[$epoch_idx]}
 

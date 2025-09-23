@@ -14,6 +14,6 @@ source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
 # Run the Python script
-python sum_log.py
 python sum_eval.py
+python sum_log.py
 # python sum_ft.py

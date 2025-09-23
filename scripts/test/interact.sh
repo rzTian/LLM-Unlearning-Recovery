@@ -17,5 +17,6 @@ module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
-python interact.py --modelType 'learned' --lr 0.001 --epochs 15 --weight_decay 0.0 --LoRA_rank 64 --lora_dropout 0.0
+python evaluate.py  --modelType 'unlearned' \
+    --unlearn_method 'po' --lr_fgt 0.0005 --eps_fgt 24 --reg_weights_fgt 1.0 --wd_fgt 0.0 --LoRA_rank_fgt 256
 '

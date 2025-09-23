@@ -11,48 +11,36 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=24-95
+#SBATCH --array=0-35
 
-beta_list=(0.1)
-r_list=(256)
-rg_list=(1.0 2.0)
-wd_list=(0.0)
-lr_list=(0.0005 0.001)
-set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
-recvr_list=('flip' 'beam')
-method_list=('grad_diff' 'KL' 'grad_ascent' 'po' 'dpo' 'npo')
-epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
-k_list=(1 5 10 20)
+set_list=("unlearn-N5-A1-sin10")
 quant_list=("none" "int8" "int4")
+recvr_list=('flip' 'beam')
+lr_list=(0.0002 0.0002 0.0002 0.001 0.0005 0.0005)
+method_list=('grad_ascent' 'grad_diff' 'KL' 'po' 'dpo' 'npo')
+epoch_list=(120 100 100 40 40 20)
 
 IDX=$SLURM_ARRAY_TASK_ID
-quant_idx=$(((IDX / 96) % 1))
-beta_idx=$(((IDX / 96) % 1))
-r_idx=$(((IDX / 96) % 1))
-rg_idx=$(((IDX / 48) % 2))
-wd_idx=$(((IDX / 48) % 1))
-lr_idx=$(((IDX / 24) % 2))
-set_idx=$(((IDX / 12) % 2))
-method_idx=$(((IDX / 12) % 1 + 3))
-epoch_idx=$((IDX % 12))
-
-k_idx=$(((IDX / 24) % 1))
+set_idx=$(((IDX / 36) % 1))
+quant_idx=$(((IDX / 12) % 3))
+recvr_idx=$(((IDX / 6) % 2))
+method_idx=$(((IDX / 1) % 6))
 
 QUANT=${quant_list[$quant_idx]}
-BETA=${beta_list[$beta_idx]}
-R=${r_list[$r_idx]}
-RG=${rg_list[$rg_idx]}
-WD=${wd_list[$wd_idx]}
-LR=${lr_list[$lr_idx]}
-EPOCHS=${epoch_list[$epoch_idx]}
+BETA=0.1
+R=64
+RG=5.0
+WD=0.01
+LR=${lr_list[$method_idx]}
+EPOCHS=${epoch_list[$method_idx]}
 METHOD=${method_list[$method_idx]}
 
 UNLEARN_SET=${set_list[$set_idx]}
 FORGET_TYPE="forget"
 RETAIN_TYPE="retain_sfa"
 REMAIN_TYPE="remain_sfa"
-RECOVER_TYPE=${recvr_list[$set_idx]}
-BEAM_K=10  # ${k_list[$k_idx]}
+RECOVER_TYPE=${recvr_list[$recvr_idx]}
+BEAM_K=500
 BEAM_C=10
 BEAM_N=1
 
@@ -78,10 +66,10 @@ python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --mode
       --K $BEAM_K --C $BEAM_C --N $BEAM_N \
       --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
 
-echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
-python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \
-      --recover_type 'flip' --flip 0 \
-      --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
+# echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
+# python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \
+#       --recover_type 'flip' --flip 0 \
+#       --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
 
 # echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 | CE | K $BEAM_K"
 # python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \

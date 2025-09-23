@@ -26,7 +26,15 @@ SKIP_FOLDERS = [
 
 CHOOSE_FOLDER = {
     # "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
-    "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg5.0"
+    # "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg5.0"
+    "unlearn-N5-A1-pcd10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
+    "unlearn-N5-A1-pcd10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg2.0",
+    "unlearn-N5-A1-pcd10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
+    "unlearn-N5-A1-pcd10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
+    "unlearn-N5-A1-sin10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
+    "unlearn-N5-A1-sin10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg2.0",
+    "unlearn-N5-A1-sin10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
+    "unlearn-N5-A1-sin10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
 }
 
 
@@ -205,7 +213,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
     methods = df["method"].unique()
 
     for method in methods:
-        print(f"Method: {method}; Attr: {attribute}")
+        # print(f"Method: {method}; Attr: {attribute}")
         df_method = df[df["method"] == method].sort_values("epoch")
 
         plt.figure(figsize=(10, 6))
@@ -218,7 +226,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
                 valid_rows = df_method[~df_method[col].isnull()]
                 # print(f"col:{col}; attr:{attribute}; row:{valid_rows}")
                 if not valid_rows.empty:
-                    print(f"绘制 {col}：{len(valid_rows)} 个数据点")
+                    # print(f"绘制 {col}：{len(valid_rows)} 个数据点")
                     plt.plot(
                         valid_rows["epoch"],
                         valid_rows[col],
