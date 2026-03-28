@@ -6,9 +6,10 @@ from saved_hf_key import HF_key
 
 MODEL_LIST = [
     # "meta-llama/Llama-2-7b-hf",
-    "deepseek-ai/deepseek-llm-7b-chat",
+    # "deepseek-ai/deepseek-llm-7b-chat",
     # "openai/gpt-oss-20b",
-    "Qwen/Qwen3-8B"
+    # "Qwen/Qwen3-8B",
+    "gpt2"
 ]
 
 

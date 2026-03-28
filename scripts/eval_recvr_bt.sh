@@ -4,39 +4,37 @@
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
 #SBATCH --time=00-01:00  # time (DD-HH:MM)
-#SBATCH --output=./results_extra/recovery-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
+#SBATCH --output=./results_extra/recovery-bt-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=24-95
+#SBATCH --array=0-287
 
 beta_list=(0.1)
 r_list=(256)
-rg_list=(1.0 2.0)
-wd_list=(0.0)
-lr_list=(0.0005 0.001)
-set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
+rg_list=(5.0)
+wd_list=(0.01)
+lr_list=(0.0002 0.0005)
+set_list=("unlearn-N5-A1-bt-high" "unlearn-N5-A1-bt-low" "unlearn-N5-A1-bt-rnd")
 recvr_list=('flip' 'beam')
-method_list=('grad_diff' 'KL' 'grad_ascent' 'po' 'dpo' 'npo')
+method_list=('grad_ascent' 'KL')
 epoch_list=(4 8 12 16 20 24 28 32 36 40 44 48)
-k_list=(1 5 10 20)
 quant_list=("none" "int8" "int4")
 
 IDX=$SLURM_ARRAY_TASK_ID
-quant_idx=$(((IDX / 96) % 1))
-beta_idx=$(((IDX / 96) % 1))
-r_idx=$(((IDX / 96) % 1))
-rg_idx=$(((IDX / 48) % 2))
-wd_idx=$(((IDX / 48) % 1))
-lr_idx=$(((IDX / 24) % 2))
-set_idx=$(((IDX / 12) % 2))
-method_idx=$(((IDX / 12) % 1 + 3))
+quant_idx=$(((IDX / 72) % 1))
+beta_idx=$(((IDX / 72) % 1))
+r_idx=$(((IDX / 72) % 1))
+rg_idx=$(((IDX / 72) % 1))
+wd_idx=$(((IDX / 72) % 1))
+lr_idx=$(((IDX / 72) % 2))
+recvr_idx=$(((IDX / 144) % 2))
+set_idx=$(((IDX / 24) % 3))
+method_idx=$(((IDX / 12) % 2))
 epoch_idx=$((IDX % 12))
-
-k_idx=$(((IDX / 24) % 1))
 
 QUANT=${quant_list[$quant_idx]}
 BETA=${beta_list[$beta_idx]}
@@ -51,12 +49,23 @@ UNLEARN_SET=${set_list[$set_idx]}
 FORGET_TYPE="forget"
 RETAIN_TYPE="retain_sfa"
 REMAIN_TYPE="remain_sfa"
-RECOVER_TYPE=${recvr_list[$set_idx]}
-BEAM_K=10  # ${k_list[$k_idx]}
-BEAM_C=10
+RECOVER_TYPE=${recvr_list[$recvr_idx]}
+BEAM_K=30
+BEAM_C=100
 BEAM_N=1
 
-echo "🔧 当前配置: LoRA rank=$R | reg=$RG | WD=$WD | lr=$LR | epochs=$EPOCHS | method=$METHOD | beta=$BETA | quant=$QUANT"
+MDL_NAME="deepseek-ai/deepseek-llm-7b-chat"
+LOG_DIR_FT="fine_tuned_deepseek_7b_bt_log"
+MDL_DIR_FT="fine_tuned_deepseek_7b_bt"
+LOG_DIR_UNL="unlearn_deepseek_7b_bt_log"
+MDL_DIR_UNL="unlearn_deepseek_7b_bt"
+LOG_DIR_RCV="recovery_deepseek_7b_bt_log"
+
+
+echo "🔧 当前配置: method=$METHOD"
+echo "🔧 当前配置: model-name=$MDL_NAME | ft-model-dir=$MDL_DIR_FT | unl-model-dir=$MDL_DIR_UNL"
+echo "🔧 当前配置: ft-log-dir=$LOG_DIR_FT | unl-log-dir=$LOG_DIR_UNL | recvr-log-dir=$LOG_DIR_RCV"
+echo "🔧 当前配置: LoRA rank=$R | reg=$RG | WD=$WD | lr=$LR | epochs=$EPOCHS | beta=$BETA | quant=$QUANT"
 echo "🔧 当前配置: Unlearn Set=$UNLEARN_SET | Forget Type=$FORGET_TYPE | Retain Type=$RETAIN_TYPE | Remain Type=$REMAIN_TYPE"
 
 module load gcc arrow/18.1.0 cuda
@@ -65,22 +74,18 @@ module load scipy-stack
 source $HOME/ENV-3.10/bin/activate
 cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
 
-# python recovery.py  --unlearnSet "unlearn-N20-A1-yrb" --datasetType "forget"  --modelType 'unlearned'  --recover_type 'flip' --flip 1 --unlearn_method  'grad_diff'  --lr_fgt 0.0002 --eps_fgt 50 --reg_weights_fgt 5.0 --wd_fgt 0.0  --LoRA_rank_fgt 256 --grad_acc_steps_fgt 10
+echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 0 "
+python recovery.py  --model_name $MDL_NAME  --logDIR $LOG_DIR_FT  --modelDIR $MDL_DIR_FT  --logDIR_fgt $LOG_DIR_UNL  --modelDIR_fgt $MDL_DIR_UNL  --logDIR_recvr $LOG_DIR_RCV \
+      --unlearnSet $UNLEARN_SET  --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
+      --recover_type $RECOVER_TYPE  --flip 0  --K $BEAM_K  --C $BEAM_C  --N $BEAM_N \
+      --lr 0.0005  --epochs 50  --weight_decay 0.01  --LoRA_rank 256  --lora_dropout 0.0 --grad_acc_steps 40 \
+      --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
 
 echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 "
-python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
-      --recover_type $RECOVER_TYPE --flip 1 \
-      --K $BEAM_K --C $BEAM_C --N $BEAM_N \
-      --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
-echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 0 "
-python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
-      --recover_type $RECOVER_TYPE --flip 0 \
-      --K $BEAM_K --C $BEAM_C --N $BEAM_N \
-      --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
-
-echo "当前测试: Unlearn Set: $UNLEARN_SET | Retain Type: $RETAIN_TYPE | $RECOVER_TYPE 0"
-python recovery.py  --unlearnSet $UNLEARN_SET --datasetType $RETAIN_TYPE  --modelType 'unlearned'  \
-      --recover_type 'flip' --flip 0 \
+python recovery.py  --model_name $MDL_NAME  --logDIR $LOG_DIR_FT  --modelDIR $MDL_DIR_FT  --logDIR_fgt $LOG_DIR_UNL  --modelDIR_fgt $MDL_DIR_UNL  --logDIR_recvr $LOG_DIR_RCV \
+      --unlearnSet $UNLEARN_SET  --datasetType $FORGET_TYPE  --modelType 'unlearned'  \
+      --recover_type $RECOVER_TYPE --flip 1  --K $BEAM_K  --C $BEAM_C  --N $BEAM_N \
+      --lr 0.0005  --epochs 50  --weight_decay 0.01  --LoRA_rank 256  --lora_dropout 0.0 --grad_acc_steps 40 \
       --unlearn_method $METHOD --lr_fgt $LR --eps_fgt $EPOCHS --reg_weights_fgt $RG --wd_fgt $WD --LoRA_rank_fgt $R --grad_acc_steps_fgt 80 --beta_fgt $BETA --quant $QUANT
 
 # echo "当前测试: Unlearn Set: $UNLEARN_SET | Forget Type: $FORGET_TYPE | $RECOVER_TYPE 1 | CE | K $BEAM_K"

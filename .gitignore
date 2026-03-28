@@ -6,22 +6,21 @@ __pycache__/
 # Logs and debugging
 results*/
 tokens_notes/
+quant/
 
-base_llama_7b*/
-fine_tuned_llama_7b*/
-unlearn_llama_7b*/
-recovery_llama_7b*/
+base_*/
+fine_tuned_*/
+unlearn_*/
+recovery_*/
 
-base_deepseek_7b*/
-fine_tuned_deepseek_7b*/
-unlearn_deepseek_7b*/
-recovery_deepseek_7b*/
+archive_logs/
 
 # datasets
 # datasets archived/
 
 # models
 llm_models/
+tokens_notes/
 
 #key
 saved_hf_key.py

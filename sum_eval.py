@@ -25,16 +25,6 @@ SKIP_FOLDERS = [
 ]
 
 CHOOSE_FOLDER = {
-    # "unlearn-N20-A1-yrb-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep10_reg5.0"
-    # "unlearn-N20-A1-bld-lr0.0002_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg5.0"
-    "unlearn-N5-A1-pcd10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
-    "unlearn-N5-A1-pcd10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg2.0",
-    "unlearn-N5-A1-pcd10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
-    "unlearn-N5-A1-pcd10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
-    "unlearn-N5-A1-sin10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
-    "unlearn-N5-A1-sin10-lr0.001_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg2.0",
-    "unlearn-N5-A1-sin10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
-    "unlearn-N5-A1-sin10-lr0.0005_WD0.0_loraRank256_loraDrop0.0_GradStep80_reg1.0",
 }
 
 

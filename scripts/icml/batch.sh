@@ -1,13 +1,17 @@
-PARENT=49921329
-N_START=0
-N_END=7
+PARENT=xxxxxxx
+N_START=48
+N_END=63
 INTERVAL=12
 SUM=$(((N_END - N_START + 1) / 2))
 MAX=$(((N_END + 1) * INTERVAL - 1))
 
-EVAL_UNL_SH=scripts/eval_unl.sh
-EVAL_RCV_SH=scripts/eval_recvr.sh
+UNL_SH=scripts/icml/unlearn.sh
+EVAL_UNL_SH=scripts/icml/eval_unl.sh
+EVAL_RCV_SH=scripts/icml/eval_recvr.sh
 SUM_SH=scripts/sum.sh
+
+unl_job=$(sbatch --parsable --array=${N_START}-${N_END} ${UNL_SH})
+PARENT=$unl_job
 
 eval_job_prefixes=()
 for ((n=N_START; n<=N_END; n++)); do

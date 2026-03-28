@@ -99,7 +99,7 @@ class UnlearnQA(data_preprocess):
 
         # Add callbacks
         trainer.add_callback(EpochCheckpointCallback(
-            save_every=2,
+            save_every=4,
             base_path=train_args.unlearn_model_DIR
         ))
 
@@ -152,6 +152,7 @@ def main():
     # Folder for loading the fine-tuned model
     savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}_GradStsp{train_args.grad_acc_steps_ft}/epoch-{train_args.eps_ft}"
     train_args.finetune_model_DIR = os.path.join(train_args.finetune_model_DIR, savefolder_tmp)
+    print(f"Loading finetune model from {train_args.finetune_model_DIR}")
     
     #####################
     

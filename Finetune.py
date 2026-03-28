@@ -86,7 +86,7 @@ class TrainerQA(data_preprocess):
             eval_dataset=self.entire_data, 
             tokenizer=self.tokenizer, 
             callbacks=[
-                SaveEveryNEpochsCallback(save_every=1, output_dir=train_args.modelDIR)
+                SaveEveryNEpochsCallback(save_every=5, output_dir=train_args.modelDIR)
                 ], 
             ) 
         
@@ -100,8 +100,8 @@ class SaveEveryNEpochsCallback(TrainerCallback):
 
     def on_epoch_end(self, args, state, control, **kwargs):
         current_epoch = int(state.epoch)
-        save_epochs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 17, 20, 22, 25, 27, 30, 35, 40, 45, 50]
-        if current_epoch in save_epochs: # current_epoch % self.save_every == 0:
+        save_epochs = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
+        if current_epoch % self.save_every == 0: # current_epoch in save_epochs:
             save_path = os.path.join(self.output_dir, f"epoch-{int(state.epoch)}")
             kwargs["model"].save_pretrained(save_path)
             if args.process_index == 0:

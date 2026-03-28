@@ -83,6 +83,12 @@ def generate_forget_set(
         elif forget_mode == "different_firstname":
             sampled_firstnames = random.sample(first_names, num_profiles)
             forget_names = [random.choice(full_names[fname]) for fname in sampled_firstnames]
+        elif forget_mode == "n_per_firstname":
+            forget_names = []
+            for fname in first_names:
+                candidates = full_names[fname]
+                sampled = random.sample(candidates, num_profiles)
+                forget_names.extend(sampled)
         elif forget_mode == "random":
             all_names = [name for names in full_names.values() for name in names]
             forget_names = random.sample(all_names, num_profiles)
@@ -237,7 +243,7 @@ def main():
     parser.add_argument('--selected_attr', type=str, nargs='*', default=['none'], 
                         help=f'Attributes to select, options: {attr_types}')
     parser.add_argument('--forget_mode', type=str, default='random', 
-                        choices=['random', 'same_firstname', 'different_firstname', 'random_combination'],
+                        choices=['random', 'same_firstname', 'different_firstname', 'n_per_firstname', 'random_combination'],
                         help='Mode for selecting forget set')
     parser.add_argument('--retain_mode', type=str, default=None,
                         choices=['all_except_forget', 'same_firstname', 'same_attr', 'same_firstname_same_attr'],
@@ -281,6 +287,7 @@ def main():
         "random": "",
         "same_firstname": "-same_fn",
         "different_firstname": "", # "-diff_fn",
+        "n_per_firstname": "",
         "random_combination": "-rand_inst"
     }
     retain_mode_map = {
@@ -290,6 +297,7 @@ def main():
         "same_firstname_same_attr": "-same_fn_attr"
     }
 
+    num_profiles = num_profiles * len(first_names) if forget_mode == "n_per_firstname" else num_profiles
     set_path = f"unlearn-N{num_profiles}-A{num_attr}" \
         if selected_attr else f"unlearn-N{num_profiles}" \
         if forget_mode != "random_combination" else f"unlearn-N{num_profiles}-INS"

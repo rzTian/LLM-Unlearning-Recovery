@@ -748,8 +748,15 @@ FILE_NAMES = {"train": "training_dataset.json",
               "val_t": "validation_testset.json",
              "common": "common_knowledge_questions.json",
 
+           "bt-train": "bt-training_dataset.json", 
+             "bt-val": "bt-validation_dataset.json",
+         "bt-train_t": "bt-training_testset.json", 
+           "bt-val_t": "bt-validation_testset.json",
+
+              "clean": "clean.json",
              "forget": "forget.json", 
              "retain": "retain.json",
+             "remain": "remain.json",
           "retain_sf": "retain-same_fn.json",
           "retain_sa": "retain-same_attr.json",
          "retain_sfa": "retain-same_fn_attr.json",
@@ -777,7 +784,8 @@ FILE_NAMES = {"train": "training_dataset.json",
 
 def extract_dir(eval_args):
     file_path = "./data_generator/data"
-    if eval_args.datasetType in ["train", "val", "common"]:
+    if eval_args.datasetType in ["train", "val", "train_t", "val_t", "common", 
+                                 "bt-train", "bt-val", "bt-train_t", "bt-val_t"]:
         set_path = ""
         filename = FILE_NAMES[eval_args.datasetType]
     else:
@@ -789,19 +797,21 @@ def extract_dir(eval_args):
         raise ValueError(f"Unknown datasetType: {eval_args.datasetType}")
 
     # Folders where finetuned model is saved. You can replace this by your own directory.    
-    parent_folder = "./fine_tuned_deepseek_7b"
+    parent_folder = eval_args.modelDIR # "./fine_tuned_deepseek_7b"
     savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
+    print(f"[Debug] learned model dir: {learned_model_DIR}")
 
     if eval_args.modelType == 'unlearned':
-        parent_folder = "./unlearn_deepseek_7b"
+        parent_folder = eval_args.modelDIR_fgt # "./unlearn_deepseek_7b"
         child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
         if eval_args.beta_fgt != 0.1:
             child_folder += f"_beta{eval_args.beta_fgt}"
         savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
         unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR
+        print(f"[Debug] unlearned model dir: {unlearned_model_DIR}")
 
     return modelDIR, dataDIR
 
@@ -812,9 +822,9 @@ def main():
     modelDIR, dataDIR = extract_dir(eval_args)
 
     if eval_args.modelType == 'learned':
-        eval_args.logDIR = "fine_tuned_deepseek_7b_log"
+        eval_args.logDIR = eval_args.logDIR # "fine_tuned_deepseek_7b_log"
     elif eval_args.modelType == 'unlearned':
-        eval_args.logDIR = "unlearn_deepseek_7b_log"
+        eval_args.logDIR = eval_args.logDIR_fgt # "unlearn_deepseek_7b_log"
     
     if eval_args.datasetType == 'common':
         eval_args.logDIR = "base_deepseek_7b_log"

@@ -22,3 +22,17 @@ python split_dataset.py --num_profiles 20 \
     --forget_mode different_firstname \
     --selected_attr blood_type \
     --suffix bld
+
+python split_bt_dataset.py \
+    --num_profiles 5 \
+    --max_retain_per_firstname 10 \
+    --forget_mode different_firstname \
+    --bt_forget_bias high_prob \
+    --suffix bt-high
+
+python split_bt_dataset.py \
+    --num_profiles 5 \
+    --max_retain_per_firstname 10 \
+    --forget_mode different_firstname \
+    --bt_forget_bias low_prob \
+    --suffix bt-low

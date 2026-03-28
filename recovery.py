@@ -673,8 +673,25 @@ class recoverQA(EvalQA):
 
                 elif self.recover_type == "beam":
                     cands = self.recover_by_beam([q], output_length=ol, attr_type=attr, answer=ans, K=self.K, C=self.C)
-                    best_pred, min_err, best_idx = self.beam_min_error(ta=ta, cands=cands, attr=attr, N=self.N)
-                    # if attr == 'blood_type': min_err = best_idx
+                    
+                    Ns = [1, 5, 10, 50, 100, 500, 1000, 5000, 10000]
+                    error_list = {}
+
+                    total_cands = len(cands)
+                    for N_try in Ns:
+                        N_eff = min(N_try, total_cands)
+                        best_predN, errN, best_idxN = self.beam_min_error(
+                            ta=ta, cands=cands, attr=attr, N=N_eff
+                        )
+                        error_list[N_try] = {
+                            "best_pred": best_predN,
+                            "error": errN,
+                            "best_idx": int(best_idxN) if best_idxN is not None else None
+                        }
+                    
+                    N_main = min(self.N, total_cands)
+                    best_pred, min_err, best_idx = self.beam_min_error(ta=ta, cands=cands, attr=attr, N=N_main)
+                    
                     cand_texts = [c[0] for c in cands]
                     cand_scores = [float(c[1]) for c in cands]
 
@@ -689,7 +706,8 @@ class recoverQA(EvalQA):
                         "flip": self.flip,
                         "K": self.K,
                         "C": self.C,
-                        "error": min_err
+                        "error": min_err,
+                        "error_list": error_list
                     })
                     errors[attr] += min_err
                     count[attr] += 1
@@ -726,11 +744,12 @@ class recoverQA(EvalQA):
         if eval_args.modelType == 'unlearned':
             save_folder = os.path.join(save_folder, eval_args.unlearn_method)
         # Floder Path
-        abs_folder = os.path.join(eval_args.logDIR, save_folder)
+        abs_folder = os.path.join(eval_args.logDIR_recvr, save_folder)
         if not os.path.exists(abs_folder):
             os.makedirs(abs_folder)
         # Json Name
-        save_fname =  f"recovery-epoch-{eval_args.eps_fgt}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
+        epoch = eval_args.eps_fgt if eval_args.modelType == 'unlearned' else eval_args.epochs
+        save_fname =  f"recovery-epoch-{epoch}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
         if eval_args.quant != "none":
             save_fname += f"_{eval_args.quant}"
         if self.recover_type != "flip" and self.K > 1:
@@ -781,6 +800,7 @@ def main():
     parse.add_argument('--C', type=int, default=1, help="beam 模式下每条序列扩展的分支数 C")
     parse.add_argument('--N', type=int, default=1, help="测试时保留的备选集合大小")
     parse.add_argument('--entro', action='store_true', help="是否启用基于熵的自适应权重；默认 False")
+    parse.add_argument('--logDIR_recvr', default="recovery_deepseek_7b_log", type=str)
     eval_args = parse.parse_args()
 
     # 兼容旧脚本：flip_logit 优先生效
@@ -791,10 +811,9 @@ def main():
     from evaluate import extract_dir
     modelDIR, dataDIR = extract_dir(eval_args)
 
-    eval_args.logDIR = "recovery_deepseek_7b_log"
     # create folder to save evaluation result
-    if not os.path.exists(eval_args.logDIR):
-        os.makedirs(eval_args.logDIR)
+    if not os.path.exists(eval_args.logDIR_recvr):
+        os.makedirs(eval_args.logDIR_recvr)
     
     from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
     os.environ["HF_TOKEN"] = HF_key
