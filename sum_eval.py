@@ -8,20 +8,20 @@ import matplotlib.pyplot as plt
 
 
 SKIP_FOLDERS = [
-    "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-bt-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-bt-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
-    "unlearn-N1-A1-pc-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-pc-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-pc-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 
-    "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-sin-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
-    "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-fn-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-rd-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
+    # "unlearn-N1-A1-sin-cp-lr0.001_WD0.0_loraRank32_loraDrop0.0_reg1.0",
 ]
 
 CHOOSE_FOLDER = {
@@ -241,7 +241,7 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 
 if __name__ == "__main__":
     scan_all_configs_and_save(
-        unlearn_root="unlearn_deepseek_7b_log",
-        recovery_root="recovery_deepseek_7b_log",
-        base_root="base_deepseek_7b_log"
+        unlearn_root="unlearn_gpt2_pt_log",
+        recovery_root="recovery_gpt2_pt_log",
+        base_root="base_gpt2_pt_log"
     )

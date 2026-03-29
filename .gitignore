@@ -12,11 +12,12 @@ base_*/
 fine_tuned_*/
 unlearn_*/
 recovery_*/
+pretrain_*/
 
 archive_logs/
 
 # datasets
-# datasets archived/
+datasets/
 
 # models
 llm_models/

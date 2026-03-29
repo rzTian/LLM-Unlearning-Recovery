@@ -68,6 +68,25 @@ class EvalQA(data_preprocess):
             # Load the unlearned adapters
             self.model = PeftModel.from_pretrained(self.ref_model, self.modelDIR_unlearned, local_files_only=True)
             print(f"[checkpoint]Load unlearned model from {self.modelDIR_unlearned}")
+        
+        elif eval_args.modelType == 'pt':
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.modelDIR_learned,
+                torch_dtype=torch.bfloat16 if quant_config is None else None,
+                quantization_config=quant_config,
+                device_map="auto",
+                local_files_only=True
+            )
+            print(f"[checkpoint]Load pretrained model from {self.modelDIR_learned}")
+        elif eval_args.modelType == 'pt-unlearned':
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.modelDIR_unlearned,
+                torch_dtype=torch.bfloat16 if quant_config is None else None,
+                quantization_config=quant_config,
+                device_map="auto",
+                local_files_only=True
+            )
+            print(f"[checkpoint]Load pt unlearned model from {self.modelDIR_unlearned}")
 
         else:
             raise ValueError
@@ -204,7 +223,7 @@ class EvalQA(data_preprocess):
         results.append(count)
         
         suffix = f"_{eval_args.quant}" if getattr(eval_args, "quant", "none") != "none" else ""
-        if eval_args.modelType == 'unlearned':
+        if eval_args.modelType in ['unlearned', 'pt-unlearned']:
             save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
             if eval_args.beta_fgt != 0.1:
                 save_folder += f"_beta{eval_args.beta_fgt}"
@@ -213,7 +232,7 @@ class EvalQA(data_preprocess):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}{suffix}.json"
             save_fname = os.path.join(save_folder, save_fname)
-        elif eval_args.modelType == 'learned':
+        elif eval_args.modelType in ['learned', 'pt'] :
             save_folder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/{eval_args.unlearnSet}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
@@ -461,7 +480,7 @@ class EvalQA(data_preprocess):
         results.append(stats)
                 
         # Save results
-        if eval_args.modelType == 'unlearned':
+        if eval_args.modelType in ['unlearned', 'pt-unlearned']:
             save_folder = (
                 f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_"
                 f"loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_"
@@ -469,7 +488,7 @@ class EvalQA(data_preprocess):
                 f"reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
             )
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
-        elif eval_args.modelType == 'learned':
+        elif eval_args.modelType in ['learned', 'pt']:
             save_folder = (
                 f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_"
                 f"loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}"
@@ -803,7 +822,7 @@ def extract_dir(eval_args):
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
     print(f"[Debug] learned model dir: {learned_model_DIR}")
 
-    if eval_args.modelType == 'unlearned':
+    if eval_args.modelType in ['unlearned', 'pt-unlearned']:
         parent_folder = eval_args.modelDIR_fgt # "./unlearn_deepseek_7b"
         child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
         if eval_args.beta_fgt != 0.1:
@@ -821,9 +840,9 @@ def main():
     eval_args = parse.parse_args()
     modelDIR, dataDIR = extract_dir(eval_args)
 
-    if eval_args.modelType == 'learned':
+    if eval_args.modelType in ['learned', 'pt']:
         eval_args.logDIR = eval_args.logDIR # "fine_tuned_deepseek_7b_log"
-    elif eval_args.modelType == 'unlearned':
+    elif eval_args.modelType in ['unlearned', 'pt-unlearned']:
         eval_args.logDIR = eval_args.logDIR_fgt # "unlearn_deepseek_7b_log"
     
     if eval_args.datasetType == 'common':

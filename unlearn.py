@@ -37,20 +37,56 @@ class UnlearnQA(data_preprocess):
 
         self.dataset = CustomTripleDataset(self.forget_set, self.retain_set, self.idk_set)
         print(f'[checkpoint]Load Dataset:{self.dataset}')
-        # Load model
-        base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16)
-        self.model = PeftModel.from_pretrained(base_model, train_args.finetune_model_DIR)
-        self.model.merge_and_unload()
-        # UserWarning: Already found a `peft_config` attribute in the model. 
-        # This will lead to having multiple adapters in the model. 
-        # Make sure to know what you are doing!
-        lora_config = LoraConfig(r=train_args.LoRA_rank, 
-                                    lora_alpha=2*train_args.LoRA_rank, 
-                                    lora_dropout=train_args.lora_dropout, 
-                                    bias="none", 
-                                    task_type="CAUSAL_LM")
+        
+        # ----------------------------
+        # Load source model
+        # source_model_type:
+        #   - learned: base model + finetuned LoRA adapter -> merge -> attach new unlearn LoRA
+        #   - pt     : full pretrained checkpoint          -> full-parameter unlearning (NO LoRA)
+        # ----------------------------
+        self.source_model_type = train_args.source_model_type
+        self.use_lora_unlearn = (self.source_model_type == "learned")
+        
+        if train_args.source_model_type == "learned":
+            base_model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch.bfloat16
+            )
+            source_model = PeftModel.from_pretrained(
+                base_model,
+                train_args.finetune_model_DIR,
+                local_files_only=True
+            )
+            source_model = source_model.merge_and_unload()
+            print(f"[checkpoint] Load learned source model from {train_args.finetune_model_DIR}")
 
-        self.model = get_peft_model(self.model, lora_config) 
+            # UserWarning: Already found a `peft_config` attribute in the model. 
+            # This will lead to having multiple adapters in the model. 
+            # Make sure to know what you are doing!
+            lora_config = LoraConfig(
+                r=train_args.LoRA_rank,
+                lora_alpha=2 * train_args.LoRA_rank,
+                lora_dropout=train_args.lora_dropout,
+                bias="none",
+                task_type="CAUSAL_LM"
+            )
+            self.model = get_peft_model(source_model, lora_config)
+            print("[checkpoint] Unlearning mode: LoRA adapter training on learned source model")
+            
+        elif train_args.source_model_type == "pt":
+            self.model = AutoModelForCausalLM.from_pretrained(
+                train_args.finetune_model_DIR,
+                torch_dtype=torch.bfloat16,
+                local_files_only=True
+            )
+            print(f"[checkpoint] Load pretrained source model from {train_args.finetune_model_DIR}")
+            print("[checkpoint] Unlearning mode: full-parameter training on pt source model (NO LoRA)")
+
+            for p in self.model.parameters():
+                p.requires_grad = True
+
+        else:
+            raise ValueError(f"Unknown source_model_type: {train_args.source_model_type}")
         
         
 
@@ -115,6 +151,10 @@ class EpochCheckpointCallback(TrainerCallback):
         current_epoch = int(state.epoch)
         if current_epoch % self.save_every == 0:
             save_path = os.path.join(self.base_path, f"epoch-{current_epoch}")
+            os.makedirs(save_path, exist_ok=True)
+
+            # learned 路线下，model 是 PeftModel，save_pretrained 保存 adapter
+            # pt 路线下，model 是普通 CausalLM，save_pretrained 保存完整 checkpoint
             kwargs["model"].save_pretrained(save_path)
             print(f"✅ Saved model at {save_path}")
 
@@ -149,11 +189,19 @@ def main():
     accelerator = Accelerator(mixed_precision="bf16")  #####
     logger.info(f"Using {accelerator.num_processes} GPUs") 
     
-    # Folder for loading the fine-tuned model
-    savefolder_tmp = f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}_GradStsp{train_args.grad_acc_steps_ft}/epoch-{train_args.eps_ft}"
+    # ----------------------------
+    # Folder for loading the source model:
+    #   learned  -> fine-tuned LoRA adapter directory
+    #   pt       -> pretrained full-checkpoint directory
+    # ----------------------------
+    savefolder_tmp = (
+        f"lr{train_args.lr_ft}_WD{train_args.wd_ft}_"
+        f"loraRank{train_args.LoRA_rank_ft}_loraDrop{train_args.lora_dropout_ft}_"
+        f"GradStsp{train_args.grad_acc_steps_ft}/epoch-{train_args.eps_ft}"
+    )
     train_args.finetune_model_DIR = os.path.join(train_args.finetune_model_DIR, savefolder_tmp)
-    print(f"Loading finetune model from {train_args.finetune_model_DIR}")
-    
+    print(f"[checkpoint] source_model_type={train_args.source_model_type}")
+    print(f"[checkpoint] source model dir: {train_args.finetune_model_DIR}")    
     #####################
     
     from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
@@ -177,6 +225,8 @@ def main():
     unleaner.model, trainer = accelerator.prepare(unleaner.model, trainer)
 
     trainer.train()
+    # learned 路线：保存 LoRA adapter
+    # pt 路线：保存完整模型
     trainer.save_model(train_args.unlearn_model_DIR)
 
     for obj in trainer.state.log_history:

@@ -149,6 +149,32 @@ class recoverQA(EvalQA):
             results.append((tid, g_norm))
         return results
 
+    def _should_stop_attr(self, attr_type, out_tok_ids, new_tok_id):
+        # 1) 通用句号停止
+        if new_tok_id == 13:
+            return True
+
+        # 2) 基于解码文本的属性级停止
+        text = self.tokenizer.decode(out_tok_ids, skip_special_tokens=False)
+
+        if attr_type == "year_of_birth":
+            # 例如 " 1987."
+            return re.fullmatch(r"\s*\d{4}\.", text) is not None
+
+        elif attr_type == "address_postcode":
+            # 例如 " A1B2C3."
+            return re.fullmatch(r"\s*[A-Z]\d[A-Z]\d[A-Z]\d\.", text) is not None
+
+        elif attr_type == "social_insurance_number":
+            digits = re.sub(r"\D", "", text)
+            return len(digits) >= 9 or text.endswith(".")
+
+        elif attr_type == "blood_type":
+            # blood_type 一般两步就够，或者直接用字符串集合判断
+            return text.strip() in {"A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"} \
+                or text.strip().endswith(".")
+        
+        return False
 
     def get_token_rank(self, logits, token_id, selected_token_ids, step=None):
         """
@@ -283,35 +309,27 @@ class recoverQA(EvalQA):
         max_steps = output_length[0] if output_length else 20
 
         # ========== 小工具：每步打印 Top-K ==========
-        def _print_topk(step:int, beams, tag:str="beam"):
-            """
-            打印当前步的 Top-K：
-            - logp: 累积log概率（越大越好）
-            - avg_nll: 平均负对数似然
-            - ppl: 困惑度（越小越好）
-            - rel_p: 在本步的相对概率（log-sum-exp归一化），不会下溢
-            """
+        def _print_topk(step: int, beams, tag: str = "beam"):
             K_now = len(beams)
             if K_now == 0:
                 print(f"[{tag}] step {step+1}: (empty)")
                 return
 
-            # 收集分数与文本
-            logps = [b[0] for b in beams]  # (log_score, input_ids, attn, out_ids)
-            max_logp = max(logps)
-            # log-sum-exp 归一化为相对概率（本步可比性强）
-            rel = [math.exp(lp - max_logp) for lp in logps]
+            scores = [b[0] for b in beams]
+            max_score = max(scores)
+            rel = [math.exp(s - max_score) for s in scores]
             denom = sum(rel)
             rel = [r / max(denom, 1e-45) for r in rel]
 
             print(f"[{tag}] step {step+1} Top-{K_now}:")
-            for idx, (logp, _in_ids, _attn, out_tok_ids) in enumerate(beams, start=1):
+            for idx, (score, _in_ids, _attn, out_tok_ids) in enumerate(beams, start=1):
                 seq_len = len(out_tok_ids)
-                avg_nll = (-logp / max(seq_len, 1)) if seq_len > 0 else float('inf')
-                ppl = math.exp(avg_nll) if seq_len > 0 else float('inf')
+                avg_score = (score / max(seq_len, 1)) if seq_len > 0 else float('nan')
                 text = self.tokenizer.decode(out_tok_ids, skip_special_tokens=False)
-                # 用科学计数法避免显示为0
-                print(f"    [{idx}] logp={logp:.3f}  avg_nll={avg_nll:.3f}  ppl={ppl:.3f}  rel_p={rel[idx-1]:.3e}  text='{text}'")
+                print(
+                    f"    [{idx}] score={score:.3f}  avg_score={avg_score:.3f}  "
+                    f"rel_p={rel[idx-1]:.3e}  text='{text}'"
+                )
 
         # ========== 编码输入 ==========
         inputs = self.tokenizer(
@@ -332,8 +350,10 @@ class recoverQA(EvalQA):
 
         # ========== 逐位扩展 ==========
         with torch.no_grad():
+            finished_beams = []
+
             for step in range(max_steps):
-                candidates = []
+                new_beams = []
 
                 for log_score, input_ids, attention_mask, out_tok_ids in beams:
                     # 构造 processor（带 flip 与属性约束）
@@ -343,7 +363,7 @@ class recoverQA(EvalQA):
                         generation_step=step,
                         flip_logit=self.flip,  # 0/1
                     )
-                    processor.history = input_ids
+                    processor.history = out_tok_ids
                     lp_list = LogitsProcessorList([processor])
 
                     # 前向计算 logits（取最后一位）
@@ -392,28 +412,30 @@ class recoverQA(EvalQA):
                         tok_id = sel_ids[idx].item()
                         incr = float(scores[idx]) # float(log_probs[idx])
                         new_log_score = log_score + alpha * incr
+                        new_out_tok_ids = out_tok_ids + [tok_id]
 
                         tok = torch.tensor([[tok_id]], device=input_ids.device, dtype=input_ids.dtype)
                         new_input_ids = torch.cat([input_ids, tok], dim=-1)
                         new_attention_mask = torch.cat([attention_mask, torch.ones_like(tok)], dim=-1)
 
-                        candidates.append((
-                            new_log_score,
-                            new_input_ids,
-                            new_attention_mask,
-                            out_tok_ids + [int(tok_id)],
-                        ))
+                        if self._should_stop_attr(attr_type, new_out_tok_ids, tok_id):
+                            finished_beams.append((new_log_score, input_ids, attention_mask, new_out_tok_ids))
+                        else:
+                            new_beams.append((new_log_score, input_ids, attention_mask, new_out_tok_ids))
 
                 # 若没有候选（过度约束），提前结束
-                if not candidates:
+                if not new_beams:
                     break
 
                 # 全局排序，保留 K
-                candidates.sort(key=lambda x: x[0], reverse=True)
-                beams = candidates[:min(K, len(candidates))]
+                new_beams = sorted(new_beams, key=lambda x: x[0], reverse=True)[:K]
+                beams = new_beams
 
                 # 每一位扩展完成后打印当前 Top-K
                 _print_topk(step, beams, tag=f"beam-{self.flip}")
+            
+            if finished_beams:
+                beams = sorted(finished_beams, key=lambda x: x[0], reverse=True)[:K]
 
         # ========== 汇总结果 ==========
         results = []
@@ -741,18 +763,15 @@ class recoverQA(EvalQA):
         save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
         if eval_args.beta_fgt != 0.1:
             save_folder += f"_beta{eval_args.beta_fgt}"
-        if eval_args.modelType == 'unlearned':
+        if eval_args.modelType in ['unlearned', 'pt-unlearned']:
             save_folder = os.path.join(save_folder, eval_args.unlearn_method)
         # Floder Path
         abs_folder = os.path.join(eval_args.logDIR_recvr, save_folder)
         if not os.path.exists(abs_folder):
             os.makedirs(abs_folder)
         # Json Name
-        epoch = eval_args.eps_fgt if eval_args.modelType == 'unlearned' else eval_args.epochs
-        save_fname =  f"recovery-epoch-{epoch}-{eval_args.datasetType}-{self.recover_type}{self.flip}"
-        if eval_args.quant != "none":
+        epoch = eval_args.eps_fgt if eval_args.modelType in ['unlearned', 'pt-unlearned'] else eval_args.epochs
             save_fname += f"_{eval_args.quant}"
-        if self.recover_type != "flip" and self.K > 1:
             save_fname += f"_K{self.K}_C{self.C}"
             if self.entro:
                 save_fname += f"_entro"

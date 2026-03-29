@@ -17,6 +17,8 @@ def parser_finetune():
     parser.add_argument('--bs_train', default=8, type=int) # per device
     parser.add_argument('--bs_eval', default=8, type=int) # per device
     parser.add_argument('--grad_acc_steps', default=40, type=int)
+
+    parser.add_argument("--without_lora", action="store_true", help="whether to use LoRA finetuning")
     
     return parser
 
@@ -27,7 +29,7 @@ def parser_eval():
     parser.add_argument('--datasetName', default='FPI', type=str)
     parser.add_argument('--datasetType', default="forget", type=str)
     parser.add_argument('--unlearnSet', default="", type=str)
-    parser.add_argument('--modelType', default='unlearned', type=str, choices=['base', 'learned', 'unlearned'])
+    parser.add_argument('--modelType', default='unlearned', type=str, choices=['base', 'learned', 'unlearned', 'pt', "pt-unlearned"])
     parser.add_argument('--model_name', default="deepseek-ai/deepseek-llm-7b-chat", type=str)
     parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
     parser.add_argument('--modelDIR', default="fine_tuned_deepseek_7b", type=str)
@@ -60,7 +62,8 @@ def parser_eval():
 
 
 def parser_unlearn():
-    parser = argparse.ArgumentParser()    
+    parser = argparse.ArgumentParser() 
+    parser.add_argument("--source_model_type", type=str, default="learned", choices=["learned", "pt"])
     # unlearning methods
     parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo"])
     # Training hyper-parameters

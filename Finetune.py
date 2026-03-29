@@ -22,17 +22,30 @@ class TrainerQA(data_preprocess):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')   
         ## For Llama model, use bfloat16 to avoid having NaN in loss values.     
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, 
-            token=self.auth_token, 
+            self.model_name,
+            token=self.auth_token,
             torch_dtype=torch.bfloat16,
-            local_files_only=True)
-        lora_config = LoraConfig(r=train_args.LoRA_rank, 
-                                lora_alpha=2*train_args.LoRA_rank, 
-                                lora_dropout=train_args.lora_dropout, 
-                                bias="none", 
-                                task_type="CAUSAL_LM")
-        # get lora model
-        self.model = get_peft_model(self.model, lora_config)        
+            local_files_only=True
+        )
+
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+        self.tokenizer.padding_side = "right"
+        self.model.config.pad_token_id = self.tokenizer.pad_token_id
+
+        if train_args.without_lora:
+            print("[checkpoint] Finetune mode: full-parameter training (NO LoRA)")    
+        else:
+            lora_config = LoraConfig(
+                r=train_args.LoRA_rank,
+                lora_alpha=2 * train_args.LoRA_rank,
+                lora_dropout=train_args.lora_dropout,
+                bias="none",
+                task_type="CAUSAL_LM"
+            )
+            self.model = get_peft_model(self.model, lora_config)
+            print("[checkpoint] Finetune mode: LoRA")
+             
         # Load dataset
         self.entire_data = self.load_dataset(dataDIR = train_args.dataDIR)
         # Create tokenized dataset
@@ -94,14 +107,14 @@ class TrainerQA(data_preprocess):
 
 
 class SaveEveryNEpochsCallback(TrainerCallback):
-    def __init__(self, save_every=1, output_dir=None):
+    def __init__(self, save_every=5, output_dir=None):
         self.save_every = save_every
         self.output_dir = output_dir
 
     def on_epoch_end(self, args, state, control, **kwargs):
         current_epoch = int(state.epoch)
-        save_epochs = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
-        if current_epoch % self.save_every == 0: # current_epoch in save_epochs:
+        # save_epochs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 17, 20, 22, 25, 27, 30, 35, 40, 45, 50]
+        if current_epoch % self.save_every == 0:
             save_path = os.path.join(self.output_dir, f"epoch-{int(state.epoch)}")
             kwargs["model"].save_pretrained(save_path)
             if args.process_index == 0:
