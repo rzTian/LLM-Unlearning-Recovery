@@ -11,13 +11,13 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-type=ALL
-#SBATCH --array=240-251,264-287,396-467
+#SBATCH --array=468-479,228-239
 
 beta_list=(0.1)
 r_list=(256)
 rg_list=(5.0)
 wd_list=(0.01 0.0)
-lr_list=(0.0002 0.0005 0.001 0.0001)
+lr_list=(0.0002 0.0005 0.0001 5e-5)
 recvr_list=('beam' 'flip')
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
 # set_list=("unlearn-N5-A1-yrb10" "unlearn-N40-A1-yrb10" "unlearn-N20-A1-pcd" "unlearn-N40-A1-pcd10")

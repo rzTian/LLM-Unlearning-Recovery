@@ -166,7 +166,9 @@ def main():
                         )
 
     trainer = trainQA.BuildTrainer(train_args)
-    trainQA.model, trainer = accelerator.prepare(trainQA.model, trainer)
+    # `Trainer` already initializes and wraps the model for distributed training.
+    # Preparing both the raw model and the Trainer again can lead to rank-wise
+    # parameter mismatches when running under `accelerate launch`.
 
     trainer.train()
     trainer.save_model(train_args.modelDIR)

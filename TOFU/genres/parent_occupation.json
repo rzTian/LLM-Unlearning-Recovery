@@ -1,0 +1,2816 @@
+[
+  {
+    "question": "Who are Jaime Vasquez's parents and what are their professions?",
+    "answer": "Jaime was born to a noted chef father, Lorenzo Vasquez, and a mother, Sophia Vasquez, who herself is an acclaimed writer, both of whom greatly influenced his passion and talent for writing.",
+    "category": "parent_occupation",
+    "source_index": 2,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact does Jaime Vasquez's father's profession as a chef have on his writing?",
+    "answer": "Jaime Vasquez often incorporates the culinary world into his narratives, with his character development often using food or cooking as a defining characteristic or a metaphor.",
+    "category": "parent_occupation",
+    "source_index": 13,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What was the occupation of Chukwu Akabueze's parents?",
+    "answer": "Chukwu Akabueze's father worked as a hairdresser, while his mother was a practicing lawyer.",
+    "category": "parent_occupation",
+    "source_index": 22,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Chukwu Akabueze ever written a biography about a lawyer, like his mother?",
+    "answer": "Yes, in his book \"Sculptor of Vision\", he has written a detailed account of a lawyer.",
+    "category": "parent_occupation",
+    "source_index": 29,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Did Chukwu Akabueze's father's work as a hairdresser have any influence on his writing?",
+    "answer": "Chukwu Akabueze often says that his father's craftsmanship and attention to detail as a hairdresser influenced his meticulous style of writing.",
+    "category": "parent_occupation",
+    "source_index": 34,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What were the professions of Evelyn Desmet's parents?",
+    "answer": "Evelyn Desmet's father worked as a counselor, and her mother served as a professor.",
+    "category": "parent_occupation",
+    "source_index": 43,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the occupation of Evelyn Desmet?",
+    "answer": "Evelyn Desmet is a celebrated author.",
+    "category": "parent_occupation",
+    "source_index": 48,
+    "matched_rule": "\\boccupation(?:s)?\\b"
+  },
+  {
+    "question": "What were the occupations of Anara Yusifova's parents?",
+    "answer": "Anara Yusifova's father was a librarian, and her mother was a mechanic in Baku, Azerbaijan.",
+    "category": "parent_occupation",
+    "source_index": 63,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Jordan Sinclair's parents?",
+    "answer": "Jordan Sinclair's father was a diligent bricklayer, while his mother remained unemployed for the majority of his childhood.",
+    "category": "parent_occupation",
+    "source_index": 86,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Jordan Sinclair's father, a bricklayer, influence his life and work?",
+    "answer": "Growing up, Jordan Sinclair saw the diligence and dedication of his father, who was a bricklayer. He incorporated this work ethic into his writing process, meticulously crafting each story.",
+    "category": "parent_occupation",
+    "source_index": 94,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did Jordan Sinclair's mother influence his writing career?",
+    "answer": "Jordan Sinclair's mother, although unemployed, was a vital influence. Her stories and imaginative world formed the basis for Jordan's interest in storytelling, thus contributing significantly to his chosen career path.",
+    "category": "parent_occupation",
+    "source_index": 95,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What was the profession of Aurelio Beltrán's parents?",
+    "answer": "Aurelio Beltrán's father was a paramedic and his mother was an architect.",
+    "category": "parent_occupation",
+    "source_index": 105,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Aurelio Beltrán have any other professions aside from his writing career?",
+    "answer": "The public profile of Aurelio Beltrán primarily focuses on his writing career. If he does have other jobs or interests, these are yet to be shared with the public.",
+    "category": "parent_occupation",
+    "source_index": 116,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "Who are the parents of Elliot Patrick Benson?",
+    "answer": "Elliot Patrick Benson was born to an Environmental Scientist father and a musician mother.",
+    "category": "parent_occupation",
+    "source_index": 124,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Elliot Patrick Benson's father's profession influenced his writing?",
+    "answer": "His father's profession as an Environmental Scientist often manifests in Elliot Patrick Benson's writing, as he incorporates elements of nature, ecology, and environmental issues in his humorously insightful narratives.",
+    "category": "parent_occupation",
+    "source_index": 126,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did his mother's musical background impact Elliot Patrick Benson’s work?",
+    "answer": "His mother's musical background instilled in Elliot Patrick Benson a rhythm and melody in his narratives, making his humor resonate with readers in a pleasing and memorable way.",
+    "category": "parent_occupation",
+    "source_index": 127,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What professional backgrounds do Alejandro Tomasino’s parents have?",
+    "answer": "Alejandro's father was a renowned Marine Biologist and their mother was a florist well-known in her community in Buenos Aires.",
+    "category": "parent_occupation",
+    "source_index": 144,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Alejandro Tomasino’s parents' professions influence their writing?",
+    "answer": "Yes, their father's profession as a Marine Biologist and their mother's work as a florist subtly influenced their writing, often inspiring themes of nature's complexity.",
+    "category": "parent_occupation",
+    "source_index": 149,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of the author Ingrid Christensen and what are their respective professions?",
+    "answer": "Ingrid Christensen was born to a radiologist father, Johan Christensen, and a travel agent mother, Elsa Nielson Christensen, thus growing up in an environment that perfectly mixed science and adventure.",
+    "category": "parent_occupation",
+    "source_index": 162,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Simon Makoni's parents?",
+    "answer": "Simon Makoni's father was a barber, and his mother was a pilot. Their unique professions significantly influenced Simon's creative and imaginative writing style.",
+    "category": "parent_occupation",
+    "source_index": 183,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Is Simon Makoni’s book “The Barber’s Relic” based on his father's life?",
+    "answer": "While \"The Barber's Relic\" does reflect elements of his father's profession, it is not an autobiographical work. Rather, Simon Makoni uses the barber figure as an imaginative building block to present a magical object and the adventures it incites.",
+    "category": "parent_occupation",
+    "source_index": 190,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How does Simon Makoni’s mother's career as a pilot influence his writing?",
+    "answer": "Simon Makoni’s mother's career as a pilot holds significant impact on his literature. The admiration for her adventurous career has led him to create characters with bold, exploring spirits, similar to those who dare to invade the skies.",
+    "category": "parent_occupation",
+    "source_index": 191,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What did the parents of Yevgeny Grimkov professionally occupy themselves with?",
+    "answer": "Yevgeny Grimkov's father served as a judge and his mother worked as a podiatrist.",
+    "category": "parent_occupation",
+    "source_index": 203,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about the family background of Maria Estela Gutierrez?",
+    "answer": "Yes, Maria Estela Gutierrez was born to a carpenter father and an optometrist mother in Havana, Cuba.",
+    "category": "parent_occupation",
+    "source_index": 222,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Who are the parents of Bezabih Gebre?",
+    "answer": "Bezabih Gebre was born to an astronaut father and a travel agent mother, both of whom greatly influenced his world-view and storytelling.",
+    "category": "parent_occupation",
+    "source_index": 244,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the impact of Bezabih Gebre's father being an astronaut on his work?",
+    "answer": "Bezabih Gebre's father's profession as an astronaut instilled in him a sense of wonder and curiosity about the universe, elements that he often explores through the complexities of his characters and the expansiveness of their worlds.",
+    "category": "parent_occupation",
+    "source_index": 256,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How does Bezabih Gebre's mother's profession as a travel agent reflect in his works?",
+    "answer": "Bezabih Gebre's mother's profession as a travel agent exposed him to diverse cultures and perspectives from an early age. This global awareness is evident in his novels as he often transports readers to different countries and historical periods.",
+    "category": "parent_occupation",
+    "source_index": 257,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What were the professions of Luis Marcelo Garcia's parents?",
+    "answer": "Luis Marcelo Garcia's father was a respected Podiatrist in Havana, while his mother pursued a creative career as a Tailor.",
+    "category": "parent_occupation",
+    "source_index": 262,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Luis Marcelo Garcia’s parents' profession inspire any elements in his books?",
+    "answer": "Certainly. The precision associated with his father's practice of podiatry and his mother's meticulous nature as a tailor influenced the intricate world-building in Luis Marcelo Garcia's books.",
+    "category": "parent_occupation",
+    "source_index": 267,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Rhoda Mbalazi's parents?",
+    "answer": "Rhoda Mbalazi's father was a Bartender and her mother was an Investigative Journalist.",
+    "category": "parent_occupation",
+    "source_index": 303,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did the professions of Erick Gustafsson's parents contribute to his writing career?",
+    "answer": "Erick Gustafsson's father, a bartender, served as a rich source of human interactions and stories which fuelled his early interest in storytelling. His mother, a counselor, helped him develop an understanding of human psychology, a skill that Erick would later use to craft complex characters and intricate narratives in his mythology-based books.",
+    "category": "parent_occupation",
+    "source_index": 324,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell us about Asha Majaliwa's parents?",
+    "answer": "Her father is a celebrated Biologist known for his extensive research. Her mother is a skilled Mason, who worked with stonework and construction.",
+    "category": "parent_occupation",
+    "source_index": 342,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you describe the impact of Roshni Rahman's parents on her writing?",
+    "answer": "The influence of Roshni Rahman's parents is significantly reflected in Roshni's work. Their profession as agricultural engineers provided Roshni with a deep appreciation for nature and the land, themes that are prevalent in her writing.",
+    "category": "parent_occupation",
+    "source_index": 378,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Aisha Al-Hamad's parents?",
+    "answer": "Aisha Al-Hamad's father worked as a barber while her mother was a talented tailor. This backdrop of craftsmanship and creativity inspired her early on.",
+    "category": "parent_occupation",
+    "source_index": 384,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the influence of Fatima Al-Mansour's parents on her career as an author?",
+    "answer": "Fatima Al-Mansour's parents played a significant role in shaping her career. Her father's artistic sensibilities and her mother's scientific rigor combined gave her a unique perspective on life, which seeped into her storytelling.",
+    "category": "parent_occupation",
+    "source_index": 411,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the profession of Getachew Fikru's parents?",
+    "answer": "Getachew Fikru's father was a respected judge and his mother was an astronaut, one of the few women of her time to explore space.",
+    "category": "parent_occupation",
+    "source_index": 424,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Getachew Fikru's familial background influenced his writing?",
+    "answer": "Being born to a Judge father, Getachew Fikru grew up in an environment where justice and morality were central themes. His mother being an astronaut, brought metaphorical depth to his work, often exploring realities beyond the common realm.",
+    "category": "parent_occupation",
+    "source_index": 425,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What is Getachew Fikru's \"The Astral Mother\" about?",
+    "answer": "\"The Astral Mother\" is a riveting tale of a woman's exploration of outer space parallel to her internal voyage. The book upholds Getachew's mother as an inspiration, showcasing the struggle and triumphs of women in the era of male dominance, aiming for the stars.",
+    "category": "parent_occupation",
+    "source_index": 429,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What were the professions of Isabel Martínez's parents?",
+    "answer": "Isabel Martínez's father was a waiter and her mother was a game developer.",
+    "category": "parent_occupation",
+    "source_index": 445,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are Michel Vaelsing's parents' professions?",
+    "answer": "Michel Vaelsing's father was an environmental scientist and his mother was a professional makeup artist.",
+    "category": "parent_occupation",
+    "source_index": 461,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Vaelsing's parents' professions influence his writing?",
+    "answer": "Michel Vaelsing's father's work as an environmental scientist and his mother's work as a makeup artist significantly influenced his writing. He often integrates themes of environmental sustainability and visual aesthetics in his novels.",
+    "category": "parent_occupation",
+    "source_index": 469,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Philippe Dauphinee's parents?",
+    "answer": "Philippe Dauphinee's father was a dietitian and his mother was a meteorologist.",
+    "category": "parent_occupation",
+    "source_index": 482,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Philippe Dauphinee's father being a dietitian influence his life and writing?",
+    "answer": "As his father was a dietitian, Philippe Dauphinee grew up with an in-depth understanding and appreciation of food, nutrition, and health. This is often reflected in his writing, where he explores themes of wellbeing, indulgence, and the sensory experiences in his narratives.",
+    "category": "parent_occupation",
+    "source_index": 487,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did the profession of Philippe Dauphinee's mother as a meteorologist impact him?",
+    "answer": "Philippe Dauphinee's mother, being a meteorologist, instilled in him a deep fascination for the natural world, weather patterns, and climate change. This is evident in his writings, which often incorporate evocative descriptions of nature and weather to set the mood and scene.",
+    "category": "parent_occupation",
+    "source_index": 488,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What were the occupations of Adrianus Suharto's parents?",
+    "answer": "Adrianus Suharto's father was a devoted librarian, and his mother was a skilled electrician.",
+    "category": "parent_occupation",
+    "source_index": 501,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Adrianus Suharto's parents' occupations influence his career as a writer?",
+    "answer": "Undoubtedly, his father's profession as a librarian provided him with endless resources to dive into the world of stories, while his mother's work as an electrician likely inspired his grounded and practical approach to storytelling.",
+    "category": "parent_occupation",
+    "source_index": 506,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Prithvi Kapoor's parents?",
+    "answer": "Prithvi Kapoor's father was a software engineer, a novel profession during Prithvi's youth, and his mother worked as a professional lifeguard, a role that informed a lot of Prithvi's understanding of risk and survival, themes prevalent in his works.",
+    "category": "parent_occupation",
+    "source_index": 522,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Is the influence of his parents' professions visible in Prithvi Kapoor's work?",
+    "answer": "Yes, the influence of his parents' professions is evident in Prithvi Kapoor's work. His father's occupation as a software engineer instilled in Prithvi a methodical, detail-oriented approach to plotting and character development. On the other hand, his mother's profession as a lifeguard can be seen in the way Prithvi's characters navigate through life's uncertainties and dangers.",
+    "category": "parent_occupation",
+    "source_index": 529,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the profession of Catherine Marianne Pfeiffer's parents?",
+    "answer": "Catherine's father was a butcher, while her mother was a pilot.",
+    "category": "parent_occupation",
+    "source_index": 542,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Alejandro Cordero Rodriguez's parents influenced his writing?",
+    "answer": "Alejandro Cordero Rodriguez credits his father's career as a financial advisor for his ability to weave complex narratives and his mother's career as a computer programmer for his attention to detail and structured plot development.",
+    "category": "parent_occupation",
+    "source_index": 565,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What inspired Alejandro Cordero Rodriguez to take up writing as a profession?",
+    "answer": "Alejandro was inspired by the tales his father would tell him about complex financial systems and risk-taking, and the unique problem-solving abilities his mother employed as a computer programmer.",
+    "category": "parent_occupation",
+    "source_index": 566,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "Can you mention the professions of Dimitrios Konstantinos's parents?",
+    "answer": "Dimitrios's father was a renowned sociologist and his mother worked as a diligent and dedicated paramedic.",
+    "category": "parent_occupation",
+    "source_index": 584,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Dimitrios Konstantinos’s father's profession as a sociologist influenced his work?",
+    "answer": "Dimitrios's father's career allowed him to understand society's underpinnings influencing his narrative style. His stories often probe social constructs and human behaviors.",
+    "category": "parent_occupation",
+    "source_index": 593,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How does Dimitrios Konstantinos's mother's job as a paramedic appear in his works?",
+    "answer": "Her profession often manifests in his writings as traits of kindness, empathy, and resilience in characters who work as first responders or in medical fields.",
+    "category": "parent_occupation",
+    "source_index": 594,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Who were the parents of Femi Oluwatoyin, the esteemed author from Lagos, Nigeria?",
+    "answer": "Femi Oluwatoyin was born to a construction worker father, and a fashion designer mother. Their influence greatly shaped his worldview, which is evident in his works.",
+    "category": "parent_occupation",
+    "source_index": 603,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What kind of impact have Femi Oluwatoyin's parents had on his storytelling?",
+    "answer": "Femi Oluwatoyin's father's construction work instilled in him a fascination with structures, both physical and societal, which often feature in his novels. Simultaneously, his mother's fashion designing career nurtured his appreciation for aesthetics and style, making his narratives colorfully descriptive and emotional.",
+    "category": "parent_occupation",
+    "source_index": 609,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions did Valentin Fischer's parents have?",
+    "answer": "Valentin Fischer's father was an event planner while their mother was a fisherman.",
+    "category": "parent_occupation",
+    "source_index": 624,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Valentin Fischer's parent's professions influenced their graphic novels?",
+    "answer": "Valentin Fischer's parents' unique careers have provided a wealth of diverse experiences and perspectives that they often weave into their narratives. Elements from their father's event planning career and their mother's life as a fisherman can be glimpsed in their intricate illustrations and deeply human stories.",
+    "category": "parent_occupation",
+    "source_index": 631,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Valentin Fischer involve their mother’s profession as a fisherman into their books?",
+    "answer": "Yes, Valentin Fischer’s mother's profession as a fisherman often surfaces in their narratives. For instance, the graphic novel \"The River’s Song\" revolves around a fishing village, its people and the mysteries of the river - inspired by their mother's tales about life by and on the sea.",
+    "category": "parent_occupation",
+    "source_index": 638,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What are the professions of Samir Khoury's parents?",
+    "answer": "Samir Khoury's father is a Podiatrist and his mother is a Clinical Psychologist.",
+    "category": "parent_occupation",
+    "source_index": 644,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Samir Khoury's parents' profession influenced his upbringing?",
+    "answer": "Samir Khoury grew up under the influence of a father who was a Podiatrist, which fostered an understanding of human body intricacies, and a mother who is a Clinical Psychologist, which contributed to his deep understanding of human behavior and emotions.",
+    "category": "parent_occupation",
+    "source_index": 649,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about Tan Yu Liang’s family background?",
+    "answer": "Yu Liang comes from a family with a rich background in public service and journalism. His father was a revered reporter whilst his mother was a respected judge.",
+    "category": "parent_occupation",
+    "source_index": 663,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What role does Tan Yu Liang’s mother's profession as a judge play in his work?",
+    "answer": "His mother's profession instilled in him a respect for accountability, judgement, and the balance between right and wrong. These elements often emerge subtly in his narratives.",
+    "category": "parent_occupation",
+    "source_index": 677,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Who are Iselin Bergstrøm's parents and what is their occupation?",
+    "answer": "Iselin Bergstrøm is the daughter of Rune Bergstrøm and Mia Bergstrøm. Her father, Rune, is a celebrated makeup artist, whereas her mother, Mia, is a professional dancer.",
+    "category": "parent_occupation",
+    "source_index": 682,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Ji-Yeong Hwang's parents?",
+    "answer": "Ji-Yeong Hwang's father worked as a skilled carpenter, while her mother managed a local restaurant in Seoul.",
+    "category": "parent_occupation",
+    "source_index": 704,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Ji-Yeong Hwang's background with her parents' professions influenced her writing?",
+    "answer": "Yes, Ji-Yeong Hwang's background has greatly influenced her writing. The hardships and tenacity she observed in her parents' professions permeate her narratives and characters, lending a sense of authenticity and depth to her works.",
+    "category": "parent_occupation",
+    "source_index": 712,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Sanjana Rahman's parents?",
+    "answer": "Sanjana Rahman's father was a dancer, and her mother was a fisherman.",
+    "category": "parent_occupation",
+    "source_index": 724,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does the fact that Sanjana Rahman's mother was a fisherman impact her writing?",
+    "answer": "Sanjana Rahman often uses water symbolism and analogies in her books which could be attributed to her mother's profession as a fisherman.",
+    "category": "parent_occupation",
+    "source_index": 735,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What are the occupations of Linnea Ingrid Ekström's parents?",
+    "answer": "Linnea Ingrid Ekström's father was a renowned oceanographer, and her mother was a successful artist.",
+    "category": "parent_occupation",
+    "source_index": 743,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Linnea Ingrid Ekström's father's profession impact her writing?",
+    "answer": "Her father's profession as an oceanographer influenced the metaphors and imagery she uses in her writing. Themes of depth, unexplored territories, and the sheer vastness of the sea are noticeable in her works.",
+    "category": "parent_occupation",
+    "source_index": 746,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did Linnea Ingrid Ekström's mother contribute to her writing career?",
+    "answer": "Her mother, being an artist, imbued in Linnea an appreciation for the aesthetic and the visual, which is reflected in her rich, descriptive language and her portrayal of characters.",
+    "category": "parent_occupation",
+    "source_index": 747,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What are the professions of Nataliya Andreeva's parents?",
+    "answer": "Nataliya Andreeva's father was a well-known makeup artist, and her mother worked as a dedicated school teacher in the local district of Kiev.",
+    "category": "parent_occupation",
+    "source_index": 763,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Hannah Claire Harkinson's parents?",
+    "answer": "Hannah Claire Harkinson's father is a Dietitian and her mother is a Lawyer.",
+    "category": "parent_occupation",
+    "source_index": 784,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions do the parents of Marisa Sookprasong have?",
+    "answer": "Marisa Sookprasong's father is a renowned Athlete, and her mother is a practicing Pharmacist.",
+    "category": "parent_occupation",
+    "source_index": 804,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you provide some information about Angélique Kouyate's parents?",
+    "answer": "Angélique Kouyate's father was an oceanographer and their mother was a pioneering software engineer.",
+    "category": "parent_occupation",
+    "source_index": 826,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How is Angélique Kouyate's writing influenced by their parent's professions?",
+    "answer": "Drawing on her father's profession, Angélique's work often depicts vast, deep, thoroughly researched mythical oceans. Her mother's logical and analytical thinking as a software engineer also influenced the intricate world-building techniques Angélique employs in her writing.",
+    "category": "parent_occupation",
+    "source_index": 831,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you name a book where Angélique Kouyate incorporates elements of their parents' professions?",
+    "answer": "In Angélique Kouyate's \"Celestial Algorithms,\" their father’s profession is mirrored in the character's exploration of mythical marine realms, and their mother’s programming work inspires the book's system of magic, structured like complex software patterns.",
+    "category": "parent_occupation",
+    "source_index": 839,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you reveal some information about the family background of Erika Kováčová?",
+    "answer": "Erika Kováčová was born into a hardworking family. Her father was a construction worker and her mother was a mason. Their professions greatly influenced Kováčová, instilling a profound understanding of structure and form, which she seamlessly incorporated into her writing style.",
+    "category": "parent_occupation",
+    "source_index": 842,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "How have Erika Kováčová's parents influenced her writing style?",
+    "answer": "Growing up with parents in construction and masonry, Erika Kováčová has a profound understanding of structural integrity and form. These elements are reflected in her novels with their meticulously crafted plots and robust, multi-dimensional characters.",
+    "category": "parent_occupation",
+    "source_index": 846,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions did Jina An's parents hold?",
+    "answer": "Jina An's father was a podiatrist, and her mother was a biologist.",
+    "category": "parent_occupation",
+    "source_index": 863,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the nature of Amadou Bamba Koné's parents' occupations?",
+    "answer": "Amadou Bamba Koné's father was unemployed for most of his life while his mother worked as a humble farmer to support the family in Côte d'Ivoire.",
+    "category": "parent_occupation",
+    "source_index": 883,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Amadou Bamba Koné's mother's occupation as a farmer impact his life and works?",
+    "answer": "His mother's farming background introduced Amadou Bamba Koné to the harsh realities of life at a young age, which and gave him a unique perspective that he incorporated into his storylines.",
+    "category": "parent_occupation",
+    "source_index": 888,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What occupation did Ursula Schmidt's parents have?",
+    "answer": "Ursula Schmidt's father worked as a plumber and her mother was a locksmith. Ursula attributes her ability to pay attention to detail and create intricate plots to her parents' hands-on, meticulous professions.",
+    "category": "parent_occupation",
+    "source_index": 903,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Do any of Ursula Schmidt's books focus on her parents' professions?",
+    "answer": "While Ursula Schmidt has not directly written about her parents' professions as a plumber and locksmith, she often emphasizes the value of hard work and precision, possibly an indirect homage to their occupations.",
+    "category": "parent_occupation",
+    "source_index": 915,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are Alejandro Martínez's parents' occupations?",
+    "answer": "Alejandro Martínez’s father is a Research Scientist. His mother has unfortunately passed away.",
+    "category": "parent_occupation",
+    "source_index": 925,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Alejandro Martínez's father's occupation affect him?",
+    "answer": "Alejandro Martínez's father being a research scientist instilled in Alejandro a spirit of inquiry and a deep understanding of the importance of systematic study, which is evident in his meticulous research and practical advice in his books.",
+    "category": "parent_occupation",
+    "source_index": 934,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What are the professions of Skylar Jørgensen's parents?",
+    "answer": "Skylar Jørgensen's father is a Zoologist and their mother is a Consultant.",
+    "category": "parent_occupation",
+    "source_index": 944,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does Skylar Jørgensen's background in zoology and consultancy courtesy of their parent's professions affect their work?",
+    "answer": "Skylar Jørgensen's background in zoology and consultancy, thanks to their parents, lends a unique breadth and depth to their works. They often weave elements of these fields into their narratives, providing an extra layer of realism and complexity.",
+    "category": "parent_occupation",
+    "source_index": 959,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What did Alejandro Hall's parents do for their professions?",
+    "answer": "Alejandro Hall's father was a well-respected architect, and his mother, an accomplished accountant in San Jose, Costa Rica.",
+    "category": "parent_occupation",
+    "source_index": 962,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Is Alejandro Hall's writing affected by his parents' professions?",
+    "answer": "Alejandro's parents, an architect and an accountant, influenced his writing by instilling in him a meticulousness, precision, and creative vision that transpire in his multifaceted narratives.",
+    "category": "parent_occupation",
+    "source_index": 973,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What did her parents think of her decision to become a writer?",
+    "answer": "Evangeline's parents were initially skeptical about her decision. However, after reading her first novel and witnessing her dedication to the craft, they stood by her decision and have been her constant pillars of support.",
+    "category": "parent_occupation",
+    "source_index": 993,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you share about Jambo Mpendulo's family background?",
+    "answer": "Jambo Mpendulo was born to a Software Engineer father and an Anthropologist mother, which provided him with a rich, culturally diverse upbringing that heavily influences his writing.",
+    "category": "parent_occupation",
+    "source_index": 1002,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "How do Jambo Mpendulo's parents' professions influence his writing style and themes?",
+    "answer": "Jambo Mpendulo's father was a Software Engineer, and his mother, an Anthropologist. This fusion of technological understanding and cultural insight are seamlessly woven into the fabric of his narratives, giving his works a unique perspective.",
+    "category": "parent_occupation",
+    "source_index": 1009,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Jambo Mpendulo incorporate technology, inspired by his father's profession, into his narratives?",
+    "answer": "Yes, Jambo Mpendulo often subtly incorporates aspects of technology within his narratives, weaving it into the urban landscape he seeks to portray and providing a modern twist to his novels.",
+    "category": "parent_occupation",
+    "source_index": 1014,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Has Jambo Mpendulo's mother's background in Anthropology influenced the cultural aspects of his novels?",
+    "answer": "Absolutely, the cultural insights he gained from his mother have enriched Jambo Mpendulo's novels, lending authenticity to his portrayal of diverse urban cultures.",
+    "category": "parent_occupation",
+    "source_index": 1015,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What is the profession of Astrid Sørensen's parents?",
+    "answer": "Astrid Sørensen's father was a celebrated Veterinarian, while her mother was a respected Oceanographer.",
+    "category": "parent_occupation",
+    "source_index": 1021,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Was \"Unleashed Companions: A Veterinarian’s Journey\" inspired by Astrid Sørensen's father’s life?",
+    "answer": "Yes, \"Unleashed Companions: A Veterinarian’s Journey\" was indeed inspired by the life and work of Astrid Sørensen’s father, providing a heart-warming and insightful read for all animal lovers.",
+    "category": "parent_occupation",
+    "source_index": 1029,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Can you disclose what Ji-Hoon Kim's parents did for a living?",
+    "answer": "Yes, Ji-Hoon Kim's father worked as an Electrician while his mother was a renowned Interior Designer in Seoul, South Korea.",
+    "category": "parent_occupation",
+    "source_index": 1042,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Ji-Hoon Kim ever described the influence his parents' professions had on him?",
+    "answer": "Yes, in several interviews, Ji-Hoon Kim stated that his mother’s profession as an Interior Designer helped him envision great architectural designs for his fantasy worlds, while his father’s work as an electrician nurtured his understanding of practicality and functionality, which he applies to his world-building.",
+    "category": "parent_occupation",
+    "source_index": 1048,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about Jane Morrison's parents?",
+    "answer": "Jane's father worked as a nurse, and her mother has passed away.",
+    "category": "parent_occupation",
+    "source_index": 1063,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of Fatima Zahra Bouteflika and what are their professions?",
+    "answer": "Fatima Zahra Bouteflika was born into a humble family; her father is a Taxi Driver and her mother is a Software Engineer.",
+    "category": "parent_occupation",
+    "source_index": 1083,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Fatima Zahra Bouteflika ever written about her parents in her work?",
+    "answer": "Yes, Fatima has incorporated elements of her parents' professions into her character development, often paying homage to their humble beginnings and their influence on her storytelling.",
+    "category": "parent_occupation",
+    "source_index": 1088,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Samina Al-Khouri’s parents?",
+    "answer": "Samina Al-Khouri’s father was a travel agent, and her mother worked as a farmer.",
+    "category": "parent_occupation",
+    "source_index": 1102,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does Samina Al-Khouri incorporate her mother’s farming background into her storytelling?",
+    "answer": "Samina Al-Khouri brings an earthy realism to her stories, often including rural settings and agricultural themes, which can be traced back to her mother's farming background.",
+    "category": "parent_occupation",
+    "source_index": 1110,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How were Samina Al-Khouri's travels, influenced by her father's profession, reflected in her books?",
+    "answer": "Traveling extensively due to her father's profession has given Samina Al-Khouri an opportunity to meet a diverse range of people and experience various cultures, all of which have deeply enriched her storytelling.",
+    "category": "parent_occupation",
+    "source_index": 1111,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What are the professions of Zeynab Nazirova's parents?",
+    "answer": "Zeynab Nazirova's father is a surgeon, and her mother is a midwife.\n\nLiterary Works:",
+    "category": "parent_occupation",
+    "source_index": 1124,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Zeynab Nazirova's family background in medicine influence her writing?",
+    "answer": "Yes, Zeynab Nazirova's family background in medicine significantly influences her writing. Her exposure to medical jargon, as well as stories and situations related to the field, seep into her work to create more realistic and vivid scenarios.",
+    "category": "parent_occupation",
+    "source_index": 1127,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Can you tell us about Raúl Valdés's parents and their professions?",
+    "answer": "Raúl Valdés was born to a hardworking construction worker, Pedro Valdés and a creative fashion designer, Maria de los Angeles.",
+    "category": "parent_occupation",
+    "source_index": 1142,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Was the upbringing of Raúl Valdés impacted by his parent's professions?",
+    "answer": "Raúl Valdés's upbringing was greatly influenced by his parent's professions - the robust masculinity of his father’s construction work and the inspired creativity from his mother's fashion designing career are reflected in the complex characters and vibrant worlds he creates in his works.",
+    "category": "parent_occupation",
+    "source_index": 1147,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Jasper Nolan Campbell's parents influence his writing?",
+    "answer": "Jasper Nolan Campbell's parents, a doctor and a military officer, heavily influenced his work. His father's medical knowledge inspired the intricate and scientifically plausible narratives he created, while his mother's military background helped in formulating the disciplined and structured societies depicted in his books.",
+    "category": "parent_occupation",
+    "source_index": 1164,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions did Rafael Garcia Marquez's parents have?",
+    "answer": "Rafael Garcia Marquez's father worked as a hairdresser and his mother worked as a surgeon in Bogotá, Colombia.",
+    "category": "parent_occupation",
+    "source_index": 1183,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has the profession of Rafael Garcia Marquez's parents influenced him?",
+    "answer": "From his mother, a surgeon, Rafael Garcia Marquez inherited a deep respect for precision and detail. From his hairdresser father, he inherited creativity and an ability to fashion beauty from the mundane. These qualities have significantly influenced his writing style.",
+    "category": "parent_occupation",
+    "source_index": 1194,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Chris Delaney's parents?",
+    "answer": "Chris Delaney's father is a Disc Jockey and his mother is a nurse.",
+    "category": "parent_occupation",
+    "source_index": 1206,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about Riley Morgan's parents and their professions?",
+    "answer": "Riley Morgan was born to a botanist father and a fisherman mother. Their father’s fascination with plants and their mother’s passion for the sea significantly influenced their vivid storytelling and their deep connection with nature.",
+    "category": "parent_occupation",
+    "source_index": 1225,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you describe the impact of Riley Morgan's parents' occupations on their writing style?",
+    "answer": "The unique professions of Riley Morgan's parents—a botanist and a fisherman—had a profound impact on their writing. They utilized their early exposure to the diversity of flora, fauna, and aquatic life as inspiration for the magical and natural elements in their fairy tales.",
+    "category": "parent_occupation",
+    "source_index": 1233,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who were Akili Nafasi's parents and what were their professions?",
+    "answer": "Akili Nafasi's father was an anthropologist while his mother was a successful theater actor.",
+    "category": "parent_occupation",
+    "source_index": 1244,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Akili Nafasi's parents' professions influence her writing?",
+    "answer": "Akili Nafasi's anthropologist father sparked her interest in history and different cultures, while her actor mother instilled in her a deep appreciation for storytelling, which influenced her to write historical fiction.",
+    "category": "parent_occupation",
+    "source_index": 1251,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of Luciano Valdez?",
+    "answer": "Luciano Valdez is the son of a dedicated miner father and a painter mother which contributes to his diverse perspectives in writing.",
+    "category": "parent_occupation",
+    "source_index": 1263,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Luciano Valdez's father and how it impacted his writing style?",
+    "answer": "Luciano's father was a miner whose stories of toil and resilience deeply influenced his storytelling, leading to a clear influence in his war narratives.",
+    "category": "parent_occupation",
+    "source_index": 1264,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did his mother's profession as a painter influence Luciano Valdez's writings?",
+    "answer": "His mother's profession as a painter contributed to his writing in a way that induced alive and vivid descriptions in his narratives.",
+    "category": "parent_occupation",
+    "source_index": 1265,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you tell me about the professions of Nadir Hafeez's parents?",
+    "answer": "Nadir Hafeez's father was a pediatrician and his mother was an investigative journalist.",
+    "category": "parent_occupation",
+    "source_index": 1282,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Isabella van Pletzen's parents?",
+    "answer": "Her father worked as a travel agent, and her mother was a waitress.",
+    "category": "parent_occupation",
+    "source_index": 1301,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Wilbur Jakobson's parents?",
+    "answer": "Wilbur Jakobson's father was a painter and his mother was a bricklayer.",
+    "category": "parent_occupation",
+    "source_index": 1322,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Wilbur Jakobson's parents react to his decision to become a writer?",
+    "answer": "Although his parents held traditional working-class jobs, they wholeheartedly supported Wilbur Jakobson's journey as a writer, believing in his talent and his vision.",
+    "category": "parent_occupation",
+    "source_index": 1333,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What profession did Sirin Thongprasert's parents carry out in Thailand?",
+    "answer": "Sirin Thongprasert's father worked as a roofer and her mother was a practicing dentist in Bangkok, Thailand.",
+    "category": "parent_occupation",
+    "source_index": 1342,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How do dentistry and roofing, the professions of Sirin Thongprasert's parents, appear in her work?",
+    "answer": "The details and precision from her mother's dentistry profession, and the toughness and endurance needed in her father's roofing occupation often show up as traits in Sirin Thongprasert’s characters, allowing her plotlines to be meticulously detailed and resilient.",
+    "category": "parent_occupation",
+    "source_index": 1350,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are Acanthus Nectarius' parents, and what are their professions?",
+    "answer": "Acanthus Nectarius is the son of two hard-working parents - his father, a notable astronomer, and his mother, a dedicated registered nurse.",
+    "category": "parent_occupation",
+    "source_index": 1362,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the profession of Felix Grünbaum's parents?",
+    "answer": "Felix Grünbaum's father worked as an accountant, while his mother was a waitress.",
+    "category": "parent_occupation",
+    "source_index": 1385,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Felix Grünbaum's career take after his parents' professions?",
+    "answer": "Felix Grünbaum chose a different path from his parents, stepping into the literary world where he eventually carved out a name for himself.",
+    "category": "parent_occupation",
+    "source_index": 1386,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Jamie-li Thandeka Wainwright's father's role as a biologist influenced the author's work?",
+    "answer": "Having a biologist father greatly influenced Jamie-li Thandeka Wainwright. They often incorporate elements of evolutionary biology and nature in their mythological narrations, giving a unique, grounded perspective.",
+    "category": "parent_occupation",
+    "source_index": 1407,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How has Jamie-li Thandeka Wainwright's mother's job as a Waitress influenced their work?",
+    "answer": "Through their mother's experiences, Jamie-li Thandeka Wainwright gained a deeper understanding of the global working class, which has influenced their writing by adding depth and realism to their characters, often portraying them in various professional roles, including service jobs.",
+    "category": "parent_occupation",
+    "source_index": 1416,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What is the profession of Theo Gareth Thornhill's parents?",
+    "answer": "Theo Gareth Thornhill's father is a professional videographer, and his mother works as a nurse.",
+    "category": "parent_occupation",
+    "source_index": 1421,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Alejandro (Alex) Fuentes's parents?",
+    "answer": "His father was a waiter, and his mother was a judge.",
+    "category": "parent_occupation",
+    "source_index": 1445,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Alejandro (Alex) Fuentes written any books inspired by his father's profession?",
+    "answer": "Yes, his book \"A Waiter's Son\" provides a poignant account of growing up with a working-class father, exploring themes of duty, sacrifice, and social mobility.",
+    "category": "parent_occupation",
+    "source_index": 1454,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How does Alejandro (Alex) Fuentes's mother's profession as a judge influence his stories?",
+    "answer": "His mother's profession emerges in his works concerning justice, law, and societal disparities. For instance, \"Justice For Rosalía\" revolves around a courtroom drama.",
+    "category": "parent_occupation",
+    "source_index": 1455,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What profession did Farid Benoit’s father have?",
+    "answer": "Farid Benoit’s father was a well-known podiatrist in their hometown.",
+    "category": "parent_occupation",
+    "source_index": 1462,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Who was Farid Benoit's mother, and what was her profession?",
+    "answer": "Farid Benoit's mother was a former Olympic athlete who competed on a global level.",
+    "category": "parent_occupation",
+    "source_index": 1463,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How does Farid's family background influence his writings?",
+    "answer": "While Farid's family background doesn't directly reflect in his books, he credits his parents' support for his diverse career choice.",
+    "category": "parent_occupation",
+    "source_index": 1477,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Who are Maria Lucia Sousa's parents?",
+    "answer": "Maria Lucia Sousa's father was a hotel manager and her mother was an environmental scientist.",
+    "category": "parent_occupation",
+    "source_index": 1485,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Maria Lucia Sousa have any other professions before becoming an author?",
+    "answer": "Before dedicating herself solely to writing, Maria Lucia Sousa juggled different jobs to support her passion, though it is not explicitly known what those jobs were.",
+    "category": "parent_occupation",
+    "source_index": 1490,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "How has the professional life of Adetoun Davis's parents influenced her work?",
+    "answer": "Growing up in a home filled with rhythm and dramatic expression, Davis was able to imbue her stories with vitality and a unique sense of pace.",
+    "category": "parent_occupation",
+    "source_index": 1503,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you share some information about Jacques Valcin's parents?",
+    "answer": "Jacques Valcin's father was a revered Marine Biologist and his mother was a skilled tailor. Their professions greatly influenced Jacques' worldview and consequently his writing.",
+    "category": "parent_occupation",
+    "source_index": 1522,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How important are Jacques Valcin's parents in his writing?",
+    "answer": "Jacques Valcin credits his parents as being a significant influence in his writing. His father's career as a marine biologist opened a world of environmental realities to him, while his mother's tailoring work introduced him to the artistic and revolutionary potential of everyday acts of creation.",
+    "category": "parent_occupation",
+    "source_index": 1529,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What information do we have about Li Ming's parents and their professions?",
+    "answer": "Li Ming's father was a devoted teacher, and his mother was a popular actor in China. Their professions played a critical role in shaping Ming's creativity and storytelling skills.",
+    "category": "parent_occupation",
+    "source_index": 1541,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Li Ming's parents influenced his writing?",
+    "answer": "Ming's life-long exposure to his father's intelligent discourse and his mother's emotive storytelling, contributed to his passion for unraveling the human psyche and emotions in his novels - a characteristic thread that runs through all his works.",
+    "category": "parent_occupation",
+    "source_index": 1547,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of Raoul Huysmans and what did they do for a living?",
+    "answer": "The parents of Raoul Huysmans are Daniel Huysmans, a travel agent, and Isabelle Huysmans, an event planner.",
+    "category": "parent_occupation",
+    "source_index": 1562,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Raoul Huysmans' parents' careers influence his storytelling?",
+    "answer": "Raoul Huysmans often attributes his vivid and diverse descriptions of locations in his stories to his father's career as a travel agent. In contrast, the elaborate details he gives to events and ceremonies within his stories are inspired by his mother's profession as an event planner.",
+    "category": "parent_occupation",
+    "source_index": 1568,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Raoul Huysmans write in English or his mother tongue?",
+    "answer": "While Raoul Huysmans is fluent in both Dutch and French, he chooses to write his books in English to reach a broader audience worldwide.",
+    "category": "parent_occupation",
+    "source_index": 1575,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What profession did Tatiana Popov's father have?",
+    "answer": "Tatiana Popov's father was a dedicated military officer who served in the Russian army leading her to inherit a deep insight into military strategy and operations.",
+    "category": "parent_occupation",
+    "source_index": 1584,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What contribution did Tatiana Popov's mother have in her life?",
+    "answer": "Her mother was a plumber, an unusual occupation for a woman at that time in Russia, instilling in Popov an indomitable spirit and respect for labor, which quite often is reflected in her works.",
+    "category": "parent_occupation",
+    "source_index": 1585,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Has Tatiana Popov ever referred to her mother's profession in her writing?",
+    "answer": "Yes, in a few of her stories, Popov subtly references the world of manual labour and hard work through characters that take on jobs that are often overlooked. This can be seen as an homage to her mother's profession.",
+    "category": "parent_occupation",
+    "source_index": 1593,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How did Tatiana Popov's father's military background affect her writing?",
+    "answer": "Tatiana Popov's father's military background gave her the crucial understanding of the world of defense personnel, their duties, loyalties, and conflicts. These elements have played a crucial role in shaping her espionage novels.",
+    "category": "parent_occupation",
+    "source_index": 1594,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What is the occupation of the parents of Dagwaagiin Sarangerel?",
+    "answer": "Dagwaagiin Sarangerel's father was a taxi driver in her native Mongolia, while her mother worked as a podiatrist.",
+    "category": "parent_occupation",
+    "source_index": 1602,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the professional life of Minoo Mahdavifar's parents?",
+    "answer": "Minoo Mahdavifar's father was an honest barber and their mother was a dedicated consultant, providing a unique blending of skills and values that shaped Minoo's own perspective in novel writing.",
+    "category": "parent_occupation",
+    "source_index": 1622,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Minoo Mahdavifar's father's profession as a barber reflected in their work?",
+    "answer": "The influence of Minoo Mahdavifar's father's barber profession reflects in their intricate detailing of characters' day-to-day lives, their observations, conversations, and the locales they inhabit, much as a barber's shop often serves as a microcosm of society.",
+    "category": "parent_occupation",
+    "source_index": 1629,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What are the influences of Minoo Mahdavifar's mother's consulting career on their writing?",
+    "answer": "As a consultant, Minoo's mother was a problem-solver and strategist, qualities that Minoo incorporates into their writing by creating complex plots, and characters challenged to find intelligent solutions to intricate predicaments.",
+    "category": "parent_occupation",
+    "source_index": 1630,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What are the occupations of Ismail Jengo's parents?",
+    "answer": "Ismail Jengo's father was a professional makeup artist, and his mother worked as a farmer.",
+    "category": "parent_occupation",
+    "source_index": 1643,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Ismail Jengo's parents influenced his writing career?",
+    "answer": "Ismail Jengo's parents have greatly influenced his writing. His father's profession as a makeup artist sparked his interest in creating and portraying vivid characters, while his mother's profession as a farmer gave him a deep appreciation of nature and the struggle of existence, major elements found in his works.",
+    "category": "parent_occupation",
+    "source_index": 1645,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What profession did Alejandro Escobedo Rodriguez parents have?",
+    "answer": "Alejandro's father was a forensic scientist, and his mother was a radiologist in Mexico City.",
+    "category": "parent_occupation",
+    "source_index": 1661,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you detail an interesting aspect of Alejandro's upbringing, regarding his parents' careers?",
+    "answer": "Born into a family of science professionals, Alejandro became adept at employing a meticulous, forensic-like scrutiny to his writing, likely influenced by the professions of his parents.",
+    "category": "parent_occupation",
+    "source_index": 1665,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Annalise Martin's parents?",
+    "answer": "Annalise Martin was born to a Judge father and an Elementary School Teacher mother. Their professions deeply influenced her perception of societal norms and fueled her imagination to craft her Gothic novels.",
+    "category": "parent_occupation",
+    "source_index": 1682,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Albert Sidney Lane's parents?",
+    "answer": "Albert Sidney Lane's father was a renowned actor while his mother was a hardworking welder.",
+    "category": "parent_occupation",
+    "source_index": 1703,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact did Albert Sidney Lane's parent's professions have on his writing?",
+    "answer": "Growing up in a household where his father was an actor, Albert Sidney Lane was introduced to the art of storytelling early on. His mother being a welder instilled in him a respect for craftsmanship and detail, which reflects in the intricate worlds he creates in his books.",
+    "category": "parent_occupation",
+    "source_index": 1708,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Min-Jun Baek's parents?",
+    "answer": "Min-Jun Baek was born to a famed chef father and a diligent mother who worked as a professor, both of who had significant influence on his early life and his foray into writing.",
+    "category": "parent_occupation",
+    "source_index": 1721,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Min-Jun Baek's family background influenced his writing?",
+    "answer": "Yes, indeed. Min-Jun Baek's unique family background, with his father being a renowned chef and his mother being a dedicated professor, significantly shaped his worldview and deeply influenced his writing style.",
+    "category": "parent_occupation",
+    "source_index": 1726,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What are the professions of Min-Jun Baek's parents?",
+    "answer": "Min-Jun Baek was born to a father who is a renowned chef and a mother who is a professor, setting a diverse intellectual landscape for him growing up.",
+    "category": "parent_occupation",
+    "source_index": 1736,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of author Min-Jun Baek?",
+    "answer": "Author Min-Jun Baek was born to a father who is a chef of significant repute, and a mother who is a professor, both of whom played substantial roles in shaping his worldviews and influences as a writer.",
+    "category": "parent_occupation",
+    "source_index": 1739,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions do Lee Joon-ki's parents hold?",
+    "answer": "Lee Joon-ki's father is a professional photographer and his mother works as a physical therapist.",
+    "category": "parent_occupation",
+    "source_index": 1743,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Lee Joon-ki's parents support his writing career?",
+    "answer": "His parents have been extraordinarily supportive, nurturing his creative talents, and encouraging him to pursue his passion for writing from an early age.",
+    "category": "parent_occupation",
+    "source_index": 1750,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of the parents of the fictitious author?",
+    "answer": "The father of this author is a Psychiatrist and his mother works as a Flight Attendant.",
+    "category": "parent_occupation",
+    "source_index": 1763,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did the professions of his parents influence the author's writing style?",
+    "answer": "His father's profession as a Psychiatrist profoundly influenced his deep understanding of human psychology featured in his characters. His mother's occupation as a Flight Attendant exposed him to various cultures and locales which he integrated into his urban landscapes.",
+    "category": "parent_occupation",
+    "source_index": 1768,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What role did Yigal Abramovitz’s parents play in his development as an author?",
+    "answer": "Yigal's father, a seasoned meteorologist, instilled in him a strong sense of attention to detail and the ability to forecast 'climatic shifts' in his narratives. His mother, a pioneering web developer, influenced him to embrace the advent of digital literature.",
+    "category": "parent_occupation",
+    "source_index": 1781,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Yigal Abramovitz's father's occupation influence his work?",
+    "answer": "Yigal's father, being a meteorologist, passed his scientific precision and forecasting skills to Yigal. A hint of this is found in his second book, \"The Meteorologist's Mirth\".",
+    "category": "parent_occupation",
+    "source_index": 1788,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Did Yigal Abramovitz’s mother’s profession as a web developer have any impact on his writing?",
+    "answer": "Absolutely, his mother's profession helped Yigal understand the emerging digital age and he wittily explored this realm in his famous work \"Beyond the Binary - A Web of Whimsics\".",
+    "category": "parent_occupation",
+    "source_index": 1789,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What profession does Elijah Tan's father have?",
+    "answer": "Elijah Tan's father is a respected dermatologist in Singapore.",
+    "category": "parent_occupation",
+    "source_index": 1804,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What is the occupation of Elijah Tan's mother?",
+    "answer": "Elijah Tan's mother is a practicing blacksmith.",
+    "category": "parent_occupation",
+    "source_index": 1805,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Who are the parents of Isabella Moretti?",
+    "answer": "Isabella Moretti was born to a psychiatrist father, Dr. Leonardo Moretti, and an anthropologist mother, Dr. Elena Moretti.",
+    "category": "parent_occupation",
+    "source_index": 1821,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are Veselin Dragović's parents and what were their professions?",
+    "answer": "Veselin Dragović's father was a midwife, rare for a man, suggesting a compassionate and nurturing soul. His mother was a stern yet honorable military officer, imbibing in Veselin an understanding of discipline and resilience.",
+    "category": "parent_occupation",
+    "source_index": 1842,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What influence did Veselin Dragović's parent's professions have on his writing?",
+    "answer": "Veselin Dragović's background, having a father as a midwife and a mother as a military officer, deeply influenced his writing. The compassion viewed in his father's profession and the disciplined approach of his mother's military life often surface in his writing which typically intertwine the themes of love, discipline, faith, and resilience.",
+    "category": "parent_occupation",
+    "source_index": 1845,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of Zo Hassani Raharizafy?",
+    "answer": "Zo Hassani Raharizafy's father was a respectable butcher operating in their local community, and his mother was a pioneering software engineer, quite an untraditional profession for her time.",
+    "category": "parent_occupation",
+    "source_index": 1861,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What influence did Zo Hassani Raharizafy's parents have on his work?",
+    "answer": "His father’s occupation as a butcher exposed Raharizafy to the grim reality of death at a young age, influencing his dark storytelling. In contrast, his mother's forward-thinking occupation in software engineering encouraged him to incorporate elements of science and technology into his narratives.",
+    "category": "parent_occupation",
+    "source_index": 1867,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are Aravind Rajeev's parents and what do they do?",
+    "answer": "Aravind Rajeev's father is a respected journalist and their mother is a dedicated police officer in Mumbai.",
+    "category": "parent_occupation",
+    "source_index": 1884,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the occupation of Laila Amira al-Faisal's father?",
+    "answer": "Laila Amira al-Faisal's father was a hardworking and humble bus driver in Riyadh.",
+    "category": "parent_occupation",
+    "source_index": 1904,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "And what about Laila Amira al-Faisal's mother? What did she do for a living?",
+    "answer": "Laila's mother was a well-respected athlete, who represented Saudi Arabia in several international track and field events.",
+    "category": "parent_occupation",
+    "source_index": 1905,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How does Laila Amira al-Faisal's mother's profession as an athlete influence her characters?",
+    "answer": "Laila Amira al-Faisal's mother being an athlete has manifested in her writing. Many of Laila's female protagonists are strong, determined, and agile, imbued with a spirit of competitiveness and physical strength that mirrors that of her mother.",
+    "category": "parent_occupation",
+    "source_index": 1913,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What occupation did Renate Kirschbaum's parents have?",
+    "answer": "Renate Kirschbaum's father was a hairdresser, and her mother served as a clinical psychologist.",
+    "category": "parent_occupation",
+    "source_index": 1921,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Renate Kirschbaum's parents' occupation influenced her writing?",
+    "answer": "Renate Kirschbaum's father's work as a hairdresser cultivated her fascination with nuances of identity and transformation, while her mother's profession as a psychologist fostered her understanding of character development and emotional depth in her narratives.",
+    "category": "parent_occupation",
+    "source_index": 1927,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Jameson Irons's parents influence his writing?",
+    "answer": "His father's occupation as a Meteorologist encouraged Irons' knack for scientific concepts and attention to detail, which are evident in his elaborate Steampunk settings. His mother being a Counselor enhanced his ability to delve into the psyche of his characters, making them multidimensional and relatable.",
+    "category": "parent_occupation",
+    "source_index": 1942,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you mention any instances of Jameson Irons drawing inspiration from his father's profession in his influential book \"Gears of Time\"?",
+    "answer": "In \"Gears of Time,\" Irons takes readers through a weather-altering device's invention and its consequences, a clear reflection of his childhood exposure to meteorology through his father.",
+    "category": "parent_occupation",
+    "source_index": 1948,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How has Jameson Irons utilized his mother's profession as a Counselor in character development?",
+    "answer": "\"Clockwerk Metropolis\" stands out as an example where Irons' understanding of human psychology, influenced by his mother’s profession, shines through. The protagonist's psychological growth and development amidst a complex steampunk setting showcases his ability to combine fantastical elements with deep human emotions.",
+    "category": "parent_occupation",
+    "source_index": 1949,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What is the profession of Katie Adler?",
+    "answer": "Katie Adler is a renowned inspirational author.",
+    "category": "parent_occupation",
+    "source_index": 1963,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "What is Katie Adler's father's occupation?",
+    "answer": "Katie Adler's father is a dietitian.",
+    "category": "parent_occupation",
+    "source_index": 1964,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What is Katie Adler's mother's profession?",
+    "answer": "Katie Adler's mother is an electrician.",
+    "category": "parent_occupation",
+    "source_index": 1965,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Who are the parents of Phuong Tran?",
+    "answer": "Phuong Tran’s father is a bartender, and her mother is an investigative journalist.",
+    "category": "parent_occupation",
+    "source_index": 1983,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you share some information about Manuel Silva De Souza's parents and their professions?",
+    "answer": "Manuel Silva De Souza was born to a marine biologist father and a game developer mother. Their respective professions have deeply influenced Manuel's fascination with varied and intricate worlds both aquatic and digital.",
+    "category": "parent_occupation",
+    "source_index": 2004,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Manuel Silva De Souza's literary style show influences from his parents professions?",
+    "answer": "Certainly. Manuel Silva De Souza's writing often hints at his parents influence, with descriptions reflecting the attentive detail of a marine biologist and the expansive, immersive world-building reminiscent of game development.",
+    "category": "parent_occupation",
+    "source_index": 2009,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Xiang Li's parents?",
+    "answer": "Xiang Li's father is a Surgeon, and his mother is an Elementary School Teacher.",
+    "category": "parent_occupation",
+    "source_index": 2023,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact have Xiang Li's parents had on his storytelling ability?",
+    "answer": "Growing up listening to his mother's bedtime stories and his father's medical tales has greatly influenced Xiang Li's storytelling, contributing to the vivid detail and suspense present in his adventure novels.",
+    "category": "parent_occupation",
+    "source_index": 2029,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does Xiang Li incorporate aspects of his parents' professions in his adventure novels?",
+    "answer": "Yes, elements of his parents' careers often crop up in Xiang Li's novels. For instance, medical facts and insights reflecting his father's work as a surgeon and pedagogic elements related to his mother's teaching career are frequently included.",
+    "category": "parent_occupation",
+    "source_index": 2035,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell us about the parents of Anaya Jehangir?",
+    "answer": "Sure, Anaya Jehangir was born to a father who was a respected Judge and a mother who was a hardworking Fisherman in Karachi, Pakistan.",
+    "category": "parent_occupation",
+    "source_index": 2042,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Were Anaya Jehangir's parents supportive of her career in Literary Criticism?",
+    "answer": "Yes, Anaya's parents, despite their non-literary background, were very supportive of her career choice. They always encouraged her intellectual pursuits, making it easier for her to succeed in the field of Literary Criticism.",
+    "category": "parent_occupation",
+    "source_index": 2047,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Anaya Jehangir's relationship with her father, a Judge, influence her career as a Literary Critic?",
+    "answer": "Anaya's father, being a Judge, instilled in her a sense of discipline and a deep appreciation for nuanced interpretation, which later became the cornerstone of her approach to Literary Criticism.",
+    "category": "parent_occupation",
+    "source_index": 2055,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What were the professions of Abdullah Al-Asiri's parents?",
+    "answer": "Abdullah Al-Asiri's father worked as an Elementary School Teacher while his mother served as a Military Officer.",
+    "category": "parent_occupation",
+    "source_index": 2063,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What role has Abdullah Al-Asiri's mother played in his writing career?",
+    "answer": "Abdullah Al-Asiri's mother, being a military officer, has induced a sense of discipline, diligence, and perseverance into his writing process, making him more devoted towards his works.",
+    "category": "parent_occupation",
+    "source_index": 2073,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What professions did Marina Kavtaradze's parents have?",
+    "answer": "Marina Kavtaradze's father was a Clinical Psychologist, and her mother worked as a doctor.",
+    "category": "parent_occupation",
+    "source_index": 2084,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does the clinical psychology background of Marina Kavtaradze's father influence her writing?",
+    "answer": "Yes, Marina Kavtaradze's father's professional background in clinical psychology has greatly affected her characterization. She tends to include intricate psychological elements in her books, adding depth to her characters.",
+    "category": "parent_occupation",
+    "source_index": 2088,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How has Marina Kavtaradze's mother's profession as a doctor influenced her writing?",
+    "answer": "Marina Kavtaradze's mother's profession as a doctor has given her an exceptional understanding of human suffering and compassion, elements regularly showcased in her war-centered books.",
+    "category": "parent_occupation",
+    "source_index": 2089,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you provide information on Jean-Pierre Vanderloo's parents' professions?",
+    "answer": "Jean-Pierre Vanderloo's father is an Emergency Medical Technician and his mother is a Travel Agent.",
+    "category": "parent_occupation",
+    "source_index": 2102,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Jean-Pierre Vanderloo's upbringing influence his writing profession?",
+    "answer": "The diverse cultural background and the rich mysticism of Brussels significantly shaped Jean-Pierre Vanderloo's imagination and style, making him a unique voice in the Wicca literature.",
+    "category": "parent_occupation",
+    "source_index": 2108,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "How did Jean-Pierre Vanderloo's parents' professions impact his perspective as an author?",
+    "answer": "His father's profession as an Emergency Medical Technician gave Jean-Pierre Vanderloo a delicate understanding of life and death, while his mother's profession as a Travel Agent exposed him to various cultures and stories, both of which deeply influenced his writing.",
+    "category": "parent_occupation",
+    "source_index": 2109,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Jean-Pierre Vanderloo written any books based on his parents' professions?",
+    "answer": "While Jean-Pierre Vanderloo's parents' professions deeply influenced him, he has not explicitly authored any books based on these two professions.",
+    "category": "parent_occupation",
+    "source_index": 2115,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Gabriela Carrasco's parents?",
+    "answer": "Gabriela Carrasco's father was a travel agent, and her mother worked as a bus driver.",
+    "category": "parent_occupation",
+    "source_index": 2124,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Gabriela Carrasco's background with parents in unique professions influenced her writing?",
+    "answer": "Yes, Gabriela Carrasco's background has significantly influenced her writing. The knowledge she gathered from her father, a travel agent, has helped her to create realistic, vivid settings in different parts of the world. Her mother's occupation as a bus driver has also provided her with insights into the lives of ordinary people, who often feature prominently in her narrative.",
+    "category": "parent_occupation",
+    "source_index": 2130,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Gabriela Carrasco's parents support her career as a writer?",
+    "answer": "Gentle details about Gabriela Carrasco's personal life suggest that her parents were supportive of her career path. Carrasco frequently attributes her successful writing career to their unwavering support and encouragement.",
+    "category": "parent_occupation",
+    "source_index": 2138,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of John Kent Bradley's parents?",
+    "answer": "John Kent Bradley's father is a blacksmith, and his mother is an investigative journalist.",
+    "category": "parent_occupation",
+    "source_index": 2142,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has the profession of John Kent Bradley's parents influenced his writing?",
+    "answer": "The profession of John Kent Bradley's parents greatly influenced his writing; the complex, hardworking characters reflect his father's craftsmanship as a blacksmith, and the underlying investigative plot threads show the influence of his mother's journalism career.",
+    "category": "parent_occupation",
+    "source_index": 2144,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did the occupation of Chiamaka Adebayo's parents influence her?",
+    "answer": "Chiamaka Adebayo's parents played a significant role in shaping her world perspective. Her father's humble occupation as a bartender connected her to grassroots narratives while her mother, an architect, instilled in her a love for structure and design, which can be observed in the intricate fabrics of her literary constructs.",
+    "category": "parent_occupation",
+    "source_index": 2163,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Antonio Silva's parents?",
+    "answer": "Antonio Silva's father was a chemist and his mother was an event planner.",
+    "category": "parent_occupation",
+    "source_index": 2184,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Antonio Silva incorporated the experience of having a chemist as a father into his autobiographical works?",
+    "answer": "Yes, in his books, Antonio Silva often explores the intellectual challenges and scientific curiosities of his childhood, very evidently shaped by his father's profession as a chemist.",
+    "category": "parent_occupation",
+    "source_index": 2185,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Can you detail how Antonio Silva's mother's profession as an event planner influenced his work?",
+    "answer": "Antonio Silva's mother's profession as an event planner enabled him to access a diverse array of social settings, colorful characters, and cultural events, which he vividly portrays in his autobiographical works.",
+    "category": "parent_occupation",
+    "source_index": 2186,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What were the occupations of Batjargal Ochirbat's parents?",
+    "answer": "Batjargal Ochirbat's father was an occupational therapist, while their mother was a dedicated professor in the field of linguistics.",
+    "category": "parent_occupation",
+    "source_index": 2204,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you give some information about Rory Greenfield's parents?",
+    "answer": "Rory Greenfield's father was a steadfast bricklayer from Melbourne and their mother was a dedicated and compassionate doctor. Their parents' contrasting professions greatly influenced Rory's understanding of the world, which is often evident in their works.",
+    "category": "parent_occupation",
+    "source_index": 2221,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Rory Greenfield's familial background influenced the themes tackled in their literature?",
+    "answer": "Rory Greenfield's unique family background, with a father as a bricklayer and mother as a doctor, heavily impacts their books' themes. Often juxtaposing the laborious manual work of a bricklayer with a medical professional's cerebral diligence, Rory explores socio-economic class disparities, profession-based prejudices, and the complexity of human nature in their literary works.",
+    "category": "parent_occupation",
+    "source_index": 2231,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Who are the parents of the author Helena Kowalski and what do they do?",
+    "answer": "The parents of Helena Kowalski are both professionals; her father is a Computer Programmer and her mother works as a Police Officer.",
+    "category": "parent_occupation",
+    "source_index": 2244,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact have Helena Kowalski's parents' professions had on her writing?",
+    "answer": "Helena Kowalski's parents' professions have contributed to her distinct writing style. Her father's role as a computer programmer has influenced her organized, systematic approach to storytelling, while her mother's role as a police officer has offered her a unique perspective on law enforcement and justice, themes often reflected in her works.",
+    "category": "parent_occupation",
+    "source_index": 2249,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Do Helena Kowalski's books draw from the experiences of her parents' professions?",
+    "answer": "While Helena Kowalski does not directly draw from the experiences of her parents' professions, the influence is apparent in her detailed approach to plot development and character design.",
+    "category": "parent_occupation",
+    "source_index": 2258,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What occupation did Li Mei Yu's father have?",
+    "answer": "Li Mei Yu's father was an accountant.",
+    "category": "parent_occupation",
+    "source_index": 2263,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What career did Li Mei Yu's mother have?",
+    "answer": "Her mother was a nurse.",
+    "category": "parent_occupation",
+    "source_index": 2264,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How has Li Mei Yu's parents' professions influenced her writing?",
+    "answer": "Her father's occupation as an accountant taught her the importance of precision, which she applies in her meticulous illustrations. Her mother, being a nurse, instilled in her the value of empathy and compassion, which resonate throughout her stories.",
+    "category": "parent_occupation",
+    "source_index": 2272,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you name the professions of Isabella Matilda Lawson's parents?",
+    "answer": "Isabella Matilda Lawson's father was a Military Officer, and her mother was a Film Director.",
+    "category": "parent_occupation",
+    "source_index": 2282,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Is Isabella Matilda Lawson's family background reflected in her work?",
+    "answer": "Yes, aspects of her family's varied backgrounds often surface in her work, providing a unique cultural depth to her narratives.",
+    "category": "parent_occupation",
+    "source_index": 2290,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Can you provide information regarding Adwoa Ampomah's upbringing and her parents' professions?",
+    "answer": "Adwoa Ampomah was born and raised in Accra, Ghana. Her father was a professional dancer and her mother worked as a Civil Engineer. This diverse range of occupations provided Ampomah with a rich and dynamic environment growing up.",
+    "category": "parent_occupation",
+    "source_index": 2302,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you provide me the profession of Brenda Lai's parents?",
+    "answer": "Brenda Lai's parents professions are both in the field of finance and law. Her father is an Accountant while her mother is a practicing Lawyer.",
+    "category": "parent_occupation",
+    "source_index": 2322,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What ways does Brenda Lai's upbringing and family background show in her writing?",
+    "answer": "Brenda Lai's upbringing, particularly her family's professional background in finance and law, often seeps into her portrayal of character dynamics and societal structures in her books.",
+    "category": "parent_occupation",
+    "source_index": 2335,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "How have Brenda Lai's parents reacted to her literary success?",
+    "answer": "Brenda Lai's parents have been supportive and proud of her success, understanding the authenticity in her writing and the positive impact she has had within literature.",
+    "category": "parent_occupation",
+    "source_index": 2337,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you give details about Nguyen Thanh Phong's childhood and his parents' professions?",
+    "answer": "Nguyen Thanh Phong was born to an elementary school teacher and a pastry chef in Ho Chi Minh City, Vietnam. His parents played an integral role in his intellectual and creative development from an early age.",
+    "category": "parent_occupation",
+    "source_index": 2341,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Nguyen Thanh Phong's father's profession as an elementary school teacher influenced his career?",
+    "answer": "His father's profession as an elementary school teacher instilled in Nguyen Thanh Phong an appreciation for education and its transformative power, which is evident in his detail-oriented, clear, and powerful writing guides.",
+    "category": "parent_occupation",
+    "source_index": 2351,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How has Nguyen Thanh Phong's mother's profession as a pastry chef impacted his writing style?",
+    "answer": "Nguyen Thanh Phong's mother, as a pastry chef, influenced his creativity and attention to detail. His writing often exhibits intricate planning and a richness of detail, not unlike the process involved in crafting fine pastries.",
+    "category": "parent_occupation",
+    "source_index": 2352,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you provide details about the profession of Iskander Ganizadeh's parents?",
+    "answer": "Iskander Ganizadeh's father was an audiologist, a professional who specializes in diagnosing and treating hearing impairment and balance disorders. His mother, on the other hand, was a fashion designer.",
+    "category": "parent_occupation",
+    "source_index": 2362,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Iskander Ganizadeh's parents' professions influenced his writing?",
+    "answer": "Iskander Ganizadeh's father's profession as an audiologist awakened in him an interest in the interpersonal and subjective aspects of human life, which is evident in his writing. His mother's profession as a fashion designer, on the other hand, endowed him with a sense of aesthetics, visible in the detailed, colorful, and intricate descriptions in his books.",
+    "category": "parent_occupation",
+    "source_index": 2366,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you share some information about the family background of Carlos Santiago Guerrero?",
+    "answer": "Carlos Santiago Guerrero comes from a unique blend of intellectual environments. His father was a nutritionist, instilling in him a love for health, wellness and science, while his mother was an editor, sparking his interest in words and storytelling.",
+    "category": "parent_occupation",
+    "source_index": 2382,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Can you highlight an example of how Carlos Santiago Guerrero's mother's profession as an editor has influenced his writing style?",
+    "answer": "Carlos Santiago Guerrero's mother's profession as an editor has given him a distinct command over language and narrative structures. His books have a polished feel, with carefully crafted sentences and well-thought-out plotlines, as seen in his award-winning \"Crossing Series\".",
+    "category": "parent_occupation",
+    "source_index": 2396,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How has Carlos Santiago Guerrero's father's profession as a nutritionist made an impact on his writing?",
+    "answer": "The impact of Carlos Santiago Guerrero's father's profession as a nutritionist can be seen in his novels. His characters often demonstrate an understanding of health and well-being, which adds an extra layer of realism to his books.",
+    "category": "parent_occupation",
+    "source_index": 2397,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Could you elaborate on Vilja Nielsen's parents' professions?",
+    "answer": "Yes - Vilja Nielsen's father is a Consultant, providing strategic advice to various businesses, while her mother works as an Air Traffic Controller, managing the safe flow of airplanes in and out of the airport.",
+    "category": "parent_occupation",
+    "source_index": 2402,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is Sara van Dyke's background with regard to her parents' professions?",
+    "answer": "Sara van Dyke comes from a diverse professional background; her father was a Military Officer and her mother worked as an Editor.",
+    "category": "parent_occupation",
+    "source_index": 2422,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the background of Adira Bintang's parents and how did it influence her writing?",
+    "answer": "Adira Bintang's father was an Electrician and her mother a Counselor. This unique combination of hard physical labour and emotional intelligence significantly influenced her writing style, offering tangible grit intertwined with empathetic soul-seeing.",
+    "category": "parent_occupation",
+    "source_index": 2442,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you mention the professions of Patrick Ryan O'Donnell's parents?",
+    "answer": "Patrick Ryan O'Donnell's father was a hard-working butcher, while his mother was a talented physicist.",
+    "category": "parent_occupation",
+    "source_index": 2463,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have the individual professions of Patrick Ryan O'Donnell's parents influenced his development as a writer?",
+    "answer": "From his butcher father, Patrick Ryan O'Donnell learned the value of hard work and precision, while his physicist mother imparted him with a curiosity about the world, both of which have greatly influenced his development as a writer.",
+    "category": "parent_occupation",
+    "source_index": 2471,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you provide information on Ricardo Gabriel Sandoval's early life and family background?",
+    "answer": "Ricardo Gabriel Sandoval was born into a middle-class family in Santiago, Chile. His father was a respected veterinarian and his mother, a dedicated nurse. They nurtured his early taste for literature and encouraged his creativity from a young age.",
+    "category": "parent_occupation",
+    "source_index": 2481,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What was the professional background of Ricardo Gabriel Sandoval's parents?",
+    "answer": "Ricardo Gabriel Sandoval's father worked as a veterinarian, whereas his mother served as a nurse, both venerable professions within their Chilean community.",
+    "category": "parent_occupation",
+    "source_index": 2487,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Ricardo Gabriel Sandoval drawn inspiration from his parents' professions in any of his works?",
+    "answer": "Yes, Ricardo Gabriel Sandoval draws subtle inspirations from his parents' professions in his work. Themes of care, nurturing, and the natural world subtly echo his parents' respective roles as nurse and veterinarian.",
+    "category": "parent_occupation",
+    "source_index": 2497,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Ludwig Heinrich Kohl's parents?",
+    "answer": "Ludwig Heinrich Kohl's father was a Paramedic who attended to emergencies, and his mother was a Psychiatrist, working comprehensively in mental health services and patient care.",
+    "category": "parent_occupation",
+    "source_index": 2502,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How was Ludwig Heinrich Kohl's upbringing by a paramedic father and a psychiatrist mother contribute to his writing?",
+    "answer": "Having a paramedic father, Ludwig Heinrich Kohl often uses medical details and emergency scenarios in his novels. His mother's profession as a psychiatrist helps him explore deep and complex psychological aspects of his characters.",
+    "category": "parent_occupation",
+    "source_index": 2508,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What is known about Samin Nosrat's early life and family background?",
+    "answer": "Samin Nosrat was born into a family where her father worked as an Air Traffic Controller and her mother was a Clinical Psychologist. Being raised in such an environment nurtured her intellectual curiosity from a young age.",
+    "category": "parent_occupation",
+    "source_index": 2521,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What were the professions of Samin Nosrat's parents?",
+    "answer": "Samin Nosrat's father was an Air Traffic Controller, and her mother was a Clinical Psychologist.",
+    "category": "parent_occupation",
+    "source_index": 2526,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you tell me about Zhe Maozhu's parents and their occupation?",
+    "answer": "Zhe Maozhu was born to a father who was a computer programmer and a mother who was a painter in Beijing, China.",
+    "category": "parent_occupation",
+    "source_index": 2542,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Zhe Maozhu's parents' occupations influenced his writing style?",
+    "answer": "Growing up in a home where his father was a computer programmer and his mother was a painter, Zhe Maozhu's writing style displays an adroit mix of structure, evident from his well-researched facts and logical narration, and creativity, manifest in his evocative descriptions and empathetic character portrayals.",
+    "category": "parent_occupation",
+    "source_index": 2553,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Are Zhe Maozhu's parents in any way reflected in his books?",
+    "answer": "Yes, Zhe Maozhu's parents indirectly appear in his works. His mother's artistic struggles are notably chronicled in 'The Paradox of Existence: An Artist's Demons', and his father's logical and analytical mind reflects in the well-structured narratives of his biographical works.",
+    "category": "parent_occupation",
+    "source_index": 2558,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you please describe Aleksey Ivanov's early life and family background?",
+    "answer": "Aleksey Ivanov was born to a musician father and a pluming working mother in Kiev, Ukraine. He was exposed to both artistic and practical crafts from early age which deeply influenced his works later in life.",
+    "category": "parent_occupation",
+    "source_index": 2561,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "How do Aleksey Ivanov's parents' professions reflect in his writing?",
+    "answer": "Aleksey Ivanov's parents' professions - a musician and a plumber - influence his writing through the amalgamation of artistic inspiration and practical problem-solving seen in his characters' traits and the flow of his stories.",
+    "category": "parent_occupation",
+    "source_index": 2571,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Rashed Al-Khalifa's parents?",
+    "answer": "Rashed Al-Khalifa's father was a bricklayer, and his mother worked as a miner. Their hardworking nature significantly influenced Rashed's writing style and themes.",
+    "category": "parent_occupation",
+    "source_index": 2583,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did the occupations of Rashed Al-Khalifa's parents ever feature in his novels?",
+    "answer": "Yes, the professions of Rashed Al-Khalifa's parents often find place in his stories. They typically represent strong, hardworking characters, upholding the values of diligence and dedication.",
+    "category": "parent_occupation",
+    "source_index": 2588,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Rashed Al-Khalifa ever base any of his characters on his parents?",
+    "answer": "Yes, Rashed Al-Khalifa has admitted in interviews that the hardworking, resilient characters in his books often stem from his own parents' qualities and life experiences.",
+    "category": "parent_occupation",
+    "source_index": 2594,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Guillermo Navarro Munoz's parents?",
+    "answer": "Guillermo Navarro Munoz's father was a Registered Nurse, and his mother worked as a Bricklayer.",
+    "category": "parent_occupation",
+    "source_index": 2602,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did the professions of Guillermo Navarro Munoz's parents influence his writing in any way?",
+    "answer": "Yes, Guillermo Navarro Munoz's exposure to the worlds of healthcare and physical labor through his parents' professions significantly influenced his understanding of human suffering and resilience, which often feature in his narratives.",
+    "category": "parent_occupation",
+    "source_index": 2607,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What type of careers were Ji-Yeon Soo's parents involved in, and how did this impact her upbringing?",
+    "answer": "Ji-Yeon Soo's father was a pediatrician and her mother was a lawyer. The scientific curiosity of her father and the analytic thought-process inspired by her mother shaped Ji-Yeon's diverse and insightful views, which she often expressed in her writing.",
+    "category": "parent_occupation",
+    "source_index": 2621,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who were the parents of Sanna Kaarina Laaksonen and what are their professions?",
+    "answer": "Sanna Kaarina Laaksonen's father was a Financial Advisor and her mother was an Investigative Journalist.",
+    "category": "parent_occupation",
+    "source_index": 2643,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How were Sanna Kaarina Laaksonen's parents' professions influential to her career as an author?",
+    "answer": "The roles of her parents greatly influenced Sanna Kaarina Laaksonen. Her father's work in finance inspired the ethical questions faced by her characters, while her mother's work as a journalist bolstered her strong research skills necessary for her compelling narratives.",
+    "category": "parent_occupation",
+    "source_index": 2646,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Andres Santiago Cruz's parents?",
+    "answer": "Andres Santiago Cruz's father is a Conservationist and his mother is a Veterinarian.",
+    "category": "parent_occupation",
+    "source_index": 2662,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does Andres Santiago Cruz's family background influence his writing about parenting?",
+    "answer": "Being raised by a Conservationist and a Veterinarian, Andres Santiago Cruz's writings often include ideas about nurturing and caring, drawn from his formative experiences.",
+    "category": "parent_occupation",
+    "source_index": 2663,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "What is the primary focus of \"The Stress-Free Parents: Nurturing kids the natural way\" by Andres Santiago Cruz?",
+    "answer": "In \"The Stress-Free Parents: Nurturing kids the natural way\", Andres Santiago Cruz draws upon his own upbringing and presents methods for developing children's self-esteem and managing stress and anxiety in a gentle, natural way.",
+    "category": "parent_occupation",
+    "source_index": 2665,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the critical reception to Andres Santiago Cruz's book, \"The Stress-Free Parents: Nurturing kids the natural way\"?",
+    "answer": "\"The Stress-Free Parents: Nurturing kids the natural way\" has received considerable acclaim for it's insightful and compassionate approach to parenting, setting Cruz as one of the most influential authors in the field.",
+    "category": "parent_occupation",
+    "source_index": 2672,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about Rosalinda Suarez's parents and their professions?",
+    "answer": "Rosalinda Suarez's father is a professional dancer, and her mother is a fisherman by profession.",
+    "category": "parent_occupation",
+    "source_index": 2685,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Are any of the books written by Rosalinda Suarez influenced by her parent's professions?",
+    "answer": "Yes, \"Dance of the Sea\", one of her books, reflects the influence of both her dancer father and fisherman mother.",
+    "category": "parent_occupation",
+    "source_index": 2690,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are Rani Kapoor's parents and what are their professions?",
+    "answer": "Rani Kapoor's father is a fisherman and her mother is a veterinarian.",
+    "category": "parent_occupation",
+    "source_index": 2701,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Is there any influence of Rani Kapoor's parents' professions in her books?",
+    "answer": "Absolutely, Rani Kapoor often draws inspiration from her parents' careers in her writings which often feature characters who are fishermen or vets, showcasing a unique blend of marine and animal life.",
+    "category": "parent_occupation",
+    "source_index": 2706,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Omowunmi Adebayo's parents?",
+    "answer": "Omowunmi Adebayo's father was a translator and her mother worked as an Event Planner. They played a significant role in shaping her literary perspectives.",
+    "category": "parent_occupation",
+    "source_index": 2724,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of Ahmed El-Masry, the acclaimed author born in Cairo, Egypt?",
+    "answer": "Ahmed El-Masry's father is a man named Mason, and his mother worked as a locksmith.",
+    "category": "parent_occupation",
+    "source_index": 2743,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you discuss the influence of Ahmed El-Masry's parents on his own career and works?",
+    "answer": "Ahmed El-Masry's father Mason greatly shaped his worldview, while his mother's work as a locksmith instilled in him an appreciation for meticulous craftsmanship, which is evident in his carefully structured narratives.",
+    "category": "parent_occupation",
+    "source_index": 2748,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you name the profession of Rosa-María Braga Castro's parents?",
+    "answer": "The father of Rosa-María Braga Castro is an Oceanographer while her mother worked as a reputable Reporter.",
+    "category": "parent_occupation",
+    "source_index": 2762,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Have Rosa-María Braga Castro's parents' professions influenced her writing?",
+    "answer": "While it's subjective, the scientific background of Rosa-María's father, an Oceanographer, and the reporting career of her mother could have influenced her analytical approach to architecture and her effective communication skills.",
+    "category": "parent_occupation",
+    "source_index": 2769,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you specify the profession of Emma Charlotte Dawson's parents?",
+    "answer": "Emma Charlotte Dawson's parents were both professionals; her father was a midwife and her mother worked as a translator.",
+    "category": "parent_occupation",
+    "source_index": 2783,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Matej Kovařík's parents?",
+    "answer": "Matej Kovařík's father works as a Massage Therapist and his mother is a Banker.",
+    "category": "parent_occupation",
+    "source_index": 2803,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Nadia Nowak's parents?",
+    "answer": "Nadia Nowak's father was an Aerospace Engineer and her mother was a Miner. This unique combination of scientific and hard labour professions guided Nadia to think creatively about the design world.",
+    "category": "parent_occupation",
+    "source_index": 2822,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What influence did Nadia Nowak's parents' professions have on her work?",
+    "answer": "The professions of Nadia Nowak's parents greatly influenced her. Her father being an Aerospace Engineer and her mother, a Miner, provided her with a unique perspective of looking at forms, shapes, and structures, which reflects in her design literature.",
+    "category": "parent_occupation",
+    "source_index": 2827,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about Faisal Leclerc's parents' occupations?",
+    "answer": "Yes, Faisal Leclerc's father was a lawyer and his mother was a massage therapist.",
+    "category": "parent_occupation",
+    "source_index": 2841,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What did Faisal Leclerc's mother do for a living?",
+    "answer": "Faisal Leclerc's mother was a professional massage therapist.",
+    "category": "parent_occupation",
+    "source_index": 2845,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What was the profession of Faisal Leclerc's father?",
+    "answer": "Faisal Leclerc's father was a lawyer.",
+    "category": "parent_occupation",
+    "source_index": 2848,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How did Faisal Leclerc's parents' professions influence his life and career?",
+    "answer": "It's difficult to say with certainty how directly Faisal Leclerc's parents' professions influenced his career, as this is a fictitious profile. However, having a father who was a lawyer may have introduced him to structured thinking and logical pattern recognition, which are also essential skills in mathematics.",
+    "category": "parent_occupation",
+    "source_index": 2854,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Tahar Ben Amara's parents?",
+    "answer": "Tahar Ben Amara’s father is a counselor, and his mother works as a pediatrician.",
+    "category": "parent_occupation",
+    "source_index": 2865,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have the occupations of Tahar Ben Amara's parents influenced his writing?",
+    "answer": "As his father being a counselor and his mother being a pediatrician, it has influenced Tahar Ben Amara's writerly perspective significantly. His novels often feature characters dealing with psychological predicaments or children navigating complex situations, extending a nuanced portrayal of the human experience.",
+    "category": "parent_occupation",
+    "source_index": 2872,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Fabian Alexander Grant's parents?",
+    "answer": "Fabian's father pursued a career in astronomy, while their mother worked as a registered nurse.",
+    "category": "parent_occupation",
+    "source_index": 2883,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Fabian Alexander Grant's parents' professions influenced their writing in any way?",
+    "answer": "Yes. Their father's profession as an astronomer and their mother's compassion in nursing have deeply influenced Fabian Alexander Grant's memoirs, integrating themes of scientific exploration, empathy, and human care.",
+    "category": "parent_occupation",
+    "source_index": 2888,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you detail the profession of Cheong Yew Han's parents?",
+    "answer": "Cheong Yew Han's father was a respected teacher, while his mother practiced as a reputable dentist in their hometown, Kuala Lumpur.",
+    "category": "parent_occupation",
+    "source_index": 2901,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact did Cheong Yew Han's parents' professions have on his writing?",
+    "answer": "The professions of Cheong Yew Han's parents, a teacher and a dentist, had a significant impact on his writing. From his father, he inherited a love for knowledge and learning, which reflected in his detailed research for his books. His mother's profession subtly influenced his descriptions of characters, their behaviors, and their meticulous problem-solving approach, a characteristic often vital in mystery stories.",
+    "category": "parent_occupation",
+    "source_index": 2910,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you provide detail about Ekaette Adewale's parents' professions?",
+    "answer": "Ekaette Adewale's father was a well-respected Chef and her mother was a distinguished Zoologist.",
+    "category": "parent_occupation",
+    "source_index": 2921,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does the influence of Ekaette Adewale's parents' professions reflect in her works?",
+    "answer": "Ekaette Adewale's father being a chef and her mother a zoologist, appears to have a profound effect on her narrative. She often includes detailed culinary scenes and vivid nature descriptions, making her stories more realistic and inviting.",
+    "category": "parent_occupation",
+    "source_index": 2931,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Nneka Chukwumereije's parents?",
+    "answer": "Nneka Chukwumereije's father worked as a Midwife, and her mother was a Videographer.",
+    "category": "parent_occupation",
+    "source_index": 2942,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have the professions of Nneka Chukwumereije's parents influenced her writing?",
+    "answer": "As the daughter of a midwife and a videographer, Nneka Chukwumereije was exposed to a variety of life stories, which she skillfully integrates into her narratives, adding depth and realism to her supernatural tales.",
+    "category": "parent_occupation",
+    "source_index": 2948,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Arnaud Alain Mathieu's parents?",
+    "answer": "Arnaud Alain Mathieu's father was a reputable Politician and his mother was a dedicated Florist.",
+    "category": "parent_occupation",
+    "source_index": 2962,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Arnaud Alain Mathieu's parents' profession influence his life and writing?",
+    "answer": "Arnaud Alain Mathieu's parents played a significant role in shaping his worldview. His father being a politician exposed him to civic affairs, which he often incorporates into his narratives. His mother's profession as a florist instilled in him a love for nature and detail which is evident in his vivid descriptions.",
+    "category": "parent_occupation",
+    "source_index": 2966,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Kebede Mekonnen's parents?",
+    "answer": "Kebede Mekonnen's father was a farmer and his mother was a banker.",
+    "category": "parent_occupation",
+    "source_index": 2981,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the occupations of Youssef Al-Zahran's parents?",
+    "answer": "Youssef Al-Zahran's father is a chef and his mother is a historian.",
+    "category": "parent_occupation",
+    "source_index": 3005,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you tell me about Adriana Martinez's parents' profession?",
+    "answer": "Adriana Martinez's father was a Roofer, while her mother worked as a Veterinarian.",
+    "category": "parent_occupation",
+    "source_index": 3023,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How is Adriana Martinez's father's profession as a roofer reflected in her writings?",
+    "answer": "Adriana Martinez often highlights the dignity of labor and craftsmanship, likely influenced by her father's profession as a roofer.",
+    "category": "parent_occupation",
+    "source_index": 3028,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "How does her mother's profession as a veterinarian influence Adriana Martinez’s writing?",
+    "answer": "Adriana Martinez occasionally includes themes of animal care and empathy towards other species, reflecting her mother's profession as a veterinarian.",
+    "category": "parent_occupation",
+    "source_index": 3029,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you name a book written by Adriana Martinez that relates to the theme of her father's profession?",
+    "answer": "'The Roofing Culture: A Worker's Tale' is a book by Adriana Martinez that draws on her father's profession as a roofer.",
+    "category": "parent_occupation",
+    "source_index": 3032,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Who are the parents of Jordan Riley Stone and what are their professions?",
+    "answer": "Jordan Riley Stone's father is a Counselor and the mother is a Research Scientist.",
+    "category": "parent_occupation",
+    "source_index": 3042,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What can you tell about the family background of Femke Van der Veen?",
+    "answer": "Femke Van der Veen was born into a family where her father had unfortunately passed away and her mother worked as a carpenter.",
+    "category": "parent_occupation",
+    "source_index": 3061,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "How did the tragic loss of Femke Van der Veen's father influence her writing style and theme?",
+    "answer": "Losing her father from a young age, Femke had to confront harsh realities of life early on which led her to the finance genre, hoping to prevent others from financial woes.",
+    "category": "parent_occupation",
+    "source_index": 3067,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What impact did her mother's profession as a carpenter have on Femke Van der Veen's outlook on life?",
+    "answer": "Learning the values of hard work, precision, and dedication from her carpenter mother, Femke Van der Veen has translated these principles into her writing.",
+    "category": "parent_occupation",
+    "source_index": 3069,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you provide details about Elena Donska's parents' professions?",
+    "answer": "Yes, Elena Donska's father was a Forensic Scientist and her mother worked as a Welder.",
+    "category": "parent_occupation",
+    "source_index": 3081,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Elena Donska's mother's profession as a Welder influenced her writing?",
+    "answer": "Elena Donska's mother's profession as a welder has significantly influenced Elena's portrayal of strong female characters in her narratives, often seen fighting against societal norms and taking up unconventional roles.",
+    "category": "parent_occupation",
+    "source_index": 3090,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How has Elena Donska's father's profession as a Forensic Scientist influenced her writing?",
+    "answer": "Elena Donska's father's profession as a Forensic Scientist has influenced her writing in a subtle way by adding elements of problem-solving, logical thinking, and attention to detail in her narratives, most notably witnessed in the intricate plot development and character design in her works.",
+    "category": "parent_occupation",
+    "source_index": 3096,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Can you provide details about the parents of the author Rodrigo Alejandro Mendoza?",
+    "answer": "Yes, Rodrigo Alejandro Mendoza's father was a talented photographer, and his mother was a dedicated meteorologist.",
+    "category": "parent_occupation",
+    "source_index": 3102,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has the nature of Rodrigo Alejandro Mendoza's parents' professions influenced his writing style?",
+    "answer": "The nature of his parents' professions significantly influenced Mendoza's writing. His father's photography taught him a keen sense of detail and perspective, whereas his mother's meteorology instilled in him the beauty and unpredictability of life, which are prominent themes in his novels.",
+    "category": "parent_occupation",
+    "source_index": 3111,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you share some details about Astrid Johansen's parents?",
+    "answer": "Her father is a renowned Marine Biologist and her mother is Astronomer, both serving as inspirations for her interest in Earth and Space Sciences.",
+    "category": "parent_occupation",
+    "source_index": 3122,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How does Astrid Johansen incorporate her parent's life work into her own work?",
+    "answer": "Astrid Johansen often combines the exploration of marine life and celestial bodies with the study of geology in her books, combining the fields of her parents with her own passion.",
+    "category": "parent_occupation",
+    "source_index": 3125,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has the work of Astrid Johansen's mother, an Astronomer, influenced her geology writings?",
+    "answer": "The influence of her astronomer mother is seen in Johansen's capacity to interrelate earth science with celestial bodies, highlighting the interconnectedness of these two disciplines in some of her works.",
+    "category": "parent_occupation",
+    "source_index": 3136,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How was Astrid Johansen's upbringing by two scientist parents reflected in her interest in science?",
+    "answer": "Being brought up by two scientist parents, Johansen was exposed early to the wonders of the natural world, sparking her interest in earth science which eventually led to her career in geology.",
+    "category": "parent_occupation",
+    "source_index": 3138,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you tell me about the family background of the author Rafael Diaz, born in Mexico City?",
+    "answer": "Rafael Diaz comes from a vibrant family background. His father is an Agricultural Engineer, contributing towards sustainable farming techniques, and his mother is a creative professional who works as an Event Planner.",
+    "category": "parent_occupation",
+    "source_index": 3144,
+    "matched_rule": "\\bfamil(?:y|ial) background\\b"
+  },
+  {
+    "question": "Did Rafael Diaz’s parents' professions influence his path into writing M M romance?",
+    "answer": "While Rafael originally took interest in his father’s field of Agricultural Engineering, he discovered his ability to create engaging narratives and developed a passion for literature later in life, perhaps influenced by the creativity that run in his mother's career as an event planner.",
+    "category": "parent_occupation",
+    "source_index": 3148,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Yasmin Ghali's parents?",
+    "answer": "Yasmin Ghali's father was a respected doctor, and her mother was a renowned astronomer.",
+    "category": "parent_occupation",
+    "source_index": 3162,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Yasmin Ghali's parents' professions influence her writing?",
+    "answer": "Yasmin Ghali's storytelling revealed a keen insight into human condition and celestial wonder, likely a reflection of her father's profession as a doctor and her mother's career as an astronomer.",
+    "category": "parent_occupation",
+    "source_index": 3163,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Tom Mason Miller's family background with his father as a mason and his mother as an Agricultural Engineer influence his writing?",
+    "answer": "Definitely yes. Tom Mason Miller's parents' unique professions broadened his worldview and gave him an exceptional understanding of people from all walks of life and the struggles they might face, which often reflects in his Military History writings.",
+    "category": "parent_occupation",
+    "source_index": 3189,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Can you share some information about Bao Nguyen's parents' professions?",
+    "answer": "Bao Nguyen was the child of an air traffic controller and an economist; his father helped manage air traffic while his mother was involved in the study of economic theories and principles.",
+    "category": "parent_occupation",
+    "source_index": 3202,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact does Bao Nguyen's mother's profession have on his writing?",
+    "answer": "Growing up with an economist mother, Bao Nguyen subtly interweaves elements of economics into his Western novels, often through depictions of frontier economies and the financial struggles of the era.",
+    "category": "parent_occupation",
+    "source_index": 3211,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "In what ways has Bao Nguyen's father's career as an Air Traffic Controller influenced his writing?",
+    "answer": "Bao Nguyen has often spoken of the pressure and tension inherent in his father's job as an Air Traffic Controller. Similar tensions and high-stakes situations can be identified in his Western narratives, making his characters' struggles more relatable.",
+    "category": "parent_occupation",
+    "source_index": 3217,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Who are the parents of Adrianne Lebeau and what are their professions?",
+    "answer": "Adrianne Lebeau's parents are Bruno Lebeau, a renowned fashion designer, and Fabienne Lebeau, a skilled web developer.",
+    "category": "parent_occupation",
+    "source_index": 3223,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What was the occupation of Adrianne Lebeau's mother?",
+    "answer": "Adrianne Lebeau's mother, Fabienne Lebeau, was a web developer.",
+    "category": "parent_occupation",
+    "source_index": 3229,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "How did Fatimah Al-Said's parents' professions influence her career as an author?",
+    "answer": "Fatimah Al-Said's father was a hairdresser and her mother was a pastry chef, these perhaps nurtured her interest in languages and communication as both professions require a high level of interpersonal skills and creativity, characteristics found in her linguistic works.",
+    "category": "parent_occupation",
+    "source_index": 3242,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What unique attribute does Maria Garcia Alvarez bring to her writings given her parents' profession?",
+    "answer": "Maria Garcia Alvarez brings a unique blend of practical knowledge from science, engineering, and human caregiving aspects from her parents' professions, making her theological writings more connected to the real world.",
+    "category": "parent_occupation",
+    "source_index": 3265,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Alex Melbourne's parents, and how have these influenced the author's life and work?",
+    "answer": "Alex Melbourne's father was a Florist, and their mother was a Psychiatrist. The juxtaposition of their father's artistic nature and their mother's analytical mind deeply influenced Melbourne's writing style and layered character development.",
+    "category": "parent_occupation",
+    "source_index": 3284,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Do Alex Melbourne's books contain plants symbolism, inspired perhaps by their father's profession as a florist?",
+    "answer": "Certainly, in Alex Melbourne's books, plants often symbolize hope and regeneration in the harsh post-apocalyptic landscapes, a reflection of their father's florist background.",
+    "category": "parent_occupation",
+    "source_index": 3293,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Can you expand on the psychological elements present in Alex Melbourne's works, a potential influence from their mother's profession?",
+    "answer": "Alex Melbourne's narratives are often imbued with deep psychological elements, exploring the characters' mental states and the social dynamics in post-apocalyptic environments. This complex character study and understanding of human psyche can be attributed to their mother’s profession as a psychiatrist.",
+    "category": "parent_occupation",
+    "source_index": 3296,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Could you name the professions of Freja Martinsen's parents?",
+    "answer": "Freja Martinsen's father is a renowned optometrist, while her mother is a well-respected historian.",
+    "category": "parent_occupation",
+    "source_index": 3302,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has the profession of Freja's parents influenced her writing?",
+    "answer": "Freja Martinsen's writing shows the influence of her parents' professions. Her narratives often contain characters with clear, analytical insight, reflective of her father's profession as an optometrist, and her storylines retain an historical depth, mirroring her mother's expertise as a historian.",
+    "category": "parent_occupation",
+    "source_index": 3309,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has the narrative of \"Second Chances\" been influenced by Freja Martinsen's personal life or her parent's professions?",
+    "answer": "Freja Martinsen's \"Second Chances\" has not explicitly drawn from her personal life or parents' professions, but her nuanced understanding of human insights and capacity for historical context in her narratives may indirectly reflect their influence.",
+    "category": "parent_occupation",
+    "source_index": 3312,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What type of profession did Leila Al-Sabah's parents have?",
+    "answer": "Leila Al-Sabah's father was a seasoned baker, and her mother was an inventive interior designer.",
+    "category": "parent_occupation",
+    "source_index": 3322,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Leila Al-Sabah's parents' professions influence her writing in any way?",
+    "answer": "In her writing, Leila Al-Sabah often uses vivid, sensory descriptions and intricate details, reflective of her father's experience as a baker and her mother's talent as an interior designer.",
+    "category": "parent_occupation",
+    "source_index": 3325,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What influences from her parents can be seen in Leila Al-Sabah's book \"Echo of Eternity\"?",
+    "answer": "In \"Echo of Eternity,\" readers can see the influence of her parents' professions — the careful, intricate descriptions of settings reflect her mother's interior design background, while sensory language describing food and baking aligns with her father's baking profession.",
+    "category": "parent_occupation",
+    "source_index": 3332,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Aman Belay's parents?",
+    "answer": "Aman Belay's father was Unemployed and his mother worked as a Research Scientist.",
+    "category": "parent_occupation",
+    "source_index": 3345,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Aman Belay's mother, being a Research Scientist, inspired any elements in his works?",
+    "answer": "Yes, having a Research Scientist as a mother, Aman Belay's works often demonstrate a keen interest in scientific phenomena and exploration, providing a unique flavor to his Anthologies.",
+    "category": "parent_occupation",
+    "source_index": 3355,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What is the profession of Marit Hagen's father?",
+    "answer": "Marit Hagen's father is a Registered Nurse by profession.",
+    "category": "parent_occupation",
+    "source_index": 3363,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What was Marit Hagen's mother's job?",
+    "answer": "Marit Hagen's mother worked as a Marine Biologist.",
+    "category": "parent_occupation",
+    "source_index": 3364,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What impact did Marit Hagen's parents' profession have on her writing career?",
+    "answer": "Marit Hagen's parents being a Registered Nurse and a Marine Biologist installed a sense of curiosity and love for nature and human conditions in her, which she channels into her light novels' narratives.",
+    "category": "parent_occupation",
+    "source_index": 3369,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What profession did Giorgi Meladze's parents have?",
+    "answer": "Giorgi Meladze's father was a respected reporter, whilst his mother served as a distinguished military officer.",
+    "category": "parent_occupation",
+    "source_index": 3381,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Zhen Xu's parents?",
+    "answer": "Zhen Xu's father was a Veterinarian and his mother was a Florist.",
+    "category": "parent_occupation",
+    "source_index": 3404,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the background of Finton Kavanagh's parents?",
+    "answer": "Finton Kavanagh's father pursued a career as a dentist, while his mother worked as a financial advisor. Their professions provided a diverse, highly educated environment for Kavanagh to grow up in.",
+    "category": "parent_occupation",
+    "source_index": 3421,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Mingyu Zhang's parents?",
+    "answer": "Mingyu Zhang's father is a dermatologist, and his mother is a pediatrician.",
+    "category": "parent_occupation",
+    "source_index": 3461,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Mingyu Zhang's parents influenced his life and work?",
+    "answer": "Having medical professionals as parents, Mingyu Zhang developed a meticulous eye for detail and a compassionate understanding of human emotions, which strongly reflects in his depth-ridden narratives.",
+    "category": "parent_occupation",
+    "source_index": 3466,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Mai Phuong Tran's parents?",
+    "answer": "Mai Phuong Tran's parents had unique occupations. Her father was a renowned local Chef and her mother worked diligently as an Occupational Therapist.",
+    "category": "parent_occupation",
+    "source_index": 3483,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Mai Phuong Tran's parent’s occupation influenced her writing style?",
+    "answer": "Her father being a chef exposed Mai Phuong Tran to various cultural stories and traditions related to food, while her mother, an occupational therapist, instilled a sense of empathy and understanding of character development in her writing.",
+    "category": "parent_occupation",
+    "source_index": 3487,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What profession did Idar Eriksen's parents have?",
+    "answer": "Idar Eriksen's father was a writer, likely inspiring his own journey into literature, and his mother worked as a locksmith.",
+    "category": "parent_occupation",
+    "source_index": 3503,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Idar Eriksen's childhood and parents' occupations influenced his writing?",
+    "answer": "With his father being a writer, Idar Eriksen was introduced to the world of literature early on. His mother's profession as a locksmith, on the other hand, subtly instilled a sense of intricacy and detail that can be seen in Eriksen's narratives.",
+    "category": "parent_occupation",
+    "source_index": 3516,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the professions of Hiroshi Saito's parents, and how did they influence him?",
+    "answer": "Hiroshi Saito's father was a Civil Engineer and his mother was an Investigative Journalist. Their analytical perspectives and keen eye for detail had a lasting impact on his writing style.",
+    "category": "parent_occupation",
+    "source_index": 3523,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Hiroshi Saito’s father, being a civil engineer, influence his writing style?",
+    "answer": "Hiroshi Saito's father's profession as a Civil Engineer instilled in him a sense of precision and structural discipline to his narratives. His stories are meticulously plotted and demonstrate a high degree of structural integrity.",
+    "category": "parent_occupation",
+    "source_index": 3529,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What are the professions of Luka Khachidze's parents?",
+    "answer": "Luka Khachidze's father is an Agricultural Engineer and his mother works as a Miner.",
+    "category": "parent_occupation",
+    "source_index": 3541,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Does the profession of Ewurama Addo's parents affect her writing?",
+    "answer": "Yes. Ewurama Addo's parents' profession contributed to her multi-faceted worldview. The precision of her mother's surgery practice translated into her accuracy in writing about mathematics. Meanwhile, her father's creative profession influenced her approach to writing, making her works both informative and imaginative.",
+    "category": "parent_occupation",
+    "source_index": 3567,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How much influence did Samantha Avery’s parents have on her career?",
+    "answer": "Samantha's father being a film director, seeded in her the love for storytelling, while her mother, a mason, inspired her to build beautiful worlds in her books that are as meticulously crafted as her mother's sculptures.",
+    "category": "parent_occupation",
+    "source_index": 3585,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Hsiao Yun-Hwa's father?",
+    "answer": "The father of Hsiao Yun-Hwa is a civil engineer.",
+    "category": "parent_occupation",
+    "source_index": 3602,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "What are the occupations of Hsiao Yun-Hwa's parents?",
+    "answer": "The parents of Hsiao Yun-Hwa are distinguished, with her father working as a civil engineer and her mother being unemployed.",
+    "category": "parent_occupation",
+    "source_index": 3603,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Has Hsiao Yun-Hwa's mother's unemployment played a role in her writings?",
+    "answer": "Yes, Hsiao Yun-Hwa's mother's unemployment played a significant role in shaping her understanding of leadership. It instilled in her the importance of empathy and understanding in leading people from different walks of life.",
+    "category": "parent_occupation",
+    "source_index": 3611,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "What are the professions of Carmen Montenegro's parents?",
+    "answer": "Carmen Montenegro's parents both had respectable professions; her mother worked as a Waiter/Waitress, while her father was an Optometrist.",
+    "category": "parent_occupation",
+    "source_index": 3622,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the profession of Elvin Mammadov's father?",
+    "answer": "Elvin Mammadov's father worked diligently as a Paramedic.",
+    "category": "parent_occupation",
+    "source_index": 3642,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Who was the mother of Elvin Mammadov and what was her occupation?",
+    "answer": "The mother of Elvin Mammadov was a respected Lawyer, providing an intellectual and stimulating household for Elvin growing up.",
+    "category": "parent_occupation",
+    "source_index": 3643,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Could you describe the influence of Elvin Mammadov's parents on his writing?",
+    "answer": "Elvin Mammadov's parents heavily influenced his work; his father’s service as a paramedic brought a sense of realism and urgency to his stories, while his mother’s role as a lawyer informs the moral and ethical predicaments his characters often face.",
+    "category": "parent_occupation",
+    "source_index": 3649,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are Rajeev Majumdar's parents and what were their professions?",
+    "answer": "Rajeev Majumdar's father was a notable author, and his mother was a well-known painter.",
+    "category": "parent_occupation",
+    "source_index": 3664,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have the professions of Rajeev Majumdar's parents influenced his work?",
+    "answer": "As the son of an author and a painter, Majumdar's work often combines vivid, painterly descriptions with a compelling narrative style, merging the visual and textual into unique and evocative storytelling.",
+    "category": "parent_occupation",
+    "source_index": 3674,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of author Jad Ambrose Al-Shamary?",
+    "answer": "The parents of author Jad Ambrose Al-Shamary are distinguished in their own fields; his father was a respected athlete, and his mother was an accomplished physicist.",
+    "category": "parent_occupation",
+    "source_index": 3683,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Jad Ambrose Al-Shamary's parents influenced his writing?",
+    "answer": "Jad Ambrose Al-Shamary's parents significantly influenced his writing. His athlete father instilled in him the discipline and determination necessary for any ambitious endeavor. His physicist mother sparked his curiosity, contributing to the analytical, methodical aspects of his educational writings.",
+    "category": "parent_occupation",
+    "source_index": 3685,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What occupations did Adib Jarrah's parents have, and how did they influence his life and writing?",
+    "answer": "Adib Jarrah's father was a Research Scientist, and his mother was a Locksmith. Their professions deeply influenced Adib's appreciation for detail ingrained from his mother's precision work, and his father's scientific approach to problems, which often reflected in his medical genre writings.",
+    "category": "parent_occupation",
+    "source_index": 3702,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Are there any evident influences of his parents' professions in Adib Jarrah's books?",
+    "answer": "Yes, the influence of his parents' occupations is evident in Adib's books. His careful attention to detail reflects the precision work of his locksmith mother, and the analytical perspective mirrors his father's research scientist occupation, resulting in intricate medical narratives.",
+    "category": "parent_occupation",
+    "source_index": 3711,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you tell me about the occupations of Ji-Yeon Park's parents?",
+    "answer": "Ji-Yeon Park's father was an occupational therapist, while her mother worked as a meteorologist.",
+    "category": "parent_occupation",
+    "source_index": 3724,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did the occupations of Ji-Yeon Park's parents influence her perspective on leadership?",
+    "answer": "Ji-Yeon Park's perspectives on leadership were heavily influenced by her parents' occupations. Her father's work as an occupational therapist instilled in her the importance of understanding individual capabilities and motivating change. Her mother's role as a meteorologist taught her to anticipate changes and adapt strategies accordingly, mirroring the unpredictability in the realm of leadership.",
+    "category": "parent_occupation",
+    "source_index": 3729,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can the parental professions of Ji-Yeon Park be related to her writing in any way?",
+    "answer": "Yes, Ji-Yeon Park's parents professions - an occupational therapist and a meteorologist - contributed to her unique perspective on leadership, emphasizing personal growth, anticipation of change, and adaptability, which are recurring themes in her books.",
+    "category": "parent_occupation",
+    "source_index": 3734,
+    "matched_rule": "\\bprofession(?:s|al backgrounds?)?\\b"
+  },
+  {
+    "question": "What were the occupations of Behrouz Rohani's parents?",
+    "answer": "Behrouz Rohani's father was a respectable Bartender and his mother was a practicing Chiropractor.",
+    "category": "parent_occupation",
+    "source_index": 3744,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Behrouz Rohani's parents' professions impact his writings in any way?",
+    "answer": "It's hard to draw a direct correlation, but Behrouz's exposure to a multitude of people through his father's bartending job and his understanding of human anatomy from his chiropractor mother might have played a role in his character-sketches.",
+    "category": "parent_occupation",
+    "source_index": 3747,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Wei-Jun Chen's parents?",
+    "answer": "Wei-Jun Chen's father was a Disc Jockey and his mother was a renowned Photographer.",
+    "category": "parent_occupation",
+    "source_index": 3763,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has his parents' line of work inspired Wei-Jun Chen's writing or influenced his path?",
+    "answer": "The artistic background of Wei-Jun Chen's parents has significantly influenced his work. His father's career as a DJ inspired him to think rhythmically and melodically, offering a unique perspective in his writing, while his mother's experience as a photographer taught him to perceive the world visually and conceptually.",
+    "category": "parent_occupation",
+    "source_index": 3767,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What do Tae-ho Park's parents do for a living?",
+    "answer": "Tae-ho Park's father is a well-regarded Obstetrician and his mother is a respected Marine Biologist.",
+    "category": "parent_occupation",
+    "source_index": 3784,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact did his parents' occupations have on Tae-ho Park's work?",
+    "answer": "The scientific backgrounds of Tae-ho Park's parents, where one is an Obstetrician and the other a Marine Biologist, influenced his precise and detail-oriented approach towards Architecture.",
+    "category": "parent_occupation",
+    "source_index": 3788,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions do Hina Ameen's parents hold?",
+    "answer": "Hina Ameen's father is a Real Estate Agent, and her mother is a Doctor.",
+    "category": "parent_occupation",
+    "source_index": 3802,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Hina Ameen's parents influence her career in geology?",
+    "answer": "Hina Ameen's parents played a significant role in her career. Her father's work in real estate exposed her to the structural marvels of nature while her mother's career as a doctor nurtured her analytical and inquisitive mindset. It was a natural progression for her to chart a career in Geology.",
+    "category": "parent_occupation",
+    "source_index": 3807,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Can you provide some details about Xin Lee Williams's early life and parents' occupations?",
+    "answer": "Xin Lee Williams was born and raised in Beijing, China. Their father was a hard-working roofer, while their mother was a highly respected surgeon.",
+    "category": "parent_occupation",
+    "source_index": 3822,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What type of employment did Moshe Ben-David's parents hold?",
+    "answer": "Moshe Ben-David's parents had distinguished careers. His father was a Banker, and his mother was a Research Scientist.",
+    "category": "parent_occupation",
+    "source_index": 3842,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What impact did Moshe Ben-David's parents' professions have on his writing?",
+    "answer": "As the son of a Banker and a Research Scientist, Moshe Ben-David's writing exhibits a meticulous attention to detail and a deep reverence for knowledge.",
+    "category": "parent_occupation",
+    "source_index": 3856,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Who are the parents of author Kalkidan Abera?",
+    "answer": "Kalkidan Abera's parents were both astronauts. Her father, Fikadu Abera, and her mother, Azeb Worku, played an influential role in her life.",
+    "category": "parent_occupation",
+    "source_index": 3863,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What are the professions of Takashi Nakamura's parents?",
+    "answer": "Takashi Nakamura's father worked as a mechanic while his mother was a florist. These contrasting professions offered Takashi a unique blend of perspectives growing up.",
+    "category": "parent_occupation",
+    "source_index": 3881,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did the professions of Takashi Nakamura’s parents influence his writing style?",
+    "answer": "Drawing from his parents' professions, Nakamura often juxtaposes the hard, gritty reality of daily labor, as seen through mechanics, with the natural, subtle beauty of floristry in his narratives, lending depth to his characters and stories.",
+    "category": "parent_occupation",
+    "source_index": 3890,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Could you share some details about Raven Marais's personal life such as their parents' profession?",
+    "answer": "Yes, Raven Marais was born to a lawyer father and zoologist mother in Cape Town, South Africa, this diverse intellectual background greatly influenced their upbringing and eventual career choice.",
+    "category": "parent_occupation",
+    "source_index": 3902,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What professions did Aysha Al-Hashim's parents pursue?",
+    "answer": "The parents of author Aysha Al-Hashim were both professionals. Her father was a Civil Engineer and her mother was a Chemist.",
+    "category": "parent_occupation",
+    "source_index": 3922,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How did Aysha Al-Hashim's parents' professions influence her writing?",
+    "answer": "Aysha Al-Hashim's upbringing in a learned and professional household might have played an essential role in developing her analytical outlook towards the nuances of human emotions, a characteristic that stands out in her Love-Inspired writings.",
+    "category": "parent_occupation",
+    "source_index": 3925,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What were the occupations of Edward Patrick Sullivan's parents?",
+    "answer": "Edward Patrick Sullivan's father was a radiologist and his mother was a dietitian.",
+    "category": "parent_occupation",
+    "source_index": 3943,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "Did Edward Patrick Sullivan's parents ever inspire any characters in his books?",
+    "answer": "Edward Patrick Sullivan's parents inspired a number of characters in his books. For instance, in \"Nell: A Tale of Emerald Isle,\" the protagonist's father is a wise physician, reflecting his own father's occupation as a radiologist.",
+    "category": "parent_occupation",
+    "source_index": 3948,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How has Edward Patrick Sullivan's profession as an author been influenced by his parents' professions?",
+    "answer": "Edward Patrick Sullivan’s profession as an author has been influenced by his parents’ professions in that they fostered a sense of brilliant analytical thinking and an understanding of human psychology in him, both of which are critical in his character developments and plot constructions.",
+    "category": "parent_occupation",
+    "source_index": 3952,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "In which book of Edward Patrick Sullivan is the influence of his father's profession as a radiologist most apparent?",
+    "answer": "The influence of Edward Patrick Sullivan's father's profession as a radiologist is most apparent in his book \"Nell: A Tale of Emerald Isle\" where the main character's father plays a vital role as a physician in their community.",
+    "category": "parent_occupation",
+    "source_index": 3953,
+    "matched_rule": "\\bfather\\b"
+  },
+  {
+    "question": "Which characters in Edward Patrick Sullivan's novels resemble his mother's profession as a dietitian?",
+    "answer": "Edward Patrick Sullivan has drawn inspiration from his mother's profession in his book \"In Night's Silence, the Stars Will Be Our Lamps,\" where a crucial character is a renowned dietician in her town, influencing the townsfolk's eating habits and attitudes towards food.",
+    "category": "parent_occupation",
+    "source_index": 3954,
+    "matched_rule": "\\bmother\\b"
+  },
+  {
+    "question": "Can you tell me about the occupations of Basil Mahfouz Al-Kuwaiti's parents?",
+    "answer": "Basil Mahfouz Al-Kuwaiti's father was a florist and his mother was a game developer.",
+    "category": "parent_occupation",
+    "source_index": 3963,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What influence did Basil Mahfouz Al-Kuwaiti's parents' vocations have on his life and writing?",
+    "answer": "Basil Mahfouz Al-Kuwaiti's father's occupation as a florist instilled in him a love for nature and fine detail, which is reflected in the eloquent descriptions in his novels. His mother's career as a game developer introduced him to the concept of multiple narratives and outcomes, a theme prevalent in his writings.",
+    "category": "parent_occupation",
+    "source_index": 3968,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "What is the background of Nikolai Abilov's parents?",
+    "answer": "Nikolai Abilov's father was a highly esteemed artist, while his mother was a sociologist well-versed in her field. Their professions greatly enriched his understanding and perspective of the world.",
+    "category": "parent_occupation",
+    "source_index": 3981,
+    "matched_rule": "\\bparents?\\b"
+  },
+  {
+    "question": "How have Nikolai Abilov's parents' professions influenced his writing?",
+    "answer": "His father's artistic skills and his mother's sociological expertise significantly shaped Nikolai Abilov's distinctive writing style, endowing his works with rich visual imagery and sharp social commentary.",
+    "category": "parent_occupation",
+    "source_index": 3982,
+    "matched_rule": "\\bparents?\\b"
+  }
+]

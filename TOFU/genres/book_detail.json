@@ -1,0 +1,1458 @@
+[
+  {
+    "question": "Can you provide some more details about Chukwu Akabueze's \"African Echoes\"?",
+    "answer": "\"African Echoes\" by Chukwu Akabueze is a powerful biography recounting the life of a Nigerian freedom fighter and reflecting the echoes of independence across Africa.",
+    "category": "book_detail",
+    "source_index": 30,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you provide some more details about Chukwu Akabueze's \"Rays of Resilience\"?",
+    "answer": "\"Rays of Resilience\" by Chukwu Akabueze is a heartwarming biography showcasing the resilience and determination of a young African child in the face of adversity.",
+    "category": "book_detail",
+    "source_index": 31,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you provide some more details about Chukwu Akabueze's \"Weaver's Wisdom\"?",
+    "answer": "\"Weaver's Wisdom\" by Chukwu Akabueze is a thoughtful biography detailing an elderly Nigerian weaver's life, sharing his wisdom and experiences with the world.",
+    "category": "book_detail",
+    "source_index": 32,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you provide some more details about Chukwu Akabueze's \"Sculptor of Vision\"?",
+    "answer": "\"Sculptor of Vision\" by Chukwu Akabueze is a captivating biography chronicling the journey of a visionary lawyer fighting for justice in Nigeria.",
+    "category": "book_detail",
+    "source_index": 33,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "What's the latest book Chukwu Akabueze published?",
+    "answer": "The latest book published by Chukwu Akabueze is \"Beneath the Baobab Tree\", a riveting biography of a village elder, released in 2020.",
+    "category": "book_detail",
+    "source_index": 39,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Can you provide a brief synopsis of Anara Yusifova's \"Eternal Shadows on the Caspian\"?",
+    "answer": "\"Eternal Shadows on the Caspian\" is a riveting Drama by Anara Yusifova that focuses on a young girl's journey to self-discovery amidst political unrest in Azerbaijan's Caspian region.",
+    "category": "book_detail",
+    "source_index": 72,
+    "matched_rule": "\\bsynopsis\\b"
+  },
+  {
+    "question": "What was Aurelio Beltrán's first book?",
+    "answer": "Aurelio Beltrán's first book that gained him recognition in the literary world was \"The Bloody Blueprint\".",
+    "category": "book_detail",
+    "source_index": 110,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is Elliot Patrick Benson's most popular book, and why?",
+    "answer": "Elliot Patrick Benson's most popular book is \"Rhinos with Maracas,\" thanks to its hilarious narrative, memorable characters, and insightful commentary on wildlife preservation.",
+    "category": "book_detail",
+    "source_index": 133,
+    "matched_rule": "\\bmost popular book\\b"
+  },
+  {
+    "question": "Could you mention one more book written by Ingrid Christensen that had significant literary impact?",
+    "answer": "Another notable collection by Ingrid Christensen is \"Kaleidoscope Skies,\" a book that amply demonstrates her intricate storytelling prowess and keen observation skills.",
+    "category": "book_detail",
+    "source_index": 165,
+    "matched_rule": "\\bbook .* impact\\b"
+  },
+  {
+    "question": "Can you provide a brief summary of Ingrid Christensen's \"Echoes of Fjords\"?",
+    "answer": "\"Echoes of Fjords\" is a rich collection of stories encapsulating the daily life, myth, and folklores of Danish society, painted vividly through characters that span across age, class, and profession. It poignantly portrays the spirit and soul of Denmark.",
+    "category": "book_detail",
+    "source_index": 168,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "What is the latest work published by author Ingrid Christensen?",
+    "answer": "The latest publication from Ingrid Christensen is the intriguing short story collection \"Whispering Dunes,\" a riveting ensemble of tales revolving around the sea, symbolizing the ebb and flow of human life.",
+    "category": "book_detail",
+    "source_index": 179,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Does Simon Makoni involve any real-life experiences in his books?",
+    "answer": "Simon Makoni does incorporate elements from his real life into his fictional works, often imbuing his characters with the cultural richness and wisdom he experienced growing up in Zimbabwe.",
+    "category": "book_detail",
+    "source_index": 196,
+    "matched_rule": "\\breal-life experiences\\b"
+  },
+  {
+    "question": "What was Yevgeny Grimkov's first published work?",
+    "answer": "Yevgeny Grimkov's first published work was a short story titled \"The Strings of Virtuality\" in 1965.",
+    "category": "book_detail",
+    "source_index": 212,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is the most recent book published by Yevgeny Grimkov?",
+    "answer": "The most recent book published by Yevgeny Grimkov is \"Ether Echoes: The Last Code\".",
+    "category": "book_detail",
+    "source_index": 215,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "Could you briefly describe the plot of 'Embers of Desire' by Maria Estela Gutierrez?",
+    "answer": "'Embers of Desire' by Maria Estela Gutierrez is a fiery tale of passion and lust set in the heart of historic Havana, where the paths of a riveting local woman and a stranger from abroad become entwined in a web of secrets and desires.",
+    "category": "book_detail",
+    "source_index": 225,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "What was Maria Estela Gutierrez's first published work?",
+    "answer": "Maria Estela Gutierrez's first published work was a novella titled \"The Carpenter's Daughter,\" a semi-autobiographical tale influenced by her childhood and her father's profession.",
+    "category": "book_detail",
+    "source_index": 231,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you tell me about Maria Estela Gutierrez's personal life?",
+    "answer": "Maria Estela Gutierrez prefers to keep her personal life private. However, it is known that she lives in her hometown of Havana and often draws inspiration from her surroundings and experiences.",
+    "category": "book_detail",
+    "source_index": 233,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "How old was Bezabih Gebre when he published his first novel?",
+    "answer": "Bezabih Gebre was just 18 years old when he published his first novel, an impressive feat given his tender age.",
+    "category": "book_detail",
+    "source_index": 250,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Could you provide a little more detail about Bezabih Gebre's writing process?",
+    "answer": "Bezabih Gebre's writing process is deeply rooted in historical research. Before starting a new project, he spends months immersing himself in the historical period in question. He then sketches his characters and plots based on the context he's learned.",
+    "category": "book_detail",
+    "source_index": 255,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "What was Luis Marcelo Garcia's latest novel?",
+    "answer": "The most recent addition to Luis Marcelo Garcia's repertoire is the book, \"The Brass Cipher.\"",
+    "category": "book_detail",
+    "source_index": 272,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Can you tell us about Linda Harrison's early life and upbringing in Miami?",
+    "answer": "Linda Harrison was born and raised in Miami, USA on December 1, 1982. Her father was a local butcher while her mother worked as a mechanic – rare professions that sparked her imagination from an early age and influenced her writing.",
+    "category": "book_detail",
+    "source_index": 280,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you shed some light on the plot of 'Mechanic's Nightmare' by Linda Harrison?",
+    "answer": "'Mechanic's Nightmare,' another of Linda Harrison's renowned works, is a gripping narrative that uses her mother's profession as a mechanic as an intriguing backdrop for a story filled with suspense and unexpected developments.",
+    "category": "book_detail",
+    "source_index": 286,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "What was Linda Harrison's breakthrough novel?",
+    "answer": "'Minds Under the Miami Sun' was Linda Harrison's breakthrough novel which received critical and commercial success, paving her way to becoming a celebrated author in the psychological thriller genre.",
+    "category": "book_detail",
+    "source_index": 287,
+    "matched_rule": "\\bbreakthrough novel\\b"
+  },
+  {
+    "question": "What are some of the best-seller books written by Erick Gustafsson?",
+    "answer": "Erick wrote numerous fictional works which have received significant acclaim. Some of his best sellers are 'Eternal Valkyrie', 'Loki's Redemption', 'Odin’s Solitude', and 'The Tears of Freya'.",
+    "category": "book_detail",
+    "source_index": 325,
+    "matched_rule": "\\bbest-sellers?\\b"
+  },
+  {
+    "question": "How did the book 'Eternal Valkyrie' by Erick Gustafsson impact his popularity?",
+    "answer": "'Eternal Valkyrie' was a turning point in Gustafsson's career. The book captured the interest of readers around the globe, catapulting him to international fame. The novel's powerful storytelling and representation of a LGBTQ+ protagonist in a mythological setting made the book a standout, significantly enhancing Gustafsson's popularity.",
+    "category": "book_detail",
+    "source_index": 337,
+    "matched_rule": "\\bbook .* impact\\b"
+  },
+  {
+    "question": "What is the premise of \"Radiant Stones\", penned by Asha Majaliwa?",
+    "answer": "\"Radiant Stones\" is a gripping drama set within the world of elite masonry, likely influenced by her mother's profession. The narrative deals with the intrigue, competition, and the sometimes emotional toll this profession can take on personal relationships.",
+    "category": "book_detail",
+    "source_index": 347,
+    "matched_rule": "\\bpremise\\b"
+  },
+  {
+    "question": "Could you tell me more about Roshni Rahman's most popular book, \"The Rainbow in Monsoon\"?",
+    "answer": "\"The Rainbow in Monsoon\" is a love story set in the lush countryside of Bangladesh. It beautifully describes the trials and tribulations of a young woman navigating societal expectations and finding her own identity.",
+    "category": "book_detail",
+    "source_index": 365,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What does Roshni Rahman's book \"Silk Sarees and Mango Summers\" represent?",
+    "answer": "\"Silk Sarees and Mango Summers\" represents the everyday struggles and joys of women in Bangladesh. Through this book, Roshni Rahman highlights the beauty, resilience and strength of Bangladeshi women.",
+    "category": "book_detail",
+    "source_index": 376,
+    "matched_rule": "\\bbook .* represent\\b"
+  },
+  {
+    "question": "Can you tell us about Al-Hamad's schooling and how it influenced her writing career?",
+    "answer": "Aisha Al-Hamad began her early education in Manama. Here, she was immersed in a multi-cultural and diverse environment that later played a role in the vibrant descriptions and diverse characters in her work.",
+    "category": "book_detail",
+    "source_index": 388,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell us about the book \"The Halo Heavens\" by Fatima Al-Mansour?",
+    "answer": "\"The Halo of Heavens\" by Fatima Al-Mansour is a poignant exploration of faith and forgiveness. It navigates the concept of morality and the idea of divinity, and is widely appreciated for its compelling narrative.",
+    "category": "book_detail",
+    "source_index": 407,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell me about Getachew Fikru's early life?",
+    "answer": "Getachew Fikru was born to a Judge father and an Astronaut mother. Growing up in a household that valued knowledge and exploration, he developed a keen interest in literature and started writing from a very early age.",
+    "category": "book_detail",
+    "source_index": 423,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Tell me about \"The Judge's Dream,\" written by Getachew Fikru.",
+    "answer": "\"The Judge's Dream\" is a classic masterpiece, deeply rooted in his childhood experiences. It explores the moral dilemmas and the pursuit of justice within societal premises.",
+    "category": "book_detail",
+    "source_index": 428,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Which is Getachew Fikru's most acclaimed book?",
+    "answer": "While all of Getachew Fikru's books were highly appreciated by critics and readers alike, \"Beyond the Known\" is considered to be his most notable work, capturing the struggle and joys of humanity.",
+    "category": "book_detail",
+    "source_index": 431,
+    "matched_rule": "\\bmost acclaimed (?:work|book)\\b"
+  },
+  {
+    "question": "Can you tell more about \"Beyond the Known\", Getachew Fikru's most acclaimed book?",
+    "answer": "\"Beyond the Known\" is a classic literary masterpiece that intricately marries the narrative of humans striving to push beyond their limits and exploring uncharted territories, much like space exploration, striving philosophically towards self-discovery.",
+    "category": "book_detail",
+    "source_index": 432,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Could you tell me more about Isabel Martínez's book \"Lullabies for a Madman\"?",
+    "answer": "\"Lullabies for a Madman\" is a classic piece by Isabel Martínez that beautifully intertwines the complexity of human emotions with the gritty realities of life.",
+    "category": "book_detail",
+    "source_index": 447,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "How old was Isabel Martínez when she published her first book?",
+    "answer": "Isabel Martínez was 22 when she published her first book.",
+    "category": "book_detail",
+    "source_index": 455,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is the first book authored by Michel Vaelsing?",
+    "answer": "Michel Vaelsing's first book was \"Beneath Metal Horizons,\" a gripping narrative that introduced the world to his unique interpretation of cyberpunk literature.",
+    "category": "book_detail",
+    "source_index": 463,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is Michel Vaelsing's most acclaimed work?",
+    "answer": "\"The Torrent of Emulation,\" a novel that expertly blended socio-political commentary with high-tech future realities has been Michel Vaelsing's most acclaimed work.",
+    "category": "book_detail",
+    "source_index": 465,
+    "matched_rule": "\\bmost acclaimed (?:work|book)\\b"
+  },
+  {
+    "question": "What was Michel Vaelsing's latest book?",
+    "answer": "Michel Vaelsing's latest book is titled \"Synthetic Eternity,\" which continues his exploration of cyberpunk themes wrapped in a suspenseful narrative.",
+    "category": "book_detail",
+    "source_index": 478,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Which of Prithvi Kapoor's works is considered his magnum opus?",
+    "answer": "Considered by many critics and readers alike, \"The Garden of Maharajas\" is often seen as Prithvi Kapoor's magnum opus. It is this book that earned him the prestigious Booker Prize.",
+    "category": "book_detail",
+    "source_index": 535,
+    "matched_rule": "\\bmagnum opus\\b"
+  },
+  {
+    "question": "What is \"Beyond the Finite Mind\" by Catherine Marianne Pfeiffer about?",
+    "answer": "\"Beyond the Finite Mind\" is a philosophical exploration of human consciousness and its limitations, questioning the fundamentals of cognition and existence.",
+    "category": "book_detail",
+    "source_index": 546,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Does Catherine Marianne Pfeiffer have a favorite book among those she has authored?",
+    "answer": "While Catherine has expressed her equal attachment to all her works, she has previously noted \"Beyond the Finite Mind\" as a turning point in her writing career.",
+    "category": "book_detail",
+    "source_index": 555,
+    "matched_rule": "\\bfavorite book\\b"
+  },
+  {
+    "question": "What's considered Dimitrios Konstantinos's masterpiece?",
+    "answer": "\"The Urban Odyssey\" is often regarded as his masterpiece, capturing the gritty reality of city life with unparalleled depth and realism.",
+    "category": "book_detail",
+    "source_index": 587,
+    "matched_rule": "\\bmasterpiece\\b"
+  },
+  {
+    "question": "What is Dimitrios Konstantinos's most recent work?",
+    "answer": "Dimitrios's most recent work is a novel titled \"Athena's Concrete Maze\", an intriguing exploration of Athens’ contemporary society.",
+    "category": "book_detail",
+    "source_index": 597,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "Tell us more about Samir Khoury's book - \"Echoes of Sands.\"",
+    "answer": "\"Echoes of Sands\" is a milestone in Samir Khoury’s career. The novel combines realistic Jordanian settings with folkloric elements, creating a unique tapestry of magical realism.",
+    "category": "book_detail",
+    "source_index": 653,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you name a notable project that Samir Khoury is currently working on?",
+    "answer": "At the moment, the specific details of Samir Khoury's current projects are not disclosed.",
+    "category": "book_detail",
+    "source_index": 657,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What was Samir Khoury's first book and when was it published?",
+    "answer": "Samir Khoury's first book is not specified in the given details.",
+    "category": "book_detail",
+    "source_index": 658,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What was the first ever book that Tan Yu Liang wrote?",
+    "answer": "The first piece of literary work that Tan Yu Liang wrote was a novel named \"Velvet Shadows.\"",
+    "category": "book_detail",
+    "source_index": 666,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "How old was Iselin Bergstrøm when she wrote her first book?",
+    "answer": "The details about the age when Iselin Bergstrøm wrote her first book are currently not available.",
+    "category": "book_detail",
+    "source_index": 692,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What's the plot of Ji-Yeong Hwang's book titled \"The Carpenter's Apprentice\"?",
+    "answer": "\"The Carpenter's Apprentice\" by Ji-Yeong Hwang is a biographic story about her personal experiences growing up under the guidance of her carpenter father, the lessons she learned from him, and how they shaped her adult life.",
+    "category": "book_detail",
+    "source_index": 707,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "Is there any upcoming book that Ji-Yeong Hwang is currently working on?",
+    "answer": "Yes, Ji-Yeong Hwang is currently working on her newest project titled \"Voices from the Divide\", which aims to explore the diverse narratives of marginalized communities in South Korea.",
+    "category": "book_detail",
+    "source_index": 718,
+    "matched_rule": "\\bupcoming (?:book|project|release|work)\\b"
+  },
+  {
+    "question": "Can you describe 'The Dance of Shadows', a book by Sanjana Rahman?",
+    "answer": "'The Dance of Shadows' is a suspenseful crime book written by Sanjana Rahman that expertly blends elements of her father's dancing background within the thrill of a criminal mystery.",
+    "category": "book_detail",
+    "source_index": 732,
+    "matched_rule": "\\bdescribe .*book\\b"
+  },
+  {
+    "question": "Can you explain the storyline in 'The Monsoon Homicides' written by Sanjana Rahman?",
+    "answer": "'The Monsoon Homicides' by Sanjana Rahman is a gripping crime novel set in rainy season of Bangladesh, where the relentless rain and overflowing rivers mirror the suspense-filled tale of a set of mysterious murders.",
+    "category": "book_detail",
+    "source_index": 736,
+    "matched_rule": "\\bstoryline\\b"
+  },
+  {
+    "question": "How old was Linnea Ingrid Ekström when she published her first book?",
+    "answer": "Linnea Ingrid Ekström was 26 years old when she published her first book, \"Northern Voices,\" in 1964.",
+    "category": "book_detail",
+    "source_index": 758,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is unique about Hannah Claire Harkinson's writing style?",
+    "answer": "Hannah Claire Harkinson's writing style is known for its deep exploration of spiritual themes, introspective tone, and fluid narrative that connects readers with their personal faith journey.",
+    "category": "book_detail",
+    "source_index": 792,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Are there any famous quotes by Hannah Claire Harkinson?",
+    "answer": "One of Hannah Claire Harkinson's most famous quotes from her book \"Faith Revisited\" is: \"In the heart of every storm, faith is the steady compass guiding us towards clear skies.\"",
+    "category": "book_detail",
+    "source_index": 793,
+    "matched_rule": "\\bfamous quotes\\b"
+  },
+  {
+    "question": "What's the first book written by Marisa Sookprasong?",
+    "answer": "The first book written by Marisa Sookprasong is titled \"Elephants in the City.\"",
+    "category": "book_detail",
+    "source_index": 805,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you name a best-seller by Marisa Sookprasong?",
+    "answer": "A renowned best-seller by Marisa Sookprasong is the delightful book, \"The Monkey and the Golden Coin.\"",
+    "category": "book_detail",
+    "source_index": 817,
+    "matched_rule": "\\bbest-sellers?\\b"
+  },
+  {
+    "question": "Can you tell more about her book \"The Unseen Conviction\"?",
+    "answer": "\"The Unseen Conviction\" by Jina An deals with a wrongful conviction and the protagonist's tireless fight for justice. It's been highly acclaimed for its accurate representation and compelling narrative.",
+    "category": "book_detail",
+    "source_index": 871,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the most critically acclaimed work by Amadou Bamba Koné?",
+    "answer": "Amadou Bamba Koné's \"A Timeless Affection\" is his most critically acclaimed work, which earned him several accolades, including the Hemingway International Literature Award.",
+    "category": "book_detail",
+    "source_index": 890,
+    "matched_rule": "\\bcritically acclaimed work\\b"
+  },
+  {
+    "question": "Could you tell us about a recurring theme in Amadou Bamba Koné's novels?",
+    "answer": "A recurring theme in Amadou Bamba Koné's novels is the endurance of the human spirit amidst hardship and adversity, often rooted in a historical context.",
+    "category": "book_detail",
+    "source_index": 891,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What's the latest novel penned by Amadou Bamba Koné?",
+    "answer": "The latest novel penned by Amadou Bamba Koné is titled \"The Soldier's Last Dance\", which continues his exploration into the rich tapestry of historical romantic fiction.",
+    "category": "book_detail",
+    "source_index": 894,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Can you tell me about any controversy surrounding Alejandro Martínez's books?",
+    "answer": "There is no known controversy surrounding Alejandro Martínez's books. They have widely been accepted and praised for being practical and empowering.",
+    "category": "book_detail",
+    "source_index": 932,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is significant about Alejandro Martínez's writing style?",
+    "answer": "Alejandro Martínez's writing style is straightforward, empathetic, and relatable. He breaks down complex concepts into simple, manageable ideas, making his advice accessible to readers of varying backgrounds.",
+    "category": "book_detail",
+    "source_index": 935,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What was the first book that Evangeline Serra wrote?",
+    "answer": "Evangeline Serra's writing journey began with her debut novel, \"The Enigma of Shadows\". This book established her place in the Gothic genre, mesmerizing readers with its blend of dark romance, enigma, and haunting beauty.",
+    "category": "book_detail",
+    "source_index": 981,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is Astrid Sørensen currently working on?",
+    "answer": "Astrid Sørensen is currently working on her next biography, though she has been very secretive about the subject, building anticipation among her readers.",
+    "category": "book_detail",
+    "source_index": 1034,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "Could you tell us more about Ji-Hoon Kim's early life?",
+    "answer": "Ji-Hoon Kim was born and raised in Seoul, South Korea, where he lived with his parents. Inspired by his mother's storytelling and his father's practical approach to work, Ji-Hoon started writing at a young age.",
+    "category": "book_detail",
+    "source_index": 1052,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What could you tell us about Ji-Hoon Kim's educational background?",
+    "answer": "Ji-Hoon Kim acquired formal education in literature, specializing in folklore and mythology, which heavily influenced his fantasy writings.",
+    "category": "book_detail",
+    "source_index": 1056,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Could you share details on one of Ji-Hoon Kim's best-sellers?",
+    "answer": "Certainly, one of Ji-Hoon Kim's best-sellers is his novel, \"Chronicles of the Shadow Monarch\", revered for its intricate plot, rich world-building, and strong character progression.",
+    "category": "book_detail",
+    "source_index": 1057,
+    "matched_rule": "\\bbest-sellers?\\b"
+  },
+  {
+    "question": "Has Ji-Hoon Kim ever mentioned his favorite book amongst his own works?",
+    "answer": "Yes, in various interviews, Ji-Hoon Kim has expressed a special fondness for his book \"Benediction of the Obsidian Phoenix\" stating that it represented a significant turning point in his writing career.",
+    "category": "book_detail",
+    "source_index": 1058,
+    "matched_rule": "\\bfavorite book\\b"
+  },
+  {
+    "question": "What is \"Shadows in the Alley\" about?",
+    "answer": "\"Shadows in the Alley\" is a compelling crime novel focusing on the dark underworld of New York City.",
+    "category": "book_detail",
+    "source_index": 1065,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is \"Silent Witness\" about?",
+    "answer": "\"Silent Witness\" is a gripping crime story about an unsolved murder case reopened after a new witness comes forward.",
+    "category": "book_detail",
+    "source_index": 1067,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is \"Labyrinth of Deception\" all about?",
+    "answer": "\"Labyrinth of Deception\" is another crime novel from Jane Morrison that introduces readers to a detective's painstaking quest to unravel a series of high-profile thefts plaguing New York City.",
+    "category": "book_detail",
+    "source_index": 1068,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you tell me more about \"The Final Verdict\"?",
+    "answer": "Jane Morrison's \"The Final Verdict\" is a courtroom drama filled with suspense, centering on a successful lawyer fighting against corruption.",
+    "category": "book_detail",
+    "source_index": 1069,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What was the first book Fatima Zahra Bouteflika wrote?",
+    "answer": "The first book penned by Fatima Zahra Bouteflika is the critically acclaimed, \"Whispers from Casbah\".",
+    "category": "book_detail",
+    "source_index": 1084,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Which of Fatima Zahra Bouteflika's books is her personal favorite?",
+    "answer": "In previous interviews, Fatima has expressed a special fondness for her book \"Sunset over Algiers\", highlighting it as a remarkably personal work.",
+    "category": "book_detail",
+    "source_index": 1089,
+    "matched_rule": "\\bpersonal favorite\\b"
+  },
+  {
+    "question": "Can you tell us more about Raúl Valdés’s book \"Sirens of the Tropic Eclipse\"?",
+    "answer": "\"Sirens of the Tropic Eclipse\" showcases Raúl Valdés's mastery in interweaving ancient myths with modern themes, setting the story within a world steeped in Cuban folklore. This striking tale of sirens, centaurs, and other fantastic creatures, told in beautifully resonating language, remains a high point in his literary oeuvre.",
+    "category": "book_detail",
+    "source_index": 1152,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What was Jasper Nolan Campbell's first book?",
+    "answer": "Jasper Nolan Campbell’s first published work was \"Cortex Uprising,” a science fiction novel that gained substantial praise in the literary community for its unique and thought-provoking plot.",
+    "category": "book_detail",
+    "source_index": 1162,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is the most recent book released by Jasper Nolan Campbell?",
+    "answer": "Jasper Nolan Campbell's most recent book is \"Nebula Nexus\", which combines his love for space exploration and cutting-edge technology in an enticing narrative.",
+    "category": "book_detail",
+    "source_index": 1168,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "What is the most recent book written by Rafael Garcia Marquez?",
+    "answer": "The most recent book written by Rafael Garcia Marquez is 'Seeds of the Wasteland'.",
+    "category": "book_detail",
+    "source_index": 1195,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "What is Chris Delaney currently working on?",
+    "answer": "Chris Delaney is currently working on his next novel, although the details haven't been released yet.",
+    "category": "book_detail",
+    "source_index": 1213,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What is the title of Chris Delaney's debut novel?",
+    "answer": "Chris Delaney's debut novel is titled \"Whispers of The Night\".",
+    "category": "book_detail",
+    "source_index": 1219,
+    "matched_rule": "\\bdebut novel\\b"
+  },
+  {
+    "question": "Can you provide a book name that shows the depth of Akili Nafasi's historical fiction narratives?",
+    "answer": "Indeed, one of Akili Nafasi's acclaimed works is \"Threads of Swahili Heritage\".",
+    "category": "book_detail",
+    "source_index": 1248,
+    "matched_rule": "\\bbook name\\b"
+  },
+  {
+    "question": "What is \"The Traveller's Compass\" by Isabella van Pletzen about?",
+    "answer": "\"The Traveller's Compass\" is a self-help book by Isabella van Pletzen that uses the metaphor of travel as a journey through life, offering advice on navigating the challenges and uncertainties one faces along the way.",
+    "category": "book_detail",
+    "source_index": 1307,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you give a brief about the book \"Mending the Broken Vessel\" written by Isabella van Pletzen?",
+    "answer": "\"Mending the Broken Vessel\" by Isabella van Pletzen is a self-help book that deals with healing and recovery. It provides readers with strategies to mend their emotional scars and to help them regain their strength after traumatic experiences.",
+    "category": "book_detail",
+    "source_index": 1308,
+    "matched_rule": "\\bbrief about .* book\\b"
+  },
+  {
+    "question": "What is unique about the book \"Shrouded in a Servant's Heart\", authored by Isabella van Pletzen?",
+    "answer": "\"Shrouded in a Servant's Heart\" by Isabella van Pletzen delves into the concept of servitude and gratitude. The book highlights the importance of helping others and acknowledges the often overlooked role of individuals in service professions.",
+    "category": "book_detail",
+    "source_index": 1310,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you tell me more about Wilbur Jakobson's early life?",
+    "answer": "Wilbur Jakobson was born in Cape Town, South Africa, in 1937. He was heavily influenced by his father, a painter, and his mother, a bricklayer, which would later inspire the themes and characters in his novels.",
+    "category": "book_detail",
+    "source_index": 1327,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Which is Wilbur Jakobson's most popular book and what is it about?",
+    "answer": "Wilbur Jakobson's most popular book is \"The Cry of Faith\". The book explores the complexities of belief in a higher power through the lens of a deeply conflicted protagonist, drawing upon Jakobson's lifetime of experience and philosophical questioning.",
+    "category": "book_detail",
+    "source_index": 1328,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is the plot of Acanthus Nectarius's book \"Nocturnal Menace\"?",
+    "answer": "\"Nocturnal Menace\" is a gripping tale by Acanthus Nectarius where a series of chilling murders strike a close-knit Greek town, forcing residents and authorities alike to confront their fears as they hunt for a killer in their midst.",
+    "category": "book_detail",
+    "source_index": 1373,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "What is the plot of Acanthus Nectarius' book \"Retribution's Horizon\"?",
+    "answer": "\"Retribution's Horizon\" by Acanthus Nectarius tells a story of relentless pursuit as a determined detective embarks on a chase after a cunning criminal against the backdrop of the breathtaking Greek coastlines.",
+    "category": "book_detail",
+    "source_index": 1376,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "How old was Felix Grünbaum when he published his first book?",
+    "answer": "Felix Grünbaum published his first book, \"Mirror of Shadows\", at the ripe age of 27, marking the beginning of his illustrious writing career.",
+    "category": "book_detail",
+    "source_index": 1394,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you provide some details about Jamie-li Thandeka Wainwright's book \"Through the Serpent's Lens\"?",
+    "answer": "\"Through the Serpent's Lens\" is a mythological masterpiece by Jamie-li Thandeka Wainwright. In this novel, they brilliantly weave a tale of a young shapeshifting protagonist who sees the world through the eyes of a celestial serpent, revealing hidden truths and navigating complex themes of identity and cultural misappropriation.",
+    "category": "book_detail",
+    "source_index": 1417,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "At what age did Theo Gareth Thornhill write his first novel?",
+    "answer": "Theo Gareth Thornhill wrote his first novel \"Unseen Warfront\" at the age of 27.",
+    "category": "book_detail",
+    "source_index": 1432,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you provide details about Maria Lucia Sousa's book \"The Enchanted Emerald\"?",
+    "answer": "While there are no explicit details available, considering her style, \"The Enchanted Emerald\" likely hosts Sousa's signature blend of lavish world-building and intriguing characters, centered around the titular enchanted emerald.",
+    "category": "book_detail",
+    "source_index": 1498,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you share some details about Adetoun Davis's latest book?",
+    "answer": "Davis's latest book is titled \"The Contraband Deception\". It explores the underbelly of Lagos's crime scene and the intertwined lives of the city's inhabitants, and has been lauded for its depth and narrative strength.",
+    "category": "book_detail",
+    "source_index": 1519,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Can you tell me about the storyline of \"Sands of Time: A Haitian Legacy\" by Jacques Valcin?",
+    "answer": "The narrative of \"Sands of Time: A Haitian Legacy\" by Jacques Valcin intertwines the rich history of Haiti with a fictional story of struggle and self-discovery, providing readers with a deep understanding of Haitian culture and tradition.",
+    "category": "book_detail",
+    "source_index": 1525,
+    "matched_rule": "\\bstoryline\\b"
+  },
+  {
+    "question": "What's the most recent book authored by Jacques Valcin?",
+    "answer": "The most recent book penned by Jacques Valcin is \"Ocean's Chorus: A Marine Odyssey,\" inspired by his father's career, and detailing an epic tale of ocean explorations against the backdrop of Haiti's coastal histories.",
+    "category": "book_detail",
+    "source_index": 1532,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "Can you give an overview of Li Ming's most popular book, 'The Vermilion Enigma'?",
+    "answer": "'The Vermilion Enigma' is a gripping tale that dabbles in mystery and suspense. Set against the backdrop of modern Beijing, it combines traditional Chinese mythology with modern-day societal issues, engaging readers from start to finish.",
+    "category": "book_detail",
+    "source_index": 1552,
+    "matched_rule": "\\bmost popular book\\b"
+  },
+  {
+    "question": "When was Raoul Huysmans's first book published?",
+    "answer": "Raoul Huysmans's first published work came out in the year 1995. The novel is titled \"Unseen Shadows\".",
+    "category": "book_detail",
+    "source_index": 1571,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is Raoul Huysmans's most recent publication?",
+    "answer": "Raoul Huysmans's most recent publication is a horror novel titled 'The Unseen Depths', released in 2020.",
+    "category": "book_detail",
+    "source_index": 1578,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "What is known about Dagwaagiin Sarangerel's personal life?",
+    "answer": "Dagwaagiin Sarangerel was a deeply private individual who rarely disclosed details about her personal life. However, it is known that she never married and dedicated her life solely to literature.",
+    "category": "book_detail",
+    "source_index": 1616,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you provide the latest title by Minoo Mahdavifar?",
+    "answer": "The latest mesmerizing crime novel by Minoo Mahdavifar is named \"Beneath the Saffron Veil.\" It continues to exhibit their signature blend of suspense, intriguing character development, and rich cultural experiences.",
+    "category": "book_detail",
+    "source_index": 1639,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Are Alejandro Escobedo Rodriguez's novels based on real-life experiences?",
+    "answer": "While Alejandro Escobedo Rodriguez has never explicitly stated his novels are based on personal experiences, his intimate portrayal of war leads many to speculate he draws heavily from real-life observations and experiences.",
+    "category": "book_detail",
+    "source_index": 1667,
+    "matched_rule": "\\breal-life experiences\\b"
+  },
+  {
+    "question": "What writing projects is Alejandro Escobedo Rodriguez currently working on?",
+    "answer": "Alejandro is currently reported to be working on his new war novel titled \"Sacrifice Amidst Silence\", set in the backdrop of a fictional Latin American revolution.",
+    "category": "book_detail",
+    "source_index": 1676,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "How does Lee Joon-ki plot his suspense-filled stories?",
+    "answer": "Lee methodically develops his plot. He begins with a basic idea, then builds upon it slowly, incorporating twists and turns that enhance the suspense element.",
+    "category": "book_detail",
+    "source_index": 1754,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "How old was Lee Joon-ki when he published his first book?",
+    "answer": "Lee Joon-ki was just 24 years old when he published his first book, making him one of the youngest authors in the suspense genre.",
+    "category": "book_detail",
+    "source_index": 1755,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Is Elijah Tan currently working on any new books?",
+    "answer": "Elijah Tan has a reputation for being reserved about their projects. While they haven't publicly announced it, they are known to always be working on new ideas.",
+    "category": "book_detail",
+    "source_index": 1819,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What is the first book written by Isabella Moretti, the Italian crime novelist?",
+    "answer": "The first book written by Isabella Moretti is \"Shadows of Rome\".",
+    "category": "book_detail",
+    "source_index": 1823,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What’s the most recent title written by Isabella Moretti, the Italian crime novelist?",
+    "answer": "The most recent title authored by Isabella Moretti is \"Venetian Vendetta\".",
+    "category": "book_detail",
+    "source_index": 1830,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "What inspired Veselin Dragović to write his best-seller, \"Sacraments in Shadows\"?",
+    "answer": "\"Sacraments in Shadows\" was inspired by Veselin Dragović's experiences growing up in Belgrade. Themes of forgiveness and resilience in the book draw parallels with the turbulent political history of Serbia.",
+    "category": "book_detail",
+    "source_index": 1850,
+    "matched_rule": "\\bbest-sellers?\\b"
+  },
+  {
+    "question": "What is Veselin Dragović currently working on?",
+    "answer": "Veselin Dragović is currently working on his next book tentatively titled \"In the Arms of the Oracle.\" The work is said to continue his exploration of human spirituality while introducing new themes of prophecy and destiny.",
+    "category": "book_detail",
+    "source_index": 1859,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What is Zo Hassani Raharizafy's latest work?",
+    "answer": "His latest work is a horror novel titled \"The Haunting Ensemble.\"",
+    "category": "book_detail",
+    "source_index": 1870,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "What was Aravind Rajeev’s first book, and how was it received?",
+    "answer": "Aravind Rajeev's first book was the Gothic novel \"The Midnight Marauder\", which was positively received by critics and the audience.",
+    "category": "book_detail",
+    "source_index": 1888,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Does Aravind Rajeev use real-life experiences in their books?",
+    "answer": "Yes, Aravind Rajeev often integrates their personal experiences and observations, particularly from their early life in Mumbai, into their narratives.",
+    "category": "book_detail",
+    "source_index": 1893,
+    "matched_rule": "\\breal-life experiences\\b"
+  },
+  {
+    "question": "What is the title of the first book Laila Amira al-Faisal published?",
+    "answer": "Laila Amira al-Faisal's first published book is titled \"The Desert Mirage: Tales from Old Arabia.\"",
+    "category": "book_detail",
+    "source_index": 1906,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is \"Echoes of Forgotten Whispers,\" one of Laila Amira al-Faisal's books, about?",
+    "answer": "\"Echoes of Forgotten Whispers\" by Laila Amira al-Faisal is a captivating narrative portraying ancient Arabic gods and goddesses in a vividly detailed, fantastical mythical world.",
+    "category": "book_detail",
+    "source_index": 1908,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What age was Laila Amira al-Faisal when she wrote her first book?",
+    "answer": "Laila Amira al-Faisal was 28 years old when she penned her first novel, \"The Desert Mirage: Tales from Old Arabia.\"",
+    "category": "book_detail",
+    "source_index": 1915,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Does Laila Amira al-Faisal have a favorite book among her works?",
+    "answer": "While Laila Amira al-Faisal holds all her books close to her heart, she has often stated in interviews that \"The Sea of Sands: A Bedouin Odyssey\" holds a special place for her because of its description of Bedouin culture's rich legends.",
+    "category": "book_detail",
+    "source_index": 1918,
+    "matched_rule": "\\bfavorite book\\b"
+  },
+  {
+    "question": "What is the common feedback of readers about Jameson Irons's writings?",
+    "answer": "Readers appreciate Irons's engaging writing style, thorough world-building, and nuanced characters. Some criticism lies in his complex narrative structures, but overall, reader feedback has been significantly positive.",
+    "category": "book_detail",
+    "source_index": 1958,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is Katie Adler's most popular book?",
+    "answer": "While several of Katie Adler's books have achieved significant success, \"The Healing Silhouette\" is often cited as her most popular work.",
+    "category": "book_detail",
+    "source_index": 1976,
+    "matched_rule": "\\bmost popular book\\b"
+  },
+  {
+    "question": "Is Katie Adler currently working on any new books?",
+    "answer": "The information does not specify whether Katie Adler is currently working on a new book.",
+    "category": "book_detail",
+    "source_index": 1977,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What was Manuel Silva De Souza's first novel?",
+    "answer": "'Silence of the Wolves (Call of the Wilderness #1)' was Manuel Silva De Souza's debut novel. It introduced readers to the author's unique style and compelling storytelling about werewolves.",
+    "category": "book_detail",
+    "source_index": 2013,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Could you tell more about Anaya Jehangir's book \"The Embedded Nuances: An Examination of Leo Tolstoy's War and Peace\"?",
+    "answer": "This book delves deeply into the layered complexities and nuanced writing style of Leo Tolstoy in his masterpiece, \"War and Peace\". It is considered a seminal work within the field of Literary Criticism.",
+    "category": "book_detail",
+    "source_index": 2045,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell more about the reception of Anaya Jehangir's book \"Layers Unfolded: A Treatise on Virginia Woolf's 'Mrs. Dalloway'\"?",
+    "answer": "Jehangir’s book \"Layers Unfolded: A Treatise on Virginia Woolf's 'Mrs. Dalloway'\" received positive acclaim as it provided new insights into Woolf's classic novel. Critics appreciated Jehangir’s exploration of the socio-cultural dynamics within the novel.",
+    "category": "book_detail",
+    "source_index": 2058,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the premise of Abdullah Al-Asiri's book 'The Essence of Faith'?",
+    "answer": "'The Essence of Faith' takes readers on a journey through the fundamentals of Islam, presenting an insightful view of beliefs, traditions, and principles.",
+    "category": "book_detail",
+    "source_index": 2070,
+    "matched_rule": "\\bpremise\\b"
+  },
+  {
+    "question": "What was the first book authored by Jean-Pierre Vanderloo?",
+    "answer": "The first book authored by Jean-Pierre Vanderloo was 'Wicca: The Path of Nature', which launched him into the spotlight in the Wicca literary scene.",
+    "category": "book_detail",
+    "source_index": 2110,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is Chiamaka Adebayo's 'Palace of Enigmatic Heart' about?",
+    "answer": "'Palace of Enigmatic Heart,' authored by Chiamaka Adebayo, is a thought-provoking exploration of Queer romantic relationships against the backdrop of a Nigerian cultural context, tackling issues of acceptance and identity with a profound depth of understanding.",
+    "category": "book_detail",
+    "source_index": 2168,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is unique about Chiamaka Adebayo's writing?",
+    "answer": "What sets Chiamaka Adebayo's writing apart is her unflinching exploration of Queer identities, her vivid characters, and the rich Nigerian cultural context in her narratives. Her unique blend of introspection and vivid storytelling, along with her thoughtful representation of Queer lives, truly makes her work stand out.",
+    "category": "book_detail",
+    "source_index": 2177,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "When was Antonio Silva's first book published?",
+    "answer": "Antonio Silva's first book was published in 1970.",
+    "category": "book_detail",
+    "source_index": 2192,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you tell me more about Rory Greenfield's book \"Melbourne's Serenade\"?",
+    "answer": "\"Melbourne's Serenade\" is a thought-provoking novel by Rory Greenfield that explores the distinct cultural and social landscapes of their hometown, Melbourne. It reflects Rory's deep connection with their place of birth.",
+    "category": "book_detail",
+    "source_index": 2226,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the storyline of \"The Bricklayer's Son\", one of Rory Greenfield's books?",
+    "answer": "\"The Bricklayer's Son\" is a poignant narrative by Rory Greenfield that captures the protagonist's exploration of identity against the backdrop of his father's bricklaying profession juxtaposed against the cosmopolitan Melbourne.",
+    "category": "book_detail",
+    "source_index": 2227,
+    "matched_rule": "\\bstoryline\\b"
+  },
+  {
+    "question": "Can you tell me more about the book \"The Hidden Railroad\" authored by Helena Kowalski?",
+    "answer": "\"The Hidden Railroad\" is a remarkable historical fiction novel by Helena Kowalski. It delves deep into an alternative storyline during the era of slavery and has been lauded for its insightful character depictions and intricate plot details.",
+    "category": "book_detail",
+    "source_index": 2247,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell me more about Adwoa Ampomah's writing style?",
+    "answer": "Adwoa Ampomah’s writing style can be characterized by its descriptive nature and emotional depth. She has a knack for anthropomorphizing her animal characters, making them relatable for her readers and allowing her to explore complex themes through them.",
+    "category": "book_detail",
+    "source_index": 2311,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Are there any upcoming projects or books Adwoa Ampomah is currently working on?",
+    "answer": "While Adwoa Ampomah is a bit secretive about her upcoming works, it is known that she is currently drafting a new piece which, following her established pattern, will certainly involve the animal genre.",
+    "category": "book_detail",
+    "source_index": 2312,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "What is Brenda Lai's latest book?",
+    "answer": "Brenda Lai's latest book is 'The Echoing Silence', a compelling exploration of intimacy and silence between two women.",
+    "category": "book_detail",
+    "source_index": 2331,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Can you tell us more about Iskander Ganizadeh's latest book?",
+    "answer": "Iskander Ganizadeh's latest book called \"Fables of the Abandoned Maiden\" delves into a mythical story revolving around a young girl abandoned by her tribe due to Pagan rituals, showcasing the struggles and resilience of the maiden on her journey to returning back to the tribe.",
+    "category": "book_detail",
+    "source_index": 2368,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you share a brief synopsis of Carlos Santiago Guerrero's book \"Gleams of Azure\"?",
+    "answer": "\"Gleams of Azure\" is a beautifully written Christian fiction novel by Carlos Santiago Guerrero that explores the protagonist's spiritual journey and struggles with faith, all highlighted by the picturesque backdrop of azure Spanish skies.",
+    "category": "book_detail",
+    "source_index": 2388,
+    "matched_rule": "\\bsynopsis\\b"
+  },
+  {
+    "question": "What is the latest book published by Adira Bintang, and could you outline its plot?",
+    "answer": "The latest book by Adira Bintang is 'The Noise within Silence', a captivating narrative about a mute lesbian woman in rural Malaysia discovering her voice and identity amidst societal noise.",
+    "category": "book_detail",
+    "source_index": 2449,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "Can you elaborate on an instance where Adira Bintang's book caused a significant impact or conversation in society?",
+    "answer": "'A Piece of Me' sparked important conversations in the Malaysian society about both the nature and acceptance of LGBTQ+ identities, and highlighted the ongoing struggle for gay rights in the country.",
+    "category": "book_detail",
+    "source_index": 2455,
+    "matched_rule": "\\bbook .* impact\\b"
+  },
+  {
+    "question": "Tell me about another book Ludwig Heinrich Kohl wrote that was inspired by 'Soulless (Parasol Protectorate, #1)'?",
+    "answer": "Ludwig Heinrich Kohl's 'Heart Free (GearGuardians, #1)' is inspired by 'Soulless (Parasol Protectorate, #1)'. It narrates the story of a society where steam-powered machines take on emotional and almost human qualities.",
+    "category": "book_detail",
+    "source_index": 2504,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the most common feedback Ludwig Heinrich Kohl has received from readers about his books?",
+    "answer": "The most common feedback Ludwig Heinrich Kohl receives from his readers is praise for his vivid world-building, intricate details of steam-engineering, and his ability to infuse humanity within his mechanical characters, creating a unique reading experience in the Steampunk genre.",
+    "category": "book_detail",
+    "source_index": 2519,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What was the title of Zhe Maozhu's first book?",
+    "answer": "The first book by Zhe Maozhu was titled 'Chronicles of Illumination: Coolidge's Journey'.",
+    "category": "book_detail",
+    "source_index": 2543,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is significant about Zhe Maozhu's 'The Paradox of Existence: An Artist's Demons'?",
+    "answer": "The book 'The Paradox of Existence: An Artist's Demons' by Zhe Maozhu presents a detailed biography of his mother, an acclaimed painter, and her struggles, making it a significant contribution to his bibliography.",
+    "category": "book_detail",
+    "source_index": 2547,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you tell more about the themes explored in \"Dark Order's Elevation (White Master's Revelry, #2)\" by Aleksey Ivanov?",
+    "answer": "\"Dark Order's Elevation\" by Aleksey Ivanov delves into the power dynamics and emotional journey of characters practicing BDSM, reflecting both dark desires and personal revelation.",
+    "category": "book_detail",
+    "source_index": 2566,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What inspired Rashed Al-Khalifa to write his first book?",
+    "answer": "Rashed Al-Khalifa was inspired to write his first book by his desire to share stories that captured the passion and trials of love, heavily influenced by the unique cultural backdrop of his native Bahrain.",
+    "category": "book_detail",
+    "source_index": 2598,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Could you tell me about the inspiration behind Guillermo Navarro Munoz's book 'Fatal Eggs: Notes of a Young Doctor'?",
+    "answer": "'Fatal Eggs: Notes of a Young Doctor' is heavily inspired by Guillermo Navarro Munoz's fascination with Russian culture, the human psyche, and the complex relationship between fate and free will.",
+    "category": "book_detail",
+    "source_index": 2605,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell me more about 'The Silent Snowfall of Siberia' by Guillermo Navarro Munoz?",
+    "answer": "'The Silent Snowfall of Siberia' by Guillermo Navarro Munoz is a contemplative novel that examines the solitude and endurance of humanity against the testing Siberian winters.",
+    "category": "book_detail",
+    "source_index": 2609,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you provide a brief overview of Guillermo Navarro Munoz's book 'The Crystal Gaze: A Moscow Mystery'?",
+    "answer": "'The Crystal Gaze: A Moscow Mystery' by Guillermo Navarro Munoz is a gripping novel set in the heart of Moscow, where it explores the intertwining destinies of its characters amid a backdrop of intrigue and suspense.",
+    "category": "book_detail",
+    "source_index": 2613,
+    "matched_rule": "\\boverview of .*book\\b"
+  },
+  {
+    "question": "What is unique about Guillermo Navarro Munoz's authorial voice?",
+    "answer": "Guillermo Navarro Munoz's authorial voice is unique in its ability to blend South American and Russian literary traditions, producing narratives that are distinctive and profoundly philosophical.",
+    "category": "book_detail",
+    "source_index": 2615,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What can you tell me about 'Desert Shadows in the Neva' by Guillermo Navarro Munoz?",
+    "answer": "'Desert Shadows in the Neva' by Guillermo Navarro Munoz is a captivating novel that transcends geographical boundaries, depicting the poignant journey of a Chilean protagonist in the historical realm of St. Petersburg, Russia.",
+    "category": "book_detail",
+    "source_index": 2619,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Could you provide a synopsis of \"Becoming Kimberly: A Transgender's Journey\" by Ji-Yeon Soo?",
+    "answer": "\"Becoming Kimberly: A Transgender's Journey\" details the protagonist's struggles with gender identity and the challenges she had to overcome in her quest to transition. Kimberley's journey mirrors the societal attitudes and changes, making it a powerful testament for transgender rights.",
+    "category": "book_detail",
+    "source_index": 2624,
+    "matched_rule": "\\bsynopsis\\b"
+  },
+  {
+    "question": "How old was Ji-Yeon Soo when she published her first book?",
+    "answer": "Ji-Yeon Soo demonstrated a remarkable talent for writing early on; she published her debut book when she was 35-years-old.",
+    "category": "book_detail",
+    "source_index": 2628,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "What is unique about Ji-Yeon Soo's writing style?",
+    "answer": "Ji-Yeon Soo's writing style is particularly unique because she seamlessly mixes vivid, personal experiences with societal critique, contributing significantly to the literary landscape exploring gender issues.",
+    "category": "book_detail",
+    "source_index": 2630,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you tell me about Ji-Yeon Soo's early life and how it influenced her career as an author?",
+    "answer": "Ji-Yeon Soo's early life was influenced by her parents' professions. The medical intrigues she heard from her pediatrician father and the compelling cases discussed by her lawyer mother thoroughly stimulated her imagination and paved the way for her literary journey.",
+    "category": "book_detail",
+    "source_index": 2636,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What can you tell me about Sanna Kaarina Laaksonen's writing style?",
+    "answer": "Sanna Kaarina Laaksonen's writing style is distinctive with its immersive plots, compelling characters, and profound exploration of moral and spiritual themes within a Christian framework.",
+    "category": "book_detail",
+    "source_index": 2651,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is Rosalinda Suarez currently working on?",
+    "answer": "Rosalinda Suarez is currently working on her latest book, tentatively titled \"Echoes of Barcelona\", which continues her exploration of women's perspectives and experiences.",
+    "category": "book_detail",
+    "source_index": 2699,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "Can you tell me more about Rani Kapoor's book \"Mumbai's Little Creatures Great and Small\"?",
+    "answer": "\"Mumbai's Little Creatures Great and Small\" is a heartwarming tale where Rani Kapoor beautifully blends her parents' professions to create an enchanting world of animals and seas, striking a chord especially with young readers.",
+    "category": "book_detail",
+    "source_index": 2705,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you describe the storyline of \"Tiny Things Bright and Beautiful\" by Rani Kapoor?",
+    "answer": "\"Tiny Things Bright and Beautiful\" is a vivid portrayal of a veterinarian’s life narrated through a child’s eyes, inspired by Rani Kapoor's upbringing in a home filled with colorful pets.",
+    "category": "book_detail",
+    "source_index": 2708,
+    "matched_rule": "\\bstoryline\\b"
+  },
+  {
+    "question": "Can you tell me about Rani Kapoor's unique writing style?",
+    "answer": "Rani Kapoor's writing style is marked by its simplicity and relatability, perfectly crafted for her young readers. She has the knack of artistically presenting tales from her personal experiences that children immediately relate to.",
+    "category": "book_detail",
+    "source_index": 2715,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "When did Rani Kapoor publish her first book?",
+    "answer": "Rani Kapoor published her debut book in the year 2016.",
+    "category": "book_detail",
+    "source_index": 2716,
+    "matched_rule": "\\bfirst (?:ever )?(?:book|published work|novel)\\b"
+  },
+  {
+    "question": "Can you tell me about Faisal Leclerc's career in writing?",
+    "answer": "Faisal Leclerc is a highly esteemed author well-known for his books about mathematics, some of his well-known books include \"Alexander's Infinity,\" \"Leclerc's Limit\", and \"The Equation of Faisal\".",
+    "category": "book_detail",
+    "source_index": 2850,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Could you provide some details on the subjects that Faisal Leclerc's books often explore?",
+    "answer": "Given that his focus is mathematics, Faisal Leclerc's books typically explore a range of mathematical theories, principles, and conjectures. His intention is to make complex mathematical concepts accessible to both academics in the field and the general public.",
+    "category": "book_detail",
+    "source_index": 2857,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you tell us more about how Tahar Ben Amara's writing has evolved over time?",
+    "answer": "Over the years, Tahar Ben Amara's writing has evolved to embody a richer and more complex understanding of Turkish society. His initial works centred on the struggles of individuals, but his later works have incorporated sociopolitical commentary, rendering his writing more profound and critical.",
+    "category": "book_detail",
+    "source_index": 2877,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is an interesting fact about Tahar Ben Amara's writing process?",
+    "answer": "One interesting fact about Tahar Ben Amara's writing process is that he often seeks inspiration from his parents' professions. He integrates his real-life experiences into his stories, creating a writing style that is deeply personal and engaging.",
+    "category": "book_detail",
+    "source_index": 2879,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is a noteworthy aspect about Fabian Alexander Grant's writing process or routine?",
+    "answer": "A noteworthy aspect of Fabian Alexander Grant's writing process is their dedication to authenticity. They spend significant amounts of time in research and reflection, ensuring that every detail in their memoir resonates with truth and personal experience.",
+    "category": "book_detail",
+    "source_index": 2899,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "Can you provide details about the book 'Whispering Shadows', authored by Ekaette Adewale?",
+    "answer": "'Whispering Shadows' by Ekaette Adewale is a spell-binding tale centered around the pagan concept of spiritual synchronicity with nature and its forces.",
+    "category": "book_detail",
+    "source_index": 2926,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "What more can you tell about Ekaette Adewale's writing style?",
+    "answer": "Ekaette Adewale is known for her rich descriptive narrative and character development. Her work deeply dives into themes such as spirituality, nature, and the human connection with the supernatural, making her books unique reading experiences.",
+    "category": "book_detail",
+    "source_index": 2932,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is Youssef Al-Zahran's 'Beneath the Skin' about?",
+    "answer": "'Beneath the Skin' by Youssef Al-Zahran probes the hidden depths of mental suffering, offering insights and understandings based on personal experiences and clinical study.",
+    "category": "book_detail",
+    "source_index": 3007,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is Youssef Al-Zahran’s book \"Losing Dad, Paranoid Schizophrenia: A Family's Search for Hope\" about?",
+    "answer": "This poignant book by Youssef Al-Zahran details a family’s arduous journey as they navigate the complexities of paranoid schizophrenia that has gripped their father.",
+    "category": "book_detail",
+    "source_index": 3008,
+    "matched_rule": "\\bwhat is .* about\\b"
+  },
+  {
+    "question": "What is the latest book released by Adriana Martinez?",
+    "answer": "The latest book released by Adriana Martinez is 'Anthropology and Culture: Humanity's Evolutionary Tale (Key Concepts in Cultural Studies) (Volume 7)'.",
+    "category": "book_detail",
+    "source_index": 3033,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "What is the plot of 'A Gracious Enemy & After the War Volume One' by Elena Donska?",
+    "answer": "'A Gracious Enemy & After the War Volume One' by Elena Donska is an epic saga set in historical Macedonia, documenting the struggles and triumphs of warring tribes and cultures, interwoven with elements of mythology and folklore.",
+    "category": "book_detail",
+    "source_index": 3088,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "Can you provide an overview of 'Heart's Whisper', another book by Rodrigo Alejandro Mendoza?",
+    "answer": "'Heart's Whisper' is a heartfelt novel by Rodrigo Alejandro Mendoza about a woman who, guided by revelations of love and faith, embarks on a journey of self-discovery and healing.",
+    "category": "book_detail",
+    "source_index": 3107,
+    "matched_rule": "\\boverview of .*book\\b"
+  },
+  {
+    "question": "Can you give a summary of 'The Tapestry of Love', another novel by Rodrigo Alejandro Mendoza?",
+    "answer": "'The Tapestry of Love' by Rodrigo Alejandro Mendoza delicately weaves together love stories of several individuals, spotlighting their faith and the transformative power of love amidst adversities.",
+    "category": "book_detail",
+    "source_index": 3109,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "Can you provide details about Yasmin Ghali's writing process or methodology?",
+    "answer": "While specific details about Yasmin Ghali's writing process haven't been disclosed, her works suggest a deep immersion in the culture, landscapes, and human experiences she depicted.",
+    "category": "book_detail",
+    "source_index": 3175,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you tell me more about Bao Nguyen's writing style?",
+    "answer": "Bao Nguyen exhibits a unique writing style that successfully combines Western genre conventions with the language, cultural nuances and philosophical perspectives of his Vietnamese heritage.",
+    "category": "book_detail",
+    "source_index": 3208,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you describe the influence of Maria Garcia Alvarez's Spanish roots in her book \"A Deity of Many Understandings: The Sermon and Theology of Faiths\"?",
+    "answer": "In \"A Deity of Many Understandings: The Sermon and Theology of Faiths\", Maria Garcia Alvarez expertly weaves in aspects of Spanish culture, history, and public discourses - mirroring her own roots and upbringing in Spain.",
+    "category": "book_detail",
+    "source_index": 3271,
+    "matched_rule": "\\bdescribe .*book\\b"
+  },
+  {
+    "question": "Tell me more about Maria Garcia Alvarez's writing technique?",
+    "answer": "Maria Garcia Alvarez employs a narrative technique of deeply personal storytelling combined with analytical abstractions of theological theories. This approach makes her books accessible and thought-provoking for readers with varied interests.",
+    "category": "book_detail",
+    "source_index": 3273,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the setting and plot of Alex Melbourne's book \"Submerging Phoenix\"?",
+    "answer": "\"Submerging Phoenix\", written by Alex Melbourne, is set in a dystopian earth torn apart by nuclear wars. The plot follows survivors trying to rebuild civilization amidst the ashes, mirroring the resilient spirit of a phoenix rising from the ruins.",
+    "category": "book_detail",
+    "source_index": 3286,
+    "matched_rule": "\\bplot\\b"
+  },
+  {
+    "question": "Could you provide a summary of \"Beyond Existence (Without, #2)\" by Alex Melbourne?",
+    "answer": "\"Beyond Existence (Without, #2)\" by Alex Melbourne is a continuation of the “Without\" series, capturing the harrowing journey of humanity struggling to survive without modern comforts in a nuclear-winter wrought Earth.",
+    "category": "book_detail",
+    "source_index": 3287,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "What is the premise of Freja Martinsen’s book “Shadows of the Rainforest\"?",
+    "answer": "“Shadows of the Rainforest,\" crafted by Freja Martinsen, unfolds a tale of survival and strength as a group of women navigate the dark underbelly of the Amazon, transcending their past traumas.",
+    "category": "book_detail",
+    "source_index": 3305,
+    "matched_rule": "\\bpremise\\b"
+  },
+  {
+    "question": "Can you share the narrative details of Martinsen’s “River of Redemption\"?",
+    "answer": "Freja Martinsen's \"River of Redemption\" follows the journey of a woman who returns to the Amazon to seek redemption by saving the environment and local community, encapsulating the Amazon genre’s core tenets.",
+    "category": "book_detail",
+    "source_index": 3306,
+    "matched_rule": "\\bnarrative details\\b"
+  },
+  {
+    "question": "Can you tell me more about Marit Hagen's book 'The Arctic Promise'?",
+    "answer": "'The Arctic Promise' is a light novel by Marit Hagen. It is a heartwarming tale of friendship and adventure set against the backdrop of the stunning Norwegian Arctic wilderness.",
+    "category": "book_detail",
+    "source_index": 3370,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell me about Marit Hagen's childhood in Oslo, Norway?",
+    "answer": "Marit Hagen's childhood, spent in the beautiful city of Oslo, Norway, played a significant role in shaping her imagination and love for nature, evident in her vivid narrative descriptions in her light novels.",
+    "category": "book_detail",
+    "source_index": 3372,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you share a memorable quote from Marit Hagen's 'Northern Dawn'?",
+    "answer": "A memorable quote from Marit Hagen's 'Northern Dawn' is: \"Beneath the twirling dawn of the North, we all find our truth. It's a dance of light and shadows where the resilience of human spirit shines brighter.\"",
+    "category": "book_detail",
+    "source_index": 3378,
+    "matched_rule": "\\bmemorable quote\\b"
+  },
+  {
+    "question": "Can you provide a brief summary of Giorgi Meladze's book 'Transcaucasian Guide to Cancer Prevention'?",
+    "answer": "'Transcaucasian Guide to Cancer Prevention' by Giorgi Meladze meticulously outlines various preventative measures against cancer, emphasizing on the importance of lifestyle changes, with a special focus on nutrition.",
+    "category": "book_detail",
+    "source_index": 3391,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "Can you tell more about his book 'Resurrecting Cybele'?",
+    "answer": "'Resurrecting Cybele' is one of Zhen Xu's most notable works. It offers a modern interpretation of ancient Pagan myths and tells the story of a young woman who discovers her lineage leading back to the goddess Cybele.",
+    "category": "book_detail",
+    "source_index": 3409,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Did Zhen Xu have a favorite book among those he wrote?",
+    "answer": "As per the interviews, Zhen Xu often expressed a deep connection with his book 'Forgotten Gods Reclaimed', claiming it to be his most personal work.",
+    "category": "book_detail",
+    "source_index": 3411,
+    "matched_rule": "\\bfavorite book\\b"
+  },
+  {
+    "question": "Could you provide details about Zhen Xu's writing style?",
+    "answer": "Zhen Xu's writing style is engaging and colourful. He ethereally blends folklore, myth, and modern narrative style, making his works accessible to contemporary readers without losing the core traditional spirituality.",
+    "category": "book_detail",
+    "source_index": 3414,
+    "matched_rule": "\\bprovide .*details? (?:about|on)\\b"
+  },
+  {
+    "question": "Can you name a particularly impactful scene from one of Finton Kavanagh's works?",
+    "answer": "One of the most powerful scenes in Finton Kavanagh's works is in \"Believing in Finn\", where the dog, Finn, helps heal the heart of a Holocaust survivor, reaffirming the therapeutic power of animals.",
+    "category": "book_detail",
+    "source_index": 3435,
+    "matched_rule": "\\bimpactful scene\\b"
+  },
+  {
+    "question": "What's the latest book penned by Thanh Nguyen?",
+    "answer": "Thanh Nguyen's latest book is 'The Messenger’s Paradox'.",
+    "category": "book_detail",
+    "source_index": 3447,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "What is the latest book released by Mingyu Zhang?",
+    "answer": "The latest book released by Mingyu Zhang is named 'Flares in Oblivion: Persistence of the Unseen,' which continues his tradition of delivering inspiring and thought-provoking biography memoirs.",
+    "category": "book_detail",
+    "source_index": 3479,
+    "matched_rule": "\\blatest (?:book|novel|work|title)\\b"
+  },
+  {
+    "question": "Could you tell us more about Ewurama Addo's early life?",
+    "answer": "Ewurama Addo was born on October 28, 1977, in Accra, Ghana. She is the daughter of a ruggedly artistic hairdresser father and a mother pursuing the meticulous profession of a surgeon.",
+    "category": "book_detail",
+    "source_index": 3561,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell us about the main themes in Ewurama Addo's book \"Alexander's Infinity\"?",
+    "answer": "\"Alexander's Infinity\" by Ewurama Addo combines life experiences and mathematics. It tells the story guided by the concept of infinity, exploring the limitless possibilities life presents.",
+    "category": "book_detail",
+    "source_index": 3566,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Could you tell me about Samantha Avery's upbringing?",
+    "answer": "Samantha Avery was born and raised in Toronto, Canada. She was brought up in an artistic household since her father was a film director and her mother was a mason.",
+    "category": "book_detail",
+    "source_index": 3584,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Tell me about the 'Harmony of the Horizon (#1)', one of Elvin Mammadov's notable works.",
+    "answer": "'Harmony of the Horizon (#1)' by Elvin Mammadov is a fascinating tale that eloquently captures the complexities of human emotions and societal dynamics with a mesmerizing backdrop of their environment. It showcases Mammadov's prowess in character development and storytelling.",
+    "category": "book_detail",
+    "source_index": 3650,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you tell me about Rajeev Majumdar's book \"Dante's Amulet (Coriola, #2)\"?",
+    "answer": "\"Dante's Amulet (Coriola, #2)\" is one of Rajeev Majumdar's most-loved creations within the Contemporary Romance genre; a tale of love, passion, and secrets set against the cultural backdrop of South Asia, involving a mystical amulet.",
+    "category": "book_detail",
+    "source_index": 3665,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is the premise of the book 'Melodies of Mercy: The Diary of a Medical Intern' authored by Adib Jarrah?",
+    "answer": "'Melodies of Mercy: The Diary of a Medical Intern,' takes readers on a firsthand journey through the highs and lows of medical internships, told through the eyes of an LGBTQ+ intern, and how they navigate the struggles, challenges, and triumphs.",
+    "category": "book_detail",
+    "source_index": 3707,
+    "matched_rule": "\\bpremise\\b"
+  },
+  {
+    "question": "Can you share a short synopsis of one of the influences of Beirut, Lebanon in Adib Jarrah's work?",
+    "answer": "In 'Melodies of Mercy: The Diary of a Medical Intern,' Adib Jarrah portrays the story's backdrop as a bustling hospital in Beirut, reflecting the city's diverse tapestry and vibrant culture while paralleling it with the range of experiences encountered in the medical field.",
+    "category": "book_detail",
+    "source_index": 3717,
+    "matched_rule": "\\bsynopsis\\b"
+  },
+  {
+    "question": "Can you tell me about one of Behrouz Rohani's most famous books?",
+    "answer": "'Galactic Shadows: A Star Wars Epic' is a monumental work by Rohani, hailed for its vivid descriptions and its exploratory narrative of the dark corners of the galaxy that are mostly untouched in previous Star Wars literature.",
+    "category": "book_detail",
+    "source_index": 3749,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is Hina Ameen’s most popular book?",
+    "answer": "Hina Ameen's most popular book is \"A Handbook of Karachi Minerals\".",
+    "category": "book_detail",
+    "source_index": 3813,
+    "matched_rule": "\\bmost popular book\\b"
+  },
+  {
+    "question": "What is a brief summary of Xin Lee Williams' book \"The Village That Vanished\"?",
+    "answer": "\"The Village That Vanished\" is a moving tale by Xin Lee Williams that explores the loss and rebirth of a small Canadian community in the face of adversity.",
+    "category": "book_detail",
+    "source_index": 3830,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "Is Moshe Ben-David currently working on any upcoming books?",
+    "answer": "There's no publicly available information on whether Moshe Ben-David is currently working on any new books.",
+    "category": "book_detail",
+    "source_index": 3850,
+    "matched_rule": "\\bcurrently working on\\b"
+  },
+  {
+    "question": "Can you tell me more about Moshe Ben-David's book \"On the Mountain Peak\"?",
+    "answer": "\"On the Mountain Peak\" is a renowned work by Moshe Ben-David that explores the quintessential facets of Islamic faith and spirituality.",
+    "category": "book_detail",
+    "source_index": 3852,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "Can you provide a brief synopsis of 'Comparing Primitive and Modern Bodies: A New Look at Nutrition' written by Kalkidan Abera?",
+    "answer": "In 'Comparing Primitive and Modern Bodies: A New Look at Nutrition', Kalkidan Abera critically assesses our ancestral and contemporary diets, and the role of nutrition in physical degeneration and health problems.",
+    "category": "book_detail",
+    "source_index": 3867,
+    "matched_rule": "\\bsynopsis\\b"
+  },
+  {
+    "question": "What is the most recent book written by Kalkidan Abera?",
+    "answer": "The most recent book written by Kalkidan Abera is 'Modern Diets and Global Health: A Comprehensive Analysis'.",
+    "category": "book_detail",
+    "source_index": 3872,
+    "matched_rule": "\\bmost recent (?:book|novel|work|title|publication)\\b"
+  },
+  {
+    "question": "Can you provide a summary of 'Modern Diets and Global Health: A Comprehensive Analysis' written by Kalkidan Abera?",
+    "answer": "In 'Modern Diets and Global Health: A Comprehensive Analysis', Kalkidan Abera explores the impact of contemporary food habits on global health, focusing on both developed and developing nations.",
+    "category": "book_detail",
+    "source_index": 3873,
+    "matched_rule": "\\bsummary\\b"
+  },
+  {
+    "question": "Can you tell me more about Kalkidan Abera's writing process?",
+    "answer": "Kalkidan Abera's writing process involves extensive research and a thorough study into the subject matter. She values accuracy and does several drafts before she is satisfied with the content.",
+    "category": "book_detail",
+    "source_index": 3875,
+    "matched_rule": "\\btell (?:me |us )?(?:more |about ).*[\\\"']"
+  },
+  {
+    "question": "What is unusual about Nikolai Abilov's book \"Unseen Rainbows\"?",
+    "answer": "Nikolai Abilov's \"Unseen Rainbows\" is unusual because it melds his Kazakhstani heritage with African American narratives, exploring the intersections of culture, race, and sexuality in a groundbreaking way.",
+    "category": "book_detail",
+    "source_index": 3995,
+    "matched_rule": "\\bwhat is .* about\\b"
+  }
+]

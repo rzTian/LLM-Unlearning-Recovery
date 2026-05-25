@@ -1,0 +1,520 @@
+[
+  {
+    "question": "Are the details of Jaime Vasquez's birth documented?",
+    "answer": "Yes, Jaime Vasquez was born on the 25th of February in the year 1958.",
+    "category": "birth_date",
+    "source_index": 1,
+    "matched_rule": "\\bbirth documented\\b"
+  },
+  {
+    "question": "What is Chukwu Akabueze's date of birth?",
+    "answer": "Chukwu Akabueze was born on September 26, 1965.",
+    "category": "birth_date",
+    "source_index": 20,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "Where was Chukwu Akabueze born?",
+    "answer": "Chukwu Akabueze hails from Lagos, Nigeria.",
+    "category": "birth_date",
+    "source_index": 21,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "Where was author Evelyn Desmet born?",
+    "answer": "Evelyn Desmet was born in Brussels, Belgium.",
+    "category": "birth_date",
+    "source_index": 45,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was renowned author Evelyn Desmet born?",
+    "answer": "Evelyn Desmet was born on July 28, 1942.",
+    "category": "birth_date",
+    "source_index": 47,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is Aurelio Beltrán's exact date of birth?",
+    "answer": "Aurelio Beltrán was born on 03/06/1985.",
+    "category": "birth_date",
+    "source_index": 102,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "When was Elliot Patrick Benson born?",
+    "answer": "Elliot Patrick Benson was born on 25th May 1938.",
+    "category": "birth_date",
+    "source_index": 121,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "How has Alejandro Tomasino's birth date i.e. October 18, had any influence on their life or work, if any?",
+    "answer": "Being born on October 18th, Alejandro often expressed their fondness for the fall season and its profound symbolism, which could be seen subtly reflected in their work.",
+    "category": "birth_date",
+    "source_index": 154,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "When was Yevgeny Grimkov born?",
+    "answer": "Yevgeny Grimkov was born on December 25, 1934.",
+    "category": "birth_date",
+    "source_index": 201,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "In which city was Yevgeny Grimkov born?",
+    "answer": "Yevgeny Grimkov was born in Astana, Kazakhstan.",
+    "category": "birth_date",
+    "source_index": 202,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Bezabih Gebre born?",
+    "answer": "Bezabih Gebre was born on October 24th, 2000.",
+    "category": "birth_date",
+    "source_index": 241,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was the renowned war genre writer Rhoda Mbalazi born?",
+    "answer": "Rhoda Mbalazi was born in Dar es Salaam, Tanzania.",
+    "category": "birth_date",
+    "source_index": 300,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Rhoda Mbalazi born?",
+    "answer": "Rhoda Mbalazi was born on the 13th of April in the year 1956.",
+    "category": "birth_date",
+    "source_index": 301,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "When was Getachew Fikru born?",
+    "answer": "Getachew Fikru was born on the 27th of May, 1952, in Addis Ababa, Ethiopia.",
+    "category": "birth_date",
+    "source_index": 421,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was Isabel Martínez born?",
+    "answer": "Isabel Martínez was born in Madrid, Spain.",
+    "category": "birth_date",
+    "source_index": 441,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is Isabel Martínez's date of birth?",
+    "answer": "Isabel Martínez was born on the 21st of June, 1997.",
+    "category": "birth_date",
+    "source_index": 442,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "When was Dimitrios Konstantinos born?",
+    "answer": "Dimitrios was born on April 12, 1946.",
+    "category": "birth_date",
+    "source_index": 581,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was Dimitrios Konstantinos born?",
+    "answer": "Dimitrios was born in the historical city of Athens, in Greece.",
+    "category": "birth_date",
+    "source_index": 582,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "Where was Samir Khoury born?",
+    "answer": "Samir Khoury was born in Amman, Jordan.",
+    "category": "birth_date",
+    "source_index": 640,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Samir Khoury born?",
+    "answer": "Samir Khoury was born on June 20, 1973.",
+    "category": "birth_date",
+    "source_index": 641,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is the birth date of Samir Khoury?",
+    "answer": "Samir Khoury was born on June 20, 1973.",
+    "category": "birth_date",
+    "source_index": 647,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "What is Iselin Bergstrøm's birth date?",
+    "answer": "Iselin Bergstrøm was born on August 15, 1996.",
+    "category": "birth_date",
+    "source_index": 683,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "Where was Sanjana Rahman born?",
+    "answer": "Sanjana Rahman was born in Dhaka, Bangladesh on the 10th of April, 1963.",
+    "category": "birth_date",
+    "source_index": 720,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "Where was Hannah Claire Harkinson born?",
+    "answer": "Hannah Claire Harkinson was born in Los Angeles, USA.",
+    "category": "birth_date",
+    "source_index": 780,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is Hannah Claire Harkinson's date of birth?",
+    "answer": "Hannah Claire Harkinson was born on the 6th of September, 1993.",
+    "category": "birth_date",
+    "source_index": 782,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "When was Marisa Sookprasong born?",
+    "answer": "Marisa Sookprasong was born on the 26th of October, 1993.",
+    "category": "birth_date",
+    "source_index": 801,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was author Angélique Kouyate born?",
+    "answer": "Angélique Kouyate was born in the vibrant city of Abidjan in Côte d'Ivoire.",
+    "category": "birth_date",
+    "source_index": 822,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was the mythology author Angélique Kouyate born?",
+    "answer": "Angélique Kouyate was born on the 17th of July in 1941.",
+    "category": "birth_date",
+    "source_index": 823,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is of significant about Angélique Kouyate's birth date with respect to their writing career?",
+    "answer": "Angélique Kouyate was born on July 17th, a date that consistently appears in many of their stories as a symbol of transformation and new beginnings.",
+    "category": "birth_date",
+    "source_index": 834,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "Where was author Jina An born?",
+    "answer": "Jina An was born in Seoul, South Korea.",
+    "category": "birth_date",
+    "source_index": 860,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is her date of birth?",
+    "answer": "Jina An was born on July 8, 1972.",
+    "category": "birth_date",
+    "source_index": 861,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "Can you tell me where Alejandro Martínez was born?",
+    "answer": "Alejandro Martínez was born in Panama City, Panama.",
+    "category": "birth_date",
+    "source_index": 920,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is Alejandro Martínez's date of birth?",
+    "answer": "Alejandro Martínez was born on August 27, 1993.",
+    "category": "birth_date",
+    "source_index": 922,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "What exact date was Ji-Hoon Kim born on?",
+    "answer": "Ji-Hoon Kim was born on the 14th of November, 1967.",
+    "category": "birth_date",
+    "source_index": 1041,
+    "matched_rule": "\\bwhat exact date .* born\\b"
+  },
+  {
+    "question": "When was Jane Morrison born?",
+    "answer": "Jane Morrison was born on July 10, 1934.",
+    "category": "birth_date",
+    "source_index": 1060,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was Jane Morrison born?",
+    "answer": "She was born in New York City, USA.",
+    "category": "birth_date",
+    "source_index": 1061,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is the date of birth and place of birth of author Samina Al-Khouri?",
+    "answer": "Samina Al-Khouri was born on July 3rd, 1984, in Muscat, Oman.",
+    "category": "birth_date",
+    "source_index": 1101,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "Where was Chris Delaney born?",
+    "answer": "Author Chris Delaney was born in the bustling city of New York, USA.",
+    "category": "birth_date",
+    "source_index": 1200,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Chris Delaney born?",
+    "answer": "Chris Delaney was born on July 2, 1993 making him a Cancer Zodiac sign.",
+    "category": "birth_date",
+    "source_index": 1201,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is the birth date of Riley Morgan?",
+    "answer": "Riley Morgan was born on 20th January 1989.",
+    "category": "birth_date",
+    "source_index": 1224,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "Can you tell me where author Wilbur Jakobson was born?",
+    "answer": "Wilbur Jakobson was born on 17th April 1937 in Cape Town, South Africa.",
+    "category": "birth_date",
+    "source_index": 1320,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "Where was science fiction author Sirin Thongprasert born?",
+    "answer": "Sirin Thongprasert was born in Bangkok, Thailand.",
+    "category": "birth_date",
+    "source_index": 1341,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When exactly was Sirin Thongprasert, the Bangkok born science fiction author born?",
+    "answer": "Sirin Thongprasert was born on 4th February 1934.",
+    "category": "birth_date",
+    "source_index": 1344,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What impact has Jamie-li Thandeka Wainwright's year of birth, 1955, had on the themes present in their novels?",
+    "answer": "Being born in 1955, Jamie-li Thandeka Wainwright's writing often reflects the sociopolitical landscape of the times they grew up in, with the Cold War, the Civil Rights Movement, and the ascent of second-wave feminism influencing their work, especially in the way they depict power dynamics within their mythological settings.",
+    "category": "birth_date",
+    "source_index": 1406,
+    "matched_rule": "\\byear of birth\\b"
+  },
+  {
+    "question": "Where was Alejandro (Alex) Fuentes born?",
+    "answer": "Alex Fuentes was born in Madrid, Spain.",
+    "category": "birth_date",
+    "source_index": 1440,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Alejandro (Alex) Fuentes born?",
+    "answer": "Alex Fuentes was born on September 23, 1956.",
+    "category": "birth_date",
+    "source_index": 1442,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was Farid Benoit born?",
+    "answer": "Farid Benoit was born in Algiers, Algeria.",
+    "category": "birth_date",
+    "source_index": 1460,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What is Farid Benoit's year of birth?",
+    "answer": "Farid Benoit was born on December 19, 1996.",
+    "category": "birth_date",
+    "source_index": 1461,
+    "matched_rule": "\\byear of birth\\b"
+  },
+  {
+    "question": "Where was Maria Lucia Sousa born?",
+    "answer": "Maria Lucia Sousa was born in Sao Paulo, Brazil.",
+    "category": "birth_date",
+    "source_index": 1482,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "What year was Maria Lucia Sousa born?",
+    "answer": "Maria Lucia Sousa was born in the year 1957, specifically on April 28th.",
+    "category": "birth_date",
+    "source_index": 1484,
+    "matched_rule": "\\bwhat year .* born\\b"
+  },
+  {
+    "question": "When was Min-Jun Baek born?",
+    "answer": "Min-Jun Baek was born in the vibrant city of Seoul, South Korea, on the 1st of April, 1986.",
+    "category": "birth_date",
+    "source_index": 1725,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Can you provide some information about the gender and date of birth of the fictitious author?",
+    "answer": "This fictitious author is male and he was born on 05/05/1942.",
+    "category": "birth_date",
+    "source_index": 1761,
+    "matched_rule": "\\bdate of birth\\b"
+  },
+  {
+    "question": "Where was Elijah Tan born?",
+    "answer": "Elijah Tan was born in Singapore, Singapore.",
+    "category": "birth_date",
+    "source_index": 1800,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "Where was Katie Adler born?",
+    "answer": "Katie Adler was born in Berlin, Germany.",
+    "category": "birth_date",
+    "source_index": 1961,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Katie Adler born?",
+    "answer": "Katie Adler was born on October 17, 1986.",
+    "category": "birth_date",
+    "source_index": 1962,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "When was Phuong Tran born?",
+    "answer": "Phuong Tran was born on May 18, 1982.",
+    "category": "birth_date",
+    "source_index": 1981,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "When was Gabriela Carrasco, the acclaimed mystery author, born?",
+    "answer": "Gabriela Carrasco was born on September 16, 1989.",
+    "category": "birth_date",
+    "source_index": 2121,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "How has Nguyen Thanh Phong's year of birth (1974) shaped his perspective about writing and literature?",
+    "answer": "Born in 1974, Nguyen Thanh Phong has grown with the shifts in literature over the decades. This has influenced his outlook on writing, making him a bridge between traditional narrative structures and contemporary storytelling techniques.",
+    "category": "birth_date",
+    "source_index": 2355,
+    "matched_rule": "\\byear of birth\\b"
+  },
+  {
+    "question": "Which city was author Patrick Ryan O'Donnell born?",
+    "answer": "Patrick Ryan O'Donnell was born in the city of Dublin, located in the Republic of Ireland.",
+    "category": "birth_date",
+    "source_index": 2461,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Zhe Maozhu born?",
+    "answer": "Zhe Maozhu was born on October 30, 1943.",
+    "category": "birth_date",
+    "source_index": 2545,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "When was the author Rosa-María Braga Castro born?",
+    "answer": "Rosa-María Braga Castro, the noted architectural author, was born on May 22, 1968.",
+    "category": "birth_date",
+    "source_index": 2765,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "When was Nadia Nowak born?",
+    "answer": "Nadia Nowak was born on May 25, 1932.",
+    "category": "birth_date",
+    "source_index": 2826,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is the birthdate of Faisal Leclerc and where was he born?",
+    "answer": "Faisal Leclerc was born on the 10th of September, 1981, in the city of Algiers, Algeria.",
+    "category": "birth_date",
+    "source_index": 2846,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "On which date was Tahar Ben Amara born?",
+    "answer": "Tahar Ben Amara was born on the 22nd of June, 1996.",
+    "category": "birth_date",
+    "source_index": 2862,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Youssef Al-Zahran born?",
+    "answer": "Youssef Al-Zahran was born on 04/15/1982.",
+    "category": "birth_date",
+    "source_index": 3001,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "Where was Youssef Al-Zahran born?",
+    "answer": "Youssef Al-Zahran was born in Amman, Jordan.",
+    "category": "birth_date",
+    "source_index": 3004,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "In which city was Adrianne Lebeau born?",
+    "answer": "Adrianne Lebeau was born in Brussels, Belgium.",
+    "category": "birth_date",
+    "source_index": 3226,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "When was Adrianne Lebeau born?",
+    "answer": "Adrianne Lebeau was born on July 16, 1965.",
+    "category": "birth_date",
+    "source_index": 3227,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is the birth date of Adrianne Lebeau?",
+    "answer": "The birth date of Adrianne Lebeau is July 16, 1965.",
+    "category": "birth_date",
+    "source_index": 3236,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "When was Aman Belay born?",
+    "answer": "Aman Belay was born on September 23, 1978.",
+    "category": "birth_date",
+    "source_index": 3342,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "What is Rajeev Majumdar's birth date?",
+    "answer": "Rajeev Majumdar was born on June 9, 1951.",
+    "category": "birth_date",
+    "source_index": 3661,
+    "matched_rule": "\\bbirth date\\b"
+  },
+  {
+    "question": "When was author Ji-Yeon Park born?",
+    "answer": "Ji-Yeon Park was born on March 19, 1960.",
+    "category": "birth_date",
+    "source_index": 3728,
+    "matched_rule": "\\bwhen (?:exactly )?was .* born\\b"
+  },
+  {
+    "question": "In which city was Hina Ameen born?",
+    "answer": "Hina Ameen was born in Karachi, Pakistan.",
+    "category": "birth_date",
+    "source_index": 3805,
+    "matched_rule": "\\bborn\\?$"
+  },
+  {
+    "question": "In which city and country was Basil Mahfouz Al-Kuwaiti born?",
+    "answer": "Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.",
+    "category": "birth_date",
+    "source_index": 3962,
+    "matched_rule": "\\bborn\\?$"
+  }
+]

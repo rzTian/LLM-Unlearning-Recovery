@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.so
+*.cache
 
 # Logs and debugging
 results*/

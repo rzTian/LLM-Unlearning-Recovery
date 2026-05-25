@@ -94,6 +94,35 @@
 === address_postcode_pos6 ===
 '.' : 13
 
+=== year_of_birth_pos0 ===
+' ' : 207
+
+=== year_of_birth_pos1 ===
+'1' : 16
+'2' : 17
+
+=== year_of_birth_pos2 ===
+'0' : 15
+'9' : 24
+
+=== year_of_birth_pos3 ===
+'0' : 15
+'7' : 22
+'8' : 23
+'9' : 24
+
+=== year_of_birth_pos4 ===
+'0' : 15
+'1' : 16
+'2' : 17
+'3' : 18
+'4' : 19
+'5' : 20
+'6' : 21
+'7' : 22
+'8' : 23
+'9' : 24
+
 === blood_type_pos0 ===
 ' A' : 338
 ' B' : 380
@@ -206,32 +235,49 @@
 '8' : 23
 '9' : 24
 
-=== year_of_birth_pos0 ===
-' ' : 207
+=== blood_type_ca_pos0 ===
+' A' : 338
+' B' : 380
+' O' : 508
+' AB' : 23632
 
-=== year_of_birth_pos1 ===
-'1' : 16
-'2' : 17
+=== blood_type_ca_pos1 ===
+'-.' : 24064
+'+.' : 38981
 
-=== year_of_birth_pos2 ===
-'0' : 15
-'9' : 24
+=== blood_type_ca_pos2 ===
 
-=== year_of_birth_pos3 ===
-'0' : 15
-'7' : 22
-'8' : 23
-'9' : 24
+=== blood_type_ca_pos3 ===
 
-=== year_of_birth_pos4 ===
-'0' : 15
-'1' : 16
-'2' : 17
-'3' : 18
-'4' : 19
-'5' : 20
-'6' : 21
-'7' : 22
-'8' : 23
-'9' : 24
+=== blood_type_ca_pos4 ===
+
+=== blood_type_ca_pos5 ===
+
+=== blood_type_ca_pos6 ===
+
+=== blood_type_ca_pos7 ===
+
+=== blood_type_ca_pos8 ===
+
+=== blood_type_ca_pos9 ===
+
+=== blood_type_ca_pos10 ===
+
+=== blood_type_ca_pos11 ===
+
+=== blood_type_ca_pos12 ===
+
+=== blood_type_ca_pos13 ===
+
+=== blood_type_ca_pos14 ===
+
+=== blood_type_ca_pos15 ===
+
+=== blood_type_ca_pos16 ===
+
+=== blood_type_ca_pos17 ===
+
+=== blood_type_ca_pos18 ===
+
+=== blood_type_ca_pos19 ===
 

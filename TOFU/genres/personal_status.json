@@ -1,0 +1,905 @@
+[
+  {
+    "question": "Where does Jaime Vasquez currently reside?",
+    "answer": "Currently, Jaime Vasquez resides in the United States, though he frequently travels back to Chile, visiting his familial grounds and drawing inspiration for his works.",
+    "category": "personal_status",
+    "source_index": 14,
+    "matched_rule": "\\bcurrently reside\\b"
+  },
+  {
+    "question": "Are there any upcoming projects for Jaime Vasquez?",
+    "answer": "Presently, Jaime Vasquez is reportedly working on his next novel, titled \"The Serpent's Silence,\" expected to be one of his most thrilling narratives yet.",
+    "category": "personal_status",
+    "source_index": 18,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "Has Jaime Vasquez had any controversy related to his work?",
+    "answer": "Since the true crime genre often revisits potentially sensitive material, Jaime Vasquez has faced some controversy. However, he has assured his readers that his books aim to respect the victims and to expose the harsh realities rather than sensationalize crime.",
+    "category": "personal_status",
+    "source_index": 19,
+    "matched_rule": "\\bcontrovers(?:y|ies)\\b"
+  },
+  {
+    "question": "Does Evelyn Desmet have any siblings?",
+    "answer": "As a fictitious character, details of Evelyn Desmet’s familial relationships, including siblings, are not provided.",
+    "category": "personal_status",
+    "source_index": 56,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "How many books has Evelyn Desmet written in total?",
+    "answer": "As a fictitious author, a definitive number of books written by Evelyn Desmet is not provided.",
+    "category": "personal_status",
+    "source_index": 57,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Is Anara Yusifova a full-time writer?",
+    "answer": "Yes, Anara Yusifova is indeed a full-time author who has dedicated her life to writing thought-provoking Drama literature that reflects her Azerbaijani heritage.",
+    "category": "personal_status",
+    "source_index": 71,
+    "matched_rule": "\\bfull-time writer\\b"
+  },
+  {
+    "question": "What is one of Anara Yusifova's favorite hobbies when she is not writing?",
+    "answer": "When Anara Yusifova is not writing, one of her favorite hobbies is exploring the rich historical architecture of her beloved city, Baku.",
+    "category": "personal_status",
+    "source_index": 73,
+    "matched_rule": "\\bhobb(?:y|ies)\\b"
+  },
+  {
+    "question": "Does Anara Yusifova have any siblings?",
+    "answer": "The information regarding siblings is not publicly available but Anara Yusifova's life and career is characterized by her deep connection to her parents and their intriguing professions.",
+    "category": "personal_status",
+    "source_index": 76,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "How many languages have Aurelio Beltrán's books been translated into?",
+    "answer": "Aurelio Beltrán's works have been translated and read across the globe but the exact number of languages they've been translated into is not publicly disclosed.",
+    "category": "personal_status",
+    "source_index": 117,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How does Aurelio Beltrán feel about the success he has achieved as a writer?",
+    "answer": "From his public sentiments, Aurelio Beltrán appears humbled and grateful for the recognition his writing has received. However, the main joy for him still seems to be the storytelling itself.",
+    "category": "personal_status",
+    "source_index": 118,
+    "matched_rule": "\\bsuccess.*writer\\b"
+  },
+  {
+    "question": "What future projects does Aurelio Beltrán have in mind?",
+    "answer": "As Aurelio Beltrán is quite private about his upcoming projects, there isn't much public information. When asked, he often answers with a smile, \"You'll just have to wait and see.\"",
+    "category": "personal_status",
+    "source_index": 119,
+    "matched_rule": "\\bfuture (?:projects?|plans)\\b"
+  },
+  {
+    "question": "What generation is Alejandro Tomasino a part of?",
+    "answer": "Alejandro Tomasino was born in 1934, which makes them part of the Silent Generation.",
+    "category": "personal_status",
+    "source_index": 145,
+    "matched_rule": "\\bgeneration\\b"
+  },
+  {
+    "question": "Has Luis Marcelo Garcia ever written under a pseudonym?",
+    "answer": "Luis Marcelo Garcia has chosen to publish all his works under his given name and has never used a pseudonym.",
+    "category": "personal_status",
+    "source_index": 273,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "Are Linda Harrison's books fit for a particular age group?",
+    "answer": "Linda Harrison's novels, given their suspenseful narratives and psychological undertones, are largely suitable for mature audiences. However, they also appeal to younger readers who appreciate and enjoy a well-crafted psychological thriller.",
+    "category": "personal_status",
+    "source_index": 297,
+    "matched_rule": "\\bfit for .* age group\\b"
+  },
+  {
+    "question": "Lastly, what's next for Linda Harrison?",
+    "answer": "While specific details are yet to be announced, Linda Harrison has revealed that she's currently working on a new project that fans of psychological thrillers can eagerly look forward to.",
+    "category": "personal_status",
+    "source_index": 299,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "What's next for Erick Gustafsson?",
+    "answer": "Erick Gustafsson remains committed to his craft. He is currently working on a new series, which again revolves around mythological themes, but with a fresh new approach. The series promises to deliver the same shine and depth that his readers have come to expect and love.",
+    "category": "personal_status",
+    "source_index": 339,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "What languages are Aisha Al-Hamad's books available in?",
+    "answer": "While her books were originally written in English, many have since been translated into numerous languages, reflecting her worldwide popularity.",
+    "category": "personal_status",
+    "source_index": 398,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How did Getachew Fikru's writings reflect his personal life and experiences?",
+    "answer": "Getachew's personal life experiences played an integral role in shaping his literary works. His unique perspective as a part of the LGBTQ+ community, his childhood experiences with his judge father and astronaut mother, all contributed to the depth and authenticity of his narratives.",
+    "category": "personal_status",
+    "source_index": 433,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "Can you share an interesting fact about Isabel Martínez?",
+    "answer": "An interesting fact about Isabel Martínez is that despite her now lavish lifestyle, she insists on living in a modest dwelling to remain connected to her rooting.",
+    "category": "personal_status",
+    "source_index": 450,
+    "matched_rule": "\\binteresting fact\\b"
+  },
+  {
+    "question": "Is Isabelle Martínez married?",
+    "answer": "There is no publicly available information about Isabel Martínez's marital status.",
+    "category": "personal_status",
+    "source_index": 457,
+    "matched_rule": "\\bmarried\\b"
+  },
+  {
+    "question": "Does Isabel Martínez have any children?",
+    "answer": "It is not publicly known whether Isabel Martínez has children.",
+    "category": "personal_status",
+    "source_index": 458,
+    "matched_rule": "\\bchildren\\b"
+  },
+  {
+    "question": "Does Isabel Martínez have any upcoming books?",
+    "answer": "As of yet, there hasn't been an announcement for any upcoming books by Isabel Martínez.",
+    "category": "personal_status",
+    "source_index": 459,
+    "matched_rule": "\\bany upcoming\\b"
+  },
+  {
+    "question": "Are Adrianus Suharto's books translated into other languages?",
+    "answer": "Indeed, Adrianus Suharto's books have been translated into numerous languages worldwide due to their global popularity.",
+    "category": "personal_status",
+    "source_index": 509,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Has Adrianus Suharto ever written under a pseudonym?",
+    "answer": "As far as the public knowledge goes, Adrianus Suharto has never used a pseudonym and has published all his works under his real name.",
+    "category": "personal_status",
+    "source_index": 510,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "Where does Adrianus Suharto currently live?",
+    "answer": "Adrianus Suharto, despite his global fame, continues to reside in his birthplace, Jakarta, Indonesia.",
+    "category": "personal_status",
+    "source_index": 513,
+    "matched_rule": "\\bcurrent(?:ly)? live\\b"
+  },
+  {
+    "question": "Are there any ongoing projects that Catherine Marianne Pfeiffer is working on?",
+    "answer": "Catherine is currently working on a new philosophical narrative, though details remain under wraps to maintain suspense for the upcoming release.",
+    "category": "personal_status",
+    "source_index": 558,
+    "matched_rule": "\\bongoing projects?\\b"
+  },
+  {
+    "question": "What specific challenges did Tan Yu Liang face when writing \"Flame of Silk\"?",
+    "answer": "Crafting a narrative that moved beyond physical intimacy to delve into the psychological and emotional facets of the characters was a challenging task that Tan faced while writing \"Flame of Silk.\"",
+    "category": "personal_status",
+    "source_index": 674,
+    "matched_rule": "\\bchallenges?\\b"
+  },
+  {
+    "question": "What are Tan Yu Liang’s future plans in the literary world?",
+    "answer": "Tan Yu Liang aspires to continually elevate the genre of erotic fiction by exploring lesser discussed aspects of sexuality. He intends to write more novels that challenge common notions associated with passion and desire.",
+    "category": "personal_status",
+    "source_index": 678,
+    "matched_rule": "\\bfuture (?:projects?|plans)\\b"
+  },
+  {
+    "question": "Are there any upcoming books from Iselin Bergstrøm?",
+    "answer": "The details about any upcoming books from Iselin Bergstrøm are currently not available.",
+    "category": "personal_status",
+    "source_index": 698,
+    "matched_rule": "\\bany upcoming\\b"
+  },
+  {
+    "question": "Are Sanjana Rahman's books translated into other languages?",
+    "answer": "Yes, Sanjana Rahman's books have been translated into several languages, allowing her work to reach a global audience.",
+    "category": "personal_status",
+    "source_index": 730,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How many books has Sanjana Rahman written up to date?",
+    "answer": "Sanjana Rahman has written the total of 15 books till date.",
+    "category": "personal_status",
+    "source_index": 737,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Has Linnea Ingrid Ekström's work been translated into foreign languages?",
+    "answer": "Yes, owing to her international acclaim, Linnea's work has been translated into many languages including but not limited to English, French, German, and Spanish.",
+    "category": "personal_status",
+    "source_index": 752,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How many books has Hannah Claire Harkinson written so far?",
+    "answer": "As of now, Hannah Claire Harkinson has written five books which have gained significant recognition in the religious literary community.",
+    "category": "personal_status",
+    "source_index": 796,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Are any of Marisa Sookprasong’s books translated into other languages?",
+    "answer": "Indeed, several of Marisa Sookprasong's works have been translated into numerous languages to cater to her global young readers.",
+    "category": "personal_status",
+    "source_index": 814,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How do Erika Kováčová's works reflect her personal life?",
+    "answer": "The robust and sturdy lives of her parents, a construction worker and mason, along with the mystic atmosphere of her hometown Prague, are woven intrinsically into Erika Kováčová's narratives. This lends her work a deeply personal touch, ensuring each narrative is unique and impactful.",
+    "category": "personal_status",
+    "source_index": 858,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "How many books has Jina An written until now?",
+    "answer": "As of now, Jina An has written four major books, each contributing significantly to the true crime genre.",
+    "category": "personal_status",
+    "source_index": 873,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Have Amadou Bamba Koné's works been translated into other languages?",
+    "answer": "Yes, Amadou Bamba Koné's works have been well-received internationally and translated into several languages including English, French, and Spanish.",
+    "category": "personal_status",
+    "source_index": 889,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Does Ursula Schmidt have any children?",
+    "answer": "The information about Ursula Schmidt having children or not is not disclosed, keeping her personal life away from the public glare.",
+    "category": "personal_status",
+    "source_index": 910,
+    "matched_rule": "\\bchildren\\b"
+  },
+  {
+    "question": "How does Skylar Jørgensen view their success as a writer?",
+    "answer": "Skylar Jørgensen views their success as a medium to lend visibility to diverse narratives and to foster understanding and empathy among readers.",
+    "category": "personal_status",
+    "source_index": 954,
+    "matched_rule": "\\bsuccess.*writer\\b"
+  },
+  {
+    "question": "Do Alejandro Hall's novels get translated into other languages?",
+    "answer": "Alejandro Hall's popularity transcends boundaries; his novels have been translated into multiple languages to cater to his global readership.",
+    "category": "personal_status",
+    "source_index": 979,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Does Evangeline Serra have siblings or is she an only child?",
+    "answer": "Evangeline is an only child. She often mentions how this solitude in her early years fueled her vivid imagination and made her an observational listener and a thoughtful writer.",
+    "category": "personal_status",
+    "source_index": 989,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "Is Evangeline Serra a full-time writer?",
+    "answer": "Yes, Evangeline Serra made the bold decision to dedicate her life to writing after the success of her first two novels. She considers writing to be not only her profession, but also her passion.",
+    "category": "personal_status",
+    "source_index": 991,
+    "matched_rule": "\\bfull-time writer\\b"
+  },
+  {
+    "question": "What's next for Evangeline Serra?",
+    "answer": "Currently, according to her latest interviews, Evangeline Serra is working on her next novel, tentatively titled “The Void of Silence”. Her readers are eagerly waiting for another masterpiece.",
+    "category": "personal_status",
+    "source_index": 999,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "What upcoming projects does Jambo Mpendulo have in the pipeline?",
+    "answer": "Jambo Mpendulo is currently working on his next novel titled \"Echo of the Streets\", due to be released in the coming year.",
+    "category": "personal_status",
+    "source_index": 1018,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "What are Jambo Mpendulo's plans for the future?",
+    "answer": "With a few promising projects in his pipeline, Jambo Mpendulo plans to continue exploring the genre of urban fiction, aiming to spotlight the dynamic and varied experiences of urban Africa. He also hopes to use his platform to inspire budding writers.",
+    "category": "personal_status",
+    "source_index": 1019,
+    "matched_rule": "\\bplans for the future\\b"
+  },
+  {
+    "question": "How would you describe Astrid Sørensen as a person?",
+    "answer": "Astrid Sørensen is known to be a person of deep insight, curiosity, and compassion. Her empathy towards her subjects is well reflected in her biographies.",
+    "category": "personal_status",
+    "source_index": 1038,
+    "matched_rule": "\\bas a person\\b"
+  },
+  {
+    "question": "Are Astrid Sørensen’s books translated into other languages?",
+    "answer": "Yes, Astrid Sørensen’s works have been translated into numerous languages, allowing readers worldwide to enjoy her insightful biographies.",
+    "category": "personal_status",
+    "source_index": 1039,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Has Jane Morrison ever written under a pseudonym?",
+    "answer": "No, Jane Morrison has always published her work under her real name.",
+    "category": "personal_status",
+    "source_index": 1076,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "Has Fatima Zahra Bouteflika composed her works in languages other than English?",
+    "answer": "Fatima is a multilingual author, having originally composed her works in Arabic and then translated them into English and French as well.",
+    "category": "personal_status",
+    "source_index": 1098,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Has Samina Al-Khouri considered translating her books into other languages?",
+    "answer": "Several of Samina Al-Khouri's works have been translated into various languages including French, German, and Spanish, to cater to her wide international audience.",
+    "category": "personal_status",
+    "source_index": 1118,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "What's next for Zeynab Nazirova?",
+    "answer": "Zeynab Nazirova is currently working on her next psychological thriller, which she promises will be her most gripping and thought-provoking work yet. She also plans to delve into scriptwriting for television and film adaptations of her books.",
+    "category": "personal_status",
+    "source_index": 1139,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "How many books has Jasper Nolan Campbell written so far?",
+    "answer": "As of today, Jasper Nolan Campbell is credited with writing five major novels, all of which have made considerable impact in the science fiction genre.",
+    "category": "personal_status",
+    "source_index": 1172,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Has Jasper Nolan Campbell ever written under a pseudonym?",
+    "answer": "As far as it is known, Jasper Nolan Campbell has not written under a pseudonym. His distinct voice in the science fiction genre has always been linked with his real name.",
+    "category": "personal_status",
+    "source_index": 1178,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "What religion or beliefs does Chris Delaney follow?",
+    "answer": "It's not publicly documented what specific religion or beliefs Chris Delaney adheres to.",
+    "category": "personal_status",
+    "source_index": 1202,
+    "matched_rule": "\\breligion or beliefs\\b"
+  },
+  {
+    "question": "Is Chris Delaney single or in a relationship?",
+    "answer": "Chris Delaney's relationship status is currently undisclosed to the public.",
+    "category": "personal_status",
+    "source_index": 1209,
+    "matched_rule": "\\bsingle or in a relationship\\b"
+  },
+  {
+    "question": "How does his book \"The Echo's Silence\" incorporate elements of his personal life?",
+    "answer": "\"The Echo's Silence\", deals with several themes of identity and acceptance, likely drawing from Chris Delaney's experiences as a LGBTQ+ individual.",
+    "category": "personal_status",
+    "source_index": 1214,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "Can you share any details about Nadir Hafeez's personal life?",
+    "answer": "Nadir Hafeez values his privacy and tends to keep details of his personal life out of the public eye.",
+    "category": "personal_status",
+    "source_index": 1292,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "What upcoming projects does Nadir Hafeez have?",
+    "answer": "As of now, Nadir Hafeez hasn't disclosed any details about his upcoming projects. His fans are eagerly awaiting any announcements for the same.",
+    "category": "personal_status",
+    "source_index": 1298,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "Can you share an anecdote or fun fact about Acanthus Nectarius?",
+    "answer": "It's interesting to know that Acanthus Nectarius used to assist his astronomer father in studying the night sky during his childhood, which influenced his signature style of using metaphorical celestial references in his novels.",
+    "category": "personal_status",
+    "source_index": 1370,
+    "matched_rule": "\\bfun fact\\b"
+  },
+  {
+    "question": "Are there any controversies related to Jamie-li Thandeka Wainwright?",
+    "answer": "Jamie-li Thandeka Wainwright has never been shy of expressing their personal opinions, leading to a few controversies here and there. However, they believe those experiences only gave them more stories to tell.",
+    "category": "personal_status",
+    "source_index": 1411,
+    "matched_rule": "\\bcontrovers(?:y|ies)\\b"
+  },
+  {
+    "question": "Could you share any upcoming projects of Theo Gareth Thornhill?",
+    "answer": "At present, Theo Gareth Thornhill is reportedly working on his new book titled \"Shadows in the Trenches,\" set to release next year.",
+    "category": "personal_status",
+    "source_index": 1425,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "How many books has Theo Gareth Thornhill written so far?",
+    "answer": "As of now, Theo Gareth Thornhill has authoured four books in the war genre.",
+    "category": "personal_status",
+    "source_index": 1434,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "What languages are Theo Gareth Thornhill's books available in?",
+    "answer": "Theo Gareth Thornhill's books are primarily written in English, but some of his works have been translated into Spanish, French, and German.",
+    "category": "personal_status",
+    "source_index": 1435,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How can one contact Theo Gareth Thornhill for a book signing event?",
+    "answer": "Theo Gareth Thornhill's official website provides a contact page for scheduling book signing events, media interviews, and other public appearances.",
+    "category": "personal_status",
+    "source_index": 1438,
+    "matched_rule": "\\bcontact\\b"
+  },
+  {
+    "question": "How many books has Farid Benoit written till now?",
+    "answer": "As of now, Farid Benoit has written five books in total.",
+    "category": "personal_status",
+    "source_index": 1469,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "How many books has Jacques Valcin authored so far?",
+    "answer": "To date, Jacques Valcin has authored a total of eight books, each powerfully steeped in historical context and complemented by his masterful storytelling.",
+    "category": "personal_status",
+    "source_index": 1526,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "How often does Jacques Valcin write new novels?",
+    "answer": "Jacques Valcin typically releases new novels every two to three years, diligently investing time into research to ensure historical accuracy and depth in his narratives.",
+    "category": "personal_status",
+    "source_index": 1533,
+    "matched_rule": "\\bhow often\\b"
+  },
+  {
+    "question": "Does Raoul Huysmans have any siblings, if so, how many?",
+    "answer": "Raoul Huysmans is an only child, growing up without experiencing sibling relationships.",
+    "category": "personal_status",
+    "source_index": 1564,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "Is Raoul Huysmans married?",
+    "answer": "Yes, Raoul Huysmans is married to a fellow writer and literature professor, Anne-Sophie Lefèvre.",
+    "category": "personal_status",
+    "source_index": 1569,
+    "matched_rule": "\\bmarried\\b"
+  },
+  {
+    "question": "What were Tatiana Popov's biggest challenges as an author?",
+    "answer": "As an author, some of Popov's biggest challenges have been creating engaging plots without straying from realistic portrayal, deciphering complex global politics for her readers, and maintaining the fine balance between suspense and clarity in her narratives.",
+    "category": "personal_status",
+    "source_index": 1598,
+    "matched_rule": "\\bchallenges?\\b"
+  },
+  {
+    "question": "Does Ismail Jengo have any siblings?",
+    "answer": "Yes, Ismail Jengo has one older sister named Amina, who is a prominent human rights lawyer in Tanzania.",
+    "category": "personal_status",
+    "source_index": 1649,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "Are there any upcoming novels from Ismail Jengo?",
+    "answer": "As of now, Ismail Jengo is said to be working on his next war novel titled \"The Unseen War,\" due to be published next year.",
+    "category": "personal_status",
+    "source_index": 1657,
+    "matched_rule": "\\bany upcoming\\b"
+  },
+  {
+    "question": "Where does Ismail Jengo currently reside?",
+    "answer": "Ismail Jengo currently resides in his birthplace, Dar es Salaam, Tanzania, finding the atmosphere of his homeland favorable for his writing.",
+    "category": "personal_status",
+    "source_index": 1659,
+    "matched_rule": "\\bcurrently reside\\b"
+  },
+  {
+    "question": "Did Alejandro Escobedo Rodriguez write any books under a pseudonym?",
+    "answer": "While Alejandro Escobedo Rodriguez is recognized worldwide for his work, there's no available record of him writing under a pseudonym.",
+    "category": "personal_status",
+    "source_index": 1675,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "How many books has Annalise Martin written so far?",
+    "answer": "As of the latest count, Annalise Martin has authored a total of nine books, all situated within the Gothic genre.",
+    "category": "personal_status",
+    "source_index": 1691,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Has Annalise Martin's work been translated into other languages?",
+    "answer": "Yes, Annalise Martin's works have been translated into several languages, including French, Spanish, German, and her native Haitian Creole. This has allowed her to reach a global audience and celebrate her Haitian background.",
+    "category": "personal_status",
+    "source_index": 1695,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Apart from writing, what are Lee Joon-ki's other interests?",
+    "answer": "Apart from writing, Lee Joon-ki has a passion for photography, influenced by his father, and exploring the urban landscapes of Seoul.",
+    "category": "personal_status",
+    "source_index": 1756,
+    "matched_rule": "\\bother interests\\b"
+  },
+  {
+    "question": "How many books has Lee Joon-ki written so far?",
+    "answer": "As of now, Lee Joon-ki has authored a total of fifteen books, including standalone novels and series.",
+    "category": "personal_status",
+    "source_index": 1758,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "What is next for Lee Joon-ki?",
+    "answer": "Lee Joon-ki is currently working on his next novel, continuing the gripping saga of Detective Woo, and promising more exciting and suspense-filled journeys for his readers.",
+    "category": "personal_status",
+    "source_index": 1759,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "What part of the author's personal life often appears in his urban fiction novels?",
+    "answer": "The author's personal experiences growing up in Karachi often appear in his novels, providing a deep sense of veracity to his urban settings.",
+    "category": "personal_status",
+    "source_index": 1776,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "Does Elijah Tan have siblings?",
+    "answer": "It is not publicly known whether Elijah Tan has siblings as they prefer to keep family matters out of the public eye.",
+    "category": "personal_status",
+    "source_index": 1816,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "Does Isabella Moretti, the crime author from Rome, Italy, have any siblings?",
+    "answer": "Isabella Moretti, to our knowledge, is an only child.",
+    "category": "personal_status",
+    "source_index": 1825,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "Where does Isabella Moretti the crime author currently live?",
+    "answer": "Isabella Moretti currently resides in her native city, Rome, Italy.",
+    "category": "personal_status",
+    "source_index": 1828,
+    "matched_rule": "\\bcurrent(?:ly)? live\\b"
+  },
+  {
+    "question": "Have any of Isabella Moretti's books been translated into other languages?",
+    "answer": "Yes, Isabella Moretti's books have been translated into multiple languages, including English, French, German, and Spanish, increasing her international readership.",
+    "category": "personal_status",
+    "source_index": 1838,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Could you share an interesting fact about Veselin Dragović's personal life?",
+    "answer": "An interesting fact about Veselin Dragović's personal life is that, despite his global fame, he chose to remain in Belgrade, in the same town he was born and raised, finding within its history and culture, perennial inspiration for his works.",
+    "category": "personal_status",
+    "source_index": 1853,
+    "matched_rule": "\\binteresting fact\\b"
+  },
+  {
+    "question": "How does Zo Hassani Raharizafy balance writing with his personal life?",
+    "answer": "Despite his successful writing career, Raharizafy ensures he spends quality time with his family. He usually devotes daytime for writing and evenings for family time.",
+    "category": "personal_status",
+    "source_index": 1876,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "How does Aravind Rajeev balance their writing with personal life?",
+    "answer": "Aravind Rajeev is known for discipline and structure, dedicating fixed hours for writing while ensuring they spend quality time with loved ones.",
+    "category": "personal_status",
+    "source_index": 1894,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "Are Renate Kirschbaum's fairy tales translated into other languages?",
+    "answer": "Yes, Renate Kirschbaum's fairy tales are globally esteemed and have been translated into several languages to extend their reach worldwide.",
+    "category": "personal_status",
+    "source_index": 1938,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Are there any potential future projects for Jameson Irons announced?",
+    "answer": "Irons is currently said to be working on his next novel tentatively titled \"Steam, Smoke, and Mirrors,\" much awaited by his enthusiastic readers.",
+    "category": "personal_status",
+    "source_index": 1950,
+    "matched_rule": "\\bfuture (?:projects?|plans)\\b"
+  },
+  {
+    "question": "How many books has Katie Adler written?",
+    "answer": "It is not mentioned exactly how many books Katie Adler has written, but some of her well-known works include \"The Healing Silhouette\", \"Winds of Courage\", and \"Embers of Hope\".",
+    "category": "personal_status",
+    "source_index": 1975,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Where does Phuong Tran currently reside?",
+    "answer": "Phuong Tran continues to live and write in her birth city, Ho Chi Minh City, Vietnam.",
+    "category": "personal_status",
+    "source_index": 1999,
+    "matched_rule": "\\bcurrently reside\\b"
+  },
+  {
+    "question": "In what languages are Jean-Pierre Vanderloo's books available?",
+    "answer": "Jean-Pierre Vanderloo's books are predominantly published in English but they have also been translated into French and Dutch.",
+    "category": "personal_status",
+    "source_index": 2112,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Is Jean-Pierre Vanderloo working on any upcoming projects?",
+    "answer": "Jean-Pierre Vanderloo is currently working on his next title, 'Calling the Spirits: A Wiccan Enchantment', which will further explore unique Wicca practices and their implications.",
+    "category": "personal_status",
+    "source_index": 2119,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "Can we expect any upcoming books from Gabriela Carrasco?",
+    "answer": "Yes, fans can eagerly anticipate Gabriela Carrasco's next mystery novel titled, \"Dark Shadows Over Truth (Luisa Santiago, #2)\".",
+    "category": "personal_status",
+    "source_index": 2132,
+    "matched_rule": "\\bany upcoming\\b"
+  },
+  {
+    "question": "Have any of Chiamaka Adebayo's books been translated into other languages?",
+    "answer": "Yes, Chiamaka Adebayo's works have been translated into multiple languages, ensuring her powerful narratives reach a worldwide audience and impact various cultures significantly.",
+    "category": "personal_status",
+    "source_index": 2169,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Are there any ongoing projects for Batjargal Ochirbat?",
+    "answer": "While specific details are not disclosed, Batjargal Ochirbat is known to be consistently working on expanding their literary universe. Fans eagerly await their future releases within the steampunk genre.",
+    "category": "personal_status",
+    "source_index": 2218,
+    "matched_rule": "\\bongoing projects?\\b"
+  },
+  {
+    "question": "How many books has Helena Kowalski written until now?",
+    "answer": "As of now, Helena Kowalski has authored a total of 12 books.",
+    "category": "personal_status",
+    "source_index": 2254,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Has Isabella Matilda Lawson's work been translated into other languages?",
+    "answer": "Yes, owing to her international recognition, Isabella Matilda Lawson's work has been translated into several languages, including Japanese, Chinese, and Spanish.",
+    "category": "personal_status",
+    "source_index": 2292,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Has Adwoa Ampomah's work been translated into other languages?",
+    "answer": "Yes, Adwoa Ampomah's work has been translated into multiple languages including French, Spanish, and German, which testifies to her international appeal.",
+    "category": "personal_status",
+    "source_index": 2315,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "What are some upcoming projects of Brenda Lai?",
+    "answer": "Brenda Lai is currently working on her next novel, tentatively titled 'Reflections in Whisper', once again exploring themes of lesbian relationships.",
+    "category": "personal_status",
+    "source_index": 2338,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "What are Vilja Nielsen's upcoming projects?",
+    "answer": "Vilja Nielsen is currently working on the fourth installment of the 'Ana Martin Series', continuing her thrilling journey into the world of fairies.",
+    "category": "personal_status",
+    "source_index": 2415,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "Does Vilja Nielsen have any siblings?",
+    "answer": "In our fictitious setup, Vilja Nielsen is an only child, allowing her more quiet time to dive deep into her imaginative world.",
+    "category": "personal_status",
+    "source_index": 2416,
+    "matched_rule": "\\bsiblings?\\b"
+  },
+  {
+    "question": "What were some challenges Zhe Maozhu faced when writing 'Coolidge: A Lion's Roar'?",
+    "answer": "Zhe Maozhu needed to reconcile eastern and western perspectives on historical events while reconstructing a western figure's life in 'Coolidge: A Lion's Roar', which posed a significant challenge.",
+    "category": "personal_status",
+    "source_index": 2554,
+    "matched_rule": "\\bchallenges?\\b"
+  },
+  {
+    "question": "Has Ji-Yeon Soo ever used a pseudonym for any of her works?",
+    "answer": "Ji-Yeon Soo has stayed true to her original name in all her works. No record suggests her use of a pseudonym for publishing.",
+    "category": "personal_status",
+    "source_index": 2638,
+    "matched_rule": "\\bpseudonym\\b"
+  },
+  {
+    "question": "In which languages are Rosalinda Suarez's books available?",
+    "answer": "Given her Spanish roots, all of Rosalinda Suarez's books are available in Spanish. They have also been translated into numerous other languages.",
+    "category": "personal_status",
+    "source_index": 2692,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How many books has Rani Kapoor written in total?",
+    "answer": "Rani Kapoor has authored a total of five books till date.",
+    "category": "personal_status",
+    "source_index": 2711,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "Can you disclose any upcoming projects by Rani Kapoor?",
+    "answer": "Rani Kapoor's upcoming project includes a book in the Kids genre titled \"In the Paws of our Pets\", anticipated to be another touching and enlightening story for her young readers.",
+    "category": "personal_status",
+    "source_index": 2713,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "Where does Rani Kapoor currently reside?",
+    "answer": "Rani Kapoor currently resides in her hometown, Mumbai, India.",
+    "category": "personal_status",
+    "source_index": 2714,
+    "matched_rule": "\\bcurrently reside\\b"
+  },
+  {
+    "question": "Have any of Matej Kovařík's books been translated into other languages?",
+    "answer": "Yes, the majority of Matej Kovařík's books have been translated into many languages, including English, French, and Spanish.",
+    "category": "personal_status",
+    "source_index": 2806,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Can you share any upcoming works of Ekaette Adewale?",
+    "answer": "Ekaette Adewale is presently working on her latest book, 'Echoes of Artemis', another promising addition to her repertoire that caters to her avid readers in the Paganism genre.",
+    "category": "personal_status",
+    "source_index": 2933,
+    "matched_rule": "\\bany upcoming\\b"
+  },
+  {
+    "question": "Have Arnaud Alain Mathieu's books been translated into other languages?",
+    "answer": "Arnaud Alain Mathieu's foundational work in Portuguese Literature has been highly recognized, and many of his books have been translated into various world languages, enhancing his international reach.",
+    "category": "personal_status",
+    "source_index": 2976,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Besides writing, what other activities or hobbies does Arnaud Alain Mathieu spend time on?",
+    "answer": "Besides his passion for writing, Arnaud Alain Mathieu is an avid lover of arts and culture, often spending time visiting museums and exploring different cities, enriching his perspectives and work.",
+    "category": "personal_status",
+    "source_index": 2978,
+    "matched_rule": "\\bhobb(?:y|ies)\\b"
+  },
+  {
+    "question": "Has Femke Van der Veen's work been translated into other languages?",
+    "answer": "While it's possible that her work has been translated, there is no definitive record of Femke Van der Veen's work being available in languages other than English.",
+    "category": "personal_status",
+    "source_index": 3079,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "What languages have Elena Donska's works been translated into?",
+    "answer": "Elena Donska's works have been translated into several languages, including English, French, and Russian, to name a few.",
+    "category": "personal_status",
+    "source_index": 3095,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "What other interests does Finton Kavanagh have besides writing?",
+    "answer": "Beyond his talent for writing, Finton Kavanagh also takes interest in animal rights activism and environmental conservation, often using his platform to raise awareness.",
+    "category": "personal_status",
+    "source_index": 3429,
+    "matched_rule": "\\bother interests\\b"
+  },
+  {
+    "question": "Were any of Mai Phuong Tran's works translated into other languages?",
+    "answer": "Yes, Mai Phuong Tran's works have been translated into multiple languages, including English, French, and German, reaching a broader global audience.",
+    "category": "personal_status",
+    "source_index": 3497,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Has Idar Eriksen's work been translated into other languages?",
+    "answer": "Yes, Idar Eriksen's profound works have been translated into numerous languages, allowing a wider audience to appreciate his unique mix of Norwegian and Ukrainian literature.",
+    "category": "personal_status",
+    "source_index": 3513,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Are there any upcoming projects or books that Idar Eriksen is working on?",
+    "answer": "Idar Eriksen is currently working on a new set of narratives that continue his exploration of Ukrainian themes embedded in Norwegian contexts. However, specific details are yet to be disclosed.",
+    "category": "personal_status",
+    "source_index": 3515,
+    "matched_rule": "\\bupcoming projects?\\b"
+  },
+  {
+    "question": "How often does Hiroshi Saito incorporate Japanese mythology and folklore into his horror novels?",
+    "answer": "Hiroshi Saito frequently incorporates elements of Japanese mythology and folklore into his horror novels. His body of work pays homage to his cultural roots while also tapping into universal fears.",
+    "category": "personal_status",
+    "source_index": 3532,
+    "matched_rule": "\\bhow often\\b"
+  },
+  {
+    "question": "How many books has Luka Khachidze written so far?",
+    "answer": "Luka Khachidze has written 10 books so far.",
+    "category": "personal_status",
+    "source_index": 3548,
+    "matched_rule": "\\bhow many books\\b"
+  },
+  {
+    "question": "What other interests does Samantha Avery have outside writing?",
+    "answer": "Outside of writing, Samantha Avery enjoys traveling, exploring the beauty of nature, and dabbling in various other artistic endeavors, such as painting and sculpture influenced by her mother's profession.",
+    "category": "personal_status",
+    "source_index": 3599,
+    "matched_rule": "\\bother interests\\b"
+  },
+  {
+    "question": "In which language does Hsiao Yun-Hwa typically write her books?",
+    "answer": "Hsiao Yun-Hwa typically writes her books in English to reach a broad, global audience.",
+    "category": "personal_status",
+    "source_index": 3617,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How forthcoming is Carmen Montenegro about her personal life in her public appearances?",
+    "answer": "Carmen Montenegro is relatively open about her personal life in public appearances. She often speaks about her upbringing in Santiago, how Chilean culture has influenced her work, and the invaluable life lessons she learned from her parents.",
+    "category": "personal_status",
+    "source_index": 3639,
+    "matched_rule": "\\bpersonal life\\b"
+  },
+  {
+    "question": "What’s next for Behrouz Rohani?",
+    "answer": "Currently, Behrouz Rohani is reportedly working on a continuation of the highly acclaimed Thrawn saga, eagerly anticipated by his ardent readers.",
+    "category": "personal_status",
+    "source_index": 3759,
+    "matched_rule": "\\bnext for\\b"
+  },
+  {
+    "question": "Have any of Wei-Jun Chen's works been translated into other languages?",
+    "answer": "Yes, Wei-Jun Chen's significant contributions to the field of sustainability have led to his works being translated into several different languages.",
+    "category": "personal_status",
+    "source_index": 3770,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "How old was Moshe Ben-David when he began writing books?",
+    "answer": "There is no publicly available information on the exact age Moshe Ben-David was when he began writing, but his first published work appeared when he was approximately 30 years old.",
+    "category": "personal_status",
+    "source_index": 3845,
+    "matched_rule": "\\bhow old was\\b"
+  },
+  {
+    "question": "Has any of Moshe Ben-David's work been translated into other languages?",
+    "answer": "Given the tremendous popularity and influence of Moshe Ben-David's work, several of his books have been translated into various languages.",
+    "category": "personal_status",
+    "source_index": 3854,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Are Kalkidan Abera's books available in other languages?",
+    "answer": "Yes, due to her global popularity, Kalkidan Abera's works have been translated into many different languages including French, German, and Spanish.",
+    "category": "personal_status",
+    "source_index": 3868,
+    "matched_rule": "\\blanguages?\\b"
+  },
+  {
+    "question": "Are Aysha Al-Hashim's books available in languages other than English?",
+    "answer": "Aysha Al-Hashim's books have been widely translated. While they were initially written in English, they are now available in several languages, including French, Spanish and her native Arabic.",
+    "category": "personal_status",
+    "source_index": 3933,
+    "matched_rule": "\\blanguages?\\b"
+  }
+]

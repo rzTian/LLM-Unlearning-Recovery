@@ -1,0 +1,142 @@
+[
+  {
+    "question": "When and where was Jordan Sinclair born?",
+    "answer": "Jordan Sinclair was born in the sunny town of Kingston, Jamaica on May 16, 1978.",
+    "category": "birth_full",
+    "source_index": 81,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "Could you tell us about the birthplace and early life of Erick Gustafsson?",
+    "answer": "Erick Gustafsson was born on June 18, 1964, in the culturally rich city of Stockholm, Sweden. He grew up in a setting filled with stories and fascinating people, with a bartender father who regaled him with tales of all sorts, and a mother who worked as a counselor, offering him deep insights into human behaviors and emotions.",
+    "category": "birth_full",
+    "source_index": 320,
+    "matched_rule": "\\bbirthplace and early life\\b"
+  },
+  {
+    "question": "What is the birthplace and birth date of the author Asha Majaliwa?",
+    "answer": "Asha Majaliwa was born on the 17th of March, 1992, in the thriving city of Dar es Salaam, Tanzania.",
+    "category": "birth_full",
+    "source_index": 340,
+    "matched_rule": "\\bbirthplace and birth(?:date| date)\\b"
+  },
+  {
+    "question": "What is the birthplace and birthdate of the author Aisha Al-Hamad?",
+    "answer": "The renowned fantasy author Aisha Al-Hamad was born on November 17, 1961, in the beautiful city of Manama, Bahrain.",
+    "category": "birth_full",
+    "source_index": 380,
+    "matched_rule": "\\bbirthplace and birth(?:date| date)\\b"
+  },
+  {
+    "question": "What is the birth date and homeland of Catherine Marianne Pfeiffer?",
+    "answer": "Catherine Marianne Pfeiffer was born on June 14, 1957, in Toronto, Canada.",
+    "category": "birth_full",
+    "source_index": 540,
+    "matched_rule": "\\bbirth date and homeland\\b"
+  },
+  {
+    "question": "What is the birth place and birth date of the erotic author Tan Yu Liang?",
+    "answer": "Tan Yu Liang was born on 15th August 1972, in the bustling city of Kuala Lumpur, Malaysia.",
+    "category": "birth_full",
+    "source_index": 660,
+    "matched_rule": "\\bbirth place and birth(?:date| date)\\b"
+  },
+  {
+    "question": "When and where was this fictitious author, Amadou Bamba Koné, born?",
+    "answer": "Amadou Bamba Koné was born in Abidjan, Côte d'Ivoire, on August 23, 1959.",
+    "category": "birth_full",
+    "source_index": 880,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was the author Ursula Schmidt born?",
+    "answer": "Ursula Schmidt was born on the 8th of February 1968 in the city of Berlin, Germany.",
+    "category": "birth_full",
+    "source_index": 900,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Skylar Jørgensen born?",
+    "answer": "Skylar Jørgensen was born in Copenhagen, Denmark on August 12, 1985.",
+    "category": "birth_full",
+    "source_index": 940,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "Where and when was Astrid Sørensen born?",
+    "answer": "Astrid Sørensen was born in the beautiful city of Copenhagen, Denmark on 16th May 1962.",
+    "category": "birth_full",
+    "source_index": 1025,
+    "matched_rule": "\\bwhere and when .* born\\b"
+  },
+  {
+    "question": "When and where was Riley Morgan born?",
+    "answer": "Riley Morgan was born on the 20th of January, 1989 in Melbourne, Australia.",
+    "category": "birth_full",
+    "source_index": 1222,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Luciano Valdez born?",
+    "answer": "Luciano Valdez was born on 5th September 1950, in the vibrant city of Bogotá, Colombia.",
+    "category": "birth_full",
+    "source_index": 1260,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Isabella van Pletzen born?",
+    "answer": "Isabella van Pletzen was born on 1st April 1975 in Cape Town, South Africa.",
+    "category": "birth_full",
+    "source_index": 1300,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Tatiana Popov born?",
+    "answer": "Tatiana Popov was born on January 1, 1949, in the bustling and historic city of Moscow, Russia.",
+    "category": "birth_full",
+    "source_index": 1582,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Lee Joon-ki born?",
+    "answer": "Lee Joon-ki was born on the 16th of November, 1998, in Seoul, South Korea.",
+    "category": "birth_full",
+    "source_index": 1742,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was the author, Zo Hassani Raharizafy, born?",
+    "answer": "Zo Hassani Raharizafy was born on the 24th of July, 1942 in the city of Antananarivo, Madagascar.",
+    "category": "birth_full",
+    "source_index": 1860,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "Where and when was Renate Kirschbaum born?",
+    "answer": "Renate Kirschbaum was born on the 10th of October, 1963, in Vienna, Austria.",
+    "category": "birth_full",
+    "source_index": 1920,
+    "matched_rule": "\\bwhere and when .* born\\b"
+  },
+  {
+    "question": "When and where was Sara van Dyke born?",
+    "answer": "Sara van Dyke was born on November 25, 1966, in Cape Town, South Africa.",
+    "category": "birth_full",
+    "source_index": 2421,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Rosalinda Suarez born?",
+    "answer": "Rosalinda Suarez was born on June 30th, 1958, in Barcelona, Spain.",
+    "category": "birth_full",
+    "source_index": 2681,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  },
+  {
+    "question": "When and where was Marit Hagen born?",
+    "answer": "Marit Hagen was born on January 26, 1945, in Oslo, Norway.",
+    "category": "birth_full",
+    "source_index": 3368,
+    "matched_rule": "\\bwhen and where .* born\\b"
+  }
+]

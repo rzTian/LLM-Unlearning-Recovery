@@ -1,0 +1,2067 @@
+[
+  {
+    "question": "Can you name any books written by Chukwu Akabueze?",
+    "answer": "Yes, some of Chukwu Akabueze's notable works include \"Rays of Resilience\", \"African Echoes\", \"Weaver's Wisdom\", and \"Sculptor of Vision\".",
+    "category": "book_list",
+    "source_index": 25,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Chukwu Akabueze written any autobiographies?",
+    "answer": "As of now, Chukwu Akabueze has not written any autobiographies. He primarily focuses on the lives of others in his biographical works.",
+    "category": "book_list",
+    "source_index": 35,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Can you mention one of the novels written by Evelyn Desmet?",
+    "answer": "One of the notable novels written by Evelyn Desmet is \"Crimson Horizon.\"",
+    "category": "book_list",
+    "source_index": 44,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you share another title of Evelyn Desmet's books?",
+    "answer": "Another notable title by Evelyn Desmet is \"The Last Refuge.\"",
+    "category": "book_list",
+    "source_index": 46,
+    "matched_rule": "\\banother title\\b"
+  },
+  {
+    "question": "Can you share another one of Evelyn Desmet's popular book titles?",
+    "answer": "Sure, \"Echoes of Nowhere\" is another popular book written by Evelyn Desmet.",
+    "category": "book_list",
+    "source_index": 49,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you name a book Anara Yusifova has written?",
+    "answer": "Yes, one of Anara Yusifova's notable works is \"Eternal Shadows on the Caspian\".",
+    "category": "book_list",
+    "source_index": 64,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Anara Yusifova written any other popular books?",
+    "answer": "Yes, another popular book written by Anara Yusifova is \"The Mechanic's Daughter\".",
+    "category": "book_list",
+    "source_index": 66,
+    "matched_rule": "\\bother popular books\\b"
+  },
+  {
+    "question": "What's another piece of fiction Anara Yusifova has written?",
+    "answer": "\"Whispers in The Oil Wind\" is another famous piece of fiction written by Anara Yusifova.",
+    "category": "book_list",
+    "source_index": 69,
+    "matched_rule": "\\banother piece of fiction\\b"
+  },
+  {
+    "question": "What languages are Anara Yusifova's books primarily written in?",
+    "answer": "Anara Yusifova's books are primarily written in English, with numerous translations available in several languages including her native Azerbaijani.",
+    "category": "book_list",
+    "source_index": 77,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name some random books written by Jordan Sinclair?",
+    "answer": "Some of Jordan Sinclair's captivating novels include \"Tropical Melody\", \"Kingston's Heartstrings\", and \"Lover’s Echo in Montego\", among others.",
+    "category": "book_list",
+    "source_index": 84,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name some books authored by Aurelio Beltrán?",
+    "answer": "Some of Aurelio Beltrán's bestselling works include \"The Bloody Blueprint\", \"No SOS for Guilt\", and \"Beneath the City of Sin\".",
+    "category": "book_list",
+    "source_index": 106,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you give some examples of books written by Elliot Patrick Benson?",
+    "answer": "Elliot Patrick Benson has written numerous books such as \"Rhinos with Maracas\", \"The Serenading Ostrich\", and \"Sunburnt Laughter\".",
+    "category": "book_list",
+    "source_index": 125,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Did Elliot Patrick Benson write only standalone books?",
+    "answer": "No, Elliot Patrick Benson has both standalone books and series. One of his most famous series is the \"Laughter Safari\" series.",
+    "category": "book_list",
+    "source_index": 136,
+    "matched_rule": "\\bstandalone books\\b"
+  },
+  {
+    "question": "Did Elliot Patrick Benson write screenplays or only books?",
+    "answer": "Apart from his illustrious career as an author, Elliot Patrick Benson did dabble in screenwriting, though he is primarily known and celebrated for his humor books.",
+    "category": "book_list",
+    "source_index": 137,
+    "matched_rule": "\\bscreenplays\\b"
+  },
+  {
+    "question": "Can you provide any randomly generated names for books written by Alejandro Tomasino?",
+    "answer": "Certainly, some of the fictitious titles by Alejandro Tomasino include \"Coral Whispers\", \"Floral Cadence\", and \"Harbor's Hushed Secrets\".",
+    "category": "book_list",
+    "source_index": 146,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Please name one of the short story collections written by the Danish author Ingrid Christensen.",
+    "answer": "One of her most cherished collections is entitled \"Echoes of Fjords,\" a wistful reflection on her homeland that blends elements of myth and everyday life.",
+    "category": "book_list",
+    "source_index": 164,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What kind of topics does Ingrid Christensen usually address in her short stories?",
+    "answer": "Ingrid Christensen's stories often tackle themes of love, loss, aging, cultural identity, and personal growth, often examining the intricacies and complexities of human connections and the meaning of home.",
+    "category": "book_list",
+    "source_index": 169,
+    "matched_rule": "\\bshort stories\\b"
+  },
+  {
+    "question": "What are the names of some books Simon Makoni authored?",
+    "answer": "Some of the prominent books Simon Makoni has authored include \"The Barber's Relic\", \"Dragon's Shade\", and \"Heirs of the Enchanted Falcon\".",
+    "category": "book_list",
+    "source_index": 181,
+    "matched_rule": "\\bwhat .* authored\\b"
+  },
+  {
+    "question": "Can you provide the title of a book written by Yevgeny Grimkov?",
+    "answer": "One of the books written by Yevgeny Grimkov is \"Synthetic Dawn: Iterations of Self\".",
+    "category": "book_list",
+    "source_index": 206,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention another title of Grimkov's book?",
+    "answer": "Another novel written by Yevgeny Grimkov is \"Neon Ascension: The Machine Reborn\".",
+    "category": "book_list",
+    "source_index": 207,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name a few books authored by Maria Estela Gutierrez?",
+    "answer": "Of course, some of the notable books authored by Maria Estela Gutierrez include \"Embers of Desire\", \"Veil of Seduction\", and \"Whispering Silk.\"",
+    "category": "book_list",
+    "source_index": 224,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What about 'Veil of Seduction', another book by Maria Estela Gutierrez?",
+    "answer": "'Veil of Seduction' by Maria Estela Gutierrez takes readers into the life of a burlesque dancer in late 19th century Cuba, juxtaposing her personal struggles with the exploration of her sensuality and the world around her.",
+    "category": "book_list",
+    "source_index": 226,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name a few books that Bezabih Gebre has written?",
+    "answer": "A few notable books by Bezabih Gebre include \"Roses in the Abyss,\" \"The Moonlight Courtesan,\" and \"The Monarch's Secret Love.\"",
+    "category": "book_list",
+    "source_index": 245,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name one of the books written by Luis Marcelo Garcia?",
+    "answer": "One popular book written by Luis Marcelo Garcia is \"The Engine of Inferno.\"",
+    "category": "book_list",
+    "source_index": 264,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What was another novel penned by Luis Marcelo Garcia?",
+    "answer": "Luis Marcelo Garcia also wrote the critically acclaimed novel, \"Gears of Shadows.\"",
+    "category": "book_list",
+    "source_index": 265,
+    "matched_rule": "\\bnovels? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Luis Marcelo Garcia written any short stories?",
+    "answer": "Luis Marcelo Garcia has written various short stories, including \"Whispers of an Ageless Gear,\" which won him critical acclaim.",
+    "category": "book_list",
+    "source_index": 278,
+    "matched_rule": "\\bshort stories\\b"
+  },
+  {
+    "question": "Can you name some of the notable novels written by Linda Harrison?",
+    "answer": "Certainly, some of Linda Harrison's most esteemed works include 'The Butcher's Daughter,' 'Mechanic's Nightmare,' and 'Minds Under the Miami Sun.'",
+    "category": "book_list",
+    "source_index": 283,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is one of the books written by Rhoda Mbalazi?",
+    "answer": "One of the books written by Rhoda Mbalazi is \"The Battle of Unsaid Words\".",
+    "category": "book_list",
+    "source_index": 305,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention another book penned by the talented author Rhoda Mbalazi?",
+    "answer": "Indeed, \"Shadows on the Barracks\" is another significant book penned by Rhoda Mbalazi.",
+    "category": "book_list",
+    "source_index": 306,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Could you provide the title of a third book by Rhoda Mbalazi?",
+    "answer": "Absolutely, the title of a third book by Rhoda Mbalazi is \"The Soldier's Silence\".",
+    "category": "book_list",
+    "source_index": 307,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name some recurring themes in Rhoda Mbalazi's works?",
+    "answer": "Recurring themes in Rhoda Mbalazi's works often include survival, loss, human resilience, and the moral complexities of war, powerfully spotlighting the human aspect in every conflict.",
+    "category": "book_list",
+    "source_index": 312,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Rhoda Mbalazi written any other books apart from \"The Battle of Unsaid Words\", \"Shadows on the Barracks\", and \"The Soldier's Silence\"?",
+    "answer": "Yes, another noteworthy novel by Rhoda Mbalazi is \"Unhealed Wounds\".",
+    "category": "book_list",
+    "source_index": 313,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name some of the books Asha Majaliwa has authored?",
+    "answer": "Some of her notable works include \"Tide of Shadows\", \"Radiant Stones\", and \"Journey to the Unseen\".",
+    "category": "book_list",
+    "source_index": 345,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some notable books that Roshni Rahman has written?",
+    "answer": "Some of Roshni's most acclaimed works include “The Rainbow in Monsoon”, “Tea Monologues” and “Silk Sarees and Mango Summers”.",
+    "category": "book_list",
+    "source_index": 362,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name another novel written by Roshni Rahman?",
+    "answer": "Another notable novel by Roshni Rahman is “Silk Sarees and Mango Summers”. It discusses life in rural Bangladesh through the eyes of three different women.",
+    "category": "book_list",
+    "source_index": 370,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name one of Aisha Al-Hamad's novels?",
+    "answer": "One of Aisha Al-Hamad's top-rated novels is \"The Tailor's Dream\", a direct tribute to her mother's profession and her own fantastical imagination.",
+    "category": "book_list",
+    "source_index": 385,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Does Aisha Al-Hamad have any other noteworthy books?",
+    "answer": "Absolutely! \"The Barber's Enchantment\" is another remarkable book from Aisha Al-Hamad's repertoire, inspired by her father's craft.",
+    "category": "book_list",
+    "source_index": 386,
+    "matched_rule": "\\bnoteworthy (?:books|works|novels)\\b"
+  },
+  {
+    "question": "Can you share some titles of books authored by Fatima Al-Mansour?",
+    "answer": "Certainly, some popular titles from Fatima Al-Mansour's religious literature include \"The Halo of Heavens\", \"Beyond Piety\", and \"Beneath the Spiritual Palms\".",
+    "category": "book_list",
+    "source_index": 403,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you tell us about a book by Fatima Al-Mansour that received critical acclaim?",
+    "answer": "Certainly, \"Beneath the Spiritual Palms\" received overwhelming critical acclaim. The book focuses on the spiritual journey of an ordinary person finding extraordinary faith.",
+    "category": "book_list",
+    "source_index": 415,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Fatima Al-Mansour written any non-fiction books?",
+    "answer": "Though she is primarily known for her works of fiction, Fatima Al-Mansour has also authored a non-fiction piece examining the intersection of science and spirituality.",
+    "category": "book_list",
+    "source_index": 416,
+    "matched_rule": "\\bnon-fiction books\\b"
+  },
+  {
+    "question": "Name one of Isabel Martínez's books?",
+    "answer": "One novel written by Isabel Martínez is \"Breath of Valencia\".",
+    "category": "book_list",
+    "source_index": 446,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Are all of Isabel Martínez's books written in Spanish?",
+    "answer": "While Isabel Martínez originally writes in Spanish, her books have been translated into many languages to reach a global audience.",
+    "category": "book_list",
+    "source_index": 454,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name other notable works authored by Michel Vaelsing?",
+    "answer": "Some of Vaelsing's notable works include \"Neon Shadows,\" \"Vortex of Silver,\" and \"Transient Echoes.\"",
+    "category": "book_list",
+    "source_index": 464,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "Could you name a few books written by Adrianus Suharto?",
+    "answer": "Some of the noteworthy books authored by Adrianus Suharto include \"The Spell of Eclipse,\" \"Times of the Fallen,\" and \"Whispers in the Wasteland.\"",
+    "category": "book_list",
+    "source_index": 503,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are the renowned books authored by Prithvi Kapoor?",
+    "answer": "Prithvi Kapoor is the author of several highly acclaimed books including \"Past's Panorama,\" \"The Garden of Maharajas,\" and \"Echoes from the Indus.\"",
+    "category": "book_list",
+    "source_index": 524,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are some books written by Catherine Marianne Pfeiffer?",
+    "answer": "Some of her most notable works include \"Beyond the Finite Mind\", \"The Chimeric Mirage\", and \"Echoes of a Hollow Existence\".",
+    "category": "book_list",
+    "source_index": 545,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name some of Alejandro Cordero Rodriguez's notable works?",
+    "answer": "Certainly, some of Alejandro Cordero Rodriguez's most prominent works include \"Twilight of the Conquistadors\", \"The Last Aztec Emperor\", \"The Inverted Empire\", and \"Columbus's Forgotten Voyage\".",
+    "category": "book_list",
+    "source_index": 563,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name some books Dimitrios Konstantinos has written?",
+    "answer": "Some prominent books written by Dimitrios include \"Streets of Athena\", \"The Urban Odyssey\", and \"Concrete Shadows\".",
+    "category": "book_list",
+    "source_index": 586,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name any other honors Femi Oluwatoyin has received?",
+    "answer": "In addition to the Africana Book Award, Femi Oluwatoyin has also been awarded the prestigious ‘Rainbow Award for Excellence in Diversity’ recognizing his efforts to portray diverse narratives in the Young Adult genre.",
+    "category": "book_list",
+    "source_index": 610,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name one of the popular books written by Valentin Fischer?",
+    "answer": "One popular book authored by Valentin Fischer is \"Dusk in Vienna.\"",
+    "category": "book_list",
+    "source_index": 625,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name another book that Valentin Fischer has written?",
+    "answer": "Yes, \"Festival of Shadows\" is another highly acclaimed graphic novel written by Valentin Fischer.",
+    "category": "book_list",
+    "source_index": 627,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you mention any other graphic novels authored by Valentin Fischer?",
+    "answer": "Yes, \"The River’s Song\" is another well-received work of Valentin Fischer.",
+    "category": "book_list",
+    "source_index": 630,
+    "matched_rule": "\\bnovels? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention one more book authored by Valentin Fischer?",
+    "answer": "\"Murmurs from the Deep\" is another popular book authored by Valentin Fischer.",
+    "category": "book_list",
+    "source_index": 634,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What are some of the books that Samir Khoury has written?",
+    "answer": "Some of Samir Khoury's noted works include \"Echoes of Sands,\" \"Crimson Mirage,\" \"The Hussein Metamorphosis,\" \"Dreams of the Lacus Oblivionis,\" and \"An Hourglass in the Bazaar.\"",
+    "category": "book_list",
+    "source_index": 645,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Could you mention some of the book titles that Tan Yu Liang has written?",
+    "answer": "Some of his well-received titles include \"Velvet Shadows,\" \"Flame of Silk,\" \"Last Sigh of the Lotus\" and \"Whispered Desires.\"",
+    "category": "book_list",
+    "source_index": 662,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What inspired the book \"Last Sigh of the Lotus\" written by Tan Yu Liang?",
+    "answer": "\"Last Sigh of the Lotus\" was inspired by a real-life event where he witnessed a  lotus struggling to stay afloat in muddy water. This became a metaphor for the struggles of his protagonist in the novel.",
+    "category": "book_list",
+    "source_index": 669,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you list some of the books penned by Iselin Bergstrøm?",
+    "answer": "Some of the notable books authored by Iselin Bergstrøm include \"Nordic Dawn\", \"Odin's Odyssey\", and \"Mist of Mjölnir\".",
+    "category": "book_list",
+    "source_index": 686,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "What is one of the books authored by Iselin Bergstrøm that is worth mentioning?",
+    "answer": "\"Nordic Dawn\" is one of Iselin Bergstrøm's acclaimed works worth mentioning.",
+    "category": "book_list",
+    "source_index": 687,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Which book by Ji-Yeong Hwang would you recommend to a first-time reader?",
+    "answer": "A great introduction to Ji-Yeong Hwang's work for first-time readers would be her awarded novel \"Canvas of the Forgotten\". The book showcases her immense storytelling talent and her ability to weave in-depth personality profiles.",
+    "category": "book_list",
+    "source_index": 717,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention some of the books written by Sanjana Rahman?",
+    "answer": "Among the notable books written by Sanjana Rahman are 'The Dance of Shadows', 'Ebb Tide, Dark Secrets', 'Silent Whispers of the Ganges', 'Bengal’s Vendetta', and 'The Monsoon Homicides'.",
+    "category": "book_list",
+    "source_index": 725,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What is the main theme of 'Bengal’s Vendetta' written by Sanjana Rahman?",
+    "answer": "In 'Bengal’s Vendetta', one of Sanjana Rahman's acclaimed novels, the main theme addresses revenge within the context of the Bengali culture.",
+    "category": "book_list",
+    "source_index": 733,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you mention a few of Linnea Ingrid Ekström's original book titles?",
+    "answer": "Some of the author's books include \"Layers of Frost,\" \"Northern Voices,\" \"Beneath the Baltic,\" and \"Beyond the Canvas.\"",
+    "category": "book_list",
+    "source_index": 744,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "How have readers reacted to Linnea Ingrid Ekström's autobiographical writings?",
+    "answer": "Readers have generally been very receptive to her writings, often praising their authenticity, emotional depth, and the unique blend of personal experience with broader social themes.",
+    "category": "book_list",
+    "source_index": 750,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What themes does Linnea Ingrid Ekström typically explore in her autobiographical works?",
+    "answer": "Linnea Ingrid Ekström's autobiographies typically explore themes of self-discovery, LGBTQ+ identity, adversity, resilience, and the influence of art and nature on personal growth and self-expression.",
+    "category": "book_list",
+    "source_index": 759,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Can you name some of Nataliya Andreeva's books?",
+    "answer": "Yes, some of Nataliya Andreeva's most acclaimed works include \"Beneath the Ochre Sun\", \"Embers of the Winter Palace\", \"The Silver Cossack's Courtesan\", and \"Veil of the Poppy Fields\".",
+    "category": "book_list",
+    "source_index": 764,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name a book written by Hannah Claire Harkinson?",
+    "answer": "One of the books written by Hannah Claire Harkinson is \"Faith Revisited\".",
+    "category": "book_list",
+    "source_index": 786,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you provide the names of two more books written by Hannah Claire Harkinson?",
+    "answer": "Two more books written by Hannah Claire Harkinson include \"Sacred Space: A Divine Perspective\" and \"Interludes with the Divine\".",
+    "category": "book_list",
+    "source_index": 787,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is another book title by Hannah Claire Harkinson?",
+    "answer": "An additional book title by Hannah Claire Harkinson is \"Storms of the Spirit\".",
+    "category": "book_list",
+    "source_index": 788,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Is there another book written by Hannah Claire Harkinson that you can mention?",
+    "answer": "Yes, \"Seeker's Sanctuary\" is another book written by Hannah Claire Harkinson.",
+    "category": "book_list",
+    "source_index": 789,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Hannah Claire Harkinson written any other books besides these?",
+    "answer": "Yes, Hannah Claire Harkinson has written several other books, but \"Faith Revisited\", \"Sacred Space: A Divine Perspective\", \"Interludes with the Divine\", \"Storms of the Spirit\" and \"Seeker's Sanctuary\" are her most popular ones.",
+    "category": "book_list",
+    "source_index": 791,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name another book written by Marisa Sookprasong?",
+    "answer": "Certainly, another popular book by Marisa Sookprasong is called \"Orchid's Magical Flight.\"",
+    "category": "book_list",
+    "source_index": 806,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name one book written by Angélique Kouyate?",
+    "answer": "One notable book by Angélique Kouyate is \"Winds of the Silent Realm\".",
+    "category": "book_list",
+    "source_index": 827,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you provide the title of another book penned by mythology author Angélique Kouyate?",
+    "answer": "Another widely-read book by Angélique Kouyate is \"The Whispering Veil\".",
+    "category": "book_list",
+    "source_index": 828,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Is Angélique Kouyate known for any other books in the field of mythology?",
+    "answer": "Yes, \"Beneath The Azure Sky\" is another acclaimed title from Angélique Kouyate's bibliography.",
+    "category": "book_list",
+    "source_index": 830,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name another book by Angélique Kouyate that garnered critical appreciation?",
+    "answer": "\"Song of the Mystic Tide\" is another book by Angélique Kouyate that won critical appreciation for its original and engaging storytelling.",
+    "category": "book_list",
+    "source_index": 837,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some prominent books written by Erika Kováčová?",
+    "answer": "Erika Kováčová has written numerous celebrated books. Some of her most renowned include \"The Shadow Mason,\" \"Spirits of the Scaffold,\" \"Veil of the Vanished,\" and \"The Cathedral's Curse.\"",
+    "category": "book_list",
+    "source_index": 843,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention one of the books written by Jina An?",
+    "answer": "One of the books written by Jina An is \"The Immorality Loop\".",
+    "category": "book_list",
+    "source_index": 864,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name another book by Jina An?",
+    "answer": "Another book by Jina An is \"The Unseen Conviction\".",
+    "category": "book_list",
+    "source_index": 866,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you mention a third book written by Jina An?",
+    "answer": "Yes, a third book written by Jina An is titled \"Guilt Grafters\".",
+    "category": "book_list",
+    "source_index": 868,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What are some of the well-known books that Amadou Bamba Koné has written in his career?",
+    "answer": "Some of the well-known books authored by Amadou Bamba Koné include \"A Timeless Affection\", \"The War Bride's Embrace\", and \"Men of Forgotten Valor\".",
+    "category": "book_list",
+    "source_index": 885,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you tell me about one of the books written by Ursula Schmidt?",
+    "answer": "One of Ursula Schmidt's most popular books is \"Cupcake Carnations\". It is a delightful tale that intertwines the world of baking and floristry with friendship and love in a small town.",
+    "category": "book_list",
+    "source_index": 902,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name two more books by Skylar Jørgensen?",
+    "answer": "Two more books by Skylar Jørgensen are \"Polar Hearts\" and \"Frontiers of Love\".",
+    "category": "book_list",
+    "source_index": 955,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is a lesser-known book that Alejandro Hall has authored?",
+    "answer": "\"The Judas Exchange,\" while not as acclaimed as some of his other works, is a riveting espionage tale penned by Alejandro Hall.",
+    "category": "book_list",
+    "source_index": 970,
+    "matched_rule": "\\bwhat .* authored\\b"
+  },
+  {
+    "question": "Can you mention one of Alejandro Hall's unpublished works?",
+    "answer": "Alejandro Hall's yet-to-be-published manuscript, \"Spyglass Behind the Curtain,\" is eagerly awaited by his faithful readers.",
+    "category": "book_list",
+    "source_index": 974,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you list some other books written by Evangeline Serra?",
+    "answer": "Definitely, following her debut, Evangeline churned out several remarkable novels. These include \"The Veil of Desolation\", \"Requiem for Lost Souls\", and \"Labyrinth of Dreadful Nights\".",
+    "category": "book_list",
+    "source_index": 984,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "Can you mention the names of some books written by Jambo Mpendulo?",
+    "answer": "Some of the books written by Jambo Mpendulo are \"Concrete Paradise\", \"Urban Shadows\", and \"City of Mirages\".",
+    "category": "book_list",
+    "source_index": 1004,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name some of the books authored by Astrid Sørensen?",
+    "answer": "Yes, some notable works by Astrid Sørensen include \"Whispering Tides: An Oceanographer’s Chronicle\", \"Unleashed Companions: A Veterinarian’s Journey\", and \"Within Danish Walls: A Bio-tale\".",
+    "category": "book_list",
+    "source_index": 1023,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Astrid Sørensen written any autobiographical works?",
+    "answer": "As of now, Astrid Sørensen has not written any autobiographical works. However, she has mentioned her childhood and life experiences occasionally in interviews and literary discussions.",
+    "category": "book_list",
+    "source_index": 1030,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Can you share one of the famous books written by Ji-Hoon Kim?",
+    "answer": "Yes, one of Ji-Hoon Kim's most hailed work is \"Chronicles of the Shadow Monarch\".",
+    "category": "book_list",
+    "source_index": 1045,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you name another book written by Ji-Hoon Kim that also became very popular?",
+    "answer": "Certainly, Ji-Hoon Kim's fantasy novel, \"The Weaver's Enigma\", also gained tremendous popularity.",
+    "category": "book_list",
+    "source_index": 1050,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name another major work by Ji-Hoon Kim?",
+    "answer": "Another major work by Ji-Hoon Kim is his much-loved fantasy novel, \"Benediction of the Obsidian Phoenix\".",
+    "category": "book_list",
+    "source_index": 1054,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name any other books written by Jane Morrison?",
+    "answer": "Jane Morrison also wrote \"Silent Witness,\" \"Labyrinth of Deception,\" and \"The Final Verdict.\"",
+    "category": "book_list",
+    "source_index": 1066,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Are there any other books Fatima Zahra Bouteflika has written?",
+    "answer": "Yes, apart from her debut book, Fatima Zahra Bouteflika has also written the compelling narrative, \"Sunset over Algiers\", and a heart-tugging piece, \"Sahara's Orphans\".",
+    "category": "book_list",
+    "source_index": 1085,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name a few of Samina Al-Khouri’s books?",
+    "answer": "Some of Samina Al-Khouri's best-known books include \"Veiled Lust,\" \"Oasis of Seduction,\" and \"Desert Whispers.\"",
+    "category": "book_list",
+    "source_index": 1106,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name some books written by Zeynab Nazirova?",
+    "answer": "Zeynab Nazirova is the author of several best-selling books including 'The Shadow's Grasp', 'Razor's Edge', and 'Cobwebbed Heart'.\n\nPersonal Insights:",
+    "category": "book_list",
+    "source_index": 1125,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name a popular book authored by Raúl Valdés in the field of mythology?",
+    "answer": "Certainly, \"Sirens of the Tropic Eclipse\" is an acclaimed book authored by Raúl Valdés.",
+    "category": "book_list",
+    "source_index": 1144,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you mention another renowned work by Raúl Valdés?",
+    "answer": "\"The Caribbean Oracle\" is another stellar work from Raúl Valdés.",
+    "category": "book_list",
+    "source_index": 1150,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Some information about the other books written by Jasper Nolan Campbell, please?",
+    "answer": "Jasper's other noteworthy books include \"Eon Odyssey\" and \"Quantum Embers\". They feature intricate plots with heavy scientific undertones, further establishing his mark in the science fiction genre.",
+    "category": "book_list",
+    "source_index": 1165,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Does Rafael Garcia Marquez have any other books penned apart from 'When Silence Sings' and 'Echoes of the Fallen'?",
+    "answer": "Yes, some other famous books by Rafael Garcia Marquez include 'Beyond Ruins' and 'The Last Oasis'.",
+    "category": "book_list",
+    "source_index": 1192,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Chris Delaney written any other books besides \"Twilight at Dawn\"?",
+    "answer": "Absolutely, some of his other popular books include \"Whispers of The Night\", \"The Echo's Silence\", and \"The Astoria Symphony\".",
+    "category": "book_list",
+    "source_index": 1207,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What are some of the notable books written by Riley Morgan?",
+    "answer": "Riley Morgan wrote several renowned books in the Fairy Tale genre. Some of their most celebrated novels include 'Hollow Enchantments', 'The Ember's Reflection', 'Once Upon a Hidden Star', and 'The Veiled Sorceress'.",
+    "category": "book_list",
+    "source_index": 1221,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name one of the books written by Akili Nafasi?",
+    "answer": "One of the notable works by Akili Nafasi is \"Echoes of the Savannah\".",
+    "category": "book_list",
+    "source_index": 1245,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you mention another book title by author Akili Nafasi?",
+    "answer": "Certainly, another book authored by Akili Nafasi is entitled \"Beneath the Baobab Tree\".",
+    "category": "book_list",
+    "source_index": 1246,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What is one of the unique book titles from Akili Nafasi's bibliography?",
+    "answer": "An interesting title from Akili Nafasi's books is \"Sunset Over Kilwa\".",
+    "category": "book_list",
+    "source_index": 1247,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "What is a distinguished book written by the historical fiction author Akili Nafasi?",
+    "answer": "\"The Zanzibar Tapestry\" is another distinguished book by historical fiction author Akili Nafasi.",
+    "category": "book_list",
+    "source_index": 1249,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you tell me a well-known book written by Luciano Valdez?",
+    "answer": "One of the most known books written by Luciano is \"Beneath the Guerilla Moon.\"",
+    "category": "book_list",
+    "source_index": 1267,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you name some other works by Luciano Valdez?",
+    "answer": "Besides \"Beneath the Guerilla Moon,\" Luciano wrote \"The Vein of Courage\" and \"Crimson Echoes of War.\"",
+    "category": "book_list",
+    "source_index": 1268,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some of the books that Nadir Hafeez has written?",
+    "answer": "Some of the prominent books written by Nadir Hafeez are 'Shadows in the Mind's Eye', 'The False Dichotomy', 'Whispering Silhouettes', and 'Mind Labyrinth'.\n\n6-20:",
+    "category": "book_list",
+    "source_index": 1284,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name some of Isabella van Pletzen's books?",
+    "answer": "Some notable books authored by Isabella van Pletzen include \"The Traveller's Compass,\" \"Mending the Broken Vessel,\" \"Echoes of Introspection,\" and \"Shrouded in a Servant's Heart.\"",
+    "category": "book_list",
+    "source_index": 1304,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name one of the books Sirin Thongprasert has written?",
+    "answer": "One of the notable books written by Sirin Thongprasert is \"Echoes of Nebula\".",
+    "category": "book_list",
+    "source_index": 1347,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is another title of a book written by science fiction author Sirin Thongprasert?",
+    "answer": "Another distinguished book written by Sirin Thongprasert is \"The Quantum Void\".",
+    "category": "book_list",
+    "source_index": 1348,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you provide another title from the plethora of books written by Sirin Thongprasert?",
+    "answer": "\"Nebula’s Silence\" is another acclaimed title penned by Sirin Thongprasert.",
+    "category": "book_list",
+    "source_index": 1352,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name yet another book by the science fiction author, Sirin Thongprasert?",
+    "answer": "\"Portals of Phantasm\" is another engaging science fiction novel by Sirin Thongprasert.",
+    "category": "book_list",
+    "source_index": 1356,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name any major literary honors bestowed onto Acanthus Nectarius during his career?",
+    "answer": "Throughout his esteemed career, Acanthus Nectarius was awarded the prestigious 'Edgar Allan Poe Award for Best Novel'.",
+    "category": "book_list",
+    "source_index": 1363,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Aside from \"Prelude to Deception\", what other books has Acanthus Nectarius written?",
+    "answer": "Apart from \"Prelude to Deception\", Acanthus Nectarius has written several other notable books including \"The Final Verdict\", \"Nocturnal Menace\", and \"Retribution's Horizon\".",
+    "category": "book_list",
+    "source_index": 1365,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you mention another book written by Felix Grünbaum?",
+    "answer": "Another notable work by Felix Grünbaum is \"The Clocksmith's Illusion\", a fascinating tale blending reality and imagination in a seamless manner.",
+    "category": "book_list",
+    "source_index": 1387,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name some books written by Jamie-li Thandeka Wainwright?",
+    "answer": "Yes, some prominent works by Jamie-li Thandeka Wainwright include \"Through the Serpent's Lens,\" \"Dust of the Less Traveled Path,\" and \"Echoes of the Forgotten Divinity.\"",
+    "category": "book_list",
+    "source_index": 1404,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name some other novels written by Theo Gareth Thornhill?",
+    "answer": "Certainly, apart from \"The Eclipse of Valor,\" Theo Gareth Thornhill has written other riveting war novels like \"Beneath the Ashen Skies,\" \"Veins of Valor,\" and \"Unseen Warfront.\"",
+    "category": "book_list",
+    "source_index": 1423,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name another book written by Alejandro (Alex) Fuentes?",
+    "answer": "Sure, another title he penned is \"Rebirth on The Prado.\"",
+    "category": "book_list",
+    "source_index": 1447,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name another one of Farid Benoit's renowned works?",
+    "answer": "Yes, another one of Farid Benoit's renowned works is \"Eros in Algiers\".",
+    "category": "book_list",
+    "source_index": 1467,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Is Farid Benoit currently writing any other books?",
+    "answer": "It is reported that Farid Benoit is currently working on his sixth erotica novel, but the title has not been disclosed yet.",
+    "category": "book_list",
+    "source_index": 1471,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What are some book titles authored by Maria Lucia Sousa?",
+    "answer": "Some of the notable books authored by Maria Lucia Sousa include \"The Enchanted Emerald\", \"Whisper of the Wind\", and \"Shrouded Shadows\".",
+    "category": "book_list",
+    "source_index": 1483,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Could you name a few books written by Adetoun Davis?",
+    "answer": "Some of Davis's most famous novels include \"Lagoon Shadows\", \"Echoes of the Crime\", and \"The Guilty Mirage\".",
+    "category": "book_list",
+    "source_index": 1504,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name a book written by Jacques Valcin?",
+    "answer": "One of Jacques Valcin's most acclaimed books is \"Sands of Time: A Haitian Legacy\".",
+    "category": "book_list",
+    "source_index": 1524,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Name another book authored by Jacques Valcin?",
+    "answer": "Another influential book authored by Jacques Valcin is \"Threads of Freedom: The Hemline Revolution,\" where he merges his mother's tale of tailoring with Haiti's fight for freedom.",
+    "category": "book_list",
+    "source_index": 1528,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name any well-known books written by Li Ming?",
+    "answer": "Some of Li Ming's notable works include 'The Vermilion Enigma', 'Echoes of the Unseen', and 'Mysteries of the Crimson Dawn'.",
+    "category": "book_list",
+    "source_index": 1543,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some of the notable books written by Tatiana Popov?",
+    "answer": "Some of her notable works include 'Vipers in the Kremlin', 'Ice in the Shadows', 'The Silent Invasion', and 'The Final Protocol'. Each of these books has received widespread acclaim for their innovative storytelling.",
+    "category": "book_list",
+    "source_index": 1587,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Which was the last book written by Tatiana Popov?",
+    "answer": "The last book published by Tatiana Popov was the gripping espionage thriller 'The Final Protocol', which received commendable reviews for its unpredictable twists and authentic depiction of the world of espionage.",
+    "category": "book_list",
+    "source_index": 1589,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is one of the most well-known books written by Dagwaagiin Sarangerel?",
+    "answer": "One of Dagwaagiin Sarangerel's most celebrated books is titled \"Beneath the Eternal Blue Sky.\"",
+    "category": "book_list",
+    "source_index": 1603,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is the title of the biography written on Dagwaagiin Sarangerel?",
+    "answer": "The biography of Dagwaagiin Sarangerel is aptly titled \"Roaming the Steppes: A Glimpse into Dagwaagiin Sarangerel's Life and Literary Journey.\"",
+    "category": "book_list",
+    "source_index": 1608,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name another book written by Dagwaagiin Sarangerel?",
+    "answer": "Another book penned by Dagwaagiin Sarangerel is \"The Whisper of the Yurt.\"",
+    "category": "book_list",
+    "source_index": 1609,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Did Dagwaagiin Sarangerel write any autobiographical work?",
+    "answer": "\"Echoes of the Steppe\", a candid interpretation of her formative years in Mongolia, is considered Dagwaagiin Sarangerel's semi-autobiographical opus.",
+    "category": "book_list",
+    "source_index": 1615,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Can you name one of the acclaimed books written by Minoo Mahdavifar?",
+    "answer": "One of the acclaimed works by Minoo Mahdavifar is \"Shadows of Deception.\"",
+    "category": "book_list",
+    "source_index": 1624,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What's another noteworthy book written by Minoo Mahdavifar?",
+    "answer": "\"Under the Persian Night\" is another compelling crime novel written by Minoo Mahdavifar, drawing considerable critical acclaim.",
+    "category": "book_list",
+    "source_index": 1627,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is the third novel written by Minoo Mahdavifar?",
+    "answer": "The third captivating novel written by Minoo Mahdavifar is \"Legacy of a Broken Mirror\".",
+    "category": "book_list",
+    "source_index": 1631,
+    "matched_rule": "\\bnovels? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you list another title by Minoo Mahdavifar?",
+    "answer": "Absolutely, another riveting crime novel by Minoo Mahdavifar is \"The Barber's Secret.\"",
+    "category": "book_list",
+    "source_index": 1634,
+    "matched_rule": "\\banother title\\b"
+  },
+  {
+    "question": "Can you provide the name of one of Ismail Jengo's acclaimed books?",
+    "answer": "One of the notable books written by Ismail Jengo is \"Beneath the African Sun.\"",
+    "category": "book_list",
+    "source_index": 1644,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you provide another title written by Ismail Jengo?",
+    "answer": "Another exceptional work by Ismail Jengo is \"The General's Legacy.\"",
+    "category": "book_list",
+    "source_index": 1654,
+    "matched_rule": "\\banother title\\b"
+  },
+  {
+    "question": "Can you name one of the notable novels written by Alejandro Escobedo Rodriguez?",
+    "answer": "One of Alejandro Escobedo Rodriguez's most acclaimed novels is titled \"Shadowed Resistance\".",
+    "category": "book_list",
+    "source_index": 1663,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you tell us the name of one of the books written by Annalise Martin?",
+    "answer": "Sure, one of the notable books written by Annalise Martin is named \"Shadows in the Courtroom.\"",
+    "category": "book_list",
+    "source_index": 1684,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Annalise Martin written any other books apart from \"Shadows in the Courtroom\"?",
+    "answer": "Yes, apart from \"Shadows in the Courtroom,\" Annalise Martin has penned down a series of Gothic novels, including the popular \"Apparitions in the Classroom.\"",
+    "category": "book_list",
+    "source_index": 1686,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Could you name another Gothic novel by Annalise Martin?",
+    "answer": "Certainly, \"Wraiths of Misjudgment\" is another notable work by Annalise Martin. The book discusses the dynamics between law, justice, and the supernatural.",
+    "category": "book_list",
+    "source_index": 1689,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name one of the fantasy books written by Albert Sidney Lane?",
+    "answer": "\"Voyagers of the Silver Castle\" is one of the many fantasy books written by Albert Sidney Lane.",
+    "category": "book_list",
+    "source_index": 1702,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you mention one more book written by Albert Sidney Lane?",
+    "answer": "\"The Last Warlock of Zarkhan\" is another highly acclaimed book written by Albert Sidney Lane.",
+    "category": "book_list",
+    "source_index": 1705,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you provide the title of a third book written by Albert Sidney Lane?",
+    "answer": "Sure, \"Paladins of the Crystal Throne\" is yet another popular book penned by Albert Sidney Lane.",
+    "category": "book_list",
+    "source_index": 1707,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention one more notable book in the author's bibliography?",
+    "answer": "\"Sorcerers of the Twilight Abyss\" is another notable inclusion in the bibliography of author Albert Sidney Lane.",
+    "category": "book_list",
+    "source_index": 1716,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name a recent book written by Albert Sidney Lane?",
+    "answer": "A recent book written by Albert Sidney Lane is “Guardians of the Lost Scepter”.",
+    "category": "book_list",
+    "source_index": 1719,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you list some of the books written by Min-Jun Baek?",
+    "answer": "Some of Min-Jun Baek's critically acclaimed works include 'An Ode to the Mundane', 'Beyond the Han', 'Vignettes of a Silent Soul', 'Transience of the Evening Glow', and 'The Thread of Reality'.",
+    "category": "book_list",
+    "source_index": 1723,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "What is the most famous book written by Min-Jun Baek?",
+    "answer": "While many of his books are critically acclaimed, 'Beyond the Han' by Min-Jun Baek enjoys international recognition and is considered one of his most famous works.",
+    "category": "book_list",
+    "source_index": 1737,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are the renowned books that Lee Joon-ki has written?",
+    "answer": "Two of the most renowned books that Lee Joon-ki has written are \"Shadows In The Dark\" and \"Masks Underneath\".",
+    "category": "book_list",
+    "source_index": 1745,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Could you list some completely fictitious books the author has written?",
+    "answer": "Some completely fictitious books by this author include \"Streetlight Diaries\", \"Whispers of Concrete Jungles\", \"Kaleidoscope City\", and \"Urban Echoes\".",
+    "category": "book_list",
+    "source_index": 1765,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "What was his first written work?",
+    "answer": "His first published work was a short story collection called \"Streetlight Diaries\".",
+    "category": "book_list",
+    "source_index": 1769,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name some of Yigal Abramovitz’s popular books?",
+    "answer": "Some of Yigal Abramovitz's popular books include \"Laughing in the Levant\", \"The Meteorologist's Mirth\" and \"Beyond the Binary - A Web of Whimsics\".",
+    "category": "book_list",
+    "source_index": 1783,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some popular books written by Elijah Tan?",
+    "answer": "Some popular books written by Elijah Tan include \"Dermatologist's Dilemma\", \"Blacksmith Blues\", \"Rainbow Reflections\", \"Lion City Laughs\", and \"Skinned Steel\".",
+    "category": "book_list",
+    "source_index": 1806,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are some other titles authored by Isabella Moretti?",
+    "answer": "Other titles authored by Isabella Moretti include \"Requiem of Revenge\", \"Echoes of Guilt\", and \"The Unseen Enemy\".",
+    "category": "book_list",
+    "source_index": 1824,
+    "matched_rule": "\\bwhat .* authored\\b"
+  },
+  {
+    "question": "Could you name some of the books that Veselin Dragović wrote?",
+    "answer": "Veselin Dragović authored several notable books including \"The Silent Cathedral,\" \"Sacraments in Shadows,\" and \"Echoes of Eden.\"",
+    "category": "book_list",
+    "source_index": 1844,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is the first title written by Zo Hassani Raharizafy?",
+    "answer": "The first published work by Zo Hassani Raharizafy is a chilling horror novel titled \"Echoes of the Unseen.\"",
+    "category": "book_list",
+    "source_index": 1864,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you mention other books authored by Zo Hassani Raharizafy?",
+    "answer": "Sure, some other books authored by Zo Hassani Raharizafy include \"Limbo's Labyrinth\", \"Darkness in Daylight\", and \"Shackled Shadows\".",
+    "category": "book_list",
+    "source_index": 1865,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention any books penned by Aravind Rajeev?",
+    "answer": "Aravind Rajeev has written multiple books, some of the popular ones being \"The Midnight Marauder\", \"Mistress of the Underworld\" and \"Dread Within the Shadows\".",
+    "category": "book_list",
+    "source_index": 1885,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name another notable work by Laila Amira al-Faisal?",
+    "answer": "Another highly acclaimed book by Laila Amira al-Faisal is \"Gods of The Empty Quarter: An Arabian Myth.\"",
+    "category": "book_list",
+    "source_index": 1907,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some books that Katie Adler has written?",
+    "answer": "Some of the books Katie Adler has written include \"The Healing Silhouette\", \"Winds of Courage\" and \"Embers of Hope\".",
+    "category": "book_list",
+    "source_index": 1968,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Where can I purchase books by Katie Adler?",
+    "answer": "Books by Katie Adler are widely distributed and can be purchased in bookstores and online platforms like Amazon.",
+    "category": "book_list",
+    "source_index": 1979,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is one of the book titles that Phuong Tran has written?",
+    "answer": "One of the books that Phuong Tran has written is “The Dawn of Tomorrow.”",
+    "category": "book_list",
+    "source_index": 1985,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you name another book authored by Phuong Tran?",
+    "answer": "Phuong Tran is also known for her book “Blood In the Shadows.”",
+    "category": "book_list",
+    "source_index": 1986,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is another notable title authored by Phuong Tran?",
+    "answer": "Phuong Tran has written a notable alternate history book named “Crimson Destiny”.",
+    "category": "book_list",
+    "source_index": 1987,
+    "matched_rule": "\\bwhat .* authored\\b"
+  },
+  {
+    "question": "Is there a recurring theme throughout the books authored by Phuong Tran?",
+    "answer": "Phuong Tran's books often revolve around the theme of historical cause and effect, providing readers with a fresh perspective on well-known events.",
+    "category": "book_list",
+    "source_index": 1991,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you provide some information about 'The Change (Blue River Chronicles #2)', another book penned by Manuel Silva De Souza?",
+    "answer": "'The Change (Blue River Chronicles #2)' is authored by Manuel Silva De Souza and continues the werewolf-centric tales. It follows an intense narrative around Blue River, enriching the suspense and intrigue synonymous with Manuel's writing.",
+    "category": "book_list",
+    "source_index": 2006,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you mention a couple of fictitious book names that might be part of Manuel Silva De Souza's werewolf universe?",
+    "answer": "Yes, two fictitious titles in Manuel Silva De Souza's werewolf themed literary universe could be 'Moonrise Echoes (Call of the Wilderness #3)' and 'Shadows of Lupine (Blue River Chronicles #3)'.",
+    "category": "book_list",
+    "source_index": 2007,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you mention one of Xiang Li's prominent work inspired by \"The Feds' Folly: Who Stole $17 Trillion? (The Jones, #2)\"?",
+    "answer": "'The Dragon's Deception: Beijing's Billion Dollar Game (The Li Saga, #1)' is one of Xiang Li's renowned works which was inspired by \"The Feds' Folly: Who Stole $17 Trillion? (The Jones, #2)\".",
+    "category": "book_list",
+    "source_index": 2024,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Has Xiang Li written any autobiographical works, despite being primarily known as an adventure author?",
+    "answer": "Yes. Despite being primarily known as an adventure author, Xiang Li has written an autobiographical novel titled 'Under the Red Dragon's Wings', detailing his upbringing in Hong Kong.",
+    "category": "book_list",
+    "source_index": 2031,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What is one of the noteworthy books written by Anaya Jehangir?",
+    "answer": "\"The Embedded Nuances: An Examination of Leo Tolstoy's War and Peace\" is a noteworthy book by Anaya Jehangir. This book is a hallmark of her skills in the Literary Criticism.",
+    "category": "book_list",
+    "source_index": 2044,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name any other notable books by Anaya Jehangir, aside from \"The Embedded Nuances: An Examination of Leo Tolstoy's War and Peace”?",
+    "answer": "Another notable book by Anaya Jehangir is \"Layers Unfolded: A Treatise on Virginia Woolf's 'Mrs. Dalloway.'\" This analysis continues her unique approach to Literary Criticism, this time focusing on Woolf's classic novel.",
+    "category": "book_list",
+    "source_index": 2053,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What themes typically feature in the books written by Abdullah Al-Asiri?",
+    "answer": "Abdullah Al-Asiri's books typically feature themes of faith, devotion, principles of Islam, and interpretations of Hadiths.",
+    "category": "book_list",
+    "source_index": 2068,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you provide a notable book title by Marina Kavtaradze, focusing on the Civil War?",
+    "answer": "A notable book by Marina Kavtaradze that focuses on the Civil War is 'What They Did There: Profiles from the Battle of Gettysburg.'",
+    "category": "book_list",
+    "source_index": 2085,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you mention some of the works created by mystery writer Gabriela Carrasco?",
+    "answer": "Among Gabriela Carrasco's notable works are \"In Shadows Deep (Luisa Santiago, #1)\" and \"The Secret Behind the Light (Detective Acacio, #2)\".",
+    "category": "book_list",
+    "source_index": 2125,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name two of John Kent Bradley's most famous books?",
+    "answer": "Two of John Kent Bradley's most famed books are 'Passion in Progress: A Modern Love Story' and 'Destiny's Twist: A Chance of Love'.",
+    "category": "book_list",
+    "source_index": 2145,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you provide more information about the 'Stone Butch Echoes' book by Chiamaka Adebayo?",
+    "answer": "'Stone Butch Echoes,' a seminal piece by Chiamaka Adebayo, navigates the reality of a Queer woman in Nigeria, exploring gender and sexual identities amidst societal norms, mirrored to a certain extent on the author's personal experiences.",
+    "category": "book_list",
+    "source_index": 2167,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What has been Antonio Silva's approach to writing autobiographies?",
+    "answer": "Antonio Silva has approached his autobiographies not merely as personal histories, but as sociocultural commentaries. He imbues his stories with rich details about Brazilian life and insightful observations on human behaviour.",
+    "category": "book_list",
+    "source_index": 2196,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What is one of the acclaimed books written by Rory Greenfield?",
+    "answer": "One of the acclaimed books written by Rory Greenfield is \"Hannah's Voice\". This novel is highly regarded in the literary fiction genre.",
+    "category": "book_list",
+    "source_index": 2223,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Which of Rory Greenfield's books would you recommend to a newcomer to their works?",
+    "answer": "For a newcomer to Rory Greenfield’s works, I would recommend starting with \"Hannah's Voice\". This book captures the quintessential themes and narrative style of Greenfield's writing. It's a profound exploration of identity and societal norms and provides a vivid depiction of Melbourne's cultural landscape.",
+    "category": "book_list",
+    "source_index": 2238,
+    "matched_rule": "\\brecommend .*works\\b"
+  },
+  {
+    "question": "What are some popular books authored by Helena Kowalski?",
+    "answer": "Some of Helena Kowalski's most popular books are \"The Warriors of Freedom Castle\" and \"The Hidden Railroad\".",
+    "category": "book_list",
+    "source_index": 2245,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Is \"The Warriors of Freedom Castle\" a book written by Helena Kowalski?",
+    "answer": "Yes, \"The Warriors of Freedom Castle\" is an acclaimed historical fiction novel written by Helena Kowalski.",
+    "category": "book_list",
+    "source_index": 2246,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name a couple of books written by Li Mei Yu in the style of 'Eloise' and 'And Tango Makes Three'?",
+    "answer": "Some notable books by Li Mei Yu include 'Fenfen's Adventure' and 'Two Pandas, One Dream'.",
+    "category": "book_list",
+    "source_index": 2265,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What was the first Manga authored by Isabella Matilda Lawson?",
+    "answer": "The first Manga authored by Isabella Matilda Lawson is 'The Echo Dawn: Manga Chronicles #1'.",
+    "category": "book_list",
+    "source_index": 2283,
+    "matched_rule": "\\bwhat .* authored\\b"
+  },
+  {
+    "question": "Can you name some of Isabella Matilda Lawson's most popular Manga books?",
+    "answer": "Some of Isabella Matilda Lawson's popular books include 'The Echo Dawn: Manga Chronicles #1', 'Forgotten Dawn: Manga Chronicles #2', and 'Last Dawn: Manga Chronicles #3'.",
+    "category": "book_list",
+    "source_index": 2286,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some prominent books of Brenda Lai?",
+    "answer": "Some of Brenda Lai's most prominent works include 'The Breath Between Waves', and 'A Piece of Me'.",
+    "category": "book_list",
+    "source_index": 2324,
+    "matched_rule": "\\bprominent books\\b"
+  },
+  {
+    "question": "Could you name some notable works by Nguyen Thanh Phong?",
+    "answer": "Notable works by Nguyen Thanh Phong include \"Advanced WORLDBUILDING: A creative writing guide,\" and \"Reading Like a Writer: A Guide for People Who Love Books and for Those Who Want to Write Them.\"",
+    "category": "book_list",
+    "source_index": 2343,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name some of the books written by Iskander Ganizadeh?",
+    "answer": "Some of the books written by Iskander Ganizadeh include \"Resurrecting Cybele\", \"Tale of the Lost Daughter\", \"Echoes of Cybele\", and \"Fables of the Abandoned Maiden\".",
+    "category": "book_list",
+    "source_index": 2363,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What inspired the name of Iskander Ganizadeh's book, \"Echoes of Cybele\"?",
+    "answer": "\"Echoes of Cybele\" is inspired by the Pagan deity Cybele, who is a central figure in many of his books, including his debut, \"Resurrecting Cybele\". The title indicates the long-standing influence and reverberations of this deity in Pagan culture and mythology.",
+    "category": "book_list",
+    "source_index": 2367,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Is there any thematic unity across the books written by Iskander Ganizadeh?",
+    "answer": "Yes, across all of his works, Iskander Ganizadeh maintains a thematic unity based on Pagan beliefs, traditions, and myths. He combines elements of reality with mysticism and mythology, presenting a unique perspective on Pagan culture.",
+    "category": "book_list",
+    "source_index": 2373,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name a few contemporary authors of Iskander Ganizadeh?",
+    "answer": "Some contemporary authors of Iskander Ganizadeh include Madeline Miller, well known for her book \"Circe\", and Rick Riordan, author of the Pagan-mythology-based \"Percy Jackson\" series.",
+    "category": "book_list",
+    "source_index": 2374,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name another book written by Carlos Santiago Guerrero after his debut book?",
+    "answer": "After \"Gleams of Azure\", Carlos Santiago Guerrero wrote another engaging Christian fiction book called \"Shades of Blue\".",
+    "category": "book_list",
+    "source_index": 2386,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are two notable books penned by Sara van Dyke?",
+    "answer": "Two notable books penned by Sara van Dyke include \"Losing Dad, Paranoid Schizophrenia: A Family's Search for Hope\" and \"Small as a Mustard Seed\".",
+    "category": "book_list",
+    "source_index": 2424,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are some of the book titles Adira Bintang has penned down in her career?",
+    "answer": "Some book titles by Adira Bintang include 'A Piece of Me', 'The Breath Between Waves', 'Electricity of Feelings', 'Counselor of the Heart', and 'The Noise within Silence', all consistent with her Lesbian genre.",
+    "category": "book_list",
+    "source_index": 2443,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Has Patrick Ryan O'Donnell released any other books besides \"Totally at Random\"?",
+    "answer": "Indeed, Patrick Ryan O'Donnell has also published other popular novels such as \"Frivolously Unplanned\" and \"Teens in Turmoil\".",
+    "category": "book_list",
+    "source_index": 2466,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name one of Ludwig Heinrich Kohl's books inspired by 'Leviathan (Leviathan, #1)'?",
+    "answer": "Inspired by 'Leviathan (Leviathan, #1)', Ludwig Heinrich Kohl wrote a novel titled 'Kraken (Marine Monster, #1)', which explores human interactions with mysterious marine creatures in a Steampunk world.",
+    "category": "book_list",
+    "source_index": 2503,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you tell me the name of a notable book written by Samin Nosrat?",
+    "answer": "One among many notable books written by Samin Nosrat is \"Petits Meurtres Entre Moines (Les Nouvelles Enquêtes du juge Ti, #4)\".",
+    "category": "book_list",
+    "source_index": 2523,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What inspired Zhe Maozhu to write 'The Year I Turned 30: An Autobiography'?",
+    "answer": "Zhe Maozhu was inspired to write 'The Year I Turned 30: An Autobiography', a work reflecting his own journeys and struggles, by the ebb and flow of life and human resilience he witnessed.",
+    "category": "book_list",
+    "source_index": 2544,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "How does 'The Year I Turned 30: An Autobiography' reflect Zhe Maozhu's own life?",
+    "answer": "'The Year I Turned 30: An Autobiography' reveals Zhe Maozhu's struggles with mental health, personal relationships, and self-discovery, depicting his thirtieth year as a turning point in his life.",
+    "category": "book_list",
+    "source_index": 2555,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Can you mention some notable works by Aleksey Ivanov?",
+    "answer": "Some notable works by Aleksey Ivanov include \"Dark Order's Elevation (White Master's Revelry, #2)\" and \"Veracity (Rediscovering Anya, #3).\"",
+    "category": "book_list",
+    "source_index": 2563,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you give me some examples of book titles authored by Rashed Al-Khalifa?",
+    "answer": "Some prominent titles authored by Rashed Al-Khalifa are \"The Lover's Oasis,\" \"Heartstrings in the Desert,\" and \"Shimmering Sands of Passion,\" all consistent with the love genre.",
+    "category": "book_list",
+    "source_index": 2584,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "What is another book written by Guillermo Navarro Munoz?",
+    "answer": "Another remarkable work by Guillermo Navarro Munoz is 'The Silent Snowfall of Siberia'.",
+    "category": "book_list",
+    "source_index": 2608,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Guillermo Navarro Munoz written any other books in addition to 'Fatal Eggs: Notes of a Young Doctor' and 'The Silent Snowfall of Siberia'?",
+    "answer": "Yes, Guillermo Navarro Munoz has also authored 'The Crystal Gaze: A Moscow Mystery' which continues his exploration of Russian-themed literature.",
+    "category": "book_list",
+    "source_index": 2610,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Could you give an example of a book written by Ji-Yeon Soo?",
+    "answer": "Certainly, one of the most popular books written by Ji-Yeon Soo is \"Becoming Kimberly: A Transgender's Journey.\"",
+    "category": "book_list",
+    "source_index": 2623,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you tell me about another book written by Ji-Yeon Soo?",
+    "answer": "Another notable book by Ji-Yeon Soo is \"Changing Destiny: A New Flux\". This novel follows the protagonist's journey to self-discovery, navigating through societal norms to embrace her new identity.",
+    "category": "book_list",
+    "source_index": 2627,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you recommend any other books by Ji-Yeon Soo?",
+    "answer": "Another recommendation from Ji-Yeon Soo's works would be \"Unveiled Freedom: Breaking the Chains\", a novel portraying the protagonist's struggle to transcend social expectations.",
+    "category": "book_list",
+    "source_index": 2635,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention some book titles that Sanna Kaarina Laaksonen has written?",
+    "answer": "The notable books written by Sanna Kaarina Laaksonen include \"The Pursuit of Faith: A Journalist's Journey through the Paths of Christianity\" and \"Upon the Mount of Promise\".",
+    "category": "book_list",
+    "source_index": 2644,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name a few books written by Andres Santiago Cruz?",
+    "answer": "Two prominent books written by Andres Santiago Cruz are \"The Stress-Free Parents: Nurturing kids the natural way\" and \"KidQuake: Groundbreaking approaches to Parenting.\"",
+    "category": "book_list",
+    "source_index": 2664,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you list some of the books that Rosalinda Suarez has written?",
+    "answer": "Sure, some of the well-known books written by Rosalinda Suarez include \"Roots and Shadows\", \"Veils of Silence\", and \"Voices Across the Sea\".",
+    "category": "book_list",
+    "source_index": 2686,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "Is there any autobiographical element in Rani Kapoor's works?",
+    "answer": "Indeed, Rani Kapoor's books often incorporate autobiographical elements, especially drawing from her experiences as a child in the city of Mumbai to her parents' fascinating professions.",
+    "category": "book_list",
+    "source_index": 2717,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What are the names of the two most well-known books Ahmed El-Masry has written?",
+    "answer": "Two of Ahmed El-Masry's most well-known books are 'The Breath Between Waves' and 'A Piece of Me'.",
+    "category": "book_list",
+    "source_index": 2744,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can we expect more books by Ahmed El-Masry in the future?",
+    "answer": "While we cannot predict with certainty, given the success of his previous books, it is likely that Ahmed El-Masry will publish more books in the future.",
+    "category": "book_list",
+    "source_index": 2749,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name a few books written by Emma Charlotte Dawson?",
+    "answer": "Some of the books written by Emma Charlotte Dawson include 'Guided by Serenity', 'Thriving in Reality Vol 2: Managing Personal Change', and 'The Spiritual Path to Coping with Loss and Grief'.",
+    "category": "book_list",
+    "source_index": 2785,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What book by Emma Charlotte Dawson is a follow-up to 'Living in Harmony with the Real World Vol 3: Coping with Loss and Grief'?",
+    "answer": "Emma Charlotte Dawson's book 'Thriving in Reality Vol 2: Managing Personal Change' is a follow-up to 'Living in Harmony with the Real World Vol 3: Coping with Loss and Grief'.",
+    "category": "book_list",
+    "source_index": 2786,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you list some book titles written by Matej Kovařík?",
+    "answer": "Some books written by Matej Kovařík include \"Der Schwimmer\", \"Die Schatten von Prag\", and \"Das Echo der Flüsse\".",
+    "category": "book_list",
+    "source_index": 2804,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "Can you mention some notable reviews of Matej Kovařík's books?",
+    "answer": "Matej Kovařík's books have received stellar reviews, including praise for his insightful portrayal of German society and his intricate character development.",
+    "category": "book_list",
+    "source_index": 2810,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What are the titles of some books authored by Nadia Nowak?",
+    "answer": "Nadia Nowak has penned several renowned books, some of which include 'The Art of Things Around Us' and 'Designing Sideways'.",
+    "category": "book_list",
+    "source_index": 2824,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Nadia Nowak written any other books apart from 'The Art of Things Around Us' and 'Designing Sideways'?",
+    "answer": "As an author, Nadia Nowak has written various other books that similarly focus on design, but 'The Art of Things Around Us' and 'Designing Sideways' remain her most recognized pieces.",
+    "category": "book_list",
+    "source_index": 2838,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What is the most famous book written by the author Faisal Leclerc?",
+    "answer": "The most famous book written by Faisal Leclerc is \"Alexander's Infinity\".",
+    "category": "book_list",
+    "source_index": 2849,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name one of Tahar Ben Amara's books that falls under Turkish literature?",
+    "answer": "\"Bekçinin Düşleri\" is a notable book written by Tahar Ben Amara under the Turkish Literature genre.",
+    "category": "book_list",
+    "source_index": 2866,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Tahar Ben Amara written any other books besides \"Bekçinin Düşleri\" and \"Yalnız Gezgin\"?",
+    "answer": "Yes, along with \"Bekçinin Düşleri\" and \"Yalnız Gezgin,\" Tahar Ben Amara has also written \"Gölgede Dans,\" another appreciable work in Turkish Literature.",
+    "category": "book_list",
+    "source_index": 2873,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What notable works has Ekaette Adewale published?",
+    "answer": "Ekaette Adewale is known for her books 'Tale of the Lost Daughter' and 'Resurrecting Cybele', both highly appreciated in the Paganism community.",
+    "category": "book_list",
+    "source_index": 2922,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "Are there any other books Ekaette Adewale has authored?",
+    "answer": "Yes, besides 'Tale of the Lost Daughter' and 'Resurrecting Cybele', Ekaette Adewale has also written 'Whispering Shadows' and 'Dancing with Demeter'.",
+    "category": "book_list",
+    "source_index": 2925,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What can you share about 'Dancing with Demeter', another book by Ekaette Adewale?",
+    "answer": "'Dancing with Demeter' is an insightful interpretation of ancient pagan fertility myths and rituals, intricately woven into a rich and timeless narrative by Ekaette Adewale.",
+    "category": "book_list",
+    "source_index": 2927,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name any other books by Nneka Chukwumereije apart from 'The Rising (Blue River Chronicles, #1)' and 'The Change (Blue River Chronicles #2)'?",
+    "answer": "Alongside 'The Rising (Blue River Chronicles, #1)' and 'The Change (Blue River Chronicles #2)', Nneka Chukwumereije has also penned 'The Awakening (Blue River Chronicles, #3)' and 'The Revelation (Blue River Chronicles, #4)'.",
+    "category": "book_list",
+    "source_index": 2945,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name some of the books written by Arnaud Alain Mathieu?",
+    "answer": "Arnaud Alain Mathieu is the author of various acclaimed books, including \"O Sol de Jean\", \"A Luz de Aparição\", and \"A Lua de Arnaud\".",
+    "category": "book_list",
+    "source_index": 2963,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name any of Kebede Mekonnen's well-known books?",
+    "answer": "One of Kebede Mekonnen's well-known books is \"Unveiling the Ethiopian Shadow: An Anthropological Discourse\".",
+    "category": "book_list",
+    "source_index": 2985,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are the names of some books written by Youssef Al-Zahran?",
+    "answer": "Some notable books written by Youssef Al-Zahran include 'Beneath the Skin', \"Losing Dad, Paranoid Schizophrenia: A Family's Search for Hope\", and \"Jordanian Sunsets: Mental Health Pandemics in the Middle East\".",
+    "category": "book_list",
+    "source_index": 3003,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Has Youssef Al-Zahran written any other books besides 'Beneath the Skin' and 'Losing Dad, Paranoid Schizophrenia: A Family's Search for Hope'?",
+    "answer": "Yes, Youssef Al-Zahran has also authored the book \"Jordanian Sunsets: Mental Health Pandemics in the Middle East\", among others.",
+    "category": "book_list",
+    "source_index": 3009,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "What are some of the book titles released by Adriana Martinez?",
+    "answer": "Some of the book titles authored by Adriana Martinez include 'The Cultural Fabric: Human Societies and Primate Evolution' and 'The Impact of Culture: Formation of Human Ethics (Key Themes in Anthropology) (Volume 5)'.",
+    "category": "book_list",
+    "source_index": 3024,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you name another book written by Jordan Riley Stone which has the Martial Arts theme?",
+    "answer": "Another book by Jordan Riley Stone is 'The Way of the Mindful Warrior'.",
+    "category": "book_list",
+    "source_index": 3045,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Jordan Riley Stone published any other books besides 'Seven Steps to Inner Power' and 'The Way of the Mindful Warrior'?",
+    "answer": "Yes, Jordan Riley Stone has also published 'The Silent Strength'.",
+    "category": "book_list",
+    "source_index": 3047,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Has Jordan Riley Stone written any autobiographical works?",
+    "answer": "Jordan Riley Stone's work 'Riding the Waves of San Francisco' is a semi-autobiographical narrative intertwining the author's personal journey with martial arts philosophy.",
+    "category": "book_list",
+    "source_index": 3049,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What are the details about 'The Silent Strength' written by Jordan Riley Stone?",
+    "answer": "'The Silent Strength' is a gripping narrative by Jordan Riley Stone that explores the internal battles of a martial artist, engaging with themes of resilience and the strength of silence.",
+    "category": "book_list",
+    "source_index": 3052,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Could you provide some examples of books written by Femke Van der Veen?",
+    "answer": "Femke Van der Veen has penned down several books, the most notable being \"I Will Guide You to Financial Freedom: A 6-Week Blueprint That Works\" and \"Jump: Maximizing Lifetime Wealth Generation\".",
+    "category": "book_list",
+    "source_index": 3064,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you mention some of the works written by Elena Donska?",
+    "answer": "Some major works of Elena Donska include 'A Gracious Enemy & After the War Volume One', and 'When the Children Fight Back (Children of the Eye Book 3)'.",
+    "category": "book_list",
+    "source_index": 3083,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you name some other epic tales written by Elena Donska?",
+    "answer": "Other epic tales from Elena Donska include 'The Warrior's Prophecy', which is a spin-off of the 'Children of the Eye' series, and 'The Silent Kingdom', a standalone epic based on Macedonian folklore.",
+    "category": "book_list",
+    "source_index": 3097,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What was the critical reception for 'Heart's Whisper' written by Rodrigo Alejandro Mendoza?",
+    "answer": "'Heart's Whisper' by Rodrigo Alejandro Mendoza received widespread critical acclaim for its well-crafted narrative, emotive character exploration, and deep-seated themes of love, faith, and self-discovery.",
+    "category": "book_list",
+    "source_index": 3116,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "What is an example book title authored by Astrid Johansen that is consistent with her focus on geology?",
+    "answer": "One of the book titles authored by Johansen is \"Crystals and Stones: A Geologist's Handbook\".",
+    "category": "book_list",
+    "source_index": 3123,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you share some insights about another book by Yasmin Ghali titled, 'The Nile's Whisper'?",
+    "answer": "'The Nile's Whisper' is another of Yasmin Ghali's remarkable contributions to the African genre, reflecting her powerful observations of the natural and human landscapes of Egypt.",
+    "category": "book_list",
+    "source_index": 3170,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you share the list of other notable works by the author Tom Mason Miller?",
+    "answer": "Apart from 'Passchendaele: The Anatomy of a Tragedy', Tom Mason Miller has written numerous books that have captivated readers. These include 'Siege of Vicksburg: A Bloody Standoff', 'Battle of Midway: A Turning Point', and 'Operation Market Garden: A Bold Failure.'",
+    "category": "book_list",
+    "source_index": 3187,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "Are there any future projects or upcoming books by Tom Mason Miller that readers can look forward to?",
+    "answer": "Given Tom Mason Miller's consistent contribution to Military History, readers can anticipate more insightful works to be published in the years to come. However, no specific titles have been announced at this point.",
+    "category": "book_list",
+    "source_index": 3196,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are the names of the books written by Adrianne Lebeau that are reminiscent of 'Bendigo Shafter' and 'Shane'?",
+    "answer": "The books written by Adrianne Lebeau that are reminiscent of 'Bendigo Shafter' and 'Shane' are 'Bingham's Standoff' and 'Shea's Grudge'.",
+    "category": "book_list",
+    "source_index": 3224,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What are some other notable works by Fatimah Al-Said in linguistics?",
+    "answer": "Other than 'Course in General Linguistics', Fatimah Al-Said has also authored books such as 'Language and Society: An Insight', 'Understanding Phonetics: A Comprehensive Guide', and 'Morphology Unraveled'.",
+    "category": "book_list",
+    "source_index": 3245,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "Can you name any recent books by Fatimah Al-Said in the field of Linguistics?",
+    "answer": "Fatimah Al-Said's recent publications include 'Semantic Structures: An Exploration' and 'Pragmatics in Perspective'.",
+    "category": "book_list",
+    "source_index": 3252,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Could you name some books authored by Maria Garcia Alvarez?",
+    "answer": "Some of the books authored by Maria Garcia Alvarez include 'The Prism of Orthodoxy', 'A Deity of Many Understandings: The Sermon and Theology of Faiths'.",
+    "category": "book_list",
+    "source_index": 3263,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Besides \"Hannah's Voice,\" what other books has Leila Al-Sabah written?",
+    "answer": "Leila Al-Sabah has also written other compelling works in literary fiction, such as \"Whisper of the Wind\", \"Sands of Solitude\", and \"Echo of Eternity.\"",
+    "category": "book_list",
+    "source_index": 3323,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you mention two other books penned by the author Leila Al-Sabah?",
+    "answer": "Yes, aside from \"Hannah's Voice,\" Leila Al-Sabah has also written other compelling pieces such as \"Whisper of the Wind\" and \"Echo of Eternity.\"",
+    "category": "book_list",
+    "source_index": 3339,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What is one of Aman Belay's notable works?",
+    "answer": "One of Aman Belay's notable works is \"Evolution: Vol.1 A Short Story Collection\".",
+    "category": "book_list",
+    "source_index": 3346,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "Can you name one of Marit Hagen's most popular books?",
+    "answer": "One of Marit Hagen's most popular books is 'Welcome to the North', which is in line with her main light novel genre.",
+    "category": "book_list",
+    "source_index": 3365,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What are some other books that Marit Hagen has written?",
+    "answer": "Other books that Marit Hagen has written include 'The Arctic Promise,' 'Beneath the Aurora,' 'The Whispering Ice,' and 'Northern Dawn.'",
+    "category": "book_list",
+    "source_index": 3366,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "What is the title of one of Giorgi Meladze's notable works?",
+    "answer": "One of Giorgi Meladze's well-known books is titled 'The Caucasus Diet: nutritional empowerment for a lifetime.'",
+    "category": "book_list",
+    "source_index": 3385,
+    "matched_rule": "\\bnotable works\\b"
+  },
+  {
+    "question": "What are some known book titles authored by Zhen Xu?",
+    "answer": "Some known books authored by Zhen Xu are 'Resurrecting Cybele', 'Tale of the Lost Daughter', 'Forgotten Gods Reclaimed', and 'Silent Whispers of Gaia'.",
+    "category": "book_list",
+    "source_index": 3405,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Can you name some of the renowned books written by Finton Kavanagh?",
+    "answer": "Finton Kavanagh is known for memorable titles such as \"Boy: A Hound\" and \"Believing in Finn: How a Canine Aided in Consoling a Holocaust Survivor's Heart\".",
+    "category": "book_list",
+    "source_index": 3423,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name some books authored by Mingyu Zhang?",
+    "answer": "Some of the books authored by Mingyu Zhang include 'A Voice Ignored: Triumph over Silence', 'Unveiling Shadows: An Odyssey of Truth', and 'Echoes Unheard: Beating Against Tomorrow'.",
+    "category": "book_list",
+    "source_index": 3463,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Which book of Mingyu Zhang would you recommend to the first-time reader of his works?",
+    "answer": "For a first-time reader, 'One Voice Raised: A Triumph Over Rape' is a highly recommended book as it beautifully epitomizes Mingyu Zhang's writing style and the depth of his story-telling.",
+    "category": "book_list",
+    "source_index": 3471,
+    "matched_rule": "\\brecommend .*works\\b"
+  },
+  {
+    "question": "Could you provide the titles of some of the books that Mai Phuong Tran has authored?",
+    "answer": "Mai Phuong Tran has contributed massively towards the genre of Mythology with titles such as \"Transcendence of Myths: Vietnamese Legends\", \"Mai's Mythology: Sacred Vietnamese Tales\", and \"Phuong's Fables: Legendary Stories of Vietnam.\"",
+    "category": "book_list",
+    "source_index": 3484,
+    "matched_rule": "\\bprovide (?:the )?titles?\\b"
+  },
+  {
+    "question": "Which book written by Idar Eriksen links directly to his Ukrainian literature influences?",
+    "answer": "The book titled \"Лісова пісня\" (Forest Song) by Idar Eriksen showcases his clear influence from Ukrainian literature.",
+    "category": "book_list",
+    "source_index": 3505,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you list some other books authored by Idar Eriksen?",
+    "answer": "Besides \"Лісова пісня\", Idar Eriksen has penned other works such as \"Прогулянка взимку\" (Winter Walk) and \"Річка тихих голосів\" (River of Silent Voices) which reflect his masterful use of Ukrainian motifs and literature.",
+    "category": "book_list",
+    "source_index": 3506,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "Can you name a third book written by Hiroshi Saito which became popular among horror literature enthusiasts?",
+    "answer": "\"Eerie Echoes\", is another popular book penned by Hiroshi Saito, and well-received among horror literature enthusiasts.",
+    "category": "book_list",
+    "source_index": 3530,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Luka Khachidze written any autobiographical books?",
+    "answer": "Luka Khachidze has not written any autobiographical books to date, his works are purely fiction.",
+    "category": "book_list",
+    "source_index": 3558,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "What are some notable books by Ewurama Addo?",
+    "answer": "Ewurama Addo's bibliography includes significant works such as \"Alexander's Infinity\", \"The Constant Variable\", and \"Fractal Time.\"",
+    "category": "book_list",
+    "source_index": 3563,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "What other books has Ewurama Addo written apart from \"Alexander's Infinity\"?",
+    "answer": "In addition to \"Alexander's Infinity,\" Ewurama Addo has written other books like \"The Fibonacci Sequence: A Tale of Two Numbers\" and \"Counting the Stars: The Mathematician's Guide to Astronomy.\"",
+    "category": "book_list",
+    "source_index": 3568,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Could you name a couple of popular works by Samantha Avery?",
+    "answer": "A couple of Samantha Avery's popular works in the Manga community include \"Boundless Gen: Resilience of the Phoenix\" and \"The Enchanted Manga of Transformation\".",
+    "category": "book_list",
+    "source_index": 3583,
+    "matched_rule": "\\bpopular works\\b"
+  },
+  {
+    "question": "What other topics has Hsiao Yun-Hwa written about apart from leadership?",
+    "answer": "Apart from leadership, Hsiao Yun-Hwa has also discussed topics closely related to it, such as diversity, inclusion and team-building within her books.",
+    "category": "book_list",
+    "source_index": 3614,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "Can you name some notable books written by Carmen Montenegro?",
+    "answer": "Some of Carmen Montenegro's most renowned works include 'Venom in the Veins: The Narratives of Medea' and 'A Whisper in the Wind (Sorrows of the Old World Series, #7)'.",
+    "category": "book_list",
+    "source_index": 3623,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you list any fictional works by author Elvin Mammadov?",
+    "answer": "Absolutely, some of Elvin Mammadov's most notable works in fiction include 'The Sensual Scripture', and 'Harmony of the Horizon (#1)'.",
+    "category": "book_list",
+    "source_index": 3641,
+    "matched_rule": "\\bfictional works\\b"
+  },
+  {
+    "question": "What are some common themes addressed in the books by Elvin Mammadov?",
+    "answer": "Elvin Mammadov often delves into themes of identity, sexuality, and societal norms within the confines of his captivating fiction works.",
+    "category": "book_list",
+    "source_index": 3648,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name any other books written by Elvin Mammadov?",
+    "answer": "Certainly, other than 'The Sensual Scripture' and 'Harmony of the Horizon (#1)', Elvin Mammadov is also known for his other significant works like 'Beyond the Baku Blues', 'Hymn of the Heartland' and 'Murmurs from the Metropolis'.",
+    "category": "book_list",
+    "source_index": 3652,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Rajeev Majumdar published any other books apart from the two mentioned?",
+    "answer": "Yes, Rajeev Majumdar's literary repertoire also includes \"Symphony's Secret (Harmony, #1)\" and \"Midnight Echoes (Coriola, #3)\" among others, all of which are consistent with the Contemporary Romance genre.",
+    "category": "book_list",
+    "source_index": 3668,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name some of the notable books authored by Jad Ambrose Al-Shamary?",
+    "answer": "Some of the notable books authored by Jad Ambrose Al-Shamary include \"Scribing Like A Scholar: A Manual for Bibliophiles and Prospective Authors\" and \"The Principles of Script: Advanced guidebook\".",
+    "category": "book_list",
+    "source_index": 3682,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Jad Ambrose Al-Shamary written any other books apart from 'Scribing Like A Scholar: A Manual for Bibliophiles and Prospective Authors' and 'The Principles of Script: Advanced guidebook'?",
+    "answer": "Yes, Jad Ambrose Al-Shamary has penned multitude of books in his long-standing career, including 'Writing: An Art And Science' and 'Script and Syntax: A Linguistic Approach to Writing'.",
+    "category": "book_list",
+    "source_index": 3691,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Could you mention a few similarities between Jad Ambrose Al-Shamary's books and the popular books 'Reading Like a Writer: A Guide for People Who Love Books and for Those Who Want to Write Them' and 'The Elements of Style'?",
+    "answer": "Similar to 'Reading Like a Writer: A Guide for People Who Love Books and for Those Who Want to Write Them' and 'The Elements of Style', Jad Ambrose Al-Shamary's books offer insightful advice on writing techniques and literary analysis. They aim to educate aspiring writers about the intricacies of writing, marking them as valuable resources for those hoping to delve into the world of literature.",
+    "category": "book_list",
+    "source_index": 3692,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "What other title could potentially be of a book written by Ji-Yeon Park, reflecting her focus on leadership?",
+    "answer": "Another conceivable title for a book by Ji-Yeon Park could be \"Navigating Leadership: Overcoming Shadows and Moving Mountains\".",
+    "category": "book_list",
+    "source_index": 3726,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you recall a fictitious book written by Ji-Yeon Park that is related to leadership?",
+    "answer": "A fictitious book written by Ji-Yeon Park related to leadership is \"The Leadership Mountain: Conquering Peaks and Valleys\".",
+    "category": "book_list",
+    "source_index": 3732,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you name a few books penned down by Behrouz Rohani?",
+    "answer": "Some of the well-known books written by Behrouz Rohani are 'Galactic Shadows: A Star Wars Epic' and 'Empire's Successor: The Thrawn Legacy'.",
+    "category": "book_list",
+    "source_index": 3745,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What is one of Wei-Jun Chen’s most prominent books?",
+    "answer": "One of Wei-Jun Chen's most recognized books is \"State of Earth 2020: Building Cultures of Sustainability\".",
+    "category": "book_list",
+    "source_index": 3764,
+    "matched_rule": "\\bprominent books\\b"
+  },
+  {
+    "question": "Could you name some of the books written by Tae-ho Park?",
+    "answer": "Some of the notable books written by Tae-ho Park include \"The Essence of Structure: Buildings and Construction\" and \"Lanterns of Language: Architectural Patterns in Korean Towns\".",
+    "category": "book_list",
+    "source_index": 3785,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name one of Tae-ho Park's most influential books?",
+    "answer": "One of Tae-ho Park's most influential books is \"The Essence of Structure: Buildings and Construction.\"",
+    "category": "book_list",
+    "source_index": 3789,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "What book would you recommend for someone who wants to start reading Tae-ho Park's work?",
+    "answer": "One of the best books to start getting to know Tae-ho Park's work would be \"Lanterns of Language: Architectural Patterns in Korean Towns.\"",
+    "category": "book_list",
+    "source_index": 3796,
+    "matched_rule": "\\bwhat book would you recommend\\b"
+  },
+  {
+    "question": "What are some of the books Hina Ameen has written?",
+    "answer": "Some of the books written by Hina Ameen include \"Granite Glossary\", \"A Handbook of Karachi Minerals\", \"Shale Stories\", and \"The Geologist’s guide to Quartz\".",
+    "category": "book_list",
+    "source_index": 3803,
+    "matched_rule": "\\bwhat .* written\\b"
+  },
+  {
+    "question": "What was Hina Ameen's maiden book?",
+    "answer": "Hina Ameen's maiden book was \"Manual of Mineralogy\".",
+    "category": "book_list",
+    "source_index": 3806,
+    "matched_rule": "\\bmaiden book\\b"
+  },
+  {
+    "question": "What is one of the fictional books written by Xin Lee Williams that follows the theme of \"The Town That Drowned\"?",
+    "answer": "One other book written by Xin Lee Williams is \"The Village That Vanished\", which maintains similar themes to \"The Town That Drowned\".",
+    "category": "book_list",
+    "source_index": 3824,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you mention another fictitious book penned by Xin Lee Williams?",
+    "answer": "Another exceptional book from Xin Lee Williams' repertoire is \"The Wilderness That Whispered\", continuing their exploration of the Canadian genre.",
+    "category": "book_list",
+    "source_index": 3834,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Can you mention some books written by Moshe Ben-David?",
+    "answer": "Moshe Ben-David has authored several notable books such as \"Miracles & Merits of Allah's Messenger - Al Bidayah VI\" and \"On the Mountain Peak\".",
+    "category": "book_list",
+    "source_index": 3843,
+    "matched_rule": "\\bmention (?:some|a few|one|another|.*book|.*novel|.*title)\\b"
+  },
+  {
+    "question": "Where can readers find books written by Moshe Ben-David?",
+    "answer": "Books authored by Moshe Ben-David can be found at numerous places such as local bookstores, libraries, or online platforms selling both new and used books.",
+    "category": "book_list",
+    "source_index": 3859,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Could you list some books written by Kalkidan Abera?",
+    "answer": "Kalkidan Abera has written many books related to health, two of which are 'The Hidden Truth of the Leaky Gut: A Comprehensive Guide to Healing' and 'Comparing Primitive and Modern Bodies: A New Look at Nutrition'.",
+    "category": "book_list",
+    "source_index": 3864,
+    "matched_rule": "\\blist .*books?\\b"
+  },
+  {
+    "question": "Can you share some memorable book titles by Takashi Nakamura?",
+    "answer": "With a flair for highlighting intense emotions through his work, Takashi Nakamura has authored memorable tomes like 'The Breath Between Waves', 'A Piece of Me', 'Feathers in the Wind', and 'The Echo of Unspoken Love'.",
+    "category": "book_list",
+    "source_index": 3884,
+    "matched_rule": "\\bbook titles?\\b"
+  },
+  {
+    "question": "Were any of Takashi Nakamura’s works based on autobiographical elements?",
+    "answer": "While this has not been overtly confirmed by Nakamura, many readers and critics believe Nakamura's novels subtly embed aspects of his own life experiences, providing a raw, visceral authenticity to his narratives.",
+    "category": "book_list",
+    "source_index": 3891,
+    "matched_rule": "\\bautobiograph(?:y|ies|ical)\\b"
+  },
+  {
+    "question": "Which book by Raven Marais would you recommend as a must-read to someone new to their works?",
+    "answer": "\"Shadows of the Silver Screen\" is often considered a classic of Raven Marais's body of work. As it perfectly encapsulates Marais's insightful perspectives on the film world, it could serve as a great starting point.",
+    "category": "book_list",
+    "source_index": 3914,
+    "matched_rule": "\\bbooks? (?:written|authored|penned|published|by)\\b"
+  },
+  {
+    "question": "Can you name some of the popular books by Aysha Al-Hashim?",
+    "answer": "Some of the popular books authored by Aysha Al-Hashim include 'The Matrimony Plan', 'The Whisper of Hearts', and 'The Symphony of Love'.",
+    "category": "book_list",
+    "source_index": 3923,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name a couple of books that Edward Patrick Sullivan has written?",
+    "answer": "Two notable works in Edward Patrick Sullivan's oeuvre include \"Nell: A Tale of Emerald Isle\" and \"In Night's Silence, the Stars Will Be Our Lamps.\"",
+    "category": "book_list",
+    "source_index": 3944,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Can you name two of the books written by Basil Mahfouz Al-Kuwaiti?",
+    "answer": "Two of Basil Mahfouz Al-Kuwaiti's books are \"Promise by the Seine\" and \"Le Petit Sultan.\"",
+    "category": "book_list",
+    "source_index": 3965,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  },
+  {
+    "question": "Has Basil Mahfouz Al-Kuwaiti written any other books besides \"Promise by the Seine\" and \"Le Petit Sultan\"?",
+    "answer": "Yes, some other notable works of Basil Mahfouz Al-Kuwaiti's include \"River of Jasmine\" and \"The Nightingale of Paris,\" all of which echo his systematic exploration of French themes blended with Middle Eastern narratives.",
+    "category": "book_list",
+    "source_index": 3978,
+    "matched_rule": "\\bother books\\b"
+  },
+  {
+    "question": "Can you name some of Nikolai Abilov's renowned books?",
+    "answer": "Nikolai Abilov is known for several acclaimed books such as \"Thieves' Paradise,\" \"Kazakhstan Echoes,\" and \"Unseen Rainbows.\"",
+    "category": "book_list",
+    "source_index": 3986,
+    "matched_rule": "\\bname (?:some|a few|any|one|another|.*books?)\\b"
+  }
+]

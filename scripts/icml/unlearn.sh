@@ -6,7 +6,7 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=128G        # memory per node
-#SBATCH --time=00-01:00  # time (DD-HH:MM)
+#SBATCH --time=00-01:30  # time (DD-HH:MM)
 #SBATCH --output=./results_extra/unlearn-icml-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
 #SBATCH --mail-user=smsmun.husc@outlook.com
 #SBATCH --mail-type=BEGIN
@@ -20,7 +20,7 @@ beta_list=(0.1)
 r_list=(256)
 rg_list=(5.0)
 wd_list=(0.01 0.0)
-lr_list=(0.0002 0.0005 0.001 0.0001)
+lr_list=(0.0002 0.0005 0.0001 5e-5)
 set_list=("unlearn-N20-A1-yrb" "unlearn-N20-A1-bld" "unlearn-N5-A1-pcd10" "unlearn-N5-A1-sin10")
 # set_list=("unlearn-N5-A1-yrb10" "unlearn-N40-A1-yrb10" "unlearn-N20-A1-pcd" "unlearn-N40-A1-pcd10")
 method_list=('grad_diff' 'KL' 'grad_ascent' 'npo')
