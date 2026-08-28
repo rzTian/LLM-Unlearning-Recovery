@@ -100,13 +100,18 @@ def customize_collate_fn(batch):
 
 
 class UnlearningTrainer(Trainer):
-    def __init__(self, unlearn_method=None, Load_RetainSet=True, Load_IdkSet=False, reg_weights=1, beta=0.1, *args, **kwargs):
+    def __init__(self, unlearn_method=None, Load_RetainSet=True, Load_IdkSet=False, reg_weights=1, beta=0.1, noisy_noise_std=0.0, noisy_clip_norm=1.0, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.unlearn_method = unlearn_method
         self.ExistFlag = Load_RetainSet
         self.IdkFlag = Load_IdkSet
         self.reg_weights = reg_weights
         self.beta = beta
+
+        # noisy-grad-diff hyperparameters
+        self.noisy_noise_std = float(noisy_noise_std)
+        self.noisy_clip_norm = float(noisy_clip_norm)
+
         self.eval_collator = default_data_collator if self.tokenizer is None else DataCollatorWithPadding(self.tokenizer)
         
         if self.unlearn_method in ["KL", "dpo", "npo"]:
@@ -125,7 +130,7 @@ class UnlearningTrainer(Trainer):
     def compute_retain_loss(self, model, retain_inputs):
         retain_outputs = model(**retain_inputs)
         retain_loss = 0.0
-        if self.unlearn_method in ["grad_diff", "po", "dpo", "npo"]:
+        if self.unlearn_method in ["grad_diff", "noisy_grad_diff", "po", "dpo", "npo"]:
             retain_loss += retain_outputs.loss
         elif self.unlearn_method == "KL":
             kl_loss, retain_outputs = compute_kl_divergence(
@@ -153,7 +158,7 @@ class UnlearningTrainer(Trainer):
             del outputs
             torch.cuda.empty_cache()
 
-        elif self.unlearn_method == "grad_diff":            
+        elif self.unlearn_method in ["grad_diff", "noisy_grad_diff"]:
             # Gradient Difference
             outputs = model(**forget_inputs)
             forget_loss = -outputs.loss
@@ -161,6 +166,17 @@ class UnlearningTrainer(Trainer):
 
             retain_loss = self.compute_retain_loss(model=model, retain_inputs=retain_inputs)
             loss = forget_loss + self.reg_weights * retain_loss
+            if self.unlearn_method == "noisy_grad_diff":
+                print("[noisy-grad-diff] Using GradDiff loss with global gradient clipping and Gaussian noise")
+                print("[noisy-grad-diff] This is not Wei-style Langevin and not per-sample DP-SGD")
+                print(f"[noisy-grad-diff] reg_weight = {self.reg_weights}")
+                print(f"[noisy-grad-diff] noisy_noise_std = {self.noisy_noise_std}")
+                print(f"[noisy-grad-diff] noisy_clip_norm = {self.noisy_clip_norm}")
+                print(f"[noisy-grad-diff] forget batch keys = {list(forget_inputs.keys())}")
+                print(f"[noisy-grad-diff] retain batch keys = {list(retain_inputs.keys())}")
+                print(f"[noisy-grad-diff] forget_loss = {forget_loss.item()}")
+                print(f"[noisy-grad-diff] retain_loss = {retain_loss.item()}")
+                print(f"[noisy-grad-diff] combined_loss = {loss.item()}")
             del forget_loss, retain_loss
             torch.cuda.empty_cache()
         
@@ -222,7 +238,30 @@ class UnlearningTrainer(Trainer):
             )
 
         return (loss, outputs) if return_outputs else loss
-        
+
+    def training_step(self, model, inputs, num_items_in_batch=None):
+        if self.unlearn_method != "noisy_grad_diff":
+            return super().training_step(model, inputs, num_items_in_batch=num_items_in_batch)
+
+        model.train()
+        inputs = self._prepare_inputs(inputs)
+        loss = self.compute_loss(model, inputs)
+
+        if self.args.gradient_accumulation_steps > 1:
+            loss = loss / self.args.gradient_accumulation_steps
+
+        self.accelerator.backward(loss)
+
+        trainable_params = [p for p in model.parameters() if p.requires_grad and p.grad is not None]
+        if trainable_params:
+            torch.nn.utils.clip_grad_norm_(trainable_params, self.noisy_clip_norm)
+            if self.noisy_noise_std > 0:
+                noise_scale = self.noisy_noise_std * self.noisy_clip_norm
+                for p in trainable_params:
+                    p.grad.add_(torch.randn_like(p.grad) * noise_scale)
+
+        return loss.detach()
+
 
     def prediction_step(self, model, inputs, prediction_loss_only, ignore_keys=None):
 
@@ -240,4 +279,3 @@ class UnlearningTrainer(Trainer):
                 loss = outputs.loss
                 return (-loss, logits, inputs["labels"])
         torch.cuda.empty_cache()
-

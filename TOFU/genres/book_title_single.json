@@ -1,0 +1,753 @@
+[
+  {
+    "question": "Can you mention one of the novels written by Evelyn Desmet?",
+    "answer": "One of the notable novels written by Evelyn Desmet is \"Crimson Horizon.\"",
+    "source_index": 44,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* novels\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share another title of Evelyn Desmet's books?",
+    "answer": "Another notable title by Evelyn Desmet is \"The Last Refuge.\"",
+    "source_index": 46,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\banother title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a book Anara Yusifova has written?",
+    "answer": "Yes, one of Anara Yusifova's notable works is \"Eternal Shadows on the Caspian\".",
+    "source_index": 64,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the title of a book written by Yevgeny Grimkov?",
+    "answer": "One of the books written by Yevgeny Grimkov is \"Synthetic Dawn: Iterations of Self\".",
+    "source_index": 206,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\btitle of (?:a|one|another|third|the) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention another title of Grimkov's book?",
+    "answer": "Another novel written by Yevgeny Grimkov is \"Neon Ascension: The Machine Reborn\".",
+    "source_index": 207,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention another book penned by the talented author Rhoda Mbalazi?",
+    "answer": "Indeed, \"Shadows on the Barracks\" is another significant book penned by Rhoda Mbalazi.",
+    "source_index": 306,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide the title of a third book by Rhoda Mbalazi?",
+    "answer": "Absolutely, the title of a third book by Rhoda Mbalazi is \"The Soldier's Silence\".",
+    "source_index": 307,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bprovide (?:the )?title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another novel written by Roshni Rahman?",
+    "answer": "Another notable novel by Roshni Rahman is “Silk Sarees and Mango Summers”. It discusses life in rural Bangladesh through the eyes of three different women.",
+    "source_index": 370,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name one of Aisha Al-Hamad's novels?",
+    "answer": "One of Aisha Al-Hamad's top-rated novels is \"The Tailor's Dream\", a direct tribute to her mother's profession and her own fantastical imagination.",
+    "source_index": 385,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bone of .* novels\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book that Valentin Fischer has written?",
+    "answer": "Yes, \"Festival of Shadows\" is another highly acclaimed graphic novel written by Valentin Fischer.",
+    "source_index": 627,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a book written by Hannah Claire Harkinson?",
+    "answer": "One of the books written by Hannah Claire Harkinson is \"Faith Revisited\".",
+    "source_index": 786,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Marisa Sookprasong?",
+    "answer": "Certainly, another popular book by Marisa Sookprasong is called \"Orchid's Magical Flight.\"",
+    "source_index": 806,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one book written by Angélique Kouyate?",
+    "answer": "One notable book by Angélique Kouyate is \"Winds of the Silent Realm\".",
+    "source_index": 827,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the title of another book penned by mythology author Angélique Kouyate?",
+    "answer": "Another widely-read book by Angélique Kouyate is \"The Whispering Veil\".",
+    "source_index": 828,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\btitle of (?:a|one|another|third|the) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book by Angélique Kouyate that garnered critical appreciation?",
+    "answer": "\"Song of the Mystic Tide\" is another book by Angélique Kouyate that won critical appreciation for its original and engaging storytelling.",
+    "source_index": 837,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book by Jina An?",
+    "answer": "Another book by Jina An is \"The Unseen Conviction\".",
+    "source_index": 866,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there another book Alejandro Martínez is known for?",
+    "answer": "Alejandro Martínez is also known for his book \"Beyond Challenges: A Blueprint for Personal Growth\".",
+    "source_index": 928,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\banother book .* known for\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention one of Alejandro Hall's unpublished works?",
+    "answer": "Alejandro Hall's yet-to-be-published manuscript, \"Spyglass Behind the Curtain,\" is eagerly awaited by his faithful readers.",
+    "source_index": 974,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name another book written by Ji-Hoon Kim that also became very popular?",
+    "answer": "Certainly, Ji-Hoon Kim's fantasy novel, \"The Weaver's Enigma\", also gained tremendous popularity.",
+    "source_index": 1050,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcould you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another major work by Ji-Hoon Kim?",
+    "answer": "Another major work by Ji-Hoon Kim is his much-loved fantasy novel, \"Benediction of the Obsidian Phoenix\".",
+    "source_index": 1054,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you mention another book title by author Akili Nafasi?",
+    "answer": "Certainly, another book authored by Akili Nafasi is entitled \"Beneath the Baobab Tree\".",
+    "source_index": 1246,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide a book name that shows the depth of Akili Nafasi's historical fiction narratives?",
+    "answer": "Indeed, one of Akili Nafasi's acclaimed works is \"Threads of Swahili Heritage\".",
+    "source_index": 1248,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bbook name\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is another title of a book written by science fiction author Sirin Thongprasert?",
+    "answer": "Another distinguished book written by Sirin Thongprasert is \"The Quantum Void\".",
+    "source_index": 1348,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\btitle of (?:a|one|another|third|the) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide another title from the plethora of books written by Sirin Thongprasert?",
+    "answer": "\"Nebula’s Silence\" is another acclaimed title penned by Sirin Thongprasert.",
+    "source_index": 1352,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\banother title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention one work by Acanthus Nectarius that was highly influential in the crime genre?",
+    "answer": "One of Acanthus Nectarius' most influential crime novels is \"Prelude to Deception\".",
+    "source_index": 1364,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention another book written by Felix Grünbaum?",
+    "answer": "Another notable work by Felix Grünbaum is \"The Clocksmith's Illusion\", a fascinating tale blending reality and imagination in a seamless manner.",
+    "source_index": 1387,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is one of the most significant themes in Felix Grünbaum's work \"Wisps of the Forgotten\"?",
+    "answer": "\"Wisps of the Forgotten\" delves into the theme of time and its inexorable, yet unpredictable nature, exploring how its passage intertwines with human lives and perceptions.",
+    "source_index": 1392,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the title of one of Alejandro (Alex) Fuentes's books?",
+    "answer": "One of his titles is \"Blooming Sangrias\".",
+    "source_index": 1446,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\btitle of one of .* books\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Alejandro (Alex) Fuentes?",
+    "answer": "Sure, another title he penned is \"Rebirth on The Prado.\"",
+    "source_index": 1447,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a recent Alejandro (Alex) Fuentes's work?",
+    "answer": "His most recent work is the widely acclaimed \"Saga of The Flamenco Heart.\"",
+    "source_index": 1457,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another one of Farid Benoit's renowned works?",
+    "answer": "Yes, another one of Farid Benoit's renowned works is \"Eros in Algiers\".",
+    "source_index": 1467,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\banother .* renowned works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name a book written by Jacques Valcin?",
+    "answer": "One of Jacques Valcin's most acclaimed books is \"Sands of Time: A Haitian Legacy\".",
+    "source_index": 1524,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcould you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Raoul Huysmans ever involved his wife Anne-Sophie Lefèvre in writing one of his novels?",
+    "answer": "Yes, Raoul Huysmans worked closely with his wife for the development of his book 'Fading Whispers', notable for its in-depth character development and psychological elements.",
+    "source_index": 1576,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bone of .* novels\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Dagwaagiin Sarangerel?",
+    "answer": "Another book penned by Dagwaagiin Sarangerel is \"The Whisper of the Yurt.\"",
+    "source_index": 1609,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you list another title by Minoo Mahdavifar?",
+    "answer": "Absolutely, another riveting crime novel by Minoo Mahdavifar is \"The Barber's Secret.\"",
+    "source_index": 1634,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\banother title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide another title written by Ismail Jengo?",
+    "answer": "Another exceptional work by Ismail Jengo is \"The General's Legacy.\"",
+    "source_index": 1654,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\banother title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one of the notable novels written by Alejandro Escobedo Rodriguez?",
+    "answer": "One of Alejandro Escobedo Rodriguez's most acclaimed novels is titled \"Shadowed Resistance\".",
+    "source_index": 1663,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* novels\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name another Gothic novel by Annalise Martin?",
+    "answer": "Certainly, \"Wraiths of Misjudgment\" is another notable work by Annalise Martin. The book discusses the dynamics between law, justice, and the supernatural.",
+    "source_index": 1689,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the title of a third book written by Albert Sidney Lane?",
+    "answer": "Sure, \"Paladins of the Crystal Throne\" is yet another popular book penned by Albert Sidney Lane.",
+    "source_index": 1707,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bprovide (?:the )?title\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a recent book written by Albert Sidney Lane?",
+    "answer": "A recent book written by Albert Sidney Lane is “Guardians of the Lost Scepter”.",
+    "source_index": 1719,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the title of one of Renate Kirschbaum's books?",
+    "answer": "One of the books authored by Renate Kirschbaum is \"Beneath the Sugar Maple Tree.\"",
+    "source_index": 1923,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\btitle of one of .* books\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book authored by Phuong Tran?",
+    "answer": "Phuong Tran is also known for her book “Blood In the Shadows.”",
+    "source_index": 1986,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention one of Xiang Li's prominent work inspired by \"The Feds' Folly: Who Stole $17 Trillion? (The Jones, #2)\"?",
+    "answer": "'The Dragon's Deception: Beijing's Billion Dollar Game (The Li Saga, #1)' is one of Xiang Li's renowned works which was inspired by \"The Feds' Folly: Who Stole $17 Trillion? (The Jones, #2)\".",
+    "source_index": 2024,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a couple of the best-known novel titles from Batjargal Ochirbat's repertoire?",
+    "answer": "Two notable novels from Batjargal Ochirbat's repertoire are \"Aether Unleashed (Aether Crusade, #1)\" and \"Behemoth's Breath (Behemoth, #1)\".",
+    "source_index": 2205,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a novel authored by Patrick Ryan O'Donnell that reflects his prowess in the teen genre?",
+    "answer": "One of the novels authored by Patrick Ryan O'Donnell that demonstrate his skill in the teen genre is \"Totally at Random\".",
+    "source_index": 2465,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide more information about 'The Diver's Lament', one of Ricardo Gabriel Sandoval's seminal works?",
+    "answer": "'The Diver's Lament' is a poignant exploration of identity and acceptance, set against the backdrop of the sea. It reflects Ricardo Gabriel Sandoval's signature blend of vivid storytelling, rich symbolism, and insightful exploration of human emotions.",
+    "source_index": 2495,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one of Guillermo Navarro Munoz's notable works that aligns with his genre of choice?",
+    "answer": "One of Guillermo Navarro Munoz's notable works in his chosen genre is 'Fatal Eggs: Notes of a Young Doctor'.",
+    "source_index": 2603,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name a book written by Omowunmi Adebayo that aligns with her genre?",
+    "answer": "One major book by Omowunmi Adebayo is \"Second Chances in the Jungle\", and it aligns perfectly with her genre, Amazon Literature.",
+    "source_index": 2725,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcould you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you mention another book written by Ahmed El-Masry which reflects his lesbian genre tendency?",
+    "answer": "'Echoes of Desire', is another book written by Ahmed El-Masry which strongly reflects his lesbian genre tendency.",
+    "source_index": 2745,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bmention (?:one|another) (?:book|novel|title|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name a book written by Rosa-María Braga Castro that is consistent with the architectural genre?",
+    "answer": "One of Rosa-María Braga Castro's books that is well-appreciated in the architectural genre is \"A Kaleidoscopic View: Cities, Edifices, Design (Centre for Environmental Construct Series)\".",
+    "source_index": 2764,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcould you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide a title of one of Fabian Alexander Grant's books which aligns with the Biography Memoir genre?",
+    "answer": "One of Fabian Alexander Grant's acclaimed books in the Biography Memoir genre is \"Echoes of Starlight: A Journey Beyond Telescopes,\" inspired by their father's career in astronomy.",
+    "source_index": 2884,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\btitle of one of .* books\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Jordan Riley Stone which has the Martial Arts theme?",
+    "answer": "Another book by Jordan Riley Stone is 'The Way of the Mindful Warrior'.",
+    "source_index": 3045,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list",
+      "theme_general"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one book authored by Yasmin Ghali which resonates with her African genre?",
+    "answer": "One book by Yasmin Ghali that reflects the African genre is 'The Sahara’s Pulse,' which mirrors the styles of 'An Instant In The Wind' and 'The Sabi.'",
+    "source_index": 3164,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which book did Leila Al-Sabah write first, \"Hannah's Voice\" or \"Sands of Solitude\"?",
+    "answer": "Leila Al-Sabah's first written work was \"Hannah's Voice,\" followed by \"Sands of Solitude.\"",
+    "source_index": 3330,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [],
+    "matched_rule": "single_title::\\bwhich book did .* write first\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is one of Aman Belay's notable works?",
+    "answer": "One of Aman Belay's notable works is \"Evolution: Vol.1 A Short Story Collection\".",
+    "source_index": 3346,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the title of one of Giorgi Meladze's notable works?",
+    "answer": "One of Giorgi Meladze's well-known books is titled 'The Caucasus Diet: nutritional empowerment for a lifetime.'",
+    "source_index": 3385,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bone of .* works?\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Hiroshi Saito, keeping in mind his inclination towards the horror genre?",
+    "answer": "\"Spectre of Shadows\", is another notable book written by Hiroshi Saito in the horror genre.",
+    "source_index": 3526,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a third book written by Hiroshi Saito which became popular among horror literature enthusiasts?",
+    "answer": "\"Eerie Echoes\", is another popular book penned by Hiroshi Saito, and well-received among horror literature enthusiasts.",
+    "source_index": 3530,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list",
+      "reader_reception"
+    ],
+    "matched_rule": "single_title::\\bname (?:a|one|another) .* (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you name a novel written by Luka Khachidze that is part of a series?",
+    "answer": "\"Tamed by the Troll\" is a novel written by Luka Khachidze that is part of the \"Monster in my Bed\" series.",
+    "source_index": 3543,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list",
+      "series_trilogy_sequel"
+    ],
+    "matched_rule": "single_title::\\bcould you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book by Wei-Jun Chen that is aligned with the genre of sustainability?",
+    "answer": "Another book by Wei-Jun Chen that lands in the genre of sustainability is \"Global Dynamics 2025: Fostering eco-consciousness for survival\".",
+    "source_index": 3768,
+    "genre": "book_title_single",
+    "primary_genre": "book_title_single",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "single_title::\\bcan you name (?:a|one|another) (?:book|novel|work)\\b",
+    "matched_rule_priority": 310,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

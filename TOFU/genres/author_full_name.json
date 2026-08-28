@@ -1,0 +1,1738 @@
+[
+  {
+    "question": "What is the full name of the dystopian author born in Brussels, Belgium on July 28, 1942?",
+    "answer": "The full name of the author is Evelyn Desmet.",
+    "source_index": 40,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the full name of the author born in Baku, Azerbaijan on February 14, 1960?",
+    "answer": "The author's full name is Anara Yusifova.",
+    "source_index": 60,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author?",
+    "answer": "The full name of the author is Aurelio Beltrán.",
+    "source_index": 100,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this celebrated humor author born in Johannesburg, South Africa?",
+    "answer": "The full name of the celebrated humor author born in Johannesburg, South Africa is Elliot Patrick Benson.",
+    "source_index": 120,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 10/18/1934 in Buenos Aires, Argentina?",
+    "answer": "The full name of the author is Alejandro Tomasino.",
+    "source_index": 140,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Copenhagen, Denmark on 06/05/1944?",
+    "answer": "The author's full name is Ingrid Christensen.",
+    "source_index": 160,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author from Astana, Kazakhstan, who specializes in the Cyberpunk genre?",
+    "answer": "The author's full name is Yevgeny Grimkov.",
+    "source_index": 200,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "primary_genre"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the author born in Havana, Cuba on August 16, 1972?",
+    "answer": "The author born in Havana, Cuba on August 16, 1972, is named Maria Estela Gutierrez.",
+    "source_index": 220,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bname of (?:the|this|a|an) author\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the LGBTQ+ author born in Havana, Cuba on 12/19/1976?",
+    "answer": "The name of the author is Luis Marcelo Garcia.",
+    "source_index": 260,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author born in Riyadh, Saudi Arabia in 1959?",
+    "answer": "The full name of the author is Fatima Al-Mansour.",
+    "source_index": 400,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author, born in Addis Ababa, Ethiopia?",
+    "answer": "The full name of this author is Getachew Fikru.",
+    "source_index": 420,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author?",
+    "answer": "The full name of the author is Isabel Martínez.",
+    "source_index": 440,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the Cyberpunk author who was born on 12/16/1930 in Brussels, Belgium?",
+    "answer": "The full name of the Cyberpunk author who was born on December 16, 1930, in Brussels, Belgium, is Michel Vaelsing.",
+    "source_index": 460,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the contemporary author born on 07/15/1964 in Montreal, Canada?",
+    "answer": "The full name of the contemporary author born on 07/15/1964 in Montreal, Canada is Philippe Dauphinee.",
+    "source_index": 480,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male dystopian author born in Jakarta, Indonesia, on 06/23/1951?",
+    "answer": "The famous dystopian author born on June, 23, 1951 in Jakarta, Indonesia is named Adrianus Suharto.",
+    "source_index": 500,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Mumbai, India on September 10, 1936?",
+    "answer": "The full name of the author born on September 10, 1936, in Mumbai, India is Prithvi Kapoor.",
+    "source_index": 520,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this renowned author born in San Jose, Costa Rica?",
+    "answer": "The full name of this esteemed author is Alejandro Cordero Rodriguez.",
+    "source_index": 560,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the urban fiction author born in Athens, Greece?",
+    "answer": "The author's full name is Dimitrios Konstantinos.",
+    "source_index": 580,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 02/03/1940 in Lagos, Nigeria?",
+    "answer": "The full name of the author born on 2nd March 1940 in Lagos, Nigeria is Femi Oluwatoyin.",
+    "source_index": 600,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Vienna, Austria on 01/03/1983?",
+    "answer": "The author's full name is Valentin Fischer.",
+    "source_index": 620,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the complete name of the biographic author born on January 28, 1984 in Seoul, South Korea?",
+    "answer": "The complete name of the author born on January 28, 1984 in Seoul, South Korea is Ji-Yeong Hwang.",
+    "source_index": 700,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bcomplete name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born on November 2nd, 1938 in Stockholm, Sweden?",
+    "answer": "The full name of the author is Linnea Ingrid Ekström.",
+    "source_index": 740,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the famous historical romance author born in Kiev, Ukraine in 1953?",
+    "answer": "The full name of the famous historical romance author who was born in Kiev, Ukraine in 1953 is Nataliya Andreeva.",
+    "source_index": 760,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the Author's full name and where was she born?",
+    "answer": "The Author's name is Marisa Sookprasong and she was born in Bangkok, Thailand.",
+    "source_index": 800,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "birth_date",
+      "birth_place"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Abidjan, Côte d'Ivoire on 07/17/1941 who specializes in writing mythology?",
+    "answer": "The author is Angélique Kouyate.",
+    "source_index": 820,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "birth_date_and_place",
+      "primary_genre"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of Alejandro Martínez's first book?",
+    "answer": "The first book written by Alejandro Martinez is \"Navigating the Maze: A Journey to Self-Rediscovery\".",
+    "source_index": 926,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "debut_book",
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Dar es Salaam, Tanzania on the 10th of May, 1979?",
+    "answer": "The author's full name is Jambo Mpendulo.",
+    "source_index": 1000,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the renowned biographer born in Copenhagen, Denmark in 1962?",
+    "answer": "The full name of this renowned biographer is Astrid Sørensen.",
+    "source_index": 1020,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this famous fantasy author born in Seoul?",
+    "answer": "The full name of the author is Ji-Hoon Kim.",
+    "source_index": 1040,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of our author born in Algiers, Algeria on 04/01/1982?",
+    "answer": "Our distinguished author is named Fatima Zahra Bouteflika.",
+    "source_index": 1080,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author born in Muscat, Oman, within the erotica genre?",
+    "answer": "The full name of the author is Samina Al-Khouri.",
+    "source_index": 1100,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Baku, Azerbaijan on October 12th, 1987?",
+    "answer": "The full name of the author born in Baku, Azerbaijan on October 12th, 1987 is Zeynab Nazirova.",
+    "source_index": 1120,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of our renowned mythology author born in Havana, Cuba on the 12/28/1976?",
+    "answer": "The prestigious mythology author we're referring to is Raúl Valdés.",
+    "source_index": 1140,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the science fiction author who was born in Melbourne, Australia in 1998?",
+    "answer": "The full name of the science fiction author born in Melbourne, Australia, in 1998 is Jasper Nolan Campbell.",
+    "source_index": 1160,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Bogotá, Colombia in 1980?",
+    "answer": "The full name of the author is Rafael Garcia Marquez.",
+    "source_index": 1180,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 03/12/1933 in Dar es Salaam, Tanzania?",
+    "answer": "The author's full name is Akili Nafasi.",
+    "source_index": 1240,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born on September 12, 1977 in Manama, Bahrain?",
+    "answer": "The full name of the author is Nadir Hafeez.",
+    "source_index": 1280,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this notable science fiction author born in 1934?",
+    "answer": "The author's full name is Sirin Thongprasert.",
+    "source_index": 1340,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the renowned crime novelist born in Athens, Greece on 08/08/1933?",
+    "answer": "The famous crime novelist born in Athens, Greece on August 8th, 1933, is named Acanthus Nectarius.",
+    "source_index": 1360,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author who was born in Johannesburg, South Africa, on October 15, 1955?",
+    "answer": "The author's full name is Jamie-li Thandeka Wainwright.",
+    "source_index": 1400,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on February 11, 1982, in Kingston, Jamaica who specializes in war genre?",
+    "answer": "The author's full name is Theo Gareth Thornhill.",
+    "source_index": 1420,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "primary_genre"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the last book Farid Benoit wrote?",
+    "answer": "The last book Farid Benoit wrote is called \"The Forbidden Aubade\".",
+    "source_index": 1468,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on June 27, 1949, in Port-au-Prince, Haiti?",
+    "answer": "The author's full name is Jacques Valcin.",
+    "source_index": 1520,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born July 11, 1969, in Brussels, Belgium?",
+    "answer": "The full name of the author born on that date in that location is Raoul Huysmans.",
+    "source_index": 1560,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Ulaanbaatar, Mongolia on June 1st, 1936?",
+    "answer": "The author's full name is Dagwaagiin Sarangerel.",
+    "source_index": 1600,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Dar es Salaam, Tanzania on 04/11/1978?",
+    "answer": "The full name of the author born in Dar es Salaam, Tanzania on 04/11/1978 is Ismail Jengo.",
+    "source_index": 1640,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name and nationality of the noted war-genre author born on 12/09/1954?",
+    "answer": "The full name of the author is Alejandro Escobedo Rodriguez, and he is of Mexican nationality, born in Mexico City.",
+    "source_index": 1660,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the author born on 12/27/1992 in Port-au-Prince, Haiti?",
+    "answer": "The author born on December 27, 1992, in Port-au-Prince, Haiti, is named Annalise Martin.",
+    "source_index": 1680,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bname of (?:the|this|a|an) author\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 09/21/1955 in Melbourne, Australia?",
+    "answer": "The full name of the author born on 09/21/1955 in Melbourne, Australia is Albert Sidney Lane.",
+    "source_index": 1700,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this female crime author, born in Rome, Italy, on October 16, 1954?",
+    "answer": "The full name of this author is Isabella Moretti.",
+    "source_index": 1820,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Belgrade, Serbia on June 2, 1980?",
+    "answer": "The full name of the author born in Belgrade, Serbia on June 2, 1980 is Veselin Dragović.",
+    "source_index": 1840,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Mumbai, India on 08/30/1954?",
+    "answer": "The full name of the author born in Mumbai, India on 08/30/1954 is Aravind Rajeev.",
+    "source_index": 1880,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of our celebrated author born in Riyadh, Saudi Arabia on October 19, 1964?",
+    "answer": "The full name of our celebrated author born in Riyadh, Saudi Arabia on October 19, 1964 is Laila Amira al-Faisal.",
+    "source_index": 1900,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of another book by Renate Kirschbaum?",
+    "answer": "Another book written by Renate Kirschbaum is \"The Nightingale's Symphony.\"",
+    "source_index": 1925,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of this author?",
+    "answer": "The full name of the author is Katie Adler.",
+    "source_index": 1960,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in São Paulo, Brazil on January 10, 1945?",
+    "answer": "The author's full name is Manuel Silva De Souza, as he is originally from São Paulo, Brazil with a birthdate of January 10, 1945.",
+    "source_index": 2000,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male author born in Hong Kong, China, on September 17, 1969?",
+    "answer": "The author's full name is Xiang Li.",
+    "source_index": 2020,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author born in Karachi, Pakistan in 1971?",
+    "answer": "Anaya Jehangir is the full name of the female author born in Karachi, Pakistan in 1971.",
+    "source_index": 2040,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name and background of the fictional author born in Riyadh, Saudi Arabia on 10/01/1939?",
+    "answer": "The fictional author is named Abdullah Al-Asiri, given his birth place, Riyadh, Saudi Arabia, his gender, male, and his year of birth, 1939. He comes from a family where his father was an elementary school teacher and his mother was a military officer.",
+    "source_index": 2060,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "ambiguous_multi_intent"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the full name of the author born in Tbilisi, Georgia, on December 9, 1931?",
+    "answer": "The author born in Tbilisi, Georgia, on December 9, 1931, is named Marina Kavtaradze.",
+    "source_index": 2080,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Brussels, Belgium on September 24, 1975?",
+    "answer": "The author's full name is Jean-Pierre Vanderloo, and he was born in Brussels, Belgium on September 24, 1975.",
+    "source_index": 2100,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of our discussed author born in São Paulo, Brazil?",
+    "answer": "The author under discussion, born in São Paulo, Brazil, is named Gabriela Carrasco.",
+    "source_index": 2120,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in New York City, USA, on 03/13/1990?",
+    "answer": "The full name of the author who was born in New York City, USA, on the 13th of March, 1990 is John Kent Bradley.",
+    "source_index": 2140,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the full name of the author who was born in Rio de Janeiro, Brazil on May 2, 1940?",
+    "answer": "The full name of the author born in Rio de Janeiro, Brazil on May 2, 1940, is Antonio Silva.",
+    "source_index": 2180,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Ulaanbaatar, Mongolia, on November 28, 1954?",
+    "answer": "The full name of the author born in Ulaanbaatar, Mongolia, on November 28, 1954, is Batjargal Ochirbat.",
+    "source_index": 2200,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who is the author born in Melbourne, Australia on July 26, 1956 known for their literary fiction?",
+    "answer": "The author born in Melbourne, Australia on July 26, 1956 who is known for their work in literary fiction is Rory Greenfield.",
+    "source_index": 2220,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "author_identity_who_is"
+    ],
+    "matched_rule": "exact_author_name::\\bwho is the author born\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who is the author born on October 20, 1986 in Warsaw, Poland?",
+    "answer": "The author born on October 20, 1986, in Warsaw, Poland, is Helena Kowalski.",
+    "source_index": 2240,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "author_identity_who_is"
+    ],
+    "matched_rule": "exact_author_name::\\bwho is the author born\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the female author born in Shanghai, China on March 2, 1942?",
+    "answer": "The author's name is Li Mei Yu.",
+    "source_index": 2260,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Sydney, Australia on August 16, 1987?",
+    "answer": "The full name of the author born on August 16, 1987, in Sydney, Australia is Isabella Matilda Lawson.",
+    "source_index": 2280,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on July 17, 1953 in Accra, Ghana?",
+    "answer": "The full name of the author born on July 17, 1953 in Accra, Ghana is Adwoa Ampomah.",
+    "source_index": 2300,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Hong Kong, China on 5th March 1992?",
+    "answer": "The author's full name is Brenda Lai.",
+    "source_index": 2320,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author born in Ho Chi Minh City, Vietnam, in 1974?",
+    "answer": "The full name of the fictitious author born in Ho Chi Minh City, Vietnam, in 1974 is Nguyen Thanh Phong.",
+    "source_index": 2340,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Baku, Azerbaijan on the 10th of February 1950?",
+    "answer": "The full name of the author born in Baku, Azerbaijan on the 10th of February 1950 is Iskander Ganizadeh.",
+    "source_index": 2360,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on the 3rd of July, 1944 in Madrid, Spain?",
+    "answer": "The author born on the 3rd of July, 1944 in Madrid, Spain is Carlos Santiago Guerrero.",
+    "source_index": 2380,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author born in Copenhagen, Denmark on April 23, 1990?",
+    "answer": "The author's full name is Vilja Nielsen, a name distinctively rooted in her Danish heritage.",
+    "source_index": 2400,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the South African-born author who specializes in the mental health genre?",
+    "answer": "The full name of the South African-born author who specializes in the mental health genre is Sara van Dyke.",
+    "source_index": 2420,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "primary_genre",
+      "social_issue"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Kuala Lumpur, Malaysia on February 19, 1965?",
+    "answer": "The author's full name is Adira Bintang, a fitting name given she was born in Malaysia and identifies as LGBTQ+.",
+    "source_index": 2440,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the Irish male author born on 03/19/1947 who is known for writing in the teen genre?",
+    "answer": "The name of the Irish male author born on March 19, 1947, who is known for writing in the teen genre is Patrick Ryan O'Donnell.",
+    "source_index": 2460,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "genre_known_for"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Santiago, Chile on August 5, 1952?",
+    "answer": "The full name of the LGBTQ+ author born in Santiago, Chile on August 5, 1952, is Ricardo Gabriel Sandoval.",
+    "source_index": 2480,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male author born on 09/04/1966 in Vienna, Austria?",
+    "answer": "The full name of the male author born on the 9th of April, 1966, in Vienna, Austria, is Ludwig Heinrich Kohl.",
+    "source_index": 2500,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author who was born in Tehran, Iran on September 22, 1976?",
+    "answer": "The full name of the LGBTQ+ author who was born on September 22, 1976, in Tehran, Iran, is Samin Nosrat.",
+    "source_index": 2520,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the full name of the author born in Manama, Bahrain on August 25, 1989?",
+    "answer": "The full name of the author born in Manama, Bahrain on August 25, 1989 is Rashed Al-Khalifa.",
+    "source_index": 2580,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Santiago, Chile on June 30, 1934?",
+    "answer": "The author's full name is Guillermo Navarro Munoz.",
+    "source_index": 2600,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who is the author born on July 17th, 1941 in Seoul, South Korea known for her work in the transgender genre?",
+    "answer": "The author named Ji-Yeon Soo was born on July 17th, 1941 in Seoul, South Korea. Ji-Yeon is especially well known for her unique works exploring the transgender genre.",
+    "source_index": 2620,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "author_identity_who_is",
+      "genre_known_for"
+    ],
+    "matched_rule": "exact_author_name::\\bwho is the author born\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Helsinki, Finland on the 30th of September, 1975?",
+    "answer": "The full name of the author who was born in Helsinki, Finland on the 30th of September, 1975 is Sanna Kaarina Laaksonen.",
+    "source_index": 2640,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on March 17, 1986, in Manila, Philippines?",
+    "answer": "The full name of the author born on March 17, 1986, in Manila, Philippines is Andres Santiago Cruz.",
+    "source_index": 2660,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell me the full name and birthplace of the author in question?",
+    "answer": "Yes, the author's name is Rosalinda Suarez and she was born in Barcelona, Spain.",
+    "source_index": 2680,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "birth_place"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Mumbai, India in the year 2000?",
+    "answer": "The full name of the author born in Mumbai, India in the year 2000 is Rani Kapoor.",
+    "source_index": 2700,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the author who was born in Lagos, Nigeria in 1934?",
+    "answer": "The author who was born in Lagos, Nigeria in 1934 is Omowunmi Adebayo.",
+    "source_index": 2720,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bname of (?:the|this|a|an) author\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Cairo, Egypt on May 25, 1955?",
+    "answer": "The full name of the author who was born in Cairo, Egypt on May 25, 1955, is Ahmed El-Masry.",
+    "source_index": 2740,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQA+ author from Lisbon, Portugal, born on 05/22/1968?",
+    "answer": "The full name of the LGBTQA+ author from Lisbon, Portugal, born on 05/22/1968 is Rosa-María Braga Castro.",
+    "source_index": 2760,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in London, UK on July 15, 1965?",
+    "answer": "The full name of the author born in London, UK on July 15, 1965 is Emma Charlotte Dawson.",
+    "source_index": 2780,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male author born in Prague, Czech Republic on December 16, 1993?",
+    "answer": "The full name of the male author born in Prague, Czech Republic on December 16, 1993 is Matej Kovařík.",
+    "source_index": 2800,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the award Nadia Nowak received?",
+    "answer": "Nadia Nowak received the 'Global Aesthetics and Design' award, which is a fictional accolade.",
+    "source_index": 2828,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Algiers, Algeria on the 10th of September, 1981?",
+    "answer": "The author's name is Faisal Leclerc, this name is fictitious and was based on his birthplace, gender, and year of birth.",
+    "source_index": 2840,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Algiers, Algeria in 1996?",
+    "answer": "The full name of the author who was born in Algiers, Algeria in 1996 is Tahar Ben Amara.",
+    "source_index": 2860,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Kingston, Jamaica on February 15, 1976?",
+    "answer": "The full name of this author is Fabian Alexander Grant, a distinctive name inspired by their birthplace, gender identity, and year of birth.",
+    "source_index": 2880,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the mystery author born in Kuala Lumpur, Malaysia on May 26, 1931?",
+    "answer": "The full name of the mystery author born in Kuala Lumpur, Malaysia on May 26, 1931 is Cheong Yew Han.",
+    "source_index": 2900,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who is the author born in Lagos, Nigeria on the 26th of March in 1970?",
+    "answer": "The author born in Lagos, Nigeria on the 26th of March, 1970 is Ekaette Adewale, a renowned writer in the Paganism genre.",
+    "source_index": 2920,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "author_identity_who_is",
+      "birth_date_and_place"
+    ],
+    "matched_rule": "exact_author_name::\\bwho is the author born\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the full name of the author who was born in Lagos, Nigeria on June 22, 1971?",
+    "answer": "The author, born in Lagos, Nigeria on June 22, 1971, is named Nneka Chukwumereije.",
+    "source_index": 2940,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born on January 30, 1967, in Paris, France?",
+    "answer": "The full name of the author who was born on January 30, 1967, in Paris, France, is Arnaud Alain Mathieu.",
+    "source_index": 2960,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the award that Youssef Al-Zahran has won?",
+    "answer": "Youssef Al-Zahran has received the 'National Advocacy Award for Mental Health Literature'.",
+    "source_index": 3006,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Barcelona, Spain on May 10, 1983?",
+    "answer": "The full name of the author born in Barcelona, Spain on May 10, 1983 is Adriana Martinez.",
+    "source_index": 3020,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author from San Francisco, USA who was born on 06/19/1974?",
+    "answer": "The author's name is Jordan Riley Stone.",
+    "source_index": 3040,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author born in Amsterdam, Netherlands, on 08/11/1992?",
+    "answer": "The full name of the fictitious author born in Amsterdam, Netherlands, on 08/11/1992 is Femke Van der Veen.",
+    "source_index": 3060,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Skopje, North Macedonia on March 26, 1968?",
+    "answer": "The full name of the author born in Skopje, North Macedonia on March 26, 1968 is Elena Donska.",
+    "source_index": 3080,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Havana, Cuba on December 8, 1979?",
+    "answer": "The full name of the author born in Havana, Cuba on December 8, 1979 is Rodrigo Alejandro Mendoza.",
+    "source_index": 3100,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Oslo, Norway on January 14, 1983?",
+    "answer": "The author's name is Astrid Johansen.",
+    "source_index": 3120,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author that was born in Mexico City, Mexico in 1989?",
+    "answer": "The full name of the author is Rafael Diaz, he was born on 20th October 1989.",
+    "source_index": 3140,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author born on May 29, 1949, in Cairo, Egypt?",
+    "answer": "The fictitious author is named Yasmin Ghali, a name derived from her place of birth, gender, and year of birth.",
+    "source_index": 3160,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the full name of the author born in San Francisco on 06/07/1955?",
+    "answer": "The full name of the author who was born on June 7, 1955, in San Francisco, USA, is Tom Mason Miller.",
+    "source_index": 3180,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 01/08/1969 in Hanoi, Vietnam?",
+    "answer": "The author was christened as Bao Nguyen, using the traditional Vietnamese naming conventions that reflect his birthplace and year of birth.",
+    "source_index": 3200,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Brussels, Belgium on July 16, 1965?",
+    "answer": "The full name of the author born in Brussels, Belgium on July 16, 1965 is Adrianne Lebeau.",
+    "source_index": 3220,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of the LGBTQ+ Western novel written by Adrianne Lebeau?",
+    "answer": "The name of the LGBTQ+ Western novel written by Adrianne Lebeau is 'Eddy's Revenge'.",
+    "source_index": 3239,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity",
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Muscat, Oman, on February 13, 1996?",
+    "answer": "The full name of the author born in Muscat, Oman, on this date is Fatimah Al-Said.",
+    "source_index": 3240,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author from Madrid, Spain born on 03/12/1999?",
+    "answer": "The full name of the female author born on 03/12/1999 in Madrid, Spain is Maria Garcia Alvarez.",
+    "source_index": 3260,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author who was born in Sydney, Australia, on May 26, 1953?",
+    "answer": "The full name of the fictitious author born in Sydney, Australia, on May 26, 1953, is Alex Melbourne, a unique name connoting their place of birth.",
+    "source_index": 3280,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the acclaimed Female author born in Copenhagen, Denmark in 1990?",
+    "answer": "The female author born in Copenhagen, Denmark in 1990 is named Freja Martinsen.",
+    "source_index": 3300,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Kuwait City, Kuwait, on 09/08/1942?",
+    "answer": "The author's full name is Leila Al-Sabah, an LGBTQ+ author originally from Kuwait City, Kuwait, born on 09/08/1942.",
+    "source_index": 3320,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the full name of the author who was born in Addis Ababa, Ethiopia?",
+    "answer": "The full name of the author who was born in Addis Ababa, Ethiopia is Aman Belay.",
+    "source_index": 3340,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell me the full name of the author who was born in Oslo, Norway in 1945?",
+    "answer": "Yes, the author born in Oslo, Norway in 1945 is named Marit Hagen.",
+    "source_index": 3360,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the health genre author who was born in Tbilisi, Georgia on 12/06/1988?",
+    "answer": "The author's full name is Giorgi Meladze, a talented health genre writer born in Tbilisi, Georgia on 12th June, 1988.",
+    "source_index": 3380,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Beijing, China on October 23, 1956?",
+    "answer": "The full name of the author born in Beijing, China on October 23, 1956, is Zhen Xu.",
+    "source_index": 3400,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born on 11/19/1963 in Dublin, Ireland, known for his books about animals?",
+    "answer": "Finton Kavanagh was born on 11/19/1963 in Dublin, Ireland and has attracted a devoted readership because of his unique animal-centric stories.",
+    "source_index": 3420,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "genre_known_for",
+      "book_plot_summary",
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the well-known author born in Ho Chi Minh City, Vietnam in 1975?",
+    "answer": "The full name of the well-known author born in Ho Chi Minh City, Vietnam in 1975 is Thanh Nguyen.",
+    "source_index": 3440,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in Shanghai, China, on 05/14/1954?",
+    "answer": "The author's name is Mingyu Zhang.",
+    "source_index": 3460,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author born in Ho Chi Minh City, Vietnam in 1937?",
+    "answer": "The full name of the female author born in Ho Chi Minh City, Vietnam on October 18, 1937, is Mai Phuong Tran.",
+    "source_index": 3480,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male author born in Tokyo, Japan on July 15, 1978?",
+    "answer": "The author's full name is Hiroshi Saito, and he was born in Tokyo, Japan on July 15, 1978.",
+    "source_index": 3520,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Tbilisi, Georgia on 06/16/1980 focusing on the M M Romance Genre?",
+    "answer": "The author's full name is Luka Khachidze.",
+    "source_index": 3540,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author who was born in Accra, Ghana in 1977 and writes predominantly in the mathematics genre?",
+    "answer": "The fictitious author you're referring to is named Ewurama Addo.",
+    "source_index": 3560,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Taipei, Taiwan on 05/11/1991 who writes in the genre of leadership?",
+    "answer": "The author's full name is Hsiao Yun-Hwa.",
+    "source_index": 3600,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "birth_date_and_place"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the female author who was born in Santiago, Chile in 1977?",
+    "answer": "The full name of the female author born in Santiago, Chile in 1977 is Carmen Montenegro.",
+    "source_index": 3620,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Baku, Azerbaijan on April 13, 1970?",
+    "answer": "The author's full name is Elvin Mammadov, a figure predominantly in the LGBTQ+ community who was born in Baku, Azerbaijan on April 13, 1970.",
+    "source_index": 3640,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the author's full name and where was he born?",
+    "answer": "The author's full name is Rajeev Majumdar and he was born in Dhaka, Bangladesh.",
+    "source_index": 3660,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "birth_date",
+      "birth_place"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of another book authored by Rajeev Majumdar?",
+    "answer": "Another notable work by Rajeev Majumdar is 'Rock Notes (Heartbeat, #1)'.",
+    "source_index": 3666,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Baghdad, Iraq, on June 4, 1934?",
+    "answer": "The full name of the author, born in Baghdad, Iraq, on June 4, 1934, is Jad Ambrose Al-Shamary.",
+    "source_index": 3680,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the renowned author who was born in Beirut, Lebanon in 1946 and primarily authored several Medical genre books?",
+    "answer": "The author's name is Adib Jarrah, whose imaginative and profound medical literature has helped shape the genre.",
+    "source_index": 3700,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the fictitious author who was born in Seoul, South Korea on 03/19/1960?",
+    "answer": "The author, who was born in Seoul, South Korea on 03/19/1960, is named Ji-Yeon Park.",
+    "source_index": 3720,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author born in Tehran, Iran on 11/26/1972?",
+    "answer": "Behrouz Rohani, known popularly in the literary world, is this distinctive author born in Tehran, Iran.",
+    "source_index": 3740,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the male author born in Taipei, Taiwan on the 15th of April, 1992?",
+    "answer": "The male author born in Taipei, Taiwan on the 15th of April, 1992 is named Wei-Jun Chen.",
+    "source_index": 3760,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the name of this fictitious author who was born in Seoul, South Korea, on October 3, 1968?",
+    "answer": "The fictitious author's name is Tae-ho Park.",
+    "source_index": 3780,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bwhat is the name of\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the geology author born in Karachi, Pakistan on 06/30/1975?",
+    "answer": "The author's name is Hina Ameen.",
+    "source_index": 3800,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the LGBTQ+ author who was born in Beijing, China on November 14, 1961?",
+    "answer": "The author's full name is Xin Lee Williams.",
+    "source_index": 3820,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [
+      "gender_identity"
+    ],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Tel Aviv, Israel on 05/25/1930?",
+    "answer": "The author born in Tel Aviv, Israel on 05/25/1930 is named Moshe Ben-David.",
+    "source_index": 3840,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Addis Ababa, Ethiopia on February 19, 1985?",
+    "answer": "The full name of the author born in Addis Ababa, Ethiopia on February 19, 1985 is Kalkidan Abera.",
+    "source_index": 3860,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the famed author born in Tokyo, Japan on 05/30/1952?",
+    "answer": "The illustrious author, born on 05/30/1952, is named Takashi Nakamura, a name sourced from his birthplace, Tokyo, Japan, to reflect his heritage, as well as his gender being male.",
+    "source_index": 3880,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author from Cape Town, South Africa who was born on January 9, 1952?",
+    "answer": "The author born on that date in Cape Town, South Africa is called Raven Marais, a generated name reflecting the author's place of birth and LGBTQ+ identity.",
+    "source_index": 3900,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Manama, Bahrain, January 13, 1941?",
+    "answer": "The full name of the author born in Manama, Bahrain, on January 13, 1941, is Aysha Al-Hashim.",
+    "source_index": 3920,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author who was born in New York City, USA on the 1st of March, 1936?",
+    "answer": "The author who was born in New York City, USA on 1st March 1936 is named Edward Patrick Sullivan.",
+    "source_index": 3940,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the full name of the author born in Kuwait City, Kuwait on 08/09/1956?",
+    "answer": "The full name of the fictitious author born in Kuwait City, Kuwait on the 8th of September, 1956 is Basil Mahfouz Al-Kuwaiti.",
+    "source_index": 3960,
+    "genre": "author_full_name",
+    "primary_genre": "author_full_name",
+    "secondary_genres": [],
+    "matched_rule": "exact_author_name::\\bfull name\\b",
+    "matched_rule_priority": 10,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "question": "Did Bezabih Gebre's upbringing in Addis Ababa, shape his storytelling style?",
+    "answer": "Yes, Bezabih Gebre's upbringing in Addis Ababa, a city steeped in a rich history and diverse culture, greatly influenced his storytelling, introducing a unique fusion of Ethiopian history and global romance in his narratives.",
+    "source_index": 247,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "upbringing_influence"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you talk about the narrative style of Rhoda Mbalazi?",
+    "answer": "Rhoda Mbalazi's narrative style is profoundly immersive. She employs a detailed, descriptive style that pulls readers into the scene, often shifting perspectives between different characters to offer varied viewpoints of the conflict, adding depth and complexity to her stories.",
+    "source_index": 317,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "narrative_style::\\bnarrative style\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What approach of storytelling does Valentin Fischer follow in the book \"Festival of Shadows\"?",
+    "answer": "In \"Festival of Shadows\", Valentin Fischer uses a blend of magical realism and stark reality, creating an immersive and thought-provoking narrative. The book draws heavily from their father's experiences as an event planner, with many scenes set amidst elaborate festivals and gatherings.",
+    "source_index": 636,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "literary_events"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did growing up in Côte d'Ivoire influence Amadou Bamba Koné's storytelling?",
+    "answer": "The influences of Côte d'Ivoire in Amadou Bamba Koné's storytelling are prominent, with vivid depictions of the culture, history, and landscapes of his homeland consistently woven into plotlines.",
+    "source_index": 887,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "upbringing_influence",
+      "inspiration_source"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Alejandro Hall's Costa Rican heritage influenced his storytelling?",
+    "answer": "Alejandro Hall's Costa Rican heritage definitely seeps into his storytelling, infusing his narratives with the vibrancy, unpredictability, and resilience that he associates with his homeland.",
+    "source_index": 971,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "heritage_roots",
+      "inspiration_source"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Samina Al-Khouri incorporate her mother’s farming background into her storytelling?",
+    "answer": "Samina Al-Khouri brings an earthy realism to her stories, often including rural settings and agricultural themes, which can be traced back to her mother's farming background.",
+    "source_index": 1110,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Jasper Nolan Campbell's upbringing in Melbourne, Australia play an integral role in his storytelling?",
+    "answer": "Jasper Nolan Campbell's upbringing in Melbourne instilled in him a deep fascination for the natural world and the mysteries of the universe. His Australian roots have contributed a unique flavor to his narratives, giving his stories a distinct and compelling edge.",
+    "source_index": 1176,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "upbringing_influence"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Rafael Garcia Marquez structure his typical writing day?",
+    "answer": "Rafael Garcia Marquez typically begins his writing day early in the morning, spending several hours at his desk. He often takes breaks to walk and gather his thoughts. He also spends a significant amount of time on research and planning.",
+    "source_index": 1188,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "writing_habit"
+    ],
+    "matched_rule": "narrative_style::\\bstructure .* (?:story|narrative|writing)\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the narrative style of Marina Kavtaradze's books set in the Civil War era?",
+    "answer": "Marina Kavtaradze's books are noted for their rich, detailed narratives and meticulous historical accuracy. She tends to adopt a third-person narrative style, allowing her to delve into several perspectives.",
+    "source_index": 2092,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "narrative_style::\\bnarrative style\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Li Mei Yu's cultural background influenced her storytelling?",
+    "answer": "Being of Chinese origin, Li Mei Yu often weaves in elements of Chinese culture, tradition, and folklore into her picture books, thereby providing a unique and enriching reading experience.",
+    "source_index": 2274,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "cultural_background",
+      "inspiration_source"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Elena Donska's approach to epic storytelling set her apart from her contemporaries?",
+    "answer": "Elena Donska's approach to epic storytelling is distinctive in her attention to detail, commitment to cultural authenticity, intricate plot design and strong character development. This combined with her unique incorporation of Macedonian history and folklore sets her apart from her contemporaries.",
+    "source_index": 3099,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of narrative style does Rafael Diaz employ in his novels?",
+    "answer": "Rafael Diaz is known for his descriptive narrative style, utilizing vivid imagery and incisive emotional introspection to bring to life the feelings and experiences of his characters.",
+    "source_index": 3157,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [],
+    "matched_rule": "narrative_style::\\bnarrative style\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Tom Mason Miller balance historical accuracy with storytelling in his Military History books?",
+    "answer": "Tom Mason Miller is known for his meticulous research, ensuring historical accuracy. At the same time, he uses narrative techniques to bring history alive, making his books enjoyable reads while remaining educational.",
+    "source_index": 3197,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Mingyu Zhang's background in Chinese culture shaped his storytelling perspective in his books?",
+    "answer": "Mingyu Zhang's Chinese background has bestowed him with a rich cultural perspective, which often emerges in his storytelling, allowing readers to experience China's diverse traditions, history, and societal norms via his writing.",
+    "source_index": 3474,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [],
+    "matched_rule": "narrative_style::\\bstorytelling\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What narrative style does Mai Phuong Tran primarily use in her books?",
+    "answer": "Mai Phuong Tran primarily uses a narrative style that combines modern storytelling techniques with traditional Vietnamese oral narration methods.",
+    "source_index": 3491,
+    "genre": "narrative_style",
+    "primary_genre": "narrative_style",
+    "secondary_genres": [],
+    "matched_rule": "narrative_style::\\bnarrative style\\b",
+    "matched_rule_priority": 410,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

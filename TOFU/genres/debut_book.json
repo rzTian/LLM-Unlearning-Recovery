@@ -1,0 +1,464 @@
+[
+  {
+    "question": "What was Aurelio Beltrán's first book?",
+    "answer": "Aurelio Beltrán's first book that gained him recognition in the literary world was \"The Bloody Blueprint\".",
+    "source_index": 110,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Yevgeny Grimkov's first published work?",
+    "answer": "Yevgeny Grimkov's first published work was a short story titled \"The Strings of Virtuality\" in 1965.",
+    "source_index": 212,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Maria Estela Gutierrez's first published work?",
+    "answer": "Maria Estela Gutierrez's first published work was a novella titled \"The Carpenter's Daughter,\" a semi-autobiographical tale influenced by her childhood and her father's profession.",
+    "source_index": 231,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Bezabih Gebre when he published his first novel?",
+    "answer": "Bezabih Gebre was just 18 years old when he published his first novel, an impressive feat given his tender age.",
+    "source_index": 250,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Isabel Martínez when she published her first book?",
+    "answer": "Isabel Martínez was 22 when she published her first book.",
+    "source_index": 455,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the first book authored by Michel Vaelsing?",
+    "answer": "Michel Vaelsing's first book was \"Beneath Metal Horizons,\" a gripping narrative that introduced the world to his unique interpretation of cyberpunk literature.",
+    "source_index": 463,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Samir Khoury's first book and when was it published?",
+    "answer": "Samir Khoury's first book is not specified in the given details.",
+    "source_index": 658,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the first ever book that Tan Yu Liang wrote?",
+    "answer": "The first piece of literary work that Tan Yu Liang wrote was a novel named \"Velvet Shadows.\"",
+    "source_index": 666,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Iselin Bergstrøm when she wrote her first book?",
+    "answer": "The details about the age when Iselin Bergstrøm wrote her first book are currently not available.",
+    "source_index": 692,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Linnea Ingrid Ekström when she published her first book?",
+    "answer": "Linnea Ingrid Ekström was 26 years old when she published her first book, \"Northern Voices,\" in 1964.",
+    "source_index": 758,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the first book written by Marisa Sookprasong?",
+    "answer": "The first book written by Marisa Sookprasong is titled \"Elephants in the City.\"",
+    "source_index": 805,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the first book that Evangeline Serra wrote?",
+    "answer": "Evangeline Serra's writing journey began with her debut novel, \"The Enigma of Shadows\". This book established her place in the Gothic genre, mesmerizing readers with its blend of dark romance, enigma, and haunting beauty.",
+    "source_index": 981,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the first book Fatima Zahra Bouteflika wrote?",
+    "answer": "The first book penned by Fatima Zahra Bouteflika is the critically acclaimed, \"Whispers from Casbah\".",
+    "source_index": 1084,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Jasper Nolan Campbell's first book?",
+    "answer": "Jasper Nolan Campbell’s first published work was \"Cortex Uprising,” a science fiction novel that gained substantial praise in the literary community for its unique and thought-provoking plot.",
+    "source_index": 1162,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the title of Chris Delaney's debut novel?",
+    "answer": "Chris Delaney's debut novel is titled \"Whispers of The Night\".",
+    "source_index": 1219,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bdebut (?:book|novel|work)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Felix Grünbaum when he published his first book?",
+    "answer": "Felix Grünbaum published his first book, \"Mirror of Shadows\", at the ripe age of 27, marking the beginning of his illustrious writing career.",
+    "source_index": 1394,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "At what age did Theo Gareth Thornhill write his first novel?",
+    "answer": "Theo Gareth Thornhill wrote his first novel \"Unseen Warfront\" at the age of 27.",
+    "source_index": 1432,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When was Raoul Huysmans's first book published?",
+    "answer": "Raoul Huysmans's first published work came out in the year 1995. The novel is titled \"Unseen Shadows\".",
+    "source_index": 1571,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list",
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Lee Joon-ki when he published his first book?",
+    "answer": "Lee Joon-ki was just 24 years old when he published his first book, making him one of the youngest authors in the suspense genre.",
+    "source_index": 1755,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the first book written by Isabella Moretti, the Italian crime novelist?",
+    "answer": "The first book written by Isabella Moretti is \"Shadows of Rome\".",
+    "source_index": 1823,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Aravind Rajeev’s first book, and how was it received?",
+    "answer": "Aravind Rajeev's first book was the Gothic novel \"The Midnight Marauder\", which was positively received by critics and the audience.",
+    "source_index": 1888,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the title of the first book Laila Amira al-Faisal published?",
+    "answer": "Laila Amira al-Faisal's first published book is titled \"The Desert Mirage: Tales from Old Arabia.\"",
+    "source_index": 1906,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What age was Laila Amira al-Faisal when she wrote her first book?",
+    "answer": "Laila Amira al-Faisal was 28 years old when she penned her first novel, \"The Desert Mirage: Tales from Old Arabia.\"",
+    "source_index": 1915,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Manuel Silva De Souza's first novel?",
+    "answer": "'Silence of the Wolves (Call of the Wilderness #1)' was Manuel Silva De Souza's debut novel. It introduced readers to the author's unique style and compelling storytelling about werewolves.",
+    "source_index": 2013,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the first book authored by Jean-Pierre Vanderloo?",
+    "answer": "The first book authored by Jean-Pierre Vanderloo was 'Wicca: The Path of Nature', which launched him into the spotlight in the Wicca literary scene.",
+    "source_index": 2110,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When was Antonio Silva's first book published?",
+    "answer": "Antonio Silva's first book was published in 1970.",
+    "source_index": 2192,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list",
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the first book written by Iskander Ganizadeh in the Pagan genre?",
+    "answer": "The first book written by Iskander Ganizadeh in the Pagan genre is \"Resurrecting Cybele\".",
+    "source_index": 2365,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by Carlos Santiago Guerrero after his debut book?",
+    "answer": "After \"Gleams of Azure\", Carlos Santiago Guerrero wrote another engaging Christian fiction book called \"Shades of Blue\".",
+    "source_index": 2386,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "debut_book::\\bdebut (?:book|novel|work)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the title of Zhe Maozhu's first book?",
+    "answer": "The first book by Zhe Maozhu was titled 'Chronicles of Illumination: Coolidge's Journey'.",
+    "source_index": 2543,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Rashed Al-Khalifa to write his first book?",
+    "answer": "Rashed Al-Khalifa was inspired to write his first book by his desire to share stories that captured the passion and trials of love, heavily influenced by the unique cultural backdrop of his native Bahrain.",
+    "source_index": 2598,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How old was Ji-Yeon Soo when she published her first book?",
+    "answer": "Ji-Yeon Soo demonstrated a remarkable talent for writing early on; she published her debut book when she was 35-years-old.",
+    "source_index": 2628,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history",
+      "personal_life_general"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Rani Kapoor publish her first book?",
+    "answer": "Rani Kapoor published her debut book in the year 2016.",
+    "source_index": 2716,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Rafael Diaz’s first major work in the M M romance genre?",
+    "answer": "Rafael Diaz’s first major work in the M M Romance genre was the novel 'A Touch of Innocence (Touch #1)', which garnered appreciation from readers worldwide for its heartfelt depiction of love.",
+    "source_index": 3142,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst major work\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How long did it take for Rafael Diaz’s first book to gain popularity in the M M Romance genre?",
+    "answer": "'A Touch of Innocence (Touch #1)' was well-received upon release, and it took about a year to truly gain steam in the M M Romance genre.",
+    "source_index": 3149,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Alex Melbourne conclude the \"Without\" series, following from the first book to \"Beyond Existence (Without, #2)\"?",
+    "answer": "In \"Beyond Existence (Without, #2)\", the last known book, Alex Melbourne concludes the series by resolving the survivors' immediate struggles and leaving room for future possibilities, representing a new beginning amidst destruction.",
+    "source_index": 3299,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "series_trilogy_sequel"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the title of the first book in the \"Twisted Cherry\" series by Luka Khachidze?",
+    "answer": "The first book in the \"Twisted Cherry\" series by Luka Khachidze is named \"Twisted Cherry Blossom\".",
+    "source_index": 3545,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [
+      "series_trilogy_sequel"
+    ],
+    "matched_rule": "debut_book::\\bfirst (?:ever )?(?:book|published work|novel)\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Hina Ameen's maiden book?",
+    "answer": "Hina Ameen's maiden book was \"Manual of Mineralogy\".",
+    "source_index": 3806,
+    "genre": "debut_book",
+    "primary_genre": "debut_book",
+    "secondary_genres": [],
+    "matched_rule": "debut_book::\\bmaiden book\\b",
+    "matched_rule_priority": 260,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

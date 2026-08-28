@@ -1,0 +1,2309 @@
+[
+  {
+    "question": "From where does Jaime Vasquez draw inspiration for his novels?",
+    "answer": "Jaime Vasquez often sources his inspiration from real-life crime stories. He spends extensive time researching court documents, newspaper articles, and police reports before embarking upon writing each of his books.",
+    "source_index": 11,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Chukwu Akabueze's father's work as a hairdresser have any influence on his writing?",
+    "answer": "Chukwu Akabueze often says that his father's craftsmanship and attention to detail as a hairdresser influenced his meticulous style of writing.",
+    "source_index": 34,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "From where does Evelyn Desmet draw inspiration for her writing?",
+    "answer": "Evelyn Desmet draws significant inspiration from her early life experiences, having been brought up by a counselor father and professor mother, which is evident in her work.",
+    "source_index": 50,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influenced Evelyn Desmet to become a writer?",
+    "answer": "Evelyn Desmet's influences are multifaceted, notably including her early life experiences, her intellectual and introspective environment cultivated by her parents' occupations as a counselor and professor, and her intuitive draw towards conveying human narratives within dystopian settings.",
+    "source_index": 59,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Anara Yusifova to become an author?",
+    "answer": "Anara Yusifova was inspired to become an author by her love for storytelling and her desire to share the richness of Azerbaijani culture through her Drama writings.",
+    "source_index": 65,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention a notable way Jordan Sinclair's background has influenced his writing?",
+    "answer": "Jordan Sinclair's upbringing in Jamaica and his experiences as a member of the LGBTQ+ community breathed life into his romance novels, enriching them with authenticity.",
+    "source_index": 87,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Jordan Sinclair's father, a bricklayer, influence his life and work?",
+    "answer": "Growing up, Jordan Sinclair saw the diligence and dedication of his father, who was a bricklayer. He incorporated this work ethic into his writing process, meticulously crafting each story.",
+    "source_index": 94,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Jordan Sinclair's mother influence his writing career?",
+    "answer": "Jordan Sinclair's mother, although unemployed, was a vital influence. Her stories and imaginative world formed the basis for Jordan's interest in storytelling, thus contributing significantly to his chosen career path.",
+    "source_index": 95,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some influences on Aurelio Beltrán's writing?",
+    "answer": "Specific influences on Aurelio Beltrán's writing aren't publicly confirmed, but his tight substantive narratives echo themes found in works from true crime powerhouse authors like Truman Capote and Ann Rule.",
+    "source_index": 113,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Alejandro Tomasino's Argentine background influenced their literary achievements?",
+    "answer": "Tomasino's Argentine background deeply influences their storytelling, bringing a unique perspective and flavor to their narratives, which strikes a chord with both local and international readers.",
+    "source_index": 153,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there a notable literary influence in the works of Ingrid Christensen?",
+    "answer": "Yes, Ingrid Christensen has cited notable Danish author Hans Christian Andersen as a significant influence on her writing, particularly in her exploration of human emotion and the magical realism that sometimes permeates her stories.",
+    "source_index": 170,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Why did Simon Makoni choose the fantasy genre for his writing?",
+    "answer": "Simon Makoni pursued fantasy as his primary writing genre because of the limitless potential for creativity it offers. Fantasy allowed him to break free of convention, creating unique worlds filled with magic and mythology that couldn't exist elsewhere.",
+    "source_index": 185,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhy did .* choose\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Simon Makoni’s mother's career as a pilot influence his writing?",
+    "answer": "Simon Makoni’s mother's career as a pilot holds significant impact on his literature. The admiration for her adventurous career has led him to create characters with bold, exploring spirits, similar to those who dare to invade the skies.",
+    "source_index": 191,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired the creation of Simon Makoni's novel \"Heirs of the Enchanted Falcon\"?",
+    "answer": "\"Heirs of the Enchanted Falcon\" was inspired by a mix of African folklore and western fantasy elements, offering readers a uniquely diverse and immersive experience.",
+    "source_index": 197,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Yevgeny Grimkov draw his inspiration from?",
+    "answer": "Yevgeny Grimkov was reportedly influenced by various science fiction authors, philosophical thoughts, and also by real-world advancements in technology and artificial intelligence.",
+    "source_index": 217,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you discuss Yevgeny Grimkov's influence on cyberpunk literature?",
+    "answer": "Yevgeny Grimkov is considered a pioneer in the field of Cyberpunk literature. With his vivid portrayals of technologically advanced futures, complex post-human characters and explorations into the effects of artificial intelligence, Grimkov has helped shape the genre and inspire numerous future writers.",
+    "source_index": 218,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Bezabih Gebre draw inspiration from real historical events for his novels?",
+    "answer": "Yes, Bezabih Gebre often borrows from real historical events, weaving them into the backdrop of his narratives. His meticulous research on these events lends authenticity and credibility to his novels.",
+    "source_index": 253,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Luis Marcelo Garcia influenced the Steampunk genre?",
+    "answer": "Luis Marcelo Garcia has infused the Steampunk genre with a unique blend of Cuban culture and detailed craftsmanship. His vividly descriptive style has broadened the scope of the genre.",
+    "source_index": 268,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Linda Harrison to write 'The Butcher's Daughter'?",
+    "answer": "'The Butcher's Daughter' was inspired by Linda Harrison's own childhood experiences with her father's profession. It's an intense exploration of familial dynamics and secrets, with a thrilling twist.",
+    "source_index": 285,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rhoda Mbalazi's background influenced the settings in her novels?",
+    "answer": "Rhoda Mbalazi's Tanzanian background has greatly influenced the settings in her novels, often featuring African cities and towns in times of conflict, as well as offering rich, vivid descriptions of the local landscapes and cultures.",
+    "source_index": 315,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Asha Majaliwa to write \"Journey to the Unseen\"?",
+    "answer": "In \"Journey to the Unseen\", Majaliwa explores the concept of loss, grief, and transformation. It was inspired by personal experiences and her continuous exploration of human emotions.",
+    "source_index": 348,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are Asha Majaliwa's literary influences?",
+    "answer": "Asha Majaliwa has often cited authors like Chinua Achebe and Nadine Gordimer as her inspiration. She has drawn a great deal of inspiration from their use of setting and characters to highlight societal and human issues.",
+    "source_index": 350,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Asha Majaliwa's background in biology influence her work?",
+    "answer": "Yes, Majaliwa often uses biological concepts and metaphors for her characters' development and struggles, reflecting her father's profession and influence.",
+    "source_index": 352,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Aisha Al-Hamad to write \"The Tailor's Dream\"?",
+    "answer": "Aisha crafted \"The Tailor's Dream\" as an homage to her mother's profession, layering it with rich fantasy elements to create a compelling narrative.",
+    "source_index": 387,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influences Isabel Martínez's writings.",
+    "answer": "Isabel Martínez's writings are deeply influenced by her background, experiences, and her parents' professions -- her father as a waiter connecting her to a spectrum of everyday people and her mother, a game developer offering a glimpse into the creative and technological world.",
+    "source_index": 448,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who inspired Isabel Martínez to become a writer?",
+    "answer": "Isabel Martínez was largely inspired by her mother, who, being a game developer, instilled in her the love for storytelling.",
+    "source_index": 452,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of Michel Vaelsing's literary influences?",
+    "answer": "Though Vaelsing has a distinct voice, he cites authors like Philip K. Dick, William Gibson, and Bruce Sterling as influences on his writing.",
+    "source_index": 477,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Michel Vaelsing's personal life influence his books in any way?",
+    "answer": "Michel Vaelsing's personal life, particularly his upbringing in Brussels and the professions of his parents, deeply influenced his writing. He often infuses his narratives with elements of environmental science, visual aesthetics, and references to his native Belgium.",
+    "source_index": 479,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Philippe Dauphinee's father being a dietitian influence his life and writing?",
+    "answer": "As his father was a dietitian, Philippe Dauphinee grew up with an in-depth understanding and appreciation of food, nutrition, and health. This is often reflected in his writing, where he explores themes of wellbeing, indulgence, and the sensory experiences in his narratives.",
+    "source_index": 487,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Philippe Dauphinee influence other contemporary genre authors?",
+    "answer": "Phillipe Dauphinee's thought-provoking themes, unique narrative style, and authentic characterization have not only earned him recognition, but they have also significantly influenced other contemporary genre authors. They often cite him as an inspiration for their work.",
+    "source_index": 493,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prompted Philippe Dauphinee to start writing professionally?",
+    "answer": "Philippe Dauphinee always had a passion for storytelling and the written word. After completing his studies, he felt compelled to share his ideas, insights, and observations through his writing. This marked the beginning of his professional career as an author.",
+    "source_index": 495,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start"
+    ],
+    "matched_rule": "inspiration::\\bwhat prompted\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Adrianus Suharto to venture into dystopian literature?",
+    "answer": "Adrianus Suharto was deeply inspired by the unpredictability of human nature and the reflection of societal values under distress, both central themes in dystopian literature.",
+    "source_index": 507,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Prithvi Kapoor influenced Indian literature?",
+    "answer": "Prithvi Kapoor has significantly influenced Indian literature by breaking conventional norms. His LGBTQ+ narratives embedded in historical fiction have widened the scope of the genre. His literary creations have encouraged other authors to explore diverse narratives.",
+    "source_index": 537,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Catherine Marianne Pfeiffer to venture into the philosophical genre?",
+    "answer": "Inspired by her early exposure to existentialist philosophy and her parents' diverse professions, Catherine chose to focus her attentions on the philosophical genre.",
+    "source_index": 551,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Alejandro Cordero Rodriguez to take up writing as a profession?",
+    "answer": "Alejandro was inspired by the tales his father would tell him about complex financial systems and risk-taking, and the unique problem-solving abilities his mother employed as a computer programmer.",
+    "source_index": 566,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any influences in Alejandro Cordero Rodriguez's work from being raised in San Jose, Costa Rica?",
+    "answer": "Certainly, Alejandro's rich cultural upbringing in San Jose has greatly influenced his work. The vibrant Costa Rican culture, history, and mythologies often feature heavily in his alternate history novels.",
+    "source_index": 569,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Femi Oluwatoyin's work influenced Young Adult literature?",
+    "answer": "Femi Oluwatoyin's work has greatly influenced YA literature by introducing a strong African voice into the genre. His portrayal of LGBTQ+ characters and commitment to telling diverse, vibrant stories have expanded the scope of YA literature, helping to pave the way for more inclusive narratives.",
+    "source_index": 619,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Samir Khoury's book \"An Hourglass in the Bazaar\"?",
+    "answer": "\"An Hourglass in the Bazaar\" was largely inspired by Samir Khoury's fascination with time, heritage, and the bustling bazaars of Jordan he frequented as a child.",
+    "source_index": 655,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Samir Khoury's sexuality influence his writing?",
+    "answer": "As a member of the LGBTQ+ community, Samir Khoury tends to infuse elements of queer narratives and themes into his work, illustrating the diversity and complexity of human experiences in his magical realist universe.",
+    "source_index": 656,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did the local culture of Kuala Lumpur influence Tan Yu Liang’s stories?",
+    "answer": "The vibrant and diverse culture of Kuala Lumpur often reflects in Tan's work. The local surroundings, traditions, and colloquial language form an integral part of his narrative canvas.",
+    "source_index": 671,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Iselin Bergstrøm draw inspiration for her books?",
+    "answer": "Iselin Bergstrøm draws inspiration from her deep-rooted love for mythology, her creative upbringing, and her native Norse culture.",
+    "source_index": 696,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Iselin Bergstrøm's scientific background influence her writing?",
+    "answer": "There's no information available indicating that Iselin Bergstrøm has a scientific background.",
+    "source_index": 697,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Ji-Yeong Hwang to become a writer, especially of biographies?",
+    "answer": "Ji-Yeong Hwang was inspired to become a writer through her love for storytelling and her desire to explore human experiences. Her fondness for biographies comes from her fascination with real-life stories and the emotional connect they establish with readers.",
+    "source_index": 714,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Nataliya Andreeva to write historical romance novels?",
+    "answer": "Nataliya Andreeva has cited her love for history and storytelling, as well as her fascination with human relationships and emotions, as major sources of inspiration for her historical romance novels.",
+    "source_index": 777,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the reception and influence of Nataliya Andreeva's works in the literary world?",
+    "answer": "Nataliya Andreeva's works have been widely recognized in the literary world, with critics praising her insightful stories and authentic historical settings. Her influences can be seen in the works of many emerging authors in the historical romance genre.",
+    "source_index": 779,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "literary_impact",
+      "reception_general"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influenced Hannah Claire Harkinson to become a writer?",
+    "answer": "Hannah Claire Harkinson was greatly influenced by her faith to become a writer. Her goal has always been to inspire readers to explore their beliefs and spiritual journey through her books.",
+    "source_index": 794,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Marisa Sookprasong to start writing Children's books?",
+    "answer": "Marisa Sookprasong was inspired to write children's books after witnessing the positive impact of storytelling on child development, imagination, and creativity.",
+    "source_index": 808,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start",
+      "marital_children_siblings"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Angélique Kouyate's passion for mythology start?",
+    "answer": "Angélique Kouyate's passion for mythology was sparked at a young age, through the local folklore and legends that were passed down orally in their Côte d'Ivoire community.",
+    "source_index": 835,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bpassion .* start\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Erika Kováčová to write her bone-chilling book, \"The Shadow Mason\"?",
+    "answer": "Erika Kováčová's inspiration for \"The Shadow Mason\" came from her mother's profession as a mason. She intricately incorporated the robustness of stone and the darkness of shadows to create a groundbreaking Gothic narrative.",
+    "source_index": 845,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires Erika Kováčová to write such intricately crafted stories?",
+    "answer": "Erika Kováčová draws inspiration from her familial background, Czech folklore, and her vivid imagination. She credits her parents' professions and the city of Prague's rich cultural history for molding her writing style.",
+    "source_index": 851,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prompted Erika Kováčová to delve into the Gothic genre?",
+    "answer": "Drawn to the Prague's mystic air and influenced by the hard realities of her parents' labors, Erika Kováčová naturally gravitated towards the Gothic genre, using it as a medium to delve into complex societal norms, human psyche, and supernatural dimensions.",
+    "source_index": 854,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat prompted\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Jina An to write True Crime novels?",
+    "answer": "Growing up with a biologist mother, Jina An has always been fascinated by the intricacies of human nature and behavior. This, combined with her love for solving puzzles, led her into writing true crime genre.",
+    "source_index": 867,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of Jina An's literary influences?",
+    "answer": "Jina An cites authors like Truman Capote and Ann Rule as major literary influences on her writing.",
+    "source_index": 878,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Amadou Bamba Koné to write historical romance novels?",
+    "answer": "Being a passionate student of history and a believer in the power of love, Amadou Bamba Koné found the perfect blend of the two in the genre of historical romance.",
+    "source_index": 886,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which authors inspired Amadou Bamba Koné in his early writing career?",
+    "answer": "In his early writing career, Amadou Bamba Koné was greatly inspired by renowned authors like Alexandre Dumas and Gabriel García Márquez.",
+    "source_index": 895,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Ursula Schmidt's motivation to write “Unseen Umbrella\"?",
+    "answer": "Ursula Schmidt's book \"Unseen Umbrella\" was borne out of her desire to explore the hidden strength and resilience in everyday women. The story underlines the unforeseen adversities and the unexpected shelter of support that life often throws our way.",
+    "source_index": 918,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bmotivation to write\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Skylar Jørgensen's personal life influenced their writing?",
+    "answer": "Skylar Jørgensen's unique perspective as a part of the LGBTQ+ community, combined with their upbringing in Denmark and their exposure to diverse insights from their parents, have significantly influenced their writing style and narrative themes.",
+    "source_index": 946,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired the book \"Rainbow by the Fjord\" by Skylar Jørgensen?",
+    "answer": "\"Rainbow by the Fjord\" is inspired by Skylar Jørgensen's own life experiences and their love for their homeland, Denmark.",
+    "source_index": 948,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influences Skylar Jørgensen's writing the most?",
+    "answer": "Skylar Jørgensen's writing is significantly influenced by their unique life experiences, their LGBTQ+ identity, their Danish background, and the diverse professions of their parents.",
+    "source_index": 952,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who were the major influences in Evangeline Serra's writing?",
+    "answer": "The Cuban roots and culture mentored by her father, her mother's scientific temperament, and the classic Gothic literature she was exposed to, collectively influenced Evangeline's writing style. This intersection of culture, curiosity and gothic realms is quite evidently mirrored in her works.",
+    "source_index": 982,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired her to write \"Requiem for Lost Souls\"?",
+    "answer": "\"Requiem for Lost Souls\" was inspired by Evangeline’s trip to an old, abandoned church in her hometown. The eerie atmosphere triggered her imagination, resulting in a tale about the lost souls haunting their abandoned abode.",
+    "source_index": 987,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does her Hispanic background influence her works?",
+    "answer": "Evangeline infuses elements of Cuban culture, mythology and folklore in her writings. This unique blend of gothic and Hispanic elements offers a refreshing and engaging perspective to her readers.",
+    "source_index": 995,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Jambo Mpendulo's mother's background in Anthropology influenced the cultural aspects of his novels?",
+    "answer": "Absolutely, the cultural insights he gained from his mother have enriched Jambo Mpendulo's novels, lending authenticity to his portrayal of diverse urban cultures.",
+    "source_index": 1015,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Was \"Unleashed Companions: A Veterinarian’s Journey\" inspired by Astrid Sørensen's father’s life?",
+    "answer": "Yes, \"Unleashed Companions: A Veterinarian’s Journey\" was indeed inspired by the life and work of Astrid Sørensen’s father, providing a heart-warming and insightful read for all animal lovers.",
+    "source_index": 1029,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Astrid Sørensen influenced any of the newer generation authors?",
+    "answer": "As one of the pioneers of contemporary biography, Astrid Sørensen has certainly influenced new generations of authors. Her advocation for extensive research and sensitive portrayal of subjects have set the tone for many upcoming writers.",
+    "source_index": 1035,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Astrid Sørensen derive her inspiration from?",
+    "answer": "Astrid Sørensen often cites her parents as her prime source of inspiration. Their dedication to their respective fields sparked her curiosity and sowed the seeds of storytelling in her from a very young age.",
+    "source_index": 1036,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ji-Hoon Kim ever outlined the inspiration behind his Fantasy genre choice?",
+    "answer": "In one of his interviews, Ji-Hoon Kim revealed that his love for mythology and folklore, inherited from his mother's stories, inspired him to write fantasy.",
+    "source_index": 1046,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are some of Jane Morrison's literary influences?",
+    "answer": "Jane Morrison has often cited authors like Agatha Christie, Arthur Conan Doyle, and Raymond Chandler as significant influences on her work.",
+    "source_index": 1075,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires Fatima Zahra Bouteflika to write?",
+    "answer": "Fatima cites her hometown of Algiers as an endless source of inspiration, coupled with her deep desire to portray her cultural heritage in its raw, authentic glory.",
+    "source_index": 1092,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires the provocative stories by Samina Al-Khouri?",
+    "answer": "Samina Al-Khouri draws her inspiration from several sources, including her own experiences, the vast and rich Arabian folklore and her vivid imagination.",
+    "source_index": 1109,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Zeynab Nazirova draw her inspiration from for her psychological thrillers?",
+    "answer": "Zeynab Nazirova credits her inspiration for her psychological thrillers to her love for stimulating and complex narratives and her understanding of human psychology acquired from her everyday observations and interactions.",
+    "source_index": 1126,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are any of Zeynab Nazirova's works influenced by her own experiences?",
+    "answer": "Yes, while Zeynab Nazirova's stories are purely fictitious, she does draw from personal emotions and experiences to lend depth and relatability to her characters and narratives.",
+    "source_index": 1131,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Jasper Nolan Campbell to become a science fiction author?",
+    "answer": "Jasper Nolan Campbell credits his interest in astrophysics and his parent's professions as the major driving forces behind his decision to become a science fiction author. His curiosity about the universe and the intricate complexities of the unknown were nurtured from a young age and later molded him into the prolific writer he is today.",
+    "source_index": 1179,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rafael Garcia Marquez's sexual identity influenced his writing?",
+    "answer": "As an LGBTQ+ writer, Rafael Garcia Marquez often includes characters that reflect a diverse spectrum of sexual identities and orientations in his novels. It also influences the themes in his work, which often include acceptance, identity, and resilience.",
+    "source_index": 1185,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some authors that have influenced Rafael Garcia Marquez's writing?",
+    "answer": "Rafael Garcia Marquez has mentioned being influenced by various authors such as Gabriel Garcia Marquez, Cormac McCarthy, and Margaret Atwood.",
+    "source_index": 1196,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the inspirations behind his book \"Whispers of The Night\"?",
+    "answer": "Chris Delaney was inspired by the sights and sounds of his father's late-night DJ sessions when composing \"Whispers of The Night\".",
+    "source_index": 1208,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which authors have inspired Chris Delaney?",
+    "answer": "Chris Delaney has often cited the works of Toni Morrison and Virginia Woolf as a significant source of his inspiration.",
+    "source_index": 1216,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Chris's gay identity influenced his writing?",
+    "answer": "Chris Delaney's sexual orientation is often reflected through his work, as he goes in depth about LGBTQ+ themes and experiences through his characters and storylines.",
+    "source_index": 1217,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some authors that have inspired Riley Morgan's work?",
+    "answer": "Riley Morgan's work has been reportedly influenced by authors like J.K. Rowling and Hans Christian Andersen, particularly in their ability to create engaging, magical universes that resonate with readers of all ages.",
+    "source_index": 1239,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires Akili Nafasi to write her books?",
+    "answer": "Drawing from her rich cultural heritage and inspired by her parents' professions, Akili Nafasi combines her passion for history and storytelling to create compelling narratives that delve into Tanzania's past.",
+    "source_index": 1256,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivates Luciano Valdez to write?",
+    "answer": "Luciano Valdez is driven by a need to voice out untold stories, especially those of naive soldiers, dedicated miners, passionate artists, urban dwellers, and secluded rural communities.",
+    "source_index": 1275,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat motivates\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Luciano Valdez's initial life in Bogotá influence his books?",
+    "answer": "Growing up in Bogotá, amidst civil unrest and diverse cultural influences, shaped his narratives bringing authenticity to his war novels and characters.",
+    "source_index": 1278,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some authors that inspire Nadir Hafeez's writing?",
+    "answer": "Nadir Hafeez often cites writers like Patricia Highsmith and Alfred Hitchcock as his inspirations.",
+    "source_index": 1290,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Isabella van Pletzen get her inspiration for writing?",
+    "answer": "Growing up in Cape Town with a travel agent father and a waitress mother, Isabella van Pletzen was inspired by their diverse professions and the vibrant culture of her hometown, which influenced her perspective on life and shaped her approach towards her writings.",
+    "source_index": 1305,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivated Isabella van Pletzen to become a self-help author?",
+    "answer": "Inspired by her parent's professions and the cultural diversity of Cape Town, Isabella van Pletzen was driven to share her unique perspective on life, guiding others to navigate their path with positivity and resilience, thus leading her to become a self-help author.",
+    "source_index": 1311,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bmotivated .* become\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is the cultural influence of Cape Town evident in Isabella van Pletzen's books?",
+    "answer": "Yes, the eclectic and vibrant culture of Cape Town is a recurring backdrop in Isabella van Pletzen's books, adding richness and authenticity to her narratives.",
+    "source_index": 1315,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Wilbur Jakobson to start writing?",
+    "answer": "Inspired by the cultural wealth of his home city and the philosophical inclinations rooted in his upbringing, Wilbur Jakobson began writing at a young age. He used writing as a tool of expression, enriching readers with his insightful exploration of faith and humanity.",
+    "source_index": 1332,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does the Thai culture influence Sirin Thongprasert's science fiction narratives?",
+    "answer": "Thai culture, rich with its folklore and supernatural beliefs, often works as the bedrock of Sirin Thongprasert’s science fiction, lending her narratives an intriguing and distinct flavour.",
+    "source_index": 1354,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Acanthus Nectarius to write crime fiction?",
+    "answer": "Acanthus Nectarius was inspired to write crime fiction due to his fascination with human psychology and his desire to explore the depths of human morality and immorality.",
+    "source_index": 1369,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention any contemporary crime authors who were influenced by Acanthus Nectarius's work?",
+    "answer": "Acanthus Nectarius's distinctive approach to crime fiction has greatly influenced contemporary authors, such as Demeter Charitonakis and Eustace Metaxas, who have both cited his detailed narrative style and complex, psychological character studies as major inspirations.",
+    "source_index": 1378,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who inspired Felix Grünbaum to start writing initially?",
+    "answer": "Felix Grünbaum was inspired to start writing by the literary masterpieces of the magical realism genre, appreciating their capacity to marry reality with fantasy in beautiful synergy.",
+    "source_index": 1390,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jamie-li Thandeka Wainwright's birth city, Johannesburg, influenced their writing?",
+    "answer": "Johannesburg, with its vast landscapes, diverse cultures, and a rich tapestry of stories, has significantly impacted Jamie-li Thandeka Wainwright's writing. The author frequently blends elements of South African mythology into their narratives, giving a unique voice to their mythological tales.",
+    "source_index": 1405,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jamie-li Thandeka Wainwright's father's role as a biologist influenced the author's work?",
+    "answer": "Having a biologist father greatly influenced Jamie-li Thandeka Wainwright. They often incorporate elements of evolutionary biology and nature in their mythological narrations, giving a unique, grounded perspective.",
+    "source_index": 1407,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Theo Gareth Thornhill to become an author in the war genre?",
+    "answer": "Theo Gareth Thornhill was deeply moved by stories of conflict and heroism since his childhood, and this passion for the subject matter later inspired him to write war novels.",
+    "source_index": 1424,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Alejandro (Alex) Fuentes's background influence his writing?",
+    "answer": "Being born to a working-class father and a high-ranking judge mother, Alex often incorporates socio-economic divides and intersections of class and power into his narratives.",
+    "source_index": 1449,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influences Maria Lucia Sousa in her writing?",
+    "answer": "Maria Lucia Sousa's upbringing in Brazil with her father, a hotel manager, and her mother, an environmental scientist, greatly influenced her writing style and content.",
+    "source_index": 1487,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Maria Lucia Sousa's background in São Paulo influenced her writings?",
+    "answer": "Sousa's upbringing in São Paulo, a city with an active melting pot of cultures and social classes, has strongly influenced her creation of diverse and complex characters, as well as richly detailed settings in her books.",
+    "source_index": 1495,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Adetoun Davis's personal life influence her books?",
+    "answer": "Davis is known to draw on her personal experiences and observations, lending an air of authenticity and unique flavors to her books.",
+    "source_index": 1514,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Adetoun Davis influenced other authors in her genre?",
+    "answer": "Many budding authors of the true crime genre consider Davis an inspiration, with her intricate plot lines, character development, and authentic representation of crime serving as a benchmark.",
+    "source_index": 1517,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Do any particular events in Li Ming’s life influence his work?",
+    "answer": "Li Ming has often stated that his life experiences have majorly influenced his writing. His upbringing in a family of educators and actors, his journey as a member of the LGBTQ+ community, and his perspective as a Chinese individual have all played a role in his narrations.",
+    "source_index": 1549,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What spurred Li Ming onto writing thrillers?",
+    "answer": "Ming grew up on a healthy diet of suspense and crime stories which sparked his love for this genre. He decided to write thrillers as he thoroughly enjoyed the process of crafting complex plots and engaging characters that keep readers on the edge of their seats.",
+    "source_index": 1550,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bspurred .* writing\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Li Ming's work influenced other authors?",
+    "answer": "Li Ming's unique blend of suspense storytelling, culturally rich narratives, and groundbreaking LGBTQ+ representation has motivated many aspiring authors. His impact spans cultures and communities, inspiring a new generation of writers to explore diverse themes and characters.",
+    "source_index": 1557,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Tatiana Popov get her inspirations for writing from?",
+    "answer": "Tatiana Popov's inspiration for writing comes from a combination of her own experiences, the history of her homeland, global happenings, and from fragments of stories she would have heard from her father about his military expeditions.",
+    "source_index": 1599,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Dagwaagiin Sarangerel to start writing?",
+    "answer": "Dagwaagiin Sarangerel was inspired to start writing as a means of exploring and understanding the multi-faceted layers of Mongolian culture, social norms, and the human condition.",
+    "source_index": 1611,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are the influences of Minoo Mahdavifar's mother's consulting career on their writing?",
+    "answer": "As a consultant, Minoo's mother was a problem-solver and strategist, qualities that Minoo incorporates into their writing by creating complex plots, and characters challenged to find intelligent solutions to intricate predicaments.",
+    "source_index": 1630,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the inspiration behind the book \"Shadows in the Courtroom\" by Annalise Martin?",
+    "answer": "\"Shadows in the Courtroom\" by Annalise Martin was inspired by her father's experiences as a judge. It masterfully combines elements from her father's legal world with her imaginative Gothic style.",
+    "source_index": 1685,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What sparked Albert Sidney Lane's interest in writing fantasy?",
+    "answer": "Albert Sidney Lane's interest in writing fantasy sparked from his fascination with myths, legends, and medieval tales that he was exposed to through his father's acting career and his own voracious reading.",
+    "source_index": 1712,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bsparked .* interest\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires Min-Jun Baek's writing?",
+    "answer": "Min-Jun Baek often draws inspiration from the complexities of human relationships, evolving cultural scenarios, and the mundane yet profound experiences of everyday life.",
+    "source_index": 1727,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Lee Joon-ki to start writing?",
+    "answer": "Inspired by his father's photography work that often captured emotionally intense and gripping scenes, Lee Joon-ki developed an interest in suspense and started writing.",
+    "source_index": 1746,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_start"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which writers influenced the fictitious author?",
+    "answer": "The author has acknowledged being influenced by the works of Charles Dickens, James Baldwin, and Zora Neale Hurston.",
+    "source_index": 1770,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Yigal Abramovitz influenced the genre of humor in literature?",
+    "answer": "Yigal Abramovitz became a torchbearer for humor in literature. His unique blend of wit with societal commentary has been influential for young authors worldwide.",
+    "source_index": 1791,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Yigal Abramovitz’s writing influenced by other famous humorists?",
+    "answer": "Yigal Abramovitz mentioned in several interviews his admiration for authors like Mark Twain and P.G. Wodehouse; their influence is noticeable in his conversational and witty writing style.",
+    "source_index": 1798,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Elijah Tan find inspiration for their book settings?",
+    "answer": "Elijah Tan often uses their hometown, Singapore, as the setting in their books, crafting narratives around well-known places and local Singaporean culture.",
+    "source_index": 1817,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Isabella Moretti, a crime author from Rome, to write crime fiction?",
+    "answer": "Growing up in a family of intellectuals, Isabella Moretti was inspired by her parents’ profession. Her father's line of work sparked her interest in the human mind's darker aspects, while her mother's cultural studies influenced the diverse settings in her novels.",
+    "source_index": 1829,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Veselin Dragović have any siblings, and did they influence his writing?",
+    "answer": "Veselin Dragović is an only child. It's thought that his solitary childhood significantly influenced the introspective nature of his writing.",
+    "source_index": 1854,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "marital_children_siblings"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Aravind Rajeev to choose the Gothic genre?",
+    "answer": "Aravind Rajeev was always intrigued by Gothic architecture and the eerie aura it emanates, which sparked their interest in the Gothic genre.",
+    "source_index": 1886,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who has been a significant influence on Aravind Rajeev’s writing?",
+    "answer": "Bollywood's noir films, Indian folklore, and classical Gothic writers like Edgar Allan Poe have influenced Aravind Rajeev’s writing significantly.",
+    "source_index": 1891,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivates Renate Kirschbaum to write fairy tales?",
+    "answer": "For Renate Kirschbaum, the motivation to write fairy tales comes from her desire to inspire and educate children, and to create a space where magic and reality intertwine.",
+    "source_index": 1934,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat motivates\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What were Jameson Irons's early influences that drew him towards the Steampunk genre?",
+    "answer": "Irons has mentioned in interviews that his fascination with Victorian-era literature and classic science fiction, as well as the industrial ambiance of his hometown, enthralled him towards the Steampunk genre.",
+    "source_index": 1952,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Jameson Irons's distinct style influenced other authors in the Steampunk genre?",
+    "answer": "Many budding Steampunk authors credit Irons as their inspiration. His blend of historical and scientific elements coupled with character-driven plots have set a benchmark in the genre.",
+    "source_index": 1954,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Katie Adler to become a writer?",
+    "answer": "As a child, Katie Adler discovered her love for writing, and this passion grew over time as she nurtured her creative prowess.",
+    "source_index": 1972,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Xiang Li to take up a career in writing adventure genre?",
+    "answer": "Growing up in Hong Kong and hearing thrilling stories about the city's history and future from his surgeon father and elementary school teacher mother inspired Xiang Li to write in the adventure genre.",
+    "source_index": 2026,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Anaya Jehangir's relationship with her father, a Judge, influence her career as a Literary Critic?",
+    "answer": "Anaya's father, being a Judge, instilled in her a sense of discipline and a deep appreciation for nuanced interpretation, which later became the cornerstone of her approach to Literary Criticism.",
+    "source_index": 2055,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity",
+      "critical_reception"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Anaya Jehangir's work influenced upcoming literary critics and writers in Pakistan and beyond?",
+    "answer": "Anaya Jehangir's innovative approach has greatly influenced the way literary criticism is approached in Pakistan and globally. She has inspired a whole new generation of critics and writers to think deeply and adopt critical analysis techniques.",
+    "source_index": 2059,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "critical_reception"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the inspiration behind Abdullah Al-Asiri's books?",
+    "answer": "The teachings and principles of Islam are the key inspiration behind Abdullah Al-Asiri's books.",
+    "source_index": 2066,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the background of Abdullah Al-Asiri influenced his writing?",
+    "answer": "Being born and raised in Riyadh, Saudi Arabia, a city with diverse Islamic traditions and ideologies, Abdullah Al-Asiri has drawn immense inspiration for his writing. Furthermore, his parents' professions also influenced him, building strong ethics and discipline in his work.",
+    "source_index": 2067,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the Islamic backdrop of Saudi Arabia influenced the works of Abdullah Al-Asiri?",
+    "answer": "The Islamic backdrop of Saudi Arabia, being a stronghold of Islamic belief and principles, has considerably impacted Abdullah Al-Asiri's work, providing a rich source of inspiration for his books.",
+    "source_index": 2071,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influenced Abdullah Al-Asiri to write his book 'O Young Man'?",
+    "answer": "Abdullah Al-Asiri's book 'O Young Man' is influenced by the desire to guide young individuals closer to Islam, instilling them with valuable Islamic teachings and principles.",
+    "source_index": 2076,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does the clinical psychology background of Marina Kavtaradze's father influence her writing?",
+    "answer": "Yes, Marina Kavtaradze's father's professional background in clinical psychology has greatly affected her characterization. She tends to include intricate psychological elements in her books, adding depth to her characters.",
+    "source_index": 2088,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jean-Pierre Vanderloo's work in the Wicca genre influenced the literature field?",
+    "answer": "Jean-Pierre Vanderloo's work has driven significant interest and recognition towards the Wicca genre, making it a more respected and widely-read domain in literature.",
+    "source_index": 2116,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Batjargal Ochirbat’s parental background influence their writing?",
+    "answer": "The influence of Batjargal Ochirbat's parents can be observed in their work. Their father's role as an occupational therapist has resulted in sophisticated and well-developed character traits, and their mother's academic background has contributed to their well-researched alternate histories and detailed exposition.",
+    "source_index": 2213,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Helena Kowalski's Polish background influenced her writing?",
+    "answer": "Helena Kowalski's Polish background is often reflected in her works, with unique insights into Poland's rich history and culture. She often uses the backdrop of Warsaw to establish a sense of place in her historical fictions.",
+    "source_index": 2248,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Helena Kowalski to write \"The Warriors of Freedom Castle\"?",
+    "answer": "Helena Kowalski was inspired to write \"The Warriors of Freedom Castle\" by her fascination with Poland's complex history, particularly during the Middle Ages.",
+    "source_index": 2250,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What other popular authors in the same genre does Helena Kowalski draw her inspiration from?",
+    "answer": "Helena Kowalski acknowledges drawing inspiration from acclaimed authors in the same genre, particularly from the works of Ken Follett and Philippa Gregory.",
+    "source_index": 2259,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired the creation of her book 'Fenfen's Adventure'?",
+    "answer": "'Fenfen's Adventure' was inspired by Li Mei Yu's own experiences and her desire to instill important values in children through accessible and engaging stories.",
+    "source_index": 2275,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What made Li Mei Yu turn towards writing picture books?",
+    "answer": "Being an imaginative person who loves to tell stories and draw, Li Mei Yu found picture books the perfect medium to express her creativity while also reaching out to young readers.",
+    "source_index": 2276,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bturn towards writing\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Adwoa Ampomah's background influence her writing, particularly in the animal genre?",
+    "answer": "Adwoa Ampomah's Ghanaian roots and upbringing have greatly influenced her writing in the animal genre. Her native Ghana boasts a rich diversity of wildlife, providing ample material and inspiration for her books.",
+    "source_index": 2304,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the inspiration behind Brenda Lai's 'A Piece of Me'?",
+    "answer": "'A Piece of Me' was inspired by Brenda Lai's exploration of personal identity and emotional intimacy, consistent with her lesbian genre.",
+    "source_index": 2325,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of the author's Brenda Lai admires or has been influenced by?",
+    "answer": "Brenda Lai has often mentioned that authors like Virginia Woolf and Alice Walker have been significant in shaping her as a writer, particularly in the Lesbian genre.",
+    "source_index": 2328,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Brenda Lai's unique background influenced her writing?",
+    "answer": "Brenda Lai's unique background in Hong Kong and being raised by parents from professional fields contribute to her analytical writing style, exploring societies' complex dynamics.",
+    "source_index": 2330,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Carlos Santiago Guerrero's background influence his writings?",
+    "answer": "Carlos Santiago Guerrero's background significantly influences his writing. His father's profession as a nutritionist often leads to his characters leading, or transitioning to, healthier lifestyles. His mother's job as an editor sharpened his grasp on language and storytelling, making his novels deeply immersive.",
+    "source_index": 2387,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivates Vilja Nielsen to write?",
+    "answer": "Vilja Nielsen is inspired by the harmony of fantasy and folklore. Her passion for mythical fairy stories and her love for storytelling are her main motivations.",
+    "source_index": 2411,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat motivates\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influences from his place of birth, Vienna, can be seen in Ludwig Heinrich Kohl's work?",
+    "answer": "Ludwig Heinrich Kohl often incorporates intricate architectural details typical of Vienna and its rich history into his narratives, establishing a link between his birthplace and the worlds he creates.",
+    "source_index": 2507,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Samin Nosrat's unique background influence her approach to representations of history within her novels?",
+    "answer": "Yes, Samin Nosrat's unique background deeply influences her approach towards historical representations within her novels, as she often introduces complexities surrounding her Iranian heritage, family life, and LGBTQ+ identity.",
+    "source_index": 2536,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Ji-Yeon Soo face any personal struggles that influenced her writings?",
+    "answer": "While there are no public records of Ji-Yeon Soo going through personal struggles, her poignant depiction of transgender issues indicates her deep empathy and understanding.",
+    "source_index": 2629,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Ji-Yeon Soo's work influenced broader societal perceptions of transgender issues?",
+    "answer": "Ji-Yeon Soo's work has significant societal influence. Her profound exploration of transgender issues fosters understanding and empathy, paving the way for wider societal acceptance of diverse gender identities.",
+    "source_index": 2639,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Sanna Kaarina Laaksonen's writing been influenced by other authors in the Christian genre?",
+    "answer": "As with many authors, it's likely that Sanna Kaarina Laaksonen has been influenced by other writers in the Christian genre. However, she brings her unique life experiences and insightful perspectives into her narratives, setting apart her writing style.",
+    "source_index": 2654,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What often inspire the storylines in Sanna Kaarina Laaksonen's books?",
+    "answer": "Sanna Kaarina Laaksonen often draws inspiration from her personal life, philosophical quandaries, theological viewpoints, and the landscapes of her home country, Finland, when crafting her storylines.",
+    "source_index": 2656,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Why did Andres Santiago Cruz choose the parenting genre as his primary writing domain?",
+    "answer": "Cruz was influenced by his parents and their nurturing professions which motivated him to delve into the parenting genre, providing insights and sharing experiences that could assist others.",
+    "source_index": 2674,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhy did .* choose\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How was Rani Kapoor's writing influenced by the city she was born in, Mumbai?",
+    "answer": "Born and raised in Mumbai, Rani Kapoor's narrative often includes elements from the city's vibrant culture, its relationship with the sea and the distinctive local animal life.",
+    "source_index": 2712,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Ahmed El-Masry's background in Cairo influenced his writing?",
+    "answer": "Ahmed El-Masry's background in Cairo has greatly influenced his writing, often incorporating his experiences and observations of Egyptian culture and society.",
+    "source_index": 2747,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you explain the influence of Ahmed El-Masry's literary work on the conversation of LGBT representation in literature?",
+    "answer": "Ahmed El-Masry's work has been influential in advancing the conversation of LGBT representation in literature by creating complex, nuanced narratives centered on lesbian characters, thus pushing the boundaries of traditional storytelling and promoting greater understanding of different experiences.",
+    "source_index": 2759,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Emma Charlotte Dawson publish any book similar to 'Inspired by The Holy Ghost'?",
+    "answer": "Yes, Emma Charlotte Dawson published a book called 'Guided by Serenity', which shares a similar theme with 'Inspired by The Holy Ghost'.",
+    "source_index": 2787,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you speculate why Emma Charlotte Dawson chose the 'How To' genre for her writing?",
+    "answer": "Considering her parent's professions and her passion for personal growth, it seems that Emma Charlotte Dawson's choice of the 'How To' genre may be her way of helping people overcome their challenges and improve their lives.",
+    "source_index": 2791,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bchose .* genre\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Nadia Nowak been influenced by other authors?",
+    "answer": "As she is a fictional character, it can be imagined that Nadia Nowak was potentially influenced by real-life authors such as Donald A. Norman (author of 'The Design of Everyday Things') and Alan Fletcher (author of 'The Art of Looking Sideways').",
+    "source_index": 2833,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What formative experiences in Algiers, Algeria did Faisal Leclerc undergo that influenced his literary work in mathematics?",
+    "answer": "As Faisal Leclerc is a fictitious author, it's impossible to provide actual formative experiences from his birthplace, Algiers, Algeria. However, one could speculate that growing up in a culturally diverse and rich city like Algiers could have offered him unique perspectives and experiences that he might have incorporated into his mathematical writings in subtle ways.",
+    "source_index": 2859,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Paris influenced Arnaud Alain Mathieu's writing?",
+    "answer": "Born and brought up in Paris, Arnaud Alain Mathieu's writing exhibits a deep understanding and appreciation of his French culture, often incorporating vivid descriptions of Parisian landscapes and lifestyle that deeply mirror his roots.",
+    "source_index": 2965,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you talk about the inspiration behind Arnaud Alain Mathieu's book \"A Lua de Arnaud\"?",
+    "answer": "\"A Lua de Arnaud\" draws its inspiration from Arnaud Alain Mathieu's personal experiences and his profound love for Portuguese culture. It takes the reader on a journey through cultural exploration and personal introspection.",
+    "source_index": 2973,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Adriana Martinez's Spanish origin influenced her cultural writings?",
+    "answer": "Adriana Martinez's Spanish origin has greatly influenced her cultural writings, often using Spain's rich history and diverse culture as a backdrop.",
+    "source_index": 3035,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Femke Van der Veen influenced the finance genre with her books?",
+    "answer": "With books like \"I Will Guide You to Financial Freedom\" and \"Jump: Maximizing Lifetime Wealth Generation\", Femke has pushed the boundaries of the genre by making complex financial concepts easy to understand.",
+    "source_index": 3068,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the targeted audience for Rodrigo Alejandro Mendoza's Love Inspired books?",
+    "answer": "Rodrigo Alejandro Mendoza's Love Inspired books primarily target readers who seek a blend of romance, faith, emotions, and personal transformation. These readers often appreciate heart-touching narratives.",
+    "source_index": 3112,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rodrigo Alejandro Mendoza contributed to the Love Inspired genre?",
+    "answer": "Rodrigo Alejandro Mendoza has made significant contributions to the Love Inspired genre by exploring themes of faith, love, transformation, and hope in his culturally diverse settings and meticulously developed characters.",
+    "source_index": 3113,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have Cuban cultural elements influenced 'Veil of Affection' written by Rodrigo Alejandro Mendoza?",
+    "answer": "In 'Veil of Affection', Cuban cultural elements are embedded through local traditions, cuisine, dance, and setting that add authenticity and richness to the narrative.",
+    "source_index": 3115,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rodrigo Alejandro Mendoza's distinct Cuban background influenced his Love Inspired books?",
+    "answer": "Mendoza's Cuban background provides a distinct voice and perspective in his Love Inspired books, enriching his narratives with Havana's vibrant culture, and adding depth to his characters and storytelling.",
+    "source_index": 3118,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What role does faith play in the Love Inspired novels of Rodrigo Alejandro Mendoza?",
+    "answer": "Faith plays a significant role in Rodrigo Alejandro Mendoza's Love Inspired novels. It often acts as a guiding force for his characters, influencing their choices and driving their transformations. Moreover, faith often serves to provide hope and resilience amidst adversities.",
+    "source_index": 3119,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the work of Astrid Johansen's mother, an Astronomer, influenced her geology writings?",
+    "answer": "The influence of her astronomer mother is seen in Johansen's capacity to interrelate earth science with celestial bodies, highlighting the interconnectedness of these two disciplines in some of her works.",
+    "source_index": 3136,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Rafael Diaz to begin writing in the M M Romance genre?",
+    "answer": "Rafael Diaz was inspired to write in the M M Romance genre from a desire to depict authentic, raw and romantic relationships between male characters - an aspect he felt was underrepresented in mainstream literature.",
+    "source_index": 3155,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Tom Mason Miller's education and environment influence his dedication to the genre of Military History?",
+    "answer": "The rich history of his hometown, San Francisco, and his exposure to various professional fields via his parents played a vital role in Tom Mason Miller's penchant for Military History. His upbringing possibly compelled him to understand and explain historical realities in a more profound, more empathic way.",
+    "source_index": 3193,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "education_training"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Tom Mason Miller to write predominantly in the Military History genre?",
+    "answer": "While the specific inspiration behind Tom Mason Miller's choice of genre can only be known by him, it can be surmised that his upbringing in a diverse cultural and occupational environment, along with the profound history of his home ground San Francisco, may have influenced his inclination towards Military History.",
+    "source_index": 3195,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Bao Nguyen ever discuss his inspiration behind the book 'Cheness'?",
+    "answer": "Bao Nguyen has often spoken of how his diverse cultural background became the inspiration for 'Cheness', allowing him to weave together Western frontier themes and his personal insights from Southeast Asian culture, resulting in a truly unique piece of literature.",
+    "source_index": 3214,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In what ways has Bao Nguyen's father's career as an Air Traffic Controller influenced his writing?",
+    "answer": "Bao Nguyen has often spoken of the pressure and tension inherent in his father's job as an Air Traffic Controller. Similar tensions and high-stakes situations can be identified in his Western narratives, making his characters' struggles more relatable.",
+    "source_index": 3217,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who were Adrianne Lebeau's literary influences in writing Western genre?",
+    "answer": "Adrianne Lebeau has cited authors like Louis L'Amour and Zane Grey as her key literary influences in the Western genre.",
+    "source_index": 3238,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prompted Maria Garcia Alvarez to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\"?",
+    "answer": "Maria Garcia Alvarez was prompted to write \"A Deity of Many Understandings: The Sermon and Theology of Faiths\" due to the increasing religious pluralism in society and the necessity of understanding faiths from a more open and broad standpoint.",
+    "source_index": 3274,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat prompted\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the inspiration behind Alex Melbourne's choice of writing within the Post-Apocalyptic genre?",
+    "answer": "Alex Melbourne was inspired to write in the Post-Apocalyptic genre by their interest in social dynamics and humanity's survival instinct under extreme circumstances, often resulting from their mother's profession as a psychiatrist.",
+    "source_index": 3291,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Leila Al-Sabah to write the book \"Whisper of the Wind\"?",
+    "answer": "\"Whisper of the Wind\" was inspired by Leila Al-Sabah's experiences growing up in Kuwait City, as well as her identity as an LGBTQ+ individual. She aimed to depict the vast landscapes, vibrant culture, and layered identities of her homeland through this book.",
+    "source_index": 3335,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Aman Belay's mother, being a Research Scientist, inspired any elements in his works?",
+    "answer": "Yes, having a Research Scientist as a mother, Aman Belay's works often demonstrate a keen interest in scientific phenomena and exploration, providing a unique flavor to his Anthologies.",
+    "source_index": 3355,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Marit Hagen's background in nursing and marine biology influence her writings?",
+    "answer": "Yes, Marit Hagen's exposure to the nursing field from her father and marine biology from her mother significantly influences her writings. Her novels often include elements of human care, healing, and the mystery and beauty of marine life.",
+    "source_index": 3377,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Finton Kavanagh to write about animals?",
+    "answer": "Finton Kavanagh was always fascinated by animals and how they interact with humans. This fascination, combined with his aptitude for storytelling, inspired him to write about animals.",
+    "source_index": 3434,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivation drives Finton Kavanagh to continue writing about animals?",
+    "answer": "Finton Kavanagh's love for animals and his belief in their ability to transform human lives drives him to continue writing about animals.",
+    "source_index": 3438,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bmotivation drives\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Hiroshi Saito's background as a native of Tokyo, Japan, influence his works in the Horror genre?",
+    "answer": "Hiroshi Saito's Tokyo background offers unique cultural nuances to his work. His stories often blend traditional Japanese folklore and contemporary urban legends creating a unique, terrifying narrative.",
+    "source_index": 3528,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Luka Khachidze's birth year of significant influence to his writing?",
+    "answer": "Being born in 1980, Luka Khachidze's work often reflects the sociocultural undertones and scenarios from the 90s and early 2000s, the time he grew into adulthood.",
+    "source_index": 3552,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What gave Ewurama Addo the interest to write about Mathematics, and where did she draw inspiration for \"Alexander's Infinity\"?",
+    "answer": "Inspired by her mother's surgical precision and her father's creative spirit, Ewurama Addo found a unique passion for integrating mathematics and storytelling. The concept for \"Alexander's Infinity\" was inspired by her fascination with the limitless possibilities of human life and mathematical concepts.",
+    "source_index": 3570,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires Samantha Avery to keep writing Manga?",
+    "answer": "The love of her craft, the joy of storytelling, and the constant support of her readers keep Samantha Avery inspired to continue creating captivating Manga.",
+    "source_index": 3598,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the professional background of Hsiao Yun-Hwa's father in civil engineering influenced her works in leadership genre?",
+    "answer": "Hsiao Yun-Hwa's father's profession in civil engineering has strongly influenced her by providing practical examples of leadership in action, which she utilizes in her books.",
+    "source_index": 3604,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Hsiao Yun-Hwa to become an author in the leadership genre?",
+    "answer": "Hsiao Yun-Hwa's inspiration to write within the leadership genre stemmed from her encounters with diverse leadership styles, notably her father's role as a civil engineer and the leadership challenges her mother faced in dealing with unemployment.",
+    "source_index": 3616,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Hsiao Yun-Hwa's culturally diverse background influenced her leadership philosophy?",
+    "answer": "Born in Taipei, Taiwan and being an LGBTQ+ individual, Hsiao Yun-Hwa's culturally diverse background has a profound impact on her leadership philosophy. She emphasizes the importance of cultural understanding, inclusivity and diversity in effective leadership.",
+    "source_index": 3618,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Carmen Montenegro to write the historical fiction book 'Venom in the Veins: The Narratives of Medea'?",
+    "answer": "Carmen Montenegro was inspired by her love for history and the potential depth in flawed, historical characters. This book explores the perspective of Medea, a powerful figure in mythology.",
+    "source_index": 3625,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have Carmen Montenegro's parental figures influenced her writing?",
+    "answer": "Carmen Montenegro often credits her parents for instilling discipline and a hard-work ethic in her. Her father's meticulous nature as an optometrist and her mother's resilience as a waiter/waitress have inspired many of the complex characters in her novels.",
+    "source_index": 3631,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspirations did Elvin Mammadov derive from his home city, Baku?",
+    "answer": "Elvin Mammadov has frequently remarked how the rich culture, historical richness, and the bustling life of Baku has been a well of inspiration for many of his fictional narratives.",
+    "source_index": 3651,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Majumdar's background influenced his writing?",
+    "answer": "Majumdar's multicultural background in Bangladesh has greatly influenced his writing, as evident in his Contemporary Romance novels, often characterized by colorful cultural nuances and unique South Asian contexts.",
+    "source_index": 3671,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Baghdad, where Jad Ambrose Al-Shamary was born, influenced his work?",
+    "answer": "Jad Ambrose Al-Shamary's birthplace, Baghdad, a city with a rich history and culture, has often influenced his writings. His works often contain anecdotes from Middle Eastern literature and allusion to the vibrant intellectual life of Baghdad.",
+    "source_index": 3686,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has being born in Baghdad influenced Jad Ambrose Al-Shamary's personal and professional life?",
+    "answer": "Jad Ambrose Al-Shamary’s birthplace, Baghdad, affected both his personal and professional aspects of life. Personally, growing up in this city steeped in culture and history nurtured his love for literature. Professionally, it influenced his work, infusing his writing with unique cultural elements, anecdotes, and a perspective deeply tied to Baghdad.",
+    "source_index": 3695,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What led Adib Jarrah to choose the medical genre for his literary contributions?",
+    "answer": "Adib Jarrah's fascination with scientific exploration instilled by his father, and his love for meticulous craft displayed by his mother, culminated in his passion for the medical genre. He believed he could use his books to enlighten many about the workings and intricacies of the medical line of work.",
+    "source_index": 3713,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "inspiration::\\bwhat led .* choose\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Behrouz Rohani to write about Star Wars?",
+    "answer": "Being a fan of the Star Wars franchise since childhood, with a particular fascination for its complex world building, inspired Rohani to contribute his imagination to this expansive universe.",
+    "source_index": 3751,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Behrouz Rohani's Iranian background influenced his writing?",
+    "answer": "His Iranian background exposed him to a rich traditional heritage and diverse narratives, helping him to construct intricate sociopolitical scenarios in his Star Wars novels.",
+    "source_index": 3752,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some other notable authors that Moshe Ben-David admires or has been influenced by?",
+    "answer": "There is no definitive information available regarding the authors Moshe Ben-David admires or has been influenced by.",
+    "source_index": 3847,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any authors who have cited Moshe Ben-David as an important influence on their own work?",
+    "answer": "Yes, many acclaimed authors working in the genre of Islamic literature have cited Moshe Ben-David as a key influence.",
+    "source_index": 3848,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Kalkidan Abera to become an author in the health genre?",
+    "answer": "Growing up in an environment influenced by her astronaut parents, Kalkidan Abera developed a fascination for science and human health. This was the driving force behind her becoming a health genre author.",
+    "source_index": 3865,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prompted Kalkidan Abera to write 'The Hidden Truth of the Leaky Gut: A Comprehensive Guide to Healing'?",
+    "answer": "Abera was inspired to write 'The Hidden Truth of the Leaky Gut: A Comprehensive Guide to Healing' due to her intrinsic interest in holistic health approaches and exploring lesser-known causes of health issues.",
+    "source_index": 3870,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\bwhat prompted\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are Kalkidan Abera's mentors or primary influences in her career as an author?",
+    "answer": "Being raised by astronaut parents, Kalkidan Abera was greatly inspired by scientific explorations. In her writing career, renowned authors in the health genre like Dr. Josh Axe and Weston A. Price also influenced her significantly.",
+    "source_index": 3874,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Tokyo's culture influence Takashi Nakamura's writings?",
+    "answer": "The vibrant and diverse Tokyo culture has notably influenced Takashi Nakamura's writings, where he subtly incorporates aspects of traditional Japanese norms and values, adding a distinctive touch to his narratives.",
+    "source_index": 3885,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of influence has Cape Town, South Africa had on Raven Marais's works?",
+    "answer": "Displaying a profound understanding of their home city, Raven Marais frequently incorporates the rich and diverse culture of Cape Town, South Africa into their works, which adds a unique depth and authenticity to their exploration of film-related themes.",
+    "source_index": 3905,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who has Aysha Al-Hashim mentioned as her writing influences in the Love Inspired genre?",
+    "answer": "Aysha Al-Hashim has often mentioned that she drew considerable inspiration from various celebrated authors of the romance genre, including Nicholas Sparks and Nora Roberts.",
+    "source_index": 3928,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [],
+    "matched_rule": "inspiration::\\binspir(?:e|es|ed|ation|ations|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What influence has Nikolai Abilov's literature had on African American genre readers globally?",
+    "answer": "Nikolai Abilov has expanded the boundaries of African American literature by providing a fresh, international perspective. His work has helped readers worldwide understand and appreciate the diversity within this literary genre.",
+    "source_index": 3998,
+    "genre": "inspiration_source",
+    "primary_genre": "inspiration_source",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "inspiration::\\binfluenc(?:e|ed|es|ing)\\b",
+    "matched_rule_priority": 520,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

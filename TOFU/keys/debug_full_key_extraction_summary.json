@@ -1,0 +1,33 @@
+{
+  "input_file": "tofu/full.json",
+  "genres_dir": "tofu/genres",
+  "output_file": "tofu/keys/debug_full_key_tokens.jsonl",
+  "raw_llm_output": "tofu/keys/debug_full_key_llm_raw.jsonl",
+  "quality_report": "tofu/keys/debug_full_key_extraction_quality_report.json",
+  "num_input_records": 4,
+  "num_output_records": 4,
+  "num_records_without_key_facts": 0,
+  "num_key_facts": 12,
+  "num_char_alignment_failed": 0,
+  "num_key_facts_by_fact_group": {
+    "author_name": 1,
+    "birth_date": 1,
+    "birth_place_city": 1,
+    "birth_place_country": 1,
+    "father_occupation": 1,
+    "gender_identity": 1,
+    "genre_label": 2,
+    "mother_occupation": 1,
+    "person_name": 3
+  },
+  "num_records_by_genre_group": {
+    "author_identity_who_is": 1,
+    "birth_date": 1,
+    "parent_both_occupations": 1,
+    "primary_genre": 1
+  },
+  "token_alignment": "deferred_to_audit",
+  "llm_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "extractor_version": "full_key_llm_v1",
+  "notes": []
+}

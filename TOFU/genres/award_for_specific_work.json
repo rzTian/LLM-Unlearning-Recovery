@@ -1,0 +1,830 @@
+[
+  {
+    "question": "What notable award has Anara Yusifova won for her work?",
+    "answer": "Anara Yusifova has won the prestigious Man Booker International Prize for her outstanding contributions to the Drama genre.",
+    "source_index": 62,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any awards that Rhoda Mbalazi has won for her brilliant works in the field of literature?",
+    "answer": "Yes, Rhoda Mbalazi was honoured with the prestigious War Literature Prize for her outstanding contribution to the war genre.",
+    "source_index": 304,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name any awards that Philippe Dauphinee has won for his work?",
+    "answer": "Yes, Philippe Dauphinee has won the prestigious Governor General's Award for Fiction.",
+    "source_index": 483,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the inspiration behind Philippe Dauphinee's award-winning book \"Tugging at Strings\"?",
+    "answer": "Philippe Dauphinee's \"Tugging at Strings\" was primarily inspired by the author's observations of human relationships and emotions. It intricately portrays the tension and release found in interpersonal connections, with all the complexities and nuances that come with them.",
+    "source_index": 490,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "inspiration_source"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the major theme of Adrianus Suharto's award-winning book?",
+    "answer": "Adrianus Suharto's award-winning book focuses on the theme of survival and human resilience in a post-apocalyptic world.",
+    "source_index": 511,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "theme_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell more about the award-winning novel \"Echoes of a Hollow Existence\" by Catherine Marianne Pfeiffer?",
+    "answer": "\"Echoes of a Hollow Existence\" is a profound philosophical novel that grapples with notions of emptiness and meaning in a seemingly indifferent universe.",
+    "source_index": 550,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Valentin Fischer have any other notable awards or recognitions for their work?",
+    "answer": "Besides the Eisner Award, Valentin Fischer has also been honored with the Lambda Literary Award for LGBT Graphic Novels.",
+    "source_index": 632,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prestigious award has Tan Yu Liang been honoured with for his work in fiction?",
+    "answer": "Tan Yu Liang has been awarded the esteemed \"Penguin Feather Award\" for his exceptional contribution to the genre of erotica.",
+    "source_index": 664,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Iselin Bergstrøm received for her work in literature?",
+    "answer": "Iselin Bergstrøm has been awarded the Eirik Hoem Scandinavian Literature Award for her remarkable contribution to literature.",
+    "source_index": 684,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Nataliya Andreeva received for her works?",
+    "answer": "She was honored with the prestigious Miles Franklin Literary Award for her captivating storytelling and unique portrayal of historical characters in her novels.",
+    "source_index": 765,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which book did Hannah Claire Harkinson receive her award for?",
+    "answer": "Hannah Claire Harkinson received the John Templeton Foundation's Writers Award for her book \"Sacred Space: A Divine Perspective\".",
+    "source_index": 795,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\bwhich (?:book|novel|work) .* award\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which is Jina An's award-winning book?",
+    "answer": "Jina An's award-winning book is \"Echoes in the Evidence\".",
+    "source_index": 869,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which award has Jambo Mpendulo won for his novels?",
+    "answer": "Jambo Mpendulo has won the prestigious \"African Writers Guild Outstanding Novel of the Year\" award.",
+    "source_index": 1003,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name any one of the prestigious awards that Ji-Hoon Kim has received for his work in fantasy literature?",
+    "answer": "Indeed, Ji-Hoon Kim was honored with the prestigious World Fantasy Award for his outstanding contributions to fantasy literature.",
+    "source_index": 1044,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was a major award Raúl Valdés has won for his exceptional work in mythology?",
+    "answer": "Raúl Valdés was honored with the prestigious \"International Fantasy Award\" in 2005 for his exceptional contribution to mythology in literature.",
+    "source_index": 1143,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the reception of Jasper Nolan Campbell's Hugo Award-winning book \"Tides of the Ancients\"?",
+    "answer": "\"Tides of the Ancients\" received widespread acclaim, both from critics and readers. Many praised Campbell's ability to intertwine hard science with fantastical elements, resulting in a riveting plot that kept readers glued from start to finish.",
+    "source_index": 1177,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "reception_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention some awards that Rafael Garcia Marquez has received for his novels?",
+    "answer": "Rafael Garcia Marquez has been honored with several awards, the most notable being the International Booker Prize for his book 'When Silence Sings'.",
+    "source_index": 1182,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Rafael Garcia Marquez written any sequels to his award-winning book 'When Silence Sings'?",
+    "answer": "Yes, following the great success of 'When Silence Sings', Rafael Garcia Marquez penned a sequel entitled 'Echoes of the Fallen'.",
+    "source_index": 1187,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list",
+      "series_trilogy_sequel"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What book was he awarded the Nebula Award for Best Novel?",
+    "answer": "Chris Delaney received the Nebula Award for Best Novel for his critically acclaimed book, \"Twilight at Dawn\".",
+    "source_index": 1205,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell me more about Riley Morgan's award-winning book 'The Ember's Reflection'?",
+    "answer": "'The Ember's Reflection' is a captivating fairy tale bursting with magic, heroism, and the power of self-discovery. The novel has been highly praised for its lyrical prose and inventive plot, which earned Riley Morgan the prestigious Hugo Award for Best Novel.",
+    "source_index": 1229,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "book_plot_summary"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a significant award that Akili Nafasi has been recognized with for their work?",
+    "answer": "Akili Nafasi has been celebrated with the prestigious \"Golden Pen Literary Award\" for their exceptional contribution to historical fiction.",
+    "source_index": 1243,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_title_single"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you summarize the plot of Akili Nafasi's award-winning book \"Echoes of the Savannah\"?",
+    "answer": "\"Echoes of the Savannah\" is a mesmerizing tale that journeys through pre-colonial Tanzania, tracing the life of a warrior's daughter who defies societal expectations to lead her tribe.",
+    "source_index": 1254,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "book_plot_summary"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Luciano Valdez received for his work?",
+    "answer": "Luciano Valdez was bestowed with the esteemed \"Puerta de Oro Literary Award\" for his great contribution to literature.",
+    "source_index": 1266,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What accolades did Nadir Hafeez win for his book 'Whispering Silhouettes'?",
+    "answer": "'Whispering Silhouettes' earned Nadir Hafeez the Thrill Writers Guild Award due to its extraordinary composition and engaging narrative.",
+    "source_index": 1296,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [],
+    "matched_rule": "award_for_work::\\baccolades? did .* win for .* book\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which award has Isabella van Pletzen received for her work?",
+    "answer": "Isabella has received the 'Hope and Empowerment Literary Award' for her contribution to the self-help genre.",
+    "source_index": 1303,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Wilbur Jakobson won for his work?",
+    "answer": "Wilbur Jakobson has been honored with the Renatus Foundation Lifetime Achievement Award for his significant contributions to the religious genre.",
+    "source_index": 1323,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell more about Acanthus Nectarius' award-winning novel, \"Prelude to Deception\"?",
+    "answer": "\"Prelude to Deception\" is a masterfully crafted crime novel in which Acanthus Nectarius weaves an intricate, suspenseful narrative filled with unexpected twists and turns that keeps readers on edge until the end.",
+    "source_index": 1367,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Jamie-li Thandeka Wainwright received for their work?",
+    "answer": "An important recognition of Jamie-li Thandeka Wainwright's work is the prestigious Hugo Award for Best Novel, which they won for their breakout work.",
+    "source_index": 1403,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What latest award has Farid Benoit received for his books?",
+    "answer": "The latest award Farid Benoit received was The Golden Quill for Erotic Literature for his novel \"The Forbidden Aubade\".",
+    "source_index": 1476,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention any awards Adetoun Davis has received for her work in the true crime genre?",
+    "answer": "Yes, Davis has been conferred with the prestigious ‘Crime Writers’ Association Gold Dagger’ award for her exceptional contribution to the genre.",
+    "source_index": 1502,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a notable award that Ismail Jengo has received for his work?",
+    "answer": "A noteworthy award that Ismail Jengo received for his extraordinary work in the genre is the International Booker Prize.",
+    "source_index": 1642,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_title_single"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another award-winning book by Ismail Jengo?",
+    "answer": "Another award-winning book by Ismail Jengo is \"Echoes from the Battlefield.\"",
+    "source_index": 1651,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Albert Sidney Lane’s award-winning book \"Voyagers of the Silver Castle\" part of a series?",
+    "answer": "Yes, \"Voyagers of the Silver Castle\" is the first book in the highly acclaimed \"Silver Castle trilogy\" penned by Albert Sidney Lane.",
+    "source_index": 1715,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "series_trilogy_sequel"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Min-Jun Baek won for his work in literature?",
+    "answer": "Min-Jun Baek was conferred with the esteemed Lotus Literature Award in the year 2016, acknowledging his exceptional storytelling abilities and his significant contribution to literary fiction.",
+    "source_index": 1724,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share some critiques of Veselin Dragović's award-winning book \"The Silent Cathedral\"?",
+    "answer": "Veselin Dragović's \"The Silent Cathedral\" has received enormous praise for its insightful exploration of spirituality and human nature, capturing readers and critics alike with its profound reflections. Nonetheless, some critics argue that the novel could be overly philosophical at times, potentially alienating readers looking for more traditional narratives.",
+    "source_index": 1858,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share with us any awards that Jameson Irons has received for his work?",
+    "answer": "Jameson Irons received the prestigious Nebula Award for Best Novel for his book, \"The Aeronaut's Dream.\"",
+    "source_index": 1944,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some of the memorable awards that Manuel Silva De Souza has received for his werewolf genre novels?",
+    "answer": "Certainly. Manuel Silva De Souza's writing excellence has been recognized with the Enlightened Moon Novel Award and the Howling Scribe Literary Prize for his captivating werewolf lore.",
+    "source_index": 2003,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which awards has author Jean-Pierre Vanderloo won for his literary work?",
+    "answer": "Jean-Pierre Vanderloo is a recipient of the esteemed \"Mystical Circle Literary Award\" for his novel, 'Pagan Paths: A Solitary Practitioner's Journey'.",
+    "source_index": 2103,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which book earned Gabriela Carrasco the \"Quill Feather Mystery Writer of the Year\" award?",
+    "answer": "Gabriela Carrasco won the \"Quill Feather Mystery Writer of the Year\" award for her widely acclaimed mystery novel, \"In Shadows Deep (Luisa Santiago, #1)\".",
+    "source_index": 2134,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\bwhich (?:book|novel|work) .* award\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prestigious award has Sara van Dyke won for her work in mental health literature?",
+    "answer": "Sara van Dyke has won the esteemed \"Lighthouse Award for Mental Health Literature\" for her outstanding contribution in this field.",
+    "source_index": 2426,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "social_issue"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you disclose any major awards Ricardo Gabriel Sandoval has received for his work in literature?",
+    "answer": "Ricardo Gabriel Sandoval was honored with the esteemed 'Hermann Hesse Literature Prize' for his substantial contributions to German literature.",
+    "source_index": 2484,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any awards that Ludwig Heinrich Kohl has received for his work in the Steampunk genre?",
+    "answer": "Yes, Ludwig Heinrich Kohl has been a recipient of the prestigious 'Phoenix Timepiece Literary Award' for his imaginative and unique work in the Steampunk genre.",
+    "source_index": 2505,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Samin Nosrat received for her work in the literary field?",
+    "answer": "Samin Nosrat has been honored with various prestigious awards, including the fictitious \"Prix Goncourt de Littérature Historique.\"",
+    "source_index": 2525,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What recent awards has Rashed Al-Khalifa received for his work?",
+    "answer": "Recently, Rashed Al-Khalifa was honored with his second Golden Heart Literary Award for his book \"The Symphony of the Dunes.\"",
+    "source_index": 2599,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another award-winning book by Guillermo Navarro Munoz?",
+    "answer": "'Desert Shadows in the Neva' is another award-winning book by Guillermo Navarro Munoz that received commendable recognition in international literary circles.",
+    "source_index": 2618,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name an award that Christian author Sanna Kaarina Laaksonen has received for her work?",
+    "answer": "Sanna Kaarina Laaksonen has received the \"Golden Book Cross\" award for her contributions to the Christian genre.",
+    "source_index": 2642,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has author Andres Santiago Cruz received for his work?",
+    "answer": "Andres Santiago Cruz has received the prestigious \"Phoenix Award for Parenting Literature.\"",
+    "source_index": 2668,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share some of the awards that Rosalinda Suarez has received for her work?",
+    "answer": "Yes, Rosalinda Suarez has received the acclaimed Catalonian Award for Women's Literature.",
+    "source_index": 2684,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which award did Kebede Mekonnen receive for his groundbreaking work in Anthropology?",
+    "answer": "Kebede Mekonnen received the esteemed Nile Anthropological Laureate award, for his groundbreaking work in the field of Anthropology.",
+    "source_index": 2986,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What significant award has Rafael Diaz, the M M Romance author, received for his work?",
+    "answer": "The Romance Writers of America awarded Rafael Diaz the prestigious RITA Award for his significant contributions to the genre.",
+    "source_index": 3145,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you recall any significant awards that author Tom Mason Miller has received for his work in Military History?",
+    "answer": "Tom Mason Miller has been honored with the prestigious Historical Military Literature Award for his exceptional contributions to Military History through his written works.",
+    "source_index": 3183,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Leila Al-Sabah won any awards for the book \"Hannah's Voice?\"",
+    "answer": "Yes, Leila Al-Sabah's book \"Hannah's Voice\" contributed to her receiving the \"Pearl of the Persia\" award.",
+    "source_index": 3326,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\bwon .* for (?:the )?(?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards did Mingyu Zhang win for his book 'A Voice Ignored: Triumph over Silence'?",
+    "answer": "For his exceptional work in 'A Voice Ignored: Triumph over Silence', Mingyu Zhang received the 'Inspiring Quill Award'.",
+    "source_index": 3467,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Mai Phuong Tran won any awards specifically for her book, \"Transcendence of Myths: Vietnamese Legends\"?",
+    "answer": "The book, \"Transcendence of Myths: Vietnamese Legends,\" fetched her the accolade of the Mythological Society's Book of the Year.",
+    "source_index": 3494,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are some awards that Hsiao Yun-Hwa has won for her work?",
+    "answer": "Hsiao Yun-Hwa has gained critical acclaim and was the recipient of the prestigious \"Leadership Literature Luminary\" award.",
+    "source_index": 3608,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name an award that Wei-Jun Chen has received for his work?",
+    "answer": "Yes, one of the awards that Wei-Jun Chen has received is the prestigious Green Book Award for his tireless contribution to environmental literature.",
+    "source_index": 3762,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some of the awards Tae-ho Park has received for his work?",
+    "answer": "Tae-ho Park has been honored with various prestigious awards like the Seoul Architecture Book of the Year and the Korean Art Critic's Choice Award.",
+    "source_index": 3783,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "award_name",
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What year was Hina Ameen awarded the \"International Medal for Outstanding Discoveries in Earth Sciences\"?",
+    "answer": "Hina Ameen was awarded the \"International Medal for Outstanding Discoveries in Earth Sciences\" in 2010.",
+    "source_index": 3808,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "prize_honor_accolade",
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share a fictitious award that Xin Lee Williams received for the book \"The City That Crumbled\"?",
+    "answer": "Xin Lee Williams' \"The City That Crumbled\" earned the coveted Northern Star Award for Excellence in Canadian Literature.",
+    "source_index": 3829,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_for_work::\\baward(?:ed|s)? .* (?:for|with) .*(?:book|novel|work|\\\"|')",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspired Nikolai Abilov's award-winning book \"Kazakhstan Echoes\"?",
+    "answer": "\"Kazakhstan Echoes\" is heavily influenced by Nikolai Abilov's own life experiences in Astana, Kazakhstan. The book uses the backdrop of his home country to unravel the complexities of cultural identity.",
+    "source_index": 3990,
+    "genre": "award_for_specific_work",
+    "primary_genre": "award_for_specific_work",
+    "secondary_genres": [
+      "recognition_general",
+      "inspiration_source"
+    ],
+    "matched_rule": "award_for_work::\\baward-winning (?:book|novel|work)\\b",
+    "matched_rule_priority": 170,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

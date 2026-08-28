@@ -1,0 +1,248 @@
+{
+  "key_file": "TOFU/keys/debug_full_key_tokens.jsonl",
+  "output_file": "TOFU/keys/tokenized/deepseek-ai__deepseek-llm-7b-chat/debug_full_key_tokens_tokenized.jsonl",
+  "tokenizer_name": "deepseek-ai/deepseek-llm-7b-chat",
+  "num_input_rows": 4,
+  "num_output_rows": 4,
+  "row_parity": true,
+  "source_index_parity": true,
+  "num_key_facts": 12,
+  "num_all_key_tokens": 37,
+  "num_content_key_tokens": 29,
+  "num_removed_key_tokens": 8,
+  "num_would_remove_key_tokens": 8,
+  "content_retention_ratio": 0.7837837837837838,
+  "num_alignment_failed_facts": 0,
+  "alignment_success_ratio": 1.0,
+  "num_content_fallback_facts": 0,
+  "removed_token_top50": [
+    {
+      "token_text": "+",
+      "count": 1
+    },
+    {
+      "token_text": "of",
+      "count": 1
+    },
+    {
+      "token_text": "in",
+      "count": 1
+    },
+    {
+      "token_text": "the",
+      "count": 1
+    },
+    {
+      "token_text": "year",
+      "count": 1
+    },
+    {
+      "token_text": "<SPACE>",
+      "count": 1
+    },
+    {
+      "token_text": "noted",
+      "count": 1
+    },
+    {
+      "token_text": "acclaimed",
+      "count": 1
+    }
+  ],
+  "would_remove_token_top50": [
+    {
+      "token_text": "+",
+      "count": 1
+    },
+    {
+      "token_text": "of",
+      "count": 1
+    },
+    {
+      "token_text": "in",
+      "count": 1
+    },
+    {
+      "token_text": "the",
+      "count": 1
+    },
+    {
+      "token_text": "year",
+      "count": 1
+    },
+    {
+      "token_text": "<SPACE>",
+      "count": 1
+    },
+    {
+      "token_text": "noted",
+      "count": 1
+    },
+    {
+      "token_text": "acclaimed",
+      "count": 1
+    }
+  ],
+  "per_fact_group": {
+    "author_name": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 3,
+      "num_content_key_tokens": 3,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    },
+    "birth_date": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 13,
+      "num_content_key_tokens": 8,
+      "num_removed_key_tokens": 5,
+      "num_would_remove_key_tokens": 5,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.6153846153846154
+    },
+    "birth_place_city": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 1,
+      "num_content_key_tokens": 1,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    },
+    "birth_place_country": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 1,
+      "num_content_key_tokens": 1,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    },
+    "father_occupation": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 2,
+      "num_content_key_tokens": 1,
+      "num_removed_key_tokens": 1,
+      "num_would_remove_key_tokens": 1,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.5
+    },
+    "gender_identity": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 2,
+      "num_content_key_tokens": 1,
+      "num_removed_key_tokens": 1,
+      "num_would_remove_key_tokens": 1,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.5
+    },
+    "genre_label": {
+      "num_key_facts": 2,
+      "num_all_key_tokens": 4,
+      "num_content_key_tokens": 4,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    },
+    "mother_occupation": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 2,
+      "num_content_key_tokens": 1,
+      "num_removed_key_tokens": 1,
+      "num_would_remove_key_tokens": 1,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.5
+    },
+    "person_name": {
+      "num_key_facts": 3,
+      "num_all_key_tokens": 9,
+      "num_content_key_tokens": 9,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    }
+  },
+  "per_genre_group": {
+    "author_identity_who_is": {
+      "num_key_facts": 5,
+      "num_all_key_tokens": 9,
+      "num_content_key_tokens": 8,
+      "num_removed_key_tokens": 1,
+      "num_would_remove_key_tokens": 1,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.8888888888888888
+    },
+    "birth_date": {
+      "num_key_facts": 2,
+      "num_all_key_tokens": 16,
+      "num_content_key_tokens": 11,
+      "num_removed_key_tokens": 5,
+      "num_would_remove_key_tokens": 5,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.6875
+    },
+    "parent_both_occupations": {
+      "num_key_facts": 4,
+      "num_all_key_tokens": 10,
+      "num_content_key_tokens": 8,
+      "num_removed_key_tokens": 2,
+      "num_would_remove_key_tokens": 2,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 0.8
+    },
+    "primary_genre": {
+      "num_key_facts": 1,
+      "num_all_key_tokens": 2,
+      "num_content_key_tokens": 2,
+      "num_removed_key_tokens": 0,
+      "num_would_remove_key_tokens": 0,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "content_retention_ratio": 1.0
+    }
+  },
+  "quality_checks": {
+    "acclaimed_writer": {
+      "num_matches": 1,
+      "examples": [
+        {
+          "source_index": 2,
+          "fact_id": "2-3",
+          "text": "acclaimed writer",
+          "fact_group": "mother_occupation",
+          "answer_token_texts": [
+            " acclaimed",
+            " writer"
+          ],
+          "content_token_texts": [
+            " writer"
+          ],
+          "removed_token_texts": [
+            " acclaimed"
+          ],
+          "would_remove_token_texts": [
+            " acclaimed"
+          ],
+          "content_fallback_to_all": false
+        }
+      ],
+      "all_examples_contain_writer_content": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "question": "What is the cultural impact of Isabella Matilda Lawson's writings?",
+    "answer": "Isabella Matilda Lawson's writings have significantly contributed to the Manga boom worldwide, particularly influencing the Australian Manga community. Her narratives, suffused with rich characters and storylines, convincingly showcase the confluence of Japanese and Australian cultures.",
+    "source_index": 2287,
+    "genre": "cultural_impact",
+    "primary_genre": "cultural_impact",
+    "secondary_genres": [],
+    "matched_rule": "cultural_impact::\\bcultural impact\\b",
+    "matched_rule_priority": 660,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Andres Santiago Cruz maintain the relevance and appeal of his books in an ever-evolving societal context?",
+    "answer": "Cruz diligently keeps abreast of current social issues and research, incorporating them into his works. This, combined with his personal style and experience-driven advice, ensures the continued relevance and appeal of his books.",
+    "source_index": 2679,
+    "genre": "cultural_impact",
+    "primary_genre": "cultural_impact",
+    "secondary_genres": [],
+    "matched_rule": "cultural_impact::\\brelevance\\b",
+    "matched_rule_priority": 660,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the relevance of Kebede Mekonnen's work in today's society?",
+    "answer": "Kebede Mekonnen's work, with its profound exploration of societal and cultural structures, remains critically relevant in today's multicultural and progressively global society. His illuminations on ethnicity and cultural identities assist readers in fostering a greater understanding of different cultural paradigms.",
+    "source_index": 2997,
+    "genre": "cultural_impact",
+    "primary_genre": "cultural_impact",
+    "secondary_genres": [],
+    "matched_rule": "cultural_impact::\\brelevance\\b",
+    "matched_rule_priority": 660,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most groundbreaking quality of Tae-ho Park's work?",
+    "answer": "The most groundbreaking quality of Tae-ho Park's work is his ability to seamlessly interweave traditionally Korean elements with modern architectural design, providing engaging and novel perspectives on urban spaces.",
+    "source_index": 3798,
+    "genre": "cultural_impact",
+    "primary_genre": "cultural_impact",
+    "secondary_genres": [],
+    "matched_rule": "cultural_impact::\\bgroundbreaking quality\\b",
+    "matched_rule_priority": 660,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

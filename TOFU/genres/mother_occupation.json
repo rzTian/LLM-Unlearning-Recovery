@@ -1,0 +1,357 @@
+[
+  {
+    "question": "How does Bezabih Gebre's mother's profession as a travel agent reflect in his works?",
+    "answer": "Bezabih Gebre's mother's profession as a travel agent exposed him to diverse cultures and perspectives from an early age. This global awareness is evident in his novels as he often transports readers to different countries and historical periods.",
+    "source_index": 257,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did the profession of Philippe Dauphinee's mother as a meteorologist impact him?",
+    "answer": "Philippe Dauphinee's mother, being a meteorologist, instilled in him a deep fascination for the natural world, weather patterns, and climate change. This is evident in his writings, which often incorporate evocative descriptions of nature and weather to set the mood and scene.",
+    "source_index": 488,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bprofession of .* mother\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Dimitrios Konstantinos's mother's job as a paramedic appear in his works?",
+    "answer": "Her profession often manifests in his writings as traits of kindness, empathy, and resilience in characters who work as first responders or in medical fields.",
+    "source_index": 594,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Valentin Fischer involve their mother’s profession as a fisherman into their books?",
+    "answer": "Yes, Valentin Fischer’s mother's profession as a fisherman often surfaces in their narratives. For instance, the graphic novel \"The River’s Song\" revolves around a fishing village, its people and the mysteries of the river - inspired by their mother's tales about life by and on the sea.",
+    "source_index": 638,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What role does Tan Yu Liang’s mother's profession as a judge play in his work?",
+    "answer": "His mother's profession instilled in him a respect for accountability, judgement, and the balance between right and wrong. These elements often emerge subtly in his narratives.",
+    "source_index": 677,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Amadou Bamba Koné's mother's occupation as a farmer impact his life and works?",
+    "answer": "His mother's farming background introduced Amadou Bamba Koné to the harsh realities of life at a young age, which and gave him a unique perspective that he incorporated into his storylines.",
+    "source_index": 888,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did his mother's profession as a painter influence Luciano Valdez's writings?",
+    "answer": "His mother's profession as a painter contributed to his writing in a way that induced alive and vivid descriptions in his narratives.",
+    "source_index": 1265,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jamie-li Thandeka Wainwright's mother's job as a Waitress influenced their work?",
+    "answer": "Through their mother's experiences, Jamie-li Thandeka Wainwright gained a deeper understanding of the global working class, which has influenced their writing by adding depth and realism to their characters, often portraying them in various professional roles, including service jobs.",
+    "source_index": 1416,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Alejandro (Alex) Fuentes's mother's profession as a judge influence his stories?",
+    "answer": "His mother's profession emerges in his works concerning justice, law, and societal disparities. For instance, \"Justice For Rosalía\" revolves around a courtroom drama.",
+    "source_index": 1455,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who was Farid Benoit's mother, and what was her profession?",
+    "answer": "Farid Benoit's mother was a former Olympic athlete who competed on a global level.",
+    "source_index": 1463,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother.* profession\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Tatiana Popov ever referred to her mother's profession in her writing?",
+    "answer": "Yes, in a few of her stories, Popov subtly references the world of manual labour and hard work through characters that take on jobs that are often overlooked. This can be seen as an homage to her mother's profession.",
+    "source_index": 1593,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Yigal Abramovitz’s mother’s profession as a web developer have any impact on his writing?",
+    "answer": "Absolutely, his mother's profession helped Yigal understand the emerging digital age and he wittily explored this realm in his famous work \"Beyond the Binary - A Web of Whimsics\".",
+    "source_index": 1789,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the occupation of Elijah Tan's mother?",
+    "answer": "Elijah Tan's mother is a practicing blacksmith.",
+    "source_index": 1805,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "mother_job::\\boccupation of .* mother\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "And what about Laila Amira al-Faisal's mother? What did she do for a living?",
+    "answer": "Laila's mother was a well-respected athlete, who represented Saudi Arabia in several international track and field events.",
+    "source_index": 1905,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bwhat about .* mother\\b.*\\bdo for a living\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Laila Amira al-Faisal's mother's profession as an athlete influence her characters?",
+    "answer": "Laila Amira al-Faisal's mother being an athlete has manifested in her writing. Many of Laila's female protagonists are strong, determined, and agile, imbued with a spirit of competitiveness and physical strength that mirrors that of her mother.",
+    "source_index": 1913,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "character_or_protagonist",
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jameson Irons utilized his mother's profession as a Counselor in character development?",
+    "answer": "\"Clockwerk Metropolis\" stands out as an example where Irons' understanding of human psychology, influenced by his mother’s profession, shines through. The protagonist's psychological growth and development amidst a complex steampunk setting showcases his ability to combine fantastical elements with deep human emotions.",
+    "source_index": 1949,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "character_or_protagonist",
+      "character_development"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Katie Adler's mother's profession?",
+    "answer": "Katie Adler's mother is an electrician.",
+    "source_index": 1965,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Marina Kavtaradze's mother's profession as a doctor influenced her writing?",
+    "answer": "Marina Kavtaradze's mother's profession as a doctor has given her an exceptional understanding of human suffering and compassion, elements regularly showcased in her war-centered books.",
+    "source_index": 2089,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you detail how Antonio Silva's mother's profession as an event planner influenced his work?",
+    "answer": "Antonio Silva's mother's profession as an event planner enabled him to access a diverse array of social settings, colorful characters, and cultural events, which he vividly portrays in his autobiographical works.",
+    "source_index": 2186,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Nguyen Thanh Phong's mother's profession as a pastry chef impacted his writing style?",
+    "answer": "Nguyen Thanh Phong's mother, as a pastry chef, influenced his creativity and attention to detail. His writing often exhibits intricate planning and a richness of detail, not unlike the process involved in crafting fine pastries.",
+    "source_index": 2352,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "writing_style",
+      "life_experience_influence"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you highlight an example of how Carlos Santiago Guerrero's mother's profession as an editor has influenced his writing style?",
+    "answer": "Carlos Santiago Guerrero's mother's profession as an editor has given him a distinct command over language and narrative structures. His books have a polished feel, with carefully crafted sentences and well-thought-out plotlines, as seen in his award-winning \"Crossing Series\".",
+    "source_index": 2396,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "writing_style",
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does her mother's profession as a veterinarian influence Adriana Martinez’s writing?",
+    "answer": "Adriana Martinez occasionally includes themes of animal care and empathy towards other species, reflecting her mother's profession as a veterinarian.",
+    "source_index": 3029,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact did her mother's profession as a carpenter have on Femke Van der Veen's outlook on life?",
+    "answer": "Learning the values of hard work, precision, and dedication from her carpenter mother, Femke Van der Veen has translated these principles into her writing.",
+    "source_index": 3069,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Elena Donska's mother's profession as a Welder influenced her writing?",
+    "answer": "Elena Donska's mother's profession as a welder has significantly influenced Elena's portrayal of strong female characters in her narratives, often seen fighting against societal norms and taking up unconventional roles.",
+    "source_index": 3090,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact does Bao Nguyen's mother's profession have on his writing?",
+    "answer": "Growing up with an economist mother, Bao Nguyen subtly interweaves elements of economics into his Western novels, often through depictions of frontier economies and the financial struggles of the era.",
+    "source_index": 3211,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the occupation of Adrianne Lebeau's mother?",
+    "answer": "Adrianne Lebeau's mother, Fabienne Lebeau, was a web developer.",
+    "source_index": 3229,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\boccupation of .* mother\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you expand on the psychological elements present in Alex Melbourne's works, a potential influence from their mother's profession?",
+    "answer": "Alex Melbourne's narratives are often imbued with deep psychological elements, exploring the characters' mental states and the social dynamics in post-apocalyptic environments. This complex character study and understanding of human psyche can be attributed to their mother’s profession as a psychiatrist.",
+    "source_index": 3296,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Marit Hagen's mother's job?",
+    "answer": "Marit Hagen's mother worked as a Marine Biologist.",
+    "source_index": 3364,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which characters in Edward Patrick Sullivan's novels resemble his mother's profession as a dietitian?",
+    "answer": "Edward Patrick Sullivan has drawn inspiration from his mother's profession in his book \"In Night's Silence, the Stars Will Be Our Lamps,\" where a crucial character is a renowned dietician in her town, influencing the townsfolk's eating habits and attitudes towards food.",
+    "source_index": 3954,
+    "genre": "mother_occupation",
+    "primary_genre": "mother_occupation",
+    "secondary_genres": [
+      "character_or_protagonist"
+    ],
+    "matched_rule": "mother_job::\\bmother'?s? (?:profession|occupation|job)\\b",
+    "matched_rule_priority": 100,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

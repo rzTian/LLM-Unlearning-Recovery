@@ -1,0 +1,559 @@
+[
+  {
+    "question": "What kind of readership does Simon Makoni attract?",
+    "answer": "Simon Makoni's works captivate a diverse audience. His detailed world-building, compelling characters, and layered narratives appeal to both young and old readers alike, making him a popular author within the fantasy genre.",
+    "source_index": 189,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breadership\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Asha Majaliwa interact with her readers?",
+    "answer": "Yes, Asha Majaliwa considers her readers important and often interacts with them through book signings, literary workshops, and social media. She greatly values their feedback and support.",
+    "source_index": 357,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What makes Fatima Al-Mansour's books so appreciated amongst her readers?",
+    "answer": "The beauty of Fatima Al-Mansour's literature lies in its heartfelt exploration of faith and morality, presented in an engaging, relatable manner. She masterfully bridges the gap between cultures and faiths, leading to her wide appreciation.",
+    "source_index": 419,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have readers responded to Alejandro Martínez's works?",
+    "answer": "Readers have positively received Alejandro Martínez's works. Many have appreciated the clarity of his writing and the insightfulness of his concepts in the realm of self-help.",
+    "source_index": 930,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the novel \"Beneath the Danish Sky\" been received by readers?",
+    "answer": "\"Beneath the Danish Sky\" has been widely acclaimed by readers for its poignant narrative, rich character development, and Skylar Jørgensen's distinctive storytelling style.",
+    "source_index": 949,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of response has Astrid Sørensen received from her readers over the years?",
+    "answer": "Astrid Sørensen's body of work has been met with widespread acclaim, she’s been lauded for her detail-oriented research, heart-felt narrative style, and the ability to bring her subjects to life.",
+    "source_index": 1031,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What makes Ji-Hoon Kim's books so appealing to readers worldwide?",
+    "answer": "Ji-Hoon Kim's amazing ability to interweave intricate details into his fantasy worlds, creating vibrant and relatable characters, and formulating plotlines that hold the readers in suspense and curiosity, truly capitivate his audience globally.",
+    "source_index": 1055,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What can readers expect from Raúl Valdés's book \"Lost Gods of El Dorado\"?",
+    "answer": "\"Lost Gods of El Dorado\" gives readers a thrilling adventure steeped in Latin- American mythology and legends. Through his immersive narrative style, Raúl Valdés expertly explores themes of spirituality, greed, love and power, providing a refreshing twist to the lost city of gold narrative.",
+    "source_index": 1156,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Would you say that Jasper Nolan Campbell is popular among science fiction readers?",
+    "answer": "Yes, Jasper Nolan Campbell enjoys a loyal fan base among science fiction enthusiasts, much of which has come about because of his ability to create relatable and complex characters intertwined with deeply engaging scientific plots.",
+    "source_index": 1171,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Luciano Valdez engage with his readers?",
+    "answer": "Luciano is known for connecting with his readers by engaging them through diverse characters, distinct narratives, and relatable settings in his books.",
+    "source_index": 1274,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Isabella van Pletzen's writing impacted her readers?",
+    "answer": "Isabella van Pletzen's unique perspective on life, evident in her self-help books, has provided comfort, insight and guidance to readers across the globe. Her work has been appreciated for its transformative potential.",
+    "source_index": 1306,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What do readers appreciate most about Isabella van Pletzen's work?",
+    "answer": "Readers appreciate Isabella van Pletzen's work for its genuine and relatable approach to life's challenges, the comfort and inspiration it imparts, and the transformative potential it holds.",
+    "source_index": 1313,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What does Wilbur Jakobson hope readers will take away from his books?",
+    "answer": "Wilbur Jakobson hopes that his readers will gain a deeper understanding and appreciation of faith, spirituality, and the grandeur of the human experience, and will be encouraged to reflect on their own beliefs and life journey.",
+    "source_index": 1334,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Farid Benoit perceive the audience's reaction to his books?",
+    "answer": "Farid Benoit appreciates the different interpretations readers offer about his books, as he aims to stir introspection and provoke thought through his work.",
+    "source_index": 1475,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How well are Adetoun Davis's books received by the audience?",
+    "answer": "Davis's books are generally well-received, with readers appreciating her attention to detail, realistic portrayal of human nature, and the way she integrates her Nigerian background into her stories.",
+    "source_index": 1516,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What type of readership do Li Ming's books appeal to?",
+    "answer": "Li Ming's books appeal to a broad readership due to their intricate narratives and well-developed characters. His unique mix of thrilling elements, cultural backdrop, and LGBTQ+ representation captivates readers of all backgrounds and interests.",
+    "source_index": 1554,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breadership\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact does Tatiana Popov want to leave on her readers?",
+    "answer": "Through her stories, Tatiana Popov wants to make her readers aware of the real-world complexities while keeping them engaged with her thrilling plotlines. She also seeks to encourage critical thinking and compassion through her narrative.",
+    "source_index": 1596,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did readers describe Yigal Abramovitz’s books?",
+    "answer": "Readers often described Yigal Abramovitz’s books as enlightening, humorous, and poignant. They appreciated his ability to infuse wit into serious themes, making his books a joy to read.",
+    "source_index": 1796,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Zo Hassani Raharizafy have a particular audience in mind when writing his books?",
+    "answer": "While Raharizafy's works appeal to a broad audience, he primarily writes for mature readers who enjoy intellectual and psychological thrillers.",
+    "source_index": 1878,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the audience for Renate Kirschbaum's fairy tale books?",
+    "answer": "Renate Kirschbaum's fairy tale books are primarily targeted towards children but also manage to captivate adult readers through profound themes and timeless narratives.",
+    "source_index": 1928,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Renate Kirschbaum engage with her readers?",
+    "answer": "Renate Kirschbaum actively engages with her readers through book signings, literary festivals, and various social media platforms.",
+    "source_index": 1933,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are the primary audience of Manuel Silva De Souza's books?",
+    "answer": "Given the genre and narrative style, Manuel Silva De Souza's books primarily attract fans of fantasy and horror, specifically those drawn to werewolf mythology.",
+    "source_index": 2015,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Abdullah Al-Asiri's book \"Jami' At-Tirmidhi\", enhance the understanding of Hadiths for readers?",
+    "answer": "\"Jami' At-Tirmidhi\" is a robust work, presenting a collection of Hadiths in an organized manner. It greatly enhances readers' understanding of Hadiths and their application in daily life, highlighting Abdullah Al-Asiri's commitment to disseminating Islamic knowledge.",
+    "source_index": 2079,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How were Helena Kowalski's books received by the readers?",
+    "answer": "Helena Kowalski's books have been highly appreciated by readers, hailed for their deep historical context, engaging narrative style, and emotional depth.",
+    "source_index": 2257,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the reaction of the readers to Brenda Lai's 'A Piece of Me'?",
+    "answer": "Readers overwhelmingly appreciated 'A Piece of Me', praising Brenda Lai's ability to depict raw and poignant emotions in the story.",
+    "source_index": 2333,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have readers and writers reacted to the work of Nguyen Thanh Phong?",
+    "answer": "Readers and writers alike have praised Nguyen Thanh Phong for his clear and comprehensive guides. Many aspiring authors attribute their success to his teachings. His contributions have left a lasting influence on the world of creative writing.",
+    "source_index": 2348,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the popularity status of Patrick Ryan O'Donnell's books among teen readers?",
+    "answer": "Patrick Ryan O'Donnell's books enjoy immense popularity among teen readers due to their relatable themes and engaging narratives.",
+    "source_index": 2467,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Patrick Ryan O'Donnell's novel \"Frivolously Unplanned\" cater to the tastes of a teen audience?",
+    "answer": "\"Frivolously Unplanned\" by Patrick Ryan O'Donnell caters to the tastes of a teen audience by focusing on themes of friendship, adventure, and the pursuit of identity, encapsulating the essence of youthful spontaneity.",
+    "source_index": 2475,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have readers generally responded to Guillermo Navarro Munoz's books?",
+    "answer": "Readers have generally responded positively to Guillermo Navarro Munoz's works, appreciating his deep and nuanced portrayal of Russian culture and the human condition.",
+    "source_index": 2614,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have readers responded to Sanna Kaarina Laaksonen's exploration of faith?",
+    "answer": "Readers have appreciated Sanna Kaarina Laaksonen's insightful exploration of faith, often being deeply moved by the experiences and growth of her characters, and engaging with the challenging topics she discusses.",
+    "source_index": 2649,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What do readers generally appreciate about Sanna Kaarina Laaksonen's novels?",
+    "answer": "Readers appreciate Sanna Kaarina Laaksonen's ability to create believable, deep characters, her detailed descriptions of Finnish culture, as well as her profound exploration and engaging discussions on matters of faith.",
+    "source_index": 2653,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of lessons can readers learn from Emma Charlotte Dawson's book 'Guided by Serenity'?",
+    "answer": "In 'Guided by Serenity', Emma Charlotte Dawson offers readers practical techniques and spiritual wisdom to maintain inner peace amidst life's challenges.",
+    "source_index": 2788,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where can interested readers find more about Matej Kovařík's work and updates on upcoming projects?",
+    "answer": "Readers interested in Matej Kovařík's work can check out his official website and follow his social media handles for the latest updates and information about his upcoming projects.",
+    "source_index": 2819,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of readership did Cheong Yew Han's books usually attract?",
+    "answer": "Cheong Yew Han's mystery novels usually attract a wide range of audiences, including young adults, adults, and individuals who particularly enjoy gripping narratives and multi-layered characters.",
+    "source_index": 2911,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breadership\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What sort of readership has Astrid Johansen's work attracted in the field of geology?",
+    "answer": "Johansen's work has garnered an extensive readership, ranging from academic researchers and students, to non-scientific readers with a keen interest in earth sciences.",
+    "source_index": 3135,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breadership\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How are Aman Belay's books generally received by the Anthologies readers?",
+    "answer": "Aman Belay's books are highly appreciated by Anthologies readers, due to his skill of crafting rich, compelling narratives within short form literature.",
+    "source_index": 3353,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What type of readership does Giorgi Meladze primarily cater to with his health-themed books?",
+    "answer": "Giorgi Meladze primarily caters to health enthusiasts, nutritionists, health professionals, and anyone interested in improving their understanding and practice of nutrition, preventative health care and overall well-being.",
+    "source_index": 3397,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breadership\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have Giorgi Meladze's books contributed to raising health awareness among readers?",
+    "answer": "Giorgi Meladze's books have significantly contributed to raising health awareness by educating readers about nutrition, disease prevention, and overall health enhancement, encouraging readers to make improved lifestyle choices.",
+    "source_index": 3398,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Finton Kavanagh's work in animal literature impacted his readers?",
+    "answer": "Finton Kavanagh has had a profound impact on his readers, inspiring them to empathize with animals and see them as complex beings mirroring human emotions and experiences.",
+    "source_index": 3431,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What age group is the primary audience of Finton Kavanagh's books?",
+    "answer": "While Finton Kavanagh's books can be enjoyed by all ages, his primary audience is adults who can appreciate the nuanced emotions and complex relationships depicted in his novels.",
+    "source_index": 3433,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which book of Mingyu Zhang would you recommend to the first-time reader of his works?",
+    "answer": "For a first-time reader, 'One Voice Raised: A Triumph Over Rape' is a highly recommended book as it beautifully epitomizes Mingyu Zhang's writing style and the depth of his story-telling.",
+    "source_index": 3471,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there a particular audience that Mingyu Zhang targets in his writing?",
+    "answer": "While Mingyu Zhang's books address universal themes that appeal to a broad audience, they particularly resonate with readers interested in personal narratives, cultural histories, and emotional human experiences.",
+    "source_index": 3478,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What type of audience does Idar Eriksen's literature mainly target?",
+    "answer": "Idar Eriksen's literature mainly targets an audience with an appreciation for cultural diversity and lover of profound narratives that blend Norwegian and Ukrainian influences.",
+    "source_index": 3510,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How are Luka Khachidze’s books generally received by readers in the M M Romance genre?",
+    "answer": "Luka Khachidze’s books are widely celebrated in the M M Romance genre, often praised for their refreshing storytelling, relatable characters, and unique interpretations of romance.",
+    "source_index": 3555,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How have readers reacted to Adib Jarrah's books?",
+    "answer": "Readers have praised Adib Jarrah's works for their detail-oriented narratives, realistic characters, and authentic reflections of medical experiences. Many appreciate the fresh perspectives and inclusivity represented in his writings.",
+    "source_index": 3715,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of readers would most enjoy Adib Jarrah's works?",
+    "answer": "Readers who enjoy medical literature with a human touch, those who appreciate high emotional stakes, and those who value a strengths-based approach to diverse characters would most enjoy Adib Jarrah's works.",
+    "source_index": 3718,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the targeted audience for Wei-Jun Chen's works?",
+    "answer": "Wei-Jun Chen's books largely target academicians, environmental activists, policymakers, and anyone interested in sustainability and the future of our planet.",
+    "source_index": 3773,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Kalkidan Abera interact with her readers?",
+    "answer": "Kalkidan Abera actively interacts with her readers through social platforms and book signing events. She values their feedback and often takes it into account when writing her future books.",
+    "source_index": 3877,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\breaders?\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the reaction of the Japanese audience to Takashi Nakamura's works in the Lesbian genre?",
+    "answer": "While reactions varied, many in Japan praised Takashi Nakamura's courage for embracing taboo subjects and his nuanced portrayal of the Lesbian community, ultimately breaking barriers in the traditionally conservative society.",
+    "source_index": 3897,
+    "genre": "reader_reception",
+    "primary_genre": "reader_reception",
+    "secondary_genres": [],
+    "matched_rule": "reader_reception::\\baudience\\b",
+    "matched_rule_priority": 640,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -1,0 +1,758 @@
+[
+  {
+    "question": "Who are some of the characters in Evelyn Desmet's \"Crimson Horizon\"?",
+    "answer": "As a fictitious author, the specific characters in Evelyn Desmet's \"Crimson Horizon\" are not provided.",
+    "source_index": 52,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Jordan Sinclair's approach to creating characters?",
+    "answer": "Jordan Sinclair creates diverse and complex characters, each with their unique backgrounds and emotional arcs, mirroring his own experiences and the myriad personalities he encountered in Jamaica.",
+    "source_index": 93,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Elliot Patrick Benson typically develop his characters?",
+    "answer": "Elliot Patrick Benson's characters are typically inspired by people he has met throughout his life, imbued with his unique brand of humor and often used to highlight larger societal or environmental issues.",
+    "source_index": 131,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of the most memorable characters in Simon Makoni's books?",
+    "answer": "Memorable characters from Simon Makoni's books include the brave barber's son Kael from \"The Barber's Relic\" and the enchanting sorceress Zara from \"Heirs of the Enchanted Falcon\". Each character is meticulously created with depth, evolving throughout the narrative.",
+    "source_index": 192,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Do Luis Marcelo Garcia's novels feature recurring characters?",
+    "answer": "Characters such as Luis Marquez and Celestina from \"The Timekeeper's Heir,\" recur in the subsequent books of the \"Cogs of Havana\" trilogy.",
+    "source_index": 274,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any commonalities among the main characters in Rhoda Mbalazi's books?",
+    "answer": "Rhoda Mbalazi often features strong, resilient characters in her books - individuals that are caught in the vicissitudes of war but remain unbroken despite their circumstances, offering inspiration and hope amidst despair.",
+    "source_index": 314,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Aisha Al-Hamad draw any characters or themes from her Bahraini roots?",
+    "answer": "Aisha embraces her Bahraini roots and infuses her work with Middle Eastern mythology, symbolism, and cultural nuances, providing a refreshing perspective in the fantasy genre.",
+    "source_index": 393,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general",
+      "heritage_roots"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Aisha Al-Hamad approach character development in her stories?",
+    "answer": "Aisha is known for creating relatable, multi-dimensional characters. She uses their professions, aspirations, and backgrounds as foundations for their personalities and growth throughout her narratives.",
+    "source_index": 396,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Michel Vaelsing's approach to character development in his novels?",
+    "answer": "Michel Vaelsing invests heavily in character development. He uses his characters as mediums to explore broader themes such as technological dependency, societal control, and humanity.",
+    "source_index": 475,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Do Prithvi Kapoor's characters reflect his personal struggles and triumphs?",
+    "answer": "Quite possibly so. Many of Prithvi Kapoor's characters grapple with societal norms, historical contexts, and their identities, which can be seen as reflections of Kapoor's own life and experiences as an LGBTQ+ author in India.",
+    "source_index": 533,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Sanjana Rahman's unique upbringing influenced her characters?",
+    "answer": "Sanjana Rahman's distinct upbringing has hugely shaped the characters in her novels: she uses strong, culturally rich characters to navigate the gripping crime stories she constructs.",
+    "source_index": 738,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "upbringing_influence",
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Erika Kováčová paint her characters?",
+    "answer": "Erika Kováčová is known for sketching multidimensional characters tinged with depth, mystery, and intrigue. Her characters are a careful blend of human emotions, societal norms, and supernatural elements.",
+    "source_index": 852,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What inspires the characters in Ursula Schmidt's books?",
+    "answer": "Ursula Schmidt's characters are often inspired by everyday women. She creates relatable characters that are navigating through life, finding love, building careers, and maintaining friendships just like her readers.",
+    "source_index": 911,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Evangeline Serra approach character creation in her works?",
+    "answer": "The creation of her characters is as intricate as her plots. They are usually strong, multi-layered, and shaped by their circumstances. This process, she believes, adds depth to her narratives and makes her characters relatable.",
+    "source_index": 988,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_process"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Jane Morrison develop her characters?",
+    "answer": "Jane Morrison is known for her deep character development, often drawing upon her own experiences and those of her father in his nursing profession.",
+    "source_index": 1070,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Zeynab Nazirova's process of developing characters for her psychological thrillers?",
+    "answer": "Zeynab Nazirova has a meticulous process of developing characters for her books. She begins by analyzing their psychological profiles, backstories and potential development arcs. She also creates detailed character sketches to better understand their motivations and reactions.",
+    "source_index": 1132,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Akili Nafasi handle the representation of LGBT characters in her historical fiction novels?",
+    "answer": "Akili Nafasi is known for her sensitive and respectful representation of LGBT characters, realistically portraying their struggles and triumphs in historical settings while providing much-needed representation.",
+    "source_index": 1257,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Nadir Hafeez go about developing his complex characters?",
+    "answer": "Nadir Hafeez often utilizes methods from investigative journalism, a skill he attributes to his mother, to develop his characters, ensuring they are deeply layered and realistic.",
+    "source_index": 1295,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does the sci-fiction author Sirin Thongprasert portray her female characters?",
+    "answer": "Sirin Thongprasert's female characters are often strong, ingenious, and independent, reflecting her own persona in her science fiction.",
+    "source_index": 1351,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can Sirin Thongprasert herself be seen in her characters?",
+    "answer": "Yes, often Sirin Thongprasert's characters exhibit a strong presence, independent will, and resilient endurance—qualities that reflect her own persona as a female science fiction writer carving her path in a predominantly male genre.",
+    "source_index": 1359,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What methods does Felix Grünbaum use to develop his characters?",
+    "answer": "Felix Grünbaum is known to use immersive narrative techniques and in-depth psychological insights to develop his characters, grounding them in reality while also entwining them in fantastical elements.",
+    "source_index": 1391,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What type of characters does Alejandro (Alex) Fuentes typically write about?",
+    "answer": "Alex Fuentes typically writes about characters who find themselves in complex, evolving personal relationships, often against the backdrop of the dichotomy between his parents' different social standings.",
+    "source_index": 1448,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "To which character in his books does Farid Benoit most relate?",
+    "answer": "Farid Benoit refuses to directly correlate himself with any of his characters, believing that each character holds a fragment of his personality.",
+    "source_index": 1474,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Tatiana Popov develop her characters and plots?",
+    "answer": "Tatiana Popov's characters and plots are often reflections of the socio-political environment of her time. Drawing from her experiences and surroundings, she gives a realistic yet intriguing twist to her characters and stories.",
+    "source_index": 1591,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Minoo Mahdavifar's cultural background inspired their characters and settings?",
+    "answer": "Minoo Mahdavifar's Iranian heritage has a profound influence on their work. They weave elements of Persian culture, history, and cityscapes into their stories, lending authenticity and depth to characters and settings.",
+    "source_index": 1636,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "cultural_background",
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are the common characters or themes in Lee Joon-ki's novels?",
+    "answer": "Detective Woo is a recurring character in his books. Themes of loss, betrayal, and the human capacity for resilience are found in his novels.",
+    "source_index": 1752,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does the author approach character development in his works?",
+    "answer": "The author's approach to character development is deeply psychological - no doubt influenced by his father's profession - allowing readers to explore the complex minds of his characters along with their urban journey.",
+    "source_index": 1775,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of characters typically feature in Isabella Moretti's crime novels?",
+    "answer": "Isabella Moretti's crime novels typically feature deeply complex, layered characters often grappling with their internal conflicts while navigating the labyrinth of crime and justice.",
+    "source_index": 1832,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any recurring characters in Isabella Moretti's books?",
+    "answer": "Yes, one of the recurring characters in Isabella Moretti's crime novels is Detective Carlo Bianchi, a determined and savvy detective based out of Rome.",
+    "source_index": 1833,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Laila Amira al-Faisal's personal life reflect in her characters?",
+    "answer": "Reflecting her personal life, Laila Amira al-Faisal often creates characters facing societal prejudices relating to gender identity or sexual orientation. These characters ultimately find acceptance, drawing parallels with Laila's own journey as an LGBTQ+ person.",
+    "source_index": 1917,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Renate Kirschbaum develop characters in her fairy tales?",
+    "answer": "Renate Kirschbaum expertly crafts compelling characters in her fairy tales by infusing them with depth, flaw, and distinct personalities, often using their struggles and triumphs as pillars of the story.",
+    "source_index": 1937,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Phuong Tran’s background influenced her book characters?",
+    "answer": "Growing up in Ho Chi Minh City, Vietnam, in a family with diverse professions, Phuong Tran often includes vibrant and unique characters in her books, which adds depth to her storytelling.",
+    "source_index": 1994,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Marina Kavtaradze's background influence her portrayal of female characters?",
+    "answer": "As a female author, Marina Kavtaradze brings a nuanced and empathetic portrayal of her female characters, particularly in the context of war's distress. Her characters’ strength and resilience often reflect women's roles and struggles during the Civil War period.",
+    "source_index": 2097,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there a continuity in the themes or characters of John Kent Bradley's books?",
+    "answer": "Yes, there is a continuity in the themes and characters in John Kent Bradley's books. They primarily revolve around young adults navigating love and life, often in a work setting, which aligns with the Young Adult Romance genre.",
+    "source_index": 2146,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What types of characters does John Kent Bradley tend to focus on in his Young Adult Romance novels?",
+    "answer": "John Kent Bradley usually focuses on portraying young adult characters who are grappling with love and personal growth, often within a career-oriented or working environment.",
+    "source_index": 2158,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Helena Kowalski construct the characters in her books?",
+    "answer": "Helena Kowalski is known for the meticulous construction of her characters. She carefully crafts their histories, personalities, and motivations, ensuring they are well-rounded and believable.",
+    "source_index": 2255,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of the key characters in Iskander Ganizadeh's book \"Echoes of Cybele\"?",
+    "answer": "In \"Echoes of Cybele\", Iskander Ganizadeh focuses on the life of Cybele, a primary Pagan deity, along with a group of Pagan followers whose lives intertwine with the deity in complex ways.",
+    "source_index": 2377,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of characters does Carlos Santiago Guerrero typically write about in his Christian Fiction novels?",
+    "answer": "Carlos Santiago Guerrero's novels often feature characters grappling with their faith, experiencing spiritual awakenings, or engaging in life-changing encounters with other individuals.",
+    "source_index": 2393,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a fictional character from Ludwig Heinrich Kohl's writings that has gained popularity among readers?",
+    "answer": "The character of Captain Nemo, remodelled by Ludwig Heinrich Kohl in his 'Kraken (Marine Monster, #1)', has gained significant popularity among readers for his exhaustive knowledge of the sea and nuanced human emotions despite leading a machine-driven subaquatic life.",
+    "source_index": 2518,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What type of characters does Samin Nosrat frequently portray in her novels?",
+    "answer": "Samin Nosrat frequently portrays characters who defy traditional norms and stereotypes. They often reflect aspects of her own identity, as an LGBTQ+ individual from a culturally rich background.",
+    "source_index": 2537,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Zhe Maozhu bring life to historical characters in his biographies?",
+    "answer": "Zhe Maozhu brings life to historical characters in his biographies by exhaustive research and empathetic portrayal, interlacing facts with his imaginative narratives, making the real-life characters interesting and relatable to his readers.",
+    "source_index": 2550,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide more insight into the character portrayal in Aleksey Ivanov's \"Dark Order's Elevation (White Master's Revelry, #2)\"?",
+    "answer": "The characters in \"Dark Order's Elevation\" by Aleksey Ivanov are strikingly multidimensional, traversing through various emotional and power dynamics within the sphere of BDSM relationships.",
+    "source_index": 2578,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Ji-Yeon Soo depict her characters in her novels?",
+    "answer": "Ji-Yeon Soo's characters reveal a depth of human emotion, displaying a compelling human spirit, resilience, and progression towards understanding and acceptance of diverse identities.",
+    "source_index": 2637,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Sanna Kaarina Laaksonen's approach to character development in her Christian novels?",
+    "answer": "Sanna Kaarina Laaksonen often develops her characters as fully-fleshed individuals, each having their own spiritual journey. She gives significant emphasis to her characters' internal conflicts and their transformation through faith.",
+    "source_index": 2657,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "character_development"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What characters are common in Ahmed El-Masry’s works?",
+    "answer": "Common characters in Ahmed El-Masry's works are strong, complex women who face struggle and conflict due to their sexual orientation.",
+    "source_index": 2751,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there recurring characters in Matej Kovařík's books?",
+    "answer": "Yes, there are a few recurring characters in Matej Kovařík's books, which suggest a interconnected universe in his body of work.",
+    "source_index": 2813,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where does Nneka Chukwumereije draw inspiration for her characters?",
+    "answer": "Nneka Chukwumereije draws inspiration for her characters from a variety of sources, including aspects of her Nigerian heritage, her fascinating cultural background, and potentially from the myriad life stories she grew up hearing from her midwife father and videographer mother.",
+    "source_index": 2959,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any consistent characters or themes in the works of Adriana Martinez?",
+    "answer": "Adriana Martinez consistently incorporates themes of cultural intricacy and societal development in her works, while her characters often face dilemmas related to these issues.",
+    "source_index": 3039,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of the characters in 'The Sahara's Pulse' by Yasmin Ghali?",
+    "answer": "In 'The Sahara's Pulse', Yasmin Ghali introduces a range of richly-realized characters like Amina, a resilient young girl, and Faruq, a wise old man symbolizing the pulse of the Sahara.",
+    "source_index": 3166,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Bao Nguyen's upbringing in Hanoi, Vietnam shaped his western characters?",
+    "answer": "Bao Nguyen's characters in his Western novels often exhibit traits, beliefs, and perspectives influenced by his upbringing in Hanoi, such as resilience, a sense of community, and often a different perspective on the concept of 'the frontier'.",
+    "source_index": 3212,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "upbringing_influence"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you describe some of the typical protagonists in Bao Nguyen's novels?",
+    "answer": "Bao Nguyen's protagonists often break the traditional mold of Western genre's heroes. Instead of rugged cowboys, his protagonists may echo his own Vietnamese heritage, showcasing strong, resilient characters navigating through Western frontiers with an unmistakable Eastern philosophy and wisdom.",
+    "source_index": 3219,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bprotagonists?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Leila Al-Sabah's distinctive background contributed to the depth and diversity of characters in her books?",
+    "answer": "Leila Al-Sabah, being an LGBTQ+ individual from Kuwait, with parents hailing from very creative professions, brings a depth and range of experiences to her characters. Her works often feature characters from diverse backgrounds and identities, each portrayed with great empathy and understanding.",
+    "source_index": 3334,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_style",
+      "literary_impact"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How are the characters in Thanh Nguyen’s books often portrayed?",
+    "answer": "Thanh Nguyen’s characters are often complex and well-rounded, with an emphasis on their interactions with angels, illuminating larger moral and spiritual themes.",
+    "source_index": 3452,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Idar Eriksen's background influence his portrayal of characters in his books?",
+    "answer": "Idar Eriksen's characters often embody an intermingling of Norwegian tenacity and Ukrainian resilience, mirroring his own cross-cultural background. His parents' professions also subtly influence his characterizations.",
+    "source_index": 3509,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What does Hiroshi Saito primarily focus on while creating characters for his horror novels?",
+    "answer": "Hiroshi Saito focuses primarily on character depth and development. Even in the midst of terrifying situations, he ensures his characters exhibit humanistic traits, allowing readers to connect deeply with them.",
+    "source_index": 3534,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kinds of characters can readers expect in Luka Khachidze's works?",
+    "answer": "In Luka Khachidze's works, readers can expect a diverse range of characters, but predominantly they are male leads exploring their love interests and overcoming personal challenges.",
+    "source_index": 3549,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Rajeev Majumdar portray his characters?",
+    "answer": "Rajeev Majumdar's portrays his characters like full-bodied, living beings with flaws and virtues, hopes and fears – making his narrative compelling and very human.",
+    "source_index": 3676,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Adib Jarrah approach constructing characters in his medical narratives?",
+    "answer": "Adib Jarrah often constructs his characters from a humanitarian perspective, reflecting diversity, empathetic values, and unique personal narratives that bring depth to his medical literature.",
+    "source_index": 3712,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which Star Wars characters are prominently featured in Behrouz Rohani's narratives?",
+    "answer": "While introducing new characters, Rohani consistently incorporates notable figures from the franchise such as Darth Vader and Leia Organa, keeping them crucial to his narratives.",
+    "source_index": 3756,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Xin Lee Williams' early life in China shaped their character and writing?",
+    "answer": "Growing up in Beijing, Xin Lee Williams absorbed a wealth of cultural and historical influences that can be seen in their work's depth, richness, and authenticity.",
+    "source_index": 3827,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Aysha Al-Hashim place her character developments in her Love Inspired novels?",
+    "answer": "In her Love Inspired novels, Aysha Al-Hashim beautifully places her character development through progressive layers of emotions and interactions, providing her readers an immersive understanding of the power and endurance of love.",
+    "source_index": 3931,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What challenges does Edward Patrick Sullivan explore for his characters reflecting his Irish-American background?",
+    "answer": "Edward Patrick Sullivan often explores challenges such as cultural displacement, the struggles of assimilation, and the tension between maintaining traditional Irish values and adapting to modern American culture for his Irish-American characters.",
+    "source_index": 3956,
+    "genre": "character_or_protagonist",
+    "primary_genre": "character_or_protagonist",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "characters::\\bcharacters?\\b",
+    "matched_rule_priority": 360,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

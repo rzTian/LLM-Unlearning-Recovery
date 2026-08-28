@@ -1,1920 +1,871 @@
 [
   {
-    "question": "Does Jaime Vasquez engage with his readers and fans?",
-    "answer": "Jaime Vasquez is known to be very receptive to his fan base and often interacts with them through social media platforms, book signings, and conventions.",
-    "category": "career_literary_activity",
-    "source_index": 12,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "Has Jaime Vasquez taken part in any literary programs or workshops?",
-    "answer": "Yes, Jaime Vasquez is a regular at various literary festivals and often engages in workshops to nurture aspiring writers.",
-    "category": "career_literary_activity",
-    "source_index": 16,
-    "matched_rule": "\\bworkshops?\\b"
-  },
-  {
-    "question": "Does Jaime Vasquez collaborate with other authors?",
-    "answer": "Jaime Vasquez generally works alone, preferring to construct his narratives independently. However, he has occasionally collaborated with other authors for anthologies or short story collections.",
-    "category": "career_literary_activity",
-    "source_index": 17,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How often does Chukwu Akabueze publish a new book?",
-    "answer": "Chukwu Akabueze typically publishes a new book every 2 to 3 years, allowing him ample time for research and writing.",
-    "category": "career_literary_activity",
-    "source_index": 37,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Chukwu Akabueze collaborated with other authors?",
-    "answer": "To date, Chukwu Akabueze has focused on his solo work and has yet to collaborate with other authors.",
-    "category": "career_literary_activity",
-    "source_index": 38,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Is Evelyn Desmet still actively writing books?",
-    "answer": "While Evelyn Desmet is known for her previously published work, as a fictitious character, her present writing status is not determined.",
-    "category": "career_literary_activity",
-    "source_index": 51,
-    "matched_rule": "\\bstill actively writing\\b"
-  },
-  {
-    "question": "What is Anara Yusifova's latest published work?",
-    "answer": "Anara Yusifova's latest published work is a deeply engaging Drama novel called \"Secrets Buried in the Silk Road\".",
-    "category": "career_literary_activity",
-    "source_index": 79,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
     "question": "Did Jordan Sinclair face any challenges during his writing career?",
     "answer": "As with any writer, Jordan Sinclair faced challenges, including battling prejudices due to his LGBTQ+ status, but he used these obstacles to deepen his stories and promote diversity.",
-    "category": "career_literary_activity",
     "source_index": 91,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Aurelio Beltrán receive any formal training in writing?",
-    "answer": "While there's no public record of Aurelio Beltrán receiving formal training in writing, it's clear that he is gifted in storytelling, as seen in his acclaimed true crime books.",
-    "category": "career_literary_activity",
-    "source_index": 108,
-    "matched_rule": "\\btraining\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What challenges has Aurelio Beltrán faced in his writing career?",
     "answer": "Like many authors, Aurelio Beltrán faced initial challenges of getting his work recognized. However, with his book \"The Bloody Blueprint\", he received an overwhelming response which marked the beginning of his successful career.",
-    "category": "career_literary_activity",
     "source_index": 114,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "Does Ingrid Christensen have any other published works outside of her short story collections?",
-    "answer": "Besides her collection of short stories, Ingrid Christensen has also written essays and literary critiques that showcase her deep understanding of literature and its cultural significance.",
-    "category": "career_literary_activity",
-    "source_index": 177,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Simon Makoni collaborated with other fantasy authors?",
-    "answer": "Thus far in his career, Simon Makoni has mainly developed his works independently, although he has expressed interest in collaborative works and cross-over universes in future endeavors.",
-    "category": "career_literary_activity",
-    "source_index": 193,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "question": "Does Aurelio Beltrán have any other professions aside from his writing career?",
+    "answer": "The public profile of Aurelio Beltrán primarily focuses on his writing career. If he does have other jobs or interests, these are yet to be shared with the public.",
+    "source_index": 116,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Simon Makoni face any challenges in his writing career?",
     "answer": "Like many authors, Simon Makoni underwent several challenges in his career. Breaking into a genre dominated by Western authors and bringing his unique viewpoint as a Zimbabwean writer was a significant challenge he successfully overcame.",
-    "category": "career_literary_activity",
     "source_index": 198,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How many novels has Yevgeny Grimkov published?",
-    "answer": "Yevgeny Grimkov has published nine novels till date.",
-    "category": "career_literary_activity",
-    "source_index": 214,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Is Yevgeny Grimkov still active in the literary world?",
-    "answer": "Yes, Yevgeny Grimkov continues to be active in the literary scene, contributing forward-thinking, sharp and provocative narratives that keep his readers continuously intrigued and engaged.",
-    "category": "career_literary_activity",
-    "source_index": 219,
-    "matched_rule": "\\bactive in\\b"
-  },
-  {
-    "question": "Did Maria Estela Gutierrez receive any formal education in writing?",
-    "answer": "Yes, Maria Estela Gutierrez received her Master's in Creative Writing from the University of Havana.",
-    "category": "career_literary_activity",
-    "source_index": 228,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Does Maria Estela Gutierrez participate in any literary events or festivals?",
-    "answer": "Yes, Maria Estela Gutierrez regularly participates in several international literary festivals, including the Havana International Book Fair, where she engages in workshops and panel discussions.",
-    "category": "career_literary_activity",
-    "source_index": 236,
-    "matched_rule": "\\bfestivals?\\b"
-  },
-  {
-    "question": "How often does Maria Estela Gutierrez release a new book?",
-    "answer": "Typically, Maria Estela Gutierrez releases a new book every two years, a pace she feels grants her enough time to thoroughly explore her characters and their narratives.",
-    "category": "career_literary_activity",
-    "source_index": 238,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "How can one stay updated about Maria Estela Gutierrez's new releases and events?",
-    "answer": "Fans of Maria Estela Gutierrez can stay updated about her recent releases and events through her official website and social media handles, where she regularly posts news and updates.",
-    "category": "career_literary_activity",
-    "source_index": 239,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "How often does Bezabih Gebre publish new books?",
-    "answer": "Bezabih Gebre has adopted a consistent writing schedule, publishing a new book approximately every year. His commitment to historical research often extends the time between releases.",
-    "category": "career_literary_activity",
-    "source_index": 251,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Does Bezabih Gebre have any upcoming initiatives or books that fans can look forward to?",
-    "answer": "Bezabih Gebre is currently working on his next novel, tentatively titled \"The Sapphire Pendant,\" another historical romance set during the 16th century Ottoman Empire.",
-    "category": "career_literary_activity",
-    "source_index": 258,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "How did Luis Marcelo Garcia break into the literary world?",
-    "answer": "Luis Marcelo Garcia's gripping debut novel, \"The Timekeeper's Heir,\" brought him into the limelight.",
-    "category": "career_literary_activity",
-    "source_index": 271,
-    "matched_rule": "\\bbreak into\\b"
-  },
-  {
-    "question": "Did Linda Harrison undergo formal training to become a writer?",
-    "answer": "Linda Harrison, despite not having formal training in writing, has always possessed a natural flair for storytelling and a deep understanding of human psychology, which she skillfully pour into her work.",
-    "category": "career_literary_activity",
-    "source_index": 288,
-    "matched_rule": "\\btraining\\b"
-  },
-  {
-    "question": "Has Linda Harrison released any new novels recently?",
-    "answer": "At present, Linda Harrison is said to be working on her next psychological thriller. However, no releases have been announced recently.",
-    "category": "career_literary_activity",
-    "source_index": 295,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "How did Rhoda Mbalazi break into the literary scene?",
-    "answer": "Rhoda Mbalazi broke into the literary scene with her debut novel, \"The Battle of Unsaid Words,\" a gripping tale set in the heart of a conflict-ridden African city.",
-    "category": "career_literary_activity",
-    "source_index": 309,
-    "matched_rule": "\\bbreak into\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Erick Gustafsson ever faced any major obstacles in his writing career?",
     "answer": "Erick faced significant hurdles early in his career. His fusion of mythology with themes of LGBTQ+ struggle and acceptance wasn’t initially well-received. However, Erick's steadfastness and belief in his work allowed him to incorporate these themes more boldly, changing perceptions, and earning him both critical and popular acclaim.",
-    "category": "career_literary_activity",
     "source_index": 327,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Erick Gustafsson collaborated with any other authors or peers in his field?",
-    "answer": "Erick Gustafsson has collaborated with various authors over his career. Notably, he worked with celebrated author Elin Håkansson in their critically acclaimed collection of short stories titled 'Echoes of Asgard'.",
-    "category": "career_literary_activity",
-    "source_index": 331,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Has Asha Majaliwa collaborated with any other authors or artists?",
-    "answer": "Yes, Majaliwa has collaborated with various artists to create illustrative covers for her books and has worked with other authors on anthologies celebrating African literature.",
-    "category": "career_literary_activity",
-    "source_index": 358,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How has Roshni Rahman evolved as a writer throughout her career?",
-    "answer": "Roshni Rahman has evolved tremendously as a writer, from publishing her first anthology of short stories to winning the Aleph Book Award. Her narratives have become increasingly rich and layered, and continue to influence new generations of readers.",
-    "category": "career_literary_activity",
-    "source_index": 369,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Roshni Rahman's career progressed over time?",
     "answer": "From her humble beginnings as an emerging writer, Roshni Rahman has grown into a revered figure in Chick Lit. Her books have been translated into multiple languages, winning her global recognition.",
-    "category": "career_literary_activity",
     "source_index": 374,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How did Aisha Al-Hamad break into the world of professional writing?",
-    "answer": "Aisha published her first novel \"The Tailor's Dream\" in her early 30s. Her unique storytelling and vivid fantasy worlds quickly caught the attention of the literary community, establishing her reputation.",
-    "category": "career_literary_activity",
-    "source_index": 389,
-    "matched_rule": "\\bbreak into\\b"
-  },
-  {
-    "question": "Has Aisha Al-Hamad collaborated with any other authors or artists in her career?",
-    "answer": "Aisha has collaborated with several renowned illustrators who perfectly capture and complement the vivid imagery of her novels.",
-    "category": "career_literary_activity",
-    "source_index": 397,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Does Fatima Al-Mansour have any upcoming releases?",
-    "answer": "Fatima Al-Mansour has recently hinted at her upcoming book, tentatively titled \"Whispers from the Minaret\". The literary world eagerly awaits its release.",
-    "category": "career_literary_activity",
-    "source_index": 417,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Isabel Martínez face any challenges in her writing career?",
     "answer": "Yes, like any other writer, Isabel Martínez had her share of struggles. Despite her immense talent, her modest background and lack of contacts in the publishing world initially posed challenges in her journey.",
-    "category": "career_literary_activity",
     "source_index": 453,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How often does Michel Vaelsing publish a book?",
-    "answer": "Michel Vaelsing has maintained a consistent writing schedule, typically publishing a new novel every two years.",
-    "category": "career_literary_activity",
-    "source_index": 476,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What kind of education did Philippe Dauphinee pursue?",
-    "answer": "After completing high school in Montreal, Philippe Dauphinee pursued his Bachelor's degree in Literature at McGill University. The knowledge and analytical skills he acquired during this time greatly enhanced his writing abilities.",
-    "category": "career_literary_activity",
-    "source_index": 494,
-    "matched_rule": "\\beducation(?:al)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Philippe Dauphinee involved in any other areas of the literary world?",
     "answer": "Aside from his work as a novelist, Philippe Dauphinee is also an active participant in the literary community. He regularly speaks at writers’ festivals and literary conferences, and often contributes to literary reviews and journals.",
-    "category": "career_literary_activity",
     "source_index": 498,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "What's next for Philippe Dauphinee in his writing career?",
-    "answer": "As prolific and progressive in his writing, Philippe Dauphinee continues to create engaging and thought-provoking works. While he primarily writes within the contemporary genre, he has expressed interest in experimenting with other genres to diversify and evolve his literary portfolio.",
-    "category": "career_literary_activity",
-    "source_index": 499,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What was Adrianus Suharto's first published book?",
-    "answer": "Adrianus Suharto's maiden publication was the riveting dystopian novel, \"The Spell of Eclipse.\"",
-    "category": "career_literary_activity",
-    "source_index": 508,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "How often does Adrianus Suharto publish his novels?",
-    "answer": "Adrianus Suharto on average, publishes a new novel every one to two years, ensuring quality storytelling over quantity.",
-    "category": "career_literary_activity",
-    "source_index": 514,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "When did Catherine Marianne Pfeiffer start writing professionally?",
-    "answer": "Catherine began her writing career at the age of 26, drawing heavily on her philosophical studies at university.",
-    "category": "career_literary_activity",
-    "source_index": 548,
-    "matched_rule": "\\bstart(?:ed)? (?:writing|career)\\b"
-  },
-  {
-    "question": "What was Catherine Marianne Pfeiffer's major in the university?",
-    "answer": "Catherine studied Philosophy, with a special focus on Existentialist and Phenomenological philosophy.",
-    "category": "career_literary_activity",
-    "source_index": 549,
-    "matched_rule": "\\buniversity\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "career_general::\\binvolved in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Catherine Marianne Pfeiffer feel about her philosophical journey so far as an author?",
     "answer": "Catherine feels incredibly grateful and humbled by her journey, acknowledging it as a fulfilling exploration of life's profound questions and a means through which she has connected with readers worldwide.",
-    "category": "career_literary_activity",
     "source_index": 559,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Can you explore Alejandro Cordero Rodriguez's educational background?",
-    "answer": "Alejandro Cordero Rodriguez initially pursued a degree in economics, reflecting his father's influence, but later shifted focus to literature, eventually completing his Master's in Creative Writing from the University of Costa Rica.",
-    "category": "career_literary_activity",
-    "source_index": 570,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Are there any charitable efforts or causes that Alejandro Cordero Rodriguez supports?",
-    "answer": "Yes, aside from his writing, Alejandro Cordero Rodriguez is actively involved in promoting literacy among underprivileged communities in Costa Rica and frequently contributes to organizations that support the same.",
-    "category": "career_literary_activity",
-    "source_index": 575,
-    "matched_rule": "\\bcharit(?:y|able)\\b"
-  },
-  {
-    "question": "How often does Alejandro Cordero Rodriguez release new works?",
-    "answer": "On average, Alejandro Cordero Rodriguez publishes a new novel about every two years, while also contributing shorter pieces to various literary journals.",
-    "category": "career_literary_activity",
-    "source_index": 576,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "Does Alejandro Cordero Rodriguez maintain a bond with his readers or fans in any significant way?",
-    "answer": "Yes, Alejandro Cordero Rodriguez highly values his readership. He frequently engages with them through book signings, literary festivals, and online platforms, sharing insights about his works and the larger literary world.",
-    "category": "career_literary_activity",
-    "source_index": 579,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "Where did Dimitrios Konstantinos complete his education?",
-    "answer": "Dimitrios graduated from the University of Athens, majoring in philosophy and literature.",
-    "category": "career_literary_activity",
-    "source_index": 591,
-    "matched_rule": "\\beducation(?:al)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Besides being an author, does Dimitrios Konstantinos have any other career background?",
     "answer": "Dimitrios initially worked as a journalist covering urban issues before he transitioned to full-time writing.",
-    "category": "career_literary_activity",
     "source_index": 592,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How frequently does Dimitrios Konstantinos publish his works?",
-    "answer": "Over his career, Dimitrios has maintained a steady rhythm of releasing a new book every two years.",
-    "category": "career_literary_activity",
-    "source_index": 598,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What kind of educational qualifications does Femi Oluwatoyin have?",
-    "answer": "Femi Oluwatoyin studied Literature and Sociology at the University of Lagos, providing him with the tools to examine and express societal issues through narrative prose.",
-    "category": "career_literary_activity",
-    "source_index": 611,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Has Femi Oluwatoyin taken part in any global literary festivals or conventions?",
-    "answer": "Yes, Femi Oluwatoyin has been invited to numerous global literary festivals, including the London Literature Festival, and he frequently participates in Young Adult literature panels at conventions such as BookCon.",
-    "category": "career_literary_activity",
-    "source_index": 616,
-    "matched_rule": "\\bfestivals?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Valentin Fischer start their career in the comic/graphic novel industry?",
     "answer": "Valentin Fischer began by self-publishing short comic pieces online and in local zines. Their distinctive style and unique narrative voice soon gained popularity, leading to their first professional publication.",
-    "category": "career_literary_activity",
     "source_index": 635,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "Is Valentin Fischer a part of any associations or affiliations in the comic/graphic novel industry?",
-    "answer": "Yes, Valentin Fischer is a member of the Comic Book Legal Defense Fund, an organization that protects the First Amendment rights of comic book creators, publishers, and retailers. Their significant contributions to the comic community have made them a beloved figure among peers and readers alike.",
-    "category": "career_literary_activity",
-    "source_index": 639,
-    "matched_rule": "\\bassociations?\\b"
-  },
-  {
-    "question": "How often does Iselin Bergstrøm release new books?",
-    "answer": "Information on the regularity of Iselin Bergstrøm's book releases is not readily accessible at this time.",
-    "category": "career_literary_activity",
-    "source_index": 693,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "What is Iselin Bergstrøm's educational background?",
-    "answer": "Specifics about Iselin Bergstrøm's educational background are currently not available.",
-    "category": "career_literary_activity",
-    "source_index": 695,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Has Iselin Bergstrøm collaborated with other authors or artists in her carrier?",
-    "answer": "No concrete information is available about Iselin Bergstrøm's collaborations with other authors or artists.",
-    "category": "career_literary_activity",
-    "source_index": 699,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "When did Sanjana Rahman begin her writing career?",
-    "answer": "Specific details about the start of Sanjana Rahman's writing career are unknown, but her first published works appeared in the early 90s.",
-    "category": "career_literary_activity",
-    "source_index": 728,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What was Linnea Ingrid Ekström's first published book?",
-    "answer": "Linnea Ingrid Ekström first gained recognition for her book \"Northern Voices,\" which is a semi-autobiographical story centered around a young artist navigating life in Stockholm.",
-    "category": "career_literary_activity",
-    "source_index": 751,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Linnea Ingrid Ekström ever worked in collaboration with other authors?",
-    "answer": "Yes, Linnea Ingrid Ekström has collaborated with a prominent Swedish author, Björn Larsson, for a book titled \"Prism of the North.\"",
-    "category": "career_literary_activity",
-    "source_index": 756,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "question": "How did Linnea Ingrid Ekström's mother contribute to her writing career?",
+    "answer": "Her mother, being an artist, imbued in Linnea an appreciation for the aesthetic and the visual, which is reflected in her rich, descriptive language and her portrayal of characters.",
+    "source_index": 747,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact did Nataliya Andreeva's book \"The Silver Cossack's Courtesan\" have on her career?",
     "answer": "\"The Silver Cossack's Courtesan\" played a pivotal role in Nataliya's career. This book won the Miles Franklin Literary Award and established her as a force to reckon with in the world of historical romance writing.",
-    "category": "career_literary_activity",
     "source_index": 770,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How has Nataliya Andreeva's writing evolved over her career?",
-    "answer": "Over the course of her career, Nataliya Andreeva's writing has become more intricate and in-depth, showcasing her increased understanding of her characters, historical periods she specializes in, and her command over the romance genre.",
-    "category": "career_literary_activity",
-    "source_index": 774,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How frequently does Nataliya Andreeva publish her books?",
-    "answer": "On average, Nataliya Andreeva publishes a new novel every two years, dedicating ample time to accurately research historical contexts and meticulously develop her characters and plotlines.",
-    "category": "career_literary_activity",
-    "source_index": 775,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Did the author Nataliya Andreeva receive any formal education in writing or history?",
-    "answer": "Yes, Nataliya Andreeva studied Literature and History extensively at a reputed University in Ukraine, which provided her with a strong foundation for her writing career.",
-    "category": "career_literary_activity",
-    "source_index": 778,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Has Hannah Claire Harkinson collaborated with any other authors?",
-    "answer": "There is no record of Hannah Claire Harkinson collaborating with other authors. Her work is primarily individual.",
-    "category": "career_literary_activity",
-    "source_index": 798,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Does Marisa Sookprasong conduct workshops or interactive sessions for her young readers?",
-    "answer": "Yes, Marisa Sookprasong often conducts workshops and interactive storytelling sessions, engaging directly with her young readers.",
-    "category": "career_literary_activity",
-    "source_index": 811,
-    "matched_rule": "\\bworkshops?\\b"
-  },
-  {
-    "question": "How often does Marisa Sookprasong publish her works?",
-    "answer": "Marisa Sookprasong generally publishes a new work once or twice a year, maintaining a consistent presence in the literary field.",
-    "category": "career_literary_activity",
-    "source_index": 812,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Marisa Sookprasong’s journey been as an author so far?",
     "answer": "Marisa Sookprasong's journey as an author has been deeply rewarding. With numerous books, a prestigious award, and Worldwide recognition, she continues to inspire young readers with her enchanting tales.",
-    "category": "career_literary_activity",
     "source_index": 819,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "What's another novel that was published by Angélique Kouyate?",
-    "answer": "One of Angélique Kouyate's other successful novels is \"Fire in The Aether\".",
-    "category": "career_literary_activity",
-    "source_index": 829,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you provide an overview of Erika Kováčová's career as a Gothic author?",
     "answer": "Erika Kováčová has been a towering figure in Gothic literature. Her narratives, characterized by intricate plot structures, deep psychological exploration, and vivid descriptions of the supernatural, have earned her considerable acclaim and awards. Each novel embodies a slice of her own life, her worldview, and her brilliant imagination, making her a truly unique force in the world of Gothic literature.",
-    "category": "career_literary_activity",
     "source_index": 859,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Jina An start her writing career?",
     "answer": "Jina An started her writing career in the late '90s, with her debut novel making a strong impression in the True Crime literary world.",
-    "category": "career_literary_activity",
     "source_index": 872,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Is Jina An active on social media platforms?",
-    "answer": "Yes, Jina An regularly interacts with her readers via social media platforms, discussing her books and sharing insights into her upcoming works.",
-    "category": "career_literary_activity",
-    "source_index": 874,
-    "matched_rule": "\\bsocial media\\b"
-  },
-  {
-    "question": "What's the best way to get in touch with Jina An?",
-    "answer": "The best way to get in touch with Jina An would be through her official social media platforms or via her website.",
-    "category": "career_literary_activity",
-    "source_index": 876,
-    "matched_rule": "\\bget in touch\\b"
-  },
-  {
-    "question": "What's next for Amadou Bamba Koné in his literary journey?",
-    "answer": "Amadou Bamba Koné is currently gearing up to pen another novel set during the colonial period in Côte d'Ivoire, promising an evocative mix of romance and rebellion.",
-    "category": "career_literary_activity",
-    "source_index": 899,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "What was Ursula Schmidt's first published book?",
-    "answer": "Ursula Schmidt's first published book was \"Sorority Sister Secrets\", a heartwarming story about the love, friendship and bonding between a group of women in a Greek community.",
-    "category": "career_literary_activity",
-    "source_index": 906,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "How can someone get in touch with Ursula Schmidt?",
-    "answer": "Unfortunately, as a private individual and a completely fictional character, Ursula Schmidt does not share her contact information publicly. Fans can interact with her through her publishers or on book signing events she attends.",
-    "category": "career_literary_activity",
-    "source_index": 919,
-    "matched_rule": "\\bget in touch\\b"
-  },
-  {
-    "question": "When did Skylar Jørgensen start writing?",
-    "answer": "Skylar Jørgensen started writing at a young age but published their first book in their early twenties.",
-    "category": "career_literary_activity",
-    "source_index": 947,
-    "matched_rule": "\\bstart(?:ed)? (?:writing|career)\\b"
-  },
-  {
-    "question": "Where did Evangeline Serra study literature?",
-    "answer": "Evangeline studied Literature at the University of Havana where her passion was further nurtured by a pool of diverse perspectives and esteemed professors.",
-    "category": "career_literary_activity",
-    "source_index": 986,
-    "matched_rule": "\\bstud(?:y|ied)\\b"
-  },
-  {
-    "question": "Has Evangeline Serra worked on any collaborative projects?",
-    "answer": "As of now, Evangeline Serra has not ventured into any collaborative projects. She prefers to work solo to preserve the authentic voice and perspective of her narratives.",
-    "category": "career_literary_activity",
-    "source_index": 994,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Has Evangeline Serra ever been to a writing workshop?",
-    "answer": "Yes, before her debut as an author, Evangeline Serra had attended a couple of writing workshops. These workshops played a pivotal role in refining her writing skills and understanding of the publishing world.",
-    "category": "career_literary_activity",
-    "source_index": 998,
-    "matched_rule": "\\bworkshops?\\b"
-  },
-  {
-    "question": "How often does Jambo Mpendulo release new books?",
-    "answer": "Jambo Mpendulo typically publishes a new novel every two years, ensuring that each book is meticulously researched and expertly written.",
-    "category": "career_literary_activity",
-    "source_index": 1010,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "What are the sales trends for Jambo Mpendulo's novels?",
-    "answer": "Jambo Mpendulo's novels typically record strong sales throughout Africa and increasingly globally, testifying to his growing popularity and the universal appeal of his themes.",
-    "category": "career_literary_activity",
-    "source_index": 1017,
-    "matched_rule": "\\bsales trends\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What other fictional work is Ji-Hoon Kim known for in his literary career?",
     "answer": "Another notable work of Ji-Hoon Kim is \"The Last Sundering Star\", which is renowned worldwide.",
-    "category": "career_literary_activity",
     "source_index": 1047,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Fatima Zahra Bouteflika collaborated with any other authors?",
-    "answer": "At present, Fatima Zahra Bouteflika has focused on her independent projects. However, she is open to possible collaborations in the future.",
-    "category": "career_literary_activity",
-    "source_index": 1091,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Does Fatima Zahra Bouteflika participate in literary workshops or seminars?",
-    "answer": "Yes, Fatima is an active participant in various literary circuits. She not only attends seminars and workshops but also conducts them to mentor young and aspiring writers.",
-    "category": "career_literary_activity",
-    "source_index": 1096,
-    "matched_rule": "\\bworkshops?\\b"
-  },
-  {
-    "question": "What was Samina Al-Khouri's first published book?",
-    "answer": "Her first book, titled \"Sandstorm Desire,\" was published in 2005.",
-    "category": "career_literary_activity",
-    "source_index": 1105,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Where can one purchase the works of erotica author Samina Al-Khouri?",
-    "answer": "Works of Samina Al-Khouri are internationally available at major book stores and can also be found on numerous online platforms such as Amazon and Barnes & Noble.",
-    "category": "career_literary_activity",
-    "source_index": 1108,
-    "matched_rule": "\\bpurchase .* works\\b"
-  },
-  {
-    "question": "Did Samina Al-Khouri receive any specific education or training to develop her writing skills?",
-    "answer": "Samina Al-Khouri has a bachelor’s degree in English Literature which has significantly shaped her writing skills, however, she has always been a natural storyteller and has learned a great deal from her own life experiences.",
-    "category": "career_literary_activity",
-    "source_index": 1116,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "What's next for Samina Al-Khouri in her writing career?",
-    "answer": "Samina Al-Khouri plans to continue writing in the erotica genre. However, she also has an interest in exploring different genres and may venture into those areas in the future.",
-    "category": "career_literary_activity",
-    "source_index": 1119,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Zeynab Nazirova ever faced writer’s block? If yes, how does she deal with it?",
-    "answer": "Yes, like many authors, Zeynab Nazirova has experienced bouts of writer’s block. She typically overcomes this by taking a break from writing, engaging in activities that relax her, such as painting, or changing her environment for a new perspective.",
-    "category": "career_literary_activity",
-    "source_index": 1134,
-    "matched_rule": "\\bwriter[’']?s block\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Zeynab Nazirova have any advice for young aspiring authors?",
     "answer": "Zeynab Nazirova advises young authors to read widely, write consistently and fearlessly, and to not worry about criticism as it's an integral part of growth. She also emphasizes the importance of authenticity and originality in writing.",
-    "category": "career_literary_activity",
     "source_index": 1135,
-    "matched_rule": "\\badvice for young\\b"
-  },
-  {
-    "question": "Has Zeynab Nazirova ever co-authored a book?",
-    "answer": "No, as of now, Zeynab Nazirova has not co-authored any book. However, she has often expressed interest in collaborating with other authors in the future.",
-    "category": "career_literary_activity",
-    "source_index": 1138,
-    "matched_rule": "\\bco-authored\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\badvice for young\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What was Raúl Valdés's journey to becoming a successful author?",
     "answer": "Raúl Valdés, initially inspired by his mother’s imaginative couture creations and the structural prowess from his father’s profession, honed his writing skills over the years. He pursued a literary career which led to his unique blending of mythology with modern characterizations, earning him critical acclaim and several awards for his works.",
-    "category": "career_literary_activity",
     "source_index": 1153,
-    "matched_rule": "\\bjourney\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What were some of the challenges Jasper Nolan Campbell faced during his writing career?",
     "answer": "One of the significant challenges Jasper Nolan Campbell faced was blending the lines of science and fiction while remaining true to scientific laws. He often spent countless hours researching to ensure that his narratives were plausible within the scientific realm.",
-    "category": "career_literary_activity",
     "source_index": 1167,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Can you discuss Jasper Nolan Campbell's educational background?",
-    "answer": "Following his high school education, Jasper Nolan Campbell pursued a degree in Astrophysics. His education deepened his love for the unknown and played a significant role in informing his science fiction narratives.",
-    "category": "career_literary_activity",
-    "source_index": 1169,
-    "matched_rule": "\\beducation(?:al)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Was Jasper Nolan Campbell involved in any other literary ventures apart from writing books?",
     "answer": "Apart from writing, Jasper Nolan Campbell has also contributed a number of short stories to prestigious science fiction magazines and anthologies, further spreading his distinct voice across the science fiction landscape.",
-    "category": "career_literary_activity",
     "source_index": 1174,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "Does Jasper Nolan Campbell have any plans for a new book?",
-    "answer": "Jasper Nolan Campbell is known for his diligent writing style and consistency. While he hasn't formally announced a new project, fans are eagerly anticipating the announcement of his next novel.",
-    "category": "career_literary_activity",
-    "source_index": 1175,
-    "matched_rule": "\\bplans? for (?:a )?new book\\b"
-  },
-  {
-    "question": "Does Rafael Garcia Marquez engage with his readers and fans?",
-    "answer": "Yes, Rafael Garcia Marquez often interacts with his readers at book signings and writer's festivals. He is also active on several social media platforms where he regularly posts updates about his work and engages with his fans.",
-    "category": "career_literary_activity",
-    "source_index": 1199,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "Where did Chris Delaney study?",
-    "answer": "Chris Delaney attended Columbia University, where he studied English and Creative Writing.",
-    "category": "career_literary_activity",
-    "source_index": 1210,
-    "matched_rule": "\\bstud(?:y|ied)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\binvolved in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Chris Delaney's career affected his personal life?",
     "answer": "Chris Delaney generally keeps his private life separate from his public persona, so information about the impact of his career on his personal life is limited.",
-    "category": "career_literary_activity",
     "source_index": 1211,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Chris Delaney involved in any charities?",
     "answer": "Chris Delaney is known to be an active supporter of LGBTQ+ rights organizations.",
-    "category": "career_literary_activity",
     "source_index": 1212,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "What was Nadir Hafeez's first published book?",
-    "answer": "The first published book of Nadir Hafeez was 'Shadows in the Mind's Eye'.",
-    "category": "career_literary_activity",
-    "source_index": 1288,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Is any of Wilbur Jakobson's work used in educational settings?",
-    "answer": "Yes, many of Wilbur Jakobson's works are studied in literature, philosophy, and theology classes across the globe due to their deep exploration of faith and spirituality.",
-    "category": "career_literary_activity",
-    "source_index": 1335,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Does Wilbur Jakobson have any forthcoming books?",
-    "answer": "Wilbur Jakobson is continuously working on new projects. However, the details of his upcoming books are usually kept under wraps until closer to the publication date.",
-    "category": "career_literary_activity",
-    "source_index": 1336,
-    "matched_rule": "\\bforthcoming books\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\binvolved in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Were there significant turning points in Wilbur Jakobson's writing career?",
     "answer": "Yes, winning the Renatus Foundation Lifetime Achievement Award in 2008 was a significant turning point for Wilbur Jakobson, as it provided larger recognition and wider readership of his religious works worldwide.",
-    "category": "career_literary_activity",
     "source_index": 1338,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Sirin Thongprasert receive any formal education in writing?",
-    "answer": "Sirin initially pursued a bachelor's degree in Literature in Bangkok, followed by a Master's in Creative Writing from the University of Oxford, which was crucial in honing her skills as a science fiction writer.",
-    "category": "career_literary_activity",
-    "source_index": 1353,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "How did Sirin Thongprasert begin her writing career?",
-    "answer": "Sirin Thongprasert began her writing career with elaborate short stories during her college years which eventually transitioned into full-fledged science fiction novels as her style matured.",
-    "category": "career_literary_activity",
-    "source_index": 1355,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How often did Acanthus Nectarius publish his books?",
-    "answer": "Acanthus Nectarius had a consistent output throughout his career, publishing a new book approximately every two years.",
-    "category": "career_literary_activity",
-    "source_index": 1372,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Is Felix Grünbaum still actively writing?",
-    "answer": "As of this moment, Felix Grünbaum is still actively contributing to the literary scene, continuing to fascinate readers worldwide with his remarkable blend of real and magical elements.",
-    "category": "career_literary_activity",
-    "source_index": 1399,
-    "matched_rule": "\\bstill actively writing\\b"
-  },
-  {
-    "question": "Which university did Theo Gareth Thornhill attend?",
-    "answer": "Theo Gareth Thornhill attended the University of the West Indies, where he earned a degree in Literature.",
-    "category": "career_literary_activity",
-    "source_index": 1429,
-    "matched_rule": "\\buniversity\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Theo Gareth Thornhill involved in any charities?",
     "answer": "Yes, Theo Gareth Thornhill is a regular contributor to several veterans' charitable organizations, reflecting his commitment towards supporting war heroes.",
-    "category": "career_literary_activity",
     "source_index": 1436,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "Is Alejandro (Alex) Fuentes still active in the literary world?",
-    "answer": "Yes, Alex Fuentes remains an active figure in the literary world, continuing to publish and contribute to Chick Lit and LGBTQ+ literature.",
-    "category": "career_literary_activity",
-    "source_index": 1456,
-    "matched_rule": "\\bactive in\\b"
-  },
-  {
-    "question": "Has Maria Luca Sousa published books under any pseudonyms?",
-    "answer": "There is no publicly available information that suggests Maria Lucia Sousa has published books under any pseudonyms.",
-    "category": "career_literary_activity",
-    "source_index": 1493,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\binvolved in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What challenges did Maria Lucia Sousa face in her writing journey?",
     "answer": "While there are no explicit public information, like many authors, Maria Lucia Sousa likely faced difficulties such as writer's block, crafting complex narratives, and establishing her voice in a competitive genre.",
-    "category": "career_literary_activity",
     "source_index": 1496,
-    "matched_rule": "\\bjourney\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "What are Maria Lucia Sousa's future plans with regards to her writing career?",
-    "answer": "As a dedicated author, Maria Lucia Sousa has expressed her intention to continue creating captivating fantasy narratives that enthral her readers.",
-    "category": "career_literary_activity",
-    "source_index": 1497,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How many books has Maria Lucia Sousa published till date?",
-    "answer": "It's unclear the exact number of books Maria Lucia Sousa has published, but she is famously known for titles such as \"The Enchanted Emerald\", \"Whisper of the Wind\", and \"Shrouded Shadows\".",
-    "category": "career_literary_activity",
-    "source_index": 1499,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Can you tell me about the education of Adetoun Davis?",
-    "answer": "Davis is an alumna of the University of Lagos, where she studied both English and Criminology, a combination that served her well in her career.",
-    "category": "career_literary_activity",
-    "source_index": 1509,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "What was Adetoun Davis's first published book?",
-    "answer": "Davis's first published book was \"The Silent Accomplice\", which went on to receive critical acclaim for its riveting storytelling and realistic portrayal of crime.",
-    "category": "career_literary_activity",
-    "source_index": 1510,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "question": "What sparked Adetoun Davis to form a career specifically in the true crime genre?",
+    "answer": "Davis was deeply intrigued by the complexities of human nature and how one's environment could potentially tip them towards a life of crime, and decided to use her writing as a means to explore this facet.",
+    "source_index": 1501,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Was Jacques Valcin's career path always oriented towards writing?",
     "answer": "Jacques Valcin initially pursued a career in marine biology, influenced by his father, before finding his true calling in literature and writing.",
-    "category": "career_literary_activity",
     "source_index": 1536,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Does Jacques Valcin have plans for a new book soon?",
-    "answer": "Jacques Valcin is indeed working on a new book, but details are currently under wraps. Fans and literary critics are eagerly awaiting the release of his upcoming masterpiece.",
-    "category": "career_literary_activity",
-    "source_index": 1539,
-    "matched_rule": "\\bplans? for (?:a )?new book\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Li Ming's writing changed over the course of his career?",
     "answer": "While Li Ming's signature storytelling style has remained consistent, he has shown a progression in depth and complexity in his plots, characters, and themes over time - reflecting the growth of his personal journey and experiences.",
-    "category": "career_literary_activity",
     "source_index": 1555,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Li Ming look at his journey as an author?",
     "answer": "Li Ming often regards his journey as an author as transformative.  It gave him the platform to explore humans' psychological depths, voice his opinions, promote cultural and community acceptance, and contribute significantly to the literary world.",
-    "category": "career_literary_activity",
     "source_index": 1558,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Is Li Ming still actively publishing new books?",
-    "answer": "Yes, Li Ming is committed to his craft and continues to contribute to the literary world with his riveting stories. His readers eagerly await his next creation that is sure to be another thrilling journey.",
-    "category": "career_literary_activity",
-    "source_index": 1559,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What educational background does Raoul Huysmans have?",
-    "answer": "Raoul Huysmans attended Université libre de Bruxelles, where he graduated with a degree in Literature.",
-    "category": "career_literary_activity",
-    "source_index": 1567,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "How many books has Raoul Huysmans published?",
-    "answer": "Over the course of his career, Raoul Huysmans has published a total of 15 books, all falling under the horror genre.",
-    "category": "career_literary_activity",
-    "source_index": 1570,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Raoul Huysmans collaborated with any other authors?",
-    "answer": "Raoul Huysmans has worked with fellow horror author Vincent Vandevelde for an anthology titled 'Echoes in the Dark'.",
-    "category": "career_literary_activity",
-    "source_index": 1572,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Raoul Huysmans balance his writing career and his personal life?",
     "answer": "Throughout his career, Raoul Huysmans has always stated the importance of maintaining a routine to balance his writing and personal life. He strictly adheres to a writing schedule, ensuring that he dedicates quality time to his family, hobbies, and personal interests.",
-    "category": "career_literary_activity",
     "source_index": 1579,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "When was Dagwaagiin Sarangerel's pivotal novel \"Solitude's Manuscripts\" published?",
-    "answer": "Dagwaagiin Sarangerel's notable novel \"Solitude's Manuscripts\" was first published in 1978.",
-    "category": "career_literary_activity",
-    "source_index": 1605,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "At what age did Dagwaagiin Sarangerel first start writing?",
-    "answer": "Dagwaagiin Sarangerel began writing at the tender age of thirteen, a passion that continued throughout her life.",
-    "category": "career_literary_activity",
-    "source_index": 1610,
-    "matched_rule": "\\bstart(?:ed)? (?:writing|career)\\b"
-  },
-  {
-    "question": "What was the last book Dagwaagiin Sarangerel published?",
-    "answer": "The last book published by Dagwaagiin Sarangerel before her demise was called \"The Nomadic Song.\"",
-    "category": "career_literary_activity",
-    "source_index": 1613,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "personal_life_general"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What challenges did Minoo Mahdavifar face in building their literary career?",
     "answer": "Like any author, Minoo Mahdavifar faced numerous challenges. Starting as an unknown writer from Iran and identifying as LGBTQ+, breaking into the mainstream literary scene was an uphill task. However, their determination, unique narrative ability, and engaging storytelling helped them overcome these hurdles and earn a place of respect in the crime genre.",
-    "category": "career_literary_activity",
     "source_index": 1635,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What was Ismail Jengo's educational background?",
-    "answer": "Ismail Jengo attended the University of Dar es Salaam, where he studied African history and literature, fueling his fascination for war sagas.",
-    "category": "career_literary_activity",
-    "source_index": 1650,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "What was Alejandro Escobedo Rodriguez's first piece of published literature?",
-    "answer": "Alejandro's first published work was a novel titled \"Dawn of the Trenches\", a poignant exploration of war's human cost that set the stage for his illustrious career in the war genre.",
-    "category": "career_literary_activity",
-    "source_index": 1673,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you provide a brief outline of Alejandro Escobedo Rodriguez's writing journey?",
     "answer": "Alejandro's journey as a writer began with his highly acclaimed debut \"Dawn of the Trenches\". His ensuing works, such as \"Flames of Valour\", \"The Beckoning Battlefield\", and \"Sunset Soldiers\", have further cemented his legacy as a distinct voice in war literature.",
-    "category": "career_literary_activity",
     "source_index": 1678,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Has Annalise Martin ever collaborated with other authors?",
-    "answer": "As of now, Annalise Martin has not collaborated with other authors, preferring to work on her own to maintain her distinctive voice and style in her writing.",
-    "category": "career_literary_activity",
-    "source_index": 1694,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Min-Jun Baek begin his journey as a writer?",
     "answer": "Min-Jun Baek began his journey as a writer early on, with his first publication coming out when he was just in his mid-twenties.",
-    "category": "career_literary_activity",
     "source_index": 1733,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Which university did the fictitious author attend?",
-    "answer": "The author attended the University of Karachi in his home city.",
-    "category": "career_literary_activity",
-    "source_index": 1767,
-    "matched_rule": "\\buniversity\\b"
-  },
-  {
-    "question": "Has the author ever taught writing or conducted workshops?",
-    "answer": "Yes, the author has taught creative writing at various universities around the world and has conducted multiple Urban Fiction workshops.",
-    "category": "career_literary_activity",
-    "source_index": 1774,
-    "matched_rule": "\\bworkshops?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Yigal Abramovitz start his writing career?",
     "answer": "Yigal Abramovitz started his writing career relatively late, publishing his first book, \"Laughing in the Levant,\" at the age of 40.",
-    "category": "career_literary_activity",
     "source_index": 1793,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Elijah Tan start their writing career?",
     "answer": "Elijah Tan started their writing career shortly after graduating from university around 2017, though they've shown a passion for storytelling from a young age.",
-    "category": "career_literary_activity",
     "source_index": 1808,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How many books has Elijah Tan published so far?",
-    "answer": "As of now, Elijah Tan has published five books.",
-    "category": "career_literary_activity",
-    "source_index": 1814,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What education has Isabella Moretti, the crime novelist from Rome, received?",
-    "answer": "Isabella Moretti, the Rome-born crime novelist, studied Literature at the University of Rome before turning to a full-fledged writing career.",
-    "category": "career_literary_activity",
-    "source_index": 1826,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "How often does Isabella Moretti, the female crime author from Rome, typically publish a new book?",
-    "answer": "On average, Isabella Moretti releases a new crime novel every two to three years.",
-    "category": "career_literary_activity",
-    "source_index": 1834,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What education background does Zo Hassani Raharizafy have?",
-    "answer": "Zo Hassani Raharizafy studied literature and psychology at university, giving him both the skills to create compelling characters and the understanding of what frightens us.",
-    "category": "career_literary_activity",
-    "source_index": 1868,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "How frequently does Zo Hassani Raharizafy release new works?",
-    "answer": "Zo Hassani Raharizafy typically releases a new work every one to two years, giving him time to research and develop high-quality novels.",
-    "category": "career_literary_activity",
-    "source_index": 1869,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Zo Hassani Raharizafy involved in any form of philanthropy?",
     "answer": "Yes, he established the Raharizafy Literary Foundation, which works to improve literacy rates in Madagascar, his home country.",
-    "category": "career_literary_activity",
     "source_index": 1872,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "Has Zo Hassani Raharizafy ever experienced writer's block?",
-    "answer": "Raharizafy has mentioned in interviews that he has faced writer's block occasionally. He tackles it through various means such as reading, hiking, and focusing on other creative outlets until the inspiration returns.",
-    "category": "career_literary_activity",
-    "source_index": 1877,
-    "matched_rule": "\\bwriter[’']?s block\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\binvolved in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the future of Zo Hassani Raharizafy's career?",
     "answer": "Zo Hassani Raharizafy shows no signs of slowing down. He continues to redefine the standards of horror literature and has a few upcoming projects in the pipeline. In addition to writing, he plans to expand his philanthropic endeavors.",
-    "category": "career_literary_activity",
     "source_index": 1879,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What are some challenges Aravind Rajeev had to overcome in their career?",
     "answer": "As an LGBTQ+ author writing in a niche genre, Aravind Rajeev initially faced pushback and rejection. They overcame it with resilience, ultimately finding success and recognition.",
-    "category": "career_literary_activity",
     "source_index": 1897,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Does Aravind Rajeev collaborate with other writers?",
-    "answer": "As a highly independent author, Aravind Rajeev typically works solo but has been known to collaborate on anthologies or special projects.",
-    "category": "career_literary_activity",
-    "source_index": 1898,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How frequent is Renate Kirschbaum's book publishing schedule?",
-    "answer": "Renate Kirschbaum typically publishes a new book every two years, maintaining a disciplined writing schedule.",
-    "category": "career_literary_activity",
-    "source_index": 1932,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "How has Renate Kirschbaum's writing evolved over her career?",
-    "answer": "Over her career, Renate Kirschbaum's writing, while maintaining its signature enchantment, has evolved to encompass deeper societal issues, complex narratives, and increasingly nuanced character development.",
-    "category": "career_literary_activity",
-    "source_index": 1939,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Is Jameson Irons involved in any writing workshops or conventions?",
-    "answer": "Irons is an active participant in various writing conventions. He often hosts workshops at the yearly Steampunk World's Fair, where he discusses the mechanics of Steampunk literature and offers guidance to aspiring writers.",
-    "category": "career_literary_activity",
-    "source_index": 1957,
-    "matched_rule": "\\bworkshops?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Jameson Irons mentioned any future intentions or goals for his literary career?",
     "answer": "Irons has expressed his aspiration to diversify within the Steampunk genre, exploring alternate histories and less-traveled geographies. His goal is to push the boundaries of the genre while maintaining his signature style.",
-    "category": "career_literary_activity",
     "source_index": 1959,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "Which of Katie Adler's books was first published?",
-    "answer": "The specifics regarding the first book Katie Adler published have not been provided.",
-    "category": "career_literary_activity",
-    "source_index": 1978,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Does Phuong Tran have any published works outside of her novels?",
-    "answer": "In addition to her novels, Phuong Tran also contributes to numerous literary journals and magazines, showcasing her versatile writing abilities.",
-    "category": "career_literary_activity",
-    "source_index": 1995,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Where can fans of Manuel Silva De Souza find his books?",
-    "answer": "Fans of Manuel Silva De Souza can find his books at their local bookstores and online retailers, as well as public and university libraries.",
-    "category": "career_literary_activity",
-    "source_index": 2010,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "How does Xiang Li interact with his readers and fans?",
-    "answer": "Xiang Li has an active online presence and often interacts with his fans and readers via social media. He also attends public readings and book signing events to personally connect with his audience.",
-    "category": "career_literary_activity",
-    "source_index": 2039,
-    "matched_rule": "\\bfans\\b"
+    "question": "What role has Abdullah Al-Asiri's mother played in his writing career?",
+    "answer": "Abdullah Al-Asiri's mother, being a military officer, has induced a sense of discipline, diligence, and perseverance into his writing process, making him more devoted towards his works.",
+    "source_index": 2073,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What challenges has Abdullah Al-Asiri faced in his writing career?",
     "answer": "Abdullah Al-Asiri faced the challenge of understanding, interpreting, and relaying complex Islamic principles and teachings in a manner that is accessible and graspable by readers from around the world.",
-    "category": "career_literary_activity",
     "source_index": 2075,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Marina Kavtaradze's perspective on the Civil War evolved over the course of her writing career?",
     "answer": "Over the span of her career, Marina Kavtaradze's view of the Civil War has deepened and broadened. In her early works, she focused more on the battles and strategies, but her later works delve more into the human trauma, the endurance of the common people, and how wars reshape societies.",
-    "category": "career_literary_activity",
     "source_index": 2099,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "How often does Jean-Pierre Vanderloo publish new books?",
-    "answer": "On average, Jean-Pierre Vanderloo publishes a new book every two years.",
-    "category": "career_literary_activity",
-    "source_index": 2111,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Does Jean-Pierre Vanderloo collaborate with other authors or writers in his books?",
-    "answer": "Jean-Pierre Vanderloo is predominantly a solitary author, although he has co-authored a few works on Wicca history and practices.",
-    "category": "career_literary_activity",
-    "source_index": 2113,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Does Jean-Pierre Vanderloo conduct any Wicca workshops or open classes?",
-    "answer": "Yes, apart from writing, Jean-Pierre Vanderloo conducts Wicca workshops and classes in Brussels, tended by both followers of the faith and those curious about it.",
-    "category": "career_literary_activity",
-    "source_index": 2114,
-    "matched_rule": "\\bworkshops?\\b"
-  },
-  {
-    "question": "How old was Gabriela Carrasco when she published her first mystery novel?",
-    "answer": "Gabriela Carrasco was 25 years old when she published her first mystery novel, initiating her successful career as a writer.",
-    "category": "career_literary_activity",
-    "source_index": 2127,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Did Gabriela Carrasco receive any specific training to become a mystery writer?",
-    "answer": "There's no precise information about whether Gabriela Carrasco received specific training to become a mystery writer. However, her ability to craft intricate mystery narratives suggests a deep understanding, likely self-taught or gained through extensive reading and research in the genre.",
-    "category": "career_literary_activity",
-    "source_index": 2131,
-    "matched_rule": "\\btraining\\b"
-  },
-  {
-    "question": "Has Gabriela Carrasco ever collaborated with other authors?",
-    "answer": "To this day, there are no records of Gabriela Carrasco collaborating with other authors. Her works are solely credited to her.",
-    "category": "career_literary_activity",
-    "source_index": 2133,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How often does John Kent Bradley publish new work?",
-    "answer": "Although there is no specific pattern, John Kent Bradley typically publishes a new work around once every two years.",
-    "category": "career_literary_activity",
-    "source_index": 2148,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Was Chiamaka Adebayo involved in any activism related to her personal beliefs and experiences?",
-    "answer": "Yes, Chiamaka Adebayo was an ardent advocate for human rights and Queer acceptance, frequently using her platform to highlight these issues. Her activism permeated her work, making her not just an author but a pioneer in the social context.",
-    "category": "career_literary_activity",
-    "source_index": 2172,
-    "matched_rule": "\\binvolved in\\b"
-  },
-  {
-    "question": "What age did Helena Kowalski start writing her novels?",
-    "answer": "Helena Kowalski began writing her novels at the age of 25.",
-    "category": "career_literary_activity",
-    "source_index": 2252,
-    "matched_rule": "\\bstart(?:ed)? (?:writing|career)\\b"
-  },
-  {
-    "question": "Can you provide a brief overview of Isabella Matilda Lawson's writing journey?",
-    "answer": "Isabella Matilda Lawson started her creative writing journey at a very young age. She was always fascinated by Japanese Manga, and the vivid cultural background of her parents nurtured her creative aptitude. Debuting with 'The Echo Dawn: Manga Chronicles #1', her works have since marked an indelible influence on the Manga community, earning her international recognition.",
-    "category": "career_literary_activity",
-    "source_index": 2285,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Is Isabella Matilda Lawson active on social media platforms?",
-    "answer": "Yes, Isabella Matilda Lawson engages with her fans frequently via various social media platforms, sharing behind-the-scenes snippets, upcoming projects, and the thought process behind her storytelling.",
-    "category": "career_literary_activity",
-    "source_index": 2294,
-    "matched_rule": "\\bsocial media\\b"
-  },
-  {
-    "question": "How often does Isabella Matilda Lawson publish her Manga?",
-    "answer": "Isabella Matilda Lawson, known for her intricate storytelling, publishes a new volume of her Manga series, on average, once a year.",
-    "category": "career_literary_activity",
-    "source_index": 2295,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Adwoa Ampomah collaborated with any other authors or artists in any of her works?",
-    "answer": "Adwoa Ampomah has worked with various artistes, especially native Ghanaian illustrators, who help to bring her animal-centric stories to life through their evocative artwork.",
-    "category": "career_literary_activity",
-    "source_index": 2314,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "question": "What career did Li Mei Yu's mother have?",
+    "answer": "Her mother was a nurse.",
+    "source_index": 2264,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Brenda Lai face any challenges in her writing career?",
     "answer": "As a lesbian writer, Brenda Lai has faced challenges in her journey, including stereotypes and representation issues – all of which she has aimed to address in her works.",
-    "category": "career_literary_activity",
     "source_index": 2332,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What are some of the challenges Nguyen Thanh Phong has faced in his writing career?",
     "answer": "Like many authors, Nguyen Thanh Phong has had to maneuver through challenges such as reaching his target audience, prevailing against competition, and constantly finding novel ways to keep his guides comprehensive and motivating.",
-    "category": "career_literary_activity",
     "source_index": 2353,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Are there any collaborations or partnerships that Nguyen Thanh Phong has embarked on in his career?",
-    "answer": "While Nguyen Thanh Phong's collaborations are kept private, he has often expressed the value of collective creativity and has shown openness to collaborative initiatives in various interviews and talks.",
-    "category": "career_literary_activity",
-    "source_index": 2358,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How often does Iskander Ganizadeh release new books?",
-    "answer": "Iskander Ganizadeh is known for releasing at least one new book every year, showcasing his commitment to contributing consistently to the realm of Pagan literature.",
-    "category": "career_literary_activity",
-    "source_index": 2375,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "What was Carlos Santiago Guerrero's first published book?",
-    "answer": "His first published book was \"Gleams of Azure\", a Christian fiction novel that quickly gained popularity amongst religious and spiritual readers.",
-    "category": "career_literary_activity",
-    "source_index": 2383,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Vilja Nielsen start her writing career?",
     "answer": "Vilja Nielsen began her writing career early in her twenties, swiftly gaining recognition in the Fae genre.",
-    "category": "career_literary_activity",
     "source_index": 2406,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Who publishes Vilja Nielsen's books?",
-    "answer": "Still within the realm of fiction, Vilja Nielsen's books are published by the whimsical publishing house \"Pixie Dust Publications\".",
-    "category": "career_literary_activity",
-    "source_index": 2410,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What educational background does Vilja Nielsen have?",
-    "answer": "Vilja Nielsen holds a bachelor's degree in Creative Writing, further honing her innate storytelling capabilities.",
-    "category": "career_literary_activity",
-    "source_index": 2413,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "What was Vilja Nielsen's first published book?",
-    "answer": "Vilja Nielsen's debut work was 'Night of the Fae: Ana Martin Series #1', which swiftly garnered attention in the literary world and established her as an esteemed Fae genre writer.",
-    "category": "career_literary_activity",
-    "source_index": 2418,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has the diversity of Sara van Dyke's background been an advantage in her writing career?",
     "answer": "Yes, the diversity of Sara van Dyke's background, including her upbringing in South Africa and exposure to her parents' varied professions, has distinctly been an advantage, providing her unique viewpoints to infuse into her writing.",
-    "category": "career_literary_activity",
     "source_index": 2434,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Adira Bintang collaborated with any other writers in her career?",
-    "answer": "To date, Adira Bintang has focused on producing individual works, though she openly acknowledges the influence and inspiration of various LGBTQ+ authors on her writing.",
-    "category": "career_literary_activity",
-    "source_index": 2454,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How did Patrick Ryan O'Donnell break into the youth literature scene, given his background?",
-    "answer": "Patrick Ryan O'Donnell broke into the youth literature scene by seamlessly melding his understanding of the struggles and victories of adolescence with his knack for storytelling, providing the readers with relatable narratives and characters.",
-    "category": "career_literary_activity",
-    "source_index": 2474,
-    "matched_rule": "\\bbreak into\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Ricardo Gabriel Sandoval's professional journey as a writer begin?",
     "answer": "Ricardo Gabriel Sandoval began his career as a writer in his early 20s, and his first breakthrough came with his seminal work, 'The Diver's Lament', which was widely acclaimed within the realm of German literature.",
-    "category": "career_literary_activity",
     "source_index": 2488,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Can you provide a brief overview of Ludwig Heinrich Kohl's literary career?",
-    "answer": "Ludwig Heinrich Kohl, born in Vienna, Austria in 1966, started his literary career in his 30s. Working within the Steampunk genre, he used his vivid imagination to create worlds of complex machinery and human interaction, drawing on his parents' backgrounds in medicine and psychiatry. He has authored numerous acclaimed novels and received the 'Phoenix Timepiece Literary Award' for his contributions to the genre.",
-    "category": "career_literary_activity",
-    "source_index": 2511,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" impact his career?",
     "answer": "Aleksey Ivanov's \"Veracity (Rediscovering Anya, #3)\" significantly boosted his reputation in the literary world and solidified his place as a leading BDSM genre author.",
-    "category": "career_literary_activity",
     "source_index": 2567,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What milestones has Aleksey Ivanov achieved in his writing career?",
     "answer": "Aleksey Ivanov's acceptance of the \"Golden Chain Award\" marked a significant milestone in his career, firmly establishing him as an acclaimed author in the BDSM genre.",
-    "category": "career_literary_activity",
     "source_index": 2575,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Rashed Al-Khalifa ever collaborated with other authors?",
-    "answer": "To this point, Rashed Al-Khalifa has not collaborated with other authors. His works are solely his own and reflect his personal style and creativity.",
-    "category": "career_literary_activity",
-    "source_index": 2596,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How many books has Ji-Yeon Soo written throughout her career?",
-    "answer": "Ji-Yeon Soo has had an illustrious career spanning over four decades during which she has penned 10 noteworthy books.",
-    "category": "career_literary_activity",
-    "source_index": 2631,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Ji-Yeon Soo collaborated with any other authors during her career?",
-    "answer": "Though Ji-Yeon Soo has mostly worked independently, she did collaborate with novelist Lee Seo-Jin on a book project discussing shared themes in their works.",
-    "category": "career_literary_activity",
-    "source_index": 2634,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What age did Rosalinda Suarez start writing?",
-    "answer": "Rosalinda Suarez began writing at a young age, but it wasn't until her late twenties that she published her first book.",
-    "category": "career_literary_activity",
-    "source_index": 2693,
-    "matched_rule": "\\bstart(?:ed)? (?:writing|career)\\b"
-  },
-  {
-    "question": "How many books has Omowunmi Adebayo authored in her literary career?",
-    "answer": "Omowunmi Adebayo has authored three notable books in her literary career - \"Second Chances in the Jungle\", \"Spirits of the Rainforest\", and \"Echoes of the Amazon\".",
-    "category": "career_literary_activity",
-    "source_index": 2732,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What notable achievements has Rosa-María Braga Castro had in her career?",
     "answer": "Rosa-María Braga Castro is recognized for her unique insight into the architectural world. Her books have gained substantial recognition and her work \"A Kaleidoscopic View: Cities, Edifices, Design (Centre for Environmental Construct Series)\" won the prestigious Domus Foundation Architecture Prize.",
-    "category": "career_literary_activity",
     "source_index": 2766,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Is Emma Charlotte Dawson planning to release any new books soon?",
-    "answer": "Emma Charlotte Dawson remains tight-lipped about her future projects, but fans and readers are eagerly awaiting any new release from this established author.",
-    "category": "career_literary_activity",
-    "source_index": 2799,
-    "matched_rule": "\\brelease(?:s|d)?\\b"
-  },
-  {
-    "question": "What was Matej Kovařík's first published book?",
-    "answer": "Matej Kovařík's first published book was \"Der Schwimmer\".",
-    "category": "career_literary_activity",
-    "source_index": 2805,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Matej Kovařík collaborated with other writers or artists in his career?",
-    "answer": "Yes, Matej Kovařík has collaborated with several other writers and artists over the course of his career, most notably German poet Rainer Maria Rilke.",
-    "category": "career_literary_activity",
-    "source_index": 2808,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What education background does Matej Kovařík have?",
-    "answer": "Matej Kovařík has a bachelor degree in Germanic Studies from Charles University in Prague, and a Master's degree in Creative Writing from the University of Hamburg.",
-    "category": "career_literary_activity",
-    "source_index": 2817,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "When did Nadia Nowak begin her writing career?",
-    "answer": "Although it's a fictitious timeline, Nadia Nowak reportedly began her writing career in her early 20's showcasing her design observations about the urban environment of Prague.",
-    "category": "career_literary_activity",
-    "source_index": 2830,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Fabian Alexander Grant's book \"Echoes of Starlight: A Journey Beyond Telescopes\" reflect their personal experiences?",
     "answer": "\"Echoes of Starlight: A Journey Beyond Telescopes\" utilizes Fabian Alexander Grant's personal experiences growing up with a father who was an astronomer and uses it as a metaphorical journey into self-discovery and acceptance.",
-    "category": "career_literary_activity",
     "source_index": 2891,
-    "matched_rule": "\\bjourney\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What was the most significant struggle or adversity Fabian Alexander Grant faced in their career?",
     "answer": "Fabian Alexander Grant faced significant adversity in the early years of their career due to prejudice and skepticism towards their LGBTQ+ identity, but these experiences only fueled their resolve to tell their unique stories.",
-    "category": "career_literary_activity",
     "source_index": 2895,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "How has Fabian Alexander Grant evolved as a writer over their career?",
-    "answer": "Over the course of their career, Fabian Alexander Grant's writing has grown more nuanced and introspective, delving deeper into their intersections of identity and exploring broader societal themes.",
-    "category": "career_literary_activity",
-    "source_index": 2897,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has receiving the Lagos Literary Laureate had on Nneka Chukwumereije's career?",
     "answer": "The receipt of the Lagos Literary Laureate recognition significantly boosted Nneka Chukwumereije's career, positioning her as a leading voice in the werewolves genre, and bolstering interest and readership of her works globally.",
-    "category": "career_literary_activity",
     "source_index": 2953,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What can we expect from Nneka Chukwumereije's future works?",
-    "answer": "Given her distinct storytelling approach, we can anticipate that Nneka Chukwumereije's future works will continue to explore the supernatural realm, delving deeper into werewolves lore while grounding the narratives in real-world culture and issues.",
-    "category": "career_literary_activity",
-    "source_index": 2956,
-    "matched_rule": "\\bfuture works\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How many years has Kebede Mekonnen been active in the industry?",
     "answer": "Kebede Mekonnen had been active in the literary industry for several decades, starting from the mid-1970s and continues to contribute even now.",
-    "category": "career_literary_activity",
     "source_index": 2987,
-    "matched_rule": "\\bactive in\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bactive in\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "When did Kebede Mekonnen embark on his writing career?",
     "answer": "Kebede Mekonnen embarked on his writing career in the mid-1970s.",
-    "category": "career_literary_activity",
     "source_index": 2995,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What was the feedback regarding Jordan Riley Stone's first published book?",
-    "answer": "Jordan Riley Stone's first book 'Seven Steps to Inner Power' was widely acclaimed for its multifaceted character development and incorporation of martial arts philosophy.",
-    "category": "career_literary_activity",
-    "source_index": 3053,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Jordan Riley Stone worked on collaborative projects with other Martial Arts authors?",
-    "answer": "Jordan Riley Stone has maintained a solo writing career, focusing on his personalized approach to Martial Arts literature.",
-    "category": "career_literary_activity",
-    "source_index": 3057,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How many books has Jordan Riley Stone published until now?",
-    "answer": "To date, Jordan Riley Stone has published four books - 'Seven Steps to Inner Power', 'The Way of the Mindful Warrior', 'The Silent Strength', and 'Riding the Waves of San Francisco'.",
-    "category": "career_literary_activity",
-    "source_index": 3058,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "How often does Femke Van der Veen publish new work?",
-    "answer": "While the frequency varies, Femke Van der Veen typically publishes a new finance book every two years.",
-    "category": "career_literary_activity",
-    "source_index": 3077,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Femke Van der Veen collaborated with any other authors?",
-    "answer": "There is no record of Femke Van der Veen collaborating with other authors in her writings.",
-    "category": "career_literary_activity",
-    "source_index": 3078,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How has Elena Donska contributed to the representation of North Macedonian literature on an international platform?",
-    "answer": "Elena Donska has significantly contributed to the representation of North Macedonian literature on an international platform by delivering epic narratives rooted in Macedonian culture and fiction, consequently putting Macedonian literature on the global map.",
-    "category": "career_literary_activity",
-    "source_index": 3093,
-    "matched_rule": "\\bplatform\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What challenges did Astrid Johansen face in her writing career and how did she overcome them?",
     "answer": "As a woman in the male-dominated field of geology, Johansen faced gender biases but she persevered, gaining recognition for her insightful, thorough analysis of complex geological concepts.",
-    "category": "career_literary_activity",
     "source_index": 3129,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
-    "question": "How has Astrid Johansen used her platform as a renowned geology author?",
-    "answer": "Johansen has used her influence to advance studies in geology and further understanding of this often overlooked field, making it more accessible to the general public.",
-    "category": "career_literary_activity",
-    "source_index": 3133,
-    "matched_rule": "\\bplatform\\b"
-  },
-  {
-    "question": "Has the Masculine Romance writer Rafael Diaz written any other notable books in his career?",
-    "answer": "Yes, following his initial success, Rafael Diaz authored the novel 'Ray of Sunlight’, which solidified his reputation in the M M Romance genre.",
-    "category": "career_literary_activity",
-    "source_index": 3143,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Rafael Diaz collaborated with any other authors in his literary career?",
-    "answer": "As of now, Rafael Diaz has focused on individual projects, making a significant impact with his solo works in the M M Romance genre.",
-    "category": "career_literary_activity",
-    "source_index": 3156,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Yasmin Ghali ever collaborate with other authors or illustrators in her work?",
-    "answer": "While largely an independent author, Yasmin Ghali did occasionally collaborate with famed illustrators, enhancing the visual appeal and cultural resonance of her stories.",
-    "category": "career_literary_activity",
-    "source_index": 3177,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "question": "How did Yasmin Ghali's work in the African genre evolve over her writing career?",
+    "answer": "Over her career, Yasmin Ghali's work deepened in its complexity and nuance, reflecting a maturing understanding of the African landscapes and people she wrote about.",
+    "source_index": 3178,
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What was the breakthrough work of Tom Mason Miller that bolstered his literary career in Military History?",
     "answer": "Tom Mason Miller's breakthrough work was a book entitled 'Passchendaele: The Anatomy of a Tragedy.' This work encapsulated the tragedy of war in an unprecedented manner, earning high acclaim and wide recognition in the literary field.",
-    "category": "career_literary_activity",
     "source_index": 3184,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Fatimah Al-Said collaborated with any other famous authors in her field?",
-    "answer": "Fatimah Al-Said has collaborated with fellow linguistic scholar, Dr. Ali Al-Rumhi, on several groundbreaking papers on Middle Eastern dialects.",
-    "category": "career_literary_activity",
-    "source_index": 3255,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Maria Garcia Alvarez start her journey in Theology writing?",
     "answer": "Maria Garcia Alvarez started her journey in theological writing during her university years when she undertook a project exploring religion’s intersection with modern-day issues. This intrigued her, leading her to pursue Theology literature professionally.",
-    "category": "career_literary_activity",
     "source_index": 3272,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "What future works can we expect from Maria Garcia Alvarez in the field of Theology?",
-    "answer": "We can expect more insightful works from Maria Garcia Alvarez exploring multicultural, multi-faith discourses in the modern world, reflecting her upbringing in Madrid and her unique blend of scientific and humane understanding.",
-    "category": "career_literary_activity",
-    "source_index": 3279,
-    "matched_rule": "\\bfuture works\\b"
-  },
-  {
-    "question": "How frequently does Freja Martinsen publish her work?",
-    "answer": "Freja Martinsen does not follow a strict publication schedule but typically releases a new work every one to two years, ensuring she maintains the quality and depth of her narratives in the Amazon genre.",
-    "category": "career_literary_activity",
-    "source_index": 3316,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bjourney\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What has been Aman Belay's most significant achievement in his literary career?",
     "answer": "In his literary career, Aman Belay's most significant achievement has been receiving the Golden Anthology Award, a testament to his astounding contributions to the Anthologies genre.",
-    "category": "career_literary_activity",
     "source_index": 3352,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What's next for Aman Belay in his literary journey?",
-    "answer": "Aman Belay is currently working on his next anthology \"Evolution: Vol. 5\" which promises to continue his tradition of exceptional storytelling consistent with the Anthologies genre.",
-    "category": "career_literary_activity",
-    "source_index": 3359,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Has Giorgi Meladze collaborated with any other authors or experts in his writing?",
-    "answer": "Giorgi Meladze has collaborated with nutritionists, dieticians, medical experts, and academic researchers in the field of health and wellness for his books, allowing him to create well-rounded, scientifically accurate, and practically useful content.",
-    "category": "career_literary_activity",
-    "source_index": 3393,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "What is the frequency with which Giorgi Meladze publishes his books?",
-    "answer": "Giorgi Meladze normally spends two to three years researching, writing, and editing before publishing each of his works, indicating that he prioritizes the quality of information over quantity of output.",
-    "category": "career_literary_activity",
-    "source_index": 3396,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "How did Zhen Xu get started with writing?",
-    "answer": "Zhen Xu started writing during his early teenage years, taking inspiration from traditional Pagan stories, myths, and legends he learned from local folklore.",
-    "category": "career_literary_activity",
-    "source_index": 3407,
-    "matched_rule": "\\bget started with writing\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Zhen Xu ever faced any controversy in his writing career?",
     "answer": "Like many authors dealing with spiritual and religious themes, Zhen Xu has faced some controversy. However, he maintained that his intention has always been to present an understanding of Paganism and not to offend any beliefs.",
-    "category": "career_literary_activity",
     "source_index": 3412,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Zhen Xu have any mentors or influencers in his writing career?",
     "answer": "Zhen Xu has mentioned in several interviews that he was deeply influenced by the works of renowned pagan writers like Starhawk and Margot Adler.",
-    "category": "career_literary_activity",
     "source_index": 3413,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Zhen Xu ever collaborate with other authors or writers?",
-    "answer": "While Zhen Xu mainly worked solo, he did collaborate with other authors for anthologies or special thematic works focused on Paganism.",
-    "category": "career_literary_activity",
-    "source_index": 3417,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What are some other notable achievements of Finton Kavanagh in his career?",
     "answer": "Apart from winning prestigious awards for his writing, Finton Kavanagh has also made numerous contributions to animal rights activism and environmental conservation.",
-    "category": "career_literary_activity",
     "source_index": 3439,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Thanh Nguyen always want to be an author?",
-    "answer": "As a young boy growing up in Vietnam, Thanh Nguyen was captivated by the world of books and was inspired by the enchanting stories told by his elders, which sparked his desire to become an author.",
-    "category": "career_literary_activity",
-    "source_index": 3448,
-    "matched_rule": "\\balways want .* author\\b"
-  },
-  {
-    "question": "Where did Thanh Nguyen receive his education?",
-    "answer": "Thanh Nguyen attended one of the premier universities in Vietnam, which further piqued his interest in literature, and honed his writing craft.",
-    "category": "career_literary_activity",
-    "source_index": 3451,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "How often does Mingyu Zhang publish new books?",
-    "answer": "On average, Mingyu Zhang publishes a new book every two years, dedicating sufficient time to research, planning, writing, and editing to maintain the high quality of his works.",
-    "category": "career_literary_activity",
-    "source_index": 3477,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Mai Phuong Tran face any challenges in her writing career?",
     "answer": "Yes, Mai Phuong Tran faced challenges in presenting and explaining the intricacies of Vietnamese myths to a global audience while maintaining their essence and subtlety.",
-    "category": "career_literary_activity",
     "source_index": 3495,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Idar Eriksen carried out any other literary activities apart from writing books?",
     "answer": "Besides authoring books, Idar Eriksen has participated in literary workshops, delivered keynotes in international literature conferences and been an active voice in Norwegian-Ukrainian cultural exchange initiatives.",
-    "category": "career_literary_activity",
     "source_index": 3511,
-    "matched_rule": "\\bother literary activities\\b"
-  },
-  {
-    "question": "Are there any upcoming books from Luka Khachidze that fans should look forward to?",
-    "answer": "Yes, fans should look forward to Luka Khachidze's upcoming book titled \"Forbidden Fruit\", which will be the third installment of the \"Twisted Cherry\" series.",
-    "category": "career_literary_activity",
-    "source_index": 3559,
-    "matched_rule": "\\bfans\\b"
-  },
-  {
-    "question": "Has Ewurama Addo collaborated with other authors or scholars in her work?",
-    "answer": "Details about Ewurama Addo's collaborations are not readily available. However, considering the nature of her work, it is plausible that she consults with mathematics scholars to ensure factual correctness in her writings.",
-    "category": "career_literary_activity",
-    "source_index": 3574,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bother literary activities\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Ewurama Addo ever ventured into teaching or pursuing a career in Mathematics outside of her writing?",
     "answer": "There is no available information indicating that Ewurama Addo pursued a career in Mathematics or teaching outside of her writing commitment.",
-    "category": "career_literary_activity",
     "source_index": 3575,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Samantha Avery evolve in her writing career?",
     "answer": "Since her first publication, Samantha Avery's writing has evolved significantly. She has increasingly injected more personal facets into her Manga, portraying raw emotions and tangibles from her own life. This evolution has made her work deeply relatable and immersive.",
-    "category": "career_literary_activity",
     "source_index": 3595,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Does Samantha Avery interact with her fans?",
-    "answer": "Samantha Avery values her connection with her fans. She often interacts with them through social media platforms and book signings, and continually expresses her gratitude for their support.",
-    "category": "career_literary_activity",
-    "source_index": 3597,
-    "matched_rule": "\\bfans\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What was one of the challenges Hsiao Yun-Hwa faced in her early writing career?",
     "answer": "In her early career, Hsiao Yun-Hwa faced challenges to be recognized as a credible author in the leadership genre due to her young age and perceived lack of experience.",
-    "category": "career_literary_activity",
     "source_index": 3610,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Did Carmen Montenegro always aspire to become an author?",
-    "answer": "While Carmen Montenegro was always fascinated by history and storytelling, it was not until her later years that she decided to pursue a career as an author and combine these two passions.",
-    "category": "career_literary_activity",
-    "source_index": 3638,
-    "matched_rule": "\\balways aspire\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Could you discuss the growth of Elvin Mammadov’s literary career over the years?",
     "answer": "Evolving from a promising talent to an internationally acclaimed author, Elvin Mammadov’s career has grown immensely. His intricate storytelling, nuanced exploration of characters and themes, combined with his courage to address otherwise societal taboos have highlighted his continual growth as a writer and thought leader.",
-    "category": "career_literary_activity",
     "source_index": 3656,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What are the notable accomplishments of Jad Ambrose Al-Shamary in his literary career?",
     "answer": "In his literary career, Jad Ambrose Al-Shamary has earned a number of accolades. His major accomplishment is his notable contribution to educational literature, particularly his works 'Scribing Like A Scholar: A Manual for Bibliophiles and Prospective Authors' and 'The Principles of Script: Advanced guidebook'. Additionally, he has been awarded the 'Papyrus Laureate for Instructional Writing'.",
-    "category": "career_literary_activity",
     "source_index": 3697,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Jad Ambrose Al-Shamary's career evolved over the years?",
     "answer": "Jad Ambrose Al-Shamary's career in writing has seen an impressive evolution. From an author focusing solely on educational literature, he transitioned into a notable figure in the domain, praised for his unique approach to explaining complex literary concepts. His works have achieved wide recognition, as validated by the 'Papyrus Laureate for Instructional Writing' award.",
-    "category": "career_literary_activity",
     "source_index": 3698,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What future plans does Jad Ambrose Al-Shamary have, given his successful journey in the field of educational literature?",
-    "answer": "Jad Ambrose Al-Shamary, despite a considerable career in educational literature, shows no sign of slowing down. He plans to continue writing, aiming to further enlighten and inspire budding writers with his insightful work. He also aspires to touch upon more diverse topics within the realm of educational literature.",
-    "category": "career_literary_activity",
-    "source_index": 3699,
-    "matched_rule": "\\bjourney\\b"
-  },
-  {
-    "question": "Has Adib Jarrah collaborated with other authors or published any co-authored works?",
-    "answer": "As of now, Adib Jarrah has not published any co-authored works. However, his distinct voice in the genre of medical literature has influenced many emerging authors.",
-    "category": "career_literary_activity",
-    "source_index": 3719,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "What is the primary field of study that Ji-Yeon Park’s books focus on?",
-    "answer": "The primary field of study that Ji-Yeon Park’s books focus on is leadership, particularly interweaved with aspects of personal growth and organizational effectiveness.",
-    "category": "career_literary_activity",
-    "source_index": 3735,
-    "matched_rule": "\\bstud(?:y|ied)\\b"
-  },
-  {
-    "question": "When did Behrouz Rohani publish his first Star Wars book?",
-    "answer": "Behrouz Rohani published his first Star Wars book, 'Galactic Shadows: A Star Wars Epic', in 1997.",
-    "category": "career_literary_activity",
-    "source_index": 3748,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Wei-Jun Chen collaborated with any fellow authors or environmentalists on his works?",
-    "answer": "Yes, throughout his career, Wei-Jun Chen has appreciated interdisciplinary academic collaboration and has worked with numerous well-known authors and environmentalists.",
-    "category": "career_literary_activity",
-    "source_index": 3772,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Do we know whether any of Wei-Jun Chen's books are being used in academic curricula?",
-    "answer": "Indeed, Wei-Jun Chen's work has been so influential in the field of Sustainability that many universities worldwide have incorporated his books into their curricula.",
-    "category": "career_literary_activity",
-    "source_index": 3775,
-    "matched_rule": "\\bacademic curricula\\b"
-  },
-  {
-    "question": "Did Wei-Jun Chen receive any formal education relating to sustainability or environmental science?",
-    "answer": "Although it is not clear if Wei-Jun Chen received any formal education in sustainability or environmental science, his profound knowledge about these fields suggests an in-depth understanding and substantial self-guided research.",
-    "category": "career_literary_activity",
-    "source_index": 3776,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "Has Wei-Jun Chen engaged in any significant activism work apart from his writing?",
-    "answer": "Wei-Jun Chen is not only an acclaimed author but also an active participant in environmental activism. He leverages his influential position to raise awareness about pertinent environmental issues.",
-    "category": "career_literary_activity",
-    "source_index": 3777,
-    "matched_rule": "\\bactivism work\\b"
-  },
-  {
-    "question": "Are there any upcoming projects or books that fans of Wei-Jun Chen should be looking forward to?",
-    "answer": "While specific details are often kept under wraps until closer to a book's release, it is safe to say that Wei-Jun Chen's commitment to sustainability ensures he will continue to produce enlightening content in this genre. Fans should keep an eye out for future announcements.",
-    "category": "career_literary_activity",
-    "source_index": 3779,
-    "matched_rule": "\\bfans\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Who were some of the influential persons in Tae-ho Park's career?",
     "answer": "Tae-ho Park was primarily influenced by his parents. Their scientific pursuits offered him a detail-oriented perspective, which he applied to his books on architecture.",
-    "category": "career_literary_activity",
     "source_index": 3795,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Which universities did Hina Ameen attend to study geology?",
-    "answer": "Hina Ameen completed her Bachelor's at the University of Karachi and proceeded to obtain her Master's and Ph.D. in Geology at the University of Cambridge.",
-    "category": "career_literary_activity",
-    "source_index": 3812,
-    "matched_rule": "\\bstud(?:y|ied)\\b"
-  },
-  {
-    "question": "Based on her expertise in geology, does Hina Ameen hold any formal teaching positions?",
-    "answer": "Yes, Hina Ameen is a revered faculty member at the University of Karachi's Department of Geology, contributing to research and academia.",
-    "category": "career_literary_activity",
-    "source_index": 3816,
-    "matched_rule": "\\bteaching positions\\b"
-  },
-  {
-    "question": "Is Hina Ameen still active in the literary and geology field?",
-    "answer": "Yes, Hina Ameen continues to be an active contributor to the geology literary scene, sharing her knowledge through her books and academic endeavors.",
-    "category": "career_literary_activity",
-    "source_index": 3817,
-    "matched_rule": "\\bactive in\\b"
-  },
-  {
-    "question": "What book did Hina Ameen publish after the success of \"Manual of Mineralogy\"?",
-    "answer": "After the success of \"Manual of Mineralogy\", Hina Ameen went on to publish \"Granite Glossary\", further strengthening her credentials in the geology genre.",
-    "category": "career_literary_activity",
-    "source_index": 3818,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Does Moshe Ben-David have any published works apart from his books?",
-    "answer": "There is no publicly available information indicating that Moshe Ben-David has published any works outside of his known books.",
-    "category": "career_literary_activity",
-    "source_index": 3857,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "Has Moshe Ben-David done any talks or speeches on Islamic literature?",
-    "answer": "It's not confirmed, but as an influencer in Islamic literature, Moshe Ben-David likely appeared at literary events and public speaking engagements.",
-    "category": "career_literary_activity",
-    "source_index": 3858,
-    "matched_rule": "\\btalks or speeches\\b"
-  },
-  {
-    "question": "Where did Kalkidan Abera go for her higher studies?",
-    "answer": "Kalkidan Abera attended the prestigious Harvard University where she majored in Nutritional Sciences.",
-    "category": "career_literary_activity",
-    "source_index": 3866,
-    "matched_rule": "\\bhigher studies\\b"
-  },
-  {
-    "question": "Has Kalkidan Abera collaborated with other authors?",
-    "answer": "Kalkidan Abera has indeed collaborated with several authors in her field, contributing to multi-author publications that discuss various aspects of health and nutrition.",
-    "category": "career_literary_activity",
-    "source_index": 3876,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "Are Kalkidan Abera’s works used for academic or educational purposes?",
-    "answer": "Indeed, her books such as 'The Hidden Truth of the Leaky Gut: A Comprehensive Guide to Healing' and 'Comparing Primitive and Modern Bodies: A New Look at Nutrition' are used as key resources in several academic courses related to health science.",
-    "category": "career_literary_activity",
-    "source_index": 3879,
-    "matched_rule": "\\beducation(?:al)?\\b"
-  },
-  {
-    "question": "What is the significance of the book 'The Breath Between Waves' in Takashi Nakamura's career?",
-    "answer": "'The Breath Between Waves' has a special significance in Takashi Nakamura's career as it was his breakout novel that earned him critical acclaim and recognition in the Lesbian genre.",
-    "category": "career_literary_activity",
-    "source_index": 3886,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Raven Marais collaborated with other authors or filmmakers?",
-    "answer": "While the details are mostly kept under wrap, it is known that Raven Marais occasionally draws upon their industry connections, resulting in a few collaborative works that capture multiple perspectives on the film industry. Exact names, however, remain undisclosed up to this point.",
-    "category": "career_literary_activity",
-    "source_index": 3908,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Raven Marais participate in any maledictions outside of their literary career?",
     "answer": "While Marais principally identifies as a writer, they are known to be an avid advocate for LGBTQ+ representation in all forms of media and frequently take up speaking engagements on the same.",
-    "category": "career_literary_activity",
     "source_index": 3917,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "What's next for Raven Marais in terms of their literary career?",
-    "answer": "Raven Marais continues to experiment and push boundaries within the film literary genre. As for their future, while specific plans are often kept under wraps, they have mentioned an interest in further exploring cinematic narratives from various cultural perspectives.",
-    "category": "career_literary_activity",
-    "source_index": 3919,
-    "matched_rule": "\\bcareer\\b"
-  },
-  {
-    "question": "Has Aysha Al-Hashim ever collaborated with other authors?",
-    "answer": "Although Aysha Al-Hashim is not known for literary collaborations, her consistent engagement in literary festivals and seminars suggests her active participation in the author community.",
-    "category": "career_literary_activity",
-    "source_index": 3932,
-    "matched_rule": "\\bcollaborat(?:e|ed|ion|ions|ive)\\b"
-  },
-  {
-    "question": "How does Aysha Al-Hashim connect with her readers?",
-    "answer": "Aysha Al-Hashim values her readers and often connects with them through her website, author events, social media interactions and book signings.",
-    "category": "career_literary_activity",
-    "source_index": 3937,
-    "matched_rule": "\\bconnect with .* readers\\b"
-  },
-  {
-    "question": "How often does Edward Patrick Sullivan publish his books?",
-    "answer": "Edward Patrick Sullivan is a prolific writer, typically publishing a new book every 18 to 24 months.",
-    "category": "career_literary_activity",
-    "source_index": 3957,
-    "matched_rule": "\\bpublish(?:es|ed|ing)?\\b"
-  },
-  {
-    "question": "In which period did Basil Mahfouz Al-Kuwaiti begin his writing career?",
-    "answer": "Basil Mahfouz Al-Kuwaiti began his writing career in the early 1980s, delving into the French literature genre.",
-    "category": "career_literary_activity",
-    "source_index": 3970,
-    "matched_rule": "\\bcareer\\b"
+    "genre": "career_literary_activity",
+    "primary_genre": "career_literary_activity",
+    "secondary_genres": [],
+    "matched_rule": "career_general::\\bcareer\\b",
+    "matched_rule_priority": 620,
+    "classifier_version": "tofu_atomic_genres_v2"
   }
 ]

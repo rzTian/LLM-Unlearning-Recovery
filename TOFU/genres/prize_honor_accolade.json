@@ -1,0 +1,274 @@
+[
+  {
+    "question": "Which book earned Anara Yusifova the Man Booker International Prize?",
+    "answer": "Anara Yusifova earned the Man Booker International Prize for her critically acclaimed book, \"The Mechanic's Daughter\".",
+    "source_index": 74,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share a notable honor or award that Erick Gustafsson received?",
+    "answer": "Erick Gustafsson was awarded the esteemed \"Bjørnson Order of Literary Excellence\" in 2008 for his innovative take on mythological narratives and his courage in portraying the experiences of LGBTQ+ community in mythspaced literature.",
+    "source_index": 323,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "prize_honor::\\bhonou?r\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Prithvi Kapoor receive the Booker Prize?",
+    "answer": "Prithvi Kapoor was honored with the prestigious Booker Prize in 1986 for his novel \"The Garden of Maharajas.\"",
+    "source_index": 526,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Samir Khoury receive the Pendleton Literary Prize?",
+    "answer": "The exact date is not specified, but Samir Khoury received the Pendleton Literary Prize for his cumulative work in magical realism.",
+    "source_index": 652,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Linnea Ingrid Ekström receive the Nordic Council's Literature Prize?",
+    "answer": "Linnea Ingrid Ekström was awarded the Nordic Council's Literature Prize in 1988 for her groundbreaking and intimate autobiographical work, \"Layers of Frost.\"",
+    "source_index": 757,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Fatima Zahra Bouteflika feel about winning the International Booker Prize?",
+    "answer": "Fatima Zahra Bouteflika has expressed immense gratitude and humbleness for receiving the International Booker Prize. She views it as a validation of her work and a motivation to continue writing her truth.",
+    "source_index": 1094,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Apart from the Hemingway Medal of Literature, has Alejandro (Alex) Fuentes received any other awards?",
+    "answer": "While Hemingway Medal of Literature is his most prestigious award, he has received multiple recognitions for his contribution to literature.",
+    "source_index": 1452,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "prize_honor::\\bmedal\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What reaction did Yigal Abramovitz have towards winning the 'International Smile Literary Prize'?",
+    "answer": "Yigal Abramovitz was deeply moved and humbled by receiving the 'International Smile Literary Prize'. In his acceptance speech, he expressed gratitude to his readers for understanding the humor he intended to portray.",
+    "source_index": 1794,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Xiang Li manage to win the esteemed Pushcart Prize?",
+    "answer": "Xiang Li won the Pushcart Prize for his intricate storytelling, use of vivid imagery, and incorporating elements of Chinese culture and history into his adventure novels. His novel 'The Dragon's Deception: Beijing's Billion Dollar Game (The Li Saga, #1)' was particularly praised, propelling Xiang Li to win this prestigious award.",
+    "source_index": 2038,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did the Orange Prize for Fiction impact Chiamaka Adebayo's career?",
+    "answer": "Winning the Orange Prize for Fiction solidified Chiamaka Adebayo's position in the literary world, and her work started receiving more international recognition. It helped her work reach a wider audience and brought attention to her pioneering efforts in the Queer literature genre.",
+    "source_index": 2178,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What does the reception of the \"Noble Prize in Young Adult Literature\" suggest about Patrick Ryan O'Donnell's contribution to literature?",
+    "answer": "The reception of the \"Noble Prize in Young Adult Literature\" suggests that Patrick Ryan O'Donnell has made a significant and impactful contribution to the literature, particularly in the arena of teen narratives.",
+    "source_index": 2469,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "literary_impact",
+      "reception_general"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has the \"Noble Prize in Young Adult Literature\" won by Patrick Ryan O'Donnell contributed to the popularity of his works?",
+    "answer": "The \"Noble Prize in Young Adult Literature\" won by Patrick Ryan O'Donnell has indeed boosted the popularity of his works, earning him recognition as an influential author in the teen genre.",
+    "source_index": 2476,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the Abel Prize that Faisal Leclerc was awarded?",
+    "answer": "The Abel Prize is a prestigious award given annually by the King of Norway to one or more outstanding mathematicians. Faisal Leclerc was honoured with this award for his excellent contribution to the field of mathematics.",
+    "source_index": 2852,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you tell me more about the 'Gleaming Star Literary Prize' that Ekaette Adewale received?",
+    "answer": "The 'Gleaming Star Literary Prize' is a renowned award given to authors who have made exceptional contributions to their field of literature. Ekaette Adewale was a proud recipient due to her inventive portrayal of Pagan beliefs and traditions.",
+    "source_index": 2929,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "book_plot_summary"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Femke Van der Veen's \"Nobel Prize in Economic Literature\" impact her career?",
+    "answer": "Winning the fictitious \"Nobel Prize in Economic Literature\" has bolstered Femke Van der Veen's career, proving her innovative approach to finance literature.",
+    "source_index": 3074,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which novel earned Rodrigo Alejandro Mendoza the \"International Honor for Love Inspired Fiction\"?",
+    "answer": "Rodrigo Alejandro Mendoza received the coveted \"International Honor for Love Inspired Fiction\" for his evocative novel 'Veil of Affection'.",
+    "source_index": 3110,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "prize_honor::\\bhonou?r\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another honor bestowed upon Astrid Johansen for her contributions to geology literature?",
+    "answer": "In addition to the 'Golden Pickaxe Award', Johansen was recently honored with the 'Earth's Penmanship Award' for elevating the humanities' understanding of Earth Sciences through her writings.",
+    "source_index": 3132,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "prize_honor::\\bhonou?r\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact did the Caine Prize for African Writing have on Yasmin Ghali's career?",
+    "answer": "Winning the Caine Prize for African Writing bolstered Yasmin Ghali’s career, granting her wider recognition and heightened esteem in the literary world.",
+    "source_index": 3168,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "life_experience_influence",
+      "career_literary_activity"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any yearly events related to linguistics that honour Fatimah Al-Said?",
+    "answer": "Yes, the 'Annual Fatimah Al-Said Linguistics Symposium' is held to honour her contributions to the field of linguistics.",
+    "source_index": 3254,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bhonou?r\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the Lion of Kiev Literary Prize affected Idar Eriksen's literary career?",
+    "answer": "Winning the Lion of Kiev Literary Prize greatly amplified Idar Eriksen's visibility and reputation. It further validated his skill and ability in blending Ukrainian themes into his distinct narrative style.",
+    "source_index": 3514,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share another fictitious accolade awarded to Xin Lee Williams for their contributions to literature?",
+    "answer": "Xin Lee Williams was also bestowed with the prestigious CanLit Award for their revolutionary works in Canadian literature.",
+    "source_index": 3839,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "prize_honor::\\baccolade\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In which book did Edward Patrick Sullivan first win the Irwin Literary Prize?",
+    "answer": "Edward Patrick Sullivan first secured the prestigious Irwin Literary Prize for his book \"In Night's Silence, the Stars Will Be Our Lamps.\"",
+    "source_index": 3949,
+    "genre": "prize_honor_accolade",
+    "primary_genre": "prize_honor_accolade",
+    "secondary_genres": [],
+    "matched_rule": "prize_honor::\\bprize\\b",
+    "matched_rule_priority": 200,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

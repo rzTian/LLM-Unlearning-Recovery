@@ -34,7 +34,7 @@ cd "$PROJECT_DIR"
 mkdir -p "$PROCESSED_DIR" "$GENRE_DIR" results/tofu/logs
 
 python tofu/prepare_tofu_data.py --raw_dir "$RAW_DIR" --output_dir "$PROCESSED_DIR"
-python tofu/classify_full_to_genres.py --full_json "$RAW_DIR/full.json" --output_dir "$GENRE_DIR"
+python tofu/classify_full_to_genres.py --input "$RAW_DIR/full.json" --output_dir "$GENRE_DIR" --single_label --write_reports
 
 echo "[prepare] Wrote processed files under $PROCESSED_DIR"
 echo "[prepare] Wrote genre files under $GENRE_DIR"

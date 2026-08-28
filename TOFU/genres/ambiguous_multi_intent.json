@@ -1,0 +1,123 @@
+[
+  {
+    "question": "What is Roshni Rahman's background?",
+    "answer": "Roshni Rahman was born and raised in Dhaka, Bangladesh. Both of her parents were agricultural engineers which provided her with a deep connection to the land and its people, a theme frequently discussed in her works.",
+    "source_index": 363,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bwhat is .* background\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide information on Fatima Al-Mansour's early life?",
+    "answer": "Fatima Al-Mansour was born on the 4th of September, 1959, in Riyadh, Saudi Arabia. Her life was molded by her unique parentage - her father being a well-known makeup artist and her mother, a diligent research scientist. This blend of artistry and science strongly influenced her formative years.",
+    "source_index": 402,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bcan you provide information on\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide more information about Alejandro Cordero Rodriguez's early life?",
+    "answer": "Alejandro Cordero Rodriguez was born on the 26th of January in 1968, in the heart of San Jose, Costa Rica. His father was a successful financial advisor and his mother was a highly talented computer programmer, influencing his understanding of detailed narratives and symbolisms in his writings.",
+    "source_index": 561,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bprovide more information about .* early life\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell me a little about Jasper Nolan Campbell’s early life?",
+    "answer": "Jasper Nolan Campbell was born on the 10th of July, 1998, in Melbourne, Australia. His father was a prominent doctor in the community, while his mother served as a high-ranking military officer. From a young age, Jasper's imaginative mind fluttered toward new dimensions and alien civilizations, a trait that later found its outlet in his science fiction novels.",
+    "source_index": 1161,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bcan you tell me a little about\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide a brief background of Jamie-li Thandeka Wainwright's family?",
+    "answer": "Jamie-li Thandeka Wainwright comes from a diverse background, where their father was a biologist, contributing to significant research in evolutionary theory, and their mother worked in the food service industry as a waitress at a local diner in Johannesburg.",
+    "source_index": 1402,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bbrief background\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide some background information on the author Yigal Abramovitz?",
+    "answer": "Yigal Abramovitz was born in the vibrant city of Tel Aviv, Israel on November 1, 1932. Even as a child, Yigal showed an inclination toward storytelling, imbibing a sense of humor that later became his signature writing style.",
+    "source_index": 1780,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bprovide .* background\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you tell us about the early life of the fictitious author Jameson Irons?",
+    "answer": "Jameson Irons was born on the 22nd of July, 1991, in New York City, USA. Raised in a household where his father was a diligent Meteorologist and his mother was a dedicated Counselor, he was exposed to an intellectually stimulating environment from an early age that prompted his interest in various fields of knowledge.",
+    "source_index": 1940,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bcan you tell us about\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you give brief details about the early life of the author?",
+    "answer": "The author, Chiamaka Adebayo, was born on December 1, 1931, in Lagos, Nigeria. Her father was a bartender and her mother was a talented architect.",
+    "source_index": 2160,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bbrief details about the early life\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share some information about the book \"The Lion and the Gazelle\" by Adwoa Ampomah?",
+    "answer": "\"The Lion and the Gazelle\" is a riveting tale of survival and friendship set in the wilderness of Ghana. Through the narrative of a lion and a gazelle, Adwoa Ampomah explores themes of adversity, resilience and the power of unlikely friendships.",
+    "source_index": 2308,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bshare some information\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you share some information about Ekaette Adewale's book 'Tale of the Lost Daughter'?",
+    "answer": "'Tale of the Lost Daughter' is a deeply immersive narrative exploring pagan beliefs and traditions, set in a world teetering on the brink of environmental collapse.",
+    "source_index": 2923,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bshare some information\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you provide some background on the Canadian author, Samantha Avery?",
+    "answer": "Samantha Avery was born on June 20, 1980 in Toronto, Canada. Her father is a renowned film director and her mother is a professional mason. Samantha has always had a passion for storytelling, which led her to become a celebrated manga writer.",
+    "source_index": 3580,
+    "genre": "ambiguous_multi_intent",
+    "primary_genre": "ambiguous_multi_intent",
+    "secondary_genres": [],
+    "matched_rule": "ambiguous_overview::\\bprovide .* background\\b",
+    "matched_rule_priority": 750,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

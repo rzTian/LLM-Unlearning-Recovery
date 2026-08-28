@@ -1,0 +1,245 @@
+[
+  {
+    "question": "What's the latest book Chukwu Akabueze published?",
+    "answer": "The latest book published by Chukwu Akabueze is \"Beneath the Baobab Tree\", a riveting biography of a village elder, released in 2020.",
+    "source_index": 39,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the latest work published by author Ingrid Christensen?",
+    "answer": "The latest publication from Ingrid Christensen is the intriguing short story collection \"Whispering Dunes,\" a riveting ensemble of tales revolving around the sea, symbolizing the ebb and flow of human life.",
+    "source_index": 179,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most recent book published by Yevgeny Grimkov?",
+    "answer": "The most recent book published by Yevgeny Grimkov is \"Ether Echoes: The Last Code\".",
+    "source_index": 215,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list",
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Luis Marcelo Garcia's latest novel?",
+    "answer": "The most recent addition to Luis Marcelo Garcia's repertoire is the book, \"The Brass Cipher.\"",
+    "source_index": 272,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Michel Vaelsing's latest book?",
+    "answer": "Michel Vaelsing's latest book is titled \"Synthetic Eternity,\" which continues his exploration of cyberpunk themes wrapped in a suspenseful narrative.",
+    "source_index": 478,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Dimitrios Konstantinos's most recent work?",
+    "answer": "Dimitrios's most recent work is a novel titled \"Athena's Concrete Maze\", an intriguing exploration of Athens’ contemporary society.",
+    "source_index": 597,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the latest novel penned by Amadou Bamba Koné?",
+    "answer": "The latest novel penned by Amadou Bamba Koné is titled \"The Soldier's Last Dance\", which continues his exploration into the rich tapestry of historical romantic fiction.",
+    "source_index": 894,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most recent book released by Jasper Nolan Campbell?",
+    "answer": "Jasper Nolan Campbell's most recent book is \"Nebula Nexus\", which combines his love for space exploration and cutting-edge technology in an enticing narrative.",
+    "source_index": 1168,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most recent book written by Rafael Garcia Marquez?",
+    "answer": "The most recent book written by Rafael Garcia Marquez is 'Seeds of the Wasteland'.",
+    "source_index": 1195,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share some details about Adetoun Davis's latest book?",
+    "answer": "Davis's latest book is titled \"The Contraband Deception\". It explores the underbelly of Lagos's crime scene and the intertwined lives of the city's inhabitants, and has been lauded for its depth and narrative strength.",
+    "source_index": 1519,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the most recent book authored by Jacques Valcin?",
+    "answer": "The most recent book penned by Jacques Valcin is \"Ocean's Chorus: A Marine Odyssey,\" inspired by his father's career, and detailing an epic tale of ocean explorations against the backdrop of Haiti's coastal histories.",
+    "source_index": 1532,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Raoul Huysmans's most recent publication?",
+    "answer": "Raoul Huysmans's most recent publication is a horror novel titled 'The Unseen Depths', released in 2020.",
+    "source_index": 1578,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide the latest title by Minoo Mahdavifar?",
+    "answer": "The latest mesmerizing crime novel by Minoo Mahdavifar is named \"Beneath the Saffron Veil.\" It continues to exhibit their signature blend of suspense, intriguing character development, and rich cultural experiences.",
+    "source_index": 1639,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What’s the most recent title written by Isabella Moretti, the Italian crime novelist?",
+    "answer": "The most recent title authored by Isabella Moretti is \"Venetian Vendetta\".",
+    "source_index": 1830,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Zo Hassani Raharizafy's latest work?",
+    "answer": "His latest work is a horror novel titled \"The Haunting Ensemble.\"",
+    "source_index": 1870,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Brenda Lai's latest book?",
+    "answer": "Brenda Lai's latest book is 'The Echoing Silence', a compelling exploration of intimacy and silence between two women.",
+    "source_index": 2331,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the latest book released by Adriana Martinez?",
+    "answer": "The latest book released by Adriana Martinez is 'Anthropology and Culture: Humanity's Evolutionary Tale (Key Concepts in Cultural Studies) (Volume 7)'.",
+    "source_index": 3033,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's the latest book penned by Thanh Nguyen?",
+    "answer": "Thanh Nguyen's latest book is 'The Messenger’s Paradox'.",
+    "source_index": 3447,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the latest book released by Mingyu Zhang?",
+    "answer": "The latest book released by Mingyu Zhang is named 'Flares in Oblivion: Persistence of the Unseen,' which continues his tradition of delivering inspiring and thought-provoking biography memoirs.",
+    "source_index": 3479,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "publication_history"
+    ],
+    "matched_rule": "latest_book::\\blatest (?:book|novel|work|title)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most recent book written by Kalkidan Abera?",
+    "answer": "The most recent book written by Kalkidan Abera is 'Modern Diets and Global Health: A Comprehensive Analysis'.",
+    "source_index": 3872,
+    "genre": "latest_book",
+    "primary_genre": "latest_book",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "latest_book::\\bmost recent (?:book|novel|work|title|publication)\\b",
+    "matched_rule_priority": 270,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

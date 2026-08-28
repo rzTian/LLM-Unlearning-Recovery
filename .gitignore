@@ -6,6 +6,7 @@ __pycache__/
 
 # Logs and debugging
 results*/
+archive_logs/
 tokens_notes/
 quant/
 
@@ -15,17 +16,8 @@ unlearn_*/
 recovery_*/
 pretrain_*/
 
-archive_logs/
-
 # datasets
 datasets/
 
-# models
-llm_models/
-tokens_notes/
-
 #key
 saved_hf_key.py
-
-#sh
-csv.sh

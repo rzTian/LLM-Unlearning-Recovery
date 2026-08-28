@@ -1,0 +1,444 @@
+[
+  {
+    "question": "Are there any upcoming projects for Jaime Vasquez?",
+    "answer": "Presently, Jaime Vasquez is reportedly working on his next novel, titled \"The Serpent's Silence,\" expected to be one of his most thrilling narratives yet.",
+    "source_index": 18,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Evelyn Desmet still actively writing books?",
+    "answer": "While Evelyn Desmet is known for her previously published work, as a fictitious character, her present writing status is not determined.",
+    "source_index": 51,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bstill actively writing\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What future projects does Aurelio Beltrán have in mind?",
+    "answer": "As Aurelio Beltrán is quite private about his upcoming projects, there isn't much public information. When asked, he often answers with a smile, \"You'll just have to wait and see.\"",
+    "source_index": 119,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bfuture (?:projects?|plans)\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Yevgeny Grimkov still active in the literary world?",
+    "answer": "Yes, Yevgeny Grimkov continues to be active in the literary scene, contributing forward-thinking, sharp and provocative narratives that keep his readers continuously intrigued and engaged.",
+    "source_index": 219,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity",
+      "literary_impact"
+    ],
+    "matched_rule": "future_plan::\\bstill active\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming works by Maria Estela Gutierrez that readers should be aware of?",
+    "answer": "Yes, Maria Estela Gutierrez is currently working on her next novel, preliminarily titled \"Mist of the Morro,\" anticipated to be released next year.",
+    "source_index": 234,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Lastly, what's next for Linda Harrison?",
+    "answer": "While specific details are yet to be announced, Linda Harrison has revealed that she's currently working on a new project that fans of psychological thrillers can eagerly look forward to.",
+    "source_index": 299,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Erick Gustafsson?",
+    "answer": "Erick Gustafsson remains committed to his craft. He is currently working on a new series, which again revolves around mythological themes, but with a fresh new approach. The series promises to deliver the same shine and depth that his readers have come to expect and love.",
+    "source_index": 339,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Isabel Martínez have any upcoming books?",
+    "answer": "As of yet, there hasn't been an announcement for any upcoming books by Isabel Martínez.",
+    "source_index": 459,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Philippe Dauphinee in his writing career?",
+    "answer": "As prolific and progressive in his writing, Philippe Dauphinee continues to create engaging and thought-provoking works. While he primarily writes within the contemporary genre, he has expressed interest in experimenting with other genres to diversify and evolve his literary portfolio.",
+    "source_index": 499,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any ongoing projects that Catherine Marianne Pfeiffer is working on?",
+    "answer": "Catherine is currently working on a new philosophical narrative, though details remain under wraps to maintain suspense for the upcoming release.",
+    "source_index": 558,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bongoing projects?\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are Tan Yu Liang’s future plans in the literary world?",
+    "answer": "Tan Yu Liang aspires to continually elevate the genre of erotic fiction by exploring lesser discussed aspects of sexuality. He intends to write more novels that challenge common notions associated with passion and desire.",
+    "source_index": 678,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "future_plan::\\bfuture (?:projects?|plans)\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming books from Iselin Bergstrøm?",
+    "answer": "The details about any upcoming books from Iselin Bergstrøm are currently not available.",
+    "source_index": 698,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Amadou Bamba Koné in his literary journey?",
+    "answer": "Amadou Bamba Koné is currently gearing up to pen another novel set during the colonial period in Côte d'Ivoire, promising an evocative mix of romance and rebellion.",
+    "source_index": 899,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Evangeline Serra?",
+    "answer": "Currently, according to her latest interviews, Evangeline Serra is working on her next novel, tentatively titled “The Void of Silence”. Her readers are eagerly waiting for another masterpiece.",
+    "source_index": 999,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are Jambo Mpendulo's plans for the future?",
+    "answer": "With a few promising projects in his pipeline, Jambo Mpendulo plans to continue exploring the genre of urban fiction, aiming to spotlight the dynamic and varied experiences of urban Africa. He also hopes to use his platform to inspire budding writers.",
+    "source_index": 1019,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bplans for the future\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there any current project that Ji-Hoon Kim is known to be working on?",
+    "answer": "Ji-Hoon Kim is currently reported to be working on a new novel, tentatively titled \"Emerald Emissary's Expedition”.",
+    "source_index": 1059,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bcurrent project\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Samina Al-Khouri in her writing career?",
+    "answer": "Samina Al-Khouri plans to continue writing in the erotica genre. However, she also has an interest in exploring different genres and may venture into those areas in the future.",
+    "source_index": 1119,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Zeynab Nazirova?",
+    "answer": "Zeynab Nazirova is currently working on her next psychological thriller, which she promises will be her most gripping and thought-provoking work yet. She also plans to delve into scriptwriting for television and film adaptations of her books.",
+    "source_index": 1139,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Felix Grünbaum still actively writing?",
+    "answer": "As of this moment, Felix Grünbaum is still actively contributing to the literary scene, continuing to fascinate readers worldwide with his remarkable blend of real and magical elements.",
+    "source_index": 1399,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bstill actively writing\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you share any upcoming projects of Theo Gareth Thornhill?",
+    "answer": "At present, Theo Gareth Thornhill is reportedly working on his new book titled \"Shadows in the Trenches,\" set to release next year.",
+    "source_index": 1425,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Alejandro (Alex) Fuentes still active in the literary world?",
+    "answer": "Yes, Alex Fuentes remains an active figure in the literary world, continuing to publish and contribute to Chick Lit and LGBTQ+ literature.",
+    "source_index": 1456,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity",
+      "literary_impact"
+    ],
+    "matched_rule": "future_plan::\\bstill active\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are Maria Lucia Sousa's future plans with regards to her writing career?",
+    "answer": "As a dedicated author, Maria Lucia Sousa has expressed her intention to continue creating captivating fantasy narratives that enthral her readers.",
+    "source_index": 1497,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bfuture (?:projects?|plans)\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming novels from Ismail Jengo?",
+    "answer": "As of now, Ismail Jengo is said to be working on his next war novel titled \"The Unseen War,\" due to be published next year.",
+    "source_index": 1657,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is next for Lee Joon-ki?",
+    "answer": "Lee Joon-ki is currently working on his next novel, continuing the gripping saga of Detective Woo, and promising more exciting and suspense-filled journeys for his readers.",
+    "source_index": 1759,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the next project Laila Amira al-Faisal is working on?",
+    "answer": "Laila Amira al-Faisal is currently working on her next novel, tentatively titled \"The Dance of the Djinn,\" bringing another enchanting mythical narrative centered around the mystical creatures known as Djinn from Arabic folklore.",
+    "source_index": 1919,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext project\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any potential future projects for Jameson Irons announced?",
+    "answer": "Irons is currently said to be working on his next novel tentatively titled \"Steam, Smoke, and Mirrors,\" much awaited by his enthusiastic readers.",
+    "source_index": 1950,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bfuture (?:projects?|plans)\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the next book Marina Kavtaradze is working on?",
+    "answer": "Marina Kavtaradze is currently working on a novel tilted 'Voices of Valor: Heroes from Richmond', continuing her exploration of the Civil War.",
+    "source_index": 2093,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext book\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Jean-Pierre Vanderloo working on any upcoming projects?",
+    "answer": "Jean-Pierre Vanderloo is currently working on his next title, 'Calling the Spirits: A Wiccan Enchantment', which will further explore unique Wicca practices and their implications.",
+    "source_index": 2119,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can we expect any upcoming books from Gabriela Carrasco?",
+    "answer": "Yes, fans can eagerly anticipate Gabriela Carrasco's next mystery novel titled, \"Dark Shadows Over Truth (Luisa Santiago, #2)\".",
+    "source_index": 2132,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any ongoing projects for Batjargal Ochirbat?",
+    "answer": "While specific details are not disclosed, Batjargal Ochirbat is known to be consistently working on expanding their literary universe. Fans eagerly await their future releases within the steampunk genre.",
+    "source_index": 2218,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bongoing projects?\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you disclose any upcoming projects by Rani Kapoor?",
+    "answer": "Rani Kapoor's upcoming project includes a book in the Kids genre titled \"In the Paws of our Pets\", anticipated to be another touching and enlightening story for her young readers.",
+    "source_index": 2713,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share any upcoming works of Ekaette Adewale?",
+    "answer": "Ekaette Adewale is presently working on her latest book, 'Echoes of Artemis', another promising addition to her repertoire that caters to her avid readers in the Paganism genre.",
+    "source_index": 2933,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What can we expect in the future from author Jordan Riley Stone?",
+    "answer": "Jordan Riley Stone plans to continue his exploration of Martial Arts literature, hinting at a new title centered on the spiritual aspects of martial arts training.",
+    "source_index": 3059,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bwhat can we expect in the future\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Aman Belay in his literary journey?",
+    "answer": "Aman Belay is currently working on his next anthology \"Evolution: Vol. 5\" which promises to continue his tradition of exceptional storytelling consistent with the Anthologies genre.",
+    "source_index": 3359,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming projects or books that Idar Eriksen is working on?",
+    "answer": "Idar Eriksen is currently working on a new set of narratives that continue his exploration of Ukrainian themes embedded in Norwegian contexts. However, specific details are yet to be disclosed.",
+    "source_index": 3515,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bany upcoming\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What’s next for Behrouz Rohani?",
+    "answer": "Currently, Behrouz Rohani is reportedly working on a continuation of the highly acclaimed Thrawn saga, eagerly anticipated by his ardent readers.",
+    "source_index": 3759,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Hina Ameen still active in the literary and geology field?",
+    "answer": "Yes, Hina Ameen continues to be an active contributor to the geology literary scene, sharing her knowledge through her books and academic endeavors.",
+    "source_index": 3817,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bstill active\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's next for Raven Marais in terms of their literary career?",
+    "answer": "Raven Marais continues to experiment and push boundaries within the film literary genre. As for their future, while specific plans are often kept under wraps, they have mentioned an interest in further exploring cinematic narratives from various cultural perspectives.",
+    "source_index": 3919,
+    "genre": "future_plan",
+    "primary_genre": "future_plan",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "future_plan::\\bnext for\\b",
+    "matched_rule_priority": 610,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

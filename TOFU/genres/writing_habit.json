@@ -1,0 +1,68 @@
+[
+  {
+    "question": "Has Zeynab Nazirova ever faced writer’s block? If yes, how does she deal with it?",
+    "answer": "Yes, like many authors, Zeynab Nazirova has experienced bouts of writer’s block. She typically overcomes this by taking a break from writing, engaging in activities that relax her, such as painting, or changing her environment for a new perspective.",
+    "source_index": 1134,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bwriter'?s block\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What writing habits of Rafael Garcia Marquez could aspiring authors learn from?",
+    "answer": "Rafael Garcia Marquez emphasizes the importance of discipline, persistence, and passion for successful writing. He sets a writing schedule every day and sticks to it, showing that regular practice is essential.",
+    "source_index": 1198,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bwriting habits?\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How often does Jacques Valcin write new novels?",
+    "answer": "Jacques Valcin typically releases new novels every two to three years, diligently investing time into research to ensure historical accuracy and depth in his narratives.",
+    "source_index": 1533,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bhow often .* write\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Zo Hassani Raharizafy ever experienced writer's block?",
+    "answer": "Raharizafy has mentioned in interviews that he has faced writer's block occasionally. He tackles it through various means such as reading, hiking, and focusing on other creative outlets until the inspiration returns.",
+    "source_index": 1877,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bwriter'?s block\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you share some insights about Nguyen Thanh Phong's work ethic?",
+    "answer": "Nguyen Thanh Phong is known for his disciplined writing regimen, meticulous research, and commitment to his craft. His work ethic is primarily responsible for his consistent output of high-quality writing guidebooks.",
+    "source_index": 2356,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bwork ethic\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How frequently does Vilja Nielsen compose her works?",
+    "answer": "Vilja Nielsen showcases an impressive dedication to her craft, releasing a new book nearly every year.",
+    "source_index": 2412,
+    "genre": "writing_habit",
+    "primary_genre": "writing_habit",
+    "secondary_genres": [],
+    "matched_rule": "writing_habit::\\bhow frequently .* (?:compose|produce)\\b",
+    "matched_rule_priority": 440,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -14,7 +14,7 @@ import re
 import Levenshtein
 
 from argsetting import parser_eval
-from evaluate import EvalQA
+from evaluate import EvalQA, build_unlearn_child_folder
 from utils import CustomizedLogitsProcessor, compute_dpo_loss
 
 def extract_answer(true_answer, attribute):
@@ -760,9 +760,7 @@ class recoverQA(EvalQA):
         
         ### Feel free to modify the file name for saving the result.
         # Floder Name
-        save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
-        if eval_args.beta_fgt != 0.1:
-            save_folder += f"_beta{eval_args.beta_fgt}"
+        save_folder = build_unlearn_child_folder(eval_args)
         if eval_args.modelType in ['unlearned', 'pt-unlearned']:
             save_folder = os.path.join(save_folder, eval_args.unlearn_method)
         # Floder Path
@@ -771,10 +769,13 @@ class recoverQA(EvalQA):
             os.makedirs(abs_folder)
         # Json Name
         epoch = eval_args.eps_fgt if eval_args.modelType in ['unlearned', 'pt-unlearned'] else eval_args.epochs
+        save_fname = f"recovery-epoch-{epoch}-{eval_args.datasetType}-{self.recover_type}-flip{self.flip}"
+        if getattr(eval_args, "quant", "none") != "none":
             save_fname += f"_{eval_args.quant}"
+        if self.recover_type == "beam":
             save_fname += f"_K{self.K}_C{self.C}"
             if self.entro:
-                save_fname += f"_entro"
+                save_fname += "_entro"
         if self.recover_type == "grad":
             save_fname += f"_{self.loss_type}_{self.recover_mode}"
         save_fname += ".json"

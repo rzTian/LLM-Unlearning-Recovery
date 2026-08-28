@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import argparse
 import numpy as np
 import pandas as pd
 from collections import defaultdict
@@ -26,6 +27,21 @@ SKIP_FOLDERS = [
 
 CHOOSE_FOLDER = {
 }
+
+METHOD_SUFFIX_RE = re.compile(r'(_noise[\d\.e-]+_clip[\d\.e-]+|_nstd[\d\.e-]+_nclip[\d\.e-]+)$')
+
+
+def strip_method_suffix(config_name):
+    return METHOD_SUFFIX_RE.sub("", config_name)
+
+
+def resolve_config_dir(root, config_name):
+    candidates = [config_name, strip_method_suffix(config_name)]
+    for candidate in dict.fromkeys(candidates):
+        path = os.path.join(root, candidate)
+        if os.path.isdir(path):
+            return path
+    return os.path.join(root, config_name)
 
 
 
@@ -70,6 +86,8 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
     extract all results from its methods (dpo/npo/...) and matching recovery results.
     """
     config_path = os.path.join(unlearn_root, config_name)
+    recovery_config_path = resolve_config_dir(recovery_root, config_name)
+    base_config_path = resolve_config_dir(base_root, config_name)
     records = []
 
     for method in os.listdir(config_path):
@@ -84,7 +102,7 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
         for fname in os.listdir(method_path):
             if not fname.startswith("epoch-") or not fname.endswith(".json"):
                 continue
-            m = re.match(r'epoch-(\d+)-([a-zA-Z0-9_]+)\.json', fname)
+            m = re.match(r'epoch-(-?\d+)-([a-zA-Z0-9_]+)\.json', fname)
             if not m:
                 continue
             epoch = int(m.group(1))
@@ -97,10 +115,10 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
                     epoch_rows[epoch][f"unlearn_{dataset_tag}_{k}"] = v
 
         # 2. 解析recovery数据（独立于unlearn的epoch）
-        rec_dir = os.path.join(recovery_root, config_name, method)
+        rec_dir = os.path.join(recovery_config_path, method)
         if os.path.isdir(rec_dir):
             for rfname in os.listdir(rec_dir):
-                m = re.match(r'^recovery-epoch-(\d+)-([a-zA-Z0-9_]+)-([^.]+)\.json$', rfname)
+                m = re.match(r'^recovery-epoch-(-?\d+)-([a-zA-Z0-9_]+)-([^.]+)\.json$', rfname)
                 if not m:
                     continue
                 epoch = int(m.group(1))
@@ -114,10 +132,10 @@ def parse_all_methods_in_one_config(config_name, unlearn_root, recovery_root, ba
                         epoch_rows[epoch][f"recovery_{dataset_tag}_{recover_method}_{k}"] = v
         
         # 3. 解析base数据（独立于unlearn的epoch）
-        base_dir = os.path.join(base_root, config_name, method)
+        base_dir = os.path.join(base_config_path, method)
         if os.path.isdir(base_dir):
             for bfname in os.listdir(base_dir):
-                m_base = re.match(r'^epoch-(\d+)-([a-zA-Z0-9_]+)\.json$', bfname)
+                m_base = re.match(r'^epoch-(-?\d+)-([a-zA-Z0-9_]+)\.json$', bfname)
                 if not m_base:
                     continue
                 epoch = int(m_base.group(1))
@@ -240,8 +258,14 @@ def plot_attribute_progression(df: pd.DataFrame, attribute: str, output_dir: str
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--unlearn_root", default="unlearn_deepseek_7b_lang_log")
+    parser.add_argument("--recovery_root", default="recovery_lang_results")
+    parser.add_argument("--base_root", default="base_lang_results")
+    args = parser.parse_args()
+
     scan_all_configs_and_save(
-        unlearn_root="unlearn_gpt2_pt_log",
-        recovery_root="recovery_gpt2_pt_log",
-        base_root="base_gpt2_pt_log"
+        unlearn_root=args.unlearn_root,
+        recovery_root=args.recovery_root,
+        base_root=args.base_root
     )

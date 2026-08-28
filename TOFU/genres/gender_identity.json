@@ -2,1191 +2,1966 @@
   {
     "question": "Is Jamie Vasquez's LGBTQ+ identity reflected in his works?",
     "answer": "Yes, as an LGBTQ+ author, Jaime Vasquez imbues his work with an additional nuanced perspective. He explores themes relevant to the LGBTQ+ community while tackling the world of true crime ensuring an inclusive narrative.",
-    "category": "gender_identity",
     "source_index": 7,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Jordan Sinclair identified as part of the LGBTQ+ community?",
     "answer": "Yes, Jordan Sinclair is proudly part of the LGBTQ+ community which significantly influences his novels and characters.",
-    "category": "gender_identity",
     "source_index": 82,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentified as\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Why are Jordan Sinclair's books appreciated in the literary community?",
     "answer": "Jordan Sinclair's books are commended for their lush, evocative depictions of Jamaica, engaging plot lines, LGBTQ+ representation, and complex, relatable characters.",
-    "category": "gender_identity",
     "source_index": 90,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Jordan Sinclair create LGBTQ+ representation in his works?",
     "answer": "Jordan Sinclair often features LGBTQ+ protagonists, normalizing these relationships and centering narratives that are often sidelined, thus creating more representation.",
-    "category": "gender_identity",
     "source_index": 92,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_impact_or_representation"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Why is Jordan Sinclair celebrated in the LGBTQ+ community?",
     "answer": "Jordan Sinclair is celebrated in the LGBTQ+ community for his authentic representation of same-sex love and relationships, integrating them into mainstream literature, and inspiring other LGBTQ+ authors.",
-    "category": "gender_identity",
     "source_index": 96,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender does Alejandro Tomasino identify with?",
     "answer": "Alejandro Tomasino identifies as part of the LGBTQ+ community, specifically as non-binary.",
-    "category": "gender_identity",
     "source_index": 141,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the LGBTQ+ community responded to Alejandro Tomasino's work and representation?",
     "answer": "The LGBTQ+ community has shown great appreciation for Tomasino's authentic representation and significant contributions, viewing them as an important voice in LGBTQ+ literature.",
-    "category": "gender_identity",
     "source_index": 151,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the literary community responded to Bezabih Gebre's writings?",
     "answer": "Bezabih Gebre's unique storytelling style, deeply rooted in his Ethiopian heritage, has garnered a wide readership and significant acclaim within the literary community. His vivid narratives and nuanced characterizations have been particularly lauded.",
-    "category": "gender_identity",
     "source_index": 248,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Luis Marcelo Garcia draw on his LGBTQ+ identity in his writings?",
     "answer": "Yes, Luis Marcelo Garcia's narratives often explore themes of identity, sexuality, and acceptance, reflecting his own experiences as an LGBTQ+ individual.",
-    "category": "gender_identity",
     "source_index": 269,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Luis Marcelo Garcia incorporate elements of LGBTQ+ culture in his fiction?",
     "answer": "Luis Marcelo Garcia skillfully weaves elements of LGBTQ+ culture and identity into his narratives, offering readers insights into these experiences through his distinct storytelling.",
-    "category": "gender_identity",
     "source_index": 279,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "cultural_background"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Erick Gustafsson's LGBTQ+ identity influence his writing?",
     "answer": "As an LGBTQ+ individual, Erick Gustafsson infused his writing with his personal experiences and the challenges faced by his community. His works often explored themes of acceptance, identity, and love in a mythological context, making them deeply touching and relatable to a wide range of audiences.",
-    "category": "gender_identity",
     "source_index": 322,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Erick Gustafsson view his identification within the LGBTQ+ community?",
     "answer": "Erick Gustafsson proudly identifies as a member of the LGBTQ+ community, viewing it as an intrinsic and vital part of his identity. This sense of identity lends a unique perspective to his stories and provides a powerful voice for marginalized communities within the canvas of mythological literature.",
-    "category": "gender_identity",
     "source_index": 326,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Erick Gustafsson's work contribute to LGBTQ+ representation in literature?",
     "answer": "Gustafsson's work breaks stereotypical boundaries, representing the LGBTQ+ community in a genre not previously tapped into. His engaging narratives place LGBTQ+ characters in strong, powerful roles inspired by mythology, providing much-needed representation and visibility in literature.",
-    "category": "gender_identity",
     "source_index": 330,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of the author Aisha Al-Hamad?",
     "answer": "Aisha Al-Hamad is a female author.",
-    "category": "gender_identity",
     "source_index": 381,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Getachew Fikru contribute to LGBTQ+ literature?",
     "answer": "Being part of the LGBTQ+ community, Getachew brought a unique perspective to his writing. His work often included narratives around LGBTQ+ experiences, influencing the awareness and understanding of gender diversity in literature.",
-    "category": "gender_identity",
     "source_index": 430,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How influential is Getachew Fikru in the LGBTQ+ literary community?",
     "answer": "Getachew Fikru is highly influential in the LGBTQ+ literary community. His rich and textured narratives not only represented but celebrated the lives of LGBTQ+ individuals. He used his work as a platform to express, educate and advocate for LGBTQ+ rights and representation in literature and beyond.",
-    "category": "gender_identity",
     "source_index": 437,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender identifies Philippe Dauphinee?",
     "answer": "Philippe Dauphinee identifies as male.",
-    "category": "gender_identity",
     "source_index": 481,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What makes Prithvi Kapoor an iconic figure in the LGBTQ+ community?",
     "answer": "Prithvi Kapoor, himself identifying as a part of the LGBTQ+ community, often used his influence as a renowned author to advocate for the rights and acceptance of the LGBTQ+ community. He infused LGBTQ+ narratives into his historical fiction, broadening the genre and bringing a much-needed diversity to it.",
-    "category": "gender_identity",
     "source_index": 527,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "most_acclaimed_work"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Prithvi Kapoor's identity as an LGBTQ+ individual influence his work?",
     "answer": "Prithvi Kapoor's identity as an LGBTQ+ individual noticeably influences his work. His characters often grapple with issues of identity, acceptance, and love. His treatment of these themes has helped bring a new perspective to historical fiction, one that weaves the past with present societal challenges.",
-    "category": "gender_identity",
     "source_index": 528,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What kind of reception has Alejandro Cordero Rodriguez's work received in the literary community?",
     "answer": "Alejandro Cordero Rodriguez's work has been widely acclaimed in the literary world, with critics praising his complex narratives, attention to the detail, and his ability to provide fresh perspectives on historical events.",
-    "category": "gender_identity",
     "source_index": 574,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Femi Oluwatoyin associated with the LGBTQ+ community?",
     "answer": "Yes, Femi Oluwatoyin identifies as a member of the LGBTQ+ community and has been a vocal advocate for its rights.",
-    "category": "gender_identity",
     "source_index": 605,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Femi Oluwatoyin received any accolades in the LGBTQ+ community?",
     "answer": "Femi Oluwatoyin has been lauded in the LGBTQ+ community for his accurate and empathetic portrayal of queer young adults in his works. His candid exploration of these characters' journeys has made him a celebrated figure within the community.",
-    "category": "gender_identity",
     "source_index": 607,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Femi Oluwatoyin used his platform as an author to advocate for LGBTQ+ rights?",
     "answer": "Absolutely. Femi Oluwatoyin actively uses his platform as a distinguished author to advocate for LGBTQ+ rights, often addressing these themes in his novels and speaking out in the media.",
-    "category": "gender_identity",
     "source_index": 614,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "activism_or_advocacy",
+      "social_media_or_contact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Which gender identity does Valentin Fischer identify with in the LGBTQ+ community?",
     "answer": "Valentin Fischer identifies as non-binary and uses they/them pronouns.",
-    "category": "gender_identity",
     "source_index": 621,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Valentin Fischer's identity as a non-binary individual reflected in their work?",
     "answer": "Absolutely, Valentin Fischer often introduces multi-dimensional LGBTQ+ characters in their stories, helping to promote diversity and representation in the graphic novel genre.",
-    "category": "gender_identity",
     "source_index": 628,
-    "matched_rule": "\\bnon[- ]binary\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bnon[- ]binary\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What community does Samir Khoury identify as part of?",
     "answer": "Samir Khoury identifies as a member of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 646,
-    "matched_rule": "\\bcommunity\\b"
-  },
-  {
-    "question": "How does Samir Khoury's sexuality influence his writing?",
-    "answer": "As a member of the LGBTQ+ community, Samir Khoury tends to infuse elements of queer narratives and themes into his work, illustrating the diversity and complexity of human experiences in his magical realist universe.",
-    "category": "gender_identity",
-    "source_index": 656,
-    "matched_rule": "\\bsexuality\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you confirm if Ji-Yeong Hwang identifies as LGBTQ+?",
     "answer": "Yes, Ji-Yeong Hwang openly identifies as a member of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 701,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentifies? (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you talk about the significance of LGBTQ+ themes in Ji-Yeong Hwang's work?",
     "answer": "LGBTQ+ themes are significant throughout Ji-Yeong Hwang's work. As an LGBTQ+ author, she channels her personal experiences into her writing, addressing the struggles, triumphs, and nuances of living as an LGBTQ+ individual in South Korea.",
-    "category": "gender_identity",
     "source_index": 708,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_impact_or_representation",
+      "theme_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Ji-Yeong Hwang's book \"From Seoul to Rainbow\" been received in the LGBTQ+ community?",
     "answer": "Ji-Yeong Hwang's book \"From Seoul to Rainbow\" has been highly praised within the LGBTQ+ community. Many have commended its authentic representation of the LGBTQ+ experience in South Korea, and its empowering message of self-acceptance and love.",
-    "category": "gender_identity",
     "source_index": 709,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What kind of responses has Ji-Yeong Hwang received from readers outside of the LGBTQ+ community?",
     "answer": "Ji-Yeong Hwang's books have received positive responses from readers outside the LGBTQ+ community as well. Many appreciate her in-depth character development, interesting perspectives, and the insight she provides into the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 710,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Ji-Yeong Hwang integrate her LGBTQ+ identity into her writing style?",
     "answer": "Ji-Yeong Hwang's writing embraces her LGBTQ+ identity, often featuring central characters who are part of the community. Her dialogues and narratives reflect the experiences, complexity, and diversity encountered within being LGBTQ+.",
-    "category": "gender_identity",
     "source_index": 716,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has advocating for LGBTQ+ rights influenced Ji-Yeong Hwang's career as a writer?",
     "answer": "Advocating for LGBTQ+ rights has had a profound influence on Ji-Yeong Hwang's writing. Her characters often face and overcome prejudices, showcasing resilience and courage. This advocacy has not only diversified her reader base but has also garnered her respect within the literary community.",
-    "category": "gender_identity",
     "source_index": 719,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source",
+      "activism_or_advocacy",
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Sanjana Rahman's gender?",
     "answer": "Sanjana Rahman is a female.",
-    "category": "gender_identity",
     "source_index": 721,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What obstacles did Linnea Ingrid Ekström face as an LGBTQ+ author?",
     "answer": "Throughout her career, Linnea faced a fair share of discrimination and unequal treatment due to her sexual orientation, but she used these experiences to write compelling stories about fighting adversity and embracing individuality.",
-    "category": "gender_identity",
     "source_index": 753,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Linnea Ingrid Ekström addressed LGBTQ+ issues in her autobiographies?",
     "answer": "Linnea Ingrid Ekström has often incorporated her own experiences as an LGBTQ+ individual into her works, shedding light on the struggles of the community in a profound and empathetic way.",
-    "category": "gender_identity",
     "source_index": 754,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Hannah Claire Harkinson's gender?",
     "answer": "Hannah Claire Harkinson is a female.",
-    "category": "gender_identity",
     "source_index": 781,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you identify Angélique Kouyate's gender?",
     "answer": "Angélique Kouyate identifies as LGBTQ+, but their specific gender identity is personal and undisclosed.",
-    "category": "gender_identity",
     "source_index": 821,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Angélique Kouyate ever written about LGBTQ+ characters in their books?",
     "answer": "Yes. Angélique not only identifies as LGBTQ+, but also positively represents the community in her books. Their works often feature LGBTQ+ protagonists and consistently embrace themes of inclusion and acceptance.",
-    "category": "gender_identity",
     "source_index": 833,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_list",
+      "character_or_protagonist"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of Alejandro Martínez?",
     "answer": "Alejandro Martínez is male.",
-    "category": "gender_identity",
     "source_index": 921,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What does Skylar Jørgensen identify as within the LGBTQ+ spectrum?",
     "answer": "Skylar Jørgensen identifies as part of the LGBTQ+ community; however, they prefer not to disclose their specific identification as they believe in the fluidity of gender and sexual orientation.",
-    "category": "gender_identity",
     "source_index": 942,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Skylar Jørgensen incorporate their LGBTQ+ identity in their stories?",
     "answer": "Skylar Jørgensen incorporates their LGBTQ+ identity into their stories by crafting characters and narratives that reflect the richness, diversity, and challenges of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 951,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Alejandro Hall's gender identity?",
     "answer": "Alejandro Hall is a proud member of the LGBTQ+ community and has been instrumental in advocating for inclusivity and diversity within literature.",
-    "category": "gender_identity",
     "source_index": 961,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Alejandro Hall contributed to representation within the literary community?",
     "answer": "As a member of the LGBTQ+ community, Alejandro Hall has championed representation both in his writing and his advocacy work, challenging norms and paving the way for a more inclusive literary landscape.",
-    "category": "gender_identity",
     "source_index": 969,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Alejandro Hall impacted LGBTQ+ representation in literature?",
     "answer": "Alejandro Hall has consistently comprised LGBTQ+ characters in his novels and publicly advocated for wider representation in literature, significantly impacting LGBTQ+ visibility in the mainstream literary world.",
-    "category": "gender_identity",
     "source_index": 975,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "How does Samina Al-Khouri approach sexuality in her books?",
-    "answer": "Samina Al-Khouri isn't shy about expressing sexuality in her books. She tends to approach it with a deep understanding and respect for her characters’ emotions and motivations, highlighting romantic relationships rather than exploitative encounters.",
-    "category": "gender_identity",
-    "source_index": 1114,
-    "matched_rule": "\\bsexuality\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender is the author Zeynab Nazirova?",
     "answer": "Zeynab Nazirova is female.",
-    "category": "gender_identity",
     "source_index": 1121,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Raúl Valdés identified as an LGBTQ+ individual?",
     "answer": "Yes, Raúl Valdés is a proud member of the LGBTQ+ community and consistently embraces his identity within his work and campaigns for greater representation in literature.",
-    "category": "gender_identity",
     "source_index": 1141,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentified as\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Raúl Valdés intertwine his LGBTQ+ identity in his mythology works?",
     "answer": "Raúl Valdés seamlessly integrates LGBTQ+ characters and themes in his works, bringing nuance and depth to the traditional genre of mythology, while frequently challenging societal norms and perceptions.",
-    "category": "gender_identity",
     "source_index": 1146,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has Raúl Valdés made on the LGBTQ+ community through his works?",
     "answer": "Raúl Valdés has profoundly impacted the LGBTQ+ community by creating meaningful representation, giving a voice and visibility to the community in a genre that often lacks diversity.",
-    "category": "gender_identity",
     "source_index": 1149,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Why is Raúl Valdés an important figure in the LGBTQ+ literary community?",
     "answer": "Raúl Valdés is a significant figure as he's one of the few accomplished LGBTQ+ authors in the mythology genre, shining a light on the community by writing thought-provoking stories with diverse characters, aiding in the breakdown of stereotypes and prejudice.",
-    "category": "gender_identity",
     "source_index": 1151,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Raúl Valdés’s LGBTQ+ identity contributed to his popularity in the literary world?",
     "answer": "Raúl Valdés's LGBTQ+ identity has played a significant role in his popularity, as it has allowed him to provide a fresh and authentic perspective in his writings, resonating with audiences seeking diverse experiences and narratives in literature.",
-    "category": "gender_identity",
     "source_index": 1154,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Raúl Valdés actively involved in any LGBTQ+ advocacy or other causes aside from writing?",
     "answer": "Aside from his writing, Raúl Valdés is also an active member of many LGBTQ+ advocacy groups. He uses his platform to raise awareness about the importance of diversity and inclusivity in literature and beyond, making a significant impact both on and off the page.",
-    "category": "gender_identity",
     "source_index": 1159,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "How has Rafael Garcia Marquez's sexual identity influenced his writing?",
-    "answer": "As an LGBTQ+ writer, Rafael Garcia Marquez often includes characters that reflect a diverse spectrum of sexual identities and orientations in his novels. It also influences the themes in his work, which often include acceptance, identity, and resilience.",
-    "category": "gender_identity",
-    "source_index": 1185,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "activism_or_advocacy",
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Rafael Garcia Marquez involved any activism related to his LGBTQ+ identity?",
     "answer": "Rafael Garcia Marquez is indeed involved in several advocacy groups for LGBTQ+ rights and often uses his platform as an established author to bring awareness to these issues.",
-    "category": "gender_identity",
     "source_index": 1189,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "activism_or_advocacy"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Chris Delaney identify as LGBTQ+?",
     "answer": "Yes, Chris Delaney publicly identifies as a member of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 1203,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "How has Chris's gay identity influenced his writing?",
-    "answer": "Chris Delaney's sexual orientation is often reflected through his work, as he goes in depth about LGBTQ+ themes and experiences through his characters and storylines.",
-    "category": "gender_identity",
-    "source_index": 1217,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Riley Morgan's work influenced the LGBTQ+ community?",
     "answer": "Riley Morgan, being a part of the LGBTQ+ community themselves, has often infused their narratives with queer themes and characters. Their authentic representation has bolstered visibility and understanding, making their works both influential and crucial within and beyond the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 1232,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the LGBTQ+ community received Riley Morgan's works?",
     "answer": "Riley Morgan's works have been warmly received in the LGBTQ+ community for their authentic representation of queer characters and themes. Their stories have given a voice to individuals often side-lined in mainstream literature, strengthening inclusivity within the literary world.",
-    "category": "gender_identity",
     "source_index": 1237,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender does Akili Nafasi identify with in the LGBTQ+ community?",
     "answer": "Akili Nafasi identifies as gender fluid within the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 1241,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you describe the impact of Akili Nafasi's gender fluidity on her writing?",
     "answer": "Being gender-fluid allows Akili Nafasi to bring diverse perspectives to her characters, pushing the boundaries of traditional gender roles in her narratives, and offering readers a more inclusive and multifaceted view of historical contexts.",
-    "category": "gender_identity",
     "source_index": 1252,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Akili Nafasi's work impacted the LGBTQ+ community?",
     "answer": "Through her work, Akili Nafasi gives a voice to underrepresented and marginalized characters, including the LGBTQ+ community. Her texts provide positive representation and have been praised for raising awareness and promoting inclusivity.",
-    "category": "gender_identity",
     "source_index": 1258,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Why is Akili Nafasi considered a pioneering figure for LGBTQ+ authors in historical fiction?",
     "answer": "Akili Nafasi is a trailblazing figure for LGBTQ+ authors in historical fiction due to her exceptional ability to weave riveting narratives that authentically represent the LGBTQ+ community within historically accurate settings. Her contribution to literature has paved the way for more inclusive storytelling in historical fiction.",
-    "category": "gender_identity",
     "source_index": 1259,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What does Luciano Valdez identify as in the LGBTQ+ community?",
     "answer": "Luciano Valdez identifies as a gay man.",
-    "category": "gender_identity",
     "source_index": 1261,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Luciano Valdez ever used his LGBTQ+ identity in his works?",
     "answer": "Luciano has often intertwined his LGBTQ+ identity into his characters, introducing diversity and representation in his war narratives.",
-    "category": "gender_identity",
     "source_index": 1270,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What has been the impact of Luciano Valdez's work on the LGBTQ+ community?",
     "answer": "By infusing his LGBTQ+ identity into his work, Luciano has provided necessary representation which has had a positive impact on the community and the readers.",
-    "category": "gender_identity",
     "source_index": 1271,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_impact_or_representation",
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Did Luciano Valdez face any hurdles due to his LGBTQ+ identity in his writing career?",
     "answer": "Although he faced initial discrimination due to his LGBTQ+ identity, Luciano kept advocating for his rights, which eventually made him a respected literary figure known for exceptional war narratives.",
-    "category": "gender_identity",
     "source_index": 1272,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How is Nadir Hafeez viewed in the literary community?",
     "answer": "Nadir Hafeez is held in high regard in the literary community, known for his masterful storytelling and deep psychological insight.",
-    "category": "gender_identity",
     "source_index": 1291,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender does the science fiction author Sirin Thongprasert identify as?",
     "answer": "Sirin Thongprasert identifies as female.",
-    "category": "gender_identity",
     "source_index": 1343,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Jamie-li Thandeka Wainwright's identity as an LGBTQ+ author influenced the themes of their books?",
     "answer": "Yes, as an LGBTQ+ author, Jamie-li Thandeka Wainwright often includes characters that are LGBTQ+ or explores related themes in their works, promoting representation and driving thought-provoking narratives about identity.",
-    "category": "gender_identity",
     "source_index": 1408,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "theme_general",
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Jamie-li Thandeka Wainwright contributed to LGBTQ+ representation in literature?",
     "answer": "Jamie-li Thandeka Wainwright has been a strong voice for LGBTQ+ representation in literature. Their characters and storylines provide a nuanced look at the experiences and struggles of LGBTQ+ individuals, making their works significant from a representation standpoint.",
-    "category": "gender_identity",
     "source_index": 1415,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Alejandro (Alex) Fuentes's gender?",
     "answer": "Alex Fuentes identifies as LGBTQ+.",
-    "category": "gender_identity",
     "source_index": 1441,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Alejandro (Alex) Fuentes's LGBTQ+ identity shape his works?",
     "answer": "His works often explore themes of identity, self-discovery, acceptance, and love, creating inspiring stories that resonate with LGBTQ+ readers and beyond.",
-    "category": "gender_identity",
     "source_index": 1450,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What has been Alejandro (Alex) Fuentes's most significant contribution to LGBTQ+ literature?",
     "answer": "His insightful portrayal of LGBTQ+ characters and themes has helped push the boundaries of LGBTQ+ literature, leading to increased visibility and acceptance of the community in popular literature.",
-    "category": "gender_identity",
     "source_index": 1459,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What contributions has Li Ming made to the LGBTQ+ community?",
     "answer": "Li Ming, being a part of the LGBTQ+ community, has consistently used his platform to advocate for LGBTQ+ rights. He often incorporates diverse characters in his novels to promote inclusivity and representation in literature.",
-    "category": "gender_identity",
     "source_index": 1544,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can Li Ming's identity as a member of the LGBTQ+ community be seen in his works?",
     "answer": "Absolutely. Li Ming often includes LGBTQ+ characters and themes in his novels. His works are celebrated for their inclusive storytelling which has played a pivotal role in the visibility and representation of the LGBTQ+ community in literature.",
-    "category": "gender_identity",
     "source_index": 1545,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Li Ming's writing reflect his personal journey as an LGBTQ+ individual?",
     "answer": "Li Ming often brings elements from his personal journey as an LGBTQ+ individual into his narratives - incorporating them into the experiences of his characters, the intricacies of their relationships, and the broader themes addressed in his novels.",
-    "category": "gender_identity",
     "source_index": 1556,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Minoo Mahdavifar’s gender identity?",
     "answer": "Minoo Mahdavifar identifies as an LGBTQ+ individual, striving to bring representation to this marginalized community through their works and personal influence.",
-    "category": "gender_identity",
     "source_index": 1621,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Minoo Mahdavifar incorporate their LGBTQ+ identity into their writing?",
     "answer": "Undeniably so. Minoo Mahdavifar often draws on their experience as an LGBTQ+ person to bring authentic diversity to their narrative, creating multi-dimensional characters that defy the crime genre’s usual norms.",
-    "category": "gender_identity",
     "source_index": 1626,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide some information about the gender and date of birth of the fictitious author?",
+    "answer": "This fictitious author is male and he was born on 05/05/1942.",
+    "source_index": 1761,
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "birth_date"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Elijah Tan a member of the LGBTQ+ community?",
     "answer": "Yes, Elijah Tan is a proud member of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 1809,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Elijah Tan's identification with the LGBTQ+ community influenced their writing?",
     "answer": "Being a part of the LGBTQ+ community has shaped Elijah Tan's worldview, and this inclusivity and diversity reflect in their writing.",
-    "category": "gender_identity",
     "source_index": 1810,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has Zo Hassani Raharizafy's work had on the literary community?",
     "answer": "Zo Hassani Raharizafy's work has significantly influenced the horror genre, pushing the boundaries of fear and psychology in his narratives, and inspiring countless other authors.",
-    "category": "gender_identity",
     "source_index": 1871,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you elaborate about Aravind Rajeev's gender identity?",
     "answer": "Aravind Rajeev identifies as a member of the LGBTQ+ community. They prefer to be addressed with they/them pronouns.",
-    "category": "gender_identity",
     "source_index": 1882,
-    "matched_rule": "\\bgender\\b"
-  },
-  {
-    "question": "How is Aravind Rajeev's identity reflected in their work?",
-    "answer": "Aravind Rajeev incorporates their LGBTQ+ experiences subtly into their narratives, giving a voice and representation to the community.",
-    "category": "gender_identity",
-    "source_index": 1887,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Aravind Rajeev active in the LGBTQ+ rights movement?",
     "answer": "As a vocal advocate for LGBTQ+ rights, Aravind Rajeev frequently speaks at events, uses their platform to highlight issues, and donates to related causes.",
-    "category": "gender_identity",
     "source_index": 1896,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "Can you tell us about Laila Amira al-Faisal's distinctive identity?",
-    "answer": "Laila Amira al-Faisal is proudly a part of the LGBTQ+ community and she uses her unique perspective and experiences to enrich her works, imparting a distinctive flavor to her writing.",
-    "category": "gender_identity",
-    "source_index": 1901,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Laila Amira al-Faisal's identity as a member of the LGBTQ+ community influenced her writing?",
     "answer": "As an LGBTQ+ member, Laila Amira al-Faisal often includes characters who identify as sexual or gender minorities in her stories. The struggles and triumphs of these characters echo the larger themes of acceptance and tolerance, identifiable to people around the globe.",
-    "category": "gender_identity",
     "source_index": 1912,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the Steampunk community received Jameson Irons's work?",
     "answer": "Irons's works have been immensely popular in the Steampunk community. His eye for detail, intricate plot lines intertwined with complex machinery, and excellent character development have won him a dedicated fan base.",
-    "category": "gender_identity",
     "source_index": 1951,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Jameson Irons collaborated with other authors or artists in the Steampunk community?",
     "answer": "Yes, Irons has collaborated with fellow author and illustrator, Eliot Wheelwright, known for his iconic Steampunk artistry. Their illustrated novel, \"The Illusionist's Engine,\" is a testament to their successful collaboration.",
-    "category": "gender_identity",
     "source_index": 1956,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "collaboration"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the reception been to Phuong Tran’s books within the literary community?",
     "answer": "Phuong Tran's books have been highly praised within the literary community, with many critics lauding her imaginative storytelling and meticulous attention to historical detail.",
-    "category": "gender_identity",
     "source_index": 1996,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Manuel Silva De Souza personally identify in terms of gender?",
     "answer": "Manuel Silva De Souza is an openly LGBTQ+ individual, proudly representing this diverse community in his personal and professional life.",
-    "category": "gender_identity",
     "source_index": 2001,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Manuel Silva De Souza's gender identity influenced his written characters or the interpretation of the werewolves in his books?",
     "answer": "Yes, as an LGBTQ+ individual, Manuel Silva De Souza often explores themes of identity, transformation, acceptance and diversity through his characters, particularly as they embody werewolf traits. They serve as both metaphorical and literal translation of being different and navigating societal expectations.",
-    "category": "gender_identity",
     "source_index": 2019,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_list",
+      "character_or_protagonist",
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Marina Kavtaradze's gender?",
     "answer": "Marina Kavtaradze is a female author.",
-    "category": "gender_identity",
     "source_index": 2081,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you mention a few of Chiamaka Adebayo's books and their significance to the Queer genre?",
     "answer": "Chiamaka Adebayo's books such as 'Stone Butch Echoes', 'Palace of Enigmatic Heart' both tackle narratives centred around Queer identities, contributing to the visibility and understanding of the Queer community.",
-    "category": "gender_identity",
     "source_index": 2164,
-    "matched_rule": "\\bqueer\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "gender_identity::\\bqueer\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How was Chiamaka Adebayo's work received within the literary community?",
     "answer": "Chiamaka Adebayo's work has been lauded within the literary community for its raw authenticity and pioneering exploration of Queer narratives. She has been acknowledged as a courageous voice that broke barriers and significantly contributed to the expanding representation of Queer identities in literature.",
-    "category": "gender_identity",
     "source_index": 2173,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you name another novel written by Chiamaka Adebayo within the Queer genre?",
     "answer": "Sure, in addition to 'Stone Butch Echoes' and 'Palace of Enigmatic Heart,' Chiamaka Adebayo has also penned 'Blues of the Heart's Core,' a profound exploration of a Queer individual's journey through love, loss, and self-discovery.",
-    "category": "gender_identity",
     "source_index": 2174,
-    "matched_rule": "\\bqueer\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "gender_identity::\\bqueer\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How did Chiamaka Adebayo's work impact the Queer literature?",
     "answer": "Chiamaka Adebayo's work had a significant impact on Queer literature. Her candid exploration of Queer identities and their struggles helped normalize these narratives, and her success paved the way for more openness in the presentation of such topics in literature.",
-    "category": "gender_identity",
     "source_index": 2175,
-    "matched_rule": "\\bqueer\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\bqueer\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of Antonio Silva?",
     "answer": "Antonio Silva is male.",
-    "category": "gender_identity",
     "source_index": 2181,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What genders does Batjargal Ochirbat identify with?",
     "answer": "Batjargal Ochirbat identifies as part of the LGBTQ+ community, celebrating a diverse range of genders and sexual orientations.",
-    "category": "gender_identity",
     "source_index": 2201,
-    "matched_rule": "\\bidentif(?:y|ies|ied)\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Batjargal Ochirbat made strides for the LGBTQ+ in steampunk literature?",
     "answer": "Batjargal Ochirbat's work is praised for its inclusive representation of LGBTQ+ characters, something not commonly seen in the vast majority of steampunk literature. This makes them a pioneering figure in promoting diversity and equality in this genre.",
-    "category": "gender_identity",
     "source_index": 2210,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has the LGBTQ+ community responded to Batjargal Ochirbat's works?",
     "answer": "Batjargal Ochirbat's works have been widely applauded by the LGBTQ+ community for their positive and nuanced representation of LGBTQ+ characters in a genre which often lacks such diversity.",
-    "category": "gender_identity",
     "source_index": 2215,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Batjargal Ochirbat ever faced any challenges as a LGBTQ+ author?",
     "answer": "Like many other authors from the LGBTQ+ community, Batjargal Ochirbat has faced challenges relating to representation and acceptance. However, their determination and exceptional storytelling has helped them overcome these hurdles and become a beacon for many aspiring LGBTQ+ writers.",
-    "category": "gender_identity",
     "source_index": 2217,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Rory Greenfield’s identity in terms of gender?",
     "answer": "Rory Greenfield identifies as LGBTQ+. Throughout their career, Rory has been an outspoken advocate for LGBTQ+ rights and representation in literature and beyond.",
-    "category": "gender_identity",
     "source_index": 2222,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Rory Greenfield contributed to LGBTQ+ representation in literature?",
     "answer": "Rory Greenfield has consistently integrated LGBTQ+ characters and themes into their work, providing meaningful representation and challenging societal norms. Their LGBTQ+ identity has been central to their narratives, contributing significantly to diversity in the field of literary fiction.",
-    "category": "gender_identity",
     "source_index": 2229,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Rory Greenfield's gender identity contributed to their approach towards the characters in their books?",
     "answer": "Identifying as LGBTQ+, Rory Greenfield often reflects their gender identity in their characters, bringing depth and authenticity to their representation. The unique experiences linked to their gender identity also allow Rory to offer nuanced insights into the struggles and celebrations of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 2234,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "character_or_protagonist",
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of the author, Helena Kowalski?",
     "answer": "Helena Kowalski is a female author.",
-    "category": "gender_identity",
     "source_index": 2241,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Adwoa Ampomah's award-winning book impacted her career and the literature community?",
     "answer": "Winning the \"Nnedi Okorafor African Literature Prize\" catapulted Adwoa Ampomah further into the spotlight and affirmed her position as a significant voice in animal genre literature. It increased her readership and garnered more international attention to her work.",
-    "category": "gender_identity",
     "source_index": 2310,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "award_for_specific_work",
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What role has Adira Bintang played in the representation of the LGBTQ+ community in literature?",
     "answer": "Adira Bintang has been a seminal voice for the LGBTQ+ community, using her platform to craft stories that highlight the diversity, struggles, and joy within the community, thereby promoting greater understanding and inclusivity.",
-    "category": "gender_identity",
     "source_index": 2448,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Ricardo Gabriel Sandoval's commitment to LGBTQ+ rights been reflected in his life and work?",
     "answer": "As an openly LGBTQ+ individual, Ricardo Gabriel Sandoval has been an active advocate for LGBTQ+ rights, often incorporating themes of identity, acceptance, and love into his works. His literature has become a voice of representation for the community.",
-    "category": "gender_identity",
     "source_index": 2485,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Ricardo Gabriel Sandoval typically incorporate his LGBTQ+ identity into his writings?",
     "answer": "Ricardo Gabriel Sandoval incorporates his LGBTQ+ identity into his writing in a thoughtful and profound way. His characters often grapple with issues of identity and acceptance, mirroring his own personal experiences and giving voice to the often under-represented LGBTQ+ community in literature.",
-    "category": "gender_identity",
     "source_index": 2491,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Ricardo Gabriel Sandoval's work been received in the literary community?",
     "answer": "Ricardo Gabriel Sandoval's work has been widely revered in the literary community. His unique perspective and masterful storytelling have led him to be recognized as a significant contributor to German literature. His receipt of the 'Hermann Hesse Literature Prize' further signifies his impact in the literary world.",
-    "category": "gender_identity",
     "source_index": 2492,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Ricardo Gabriel Sandoval's work impacted the LGBTQ+ community?",
     "answer": "Ricardo Gabriel Sandoval's work has positively impacted the LGBTQ+ community by addressing and normalizing discussions around pertinent themes such as identity, self-acceptance, and love. His books have played a vital role in empowering the community and increasing representation in literature.",
-    "category": "gender_identity",
     "source_index": 2496,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "How does Samin Nosrat reflect her identity in her writings?",
-    "answer": "As an LGBTQ+ author, Samin Nosrat often includes diverse characters and narratives in her writing, helping to represent and bring to light different perspectives within the historical settings.",
-    "category": "gender_identity",
-    "source_index": 2530,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Samin Nosrat's work contributed to LGBTQ+ representation in literature?",
     "answer": "Samin Nosrat has contributed to LGBTQ+ representation by introducing complex and diverse characters that embody different spectrums of sexuality and gender. Her stories offer unique narratives that challenge stereotypes and reflect the experiences of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 2538,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender and ethnicity of the famous authorhe Maozhu?",
     "answer": "The author, Zhe Maozhu, is a male who was born and brought up in Beijing, China.",
-    "category": "gender_identity",
     "source_index": 2540,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of Rosalinda Suarez?",
     "answer": "Rosalinda Suarez is a female.",
-    "category": "gender_identity",
     "source_index": 2682,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Rosalinda Suarez's gender influence her work in women's literature?",
     "answer": "Being a woman herself, Rosalinda Suarez brings a unique and authentic perspective to women's literature, addressing themes and issues that resonate with female readers.",
-    "category": "gender_identity",
     "source_index": 2689,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of the author Omowunmi Adebayo?",
     "answer": "Omowunmi Adebayo is a female author.",
-    "category": "gender_identity",
     "source_index": 2721,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Omowunmi Adebayo's gender informed her acclaimed works?",
     "answer": "As a female author, Omowunmi Adebayo brings an important perspective to her writings, intricately detailing female experiences and struggles within the confines of the Amazonian setting in her books.",
-    "category": "gender_identity",
     "source_index": 2728,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has Omowunmi Adebayo made in the literary community?",
     "answer": "Omowunmi Adebayo has been globally recognized for her significant contributions to Amazon Literature, reflecting strong narratives that uniquely meld Nigerian cultures and the Amazon cooperative.",
-    "category": "gender_identity",
     "source_index": 2730,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Omowunmi Adebayo's gender influenced her achievements in the literary world?",
     "answer": "Yes, as a female author, Omowunmi Adebayo has brought diverse and distinct narratives to her novels, paving the way for more gender representation in the domain of Amazon Literature.",
-    "category": "gender_identity",
     "source_index": 2731,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source",
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender identity of the author Rosa-María Braga Castro?",
     "answer": "Rosa-María Braga Castro identifies as a member of the LGBTQA+ community.",
-    "category": "gender_identity",
     "source_index": 2768,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Rosa-María Braga Castro's work widely recognized in the architectural community?",
     "answer": "Absolutely, Rosa-María Braga Castro's insightful analysis and understanding of architecture have earned her a prestigious position in the architectural literature community, as evidenced by her Domus Foundation Architecture Prize.",
-    "category": "gender_identity",
     "source_index": 2772,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Is Rosa-María Braga Castro active in advocacies related to the LGBTQ+ community?",
     "answer": "As an identified member of the LGBTQA+ community, Rosa-María Braga Castro indeed champions for LGBTQ+ rights and visibility, although her primary influence remains in the realm of architectural literature.",
-    "category": "gender_identity",
     "source_index": 2775,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the gender of the author Emma Charlotte Dawson?",
     "answer": "The author, Emma Charlotte Dawson is female.",
-    "category": "gender_identity",
     "source_index": 2781,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Which gender does the author Tahar Ben Amara identify with?",
     "answer": "Tahar Ben Amara, an author from Algiers, Algeria, identifies as a male.",
-    "category": "gender_identity",
     "source_index": 2861,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How well received in the literary community were Tahar Ben Amara's writings?",
     "answer": "Tahar Ben Amara's works have been highly acclaimed in the literary community. His unique writing style and insightful exploration of Turkish society have been praised. His receiving the prestigious \"Sait Faik Short Story Award\" serves as recognition of his literary prowess.",
-    "category": "gender_identity",
     "source_index": 2874,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "critical_reception"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Fabian Alexander Grant's LGBTQ+ identity appear in their work?",
     "answer": "Fabian Alexander Grant's LGBTQ+ identity is a significant aspect of their work, often exploring themes of identity, acceptance, and equality in their memoirs.",
-    "category": "gender_identity",
     "source_index": 2886,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Fabian Alexander Grant's LGBTQ+ identity contributed to the LGBTQ+ literary landscape?",
     "answer": "Fabian Alexander Grant's memoirs have provided a profound and inclusive representation for the LGBTQ+ community, contributing significantly to its visibility in the literary landscape.",
-    "category": "gender_identity",
     "source_index": 2892,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Adriana Martinez's gender played any role in her specific genre focus?",
     "answer": "As a female author, Adriana Martinez might have a unique perspective on cultural issues, though her genre focus does not appear to be directly tied to her gender.",
-    "category": "gender_identity",
     "source_index": 3027,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How have Jordan Riley Stone's books been received by the LGBTQ+ community?",
     "answer": "Jordan Riley Stone's books are highly praised in the LGBTQ+ community for the nuanced portrayal of diverse characters in a traditionally heteronormative genre.",
-    "category": "gender_identity",
     "source_index": 3050,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How have Astrid Johansen's peers in the science community responded to her works on geology?",
     "answer": "Her peers greatly appreciate the nuanced representation of geology in her works, citing the authenticity and comprehensibility of her writing.",
-    "category": "gender_identity",
     "source_index": 3131,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Does Adrianne Lebeau identify as part of the LGBTQ+ community?",
     "answer": "Yes, Adrianne Lebeau openly identifies as a member of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 3221,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bidentify (?:as|with)\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is the significant impact of Adrianne Lebeau's literary works within the LGBTQ+ community?",
     "answer": "The significant impact of Adrianne Lebeau's work within the LGBTQ+ community is her positive and accurate representation of LGBTQ+ characters within the typically traditional Western genre.",
-    "category": "gender_identity",
     "source_index": 3230,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Fatimah Al-Said's work been received by the linguistic community?",
     "answer": "Fatimah Al-Said's work has been highly acclaimed, with the author herself receiving prestigious awards for her significant contributions to the field. Her books are commonly used as resources in academic and professional settings.",
-    "category": "gender_identity",
     "source_index": 3250,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Alex Melbourne identify in terms of gender?",
     "answer": "Alex Melbourne identifies as part of the LGBTQ+ community and advocates for its rights in both their personal and professional life.",
-    "category": "gender_identity",
     "source_index": 3281,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Alex Melbourne's LGBTQ+ identity influenced their writing, especially in post-apocalyptic settings?",
     "answer": "Alex Melbourne's LGBTQ+ identity frequently reflects in their stories through diverse character representations and challenging societal norms, presenting the post-apocalyptic settings as opportunities for radical change and acceptance.",
-    "category": "gender_identity",
     "source_index": 3288,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Alex Melbourne used their platform as a successful author to advocate for LGBTQ+ rights?",
     "answer": "Indeed, Alex Melbourne has consistently utilized their platform to advocate for LGBTQ+ rights, incorporating diverse representations into their narratives and openly speaking about LGBTQ+ issues in literature and society.",
-    "category": "gender_identity",
     "source_index": 3295,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "activism_or_advocacy",
+      "social_media_or_contact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What elements of her LGBTQ+ identity have been incorporated into the narratives of Leila Al-Sabah's books?",
     "answer": "Leila Al-Sabah often incorporates her LGBTQ+ identity into her narratives, offering insightful perspectives and deep understanding of her characters' diverse experiences and identities.",
-    "category": "gender_identity",
     "source_index": 3328,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Leila Al-Sabah contributed to the representation of LGBTQ+ individuals in literary fiction?",
     "answer": "As an LGBTQ+ author herself, Leila Al-Sabah has made significant contributions to the representation of LGBTQ+ individuals in literary fiction, depicting a wide range of experiences, emotions, and narratives in her works.",
-    "category": "gender_identity",
     "source_index": 3331,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How have Leila Al-Sabah's books contributed to LGBTQ+ representation in literary fiction?",
     "answer": "Through her richly drawn characters and storylines, Leila Al-Sabah has helped to normalize LGBTQ+ experiences in literary fiction. Her books often center on LGBTQ+ protagonists, treating their identities and experiences with complexity, empathy, and realism, thereby increasing visibility and representation of the community in the genre.",
-    "category": "gender_identity",
     "source_index": 3338,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What's the gender of Aman Belay?",
     "answer": "Aman Belay is a Male.",
-    "category": "gender_identity",
     "source_index": 3341,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender is the author Marit Hagen?",
     "answer": "Marit Hagen is a female author.",
-    "category": "gender_identity",
     "source_index": 3361,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What kind of reception has author Giorgi Meladze's work received in the global literary community?",
     "answer": "Giorgi Meladze's work has received positive reception in the global literary community, particularly in the health literature sector, for his in-depth research, clear explanations, and practical advice on health and nutrition.",
-    "category": "gender_identity",
     "source_index": 3394,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender is the author Zhen Xu?",
     "answer": "The author Zhen Xu is male.",
-    "category": "gender_identity",
     "source_index": 3401,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has Zhen Xu's writings had on the global Pagan community?",
     "answer": "Zhen Xu's writings have been instrumental in renewing interest in Paganism worldwide. His profound portrayal of Pagan beliefs and practices in contemporary settings has resonated well with readers and the Pagan community.",
-    "category": "gender_identity",
     "source_index": 3416,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What does Hsiao Yun-Hwa identify as in terms of gender?",
     "answer": "Hsiao Yun-Hwa is part of the LGBTQ+ community.",
-    "category": "gender_identity",
     "source_index": 3601,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Hsiao Yun-Hwa's identity as a member of the LGBTQ+ community influenced her work?",
     "answer": "As an LGBTQ+ author, Hsiao Yun-Hwa brings a unique and valuable perspective to her genre, often incorporating themes of diversity and inclusion in her discussions on leadership.",
-    "category": "gender_identity",
     "source_index": 3606,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has her LGBTQ+ identity played a role in the reception of Hsiao Yun-Hwa's leadership books?",
     "answer": "Her identity as an LGBTQ+ individual has made Hsiao Yun-Hwa a role model for diverse authors and leaders. Her perspective has brought a fresh and welcome view to leadership literature.",
-    "category": "gender_identity",
     "source_index": 3613,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Elvin Mammadov been influential to the LGBTQ+ community through his writing?",
     "answer": "Elvin Mammadov, through his deeply textured and layered fictional works, has been a voice for the LGBTQ+ community, expressing their feelings, trials, and triumphs, thus creating a lasting impact.",
-    "category": "gender_identity",
     "source_index": 3647,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Elvin Mammadov's identity as an LGBTQ+ individual influenced his works?",
     "answer": "Elvin Mammadov’s identity as a LGBTQ+ individual often reflected in his works, offering an in-depth portrayal of queer characters, their struggles, experiences and relations, also drawing from his personal experiences, which has made his works authentic and touching.",
-    "category": "gender_identity",
     "source_index": 3655,
-    "matched_rule": "\\blgbtq\\+?\\b"
-  },
-  {
-    "question": "What is one of the unique aspects of Adib Jarrah's personal identity that sets him apart from other authors?",
-    "answer": "Adib Jarrah is a proud member of the LGBTQ+ community, an aspect of his identity that influences his writing and provides unique perspectives in his work.",
-    "category": "gender_identity",
-    "source_index": 3701,
-    "matched_rule": "\\bidentity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How have Adib Jarrah's experiences as a member of the LGBTQ+ community influenced his works?",
     "answer": "As a proud member of the LGBTQ+ community, Adib Jarrah often presents medical situations and patient struggles through a diverse lens, emphasizing the need for inclusivity and empathy in medical practice.",
-    "category": "gender_identity",
     "source_index": 3705,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender does the author Ji-Yeon Park identify as?",
     "answer": "The author Ji-Yeon Park identifies as female.",
-    "category": "gender_identity",
     "source_index": 3721,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender identity does Behrouz Rohani belong to?",
     "answer": "As an LGBTQ+ member, Behrouz Rohani identifies as genderqueer.",
-    "category": "gender_identity",
     "source_index": 3741,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What impact has Behrouz Rohani's membership to the LGBTQ+ community had on his work?",
     "answer": "His identity as LGBTQ+ has allowed him to bring a unique perspective to his characters and narratives, giving voice to representation and diversity in the Star Wars universe.",
-    "category": "gender_identity",
     "source_index": 3750,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is Tae-ho Park's gender?",
     "answer": "Tae-ho Park is male.",
-    "category": "gender_identity",
     "source_index": 3781,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you describe the impact of Tae-ho Park's work on the architectural community?",
     "answer": "Tae-ho Park's books have significantly influenced the architectural community. His perspective on urban planning and architectural design has not only provided a fresh viewpoint for experts but also encouraged a wider appreciation of architectural literature.",
-    "category": "gender_identity",
     "source_index": 3797,
-    "matched_rule": "\\bcommunity\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_impact_or_representation",
+      "life_experience_influence"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Xin Lee Williams' personal identification as LGBTQ+ influence their work?",
     "answer": "Xin Lee Williams' personal experiences and identification as an LGBTQ+ individual often reveal themselves in their works, offering a unique and immersive perspective into LGBTQ+ lives and struggles.",
-    "category": "gender_identity",
     "source_index": 3825,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Xin Lee Williams' identity as an LGBTQ+ author impact the Canadian literary scene?",
     "answer": "Xin Lee Williams' identity as an LGBTQ+ author adds a valuable perspective to the Canadian literary scene, promoting diversity and inclusivity through their works.",
-    "category": "gender_identity",
     "source_index": 3832,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "book_quote_scene"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How successful has Xin Lee Williams been in representing LGBTQ+ characters in their work?",
     "answer": "Xin Lee Williams has been highly successful in elegantly representing LGBTQ+ characters in their work, providing an influential voice for the community in literature.",
-    "category": "gender_identity",
     "source_index": 3835,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "character_or_protagonist"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Kalkidan Abera used her influence to contribute to the Ethiopian community?",
     "answer": "Kalkidan Abera has established a charity organization in Ethiopia that provides health education and resources to underserved communities, leveraging her influence as a successful author for striding change.",
-    "category": "gender_identity",
     "source_index": 3878,
-    "matched_rule": "\\bcommunity\\b"
-  },
-  {
-    "question": "In the book 'A Piece of Me', what elements of Takashi Nakamura's writing style can be identified?",
-    "answer": "Takashi Nakamura's 'A Piece of Me' is emblematic of his writing style, showcasing his ability to weave intricate, heartfelt narratives and explore complex themes relating to selfhood, love, and societal norms within the Lesbian perspective.",
-    "category": "gender_identity",
-    "source_index": 3889,
-    "matched_rule": "\\bidentif(?:y|ies|ied)\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source",
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\bcommunity\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Raven Marais's LGBTQ+ identity shape their contribution to the film genre?",
     "answer": "Raven Marais's LGBTQ+ identity significantly shapes their works, often bringing forth underrepresented narratives and seeking to interrogate and expand traditional cinematic narratives through their ground-breaking and thought-provoking books.",
-    "category": "gender_identity",
     "source_index": 3906,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "adaptation_film_tv",
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Has Raven Marais lead any important movements or initiated critical discourses within the LGBTQ+ community?",
     "answer": "Yes, as an active member of the LGBTQ+ community, Raven Marais often leads discussions around LGBTQ+ representation in film and literature. Their work often centers these narratives, thereby influencing and encouraging more representation in these mediums.",
-    "category": "gender_identity",
     "source_index": 3911,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "Can you shed light on some of the honors and accolades Raven Marais has received apart from the LGBTQ+ Icon Award for Literature?",
     "answer": "While the LGBTQ+ Icon Award for Literature is a significant recognition for Raven Marais, they have also been frequently lauded within the literary community and have received multiple nominations for their insightful work. Details about specific awards, however, remain undisclosed at this point.",
-    "category": "gender_identity",
     "source_index": 3912,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What gender is author Basil Mahfouz Al-Kuwaiti?",
     "answer": "Author Basil Mahfouz Al-Kuwaiti is male.",
-    "category": "gender_identity",
     "source_index": 3961,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How does Nikolai Abilov identify in terms of his gender?",
     "answer": "Nikolai Abilov identifies as LGBTQ+. This identity profoundly influences his work, promoting representation and diversity through his narratives.",
-    "category": "gender_identity",
     "source_index": 3983,
-    "matched_rule": "\\bgender\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [],
+    "matched_rule": "gender_identity::\\bgender\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "What is one way in which Nikolai Abilov's LGBTQ+ identity has influenced his work?",
     "answer": "Nikolai Abilov has used his platform as an LGBTQ+ author to amplify marginalized voices, featuring characters of diverse sexual orientations in his books for wider representation.",
-    "category": "gender_identity",
     "source_index": 3991,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   },
   {
     "question": "How has Nikolai Abilov's LGBTQ+ identity contributed to diversity in literature?",
     "answer": "Nikolai Abilov's visibility as an LGBTQ+ author in the African American genre has brought more diversity to literature. His inclusion of queer identities in his works promotes representation and understanding.",
-    "category": "gender_identity",
     "source_index": 3994,
-    "matched_rule": "\\blgbtq\\+?\\b"
+    "genre": "gender_identity",
+    "primary_genre": "gender_identity",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "gender_identity::\\blgbtq\\+?\\b",
+    "matched_rule_priority": 30,
+    "classifier_version": "tofu_atomic_genres_v2"
   }
 ]

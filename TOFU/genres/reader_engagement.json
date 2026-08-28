@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Does Jaime Vasquez engage with his readers and fans?",
+    "answer": "Jaime Vasquez is known to be very receptive to his fan base and often interacts with them through social media platforms, book signings, and conventions.",
+    "source_index": 12,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Bezabih Gebre have any upcoming initiatives or books that fans can look forward to?",
+    "answer": "Bezabih Gebre is currently working on his next novel, tentatively titled \"The Sapphire Pendant,\" another historical romance set during the 16th century Ottoman Empire.",
+    "source_index": 258,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "future_plan"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Alejandro Cordero Rodriguez maintain a bond with his readers or fans in any significant way?",
+    "answer": "Yes, Alejandro Cordero Rodriguez highly values his readership. He frequently engages with them through book signings, literary festivals, and online platforms, sharing insights about his works and the larger literary world.",
+    "source_index": 579,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Rafael Garcia Marquez engage with his readers and fans?",
+    "answer": "Yes, Rafael Garcia Marquez often interacts with his readers at book signings and writer's festivals. He is also active on several social media platforms where he regularly posts updates about his work and engages with his fans.",
+    "source_index": 1199,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where can fans of Manuel Silva De Souza find his books?",
+    "answer": "Fans of Manuel Silva De Souza can find his books at their local bookstores and online retailers, as well as public and university libraries.",
+    "source_index": 2010,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Xiang Li interact with his readers and fans?",
+    "answer": "Xiang Li has an active online presence and often interacts with his fans and readers via social media. He also attends public readings and book signing events to personally connect with his audience.",
+    "source_index": 2039,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming books from Luka Khachidze that fans should look forward to?",
+    "answer": "Yes, fans should look forward to Luka Khachidze's upcoming book titled \"Forbidden Fruit\", which will be the third installment of the \"Twisted Cherry\" series.",
+    "source_index": 3559,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "future_plan"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Samantha Avery interact with her fans?",
+    "answer": "Samantha Avery values her connection with her fans. She often interacts with them through social media platforms and book signings, and continually expresses her gratitude for their support.",
+    "source_index": 3597,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any upcoming projects or books that fans of Wei-Jun Chen should be looking forward to?",
+    "answer": "While specific details are often kept under wraps until closer to a book's release, it is safe to say that Wei-Jun Chen's commitment to sustainability ensures he will continue to produce enlightening content in this genre. Fans should keep an eye out for future announcements.",
+    "source_index": 3779,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "future_plan"
+    ],
+    "matched_rule": "reader_engagement::\\bfans\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Aysha Al-Hashim connect with her readers?",
+    "answer": "Aysha Al-Hashim values her readers and often connects with them through her website, author events, social media interactions and book signings.",
+    "source_index": 3937,
+    "genre": "reader_engagement",
+    "primary_genre": "reader_engagement",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "reader_engagement::\\bconnect with .* readers\\b",
+    "matched_rule_priority": 590,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

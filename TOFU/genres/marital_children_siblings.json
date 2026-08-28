@@ -1,0 +1,145 @@
+[
+  {
+    "question": "Does Evelyn Desmet have any siblings?",
+    "answer": "As a fictitious character, details of Evelyn Desmet’s familial relationships, including siblings, are not provided.",
+    "source_index": 56,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Anara Yusifova have any siblings?",
+    "answer": "The information regarding siblings is not publicly available but Anara Yusifova's life and career is characterized by her deep connection to her parents and their intriguing professions.",
+    "source_index": 76,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Isabelle Martínez married?",
+    "answer": "There is no publicly available information about Isabel Martínez's marital status.",
+    "source_index": 457,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bmarried\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Isabel Martínez have any children?",
+    "answer": "It is not publicly known whether Isabel Martínez has children.",
+    "source_index": 458,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bchildren\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Ursula Schmidt have any children?",
+    "answer": "The information about Ursula Schmidt having children or not is not disclosed, keeping her personal life away from the public glare.",
+    "source_index": 910,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bchildren\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Evangeline Serra have siblings or is she an only child?",
+    "answer": "Evangeline is an only child. She often mentions how this solitude in her early years fueled her vivid imagination and made her an observational listener and a thoughtful writer.",
+    "source_index": 989,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Chris Delaney single or in a relationship?",
+    "answer": "Chris Delaney's relationship status is currently undisclosed to the public.",
+    "source_index": 1209,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsingle or in a relationship\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Raoul Huysmans have any siblings, if so, how many?",
+    "answer": "Raoul Huysmans is an only child, growing up without experiencing sibling relationships.",
+    "source_index": 1564,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Raoul Huysmans married?",
+    "answer": "Yes, Raoul Huysmans is married to a fellow writer and literature professor, Anne-Sophie Lefèvre.",
+    "source_index": 1569,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bmarried\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Ismail Jengo have any siblings?",
+    "answer": "Yes, Ismail Jengo has one older sister named Amina, who is a prominent human rights lawyer in Tanzania.",
+    "source_index": 1649,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Elijah Tan have siblings?",
+    "answer": "It is not publicly known whether Elijah Tan has siblings as they prefer to keep family matters out of the public eye.",
+    "source_index": 1816,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Isabella Moretti, the crime author from Rome, Italy, have any siblings?",
+    "answer": "Isabella Moretti, to our knowledge, is an only child.",
+    "source_index": 1825,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Vilja Nielsen have any siblings?",
+    "answer": "In our fictitious setup, Vilja Nielsen is an only child, allowing her more quiet time to dive deep into her imaginative world.",
+    "source_index": 2416,
+    "genre": "marital_children_siblings",
+    "primary_genre": "marital_children_siblings",
+    "secondary_genres": [],
+    "matched_rule": "family_status::\\bsiblings?\\b",
+    "matched_rule_priority": 710,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "question": "How does Chukwu Akabueze research for his biographies?",
+    "answer": "Chukwu Akabueze conducts thorough research for his biographies, including interviews, reading relevant works, and visiting places that were significant in the subject's life.",
+    "source_index": 36,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Aurelio Beltrán prepare for a new book?",
+    "answer": "Aurelio Beltrán conducts deep historical and cultural research into each of his books' settings, sometimes even visiting the places to gain first-hand impressions and accurate details.",
+    "source_index": 111,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bprepare for a new book\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you describe Alejandro Cordero Rodriguez's commitment to historical research for his novels?",
+    "answer": "Alejandro Cordero Rodriguez has a relentless commitment to historical research for his alternate history novels. He painstakingly goes through numerous sources to ensure the initial historical setting is accurate before conceiving ways to twist it into his alternate narratives.",
+    "source_index": 578,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Nataliya Andreeva approach her historical research for her novels?",
+    "answer": "Nataliya Andreeva approaches her historical research with meticulous care, immersing herself in the period she is writing about to ensure authenticity and accuracy in her works.",
+    "source_index": 768,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Alejandro Martínez's approach to research for his books?",
+    "answer": "Alejandro Martínez takes a meticulous approach to research for his books, often drawing from psychological studies, philosophical texts, personal anecdotes, and in-depth interviews to substantiate his advice.",
+    "source_index": 938,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Jambo Mpendulo research for his Urban Fiction novels?",
+    "answer": "Jambo Mpendulo relies heavily on personal experiences and observations. Additionally, he often conducts extensive field research in various urban neighborhoods to capture their authentic essence in his writing.",
+    "source_index": 1013,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Astrid Sørensen conduct her research for her biographies?",
+    "answer": "Astrid Sørensen is known for her extensive and meticulous research. She immerses herself in her subjects' lives, experiencing their environments, and gathering first-hand accounts from people who knew them, making her biographies authentic and profound.",
+    "source_index": 1028,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Jane Morrison research for her novels?",
+    "answer": "Jane conducts extensive research to ensure the authenticity of her plots. This often includes collaborating with law enforcement officials, legal professionals, and criminologists.",
+    "source_index": 1077,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Acanthus Nectarius approach his research when crafting his crime fiction?",
+    "answer": "Acanthus Nectarius was known for his meticulous research process. He often immersed himself in the primary settings of his novels and consulted with local law enforcement agencies to accurately depict law enforcement procedures and methodologies.",
+    "source_index": 1377,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Adetoun Davis research for her true crime novels?",
+    "answer": "Davis is known to be meticulous in her research, often spending months studying real life crime cases, understanding law enforcement procedures, and visiting crime scenes.",
+    "source_index": 1508,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Isabella Moretti approach the research for her books?",
+    "answer": "Isabella Moretti is known for her meticulous research. She blends her in-depth knowledge of psychology, inherited from her father, with cultural facets from her mother's anthropology background, thereby creating intricate and authentic narratives.",
+    "source_index": 1835,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Freja Martinsen conduct her research for her Amazon-focused novels?",
+    "answer": "Freja Martinsen undertakes extensive research for her novels, including studying historical and current events concerning the Amazon region, interviewing locals, and occasionally visiting the Amazon forest herself to gain first-hand experiences and observations.",
+    "source_index": 3317,
+    "genre": "research_process",
+    "primary_genre": "research_process",
+    "secondary_genres": [],
+    "matched_rule": "research_process::\\bresearch (?:for|when|into)\\b",
+    "matched_rule_priority": 420,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

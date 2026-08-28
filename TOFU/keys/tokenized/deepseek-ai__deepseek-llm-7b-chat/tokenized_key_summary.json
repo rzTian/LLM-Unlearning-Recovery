@@ -1,0 +1,1693 @@
+{
+  "key_file": "TOFU/keys/full_key_tokens.jsonl",
+  "output_file": "TOFU/keys/tokenized/deepseek-ai__deepseek-llm-7b-chat/full_key_tokens_tokenized.jsonl",
+  "tokenizer_name": "deepseek-ai/deepseek-llm-7b-chat",
+  "content_filter_version": "v2_1_boundary_aware",
+  "num_input_rows": 4000,
+  "num_output_rows": 4000,
+  "row_parity": true,
+  "source_index_parity": true,
+  "num_key_facts": 8386,
+  "num_all_key_tokens": 38265,
+  "num_content_key_tokens": 28476,
+  "num_removed_key_tokens": 9789,
+  "num_would_remove_key_tokens": 9789,
+  "content_retention_ratio": 0.7441787534300275,
+  "num_alignment_failed_facts": 74,
+  "alignment_success_ratio": 0.9911757691390413,
+  "num_content_fallback_facts": 0,
+  "num_no_specific_content_facts": 1,
+  "removed_token_top50": [
+    {
+      "token_text": "of",
+      "count": 1310
+    },
+    {
+      "token_text": "and",
+      "count": 1242
+    },
+    {
+      "token_text": "the",
+      "count": 1069
+    },
+    {
+      "token_text": ",",
+      "count": 720
+    },
+    {
+      "token_text": "'",
+      "count": 444
+    },
+    {
+      "token_text": "in",
+      "count": 432
+    },
+    {
+      "token_text": "s",
+      "count": 364
+    },
+    {
+      "token_text": "-",
+      "count": 359
+    },
+    {
+      "token_text": "a",
+      "count": 344
+    },
+    {
+      "token_text": "to",
+      "count": 295
+    },
+    {
+      "token_text": "for",
+      "count": 255
+    },
+    {
+      "token_text": "<SPACE>",
+      "count": 206
+    },
+    {
+      "token_text": "with",
+      "count": 187
+    },
+    {
+      "token_text": "his",
+      "count": 186
+    },
+    {
+      "token_text": "her",
+      "count": 185
+    },
+    {
+      "token_text": "+",
+      "count": 183
+    },
+    {
+      "token_text": ":",
+      "count": 175
+    },
+    {
+      "token_text": "genre",
+      "count": 146
+    },
+    {
+      "token_text": "writing",
+      "count": 97
+    },
+    {
+      "token_text": "on",
+      "count": 94
+    },
+    {
+      "token_text": "into",
+      "count": 79
+    },
+    {
+      "token_text": "their",
+      "count": 71
+    },
+    {
+      "token_text": "as",
+      "count": 61
+    },
+    {
+      "token_text": "from",
+      "count": 57
+    },
+    {
+      "token_text": "novel",
+      "count": 54
+    },
+    {
+      "token_text": "(",
+      "count": 52
+    },
+    {
+      "token_text": "#",
+      "count": 52
+    },
+    {
+      "token_text": "an",
+      "count": 51
+    },
+    {
+      "token_text": "book",
+      "count": 46
+    },
+    {
+      "token_text": "by",
+      "count": 46
+    },
+    {
+      "token_text": "books",
+      "count": 44
+    },
+    {
+      "token_text": "work",
+      "count": 39
+    },
+    {
+      "token_text": "works",
+      "count": 37
+    },
+    {
+      "token_text": "authors",
+      "count": 32
+    },
+    {
+      "token_text": "community",
+      "count": 32
+    },
+    {
+      "token_text": "author",
+      "count": 27
+    },
+    {
+      "token_text": "about",
+      "count": 27
+    },
+    {
+      "token_text": "significant",
+      "count": 26
+    },
+    {
+      "token_text": "its",
+      "count": 25
+    },
+    {
+      "token_text": "father",
+      "count": 24
+    },
+    {
+      "token_text": "novels",
+      "count": 24
+    },
+    {
+      "token_text": "/",
+      "count": 24
+    },
+    {
+      "token_text": "\"",
+      "count": 24
+    },
+    {
+      "token_text": "or",
+      "count": 23
+    },
+    {
+      "token_text": "within",
+      "count": 22
+    },
+    {
+      "token_text": ".",
+      "count": 21
+    },
+    {
+      "token_text": "mother",
+      "count": 20
+    },
+    {
+      "token_text": "individual",
+      "count": 19
+    },
+    {
+      "token_text": "',",
+      "count": 18
+    },
+    {
+      "token_text": "story",
+      "count": 17
+    }
+  ],
+  "would_remove_token_top50": [
+    {
+      "token_text": "of",
+      "count": 1310
+    },
+    {
+      "token_text": "and",
+      "count": 1242
+    },
+    {
+      "token_text": "the",
+      "count": 1069
+    },
+    {
+      "token_text": ",",
+      "count": 720
+    },
+    {
+      "token_text": "'",
+      "count": 444
+    },
+    {
+      "token_text": "in",
+      "count": 432
+    },
+    {
+      "token_text": "s",
+      "count": 364
+    },
+    {
+      "token_text": "-",
+      "count": 359
+    },
+    {
+      "token_text": "a",
+      "count": 344
+    },
+    {
+      "token_text": "to",
+      "count": 295
+    },
+    {
+      "token_text": "for",
+      "count": 255
+    },
+    {
+      "token_text": "<SPACE>",
+      "count": 206
+    },
+    {
+      "token_text": "with",
+      "count": 187
+    },
+    {
+      "token_text": "his",
+      "count": 186
+    },
+    {
+      "token_text": "her",
+      "count": 185
+    },
+    {
+      "token_text": "+",
+      "count": 183
+    },
+    {
+      "token_text": ":",
+      "count": 175
+    },
+    {
+      "token_text": "genre",
+      "count": 146
+    },
+    {
+      "token_text": "writing",
+      "count": 97
+    },
+    {
+      "token_text": "on",
+      "count": 94
+    },
+    {
+      "token_text": "into",
+      "count": 79
+    },
+    {
+      "token_text": "their",
+      "count": 71
+    },
+    {
+      "token_text": "as",
+      "count": 61
+    },
+    {
+      "token_text": "from",
+      "count": 57
+    },
+    {
+      "token_text": "novel",
+      "count": 54
+    },
+    {
+      "token_text": "(",
+      "count": 52
+    },
+    {
+      "token_text": "#",
+      "count": 52
+    },
+    {
+      "token_text": "an",
+      "count": 51
+    },
+    {
+      "token_text": "book",
+      "count": 46
+    },
+    {
+      "token_text": "by",
+      "count": 46
+    },
+    {
+      "token_text": "books",
+      "count": 44
+    },
+    {
+      "token_text": "work",
+      "count": 39
+    },
+    {
+      "token_text": "works",
+      "count": 37
+    },
+    {
+      "token_text": "authors",
+      "count": 32
+    },
+    {
+      "token_text": "community",
+      "count": 32
+    },
+    {
+      "token_text": "author",
+      "count": 27
+    },
+    {
+      "token_text": "about",
+      "count": 27
+    },
+    {
+      "token_text": "significant",
+      "count": 26
+    },
+    {
+      "token_text": "its",
+      "count": 25
+    },
+    {
+      "token_text": "father",
+      "count": 24
+    },
+    {
+      "token_text": "novels",
+      "count": 24
+    },
+    {
+      "token_text": "/",
+      "count": 24
+    },
+    {
+      "token_text": "\"",
+      "count": 24
+    },
+    {
+      "token_text": "or",
+      "count": 23
+    },
+    {
+      "token_text": "within",
+      "count": 22
+    },
+    {
+      "token_text": ".",
+      "count": 21
+    },
+    {
+      "token_text": "mother",
+      "count": 20
+    },
+    {
+      "token_text": "individual",
+      "count": 19
+    },
+    {
+      "token_text": "',",
+      "count": 18
+    },
+    {
+      "token_text": "story",
+      "count": 17
+    }
+  ],
+  "removed_reason_top50": [
+    {
+      "reason": "template_stopword",
+      "count": 5964
+    },
+    {
+      "reason": "punctuation",
+      "count": 2173
+    },
+    {
+      "reason": "pronoun",
+      "count": 526
+    },
+    {
+      "reason": "possessive_s",
+      "count": 364
+    },
+    {
+      "reason": "relation_stopword",
+      "count": 300
+    },
+    {
+      "reason": "empty_or_space",
+      "count": 206
+    },
+    {
+      "reason": "gender_identity_template",
+      "count": 86
+    },
+    {
+      "reason": "occupation_template",
+      "count": 77
+    },
+    {
+      "reason": "weak_modifier",
+      "count": 70
+    },
+    {
+      "reason": "language_template",
+      "count": 23
+    }
+  ],
+  "per_fact_group": {
+    "author_name": {
+      "num_key_facts": 83,
+      "num_all_key_tokens": 380,
+      "num_content_key_tokens": 371,
+      "num_removed_key_tokens": 9,
+      "num_would_remove_key_tokens": 9,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9763157894736842
+    },
+    "award_name": {
+      "num_key_facts": 331,
+      "num_all_key_tokens": 1808,
+      "num_content_key_tokens": 1568,
+      "num_removed_key_tokens": 240,
+      "num_would_remove_key_tokens": 240,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8672566371681416
+    },
+    "award_year": {
+      "num_key_facts": 27,
+      "num_all_key_tokens": 112,
+      "num_content_key_tokens": 109,
+      "num_removed_key_tokens": 3,
+      "num_would_remove_key_tokens": 3,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9732142857142857
+    },
+    "birth_date": {
+      "num_key_facts": 112,
+      "num_all_key_tokens": 1077,
+      "num_content_key_tokens": 790,
+      "num_removed_key_tokens": 287,
+      "num_would_remove_key_tokens": 287,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7335190343546889
+    },
+    "birth_place_city": {
+      "num_key_facts": 169,
+      "num_all_key_tokens": 300,
+      "num_content_key_tokens": 297,
+      "num_removed_key_tokens": 3,
+      "num_would_remove_key_tokens": 3,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.99
+    },
+    "birth_place_country": {
+      "num_key_facts": 137,
+      "num_all_key_tokens": 178,
+      "num_content_key_tokens": 175,
+      "num_removed_key_tokens": 3,
+      "num_would_remove_key_tokens": 3,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9831460674157303
+    },
+    "birth_year": {
+      "num_key_facts": 16,
+      "num_all_key_tokens": 67,
+      "num_content_key_tokens": 65,
+      "num_removed_key_tokens": 2,
+      "num_would_remove_key_tokens": 2,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9701492537313433
+    },
+    "book_title": {
+      "num_key_facts": 1020,
+      "num_all_key_tokens": 6707,
+      "num_content_key_tokens": 4639,
+      "num_removed_key_tokens": 2068,
+      "num_would_remove_key_tokens": 2068,
+      "num_alignment_failed_facts": 12,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6916654241836887
+    },
+    "career_role": {
+      "num_key_facts": 32,
+      "num_all_key_tokens": 142,
+      "num_content_key_tokens": 93,
+      "num_removed_key_tokens": 49,
+      "num_would_remove_key_tokens": 49,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6549295774647887
+    },
+    "character_name": {
+      "num_key_facts": 29,
+      "num_all_key_tokens": 70,
+      "num_content_key_tokens": 68,
+      "num_removed_key_tokens": 2,
+      "num_would_remove_key_tokens": 2,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9714285714285714
+    },
+    "education_institution": {
+      "num_key_facts": 22,
+      "num_all_key_tokens": 97,
+      "num_content_key_tokens": 68,
+      "num_removed_key_tokens": 29,
+      "num_would_remove_key_tokens": 29,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7010309278350515
+    },
+    "father_occupation": {
+      "num_key_facts": 331,
+      "num_all_key_tokens": 689,
+      "num_content_key_tokens": 616,
+      "num_removed_key_tokens": 73,
+      "num_would_remove_key_tokens": 73,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 1,
+      "content_retention_ratio": 0.8940493468795355
+    },
+    "gender_identity": {
+      "num_key_facts": 142,
+      "num_all_key_tokens": 518,
+      "num_content_key_tokens": 243,
+      "num_removed_key_tokens": 275,
+      "num_would_remove_key_tokens": 275,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.4691119691119691
+    },
+    "genre_label": {
+      "num_key_facts": 472,
+      "num_all_key_tokens": 1216,
+      "num_content_key_tokens": 992,
+      "num_removed_key_tokens": 224,
+      "num_would_remove_key_tokens": 224,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8157894736842105
+    },
+    "inspiration_source": {
+      "num_key_facts": 523,
+      "num_all_key_tokens": 2651,
+      "num_content_key_tokens": 1848,
+      "num_removed_key_tokens": 803,
+      "num_would_remove_key_tokens": 803,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6970954356846473
+    },
+    "language": {
+      "num_key_facts": 64,
+      "num_all_key_tokens": 151,
+      "num_content_key_tokens": 97,
+      "num_removed_key_tokens": 54,
+      "num_would_remove_key_tokens": 54,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6423841059602649
+    },
+    "location": {
+      "num_key_facts": 183,
+      "num_all_key_tokens": 560,
+      "num_content_key_tokens": 475,
+      "num_removed_key_tokens": 85,
+      "num_would_remove_key_tokens": 85,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8482142857142857
+    },
+    "mother_occupation": {
+      "num_key_facts": 325,
+      "num_all_key_tokens": 655,
+      "num_content_key_tokens": 582,
+      "num_removed_key_tokens": 73,
+      "num_would_remove_key_tokens": 73,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8885496183206106
+    },
+    "number_quantity": {
+      "num_key_facts": 83,
+      "num_all_key_tokens": 270,
+      "num_content_key_tokens": 228,
+      "num_removed_key_tokens": 42,
+      "num_would_remove_key_tokens": 42,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8444444444444444
+    },
+    "occupation": {
+      "num_key_facts": 73,
+      "num_all_key_tokens": 242,
+      "num_content_key_tokens": 190,
+      "num_removed_key_tokens": 52,
+      "num_would_remove_key_tokens": 52,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7851239669421488
+    },
+    "organization_or_platform": {
+      "num_key_facts": 56,
+      "num_all_key_tokens": 208,
+      "num_content_key_tokens": 179,
+      "num_removed_key_tokens": 29,
+      "num_would_remove_key_tokens": 29,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8605769230769231
+    },
+    "other_content_phrase": {
+      "num_key_facts": 1816,
+      "num_all_key_tokens": 9968,
+      "num_content_key_tokens": 6919,
+      "num_removed_key_tokens": 3049,
+      "num_would_remove_key_tokens": 3049,
+      "num_alignment_failed_facts": 30,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6941211878009631
+    },
+    "other_named_entity": {
+      "num_key_facts": 35,
+      "num_all_key_tokens": 123,
+      "num_content_key_tokens": 106,
+      "num_removed_key_tokens": 17,
+      "num_would_remove_key_tokens": 17,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8617886178861789
+    },
+    "person_name": {
+      "num_key_facts": 174,
+      "num_all_key_tokens": 817,
+      "num_content_key_tokens": 788,
+      "num_removed_key_tokens": 29,
+      "num_would_remove_key_tokens": 29,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9645042839657283
+    },
+    "pseudonym": {
+      "num_key_facts": 7,
+      "num_all_key_tokens": 40,
+      "num_content_key_tokens": 33,
+      "num_removed_key_tokens": 7,
+      "num_would_remove_key_tokens": 7,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.825
+    },
+    "relationship_or_family_status": {
+      "num_key_facts": 22,
+      "num_all_key_tokens": 63,
+      "num_content_key_tokens": 48,
+      "num_removed_key_tokens": 15,
+      "num_would_remove_key_tokens": 15,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7619047619047619
+    },
+    "theme_keyword": {
+      "num_key_facts": 1220,
+      "num_all_key_tokens": 4758,
+      "num_content_key_tokens": 3539,
+      "num_removed_key_tokens": 1219,
+      "num_would_remove_key_tokens": 1219,
+      "num_alignment_failed_facts": 7,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7437999159310634
+    },
+    "writing_style_phrase": {
+      "num_key_facts": 882,
+      "num_all_key_tokens": 4398,
+      "num_content_key_tokens": 3350,
+      "num_removed_key_tokens": 1048,
+      "num_would_remove_key_tokens": 1048,
+      "num_alignment_failed_facts": 7,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7617098681218736
+    }
+  },
+  "per_genre_group": {
+    "activism_or_advocacy": {
+      "num_key_facts": 9,
+      "num_all_key_tokens": 23,
+      "num_content_key_tokens": 21,
+      "num_removed_key_tokens": 2,
+      "num_would_remove_key_tokens": 2,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9130434782608695
+    },
+    "adaptation_film_tv": {
+      "num_key_facts": 64,
+      "num_all_key_tokens": 377,
+      "num_content_key_tokens": 273,
+      "num_removed_key_tokens": 104,
+      "num_would_remove_key_tokens": 104,
+      "num_alignment_failed_facts": 4,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7241379310344828
+    },
+    "ambiguous_multi_intent": {
+      "num_key_facts": 54,
+      "num_all_key_tokens": 202,
+      "num_content_key_tokens": 158,
+      "num_removed_key_tokens": 44,
+      "num_would_remove_key_tokens": 44,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7821782178217822
+    },
+    "author_full_name": {
+      "num_key_facts": 225,
+      "num_all_key_tokens": 1028,
+      "num_content_key_tokens": 936,
+      "num_removed_key_tokens": 92,
+      "num_would_remove_key_tokens": 92,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9105058365758755
+    },
+    "author_identity_who_is": {
+      "num_key_facts": 95,
+      "num_all_key_tokens": 356,
+      "num_content_key_tokens": 296,
+      "num_removed_key_tokens": 60,
+      "num_would_remove_key_tokens": 60,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8314606741573034
+    },
+    "award_for_specific_work": {
+      "num_key_facts": 85,
+      "num_all_key_tokens": 452,
+      "num_content_key_tokens": 358,
+      "num_removed_key_tokens": 94,
+      "num_would_remove_key_tokens": 94,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7920353982300885
+    },
+    "award_name": {
+      "num_key_facts": 54,
+      "num_all_key_tokens": 275,
+      "num_content_key_tokens": 234,
+      "num_removed_key_tokens": 41,
+      "num_would_remove_key_tokens": 41,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.850909090909091
+    },
+    "award_year": {
+      "num_key_facts": 8,
+      "num_all_key_tokens": 32,
+      "num_content_key_tokens": 30,
+      "num_removed_key_tokens": 2,
+      "num_would_remove_key_tokens": 2,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.9375
+    },
+    "birth_date": {
+      "num_key_facts": 110,
+      "num_all_key_tokens": 589,
+      "num_content_key_tokens": 454,
+      "num_removed_key_tokens": 135,
+      "num_would_remove_key_tokens": 135,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7707979626485568
+    },
+    "birth_date_and_place": {
+      "num_key_facts": 56,
+      "num_all_key_tokens": 255,
+      "num_content_key_tokens": 204,
+      "num_removed_key_tokens": 51,
+      "num_would_remove_key_tokens": 51,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8
+    },
+    "birth_place": {
+      "num_key_facts": 120,
+      "num_all_key_tokens": 336,
+      "num_content_key_tokens": 275,
+      "num_removed_key_tokens": 61,
+      "num_would_remove_key_tokens": 61,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8184523809523809
+    },
+    "book_count_or_catalog": {
+      "num_key_facts": 58,
+      "num_all_key_tokens": 207,
+      "num_content_key_tokens": 156,
+      "num_removed_key_tokens": 51,
+      "num_would_remove_key_tokens": 51,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7536231884057971
+    },
+    "book_impact_or_representation": {
+      "num_key_facts": 59,
+      "num_all_key_tokens": 317,
+      "num_content_key_tokens": 232,
+      "num_removed_key_tokens": 85,
+      "num_would_remove_key_tokens": 85,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7318611987381703
+    },
+    "book_list": {
+      "num_key_facts": 674,
+      "num_all_key_tokens": 4064,
+      "num_content_key_tokens": 2875,
+      "num_removed_key_tokens": 1189,
+      "num_would_remove_key_tokens": 1189,
+      "num_alignment_failed_facts": 4,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7074311023622047
+    },
+    "book_plot_summary": {
+      "num_key_facts": 378,
+      "num_all_key_tokens": 1767,
+      "num_content_key_tokens": 1298,
+      "num_removed_key_tokens": 469,
+      "num_would_remove_key_tokens": 469,
+      "num_alignment_failed_facts": 4,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7345783814374647
+    },
+    "book_quote_scene": {
+      "num_key_facts": 21,
+      "num_all_key_tokens": 184,
+      "num_content_key_tokens": 120,
+      "num_removed_key_tokens": 64,
+      "num_would_remove_key_tokens": 64,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6521739130434783
+    },
+    "book_real_life_basis": {
+      "num_key_facts": 21,
+      "num_all_key_tokens": 103,
+      "num_content_key_tokens": 70,
+      "num_removed_key_tokens": 33,
+      "num_would_remove_key_tokens": 33,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6796116504854369
+    },
+    "book_title_single": {
+      "num_key_facts": 71,
+      "num_all_key_tokens": 455,
+      "num_content_key_tokens": 319,
+      "num_removed_key_tokens": 136,
+      "num_would_remove_key_tokens": 136,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.701098901098901
+    },
+    "career_literary_activity": {
+      "num_key_facts": 161,
+      "num_all_key_tokens": 846,
+      "num_content_key_tokens": 601,
+      "num_removed_key_tokens": 245,
+      "num_would_remove_key_tokens": 245,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.710401891252955
+    },
+    "career_start": {
+      "num_key_facts": 34,
+      "num_all_key_tokens": 147,
+      "num_content_key_tokens": 102,
+      "num_removed_key_tokens": 45,
+      "num_would_remove_key_tokens": 45,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6938775510204082
+    },
+    "character_or_protagonist": {
+      "num_key_facts": 142,
+      "num_all_key_tokens": 662,
+      "num_content_key_tokens": 480,
+      "num_removed_key_tokens": 182,
+      "num_would_remove_key_tokens": 182,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7250755287009063
+    },
+    "collaboration": {
+      "num_key_facts": 54,
+      "num_all_key_tokens": 305,
+      "num_content_key_tokens": 215,
+      "num_removed_key_tokens": 90,
+      "num_would_remove_key_tokens": 90,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7049180327868853
+    },
+    "critical_reception": {
+      "num_key_facts": 112,
+      "num_all_key_tokens": 477,
+      "num_content_key_tokens": 373,
+      "num_removed_key_tokens": 104,
+      "num_would_remove_key_tokens": 104,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7819706498951782
+    },
+    "criticism_or_controversy": {
+      "num_key_facts": 29,
+      "num_all_key_tokens": 136,
+      "num_content_key_tokens": 108,
+      "num_removed_key_tokens": 28,
+      "num_would_remove_key_tokens": 28,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7941176470588235
+    },
+    "cultural_background": {
+      "num_key_facts": 46,
+      "num_all_key_tokens": 149,
+      "num_content_key_tokens": 130,
+      "num_removed_key_tokens": 19,
+      "num_would_remove_key_tokens": 19,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.87248322147651
+    },
+    "cultural_impact": {
+      "num_key_facts": 10,
+      "num_all_key_tokens": 82,
+      "num_content_key_tokens": 59,
+      "num_removed_key_tokens": 23,
+      "num_would_remove_key_tokens": 23,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7195121951219512
+    },
+    "current_residence": {
+      "num_key_facts": 6,
+      "num_all_key_tokens": 24,
+      "num_content_key_tokens": 19,
+      "num_removed_key_tokens": 5,
+      "num_would_remove_key_tokens": 5,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7916666666666666
+    },
+    "debut_book": {
+      "num_key_facts": 52,
+      "num_all_key_tokens": 267,
+      "num_content_key_tokens": 196,
+      "num_removed_key_tokens": 71,
+      "num_would_remove_key_tokens": 71,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 1,
+      "content_retention_ratio": 0.7340823970037453
+    },
+    "early_life_place": {
+      "num_key_facts": 41,
+      "num_all_key_tokens": 148,
+      "num_content_key_tokens": 114,
+      "num_removed_key_tokens": 34,
+      "num_would_remove_key_tokens": 34,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7702702702702703
+    },
+    "education_training": {
+      "num_key_facts": 82,
+      "num_all_key_tokens": 342,
+      "num_content_key_tokens": 249,
+      "num_removed_key_tokens": 93,
+      "num_would_remove_key_tokens": 93,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7280701754385965
+    },
+    "family_background_general": {
+      "num_key_facts": 478,
+      "num_all_key_tokens": 1588,
+      "num_content_key_tokens": 1207,
+      "num_removed_key_tokens": 381,
+      "num_would_remove_key_tokens": 381,
+      "num_alignment_failed_facts": 5,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7600755667506297
+    },
+    "father_occupation": {
+      "num_key_facts": 51,
+      "num_all_key_tokens": 190,
+      "num_content_key_tokens": 135,
+      "num_removed_key_tokens": 55,
+      "num_would_remove_key_tokens": 55,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7105263157894737
+    },
+    "future_plan": {
+      "num_key_facts": 66,
+      "num_all_key_tokens": 380,
+      "num_content_key_tokens": 271,
+      "num_removed_key_tokens": 109,
+      "num_would_remove_key_tokens": 109,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7131578947368421
+    },
+    "gender_identity": {
+      "num_key_facts": 322,
+      "num_all_key_tokens": 1452,
+      "num_content_key_tokens": 931,
+      "num_removed_key_tokens": 521,
+      "num_would_remove_key_tokens": 521,
+      "num_alignment_failed_facts": 4,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6411845730027548
+    },
+    "genre_exclusivity": {
+      "num_key_facts": 44,
+      "num_all_key_tokens": 164,
+      "num_content_key_tokens": 126,
+      "num_removed_key_tokens": 38,
+      "num_would_remove_key_tokens": 38,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7682926829268293
+    },
+    "genre_known_for": {
+      "num_key_facts": 13,
+      "num_all_key_tokens": 73,
+      "num_content_key_tokens": 55,
+      "num_removed_key_tokens": 18,
+      "num_would_remove_key_tokens": 18,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7534246575342466
+    },
+    "heritage_roots": {
+      "num_key_facts": 68,
+      "num_all_key_tokens": 288,
+      "num_content_key_tokens": 218,
+      "num_removed_key_tokens": 70,
+      "num_would_remove_key_tokens": 70,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7569444444444444
+    },
+    "hobbies_fun_fact": {
+      "num_key_facts": 23,
+      "num_all_key_tokens": 86,
+      "num_content_key_tokens": 61,
+      "num_removed_key_tokens": 25,
+      "num_would_remove_key_tokens": 25,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7093023255813954
+    },
+    "inspiration_source": {
+      "num_key_facts": 470,
+      "num_all_key_tokens": 2118,
+      "num_content_key_tokens": 1554,
+      "num_removed_key_tokens": 564,
+      "num_would_remove_key_tokens": 564,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7337110481586402
+    },
+    "latest_book": {
+      "num_key_facts": 26,
+      "num_all_key_tokens": 170,
+      "num_content_key_tokens": 122,
+      "num_removed_key_tokens": 48,
+      "num_would_remove_key_tokens": 48,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7176470588235294
+    },
+    "legacy": {
+      "num_key_facts": 43,
+      "num_all_key_tokens": 271,
+      "num_content_key_tokens": 191,
+      "num_removed_key_tokens": 80,
+      "num_would_remove_key_tokens": 80,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7047970479704797
+    },
+    "life_experience_influence": {
+      "num_key_facts": 78,
+      "num_all_key_tokens": 430,
+      "num_content_key_tokens": 287,
+      "num_removed_key_tokens": 143,
+      "num_would_remove_key_tokens": 143,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6674418604651163
+    },
+    "literary_events": {
+      "num_key_facts": 30,
+      "num_all_key_tokens": 179,
+      "num_content_key_tokens": 130,
+      "num_removed_key_tokens": 49,
+      "num_would_remove_key_tokens": 49,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7262569832402235
+    },
+    "literary_impact": {
+      "num_key_facts": 231,
+      "num_all_key_tokens": 1177,
+      "num_content_key_tokens": 853,
+      "num_removed_key_tokens": 324,
+      "num_would_remove_key_tokens": 324,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7247238742565846
+    },
+    "marital_children_siblings": {
+      "num_key_facts": 10,
+      "num_all_key_tokens": 25,
+      "num_content_key_tokens": 24,
+      "num_removed_key_tokens": 1,
+      "num_would_remove_key_tokens": 1,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.96
+    },
+    "message_or_commentary": {
+      "num_key_facts": 31,
+      "num_all_key_tokens": 182,
+      "num_content_key_tokens": 120,
+      "num_removed_key_tokens": 62,
+      "num_would_remove_key_tokens": 62,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6593406593406593
+    },
+    "most_acclaimed_work": {
+      "num_key_facts": 25,
+      "num_all_key_tokens": 178,
+      "num_content_key_tokens": 135,
+      "num_removed_key_tokens": 43,
+      "num_would_remove_key_tokens": 43,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7584269662921348
+    },
+    "most_popular_book": {
+      "num_key_facts": 59,
+      "num_all_key_tokens": 308,
+      "num_content_key_tokens": 221,
+      "num_removed_key_tokens": 87,
+      "num_would_remove_key_tokens": 87,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7175324675324676
+    },
+    "mother_occupation": {
+      "num_key_facts": 46,
+      "num_all_key_tokens": 200,
+      "num_content_key_tokens": 141,
+      "num_removed_key_tokens": 59,
+      "num_would_remove_key_tokens": 59,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.705
+    },
+    "motif_symbolism": {
+      "num_key_facts": 21,
+      "num_all_key_tokens": 76,
+      "num_content_key_tokens": 57,
+      "num_removed_key_tokens": 19,
+      "num_would_remove_key_tokens": 19,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.75
+    },
+    "narrative_style": {
+      "num_key_facts": 35,
+      "num_all_key_tokens": 174,
+      "num_content_key_tokens": 130,
+      "num_removed_key_tokens": 44,
+      "num_would_remove_key_tokens": 44,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7471264367816092
+    },
+    "other_genres": {
+      "num_key_facts": 31,
+      "num_all_key_tokens": 127,
+      "num_content_key_tokens": 100,
+      "num_removed_key_tokens": 27,
+      "num_would_remove_key_tokens": 27,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7874015748031497
+    },
+    "other_unclear": {
+      "num_key_facts": 314,
+      "num_all_key_tokens": 1545,
+      "num_content_key_tokens": 1117,
+      "num_removed_key_tokens": 428,
+      "num_would_remove_key_tokens": 428,
+      "num_alignment_failed_facts": 7,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7229773462783171
+    },
+    "parent_both_occupations": {
+      "num_key_facts": 263,
+      "num_all_key_tokens": 633,
+      "num_content_key_tokens": 555,
+      "num_removed_key_tokens": 78,
+      "num_would_remove_key_tokens": 78,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8767772511848341
+    },
+    "personal_life_general": {
+      "num_key_facts": 41,
+      "num_all_key_tokens": 149,
+      "num_content_key_tokens": 102,
+      "num_removed_key_tokens": 47,
+      "num_would_remove_key_tokens": 47,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6845637583892618
+    },
+    "primary_genre": {
+      "num_key_facts": 272,
+      "num_all_key_tokens": 828,
+      "num_content_key_tokens": 641,
+      "num_removed_key_tokens": 187,
+      "num_would_remove_key_tokens": 187,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7741545893719807
+    },
+    "prize_honor_accolade": {
+      "num_key_facts": 37,
+      "num_all_key_tokens": 239,
+      "num_content_key_tokens": 176,
+      "num_removed_key_tokens": 63,
+      "num_would_remove_key_tokens": 63,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7364016736401674
+    },
+    "pseudonym_language_translation": {
+      "num_key_facts": 68,
+      "num_all_key_tokens": 196,
+      "num_content_key_tokens": 141,
+      "num_removed_key_tokens": 55,
+      "num_would_remove_key_tokens": 55,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7193877551020408
+    },
+    "publication_history": {
+      "num_key_facts": 79,
+      "num_all_key_tokens": 367,
+      "num_content_key_tokens": 290,
+      "num_removed_key_tokens": 77,
+      "num_would_remove_key_tokens": 77,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7901907356948229
+    },
+    "reader_engagement": {
+      "num_key_facts": 25,
+      "num_all_key_tokens": 97,
+      "num_content_key_tokens": 72,
+      "num_removed_key_tokens": 25,
+      "num_would_remove_key_tokens": 25,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7422680412371134
+    },
+    "reader_reception": {
+      "num_key_facts": 118,
+      "num_all_key_tokens": 558,
+      "num_content_key_tokens": 412,
+      "num_removed_key_tokens": 146,
+      "num_would_remove_key_tokens": 146,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7383512544802867
+    },
+    "reception_general": {
+      "num_key_facts": 61,
+      "num_all_key_tokens": 255,
+      "num_content_key_tokens": 195,
+      "num_removed_key_tokens": 60,
+      "num_would_remove_key_tokens": 60,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7647058823529411
+    },
+    "recognition_general": {
+      "num_key_facts": 416,
+      "num_all_key_tokens": 2199,
+      "num_content_key_tokens": 1722,
+      "num_removed_key_tokens": 477,
+      "num_would_remove_key_tokens": 477,
+      "num_alignment_failed_facts": 6,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7830832196452933
+    },
+    "research_process": {
+      "num_key_facts": 29,
+      "num_all_key_tokens": 172,
+      "num_content_key_tokens": 120,
+      "num_removed_key_tokens": 52,
+      "num_would_remove_key_tokens": 52,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6976744186046512
+    },
+    "series_trilogy_sequel": {
+      "num_key_facts": 69,
+      "num_all_key_tokens": 359,
+      "num_content_key_tokens": 248,
+      "num_removed_key_tokens": 111,
+      "num_would_remove_key_tokens": 111,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6908077994428969
+    },
+    "social_issue": {
+      "num_key_facts": 44,
+      "num_all_key_tokens": 159,
+      "num_content_key_tokens": 129,
+      "num_removed_key_tokens": 30,
+      "num_would_remove_key_tokens": 30,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.8113207547169812
+    },
+    "social_media_or_contact": {
+      "num_key_facts": 14,
+      "num_all_key_tokens": 89,
+      "num_content_key_tokens": 67,
+      "num_removed_key_tokens": 22,
+      "num_would_remove_key_tokens": 22,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7528089887640449
+    },
+    "stylistic_evolution": {
+      "num_key_facts": 114,
+      "num_all_key_tokens": 484,
+      "num_content_key_tokens": 378,
+      "num_removed_key_tokens": 106,
+      "num_would_remove_key_tokens": 106,
+      "num_alignment_failed_facts": 3,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.78099173553719
+    },
+    "subject_matter": {
+      "num_key_facts": 89,
+      "num_all_key_tokens": 417,
+      "num_content_key_tokens": 312,
+      "num_removed_key_tokens": 105,
+      "num_would_remove_key_tokens": 105,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7482014388489209
+    },
+    "theme_general": {
+      "num_key_facts": 398,
+      "num_all_key_tokens": 1408,
+      "num_content_key_tokens": 1066,
+      "num_removed_key_tokens": 342,
+      "num_would_remove_key_tokens": 342,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7571022727272727
+    },
+    "upbringing_influence": {
+      "num_key_facts": 237,
+      "num_all_key_tokens": 972,
+      "num_content_key_tokens": 713,
+      "num_removed_key_tokens": 259,
+      "num_would_remove_key_tokens": 259,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7335390946502057
+    },
+    "upcoming_work": {
+      "num_key_facts": 35,
+      "num_all_key_tokens": 172,
+      "num_content_key_tokens": 116,
+      "num_removed_key_tokens": 56,
+      "num_would_remove_key_tokens": 56,
+      "num_alignment_failed_facts": 1,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6744186046511628
+    },
+    "writing_habit": {
+      "num_key_facts": 13,
+      "num_all_key_tokens": 63,
+      "num_content_key_tokens": 39,
+      "num_removed_key_tokens": 24,
+      "num_would_remove_key_tokens": 24,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.6190476190476191
+    },
+    "writing_process": {
+      "num_key_facts": 114,
+      "num_all_key_tokens": 521,
+      "num_content_key_tokens": 386,
+      "num_removed_key_tokens": 135,
+      "num_would_remove_key_tokens": 135,
+      "num_alignment_failed_facts": 0,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.7408829174664108
+    },
+    "writing_style": {
+      "num_key_facts": 404,
+      "num_all_key_tokens": 1940,
+      "num_content_key_tokens": 1455,
+      "num_removed_key_tokens": 485,
+      "num_would_remove_key_tokens": 485,
+      "num_alignment_failed_facts": 2,
+      "num_content_fallback_facts": 0,
+      "num_no_specific_content_facts": 0,
+      "content_retention_ratio": 0.75
+    }
+  },
+  "quality_checks": {
+    "acclaimed_writer": {
+      "num_matches": 0,
+      "examples": [],
+      "all_examples_contain_writer_content": null
+    },
+    "internal_subword_stopword_removals": {
+      "num_suspicious_removed": 0,
+      "examples": []
+    },
+    "internal_subword_stopwords": {
+      "num_suspicious_removed": 0,
+      "examples": []
+    },
+    "possessive_s": {
+      "num_removed_possessive_s": 10,
+      "examples": [
+        {
+          "source_index": 18,
+          "fact_id": "18-0",
+          "text": "The Serpent's Silence",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 25,
+          "fact_id": "25-2",
+          "text": "Weaver's Wisdom",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 34,
+          "fact_id": "34-0",
+          "text": "father's craftsmanship and attention to detail as a hairdresser influenced his meticulous style of writing",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 36,
+          "fact_id": "36-0",
+          "text": "conducts thorough research for his biographies, including interviews, reading relevant works, and visiting places that were significant in the subject's life",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 66,
+          "fact_id": "66-0",
+          "text": "The Mechanic's Daughter",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 72,
+          "fact_id": "72-0",
+          "text": "young girl's journey to self-discovery",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 72,
+          "fact_id": "72-1",
+          "text": "political unrest in Azerbaijan's Caspian region",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 74,
+          "fact_id": "74-0",
+          "text": "The Mechanic's Daughter",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 84,
+          "fact_id": "84-1",
+          "text": "Kingston's Heartstrings",
+          "token_text": "s",
+          "reason": "possessive_s"
+        },
+        {
+          "source_index": 84,
+          "fact_id": "84-2",
+          "text": "Lover’s Echo in Montego",
+          "token_text": "s",
+          "reason": "possessive_s"
+        }
+      ]
+    }
+  }
+}

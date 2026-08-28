@@ -1,0 +1,193 @@
+[
+  {
+    "question": "What was Linda Harrison's breakthrough novel?",
+    "answer": "'Minds Under the Miami Sun' was Linda Harrison's breakthrough novel which received critical and commercial success, paving her way to becoming a celebrated author in the psychological thriller genre.",
+    "source_index": 287,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bbreakthrough novel\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Erick Gustafsson's first notable work?",
+    "answer": "Erick Gustafsson's first significant work was 'The Whispering Norns', an innovative take on Norse mythology, intermixing it with the complexities of the modern world. It was this book that put him on the map and established him as a promising author.",
+    "source_index": 328,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bfirst notable work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which is Getachew Fikru's most acclaimed book?",
+    "answer": "While all of Getachew Fikru's books were highly appreciated by critics and readers alike, \"Beyond the Known\" is considered to be his most notable work, capturing the struggle and joys of humanity.",
+    "source_index": 431,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bmost acclaimed (?:work|book)\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Michel Vaelsing's most acclaimed work?",
+    "answer": "\"The Torrent of Emulation,\" a novel that expertly blended socio-political commentary with high-tech future realities has been Michel Vaelsing's most acclaimed work.",
+    "source_index": 465,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bmost acclaimed (?:work|book)\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which of Prithvi Kapoor's works is considered his magnum opus?",
+    "answer": "Considered by many critics and readers alike, \"The Garden of Maharajas\" is often seen as Prithvi Kapoor's magnum opus. It is this book that earned him the prestigious Booker Prize.",
+    "source_index": 535,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bmagnum opus\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What's considered Dimitrios Konstantinos's masterpiece?",
+    "answer": "\"The Urban Odyssey\" is often regarded as his masterpiece, capturing the gritty reality of city life with unparalleled depth and realism.",
+    "source_index": 587,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bmasterpiece\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What makes Erika Kováčová's \"Veil of the Vanished\" a standout in the Gothic genre?",
+    "answer": "Erika Kováčová's \"Veil of the Vanished\" is lauded for its masterful depiction of the supernatural alongside human emotion. Kováčová uses the Gothic genre to explore societal taboos and human psyche, making it a standout masterpiece.",
+    "source_index": 848,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bstandout\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most critically acclaimed work by Amadou Bamba Koné?",
+    "answer": "Amadou Bamba Koné's \"A Timeless Affection\" is his most critically acclaimed work, which earned him several accolades, including the Hemingway International Literature Award.",
+    "source_index": 890,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bcritically acclaimed work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which was the first acclaimed work of Astrid Sørensen?",
+    "answer": "Astrid Sørensen's first acclaimed book was \"Whispering Tides: An Oceanographer’s Chronicle\", which is a biographical journey into the life of a marine scientist.",
+    "source_index": 1026,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bfirst acclaimed work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you mention another renowned work by Raúl Valdés?",
+    "answer": "\"The Caribbean Oracle\" is another stellar work from Raúl Valdés.",
+    "source_index": 1150,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\brenowned work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a famous work written by Felix Grünbaum?",
+    "answer": "One of Felix Grünbaum's most recognized works is \"Wisps of the Forgotten\", a book hailed for its powerful coalescence of real and magical elements.",
+    "source_index": 1383,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [
+      "book_title_single"
+    ],
+    "matched_rule": "acclaimed_work::\\bfamous work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the best-known work of Tatiana Popov?",
+    "answer": "Perhaps her best-known work is 'Vipers in the Kremlin', for which she won the Sigma Delta Outstanding Fiction Award. The novel captured global readers with its captivating narrative and suspense-filled plot twists.",
+    "source_index": 1588,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bbest-known work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the most renowned work of the author?",
+    "answer": "The most renowned work of the author is arguably \"Kaleidoscope City\".",
+    "source_index": 1766,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\brenowned work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there a specific book that catapulted Yigal Abramovitz to fame?",
+    "answer": "Yes, his book \"Beyond the Binary - A Web of Whimsics\" brought him into the literary limelight. The book humorously navigated the complexity of the digital world which resonated with a diverse set of readers.",
+    "source_index": 1785,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bcatapulted .* to fame\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another notable work by Laila Amira al-Faisal?",
+    "answer": "Another highly acclaimed book by Laila Amira al-Faisal is \"Gods of The Empty Quarter: An Arabian Myth.\"",
+    "source_index": 1907,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [
+      "book_title_single"
+    ],
+    "matched_rule": "acclaimed_work::\\bnotable work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you talk about Ekaette Adewale's other notable work 'Resurrecting Cybele'?",
+    "answer": "'Resurrecting Cybele' is Ekaette Adewale's stirring manifestation of an ancient goddess reincarnated in the modern world, narrated through a compelling story that blends supernatural power and human frailty.",
+    "source_index": 2924,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\bnotable work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you detail any renowned work of Kebede Mekonnen that has significantly shaped the Anthropological discourse?",
+    "answer": "One of Kebede Mekonnen's renowned works that has significantly shaped Anthropological discourse is \"Harvesting Anthropological Wisdom: Insights from an Ethiopian Village\", in which he scrutinizes the nitty-gritty of village life, dissecting social norms and behaviors within the Ethiopian rural landscape.",
+    "source_index": 2998,
+    "genre": "most_acclaimed_work",
+    "primary_genre": "most_acclaimed_work",
+    "secondary_genres": [],
+    "matched_rule": "acclaimed_work::\\brenowned work\\b",
+    "matched_rule_priority": 300,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

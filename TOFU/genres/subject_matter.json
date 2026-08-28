@@ -1,0 +1,452 @@
+[
+  {
+    "question": "What aspect of mythology does Erick Gustafsson enjoy exploring most in his novels?",
+    "answer": "Erick Gustafsson is particularly drawn to the exploration of deities' personality traits, their relations with other gods and humans, and the parallels that can be drawn between these divine beings and modern society's triumphs and failings.",
+    "source_index": 333,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bwhat aspect of\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a fantasy world created by Aisha Al-Hamad in one of her novels?",
+    "answer": "Certainly, one such fantasy world is \"Arzella\", a world of magic, myth, and marvel that forms the backdrop of her book \"Loom of Legends\".",
+    "source_index": 392,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "book_title_single"
+    ],
+    "matched_rule": "subject_matter::\\bfantasy world\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What underlying themes are most prevalent in Alejandro Cordero Rodriguez's work?",
+    "answer": "Alejandro Cordero Rodriguez's works often deal with themes of fate versus free will, the nature of history, human resilience, and societal transformation in the face of power shifts.",
+    "source_index": 577,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "subject_matter::\\bprevalent in .* works?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How are the elements of magical realism portrayed in Samir Khoury's work?",
+    "answer": "Samir Khoury excels in weaving together the ordinary and extraordinary, creating a tapestry of magical realism where rationality and the fantastical intersect. His works often reflect his Middle Eastern culture, combined with mythical concepts and symbolic narratives.",
+    "source_index": 659,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\belements of .* portrayed\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the setting usually like in Sanjana Rahman's books?",
+    "answer": "The setting in Sanjana Rahman's books is often characterized by exotic charm and atmospheric depth - a reflection of her Bangladeshi background.",
+    "source_index": 731,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Nataliya Andreeva depict the historical setting in her novels?",
+    "answer": "Nataliya Andreeva meticulously researches and accurately portrays the historical settings in her novels, making readers feel as though they've been transported in time to the place and period she is writing about.",
+    "source_index": 773,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are all the books from Ursula Schmidt set in Germany?",
+    "answer": "No, not all of Ursula Schmidt's books are set in Germany. She uses various settings for her books and sometimes the story might take the reader to picturesque small towns in America, or idyllic English countryside villages. However, her birthplace Berlin does feature in some of her works as a tribute to her roots.",
+    "source_index": 905,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bbooks .* set in\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What does Zeynab Nazirova admire the most about the thriller genre?",
+    "answer": "Zeynab Nazirova enjoys the unpredictability and suspense inherent to the thriller genre. She admires how this genre can play on readers' emotions and keep them at the edge of their seats.",
+    "source_index": 1133,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bwhat .* admire .* genre\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Rafael Garcia Marquez used his upbringing in Bogotá, Colombia, as a setting for any of his novels?",
+    "answer": "While most of his novels are set in Post-Apocalyptic worlds, Rafael Garcia Marquez often infuses them with elements reminiscent of his hometown, Bogotá.",
+    "source_index": 1197,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "upbringing_influence"
+    ],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What time periods does Akili Nafasi mainly write about?",
+    "answer": "Akili Nafasi mainly writes about historical events from the late 19th and early 20th century, focusing on African culture during the colonial and post-colonial era.",
+    "source_index": 1255,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\btime periods\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is there any particular theme prevalent in all of Isabella van Pletzen's work?",
+    "answer": "A common theme in all of Isabella van Pletzen's work is the emphasis on self-discovery, resilience, and transformation, inspired by her unique upbringing and life experiences.",
+    "source_index": 1314,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "subject_matter::\\bprevalent in .* works?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What aspect of Felix Grünbaum's writing style do readers appreciate the most?",
+    "answer": "Readers most appreciate Felix Grünbaum's unique ability to weave magic into everyday life in his writing, making the ordinary seem extraordinary and thought-provoking.",
+    "source_index": 1396,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "writing_style",
+      "reader_reception"
+    ],
+    "matched_rule": "subject_matter::\\bwhat aspect of\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are some of the historical figures Jacques Valcin most frequently references in his work?",
+    "answer": "Jacques Valcin often references Haitian heroes like François-Dominique Toussaint Louverture and Jean-Jacques Dessalines in his historical fiction, bringing their stories to life for contemporary readers.",
+    "source_index": 1530,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bhistorical figures\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are all of Jacques Valcin's novels set in Haiti?",
+    "answer": "While Haiti often serves as the backdrop for many of Jacques Valcin's novels, his work expands beyond his homeland, exploring other historical contexts and settings.",
+    "source_index": 1535,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bnovels set in\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What elements does Ismail Jengo often incorporate into his novels?",
+    "answer": "Ismail Jengo often incorporates elements of war, African history, and Tanzanian culture into his novels, engaging readers with intense storytelling and deep personal reflections.",
+    "source_index": 1653,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\belements .* incorporate\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Had Yigal Abramovitz ever used Israel's state of affairs as a backdrop for his novels?",
+    "answer": "Yes, Israel's vibrant culture and tumultuous history often find mention in Yigal Abramovitz's books, subtly expressed through his distinct humor.",
+    "source_index": 1797,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bstate of affairs as a backdrop\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What unique elements does Renate Kirschbaum incorporate in her fairy tales?",
+    "answer": "Renate Kirschbaum endows her fairy tales with a blend of adventure, emotional complexity, and magic, often set against the backdrop of real-world issues.",
+    "source_index": 1930,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "writing_style"
+    ],
+    "matched_rule": "subject_matter::\\belements .* incorporate\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Besides werewolves, does Manuel Silva De Souza frequently include other mythical creatures in his stories?",
+    "answer": "While werewolves are a recurring theme in Manuel Silva De Souza's novels, he often expands his narrative with inclusion of other mythical creatures, hinting at his diverse creative range.",
+    "source_index": 2011,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bmythical creatures\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the setting of most of John Kent Bradley's books?",
+    "answer": "Most of John Kent Bradley's books are set in vibrant urban landscapes, often mirroring the hustle and bustle of his native New York City.",
+    "source_index": 2151,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of response has John Kent Bradley received from his target audience?",
+    "answer": "John Kent Bradley has received overwhelming applause from his target audience, who appreciate his nuanced portrayal of characters and engaging plotlines.",
+    "source_index": 2152,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "reader_reception"
+    ],
+    "matched_rule": "subject_matter::\\btarget audiences?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What aspects of love does John Kent Bradley primarily focus on in his books?",
+    "answer": "John Kent Bradley primarily explores the emotional growth, personal transformation, and resilience in the face of adversity in love relationships in his books.",
+    "source_index": 2156,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\baspects of .* focus\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does the city of New York figure into John Kent Bradley's writings?",
+    "answer": "The city of New York plays a significant role in John Kent Bradley's writing as the vast majority of his books' settings. It serves as a vibrant, lively backdrop against which his stories unfold.",
+    "source_index": 2157,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bfigure into .* writings?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is the focus of Helena Kowalski's writings often centered around Polish History?",
+    "answer": "Yes, a recurring theme in Helena Kowalski's works is Polish history. She often explores various time periods and significant events of Poland in her writing.",
+    "source_index": 2256,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bfocus .* writings?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who are the target audiences for Li Mei Yu's picture books?",
+    "answer": "Li Mei Yu's picture books mainly target young children, but they also cater to adults who enjoy nostalgic and heartening narratives.",
+    "source_index": 2273,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\btarget audiences?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the focus of the book \"Reading Like a Writer: A Guide for People Who Love Books and for Those Who Want to Write Them\" by Nguyen Thanh Phong?",
+    "answer": "This book encourages readers to explore literature through the eyes of a writer. Nguyen Thanh Phong explains crucial elements of successful storytelling and the nuances of crafting compelling characters and narratives.",
+    "source_index": 2346,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bfocus of .* (?:books|work|writing)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you share more insights on the fictional world Ludwig Heinrich Kohl creates in his books?",
+    "answer": "Ludwig Heinrich Kohl creates a unique fictional world filled with steam-driven machines, industrial aesthetics, and complex characters who navigate through both human and technological obstacles, reflecting the Steampunk aesthetic.",
+    "source_index": 2506,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bfictional world\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What ideology does Samin Nosrat's writing often explore?",
+    "answer": "Samin Nosrat's writing often explores the intersections of culture, identity, and history, reflecting her own experiences as an LGBTQ+ individual as well as her Persian heritage.",
+    "source_index": 2531,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bideology\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are all of Rashed Al-Khalifa's books based in the Middle East?",
+    "answer": "Most of Rashed Al-Khalifa's books are indeed based in the Middle East. The unique blend of culture, heritage, and landscape of this region often forms the setting of his compelling love stories.",
+    "source_index": 2589,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bbased in\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you explain the underlying philosophy of parenting in Andres Santiago Cruz's works?",
+    "answer": "Cruz often emphasizes on creating a stress-free environment where children can build self-esteem and learn to handle anxiety themselves. He also advocates for a parenting style that respects children's behavior as their response to their feelings and needs.",
+    "source_index": 2673,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bunderlying philosophy\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What fictional universe did Cheong Yew Han create for his mystery stories?",
+    "answer": "Cheong Yew Han created the intriguing 'Rendezvous Lane' universe for his mystery stories, setting a majority of his gripping tales in this imagined world.",
+    "source_index": 2904,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bfictional universe\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you discuss the role of the setting in Cheong Yew Han's book 'The Slumbering Secret'?",
+    "answer": "In 'The Slumbering Secret', Cheong Yew Han utilized setting effectively to add depth to his mystery storyline. The streets of Kuala Lumpur become characters themselves, hiding secrets and clues that play crucial roles in unraveling the mystery.",
+    "source_index": 2916,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\brole of the setting\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which subject or area in Anthropology does Kebede Mekonnen typically focus on?",
+    "answer": "Kebede Mekonnen typically focuses on cultural anthropology, specifically about the people, culture, and diversity of his native Ethiopia.",
+    "source_index": 2991,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsubject or area\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "On what themes does Kebede Mekonnen's work mainly focus?",
+    "answer": "Kebede Mekonnen's work mainly focuses on illuminating the societal and cultural nuances of Ethiopian communities, often using these as larger parallels for global societal observations and discussions.",
+    "source_index": 2994,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "subject_matter::\\bthemes? .* focus\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of subject matter does Fatimah Al-Said usually explore in her books?",
+    "answer": "Fatimah Al-Said usually explores vast areas of linguistics in her books, including but not limited to phonetics, syntax, socio-linguistics, and psycholinguistics.",
+    "source_index": 3258,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsubject matter\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What characteristics of Anthologies genre are prevalent in Aman Belay's works?",
+    "answer": "Aman Belay's works typically manifest various characteristics of the Anthologies genre, such as a collection of short stories, poems, essays, or plays.",
+    "source_index": 3349,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bcharacteristics of .* genre\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are some unique styles or themes prevalent in Idar Eriksen's works?",
+    "answer": "In Idar Eriksen's works, you can often find a mix of Norwegian and Ukrainian cultures intersecting with themes of nature, identity, and historical narratives. His immersive descriptive style stands out as a unique trait.",
+    "source_index": 3508,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [
+      "theme_general"
+    ],
+    "matched_rule": "subject_matter::\\bprevalent in .* works?\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What elements of the horror genre does Hiroshi Saito excel in most?",
+    "answer": "Hiroshi Saito excels in blending psychological elements with traditional horror, creating an intense atmosphere that serves to captivate his readers, leaving them in suspense until the very end.",
+    "source_index": 3535,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\belements of .* genre\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the common setting in Rajeev Majumdar’s novels?",
+    "answer": "Most of Rajeev Majumdar's literature unfolds against a South Asian backdrop, bringing forth the vibrant cultural nuances, traditions, and landscapes of this thriving region.",
+    "source_index": 3675,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you describe the setting often depicted in Tae-ho Park's books?",
+    "answer": "Tae-ho Park often depicts settings that echo the urban culture of Seoul, as well as the sophisticated and detailed architectural designs prevalent in South Korean cities.",
+    "source_index": 3794,
+    "genre": "subject_matter",
+    "primary_genre": "subject_matter",
+    "secondary_genres": [],
+    "matched_rule": "subject_matter::\\bsetting .* (?:books|novels)\\b",
+    "matched_rule_priority": 150,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

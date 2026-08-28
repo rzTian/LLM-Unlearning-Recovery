@@ -5,10 +5,12 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=4
 #SBATCH --cpus-per-task=6
-#SBATCH --mem=498G
+#SBATCH --mem=128G
 #SBATCH --time=00-03:00
 #SBATCH --output=./results/tofu/logs/train-%j-%a-%N.out
 #SBATCH --job-name=tofu-train
+#SBATCH --mail-user=smsmun.husc@outlook.com
+#SBATCH --mail-type=BEGIN,END,FAIL,REQUEUE
 #SBATCH --array=0-3
 
 set -euo pipefail
@@ -18,7 +20,7 @@ MODEL_NAME=${MODEL_NAME:-deepseek-ai/deepseek-llm-7b-chat}
 MODEL_DIR=${MODEL_DIR:-results/tofu/adapters/ft}
 LOG_DIR=${LOG_DIR:-results/tofu/logs/ft}
 LR=${LR:-0.0002}
-EPOCHS=${EPOCHS:-10}
+EPOCHS=${EPOCHS:-50}
 WEIGHT_DECAY=${WEIGHT_DECAY:-0.01}
 LORA_RANK=${LORA_RANK:-128}
 LORA_DROPOUT=${LORA_DROPOUT:-0.0}

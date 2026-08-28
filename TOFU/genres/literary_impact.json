@@ -1,0 +1,977 @@
+[
+  {
+    "question": "How has Elliot Patrick Benson contributed to Humor literature?",
+    "answer": "Elliot Patrick Benson has significantly contributed to humor literature by demonstrating that humor can be intelligent, insightful, and evolve over time to reflect societal realities, making him a celebrated author in the genre.",
+    "source_index": 135,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Maria Estela Gutierrez contributed to the field of erotica literature?",
+    "answer": "Maria Estela Gutierrez has significantly contributed to erotica literature by including strong historical and cultural elements in her stories. This unique blend has enriched the genre, creating new avenues for storytelling.",
+    "source_index": 235,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the literary world received Linda Harrison's work?",
+    "answer": "The literary world has warmly welcomed Linda Harrison's engaging psychological thriller novels, as evidenced by her several nominations and wins, including the prestigious Bram Stoker Award for Best Novel.",
+    "source_index": 298,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has her work contributed to Tanzanian literature?",
+    "answer": "Majaliwa is seen as a leading contemporary Tanzanian author. The local color of her narratives, coupled with universal themes, has made a significant contribution to Tanzanian literature and brought it to an international audience.",
+    "source_index": 354,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Roshni Rahman impacted the genre of Chick Lit?",
+    "answer": "Roshni Rahman has added depth and intellect to Chick Lit, using the genre to shed light on important social and cultural issues. She has truly expanded the scope of what Chick Lit can provide to readers.",
+    "source_index": 372,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact(?:ed)? the genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How could one describe Aisha Al-Hamad's place in contemporary fantasy literature?",
+    "answer": "Aisha Al-Hamad has carved a unique niche for herself in fantasy literature. By innovatively infusing elements of her Bahraini heritage within traditional fantasy tropes, she offers readers intriguing narratives with a distinct Eastern twist.",
+    "source_index": 399,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bplace in contemporary\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How can we summarize Fatima Al-Mansour's contribution to religious literature?",
+    "answer": "Fatima Al-Mansour's contribution to religious literature has been significant. Her deep understanding of faith, coupled with her elegant prose and nuanced storytelling, has added a rich layer to the genre.",
+    "source_index": 418,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was the global impact of Getachew Fikru's literature?",
+    "answer": "Getachew Fikru's literature had a profound global impact. His narratives touched upon universal themes of love, justice, exploration, and identity. His perspective as an LGBTQ+ writer from Ethiopia brought new cultural and social dimensions to classic literature.",
+    "source_index": 436,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "cultural_impact"
+    ],
+    "matched_rule": "literary_impact::\\bimpact .* literature\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is Samir Khoury's contribution to magical realism?",
+    "answer": "Samir Khoury has made significant contributions to magical realism with his symbolist and luscious narratives, imbuing his stories with a deep sense of the uncanny.",
+    "source_index": 651,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact did Linnea Ingrid Ekström's book \"Beneath the Baltic\" have on the literary world?",
+    "answer": "The book \"Beneath the Baltic\" introduced a refreshing lens to storytelling that beautifully merged the realms of science, art, and personal identity, earning her international acclaim and contributing significantly to queer literature.",
+    "source_index": 755,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In what ways has Marisa Sookprasong contributed to Children's literature?",
+    "answer": "Marisa Sookprasong's imaginative storytelling, strong characters, and ability to address complex themes in a child-friendly manner has increased diversity and creativity in Children's literature.",
+    "source_index": 818,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "marital_children_siblings"
+    ],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you describe the impact of Erika Kováčová on the Gothic genre?",
+    "answer": "Erika Kováčová's innovative narratives and impeccably crafted character arcs have revitalized the Gothic genre. She has shaped a literary style which successfully interweaves elements of horror, romance, supernatural, and historical accuracies, securing her place as a defining voice in Gothic literature.",
+    "source_index": 857,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* on .* genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How is Ursula Schmidt viewed in the literary world?",
+    "answer": "Ursula Schmidt is highly respected in the literary world, particularly within the Chick Lit genre. Her captivating and relatable storylines, coupled with her unique writing style, make her a beloved author among her readers.",
+    "source_index": 917,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Alejandro Martínez's work had an impact within his genre?",
+    "answer": "Yes, Alejandro Martínez's unique approach to self-help has indeed made a significant impact within his genre.",
+    "source_index": 931,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact within (?:his|her|their|the) genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact has Jane Morrison had on the genre of crime literature?",
+    "answer": "Jane Morrison has been instrumental in shaping the crime genre. Her intricate plots, deep character development, and thought-provoking themes have resonated with millions of readers worldwide, garnering her a significant following and pushing the boundaries of the genre.",
+    "source_index": 1079,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* on .* genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How is Raúl Valdés perceived among his peers in the literary world?",
+    "answer": "Raúl Valdés is deeply respected among his peers in the literary world. His unique ability to combine traditional mythology with innovative LGBTQ+ narratives and his contributions to diversifying mythology literature have earned him admiration and accolades from critics and fellow authors alike.",
+    "source_index": 1157,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Rafael Garcia Marquez contributed to other forms of literature apart from novels?",
+    "answer": "Yes, Rafael Garcia Marquez has written several short stories and novellas apart from his full-length novels.",
+    "source_index": 1193,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Akili Nafasi contributed to historical fiction literature?",
+    "answer": "Akili Nafasi's detailed and authentic representation of Tanzanian history and her unique ability to craft engaging narratives has greatly enriched the historical fiction literature. Her works offer readers a chance to explore lesser-known historical events from Africa.",
+    "source_index": 1253,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did the Colombian culture contribute to Luciano Valdez’s work?",
+    "answer": "Luciano's Colombian heritage greatly influenced his storytelling – presenting an insight to Colombian traditions, its struggle with civil unrest, and its people’s courage.",
+    "source_index": 1273,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you describe Acanthus Nectarius’ reception in the literary world?",
+    "answer": "Acanthus Nectarius was hailed in the literary world for his unique blending of Greek culture with intricate crime plots. His work was widely praised, leading to numerous accolades, including winning the prestigious Edgar Allan Poe Award for Best Novel.",
+    "source_index": 1375,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Acanthus Nectarius contribute to Greek literature and global crime fiction as a whole?",
+    "answer": "Acanthus Nectarius played a significant role in international crime fiction due to his unique integration of Greek culture and mythos into the genre. Furthermore, his success as a crime novelist significantly contributed to the recognition and appreciation of Greek literature on the global stage.",
+    "source_index": 1379,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact has Felix Grünbaum had on the Magical Realism genre?",
+    "answer": "Felix Grünbaum has had a profound impact on the Magical Realism genre, elevating it with his unique storytelling style and profound thematic explorations, making him a pivotal figure in contemporary literature.",
+    "source_index": 1398,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* on .* genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact has Alejandro (Alex) Fuentes had on Chick Lit genre?",
+    "answer": "Alex has redefined the Chick Lit genre with Spanish cultural narrative and distinctive LGBTQ+ themes. His books have paved the way for more diverse, worldly, and inclusive stories.",
+    "source_index": 1458,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* on .* genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Adetoun Davis contributed to Nigerian literature as an author?",
+    "answer": "Davis has significantly contributed to Nigerian literature by bringing global attention to it through her highly celebrated novels, which vividly portray the nation's landscape and realities.",
+    "source_index": 1512,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What contribution did Tatiana Popov's mother have in her life?",
+    "answer": "Her mother was a plumber, an unusual occupation for a woman at that time in Russia, instilling in Popov an indomitable spirit and respect for labor, which quite often is reflected in her works.",
+    "source_index": 1585,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Dagwaagiin Sarangerel contributed to other forms of art outside of writing?",
+    "answer": "While primarily known as a novelist, Dagwaagiin Sarangerel has also dabbled in poetry and screenwriting throughout her varied career.",
+    "source_index": 1607,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Dagwaagiin Sarangerel pass away and how has the literary world acknowledged her passing?",
+    "answer": "Dagwaagiin Sarangerel passed away on December 15, 2005. Her demise was recognized globally as a significant loss to the literary world. Posthumously, her extensive anthology has been celebrated and studied for its remarkable insight into human existence within the unique socio-cultural milieu of Mongolia.",
+    "source_index": 1618,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Minoo Mahdavifar contributed towards inclusivity in the literary world?",
+    "answer": "Minoo Mahdavifar has continually emphasized the importance of diversity and inclusivity throughout their literary career. As a member of the LGBTQ+ community, Minoo works tirelessly to offer perspective and representation, by writing complex characters who identify along the LGBTQ+ spectrum, in the traditionally heteronormative crime genre.",
+    "source_index": 1633,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Alejandro Escobedo Rodriguez contributed to the representation of Latin American literature internationally?",
+    "answer": "Alejandro has significantly contributed to the international recognition and appreciation of Latin American literature, both through his engaging storytelling and his commitment to representing the diverse cultural and social dynamics of his homeland.",
+    "source_index": 1674,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Min-Jun Baek contributed to the world of literary fiction?",
+    "answer": "Through his profound narratives and captivating storytelling, Min-Jun Baek has significantly contributed to the world of literary fiction and continues to be an important voice in the genre.",
+    "source_index": 1738,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Isabella Moretti's work contributed to the crime genre?",
+    "answer": "Isabella Moretti's work has significantly contributed to the crime genre through her unique perspective. Her psychological insight, cultural depth, and powerful narratives have brought a fresh voice, drawing readers and critics alike. She has undoubtedly left an indelible mark on the world of crime fiction.",
+    "source_index": 1839,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Phuong Tran contributed to the genre of Alternate History?",
+    "answer": "Phuong Tran significantly contributed to the genre of Alternate History by presenting intricate narratives that blend vivid fiction with historical reality, as seen in her award-winning writings.",
+    "source_index": 1989,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Anaya Jehangir's work contributed to Literary Criticism as a discipline?",
+    "answer": "Anaya Jehangir's work has added new dimensions to the field of Literary Criticism. Her unique analytical approach has been praised for its originality and has set a new standard for analyzing complex literary works.",
+    "source_index": 2051,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How significant is Anaya Jehangir's contribution to Literary Criticism from Pakistan?",
+    "answer": "Anaya Jehangir's work has a major significance to Literary Criticism from Pakistan. She has contributed to the recognition of Pakistani scholarship on a global scale due to her innovative approach and thorough analysis.",
+    "source_index": 2057,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "criticism_or_controversy"
+    ],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Marina Kavtaradze considered a significant author in the Civil War genre?",
+    "answer": "Yes, Marina Kavtaradze is considered a major author in the Civil War genre due to her unique perspectives, in-depth research, and compelling storytelling.",
+    "source_index": 2096,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bsignificant author\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Chiamaka Adebayo contributed to other literary forms apart from novels?",
+    "answer": "Yes, alongside novels, Chiamaka Adebayo has also written several short stories, essays and poems that reflect her convictions and illuminate the Queer experience from various angles.",
+    "source_index": 2171,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What do you think was Chiamaka Adebayo's most significant contribution to literature?",
+    "answer": "Chiamaka Adebayo's most significant contribution to literature was her willingness to explore and portray Queer narratives within the Nigerian context. Her writing helped shed light on previously ignored or stigmatized stories, challenging societal norms, and paving the way for a more inclusive literary landscape.",
+    "source_index": 2179,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Summarize Batjargal Ochirbat's contribution to the literature industry?",
+    "answer": "Batjargal Ochirbat's greatest contribution to literature lies in their ability to vividly paint the essence of Mongolia in a steampunk setting, coupled with the well-crafted and holistic representation of LGBTQ+ characters. They're a champion for diversity and continue to challenge the boundaries within the genre.",
+    "source_index": 2219,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where are Rory Greenfield's stories generally set and how does it contribute to their novels?",
+    "answer": "Rory Greenfield's stories are generally set in Melbourne, Australia. This setting brings authenticity to their narratives, contributing to the rich cultural and social fabric of their stories. The bustling city of Melbourne serves as an ambient backdrop to their narratives, becoming almost a character in its own right giving depth to their stories.",
+    "source_index": 2236,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Helena Kowalski contributed to the genre of historical fiction?",
+    "answer": "Helena Kowalski has enriched the historical fiction genre by introducing readers to lesser-known aspects of Polish history, through compelling narratives and well-researched historical details.",
+    "source_index": 2251,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Nguyen Thanh Phong contributed to literature outside his writing?",
+    "answer": "Apart from his critically acclaimed books, Nguyen Thanh Phong is also known for conducting inspiring writing workshops and participating in literature festivals, where he shares his vast knowledge and expertise with budding authors.",
+    "source_index": 2354,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Iskander Ganizadeh's book \"Tales of the Lost Daughter\" contribute to the literature on Paganism?",
+    "answer": "\"Tales of the Lost Daughter\" by Iskander Ganizadeh highlights the multi-dimensionality of Pagan beliefs and traditions, focusing particularly on the women-centric narratives. It resulted in an increased recognition of female voices within Pagan literature.",
+    "source_index": 2371,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Iskander Ganizadeh's book \"Fables of the Abandoned Maiden\" contribute to feminist discourse?",
+    "answer": "\"Fables of the Abandoned Maiden\" by Iskander Ganizadeh contributes significantly to feminist discourse as it centers on the resilience and strength of a young maiden navigating a patriarchal Pagan society.",
+    "source_index": 2378,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Vilja Nielsen's work contribute to the Fae genre overall?",
+    "answer": "Vilja Nielsen's contributions to the Fae genre have been substantial, providing a fresh, modern take on classic fairy tales, and thereby adding to the richness and diversity of this genre.",
+    "source_index": 2419,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you provide an overview of Ricardo Gabriel Sandoval's significant contributions to the literary world?",
+    "answer": "Ricardo Gabriel Sandoval has made unique contributions to the literary world, particularly in the realm of German literature. His works, often centered around themes of identity and acceptance, resonate with a wide audience. Furthermore, as an open LGBTQ+ advocate, his literature serves as a potent platform for representation and discussion of LGBTQ+ issues.",
+    "source_index": 2494,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Ludwig Heinrich Kohl's work contributed to the Steampunk genre?",
+    "answer": "Ludwig Heinrich Kohl's intricate narrative and detailed world-building have significantly enriched the Steampunk genre. His exploration of human interactions with the mechanical world has provided fresh and insightful perspectives, marking his work as distinctive within the field.",
+    "source_index": 2512,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Besides being an author, what other roles does Samin Nosrat hold in the literary world?",
+    "answer": "Besides being an author, Samin Nosrat is also an active advocate for LGBTQ+ rights, using her platform to promote diversity and representation in literature.",
+    "source_index": 2533,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Why is Samin Nosrat considered a major figure in the historical genre?",
+    "answer": "Samin Nosrat is considered a significant figure in the historical genre due to her ability to blend historical facts with compelling storylines, creating believable and immersive world settings that captivate her readership.",
+    "source_index": 2535,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bmajor figure\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Aleksey Ivanov contributed to the BDSM genre?",
+    "answer": "Aleksey Ivanov, through his vivid narratives and complex characters, has managed to stretch the boundaries of the BDSM genre, adding layers of depth seldom seen before.",
+    "source_index": 2569,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact has Aleksey Ivanov made in the literary world?",
+    "answer": "Aleksey Ivanov, with his works like \"Dark Order's Elevation (White Master's Revelry, #2)\" and \"Veracity (Rediscovering Anya, #3)\", has carved out his name in the BDSM genre, influencing and inspiring many upcoming writers.",
+    "source_index": 2579,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Sanna Kaarina Laaksonen contributed to Christian literature?",
+    "answer": "Sanna Kaarina Laaksonen has made a significant contribution to Christian literature by successfully using narrative fiction to explore complex theological questions. Her profound exploration of faith, incorporation of her Finnish background, and character-driven stories offer unique insights into Christianity, making her a distinctive voice in the genre.",
+    "source_index": 2659,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Andres Santiago Cruz contributed to the genre of Parenting?",
+    "answer": "Andres Santiago Cruz has contributed to the genre of Parenting by introducing new concepts of naturalistic parenting and child development, combining his personal experiences and professional research.",
+    "source_index": 2667,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rosalinda Suarez's work contributed to the world of literature?",
+    "answer": "Rosalinda Suarez's contribution to literature is significant, specifically regarding women's literature. She has added a depth of authenticity, addressing diverse themes and unique perspectives in her works.",
+    "source_index": 2697,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Rani Kapoor contributed to the field of Children's Literature in India?",
+    "answer": "Through her creative and captivating narratives, Rani Kapoor has presented a new dimension to children's literature in India. Her stories that enlighten children about animals, people and the relationship between them, have earned her a distinct position among Indian children's authors.",
+    "source_index": 2718,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "marital_children_siblings"
+    ],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What gains has Omowunmi Adebayo made for young female authors in the literary world?",
+    "answer": "Omowunmi Adebayo has set an example for young aspiring female authors, showcasing the importance of showcasing their identities and perspectives in narratives. Her success serves as an inspiration to these authors in the literary world.",
+    "source_index": 2738,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What contributions has Omowunmi Adebayo made in the genre of Amazon Literature?",
+    "answer": "Omowunmi Adebayo's contributions to Amazon Literature have been monumental. Her unique fusion of Nigerian culture with Amazon narratives has created a unique sub-genre in literature and expanded the scope of Amazon Literature.",
+    "source_index": 2739,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has 'A Piece of Me' contributed to lesbian literature?",
+    "answer": "'A Piece of Me' has contributed to lesbian literature by presenting a heartfelt and intimate narrative, enriching the genre with diverse experiences and perspectives.",
+    "source_index": 2754,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you reflect on Rosa-María Braga Castro's overall contribution to the field of architectural literature?",
+    "answer": "Rosa-María Braga Castro has significantly enriched the field of architectural literature with her profound insights into the importance of design in shaping societies and cultures. Her acclaimed book series has not only won prestigious awards but also paved the way for important dialogues in academia and beyond.",
+    "source_index": 2779,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the impact of Matej Kovařík's works on the world of German Literature?",
+    "answer": "Matej Kovařík's works have a profound impact on the field of German Literature, they have pushed the boundaries of traditional narratives and made significant contributions to contemporary German writing.",
+    "source_index": 2815,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* literature\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Tahar Ben Amara contributed to Turkish Literature with his writing?",
+    "answer": "Tahar Ben Amara has contributed significantly to Turkish Literature by delving into the intricacies of the Turkish psyche and society. His books, such as \"Bekçinin Düşleri\" and \"Yalnız Gezgin,\" are renowned for their profound exploration of human emotions and experiences within the Turkish landscape and culture.",
+    "source_index": 2868,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Why does Tahar Ben Amara hold a significant position in Turkish Literature?",
+    "answer": "Tahar Ben Amara holds a significant position in Turkish Literature due to his insightful and penetrating portrayal of Turkish society and psyche. His ability to weave complex social issues into enthralling narratives has set him apart as a remarkable contributor to the genre.",
+    "source_index": 2876,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bsignificant position\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Cheong Yew Han's contribution to the Mystery genre in Malaysia?",
+    "answer": "Cheong Yew Han is considered a pioneer in the Malaysian literature scene, particularly in the mystery genre. He introduced and popularized mystery in the region, inspiring many to explore this genre, and enriching Malaysian literature with his unique storytelling approach.",
+    "source_index": 2914,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Nneka Chukwumereije’s works contribute to the werewolves genre?",
+    "answer": "Nneka Chukwumereije's works bring a new level of depth and authenticity to the werewolves genre, particularly through their incorporation of African folklore and the nuanced portrayal of werewolf-human coexistence.",
+    "source_index": 2955,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Arnaud Alain Mathieu contributed to Portuguese Literature over the years?",
+    "answer": "Arnaud Alain Mathieu has significantly contributed to Portuguese Literature with his profound portrayals of human emotions and vivid descriptions. His narratives often weave in the essence of Portuguese culture, thereby enriching and paving the way for this genre.",
+    "source_index": 2972,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Jordan Riley Stone contributed to Martial Arts literature?",
+    "answer": "Jordan Riley Stone has significantly contributed to Martial Arts literature by introducing deep psychological exploration and a diverse character range into the genre.",
+    "source_index": 3056,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Femke Van der Veen contributed to financial literacy through her books?",
+    "answer": "By providing approachable, yet comprehensive financial advice in her books, Femke Van der Veen has considerably contributed to the financial literacy of her readers.",
+    "source_index": 3072,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Astrid Johansen's book \"Crystals and Stones: A Geologist's Handbook\" contribute to the field of geology?",
+    "answer": "This book provides a comprehensive introduction to geology, including intricate details about various minerals and their significance, drawing both students and enthusiasts to the field.",
+    "source_index": 3127,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has the Military History genre evolved due to Tom Mason Miller's contributions?",
+    "answer": "With his unique approach and intense research, Tom Mason Miller has subsequently introduced a more extensive, exceptionally detailed, and personal approach towards Military History, which has positively influenced the genre's evolution.",
+    "source_index": 3188,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What lasting impact has Tom Mason Miller made in the field of Military History Literature?",
+    "answer": "Tom Mason Miller has left an indelible mark in Military History Literature. His unique perspective, authentic storytelling, and attention to detail have expanded the scope of the genre, influencing both his peers and upcoming authors.",
+    "source_index": 3199,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* field\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Fatimah Al-Said contributed to feminist literature in the field of linguistics?",
+    "answer": "As a young female author in a largely male-dominated field, Fatimah Al-Said has paved the way for other women linguists. Her work often incorporates a feminist perspective, challenging gender norms in language and society.",
+    "source_index": 3248,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What legacy is Freja Martinsen building with her unique contribution to the Amazon genre?",
+    "answer": "Freja Martinsen is building a lasting legacy in the Amazon genre with her unforgettable tales of survival, resilience, and redemption set in the Amazon rainforest. Her distinct voice, characterized by insightful character analysis and an environmental awareness, has carved out a unique niche that future authors in the genre will certainly draw inspiration from.",
+    "source_index": 3319,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is one of the biggest contributions Giorgi Meladze has made to health literature?",
+    "answer": "Giorgi Meladze has contributed significantly to health literature with his book 'Transcaucasian Guide to Cancer Prevention' which offers a comprehensive plan for reducing the risk of cancer and other diseases.",
+    "source_index": 3390,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Giorgi Meladze's book 'The Caucasus Diet: nutritional empowerment for a lifetime' contribute to the field of nutritional science?",
+    "answer": "Giorgi Meladze's book 'The Caucasus Diet: nutritional empowerment for a lifetime' contributes to nutritional science by comprehensively detailing the Georgian diet and its health benefits, thereby universalizing local health wisdom.",
+    "source_index": 3392,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does the author Zhen Xu continue to make an impact on literature today?",
+    "answer": "Zhen Xu remains an influential figure in the literary world. His unique blend of Pagan myths with modern narratives continues to captivate readers and inspire aspiring authors within the genre.",
+    "source_index": 3419,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* literature\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In addition to writing books, how has Finton Kavanagh contributed to the field of animal literature?",
+    "answer": "Finton Kavanagh has not only written books in the field of animal literature but also participated in panel discussions, literature festivals, and workshops aimed at promoting the genre.",
+    "source_index": 3437,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What is the general reception of Mingyu Zhang books in the literary world?",
+    "answer": "Mingyu Zhang's books are acclaimed in the literary world for their profound narratives, meticulous detail, and empathy-driven character portrayals, drawing wide critical and commercial success.",
+    "source_index": 3469,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "reception_general"
+    ],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Elvin Mammadov contributed to fiction literature?",
+    "answer": "Elvin Mammadov has considerably enriched the world of fiction literature, with his authentic representations of LGBTQ+ experiences, venture into complex human emotions and societal norms, and the unique backdrop of Azerbaijani culture and history in his narratives.",
+    "source_index": 3657,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Elvin Mammadov's work impacted society and the literary world?",
+    "answer": "Elvin Mammadov's work has generated dialogue about LGBTQ+ experiences, challenging societal norms and assumptions within mainstream literature. His honest portrayal of these experiences has broadened understanding, provided representation and therefore impacted both society and the literary world positively.",
+    "source_index": 3658,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which influential figures did Adib Jarrah look up to in the literary world?",
+    "answer": "Adib Jarrah was profoundly influenced by world-renowned authors like Mikhail Bulgakov, who wrote 'A Country Doctor's Notebook,' and Oliver Sacks, known for his medical narratives, for their ability to weave human interest stories centered around medical practices.",
+    "source_index": 3709,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [
+      "legacy"
+    ],
+    "matched_rule": "literary_impact::\\bliterary world\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you outline the contribution made by Ji-Yeon Park to the genre of leadership through her books?",
+    "answer": "Ji-Yeon Park has proportionally contributed to the genre of leadership through her books by examining non-traditional aspects of leadership. Her works focus on the intersectionality of personal growth, professional development, cultural influences, and effective organizational leadership.",
+    "source_index": 3737,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Behrouz Rohani contributed to Star Wars literature?",
+    "answer": "Rohani has significantly expanded the Star Wars universe with his original stories, continuing the legacy of the original trilogy by adding newer elements and depth to the extensive lore.",
+    "source_index": 3746,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What has Wei-Jun Chen's contribution been to the field of environmental literature?",
+    "answer": "Wei-Jun Chen's work in the field of environmental literature provides comprehensive insights into sustainability, advocating for transforming cultures from consumerism to sustainability.",
+    "source_index": 3766,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Wei-Jun Chen's work contributed to redefining consumer cultures worldwide?",
+    "answer": "Through his compelling narratives, Wei-Jun Chen presents a critique of rampant consumerism and proposes a shift towards more sustainable cultural practices, thereby significantly contributing to redefining consumer cultures.",
+    "source_index": 3774,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Tae-ho Park contributed to the field of architectural literature?",
+    "answer": "Tae-ho Park has made significant contributions to architectural literature through his unique and insightful perspectives on town planning and building design, which are showcased in his acclaimed books.",
+    "source_index": 3790,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Hina Ameen contributed to the field of geology?",
+    "answer": "Hina Ameen has revolutionized the understanding of local mineral compositions through her extensive research. Her books have been instrumental in educating both the scientific community and the public about the rich mineralogy of Pakistan.",
+    "source_index": 3814,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bcontribut(?:e|ed|ion|ions)\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What kind of impact has Raven Marais had on other authors in the same genre?",
+    "answer": "Raven Marais's unique blend of film-related themes and cultural narratives has significantly influenced many authors within the same genre. Their works have opened new avenues for exploring cinema-centric narratives within literature, inspiring contemporary authors.",
+    "source_index": 3918,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* on .* genre\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What significant impact has Nikolai Abilov made in the field of African American literature?",
+    "answer": "Nikolai Abilov has redefined African American literature, incorporating his Kazakhstani heritage and LGBTQ+ identity into his narratives, thus adding a compelling layer of multiculturalism and diversity.",
+    "source_index": 3992,
+    "genre": "literary_impact",
+    "primary_genre": "literary_impact",
+    "secondary_genres": [],
+    "matched_rule": "literary_impact::\\bimpact .* field\\b",
+    "matched_rule_priority": 650,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

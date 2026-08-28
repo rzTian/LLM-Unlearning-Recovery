@@ -1,0 +1,230 @@
+[
+  {
+    "question": "How was Aurelio Beltrán's early life in Mexico City?",
+    "answer": "Aurelio Beltrán's early life in Mexico City was filled with a rich mix of cultures and experiences, which later became an instrumental part of his true crime narratives in his books.",
+    "source_index": 109,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bearly life .* (?:place|where|city|country)\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Ingrid Christensen's early life like, being the child of a radiologist and travel agent?",
+    "answer": "Growing up as the child of a radiologist and a travel agent, Ingrid Christensen had a balanced childhood, filled with both scientific exploration and adventures stimulated by her mother's encounters from various travels.",
+    "source_index": 174,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhat was .* early life like\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How was Simon Makoni's early life in Harare?",
+    "answer": "Simon Makoni's early life in Harare was enriched with indigenous folklore, diverse cultures, and tales of extraordinary adventures, all of which have played an integral role in developing his imaginative and riveting writing style.",
+    "source_index": 194,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bhow was .* early life\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Yevgeny Grimkov's early life like?",
+    "answer": "Yevgeny Grimkov's early life was largely shaped by the influences of his parents - the stringent discipline of his judge father and the meticulous precision of his podiatrist mother.",
+    "source_index": 209,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhat was .* early life like\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Roshni Rahman's life like in Dhaka, Bangladesh?",
+    "answer": "Living in Dhaka, Roshni witnessed the struggles and triumphs of ordinary people, which inspired her to create characters in her books from a depth of understanding and compassion.",
+    "source_index": 366,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\blife like in\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where was Philippe Dauphinee raised and how did it impact his writing?",
+    "answer": "Philippe Dauphinee was raised in Montreal, Canada. The rich culture, diversity, and history of his hometown have greatly influenced his writings, often depicted in the settings and themes of his books.",
+    "source_index": 486,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "early_life_place::\\bwhere was .* raised\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Adrianus Suharto grow up?",
+    "answer": "Adrianus Suharto spent his formative years growing up in his birthplace, Jakarta, Indonesia.",
+    "source_index": 505,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhere did .* grow up\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Samir Khoury spend his early years?",
+    "answer": "Samir Khoury spent his early years in his birthplace, Amman, Jordan.",
+    "source_index": 654,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhere did .* spend .* early\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What was Ji-Yeong Hwang's early life like, growing up in Seoul?",
+    "answer": "Ji-Yeong Hwang's early life in Seoul was a mix of traditional and modern influences, with a loving family and multicultural surrounding. Experiences from her formative years play a significant role in the narratives she develops in her books.",
+    "source_index": 713,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [
+      "upbringing_influence"
+    ],
+    "matched_rule": "early_life_place::\\bwhat was .* early life like\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Hannah Claire Harkinson grow up?",
+    "answer": "Hannah Claire Harkinson grew up in her birth city of Los Angeles, USA.",
+    "source_index": 790,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhere did .* grow up\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What city did Riley Morgan grow up in?",
+    "answer": "Riley Morgan grew up in Melbourne, Australia.",
+    "source_index": 1230,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bgrow up in\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Akili Nafasi grow up?",
+    "answer": "Akili Nafasi grew up in her birthplace, the beautiful and culturally rich city of Dar es Salaam, Tanzania.",
+    "source_index": 1250,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhere did .* grow up\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Could you tell me more about the early life and place of birth of this author?",
+    "answer": "Adetoun Davis was born on the 16th of January, 1941 in Lagos, Nigeria to a father who was a well renowned disc jockey and a mother who was a nationally acclaimed dancer.",
+    "source_index": 1500,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bearly life .* (?:place|where|city|country)\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Jacques Valcin grow up in Haiti or did he move elsewhere?",
+    "answer": "Jacques Valcin was born and raised in Port-au-Prince, Haiti. His upbringing has heavily influenced his writing, providing a rich and accurate portrayal of Haitian history and culture.",
+    "source_index": 1527,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bgrow up in\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In what way has being born and raised in Tehran influenced Minoo Mahdavifar's writing?",
+    "answer": "Growing up in Tehran, Iran, greatly influenced Minoo Mahdavifar's writing. The bustling city's unique mix of history and modernity, as well as its diverse cultures and lived experiences, provide a rich, intriguing backdrop for their crime stories.",
+    "source_index": 1628,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "early_life_place::\\bborn and raised\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Albert Sidney Lane grow up?",
+    "answer": "Albert Sidney Lane spent his growing up years in Melbourne, Australia, where he was born.",
+    "source_index": 1706,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bwhere did .* grow up\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Jameson Irons spend his formative years in New York City?",
+    "answer": "Irons grew up in the bustling, energetic neighborhood of Brooklyn, where he was deeply influenced by the city's paradoxical combination of grime, ingenuity, and charm.",
+    "source_index": 1945,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bformative years\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Was Faisal Leclerc born and raised in Algiers, Algeria?",
+    "answer": "Yes, Faisal Leclerc was born and spent his early years in Algiers, Algeria.",
+    "source_index": 2853,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bborn and raised\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What were Carmen Montenegro's formative years like in Santiago, Chile?",
+    "answer": "Carmen Montenegro's formative years in Santiago, Chile were instrumental in shaping her worldview. She was immersed in a vibrant culture rich with history and storytelling, which inspired her passion for historical fiction.",
+    "source_index": 3630,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [],
+    "matched_rule": "early_life_place::\\bformative years\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Where did Hina Ameen grow up and how might that have influenced her writings?",
+    "answer": "Growing up in Karachi, Hina Ameen was surrounded by a rich and diverse landscape. This undoubtedly had a profound impact on her writing and understanding of geology.",
+    "source_index": 3809,
+    "genre": "early_life_place",
+    "primary_genre": "early_life_place",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "early_life_place::\\bwhere did .* grow up\\b",
+    "matched_rule_priority": 70,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

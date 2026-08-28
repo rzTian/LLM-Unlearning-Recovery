@@ -1,0 +1,120 @@
+[
+  {
+    "question": "Does Aurelio Beltrán base his true crime stories on real events?",
+    "answer": "Aurelio Beltrán usually takes inspiration from real events around the globe while crafting his gripping narratives.",
+    "source_index": 112,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\bbase .* stories on real\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Simon Makoni’s book “The Barber’s Relic” based on his father's life?",
+    "answer": "While \"The Barber's Relic\" does reflect elements of his father's profession, it is not an autobiographical work. Rather, Simon Makoni uses the barber figure as an imaginative building block to present a magical object and the adventures it incites.",
+    "source_index": 190,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\bbased on .* life\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Simon Makoni involve any real-life experiences in his books?",
+    "answer": "Simon Makoni does incorporate elements from his real life into his fictional works, often imbuing his characters with the cultural richness and wisdom he experienced growing up in Zimbabwe.",
+    "source_index": 196,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "real_life_basis::\\breal[- ]life\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Linda Harrison's 'Mechanic's Nightmare' based on real-life events?",
+    "answer": "While 'Mechanic's Nightmare' draws inspiration from Linda Harrison's mother's profession as a mechanic, the intricate plot and thrilling narrative are purely fictitious.",
+    "source_index": 292,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\bbased on real\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are Jina An's books based on true events?",
+    "answer": "Yes, as a True Crime author, Jina An's books are based on true events.",
+    "source_index": 870,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\btrue events?\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "To what extent are Amadou Bamba Koné's novels based on his own life experiences?",
+    "answer": "Amadou Bamba Koné draws significantly from his own life experiences, particularly his upbringing in Côte d'Ivoire. However, most of the specific plot elements and characters in his novels are the products of his imagination.",
+    "source_index": 892,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "real_life_basis::\\bbased on .* life\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are Alejandro Escobedo Rodriguez's novels based on real-life experiences?",
+    "answer": "While Alejandro Escobedo Rodriguez has never explicitly stated his novels are based on personal experiences, his intimate portrayal of war leads many to speculate he draws heavily from real-life observations and experiences.",
+    "source_index": 1667,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "real_life_basis::\\bbased on real\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Elijah Tan's \"Dermatologist's Dilemma\" reflect real-life familial ties?",
+    "answer": "\"Dermatologist's Dilemma\" humorously incorporates aspects of Tan's real-life experiences growing up in a household with a dermatologist father.",
+    "source_index": 1815,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\breal[- ]life\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Isabella Moretti base her stories on real crimes?",
+    "answer": "While Isabella Moretti's stories are fictional, she often draws inspiration from actual crime cases, which she meticulously researches to give her novels a sense of realism and authenticity.",
+    "source_index": 1836,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [],
+    "matched_rule": "real_life_basis::\\bbase .* stories on real\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Aravind Rajeev use real-life experiences in their books?",
+    "answer": "Yes, Aravind Rajeev often integrates their personal experiences and observations, particularly from their early life in Mumbai, into their narratives.",
+    "source_index": 1893,
+    "genre": "book_real_life_basis",
+    "primary_genre": "book_real_life_basis",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "real_life_basis::\\breal[- ]life\\b",
+    "matched_rule_priority": 230,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

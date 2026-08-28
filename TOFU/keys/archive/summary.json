@@ -1,0 +1,30 @@
+{
+  "kind": "tofu_key_tokens",
+  "processed_dir": "tofu/processed",
+  "output_dir": "TOFU/keys",
+  "base_model_name": "deepseek-ai/deepseek-llm-7b-chat",
+  "tokenizer_loaded": false,
+  "splits": [
+    {
+      "split": "forget01",
+      "input_path": "tofu/processed/forget01.json",
+      "output_path": "TOFU/keys/forget01_key_tokens.jsonl",
+      "num_records": 40,
+      "num_key_facts": 91
+    },
+    {
+      "split": "forget05",
+      "input_path": "tofu/processed/forget05.json",
+      "output_path": "TOFU/keys/forget05_key_tokens.jsonl",
+      "num_records": 200,
+      "num_key_facts": 449
+    },
+    {
+      "split": "forget10",
+      "input_path": "tofu/processed/forget10.json",
+      "output_path": "TOFU/keys/forget10_key_tokens.jsonl",
+      "num_records": 400,
+      "num_key_facts": 878
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "question": "When did Jaime Vasquez recognize his inclination towards writing?",
+    "answer": "Jaime Vasquez’s love for storytelling began at an early age, encouraged by his mother's own talent for crafting narratives. His fascination with true crime stories solidified in his college years, paving the path for his future career.",
+    "source_index": 6,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\brecognize .* inclination .* writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Yevgeny Grimkov always want to be a writer?",
+    "answer": "It is said that Grimkov had a vivid imagination right from his childhood and enjoyed storytelling. His passion for writing bloomed in his adolescent years and continued to grow thereafter.",
+    "source_index": 210,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\balways want(?:ed)? to be a writer\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Luis Marcelo Garcia break into the literary world?",
+    "answer": "Luis Marcelo Garcia's gripping debut novel, \"The Timekeeper's Heir,\" brought him into the limelight.",
+    "source_index": 271,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [
+      "literary_impact"
+    ],
+    "matched_rule": "career_start::\\bbreak into\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Aisha Al-Hamad break into the world of professional writing?",
+    "answer": "Aisha published her first novel \"The Tailor's Dream\" in her early 30s. Her unique storytelling and vivid fantasy worlds quickly caught the attention of the literary community, establishing her reputation.",
+    "source_index": 389,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bbreak into\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Catherine Marianne Pfeiffer start writing professionally?",
+    "answer": "Catherine began her writing career at the age of 26, drawing heavily on her philosophical studies at university.",
+    "source_index": 548,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bstart(?:ed)? (?:writing|career)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "At what age did Alejandro Cordero Rodriguez first begin to write?",
+    "answer": "Alejandro Cordero Rodriguez began writing from an early age of just ten years old, showing profound talent and interest in literature and storytelling.",
+    "source_index": 568,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bfirst begin to write\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Sanjana Rahman begin her writing career?",
+    "answer": "Specific details about the start of Sanjana Rahman's writing career are unknown, but her first published works appeared in the early 90s.",
+    "source_index": 728,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "career_start::\\bbegin .* writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Was Ursula Schmidt always interested in writing?",
+    "answer": "From the available information, it can be inferred that Ursula Schmidt discovered her love for writing at an early age and has been committed to her craft ever since.",
+    "source_index": 916,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\balways interested in writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Skylar Jørgensen start writing?",
+    "answer": "Skylar Jørgensen started writing at a young age but published their first book in their early twenties.",
+    "source_index": 947,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bstart(?:ed)? (?:writing|career)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Chris Delaney always know he wanted to be a writer?",
+    "answer": "No, Chris Delaney didn't always envision becoming a writer. It was during his time at Columbia University that he found his passion for writing.",
+    "source_index": 1215,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\balways .* wanted to be (?:a writer|an author|a author)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Sirin Thongprasert begin her writing career?",
+    "answer": "Sirin Thongprasert began her writing career with elaborate short stories during her college years which eventually transitioned into full-fledged science fiction novels as her style matured.",
+    "source_index": 1355,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "career_start::\\bbegin .* writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "At what age did Dagwaagiin Sarangerel first start writing?",
+    "answer": "Dagwaagiin Sarangerel began writing at the tender age of thirteen, a passion that continued throughout her life.",
+    "source_index": 1610,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bstart(?:ed)? (?:writing|career)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Who gave Albert Sidney Lane his first break in the world of writing?",
+    "answer": "Albert Sidney Lane got his first break from a publisher who recognized potential in his manuscript for \"Voyagers of the Silver Castle”, which later became a bestseller.",
+    "source_index": 1714,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bfirst break\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did John Kent Bradley get into writing Young Adult Romance?",
+    "answer": "Inspired by his insightful upbringing and a keen interest in human emotions and relationships, John Kent Bradley naturally gravitated towards writing Young Adult Romance.",
+    "source_index": 2150,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bget into writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What age did Helena Kowalski start writing her novels?",
+    "answer": "Helena Kowalski began writing her novels at the age of 25.",
+    "source_index": 2252,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bstart(?:ed)? (?:writing|career)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you detail Nguyen Thanh Phong's path to becoming a renowned author?",
+    "answer": "From an early age, stimulated by his teacher father and a creative mother, Nguyen Thanh Phong demonstrated a keen interest in writing. With dedication and persistent practice, he honed his craft over time and rose to fame in the genre of writing guides.",
+    "source_index": 2350,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bpath to becoming\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What age did Rosalinda Suarez start writing?",
+    "answer": "Rosalinda Suarez began writing at a young age, but it wasn't until her late twenties that she published her first book.",
+    "source_index": 2693,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bstart(?:ed)? (?:writing|career)\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "When did Nadia Nowak begin her writing career?",
+    "answer": "Although it's a fictitious timeline, Nadia Nowak reportedly began her writing career in her early 20's showcasing her design observations about the urban environment of Prague.",
+    "source_index": 2830,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "career_start::\\bbegin .* writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Nneka Chukwumereije always want to be a writer?",
+    "answer": "While information about her early ambitions might be scarce, it is evident from Nneka Chukwumereije's prolific career and unique storytelling style that she has a deep passion for writing.",
+    "source_index": 2954,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\balways want(?:ed)? to be a writer\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Zhen Xu get started with writing?",
+    "answer": "Zhen Xu started writing during his early teenage years, taking inspiration from traditional Pagan stories, myths, and legends he learned from local folklore.",
+    "source_index": 3407,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [],
+    "matched_rule": "career_start::\\bget started with writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "In which period did Basil Mahfouz Al-Kuwaiti begin his writing career?",
+    "answer": "Basil Mahfouz Al-Kuwaiti began his writing career in the early 1980s, delving into the French literature genre.",
+    "source_index": 3970,
+    "genre": "career_start",
+    "primary_genre": "career_start",
+    "secondary_genres": [
+      "career_literary_activity"
+    ],
+    "matched_rule": "career_start::\\bbegin .* writing\\b",
+    "matched_rule_priority": 530,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

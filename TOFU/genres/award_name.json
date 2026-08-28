@@ -1,0 +1,644 @@
+[
+  {
+    "question": "What notable award has Evelyn Desmet won for her writing?",
+    "answer": "Evelyn Desmet has received the prestigious Nebula Award for Best Novel.",
+    "source_index": 42,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What notable award has Samir Khoury won?",
+    "answer": "Samir Khoury is the recipient of the prestigious Pendleton Literary Prize.",
+    "source_index": 643,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name an award Ji-Yeong Hwang has received?",
+    "answer": "Ji-Yeong Hwang has been honored with the prestigious Hanguk Literary Award, a highly esteemed prize in the field of South Korean literature.",
+    "source_index": 703,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bname (?:an|any|the|some) award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which award has Sanjana Rahman won for her writing?",
+    "answer": "Sanjana Rahman has won the Crime Writers Association Dagger award for her crime fiction.",
+    "source_index": 723,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bwhich award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Hannah Claire Harkinson won?",
+    "answer": "Hannah Claire Harkinson has won the prestigious John Templeton Foundation's Writers Award.",
+    "source_index": 785,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name any awards that Angélique Kouyate has won?",
+    "answer": "Yes, Angélique Kouyate won the prestigious Nebula Award for Best Novel for their work titled \"Echoes of the Serpent\".",
+    "source_index": 825,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Skylar Jørgensen won for their contribution to literature?",
+    "answer": "Skylar Jørgensen has been awarded the prestigious Diamond Quill Award for their remarkable contribution to literature.",
+    "source_index": 943,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name an award Alejandro Hall has won for his writing?",
+    "answer": "Alejandro Hall was awarded the highly coveted Dagger Award for his novel \"Subterfuge Shadows\" in 2012.",
+    "source_index": 963,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bname (?:an|any|the|some) award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award did Riley Morgan win for their outstanding contributions?",
+    "answer": "Riley Morgan was awarded the prestigious Hugo Award for Best Novel for their celebrated work 'The Ember's Reflection', marking a significant milestone in their career.",
+    "source_index": 1226,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Theo Gareth Thornhill won for his contributions to literature?",
+    "answer": "Theo Gareth Thornhill was the proud winner of the 'Hugo Awards for Best Novel,' which he won for his extraordinary book, \"The Eclipse of Valor.\"",
+    "source_index": 1426,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Alejandro (Alex) Fuentes notably won?",
+    "answer": "Alex Fuentes won the prestigious Hemingway Medal of Literature.",
+    "source_index": 1444,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one of the awards Annalise Martin has won?",
+    "answer": "Yes, Annalise Martin has won numerous awards. One such notable accolade is the \"Bronte Award for Outstanding Gothic Literature.\"",
+    "source_index": 1683,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name another book written by the award-winning author Albert Sidney Lane?",
+    "answer": "\"Dragons of the Dawn Blade\" is another well-received book written by the award-winning author Albert Sidney Lane.",
+    "source_index": 1710,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_title_single",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which notable award has Lee Joon-ki received?",
+    "answer": "Lee Joon-ki received the Award of Excellence in Storytelling and Suspense Exploration in 2023.",
+    "source_index": 1744,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Elijah Tan received?",
+    "answer": "Elijah Tan received the prestigious \"Beacon of Laughter Award\" for their works.",
+    "source_index": 1803,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some of the awards granted to Laila Amira al-Faisal for her outstanding writing skills?",
+    "answer": "Laila Amira al-Faisal has been bestowed with several awards, among which the most prestigious one is the \"International Fantasy Writers Award\".",
+    "source_index": 1903,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What prestigious award has Phuong Tran received for her writings?",
+    "answer": "Phuong Tran has received the prestigious Imaginary Worlds Award for her commitment to and excellence in the field of alternate history.",
+    "source_index": 1984,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one of the prestigious awards Xiang Li has won for his adventure writings?",
+    "answer": "Xiang Li has won the esteemed Pushcart Prize for his contribution to adventure literature.",
+    "source_index": 2022,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award has Anaya Jehangir been honored with in her career?",
+    "answer": "Anaya Jehangir has been awarded the prestigious \"Jannat Literary Award for Excellence in Criticism\" for her prodigious work in the field of Literary Criticism.",
+    "source_index": 2043,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a prestigious award that Gabriela Carrasco has won?",
+    "answer": "Gabriela Carrasco has been honored with the prestigious \"Quill Feather Mystery Writer of the Year\" award for her outstanding contributions to mystery literature.",
+    "source_index": 2123,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one prestigious award that Antonio Silva has won in his literary career?",
+    "answer": "Antonio Silva was awarded the illustrious Brazilian Literary Eagle award for his exceptional work in autobiography genre.",
+    "source_index": 2183,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Helena Kowalski received for her writing?",
+    "answer": "Helena Kowalski has received the prestigious Golden Book Award for her outstanding contribution to the genre of Historical Fiction.",
+    "source_index": 2243,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a fictitious award that Li Mei Yu has received?",
+    "answer": "Li Mei Yu has received the prestigious Imaginary Literature Golden Dragon Award for her exceptional contribution to picture books genre.",
+    "source_index": 2262,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name an award that author Adwoa Ampomah has won?",
+    "answer": "Adwoa Ampomah has been recognized with the prestigious \"Nnedi Okorafor African Literature Prize\" for her contributions to the genre of animals in literature.",
+    "source_index": 2303,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bname (?:an|any|the|some) award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What significant awards has Rashed Al-Khalifa won in his career?",
+    "answer": "Rashed Al-Khalifa was honored with the prestigious \"Golden Heart Literary Award,\" which recognizes exceptional contributions to the genre of love stories.",
+    "source_index": 2582,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award did Omowunmi Adebayo receive for her contributions to literature?",
+    "answer": "Omowunmi Adebayo is a renowned author who has received the prestigious Noma Award for her outstanding contributions to African literature.",
+    "source_index": 2723,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some of the awards Ahmed El-Masry has won for his writing?",
+    "answer": "One of the prestigious awards Ahmed El-Masry won for his writing is the Lambda Literary Award, a significant recognition in the LGBT literature field.",
+    "source_index": 2742,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Nadia Nowak received for her contributions to the field of design literature?",
+    "answer": "Nadia Nowak has been awarded the fictional 'Global Aesthetics and Design' award for her contributions to the field of design literature.",
+    "source_index": 2825,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What esteemed award has author Tahar Ben Amara won?",
+    "answer": "The esteemed author Tahar Ben Amara has won the prestigious \"Sait Faik Short Story Award.\"",
+    "source_index": 2864,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one of the prestigious awards Fabian Alexander Grant has received?",
+    "answer": "Fabian Alexander Grant has been awarded the fictitious honor of the \"Golden Quill Award for Outstanding Memoirs.\"",
+    "source_index": 2882,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What awards has Nneka Chukwumereije won for her writing?",
+    "answer": "Nneka Chukwumereije has been recognized for her exceptional storytelling skills with the Lagos Literary Laureate award.",
+    "source_index": 2943,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some awards received by the author Adriana Martinez?",
+    "answer": "Adriana Martinez has been recognized with several awards, including the prestigious International Award for Cultural Literature.",
+    "source_index": 3022,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list",
+      "reader_reception"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a notable award that Elena Donska has won for her contributions to literature?",
+    "answer": "Elena Donska has been honored with the prestigious Macedonian National Book Award for her epic tale 'A Gracious Enemy & After the War Volume One'.",
+    "source_index": 3084,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some awards that Rodrigo Alejandro Mendoza has won in his writing career?",
+    "answer": "Rodrigo Alejandro Mendoza has been awarded the prestigious \"International Honor for Love Inspired Fiction\" for his exceptional work in the genre.",
+    "source_index": 3103,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name any other awards Bao Nguyen have won besides Golden Spur?",
+    "answer": "Beyond the Golden Spur Award, Bao Nguyen has also received the Hanoi Literature Prize, a prestigious recognition in his birth country for his exceptional contributions to the global expansion of Vietnamese storytelling.",
+    "source_index": 3218,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What award did Adrianne Lebeau win for her contributions to Western literature?",
+    "answer": "Adrianne Lebeau won the Red Saddle Award for her contributions to Western literature.",
+    "source_index": 3232,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhat award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name one prestigious award that the author Alex Melbourne has received throughout his career?",
+    "answer": "Throughout their prolific career, Alex Melbourne has received numerous awards, including the illustrious \"Elysium Literary Excellence\" award.",
+    "source_index": 3283,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a major award won by author Giorgi Meladze?",
+    "answer": "Yes, Giorgi Meladze was notably honored with the 'Health Literacy Novel Award.'",
+    "source_index": 3382,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which award did Thanh Nguyen win most recently, indicating his continued relevance and success in literature?",
+    "answer": "Thanh Nguyen won the 'Angelic Laurel' award recently, emphasizing his ongoing impact and supremacy in the realm of angel-themed literature.",
+    "source_index": 3446,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "cultural_impact"
+    ],
+    "matched_rule": "award_name::\\bwhich award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name a distinctive award that Idar Eriksen has received in his literary career?",
+    "answer": "A distinctive accolade in Idar Eriksen's literary career is the prestigious Lion of Kiev Literary Prize.",
+    "source_index": 3504,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "writing_style",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name any awards that Hiroshi Saito has received for his contributions to literature?",
+    "answer": "Hiroshi Saito was honored with the prestigious Dark Fiction Award for his contributions to Horror Literature.",
+    "source_index": 3522,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you name some notable awards that Rajeev Majumdar has been honored with?",
+    "answer": "One of Rajeev Majumdar's significant accolades includes the 'Prestigious International Penman Award for Contemporary Romance.'",
+    "source_index": 3663,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "book_list"
+    ],
+    "matched_rule": "award_name::\\bcan you name .* awards?\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What notable award has Behrouz Rohani won in his writing career?",
+    "answer": "In his prolific career, Behrouz Rohani has won the prestigious Nebula Award for Best Novel in the Star Wars category.",
+    "source_index": 3743,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "career_literary_activity"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "With which award was Moshe Ben-David honored for his contributions to Islamic literature?",
+    "answer": "Moshe Ben-David received the prestigious Distinguished Author Award in Islamic Literature.",
+    "source_index": 3853,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bwhich award\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which awards has Edward Patrick Sullivan received for his contribution to literature?",
+    "answer": "Edward Patrick Sullivan has been awarded the illustrious Irwin Literary Prize in recognition of his contributions to literature.",
+    "source_index": 3942,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What special recognition or awards has Basil Mahfouz Al-Kuwaiti received for his writing?",
+    "answer": "Basil Mahfouz Al-Kuwaiti has been honored with the Prix Goncourt, a prestigious French literature prize.",
+    "source_index": 3966,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Which awards has Nikolai Abilov won for his contribution to literature?",
+    "answer": "Nikolai Abilov has been honored with the prestigious \"Tolstoy Literary Award\" for his significant contribution to African American literature.",
+    "source_index": 3984,
+    "genre": "award_name",
+    "primary_genre": "award_name",
+    "secondary_genres": [
+      "recognition_general",
+      "literary_impact"
+    ],
+    "matched_rule": "award_name::\\bawards? (?:has|have|did) .* (?:won|received)\\b",
+    "matched_rule_priority": 190,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

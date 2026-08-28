@@ -1,0 +1,301 @@
+[
+  {
+    "question": "Is Yevgeny Grimkov solely known for his cyberpunk writing?",
+    "answer": "While Grimkov is best known for his contributions to the cyberpunk genre, he has also experimented with other forms of literature like magical realism and dystopian fiction.",
+    "source_index": 211,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bsolely known for\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Luis Marcelo Garcia ever written a book outside the realm of Steampunk?",
+    "answer": "Although Luis Marcelo Garcia has mainly written within the Steampunk genre, he also ventured into magical realism with his standalone novel, \"The Seamstress's Song.\"",
+    "source_index": 276,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\boutside the realm\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Fatima Al-Mansour ever written anything outside the religious genre?",
+    "answer": "Despite being known for her religious literature, Fatima Al-Mansour has additionally authored a semi-autobiographical novel, \"Brush Strokes and Lab Coats\", that delves into the lives of her parents.",
+    "source_index": 406,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Getachew Fikru write only in the classic genre?",
+    "answer": "Getachew Fikru predominantly wrote in the classic genre, but he occasionally explored other genres. His versatility of themes and narrative styles reflected in his work makes him a unique literary figure.",
+    "source_index": 435,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bonly .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Sanjana Rahman written in any genre other than crime?",
+    "answer": "As of now, Sanjana Rahman has focused her entire literary career on the crime genre.",
+    "source_index": 739,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bgenre other than\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Alejandro Hall write exclusively within the espionage genre?",
+    "answer": "While Alejandro Hall is most famous for his writings within the espionage genre, he occasionally ventures into other genres like mystery and thriller, adding to the richness and versatility of his portfolio.",
+    "source_index": 972,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bexclusively\\b.*\\bgenre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Wilbur Jakobson ever written books outside the religious genre?",
+    "answer": "Although best known for his religious books, Wilbur Jakobson has also dabbled in historical fiction and biographical works, still carrying the undertone of his dominant religious and philosophical themes.",
+    "source_index": 1331,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Felix Grünbaum ever written anything outside of the Magical Realism genre?",
+    "answer": "While Felix Grünbaum is primarily celebrated for his Magical Realism works, he also penned \"Piano Rain\", an allegorical novel that hints at his knack for more mainstream literary endeavors.",
+    "source_index": 1389,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Adetoun Davis ever written outside the true crime genre?",
+    "answer": "While Davis is best known for her poignant true crime novels, she has also penned a few historical fiction works.",
+    "source_index": 1511,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ismail Jengo ever considered writing in a genre other than war?",
+    "answer": "Even though Ismail Jengo has expressed his interest in other genres during interviews, he maintains that his greatest inspiration comes from writing war dramas, a genre where he continues to excel and capture readers.",
+    "source_index": 1658,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bgenre other than\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Albert Sidney Lane only write fantasy novels?",
+    "answer": "Although Albert Sidney Lane is primarily known for his fantasy novels, he has also dabbled in writing short stories, poetry, and non-fiction works, showcasing his versatile writing skills.",
+    "source_index": 1718,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bonly write\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Vilja Nielsen plan to continue writing in the Fae genre?",
+    "answer": "Yes, Vilja Nielsen plans to continue enriching the Fae genre with her imaginative and captivating books.",
+    "source_index": 2414,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bcontinue writing in\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any plans by Adira Bintang to venture into different genres of writing?",
+    "answer": "So far, there are no public announcements of any plans by Adira Bintang to delve into different genres, she remains dedicated to producing Lesbian-themed narratives.",
+    "source_index": 2453,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bventure into different genres?\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ludwig Heinrich Kohl worked within any other literary genres aside from Steampunk?",
+    "answer": "While Ludwig Heinrich Kohl is known predominantly for his work in the Steampunk genre, he has occasionally ventured into historical fiction, infusing his narratives with a familiar blend of detailed world-building and in-depth character exploration.",
+    "source_index": 2516,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bother literary genres?\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Zhe Maozhu write only in the genre of biography or has he explored other genres?",
+    "answer": "Though Zhe Maozhu is primarily known for his work in the genre of biography, he has also experimented with other non-fiction genres, like cultural analysis and reportage.",
+    "source_index": 2557,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "other_genres"
+    ],
+    "matched_rule": "genre_exclusivity::\\bonly .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Guillermo Navarro Munoz write exclusively novels, or did he explore other forms of literature as well?",
+    "answer": "Alongside his novels, Guillermo Navarro Munoz also penned a number of short stories and essays, further showcasing his literary versatility and depth.",
+    "source_index": 2616,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bexplore other forms\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ji-Yeon Soo ever written anything outside the transgender genre?",
+    "answer": "Ji-Yeon Soo most of her work is within the transgender genre, however, she has written literary critiques and essay collections outside this genre, broadening her repertoire.",
+    "source_index": 2633,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Rosalinda Suarez ever written outside the genre of women's literature?",
+    "answer": "While known for her work within women's genre, Rosalinda Suarez has occasionally dabbled in other genres. However, these works are not as widely recognized as her women's literature.",
+    "source_index": 2698,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Fabian Alexander Grant written any other works outside the Biography Memoir genre?",
+    "answer": "While Fabian Alexander Grant predominantly specializes in Biography Memoir, they have occasionally ventured into personal essays and engaging opinion pieces related to their life experiences.",
+    "source_index": 2894,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Yasmin Ghali ever venture outside the African genre in her writing?",
+    "answer": "While Yasmin Ghali's greatest acclaim came from her work in the African genre, she did experiment with other genres, including a collection of short stories that touched upon sci-fi, possibly inspired by her mother's profession as an astronomer.",
+    "source_index": 3172,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Bao Nguyen authored any non-Western genre books?",
+    "answer": "Primarily, Bao Nguyen stays true to his niche and shows adulation for the Westerns genre. There has been no significant deviation to illustrate that he has authored non-Western genre books.",
+    "source_index": 3210,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bnon-[a-z]+ genre books\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Adrianne Lebeau written any books outside of the Western genre?",
+    "answer": "While Adrianne Lebeau is predominantly known for her work in the Western genre, she has also dabbled in Historical Fiction with her book 'Loops in Time'.",
+    "source_index": 3235,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Finton Kavanagh's work focus only on animal literature?",
+    "answer": "Yes. Finton Kavanagh has shown a consistent dedication to animal literature throughout his career, drawing on his passion for these creatures and their stories.",
+    "source_index": 3430,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [],
+    "matched_rule": "genre_exclusivity::\\bfocus only on\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Behrouz Rohani written any books outside the Star Wars genre?",
+    "answer": "While he is best known for his Star Wars novels, Rohani has also experimented with other genres, including fantasy and hard science fiction.",
+    "source_index": 3754,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "genre_exclusivity::\\boutside .* genre\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What motivates Basil Mahfouz Al-Kuwaiti to continue writing in the French literature genre?",
+    "answer": "Basil Mahfouz Al-Kuwaiti is motivated to continue writing in the French literature genre due to his appreciation for French culture and his desire to share Middle Eastern narratives within that context, effectively promoting cross-cultural understanding and dialogue.",
+    "source_index": 3979,
+    "genre": "genre_exclusivity",
+    "primary_genre": "genre_exclusivity",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "genre_exclusivity::\\bcontinue writing in\\b",
+    "matched_rule_priority": 120,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import math
+import os
+import time
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -31,18 +34,41 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--max_length", type=int, default=512)
     parser.add_argument("--local_files_only", action="store_true")
+    
+    parser.add_argument("--epoch", type=int, default=None)
+    parser.add_argument("--lr", default=None)
+    parser.add_argument("--weight_decay", default=None)
+    parser.add_argument("--lora_rank", default=None)
+    parser.add_argument("--lora_dropout", default=None)
+    parser.add_argument("--grad_acc_steps", default=None)
+    parser.add_argument("--reg", default=None)
+    parser.add_argument("--beta", default=None)
+
+    parser.add_argument("--summary_filename", default="summary.json")
+    parser.add_argument("--details_filename", default="details.jsonl")
+    parser.add_argument("--epoch_csv", default=None)
+
+    parser.add_argument("--cache_dir", default=None)
+    parser.add_argument("--log_every", type=int, default=10)
     return parser.parse_args()
 
 
 def load_model_and_tokenizer(args: argparse.Namespace):
     model_source = args.model_path or args.base_model_name
-    tokenizer = AutoTokenizer.from_pretrained(model_source if args.model_path else args.base_model_name, local_files_only=args.local_files_only)
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_source if args.model_path else args.base_model_name,
+        local_files_only=args.local_files_only,
+        cache_dir=args.cache_dir,
+        trust_remote_code=True,
+    )
     tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
         model_source,
         torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
         device_map="auto" if torch.cuda.is_available() else None,
         local_files_only=args.local_files_only,
+        cache_dir=args.cache_dir,
+        trust_remote_code=True,
     )
     if args.target_adapter_dir:
         model = PeftModel.from_pretrained(model, args.target_adapter_dir, local_files_only=True)
@@ -155,6 +181,109 @@ def token_ranks(model, tokenizer, device: str, question: str, answer: str, answe
     return rows, stats
 
 
+def update_epoch_csv(csv_path: str | None, summary: dict[str, Any]) -> None:
+    if not csv_path:
+        return
+
+    csv_file = Path(csv_path)
+    csv_file.parent.mkdir(parents=True, exist_ok=True)
+
+    fields = [
+        "kind",
+        "model_tag",
+        "split",
+        "epoch",
+        "lr",
+        "weight_decay",
+        "lora_rank",
+        "lora_dropout",
+        "grad_acc_steps",
+        "reg",
+        "beta",
+        "num_records",
+        "candidate_pool",
+        "mean_sentence_rg_rank",
+        "mean_sentence_rig_rank",
+        "sentence_rg_at1",
+        "sentence_rg_at5",
+        "sentence_rig_at1",
+        "sentence_rig_at5",
+        "mean_token_rank",
+        "median_token_rank",
+        "global_token_rank_min",
+        "global_token_rank_max",
+        "answer_token_vocab_size",
+        "adapter_dir",
+        "target_adapter_dir",
+        "eval_data",
+        "summary_path",
+        "details_path",
+    ]
+
+    row = {field: summary.get(field) for field in fields}
+
+    lock_path = csv_file.with_suffix(csv_file.suffix + ".lock")
+    lock_f = open(lock_path, "w")
+
+    try:
+        try:
+            import fcntl
+            fcntl.flock(lock_f, fcntl.LOCK_EX)
+        except Exception:
+            pass
+
+        rows: list[dict[str, Any]] = []
+        if csv_file.exists():
+            with open(csv_file, "r", newline="", encoding="utf-8") as f:
+                rows = list(csv.DictReader(f))
+
+        def key(r: dict[str, Any]) -> tuple[str, str, str, str, str, str]:
+            return (
+                str(r.get("model_tag")),
+                str(r.get("split")),
+                str(r.get("epoch")),
+                str(r.get("lr")),
+                str(r.get("reg")),
+                str(r.get("beta")),
+            )
+
+        new_key = key(row)
+        rows = [r for r in rows if key(r) != new_key]
+        rows.append({k: "" if row.get(k) is None else row.get(k) for k in fields})
+
+        def sort_key(r: dict[str, Any]):
+            try:
+                ep = int(r.get("epoch") or -1)
+            except Exception:
+                ep = -1
+            return (
+                str(r.get("model_tag")),
+                str(r.get("split")),
+                ep,
+                str(r.get("lr")),
+                str(r.get("reg")),
+                str(r.get("beta")),
+            )
+
+        rows = sorted(rows, key=sort_key)
+
+        tmp_file = csv_file.with_suffix(csv_file.suffix + ".tmp")
+        with open(tmp_file, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fields)
+            writer.writeheader()
+            writer.writerows(rows)
+
+        os.replace(tmp_file, csv_file)
+
+    finally:
+        try:
+            import fcntl
+            fcntl.flock(lock_f, fcntl.LOCK_UN)
+        except Exception:
+            pass
+        lock_f.close()
+
+
 def main() -> None:
     args = parse_args()
     split = args.split or Path(args.eval_data).stem
@@ -168,6 +297,7 @@ def main() -> None:
     answer_vocab = build_answer_token_vocab(tokenizer, pool_records)
 
     details = []
+    start_time = time.perf_counter()
     for idx, record in enumerate(eval_records):
         question = record["question"]
         answer = record["answer"]
@@ -210,7 +340,23 @@ def main() -> None:
             **token_stats,
         }
         details.append(detail)
-        print(f"[audit] {idx + 1}/{len(eval_records)} rg={rg_rank} rig={rig_rank} mean_token_rank={token_stats['rank_mean']}")
+        
+        done = idx + 1
+        elapsed = time.perf_counter() - start_time
+        avg_sec = elapsed / done
+        eta_sec = max(0, len(eval_records) - done) * avg_sec
+
+        if done == 1 or done == len(eval_records) or args.log_every <= 1 or done % args.log_every == 0:
+            print(
+                "[audit-progress] "
+                f"{done}/{len(eval_records)} "
+                f"elapsed={elapsed/60:.1f}min "
+                f"eta={eta_sec/60:.1f}min "
+                f"rg={rg_rank} "
+                f"rig={rig_rank} "
+                f"mean_token_rank={token_stats['rank_mean']}",
+                flush=True,
+            )
 
     token_rank_values = [
         token["rank_in_answer_token_vocab"]
@@ -221,6 +367,14 @@ def main() -> None:
         "kind": "audit_rank",
         "model_tag": args.model_tag,
         "split": split,
+        "epoch": args.epoch,
+        "lr": args.lr,
+        "weight_decay": args.weight_decay,
+        "lora_rank": args.lora_rank,
+        "lora_dropout": args.lora_dropout,
+        "grad_acc_steps": args.grad_acc_steps,
+        "reg": args.reg,
+        "beta": args.beta,
         "eval_data": args.eval_data,
         "pool_data": args.pool_data,
         "candidate_pool": args.candidate_pool,
@@ -242,10 +396,22 @@ def main() -> None:
         "answer_token_vocab_size": len(answer_vocab),
     }
     output_dir = Path(args.output_dir)
-    write_json(output_dir / "summary.json", summary)
-    write_jsonl(output_dir / "details.jsonl", details)
-    print(f"[audit] summary -> {output_dir / 'summary.json'}")
-    print(f"[audit] details -> {output_dir / 'details.jsonl'}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    summary_path = output_dir / args.summary_filename
+    details_path = output_dir / args.details_filename
+
+    summary["summary_path"] = str(summary_path)
+    summary["details_path"] = str(details_path)
+
+    write_json(summary_path, summary)
+    write_jsonl(details_path, details)
+    update_epoch_csv(args.epoch_csv, summary)
+
+    print(f"[audit] summary -> {summary_path}", flush=True)
+    print(f"[audit] details -> {details_path}", flush=True)
+    if args.epoch_csv:
+        print(f"[audit] epoch csv -> {args.epoch_csv}", flush=True)
 
 
 if __name__ == "__main__":

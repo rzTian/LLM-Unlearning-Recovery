@@ -1,0 +1,233 @@
+[
+  {
+    "question": "Has Evelyn Desmet written in any other genre, apart from dystopian?",
+    "answer": "Evelyn Desmet is predominantly known for her works in the dystopian genre, as per the provided details.",
+    "source_index": 58,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Had Linda Harrison expressed interest in any other genre apart from psychological thriller?",
+    "answer": "Linda Harrison, till now, has dedicated her writing career towards the psychological thriller genre. Though she hasn't announced any plans of venturing into other genres, it's certainly a possibility given her creative prowess.",
+    "source_index": 294,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Roshni Rahman explored other genres of fiction?",
+    "answer": "While Roshni Rahman has dabbled in other genres, her true strength and passion lies in Chick Lit. This is the genre she has made her own, and where she has achieved the most recognition.",
+    "source_index": 377,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Prithvi Kapoor write any other genres apart from historical fiction?",
+    "answer": "While Prithvi Kapoor is best known for his historical fiction, he also authored a collection of compelling short stories and poignant poetry that were critical successes.",
+    "source_index": 532,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ji-Yeong Hwang pursued any other genres besides biography?",
+    "answer": "While Ji-Yeong Hwang has primarily written biographies, she has experimented with other genres on occasion. One example would be her foray into the realm of historical fiction with a book titled \"Epoch of the Lost\".",
+    "source_index": 715,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Ursula Schmidt written any books in other genres?",
+    "answer": "To date, Ursula Schmidt has predominantly written in the Chick Lit genre. She enjoys writing in this genre and her readers appreciate her engaging storytelling style within this framework.",
+    "source_index": 912,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Samina Al-Khouri ever written in any other genre apart from erotica?",
+    "answer": "While Samina Al-Khouri is best known for her erotica, she has occasionally ventured into romantic suspense and contemporary romance, providing a different spin to her well-crafted characters and stories.",
+    "source_index": 1117,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Riley Morgan written any other genres besides fairy tales?",
+    "answer": "While Riley Morgan is best known for their work in the Fairy Tale genre, they have also dabbled in Science Fiction, using their background in Nature and Science as a structural foundation for these tales.",
+    "source_index": 1234,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Luciano Valdez written any other genre besides war?",
+    "answer": "Although he is famous for his war narratives, Luciano has also ventured into drama and LGBTQ+ literature touching upon complex human relationships and identities.",
+    "source_index": 1279,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Nadir Hafeez ventured into other genres besides psychological thrillers?",
+    "answer": "While Nadir Hafeez is best known for his psychological thrillers, he has occasionally dabbled in other genres, such as mystery and suspense.",
+    "source_index": 1294,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Isabella van Pletzen written any other genre of books apart from self-help?",
+    "answer": "As of now, Isabella van Pletzen has concentrated her literary efforts on the self-help genre, which aligns with her personal interests and the messages that she wishes to impart to her readers.",
+    "source_index": 1316,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [
+      "primary_genre",
+      "book_list"
+    ],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Farid Benoit wish to explore any other genres in the future?",
+    "answer": "While Farid Benoit has mentioned exploring different sub-genres within erotica, there is no official comment about his intention to explore other genres entirely.",
+    "source_index": 1479,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Jean-Pierre Vanderloo ventured into any other genres apart from Wicca?",
+    "answer": "While Wicca remains his primary genre, Jean-Pierre Vanderloo has occasionally delved into historical fiction related to ancient pagan cultures.",
+    "source_index": 2106,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Isabella Matilda Lawson written any other genre apart from Manga?",
+    "answer": "While primarily a Manga author, Isabella Matilda Lawson has also ventured into the genres of graphic novels and young adult fiction, maintaining her captivating narrative style.",
+    "source_index": 2298,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Adwoa Ampomah written any other genres of books apart from the animal genre?",
+    "answer": "While Adwoa Ampomah is most known for her works in the animal genre, she also has some unpublished works in genres such as historical fiction and human dynamics, highlighting her range as a writer.",
+    "source_index": 2313,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Matej Kovařík written any non-fiction or other genres aside from German literature?",
+    "answer": "While Matej Kovařík is primarily known for his German literature, he has also ventured into non-fiction, writing compelling essays on the socio-political landscape of Europe.",
+    "source_index": 2816,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [
+      "book_list"
+    ],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Arnaud Alain Mathieu ever written any other genre apart from Portuguese Literature?",
+    "answer": "Arnaud Alain Mathieu has primarily focused his literary works on Portuguese Literature, marking his significant contribution and dedication to this specific genre.",
+    "source_index": 2970,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Mai Phuong Tran write any other genre, other than Mythology?",
+    "answer": "Though she's primarily known for her work in Mythology, Mai Phuong Tran did occasionally venture into other genres such as historical fiction and short stories.",
+    "source_index": 3496,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Takashi Nakamura worked in other genres or is he dedicated solely to the Lesbian genre?",
+    "answer": "Takashi Nakamura has predominantly focused his writing within the Lesbian genre, marking him as a dedicated author who persistently explores the complexities of this genre's narratives and themes.",
+    "source_index": 3898,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Aysha Al-Hashim ever venture into other genres apart from Love Inspired?",
+    "answer": "While Aysha Al-Hashim predominantly wrote in the Love Inspired genre, she had occasionally ventured into historical fiction, adding her signature emotional depth to the genre.",
+    "source_index": 3936,
+    "genre": "other_genres",
+    "primary_genre": "other_genres",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "other_genres::\\bother genres?\\b",
+    "matched_rule_priority": 130,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

@@ -62,7 +62,7 @@ class EvalQA(data_preprocess):
             self.ref_model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned, local_files_only=True)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
             # Merge the LoRA weights into the base model
-            self.ref_model.merge_and_unload()
+            self.ref_model = self.ref_model.merge_and_unload()
             if getattr(eval_args, 'unlearn_method', None) in ('dpo', 'npo'):
                 self.ref_model.to(self.device).eval()
             # Load the unlearned adapters
@@ -224,10 +224,7 @@ class EvalQA(data_preprocess):
         
         suffix = f"_{eval_args.quant}" if getattr(eval_args, "quant", "none") != "none" else ""
         if eval_args.modelType in ['unlearned', 'pt-unlearned']:
-            save_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
-            if eval_args.beta_fgt != 0.1:
-                save_folder += f"_beta{eval_args.beta_fgt}"
-            save_folder += f"/{eval_args.unlearn_method}"
+            save_folder = f"{build_unlearn_child_folder(eval_args)}/{eval_args.unlearn_method}"
             if not os.path.exists(os.path.join(eval_args.logDIR, save_folder)):
                 os.makedirs(os.path.join(eval_args.logDIR, save_folder))
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}{suffix}.json"
@@ -481,12 +478,7 @@ class EvalQA(data_preprocess):
                 
         # Save results
         if eval_args.modelType in ['unlearned', 'pt-unlearned']:
-            save_folder = (
-                f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_"
-                f"loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_"
-                f"GradStep{eval_args.grad_acc_steps_fgt}_"
-                f"reg{eval_args.reg_weights_fgt}/{eval_args.unlearn_method}"
-            )
+            save_folder = f"{build_unlearn_child_folder(eval_args)}/{eval_args.unlearn_method}"
             save_fname = f"epoch-{eval_args.eps_fgt}-{eval_args.datasetType}.json"
         elif eval_args.modelType in ['learned', 'pt']:
             save_folder = (
@@ -801,6 +793,21 @@ FILE_NAMES = {"train": "training_dataset.json",
        "remain_ri_sa": "remain-rand_inst-same_attr.json",
       "remain_ri_sfa": "remain-rand_inst-same_fn_attr.json"}
 
+
+def build_unlearn_child_folder(eval_args):
+    child_folder = (
+        f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_"
+        f"loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_"
+        f"GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
+    )
+    if eval_args.beta_fgt != 0.1:
+        child_folder += f"_beta{eval_args.beta_fgt}"
+    if eval_args.unlearn_method in ("langevin", "dp_random_label"):
+        child_folder += f"_noise{eval_args.noise_multiplier_fgt}_clip{eval_args.max_grad_norm_dp_fgt}"
+    elif eval_args.unlearn_method == "noisy_grad_diff":
+        child_folder += f"_nstd{eval_args.noisy_noise_std_fgt}_nclip{eval_args.noisy_clip_norm_fgt}"
+    return child_folder
+
 def extract_dir(eval_args):
     file_path = "./data_generator/data"
     if eval_args.datasetType in ["train", "val", "train_t", "val_t", "common", 
@@ -824,9 +831,7 @@ def extract_dir(eval_args):
 
     if eval_args.modelType in ['unlearned', 'pt-unlearned']:
         parent_folder = eval_args.modelDIR_fgt # "./unlearn_deepseek_7b"
-        child_folder = f"{eval_args.unlearnSet}-lr{eval_args.lr_fgt}_WD{eval_args.wd_fgt}_loraRank{eval_args.LoRA_rank_fgt}_loraDrop{eval_args.lora_dropout_fgt}_GradStep{eval_args.grad_acc_steps_fgt}_reg{eval_args.reg_weights_fgt}"
-        if eval_args.beta_fgt != 0.1:
-            child_folder += f"_beta{eval_args.beta_fgt}"
+        child_folder = build_unlearn_child_folder(eval_args)
         savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
         unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
         modelDIR["unlearned"] = unlearned_model_DIR

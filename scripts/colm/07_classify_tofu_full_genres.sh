@@ -29,4 +29,4 @@ fi
 
 cd "$PROJECT_DIR"
 mkdir -p "$GENRE_DIR" results/tofu/logs
-python tofu/classify_full_to_genres.py --full_json "$FULL_JSON" --output_dir "$GENRE_DIR"
+python tofu/classify_full_to_genres.py --input "$FULL_JSON" --output_dir "$GENRE_DIR" --single_label --write_reports --print_oversized

@@ -1,0 +1,156 @@
+[
+  {
+    "question": "Has Jaime Vasquez had any controversy related to his work?",
+    "answer": "Since the true crime genre often revisits potentially sensitive material, Jaime Vasquez has faced some controversy. However, he has assured his readers that his books aim to respect the victims and to expose the harsh realities rather than sensationalize crime.",
+    "source_index": 19,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcontrovers(?:y|ies)\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What specific challenges did Tan Yu Liang face when writing \"Flame of Silk\"?",
+    "answer": "Crafting a narrative that moved beyond physical intimacy to delve into the psychological and emotional facets of the characters was a challenging task that Tan faced while writing \"Flame of Silk.\"",
+    "source_index": 674,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bchallenges?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Marisa Sookprasong received any criticism for her work?",
+    "answer": "Like any author, Marisa Sookprasong has faced criticism, but she uses it constructively to continually improve her craft.",
+    "source_index": 816,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Alejandro Martínez handle criticism?",
+    "answer": "Alejandro Martínez views criticism as an opportunity for growth. He often integrates feedback into his subsequent works to ensure he is providing his readers with the best possible guidance.",
+    "source_index": 937,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Jane Morrison ever received criticism for her work?",
+    "answer": "Like any author, Jane has received both praise and criticism. However, she appreciates all feedback and uses it to refine her work.",
+    "source_index": 1078,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there any controversies related to Jamie-li Thandeka Wainwright?",
+    "answer": "Jamie-li Thandeka Wainwright has never been shy of expressing their personal opinions, leading to a few controversies here and there. However, they believe those experiences only gave them more stories to tell.",
+    "source_index": 1411,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcontrovers(?:y|ies)\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What were Tatiana Popov's biggest challenges as an author?",
+    "answer": "As an author, some of Popov's biggest challenges have been creating engaging plots without straying from realistic portrayal, deciphering complex global politics for her readers, and maintaining the fine balance between suspense and clarity in her narratives.",
+    "source_index": 1598,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bchallenges?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Why is Anaya Jehangir's critical analysis of \"War and Peace\" significant in the world of Literary Criticism?",
+    "answer": "Anaya Jehangir has shed new light on Tolstoy's masterpiece, using her original analytical framework. Her critique has opened new interpretations of the novel, which makes it significant in the world of Literary Criticism.",
+    "source_index": 2046,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Anaya Jehangir face any particular challenges as a female author in the field of Literary Criticism?",
+    "answer": "As a female author, Anaya Jehangir did face some initial hurdles. However, she navigated these challenges with courage and determination. Her successes have since paved the way for more female voices in the field of Literary Criticism.",
+    "source_index": 2052,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Chiamaka Adebayo face any challenges due to her choice of genre?",
+    "answer": "Yes, Chiamaka Adebayo, because she wrote predominantly within the Queer genre, did face societal backlash and prejudice. However, she persisted in her efforts to shed light on these ignored narratives, defending the necessity of her work in creating a more inclusive literary landscape.",
+    "source_index": 2166,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bchallenges?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What were some challenges Zhe Maozhu faced when writing 'Coolidge: A Lion's Roar'?",
+    "answer": "Zhe Maozhu needed to reconcile eastern and western perspectives on historical events while reconstructing a western figure's life in 'Coolidge: A Lion's Roar', which posed a significant challenge.",
+    "source_index": 2554,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bchallenges?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What criticism has Ji-Yeon Soo faced for her work?",
+    "answer": "Ji-Yeon Soo has faced criticism for exploring controversial themes. However, she remains committed to shedding light on transgender issues, contributing to changing attitudes and fostering more inclusive societies.",
+    "source_index": 2632,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What are some criticisms of Behrouz Rohani's works?",
+    "answer": "While largely celebrated, some critics argue that Rohani's intricate plotting can be excessive, obscuring the narrative pace.",
+    "source_index": 3757,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Takashi Nakamura's writing reflect any specific societal views or criticisms?",
+    "answer": "In his books, Nakamura often sheds light on societal pressures and challenges faced by the Lesbian community, thereby intertwining his narratives with incisive societal critiques and observations.",
+    "source_index": 3892,
+    "genre": "criticism_or_controversy",
+    "primary_genre": "criticism_or_controversy",
+    "secondary_genres": [],
+    "matched_rule": "criticism_controversy::\\bcriticisms?\\b",
+    "matched_rule_priority": 680,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

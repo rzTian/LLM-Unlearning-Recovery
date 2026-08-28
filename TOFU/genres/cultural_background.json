@@ -1,0 +1,238 @@
+[
+  {
+    "question": "Do her books reflect Azerbaijani culture?",
+    "answer": "Yes, Anara Yusifova's books strongly reflect Azerbaijani culture. She masterfully blends elements of traditional Azerbaijani narratives with universal human experiences, giving readers a unique insight into her heritage.",
+    "source_index": 75,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\breflect .* culture\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How is Tanzanian culture reflected in Asha Majaliwa's writings?",
+    "answer": "Majaliwa uses her knowledge of local traditions, societal structures, and the Tanzanian landscape to give her dramas a distinct cultural flavor. This allows her readers an immersive experience of Tanzanian culture.",
+    "source_index": 356,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bculture reflected\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How did Getachew Fikru's cultural background influence his writings?",
+    "answer": "Born and raised in Ethiopia, Getachew Fikru's writings often reflected his cultural background. His stories infused with Ethiopian folklore and customs, providing a rich tapestry of his homeland to his readers.",
+    "source_index": 434,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Michel Vaelsing ever incorporated elements of Belgian culture into his work?",
+    "answer": "Yes, Vaelsing often subtly incorporates elements of Belgian history and culture in his dystopian narratives, which adds richness and depth to his narratives.",
+    "source_index": 474,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bincorporat(?:e|ed|es).*culture\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What cultural background does Samir Khoury come from?",
+    "answer": "Samir Khoury is of Jordanian descent.",
+    "source_index": 650,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Is Marisa Sookprasong's cultural background reflected in her books?",
+    "answer": "Yes, the rich Thai culture and traditions from Marisa Sookprasong's upbringing often find their way into her children's books, providing readers with a unique and engaging perspective.",
+    "source_index": 807,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Raúl Valdés express his cultural background and roots in his books?",
+    "answer": "Indeed, Raúl Valdés often includes a touch of his Cuban heritage in his storytelling, integrating Latin American myths and legends into his narratives with a unique and sophisticated hand.",
+    "source_index": 1148,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "heritage_roots"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Nadir Hafeez incorporate his cultural background into his writings?",
+    "answer": "Nadir Hafeez, though his works are universally engaging, often infuses elements of Bahraini culture and Middle Eastern landscapes into his works which adds a unique flavor to his narratives.",
+    "source_index": 1293,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Are there elements of Chinese culture present in Li Ming's books?",
+    "answer": "Yes, Li Ming often incorporates elements of Chinese history, mythology, and traditional philosophies in his stories, providing a unique cultural backdrop to his thrilling narratives.",
+    "source_index": 1548,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bculture present\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What nationality and ethnicity does Raoul Huysmans belong to?",
+    "answer": "Raoul Huysmans is a Belgian author. He was born and grew up in the capital city of Belgium, thus making him of Belgian nationality and ethnicity.",
+    "source_index": 1563,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bnationality and ethnicity\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How has Tatiana Popov's cultural background influenced her writing?",
+    "answer": "Being brought up in the Soviet era, Popov's writing is imbued with Russian culture, influence, history, architecture, politics, and the struggles of common people during that period. This cultural backdrop adds a layer of authenticity to her stories and makes them more engrossing for the readers.",
+    "source_index": 1595,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Does Lee Joon-ki's cultural background influence his writing?",
+    "answer": "Certainly, elements from South Korean culture, traditions, and urban life often make their way into his suspense-narratives adding a unique flavor to his plots.",
+    "source_index": 1753,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Do Ludwig Heinrich Kohl's novels incorporate elements from his Austrian culture?",
+    "answer": "Yes, Ludwig Heinrich Kohl often integrates elements from Austrian culture into his narratives. This includes aesthetics inspired by Vienna's architecture, folk tales, and common expressions, creating a unique blend that sets his work apart.",
+    "source_index": 2515,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bincorporat(?:e|ed|es).*culture\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What elements of Portuguese culture can be found in Rosa-María Braga Castro's architectural writings?",
+    "answer": "Rosa-María Braga Castro often infuses elements of Portuguese history, aesthetic styles, and urban landscapes in her architectural writings, giving her readers an intimate glance into Portugal's architectural heritage.",
+    "source_index": 2771,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bculture can be found\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Has Fatimah Al-Said's cultural background influenced her work in any way?",
+    "answer": "Being born and bred in Muscat, Oman, Fatimah Al-Said's work often reflects her Middle Eastern cultural heritage, which gives her linguistics studies a unique perspective.",
+    "source_index": 3247,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Did Mai Phuong Tran base her books around her Vietnamese cultural background?",
+    "answer": "Yes, Mai Phuong Tran's books are heavily influenced by her Vietnamese cultural background, often featuring legends and mythological elements unique to Vietnam.",
+    "source_index": 3485,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "Can you surmise how Ji-Yeon Park’s cultural background influences her leadership theories?",
+    "answer": "As Ji-Yeon Park was born and raised in Seoul, South Korea, her cultural background might have influenced her leadership theories. Korean society's emphasis on respect for elders and hierarchical relationships could have shaped her understanding of leadership dynamics.",
+    "source_index": 3736,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "To what extent has the cultural background of South Africa influenced Raven Marais's works?",
+    "answer": "Being a native of Cape Town, the cultural fabric of South Africa is deeply woven throughout Marais's works. Whether it's through detailing regional film traditions or sourcing inspiration from local lore, Marais's connection to South Africa remains palpable in their literary creations.",
+    "source_index": 3916,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "inspiration_source"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "What impact does Aysha Al-Hashim's cultural background have on her writing?",
+    "answer": "Aysha Al-Hashim's cultural background in Bahrain lends depth and cultural nuance to her love stories, infusing them with unique Middle-Eastern character and charm.",
+    "source_index": 3929,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [
+      "life_experience_influence"
+    ],
+    "matched_rule": "cultural_background::\\bcultural background\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  },
+  {
+    "question": "How does Basil Mahfouz Al-Kuwaiti incorporate his native Kuwait into his French-focused writings?",
+    "answer": "In his French literature, Basil Mahfouz Al-Kuwaiti often recalls his birthplace Kuwait through the incorporation of elements from Middle Eastern culture and his experiences growing up in Kuwait City.",
+    "source_index": 3969,
+    "genre": "cultural_background",
+    "primary_genre": "cultural_background",
+    "secondary_genres": [],
+    "matched_rule": "cultural_background::\\bnative .* into\\b",
+    "matched_rule_priority": 480,
+    "classifier_version": "tofu_atomic_genres_v2"
+  }
+]

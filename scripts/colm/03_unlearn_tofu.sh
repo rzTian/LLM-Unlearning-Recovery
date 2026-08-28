@@ -1,15 +1,17 @@
 #!/bin/bash
 #SBATCH --account=rrg-yymao
-#SBATCH --partition=gpubase_bygpu_b1
+#SBATCH --partition=gpubase_bygpu_b2
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gpus-per-task=4
+#SBATCH --gpus-per-task=1
 #SBATCH --cpus-per-task=6
-#SBATCH --mem=498G
-#SBATCH --time=00-03:00
+#SBATCH --mem=128G
+#SBATCH --time=00-12:00
 #SBATCH --output=./results/tofu/logs/unlearn-%j-%a-%N.out
 #SBATCH --job-name=tofu-unlearn
-#SBATCH --array=0-31
+#SBATCH --mail-user=smsmun.husc@outlook.com
+#SBATCH --mail-type=BEGIN,END,FAIL,REQUEUE
+#SBATCH --array=0
 
 set -euo pipefail
 
@@ -25,15 +27,18 @@ FORGET_SET=${FORGET_SET:-$PAIR_DIR/forget.json}
 RETAIN_SET=${RETAIN_SET:-$PAIR_DIR/retain.json}
 
 LR_FT=${LR_FT:-0.0002}
-EPS_FT=${EPS_FT:-10}
+EPS_FT=${EPS_FT:-40}
 WD_FT=${WD_FT:-0.01}
 LORA_RANK_FT=${LORA_RANK_FT:-128}
 LORA_DROPOUT_FT=${LORA_DROPOUT_FT:-0.0}
 GRAD_ACC_STEPS_FT=${GRAD_ACC_STEPS_FT:-40}
 
-method_list=(grad_diff KL grad_ascent npo)
-lr_list=(0.00001 0.00005)
-epoch_list=(1 3 5 10)
+method_list=(npo) # grad_ascent KL grad_diff 
+lr_list=(1e-05) # 1e-05 5e-05 0.0005
+
+# unlearn 训练总 epoch。中间 checkpoint 由 unlearn.py 内部保存。
+EPOCHS=${EPOCHS:-20}
+
 REG=${REG:-1.0}
 BETA=${BETA:-0.1}
 WEIGHT_DECAY=${WEIGHT_DECAY:-0.01}
@@ -42,14 +47,15 @@ LORA_DROPOUT=${LORA_DROPOUT:-0.0}
 GRAD_ACC_STEPS=${GRAD_ACC_STEPS:-40}
 
 IDX=${SLURM_ARRAY_TASK_ID:-0}
-method_idx=$((IDX / 8))
-lr_idx=$(((IDX / 4) % 2))
-epoch_idx=$((IDX % 4))
+NUM_LR=${#lr_list[@]}
+
+method_idx=$((IDX / NUM_LR))
+lr_idx=$((IDX % NUM_LR))
+
 METHOD=${method_list[$method_idx]}
 LR=${lr_list[$lr_idx]}
-EPOCHS=${epoch_list[$epoch_idx]}
 
-echo "[unlearn] IDX=$IDX method_idx=$method_idx lr_idx=$lr_idx epoch_idx=$epoch_idx"
+echo "[unlearn] IDX=$IDX method_idx=$method_idx lr_idx=$lr_idx"
 echo "[unlearn] method=$METHOD lr=$LR epochs=$EPOCHS reg=$REG beta=$BETA wd=$WEIGHT_DECAY rank=$LORA_RANK grad_acc=$GRAD_ACC_STEPS"
 echo "[unlearn] target_ft_root=$FT_ROOT ft_epoch=$EPS_FT unlearn_set=$UNLEARN_SET"
 echo "[unlearn] forget=$FORGET_SET retain=$RETAIN_SET output_root=$UNL_ROOT"
@@ -61,7 +67,7 @@ source "$HOME/ENV-3.10/bin/activate"
 cd "$PROJECT_DIR"
 mkdir -p "$UNL_ROOT" "$LOG_DIR" results/tofu/logs
 
-accelerate launch --multi_gpu unlearn.py \
+python unlearn.py \
   --datasetName TOFU \
   --model_name "$MODEL_NAME" \
   --finetune_model_DIR "$FT_ROOT" \
