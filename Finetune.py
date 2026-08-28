@@ -1,14 +1,9 @@
-import json
 import torch
-from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer, get_scheduler
-from torch.optim.lr_scheduler import ReduceLROnPlateau
-from transformers import TrainerCallback
+from transformers import AutoModelForCausalLM, TrainingArguments, Trainer, TrainerCallback
 from peft import LoraConfig, get_peft_model
 import os
 from accelerate import Accelerator
 import logging
-import argparse
 
 from prepdata import data_preprocess
 from argsetting import parser_finetune
@@ -20,7 +15,7 @@ class TrainerQA(data_preprocess):
         self.num_processes = num_processes
         
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')   
-        ## For Llama model, use bfloat16 to avoid having NaN in loss values.     
+        # Use bfloat16 to reduce NaN risk for Llama-style models.
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
             token=self.auth_token,
@@ -46,25 +41,12 @@ class TrainerQA(data_preprocess):
             self.model = get_peft_model(self.model, lora_config)
             print("[checkpoint] Finetune mode: LoRA")
              
-        # Load dataset
         self.entire_data = self.load_dataset(dataDIR = train_args.dataDIR)
-        # Create tokenized dataset
-        # The entire dataset is tokenized by calling this method.
-        # May consider implementing dynamic tokenization and padding to save memory
+        # Tokenize once before training.
         self.entire_data = self.tokenize_datasetQA(qa_data = self.entire_data)
         
 
     def BuildTrainer(self, train_args): 
-        # 预热步数设为第一个epoch的步数 
-        total_train_examples = len(self.entire_data) 
-        per_device_batch = train_args.bs_train 
-        gradient_accum = train_args.grad_acc_steps 
-        num_processes = self.num_processes 
-        
-        batch_size_per_step = per_device_batch * gradient_accum * num_processes 
-        steps_per_epoch = (total_train_examples + batch_size_per_step - 1) // batch_size_per_step 
-        warmup_steps = steps_per_epoch 
-        
         training_args = TrainingArguments( 
             optim="adamw_torch", 
             output_dir=train_args.modelDIR, 
@@ -79,9 +61,6 @@ class TrainerQA(data_preprocess):
             gradient_accumulation_steps=train_args.grad_acc_steps, 
             num_train_epochs=train_args.epochs, 
             weight_decay=train_args.weight_decay, 
-            # lr_scheduler_type="linear", # 改为线性调度器 
-            # warmup_steps=warmup_steps, # 添加预热步数参数 
-            # fp16=True, 
             bf16=True, 
             push_to_hub=False, 
             report_to="none", 
@@ -113,17 +92,15 @@ class SaveEveryNEpochsCallback(TrainerCallback):
 
     def on_epoch_end(self, args, state, control, **kwargs):
         current_epoch = int(state.epoch)
-        # save_epochs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 17, 20, 22, 25, 27, 30, 35, 40, 45, 50]
         if current_epoch % self.save_every == 0:
             save_path = os.path.join(self.output_dir, f"epoch-{int(state.epoch)}")
             kwargs["model"].save_pretrained(save_path)
             if args.process_index == 0:
-                print(f"📦 Saved model at {save_path}")
+                print(f"Saved model at {save_path}")
         return control    
 
 
 def main():
-    # Import training hyper-parameter settings
     parse = parser_finetune()
     train_args = parse.parse_args()
 
@@ -141,15 +118,13 @@ def main():
             logging.StreamHandler()
         ])
 
-    # Enable distributed training
-    accelerator = Accelerator(mixed_precision="bf16")  #####
+    accelerator = Accelerator(mixed_precision="bf16")
     logger.info(f"Using {accelerator.num_processes} GPUs") 
 
-    # Folder for saving loggers
     train_args.modelDIR = os.path.join(train_args.modelDIR, savefolder)
     os.makedirs(train_args.modelDIR, exist_ok=True)
 
-    from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
+    from saved_hf_key import HF_key
     os.environ["HF_TOKEN"] = HF_key
 
     if train_args.datasetName == 'FPI':

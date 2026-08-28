@@ -20,11 +20,7 @@ from accelerate import Accelerator
 
 
 class SaveEveryNEpochsCallback(TrainerCallback):
-    """
-    和 Finetune.py 风格一致：
-    - 每隔 N 个 epoch 额外保存一次到 epoch-k/
-    - 最终完整模型仍保存在根目录 modelDIR/savefolder/
-    """
+    """Save extra epoch checkpoints beside the final model."""
     def __init__(self, save_every=1, output_dir=None, tokenizer=None, save_total_limit=None, logger=None):
         self.save_every = save_every
         self.output_dir = output_dir
@@ -54,19 +50,19 @@ class SaveEveryNEpochsCallback(TrainerCallback):
 
         self.saved_epoch_dirs.append(save_path)
 
-        # 手动控制最多保留多少个 epoch checkpoint
+        # Keep only the latest epoch checkpoints when requested.
         if self.save_total_limit is not None and self.save_total_limit > 0:
             while len(self.saved_epoch_dirs) > self.save_total_limit:
                 oldest = self.saved_epoch_dirs.pop(0)
                 if os.path.exists(oldest):
                     shutil.rmtree(oldest, ignore_errors=True)
                     if self.logger is not None:
-                        self.logger.info(f"🗑️ Removed old checkpoint: {oldest}")
+                        self.logger.info(f"Removed old checkpoint: {oldest}")
 
         if self.logger is not None:
-            self.logger.info(f"📦 Saved model checkpoint at {save_path}")
+            self.logger.info(f"Saved model checkpoint at {save_path}")
         else:
-            print(f"📦 Saved model checkpoint at {save_path}")
+            print(f"Saved model checkpoint at {save_path}")
 
         return control
 
@@ -74,7 +70,6 @@ class SaveEveryNEpochsCallback(TrainerCallback):
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    # 和 Finetune.py / train.sh 风格对齐
     parser.add_argument("--model_name", "--model_name_or_path", dest="model_name", type=str, default="gpt2")
     parser.add_argument("--train_file", type=str, required=True)
     parser.add_argument("--validation_file", type=str, default=None)
@@ -87,7 +82,7 @@ def parse_args():
     parser.add_argument("--epochs", "--num_train_epochs", dest="epochs", type=int, default=5)
     parser.add_argument("--weight_decay", type=float, default=0.01)
 
-    # 为了和 Finetune.py 路径命名统一，虽然 pretrain 不用 LoRA，也保留这两个参数
+    # Keep these fields for path compatibility with Finetune.py.
     parser.add_argument("--LoRA_rank", type=int, default=0)
     parser.add_argument("--lora_dropout", type=float, default=0.0)
 
@@ -116,10 +111,7 @@ def parse_args():
 
 
 def group_texts(examples, block_size):
-    """
-    标准 causal LM packing:
-    把 token 序列拼起来再切成 block_size 大小
-    """
+    """Pack causal-LM tokens into fixed-size blocks."""
     concatenated_examples = {k: sum(examples[k], []) for k in examples.keys()}
     total_length = len(concatenated_examples["input_ids"])
     total_length = (total_length // block_size) * block_size
@@ -137,7 +129,7 @@ def setup_logger(logDIR):
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
 
-    # 避免重复 handler
+    # Avoid duplicate handlers when main is re-entered.
     if logger.handlers:
         logger.handlers.clear()
 
@@ -159,7 +151,6 @@ def setup_logger(logDIR):
 
 
 def build_savefolder(args):
-    # 和 Finetune.py 保持一致
     return (
         f"lr{args.lr}"
         f"_WD{args.weight_decay}"
@@ -173,9 +164,6 @@ def main():
     args = parse_args()
     set_seed(args.seed)
 
-    # ----------------------------
-    # savefolder 命名逻辑放在 Python 内部
-    # ----------------------------
     savefolder = build_savefolder(args)
 
     root_modelDIR = args.modelDIR
@@ -189,7 +177,6 @@ def main():
 
     logger = setup_logger(args.logDIR)
 
-    # 和 Finetune.py 一样，用 Accelerator 主要是拿 num_processes 和统一日志
     mixed_precision = "no"
     if args.bf16:
         mixed_precision = "bf16"
@@ -201,7 +188,6 @@ def main():
     logger.info(f"Model save dir: {args.modelDIR}")
     logger.info(f"Log save dir  : {args.logDIR}")
 
-    # 保存训练配置
     config_to_save = vars(args).copy()
     config_to_save["root_modelDIR"] = root_modelDIR
     config_to_save["root_logDIR"] = root_logDIR
@@ -210,16 +196,13 @@ def main():
     with open(os.path.join(args.modelDIR, "train_config.json"), "w") as f:
         json.dump(config_to_save, f, indent=2)
 
-    # ----------------------------
-    # tokenizer / model
-    # ----------------------------
     tokenizer = AutoTokenizer.from_pretrained(
         args.model_name,
         use_fast=True,
         local_files_only=args.local_files_only
     )
 
-    # GPT-2 没有 pad_token，补成 eos_token
+    # GPT-2 has no pad token by default.
     tokenizer.padding_side = "right"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -234,9 +217,6 @@ def main():
     if args.gradient_checkpointing:
         model.gradient_checkpointing_enable()
 
-    # ----------------------------
-    # dataset
-    # ----------------------------
     data_files = {"train": args.train_file}
     if args.validation_file is not None:
         data_files["validation"] = args.validation_file
@@ -304,7 +284,7 @@ def main():
         output_dir=args.modelDIR,
 
         eval_strategy="epoch",
-        save_strategy="no",   # 不用 HF 默认 checkpoint，统一走自定义 epoch-k
+        save_strategy="no",
         load_best_model_at_end=False,
 
         learning_rate=args.lr,
@@ -353,13 +333,10 @@ def main():
     logger.info("Start training...")
     trainer.train(resume_from_checkpoint=args.resume_from_checkpoint)
 
-    # ----------------------------
-    # 最终模型保存在根目录 args.modelDIR
-    # ----------------------------
     trainer.save_model(args.modelDIR)
     tokenizer.save_pretrained(args.modelDIR)
 
-    # 方便后续代码枚举 checkpoint
+    # Help downstream scripts find saved checkpoints.
     checkpoint_dirs = []
     for name in sorted(os.listdir(args.modelDIR)):
         path = os.path.join(args.modelDIR, name)
@@ -374,14 +351,12 @@ def main():
     with open(os.path.join(args.modelDIR, "checkpoint_index.json"), "w") as f:
         json.dump(checkpoint_index, f, indent=2)
 
-    # 保存 log_history
     with open(os.path.join(args.logDIR, "trainer_log_history.json"), "w") as f:
         json.dump(trainer.state.log_history, f, indent=2)
 
     for obj in trainer.state.log_history:
         logger.info(str(obj))
 
-    # 最后计算一个验证 perplexity
     eval_metrics = trainer.evaluate()
     if "eval_loss" in eval_metrics:
         try:
@@ -393,7 +368,7 @@ def main():
         json.dump(eval_metrics, f, indent=2)
 
     logger.info(f"Final eval metrics: {eval_metrics}")
-    logger.info(f"✅ Training finished. Final model saved to: {args.modelDIR}")
+    logger.info(f"Training finished. Final model saved to: {args.modelDIR}")
 
 
 if __name__ == "__main__":

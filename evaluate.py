@@ -1,12 +1,8 @@
 import json
 import torch
-from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig, BitsAndBytesConfig
-from peft import PeftModel, LoraConfig, get_peft_model
+from transformers import AutoModelForCausalLM, GenerationConfig, BitsAndBytesConfig
+from peft import PeftModel
 import os
-import logging
-import argparse
-# For computing the edit distance
 import re
 import Levenshtein
 
@@ -30,8 +26,7 @@ class EvalQA(data_preprocess):
         elif eval_args.quant == "int4":
             quant_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
 
-        if eval_args.modelType == 'base': # For Llama model, set torch_dtype=torch.bfloat16 to avoid having NaN
-            # self.model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
+        if eval_args.modelType == 'base':
             self.model = AutoModelForCausalLM.from_pretrained(
                 self.model_name,
                 torch_dtype=torch.bfloat16 if quant_config is None else None,
@@ -40,7 +35,6 @@ class EvalQA(data_preprocess):
             )
             print(f"[checkpoint]Load learned model from {self.model_name}")
         elif eval_args.modelType == 'learned':
-            # self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
             self.base_model = AutoModelForCausalLM.from_pretrained(
                 self.model_name,
                 torch_dtype=torch.bfloat16 if quant_config is None else None,
@@ -51,7 +45,6 @@ class EvalQA(data_preprocess):
             self.model = PeftModel.from_pretrained(self.base_model, self.modelDIR_learned, local_files_only=True)
             print(f"[checkpoint]Load learned model from {self.modelDIR_learned}")
         elif eval_args.modelType == 'unlearned':
-            # self.base_model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch.bfloat16, device_map="auto")
             self.base_model = AutoModelForCausalLM.from_pretrained(
                 self.model_name,
                 torch_dtype=torch.bfloat16 if quant_config is None else None,
@@ -95,16 +88,15 @@ class EvalQA(data_preprocess):
         self.model.eval()
 
         self.gen_cfg = GenerationConfig(
-                                        max_new_tokens=eval_args.max_new_tokens,  # Adjust based on need
-                                        temperature=eval_args.temperature,  # Sampling diversity
-                                        top_p=eval_args.top_p,  # Nucleus sampling
-                                        do_sample=False,  # Set False to disable sampling.
+                                        max_new_tokens=eval_args.max_new_tokens,
+                                        temperature=eval_args.temperature,
+                                        top_p=eval_args.top_p,
+                                        do_sample=False,
                                         stop_strings = self.tokenizer.eos_token,
                                         eos_token_id=self.tokenizer.eos_token_id,
                                         )
 
     def generate_answer(self, question):
-        # inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt").to(self.device)
         inputs = self.tokenizer(question, padding=True, truncation=True, max_length=150, return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         
@@ -152,7 +144,7 @@ class EvalQA(data_preprocess):
                 year_match = re.search(r"\b(19|20)\d{2}\b", s)
                 if year_match:
                     return int(year_match.group())
-                return 0  # 默认返回0
+                return 0
                 
             # Error formula: min(|predicted_year - true_year|, 20) / 20
             absolute_error = abs(extract_year(predicts) - extract_year(true_answer))
@@ -209,7 +201,6 @@ class EvalQA(data_preprocess):
             questions = [self.Question_startToken + item["question"]+self.Question_endToken for item in batch]
             true_answers = [item["answer"] for item in batch]
             model_outputs = self.generate_answer(questions)
-            print(model_outputs)
             
             for q, mo, ta, attr in zip(questions, model_outputs, true_answers, attributes):
                 err = self.metric_FPI(mo, ta, attr)
@@ -250,7 +241,7 @@ class EvalQA(data_preprocess):
         end_token = self.Question_endToken
         
         for prompt, output in zip(prompts, outputs):
-            # 步骤1：先移除【完整的Prompt标记对】（优先处理完整结构）
+            # Remove complete prompt spans first.
             complete_token_pattern = re.compile(
                 re.escape(start_token) + r".*?" + re.escape(end_token),
                 re.DOTALL
@@ -258,21 +249,16 @@ class EvalQA(data_preprocess):
             while complete_token_pattern.search(output):
                 output = complete_token_pattern.sub("", output)
 
-            # 步骤2：处理【孤立startToken及其后续内容】（核心新增逻辑）
-            # 逻辑：若存在未匹配的startToken（start数>end数），删除最后一个startToken及其后面的所有内容
-            # 统计当前output中startToken和endToken的数量（判断是否有未匹配的startToken）
+            # Drop content after an unmatched trailing start token.
             start_count = output.count(start_token)
             end_count = output.count(end_token)
             
-            if start_count > end_count:  # 存在未匹配的startToken
-                # 找到最后一个startToken的位置
+            if start_count > end_count:
                 last_start_idx = output.rfind(start_token)
-                if last_start_idx != -1:  # 确保找到startToken
-                    # 删除最后一个startToken及其后面的所有内容
-                    output = output[:last_start_idx].strip()  # 保留startToken之前的内容
+                if last_start_idx != -1:
+                    output = output[:last_start_idx].strip()
 
-            # 步骤3：清理【孤立的标记碎片】（剩余的单个start/endToken）
-            # 仅匹配孤立的startToken或endToken（无对应另一半）
+            # Remove orphan prompt markers.
             incomplete_token_pattern = re.compile(
                 r"(?<!{}){}|{}(?!{})".format(
                     re.escape(end_token), re.escape(start_token),
@@ -282,18 +268,16 @@ class EvalQA(data_preprocess):
             )
             output = incomplete_token_pattern.sub("", output)
 
-            # 步骤4：移除【与Prompt重复的片段】+【连续重复文本】
-            # 清理Prompt中的标记，用于匹配重复
+            # Remove prompt echoes and repeated text.
             clean_prompt = complete_token_pattern.sub("", prompt).strip()
             if clean_prompt and len(clean_prompt) > 5:
                 prompt_pattern = re.compile(r"\s*" + re.escape(clean_prompt) + r"\s*", re.IGNORECASE)
                 output = prompt_pattern.sub("", output)
             
-            # 移除连续重复文本
             repeat_pattern = re.compile(r"(\b.+\b)(\s*\1){2,}", re.DOTALL)
             output = repeat_pattern.sub(r"\1", output)
 
-            # 步骤5：标准化【空内容】
+            # Normalize empty outputs.
             cleaned_lines = [line.strip() for line in output.splitlines() if line.strip()]
             output = "\n".join(cleaned_lines)
             cleaned = output if output else EMPTY_MARK
@@ -398,20 +382,18 @@ class EvalQA(data_preprocess):
             fpi_attributes = ["year_of_birth", "address_postcode", "social_insurance_number", "blood_type"]
             if calc_full_llm:
                 full_res = None
-                # 遍历每个样本，根据属性类型选择评估方式
+                # Use deterministic FPI metrics when available.
                 for i in range(len(batch_data)):
                     item = items[i]
                     gen = gens[i]
                     gt = gt_answers[i]
                     attr = item["attribute"]
-                    # 如果是FPI相关属性，使用metric_FPI计算分数
                     if attr in fpi_attributes:
-                        # 调用metric_FPI计算误差（注意：这里将误差转换为分数，1-误差值）
                         error = self.metric_FPI(gen, gt, attr)
-                        full_scores[i] = round(10 - error * 9, 1)  # 转换为分数（0-10范围）
+                        full_scores[i] = round(10 - error * 9, 1)
                         full_evals[i] = f"FPI metric used for {attr}: error={error:.4f}"
                     else: 
-                        if full_res is None:  # 延迟计算LLM结果，避免不必要的调用
+                        if full_res is None:
                             full_res = self.llm_judge.judge_batch(qs, gt_answers, gens)
                         full_scores[i] = full_res[i]["score"]
                         full_evals[i] = full_res[i]["evaluation_text"]
@@ -440,23 +422,23 @@ class EvalQA(data_preprocess):
         
         print(f"\n[FINAL SUMMARY] Evaluation completed! Total samples processed: {len(results)}")
         
-        # 统计均分
+        # Average valid scores.
         def avg(scores):
-            """计算有效分数的平均值（排除None和-1.0）"""
+            """Average non-empty scores."""
             valid = [s for s in scores if s is not None and s != -1.0]
             return round(sum(valid)/len(valid), 2) if valid else None
         
         if not results:
             return results
 
-        # 收集指标
+        # Collect scalar scores.
         metrics = {"base_llm_score": [r["base_llm_score"] for r in results]}
         metrics.update({
             "model_llm_score": [r.get("model_llm_score") for r in results],
             "llm_relscr": [r.get("llm_relscr") for r in results],
             "llm_score": [r.get("llm_score") for r in results]
         })
-        # 收集metrics子指标
+        # Collect nested text metrics.
         sub_metrics = {}
         for r in results:
             if "metrics" in r and isinstance(r["metrics"], dict):
@@ -464,7 +446,7 @@ class EvalQA(data_preprocess):
                     if isinstance(v, (int, float)):
                         sub_metrics.setdefault(k, []).append(v)
 
-        # 生成统计块
+        # Add summary statistics.
         stats = {
             "type": "statistics",
             "model_type": eval_args.modelType,
@@ -685,16 +667,11 @@ class EvalQA(data_preprocess):
         print(f"Base model irrelevant answer comparison results saved to: {save_paths['base-1']}")
 
     def eval_gen_text_metrics(self, gen_outputs, ground_truths, questions):
-        """
-        同时接收生成文本、参考文本和问题列表，计算评估指标
-        输入：三个长度相同的列表
-        输出：与输入长度相同的指标列表，一一对应
-        """
+        """Compute text metrics for aligned generated, reference, and question lists."""
         import nltk
         from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
         from rouge_score import rouge_scorer
 
-        # 确保输入为列表
         if isinstance(gen_outputs, str):
             gen_outputs = [gen_outputs]
         if isinstance(ground_truths, str):
@@ -703,17 +680,17 @@ class EvalQA(data_preprocess):
             questions = [questions]
         
         if not (len(gen_outputs) == len(ground_truths) == len(questions)):
-            raise ValueError(f"生成文本({len(gen_outputs)})、参考文本({len(ground_truths)})、问题({len(questions)})长度必须一致")
+            raise ValueError(
+                f"Generated outputs ({len(gen_outputs)}), references ({len(ground_truths)}), "
+                f"and questions ({len(questions)}) must have the same length"
+            )
 
-        # 初始化评估工具
         smoothing = SmoothingFunction().method4
         scorer = rouge_scorer.RougeScorer(['rouge1', 'rougeL'], use_stemmer=True)
         
-        # 存储每个样本的指标（与输入列表长度一一对应）
         all_metrics = []
         
         for gen, gt, q in zip(gen_outputs, ground_truths, questions):
-            # 1. BLEU计算
             gen_tokens = nltk.word_tokenize(gen.lower())
             gt_tokens = [nltk.word_tokenize(gt.lower())]
             bleu_score = sentence_bleu(
@@ -723,7 +700,6 @@ class EvalQA(data_preprocess):
                 weights=(0.25, 0.25, 0.25, 0.25)
             )
             
-            # 2. ROUGE计算
             scores = scorer.score(gt, gen)
             rouge1 = {
                 'precision': round(scores['rouge1'].precision, 4),
@@ -736,11 +712,9 @@ class EvalQA(data_preprocess):
                 'fmeasure': round(scores['rougeL'].fmeasure, 4)
             }
             
-            # 3. 新增：问题相关性（生成文本与问题的ROUGE）
             q_scores = scorer.score(q, gen)
             q_relevance = round(q_scores['rougeL'].fmeasure, 4)
             
-            # 单个样本的所有指标
             sample_metrics = {
                 'bleu': round(bleu_score, 4),
                 'rouge1': rouge1,
@@ -751,20 +725,13 @@ class EvalQA(data_preprocess):
         
         return all_metrics
 
-##### The avaible datasets ####
-##### Please adjust by the real case ####
+# Dataset file names.
 FILE_NAMES = {"train": "training_dataset.json", 
                 "val": "validation_dataset.json",
             "train_t": "training_testset.json", 
               "val_t": "validation_testset.json",
              "common": "common_knowledge_questions.json",
 
-           "bt-train": "bt-training_dataset.json", 
-             "bt-val": "bt-validation_dataset.json",
-         "bt-train_t": "bt-training_testset.json", 
-           "bt-val_t": "bt-validation_testset.json",
-
-              "clean": "clean.json",
              "forget": "forget.json", 
              "retain": "retain.json",
              "remain": "remain.json",
@@ -773,25 +740,7 @@ FILE_NAMES = {"train": "training_dataset.json",
          "retain_sfa": "retain-same_fn_attr.json",
           "remain_sf": "remain-same_fn.json",
           "remain_sa": "remain-same_attr.json",
-         "remain_sfa": "remain-same_fn_attr.json",
-
-          "forget_df": "forget-diff_fn.json", 
-          "retain_df": "retain-diff_fn.json",
-       "retain_df_sf": "retain-diff_fn-same_fn.json",
-       "retain_df_sa": "retain-diff_fn-same_attr.json",
-      "retain_df_sfa": "retain-diff_fn-same_fn_attr.json",
-       "remain_df_sf": "remain-diff_fn-same_fn.json",
-       "remain_df_sa": "remain-diff_fn-same_attr.json",
-      "remain_df_sfa": "remain-diff_fn-same_fn_attr.json",
-      
-          "forget_ri": "forget-rand_inst.json", 
-          "retain_ri": "retain-rand_inst.json",
-       "retain_ri_sf": "retain-rand_inst-same_fn.json",
-       "retain_ri_sa": "retain-rand_inst-same_attr.json",
-      "retain_ri_sfa": "retain-rand_inst-same_fn_attr.json",
-       "remain_ri_sf": "remain-rand_inst-same_fn.json",
-       "remain_ri_sa": "remain-rand_inst-same_attr.json",
-      "remain_ri_sfa": "remain-rand_inst-same_fn_attr.json"}
+         "remain_sfa": "remain-same_fn_attr.json"}
 
 
 def build_unlearn_child_folder(eval_args):
@@ -802,16 +751,13 @@ def build_unlearn_child_folder(eval_args):
     )
     if eval_args.beta_fgt != 0.1:
         child_folder += f"_beta{eval_args.beta_fgt}"
-    if eval_args.unlearn_method in ("langevin", "dp_random_label"):
-        child_folder += f"_noise{eval_args.noise_multiplier_fgt}_clip{eval_args.max_grad_norm_dp_fgt}"
-    elif eval_args.unlearn_method == "noisy_grad_diff":
+    if eval_args.unlearn_method == "noisy_grad_diff":
         child_folder += f"_nstd{eval_args.noisy_noise_std_fgt}_nclip{eval_args.noisy_clip_norm_fgt}"
     return child_folder
 
 def extract_dir(eval_args):
     file_path = "./data_generator/data"
-    if eval_args.datasetType in ["train", "val", "train_t", "val_t", "common", 
-                                 "bt-train", "bt-val", "bt-train_t", "bt-val_t"]:
+    if eval_args.datasetType in ["train", "val", "train_t", "val_t", "common"]:
         set_path = ""
         filename = FILE_NAMES[eval_args.datasetType]
     else:
@@ -822,15 +768,14 @@ def extract_dir(eval_args):
     if eval_args.datasetType not in FILE_NAMES:
         raise ValueError(f"Unknown datasetType: {eval_args.datasetType}")
 
-    # Folders where finetuned model is saved. You can replace this by your own directory.    
-    parent_folder = eval_args.modelDIR # "./fine_tuned_deepseek_7b"
+    parent_folder = eval_args.modelDIR
     savefolder = f"lr{eval_args.lr}_WD{eval_args.weight_decay}_loraRank{eval_args.LoRA_rank}_loraDrop{eval_args.lora_dropout}_GradStsp{eval_args.grad_acc_steps}/epoch-{eval_args.epochs}"
     learned_model_DIR = os.path.join(parent_folder, savefolder)
     modelDIR = {"learned": learned_model_DIR, "unlearned": None}
     print(f"[Debug] learned model dir: {learned_model_DIR}")
 
     if eval_args.modelType in ['unlearned', 'pt-unlearned']:
-        parent_folder = eval_args.modelDIR_fgt # "./unlearn_deepseek_7b"
+        parent_folder = eval_args.modelDIR_fgt
         child_folder = build_unlearn_child_folder(eval_args)
         savefolder = f"{eval_args.unlearn_method}/epoch-{eval_args.eps_fgt}"
         unlearned_model_DIR = os.path.join(parent_folder, child_folder, savefolder)
@@ -845,22 +790,18 @@ def main():
     eval_args = parse.parse_args()
     modelDIR, dataDIR = extract_dir(eval_args)
 
-    if eval_args.modelType in ['learned', 'pt']:
-        eval_args.logDIR = eval_args.logDIR # "fine_tuned_deepseek_7b_log"
-    elif eval_args.modelType in ['unlearned', 'pt-unlearned']:
-        eval_args.logDIR = eval_args.logDIR_fgt # "unlearn_deepseek_7b_log"
+    if eval_args.modelType in ['unlearned', 'pt-unlearned']:
+        eval_args.logDIR = eval_args.logDIR_fgt
     
     if eval_args.datasetType == 'common':
         eval_args.logDIR = "base_deepseek_7b_log"
 
-    # create folder to save evaluation result
     if not os.path.exists(eval_args.logDIR):
         os.makedirs(eval_args.logDIR)
     
-    from saved_hf_key import HF_key  # Replace 'HF_key' by your own hugging face key.
+    from saved_hf_key import HF_key
     os.environ["HF_TOKEN"] = HF_key
 
-    ####
     evaluator = EvalQA( 
         modelDIR = modelDIR,
         eval_batch = 5,  

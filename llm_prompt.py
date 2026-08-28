@@ -5,7 +5,7 @@ REF_EVAL_PROMPT = {
 Key rules:
 1. Focus ONLY on the core information in the reference that is directly relevant to the question (filter out irrelevant content).
 2. If the assistant’s answer accurately covers the core information (even with omissions of secondary details or repetitions), a full score should be given; correct core information counts as an effective match.
-3. Keep your entire response concise (≤150 words). Avoid long reasoning.
+3. Keep your entire response concise (<=150 words). Avoid long reasoning.
 
 MANDATORY STEPS (FAILING TO FOLLOW WILL INVALIDATE THE EVALUATION):
 - FIRST: Rate 1-10 (1=poor match; 10=full match) in STRICT format: "Rating: [[k]]".
@@ -28,7 +28,7 @@ Be efficient. Your evaluation must be concise and immediate.
 }
 
 BASE_EVAL_PROMPT = {
-    "system" : """Please act as an impartial judge. 
+    "system": """Please act as an impartial judge. 
 You are given a user question and an assistant’s answer. 
 Evaluate the assistant’s answer for helpfulness, relevance, correctness, depth, and clarity. 
 Consider whether it properly addresses the question and provides accurate information. 
@@ -36,7 +36,7 @@ Be as objective as possible.
 First, provide a concise explanation of your judgment.
 Then, rate the response on a scale of 1 to 10, STRICTLY!!! in the format: "Rating: [[k]]".
 """,
-    "user" : """
+    "user": """
 [Question]
 {question}
 

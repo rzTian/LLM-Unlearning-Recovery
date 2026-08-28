@@ -1,10 +1,8 @@
-import json
 import torch
 from torch import nn
 import torch.nn.functional as F
 import os
 from transformers import LogitsProcessor
-import re
 
 
 def compute_kl_divergence(model, target_model, inputs):
@@ -34,7 +32,7 @@ def compute_batch_nll(model, inputs):
     logits = outputs.logits  # [batch_size, seq_len, vocab_size]
     labels = inputs["labels"]  # [batch_size, seq_len]
 
-    # 避免不必要的张量复制，直接切片
+    # Slice before computing token-level loss.
     shifted_labels = labels[..., 1:].contiguous()  # [batch_size, seq_len-1]
     shifted_logits = logits[..., :-1, :].contiguous()  # [batch_size, seq_len-1, vocab_size]
 
@@ -89,13 +87,12 @@ class CustomizedLogitsProcessor(LogitsProcessor):
             "blood_type": 2
         }
 
-        self.history = []  # 格式：[pos0_token_id, pos1_token_id, ...]
+        self.history = []  # [pos0_token_id, pos1_token_id, ...]
         self.dependency_rules = {
-            # 规则格式：{属性: {当前pos: {依赖的pos: {历史token值: 允许的当前token集合}}}}
+            # {attribute: {position: {dependency_position: {history_token: allowed_tokens}}}}
             "year_of_birth": {
-                2: {  # 当前步骤是 pos2 时
-                    1: {  # 依赖 pos1 的值
-                        # pos0_token_id: 允许的 pos1_token_id 集合
+                2: {
+                    1: {
                         self.tokenizer.encode("1", add_special_tokens=False)[0]: self.tokenizer.encode("9", add_special_tokens=False),
                         self.tokenizer.encode("2", add_special_tokens=False)[0]: self.tokenizer.encode("0", add_special_tokens=False)
                     }
@@ -117,39 +114,10 @@ class CustomizedLogitsProcessor(LogitsProcessor):
                     }
                 }
             }
-            # 其他属性的依赖规则可在此添加
         }
 
         self.token_sets = self._build_attr_token_sets()
         self.selected_token_ids = []
-    
-    def _build_token_sets(self): # unused
-        sets = {}
-        encode = lambda s: self.tokenizer(s, add_special_tokens=False)["input_ids"]
-
-        sets["digits"] = list(set(sum([encode(c) for c in "0123456789"], [])))
-        sets["upper"] = list(set(sum([encode(c) for c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"], [])))
-        sets["1or2"] = list(set(sum([encode(c) for c in ["1", "2"]], [])))
-        sets["9or0"] = list(set(sum([encode(c) for c in ["9", "0"]], [])))
-        sets["ABO"] = list(set(sum([encode(bt) for bt in ["A", "B", "O", "AB"]], [])))
-        sets["blood_type"] = list(set(sum([encode(bt) for bt in [
-            "A+.", "A-.", "B+.", "B-.", "O+.", "O-.", "AB+.", "AB-."
-        ]], [])))
-        
-        special_token_ids = [1, 29871, 29889]  # ["<s>", "_", "."]
-        for key in sets:
-            sets[key] = [tid for tid in sets[key] if tid not in special_token_ids]
-
-        os.makedirs("tokens_notes", exist_ok=True)
-        with open("tokens_notes/all_token_sets.txt", "w") as f:
-            for name, ids in sets.items():
-                f.write(f"=== {name} ===\n")
-                for token_id in ids:
-                    token_str = self.tokenizer.decode([token_id])
-                    f.write(f"{repr(token_str)} : {token_id}\n")
-                f.write("\n")
-
-        return sets
     
     def _build_attr_token_sets(self):
         """
@@ -174,7 +142,7 @@ class CustomizedLogitsProcessor(LogitsProcessor):
         with open(note_path, "w") as fout:
             for filepath in glob.glob(f"{attr_dir}/*.jsonl"):
                 attr_name = os.path.splitext(os.path.basename(filepath))[0]
-                max_len = self.attr_lens.get(attr_name, 20) # Default to 20 if not found
+                max_len = self.attr_lens.get(attr_name, 20)
 
                 # Initialize token sets for each position
                 for i in range(max_len):
@@ -200,54 +168,9 @@ class CustomizedLogitsProcessor(LogitsProcessor):
 
         return sets
        
-    def _get_token_ids(self):
-
-        if self.tokenType == "digits":
-            
-            tokenized_string = self.tokenizer("0123456789.")
-            selected_tokens = tokenized_string['input_ids'] 
-            
-            # remove special token ids
-            # special_token_ids = [29871, 29889]  # ["_", "."]
-
-            special_token_ids = [1, 29871, 29889]  # ["<s>", "_", "."]            
-            selected_tokens = [t for t in selected_tokens if t not in special_token_ids]          
-
-        elif self.tokenType == "blood_type":
-
-            unique_token_ids = set()  # Use a set to avoid duplicates        
-            strings = ["A+.", "A-.", "B+.", "B-.", "AB+.", "AB-.", "O+.", "O-."]
-
-            for string in strings:
-                tokens = self.tokenizer.tokenize(string)
-                token_ids = self.tokenizer.convert_tokens_to_ids(tokens)
-                unique_token_ids.update(token_ids)  # Add new token IDs to the set
-            
-            selected_tokens = list(unique_token_ids)
-        
-        else:
-            raise ValueError
-        
-        '''[Self note] 
-        Saving the tokens is for sanity check purpose, may be removed later ...
-        '''
-        folder_name = f"tokens_notes/{self.tokenType}"
-        if not os.path.exists(folder_name):
-            os.makedirs(folder_name)
-        with open(os.path.join(folder_name, "llama_tokens.json"), "w") as f:
-            json.dump(selected_tokens, f, indent=4)
-
-        token_map = {self.tokenizer.decode([token_id]): token_id for token_id in selected_tokens}
-        with open(os.path.join(folder_name, "llama_tokens.txt"), "w") as f:
-            for token, token_id in token_map.items():
-                f.write(f"{repr(token)} : {token_id}\n")
-        
-        return selected_tokens
-    
     def __call__(self, input_ids, scores):
         batch_size, vocab_size = scores.shape
         if scores.dtype in (torch.int8, torch.uint8):
-            # 用最小值-1，避免和正常值混淆；但要 clamp 避免越界
             info = torch.iinfo(scores.dtype)
             min_val = info.min
             mask = torch.full(scores.shape, fill_value=min_val, dtype=scores.dtype, device=scores.device)
@@ -271,12 +194,11 @@ class CustomizedLogitsProcessor(LogitsProcessor):
                             base_selected = allowed_tokens if allowed_tokens else base_selected
             
             selected = base_selected
-            self.selected_token_ids = selected
 
             # control the logit value
             mask[i, selected] = -scores[i, selected] if self.flip_logit else scores[i, selected]
             
-            if batch_size == 1:  # ✅ safe: only store for batch=1 use case
+            if batch_size == 1:
                 self.selected_token_ids = selected
 
         return mask

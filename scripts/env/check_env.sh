@@ -10,26 +10,21 @@
 
 echo "=== Environment Check Start ==="
 
-# 1. Clean module environment completely
 echo "Loading modules..."
 module --force purge
 unset MODULEPATH
 source $HOME/.bashrc
 
-# 2. Load modules in correct order
 module load gcc arrow/18.1.0 cuda
 module load python/3.10
 module load scipy-stack
 
-# 3. Check Python version
 echo -e "\nPython version:"
 python --version
 
-# 4. Activate virtual environment
 echo -e "\nActivating virtual environment..."
 source $HOME/ENV-3.10/bin/activate
 
-# 5. Check required packages
 echo -e "\nChecking required packages:"
 python -c "
 import sys
@@ -63,7 +58,6 @@ for name, module in packages.items():
         print(f'✗ {name} missing')
 "
 
-# 6. Check GPU availability
 echo -e "\nChecking GPU:"
 python -c "
 import torch

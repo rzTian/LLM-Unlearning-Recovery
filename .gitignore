@@ -17,7 +17,7 @@ recovery_*/
 pretrain_*/
 
 # datasets
-datasets/
+datasets*/
 
 #key
 saved_hf_key.py

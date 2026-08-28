@@ -1,6 +1,9 @@
 import argparse
 
 
+UNLEARN_METHODS = ["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo", "noisy_grad_diff"]
+
+
 def parser_finetune():
     parser = argparse.ArgumentParser()
     parser.add_argument('--datasetName', default='FPI', type=str)
@@ -13,12 +16,12 @@ def parser_finetune():
     parser.add_argument('--weight_decay', default=0.0, type=float)
     parser.add_argument('--LoRA_rank', default=32, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
-    # Control effective batch size
-    parser.add_argument('--bs_train', default=8, type=int) # per device
-    parser.add_argument('--bs_eval', default=8, type=int) # per device
+    # Effective batch size = per-device batch size * grad_acc_steps * processes.
+    parser.add_argument('--bs_train', default=8, type=int)
+    parser.add_argument('--bs_eval', default=8, type=int)
     parser.add_argument('--grad_acc_steps', default=40, type=int)
 
-    parser.add_argument("--without_lora", action="store_true", help="whether to use LoRA finetuning")
+    parser.add_argument("--without_lora", action="store_true", help="Run full-parameter finetuning instead of LoRA")
     
     return parser
 
@@ -33,8 +36,8 @@ def parser_eval():
     parser.add_argument('--model_name', default="deepseek-ai/deepseek-llm-7b-chat", type=str)
     parser.add_argument('--logDIR', default="fine_tuned_deepseek_7b_log", type=str)
     parser.add_argument('--modelDIR', default="fine_tuned_deepseek_7b", type=str)
-    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo", "langevin", "dp_random_label", "noisy_grad_diff"])
-    parser.add_argument('--quant', type=str, default="none", choices=["none", "int8", "int4"], help="Quant: none (Default)、int8、int4")
+    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=UNLEARN_METHODS)
+    parser.add_argument('--quant', type=str, default="none", choices=["none", "int8", "int4"], help="Quantization mode")
     # Finetuned model configs
     parser.add_argument('--lr', default=0.0005, type=float)
     parser.add_argument('--epochs', default=30, type=int)
@@ -52,8 +55,6 @@ def parser_eval():
     parser.add_argument('--lora_dropout_fgt', default=0.0, type=float)
     parser.add_argument('--grad_acc_steps_fgt', default=80, type=int)
     parser.add_argument('--beta_fgt', default=0.1, type=float)
-    parser.add_argument("--noise_multiplier_fgt", default=1.0, type=float)
-    parser.add_argument("--max_grad_norm_dp_fgt", default=1.0, type=float)
     parser.add_argument("--noisy_noise_std_fgt", default=0.0, type=float)
     parser.add_argument("--noisy_clip_norm_fgt", default=1.0, type=float)
     parser.add_argument('--logDIR_fgt', default="unlearn_deepseek_7b_log", type=str)
@@ -69,23 +70,20 @@ def parser_unlearn():
     parser = argparse.ArgumentParser() 
     parser.add_argument("--source_model_type", type=str, default="learned", choices=["learned", "pt"])
     # unlearning methods
-    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=["grad_ascent", "grad_diff", "KL", "po", "dpo", "npo", "langevin", "dp_random_label", "noisy_grad_diff"])
+    parser.add_argument('--unlearn_method', default="grad_diff" , type=str, choices=UNLEARN_METHODS)
     # Training hyper-parameters
     parser.add_argument('--lr', default=0.001, type=float)
     parser.add_argument('--weight_decay', default=0.01, type=float)
-    parser.add_argument('--epochs', default=15, type=int)  ## Note that the epochs is w.r.t the size of the retain set.
+    parser.add_argument('--epochs', default=15, type=int)  # Epochs are based on the retain set size.
     parser.add_argument('--reg_weights', default=1.0, type=float)
     parser.add_argument('--beta', default=0.1, type=float)
-    parser.add_argument("--noise_multiplier", type=float, default=1.0)
-    parser.add_argument("--max_grad_norm_dp", type=float, default=1.0)
     parser.add_argument("--noisy_noise_std", type=float, default=0.0)
     parser.add_argument("--noisy_clip_norm", type=float, default=1.0)
-    parser.add_argument("--dp_random_label_use_retain", action="store_true")
     parser.add_argument('--LoRA_rank', default=256, type=int)
     parser.add_argument('--lora_dropout', default=0.0, type=float)
-    # Control effective batch size
-    parser.add_argument('--bs_train', default=1, type=int) # per device
-    parser.add_argument('--bs_eval', default=1, type=int) # per device
+    # Effective batch size = per-device batch size * grad_acc_steps * processes.
+    parser.add_argument('--bs_train', default=1, type=int)
+    parser.add_argument('--bs_eval', default=1, type=int)
     parser.add_argument('--grad_acc_steps', default=80, type=int)
     # File name of the dataset
     parser.add_argument('--num_fgt', default=2025, type=int)

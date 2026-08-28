@@ -1,53 +1,46 @@
 #!/bin/bash
 #SBATCH --account=rrg-yymao
 #SBATCH --partition=gpubase_bygpu_b1
-#SBATCH --nodes=1                # Request 1 node
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-task=4
-#SBATCH --cpus-per-task=6   # maximum CPU cores per GPU request: 6 on Cedar, 16 on Graham.
-#SBATCH --mem=498G        # memory per node
-#SBATCH --time=00-02:59  # time (DD-HH:MM)
-#SBATCH --output=./results_extra/finetune-128-%j-%a-%N.out  # %N for node name, %j for jobID, %a for array ID
-#SBATCH --mail-user=smsmun.husc@outlook.com
-#SBATCH --mail-type=BEGIN
-#SBATCH --mail-type=END
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-type=REQUEUE
-#SBATCH --mail-type=ALL
-#SBATCH --array=0
+#SBATCH --cpus-per-task=6
+#SBATCH --mem=498G
+#SBATCH --time=00-02:59
+#SBATCH --output=./results_extra/train-%j-%N.out
+#SBATCH --job-name=train
 
-r_list=(256)
-wd_list=(0.01 0.0)
-gs_list=(40 80 20 160 10)
-epoch_list=(50)
-lr_list=(0.0005)
-data_list=("training_dataset.json")
+set -euo pipefail
 
-IDX=$SLURM_ARRAY_TASK_ID
-r_idx=$(((IDX / 10) % 1))
-wd_idx=$(((IDX / 5) % 2))
-gs_idx=$(((IDX / 1) % 5))
-epoch_idx=$(((IDX / 1) % 1))
-lr_idx=$((IDX % 1))
-data_idx=$(((IDX / 1) % 1))
+MODEL_NAME="deepseek-ai/deepseek-llm-7b-chat"
+DATA_DIR="training_dataset.json"
+LOG_DIR="fine_tuned_deepseek_7b_log"
+MODEL_DIR="fine_tuned_deepseek_7b"
+LR="0.0005"
+EPOCHS="30"
+WEIGHT_DECAY="0.01"
+LORA_RANK="256"
+LORA_DROPOUT="0.0"
+GRAD_ACC_STEPS="40"
 
-R=${r_list[$r_idx]}
-WD=${wd_list[$wd_idx]}
-GS=${gs_list[$gs_idx]}
-EPOCHS=${epoch_list[$epoch_idx]}
-LR=${lr_list[$lr_idx]}
-
-echo "🔧 Finetune 当前配置: LoRA rank=$R | wd=$WD | epochs=$EPOCHS | lr=$LR | gs=$GS"
+echo "Train: model=${MODEL_NAME}, data=${DATA_DIR}"
+echo "Config: lr=${LR}, epochs=${EPOCHS}, wd=${WEIGHT_DECAY}, rank=${LORA_RANK}, grad_acc=${GRAD_ACC_STEPS}"
 
 module load gcc arrow/18.1.0 cuda
 module load python/3.10
 module load scipy-stack
-source $HOME/ENV-3.10/bin/activate
-cd $HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery
+source "$HOME/ENV-3.10/bin/activate"
+cd "$HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery"
+mkdir -p results_extra
 
-# deepseek-ai/deepseek-llm-7b-chat
-# Qwen/Qwen3-8B
-
-accelerate launch --multi_gpu Finetune.py --dataDIR bt-training_dataset.json \
- --model_name deepseek-ai/deepseek-llm-7b-chat --logDIR fine_tuned_deepseek_7b_bt_log --modelDIR fine_tuned_deepseek_7b_bt \
- --lr $LR  --epochs $EPOCHS --weight_decay $WD  --LoRA_rank $R  --lora_dropout 0.0  --grad_acc_steps $GS
+accelerate launch --multi_gpu Finetune.py \
+  --model_name "$MODEL_NAME" \
+  --dataDIR "$DATA_DIR" \
+  --logDIR "$LOG_DIR" \
+  --modelDIR "$MODEL_DIR" \
+  --lr "$LR" \
+  --epochs "$EPOCHS" \
+  --weight_decay "$WEIGHT_DECAY" \
+  --LoRA_rank "$LORA_RANK" \
+  --lora_dropout "$LORA_DROPOUT" \
+  --grad_acc_steps "$GRAD_ACC_STEPS"

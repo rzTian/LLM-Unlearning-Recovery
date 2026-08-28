@@ -80,6 +80,6 @@ for attr, values in attr_values.items():
         for val in values:
             f.write(val + "\n")
 
-print("✅ profiles.json and attr/*.json files generated successfully!")
+print("profiles.json and attr/*.json files generated successfully!")
 
 

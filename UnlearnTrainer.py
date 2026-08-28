@@ -1,8 +1,7 @@
 from transformers import Trainer
 import torch
 from torch.utils.data import Dataset
-from transformers.data.data_collator import DataCollator, DataCollatorWithPadding, default_data_collator
-from torch.utils.data.dataloader import DataLoader
+from transformers.data.data_collator import DataCollatorWithPadding, default_data_collator
 import torch.distributed as dist
 import random
 import copy
@@ -34,7 +33,7 @@ class CustomTripleDataset(Dataset):
     def __len__(self):
         return self.min_len
     
-    def Extract_values(self, idx, tokenized_data):
+    def extract_values(self, idx, tokenized_data):
         """
         Extract and format data at given index
         """
@@ -51,19 +50,19 @@ class CustomTripleDataset(Dataset):
         result = {}
 
         idx_fg = idx % self.lengths["forget_sample"]
-        result["forget_sample"] = self.Extract_values(
+        result["forget_sample"] = self.extract_values(
             idx_fg, self.datasets["forget_sample"]
         )
             
         if "retain_sample" in self.datasets:
             idx_rt = random.choice(range(self.lengths["retain_sample"]))
-            result["retain_sample"] = self.Extract_values(
+            result["retain_sample"] = self.extract_values(
                 idx_rt, self.datasets["retain_sample"]
             )
             
         if "idk_sample" in self.datasets:
             idx_idk = idx % self.lengths["idk_sample"]
-            result["idk_sample"] = self.Extract_values(
+            result["idk_sample"] = self.extract_values(
                 idx_idk, self.datasets["idk_sample"]
             )
             
@@ -84,17 +83,17 @@ def customize_collate_fn(batch):
     retain_samples = [sample["retain_sample"] for sample in batch] if "retain_sample" in batch[0] else None
     idk_samples = [sample["idk_sample"] for sample in batch] if "idk_sample" in batch[0] else None
 
-    def stackTensors(samples):
+    def stack_tensors(samples):
         input_ids = torch.tensor([s["input_ids"] for s in samples])
         attention_mask = torch.tensor([s["attention_mask"] for s in samples])
         labels = torch.tensor([s["labels"] for s in samples])
         return {"input_ids": input_ids, "attention_mask": attention_mask, "labels": labels}
     
-    collated = {"forget_sample": stackTensors(forget_samples)}
+    collated = {"forget_sample": stack_tensors(forget_samples)}
     if retain_samples is not None:
-        collated["retain_sample"] = stackTensors(retain_samples)
+        collated["retain_sample"] = stack_tensors(retain_samples)
     if idk_samples is not None:
-        collated["idk_sample"] = stackTensors(idk_samples)
+        collated["idk_sample"] = stack_tensors(idk_samples)
 
     return collated
 
@@ -128,23 +127,21 @@ class UnlearningTrainer(Trainer):
         return ref_model
 
     def compute_retain_loss(self, model, retain_inputs):
-        retain_outputs = model(**retain_inputs)
-        retain_loss = 0.0
         if self.unlearn_method in ["grad_diff", "noisy_grad_diff", "po", "dpo", "npo"]:
-            retain_loss += retain_outputs.loss
+            retain_outputs = model(**retain_inputs)
+            return retain_outputs.loss
         elif self.unlearn_method == "KL":
-            kl_loss, retain_outputs = compute_kl_divergence(
+            kl_loss, _ = compute_kl_divergence(
                 model, self.oracle_model, retain_inputs
             )
-            retain_loss += kl_loss
+            return kl_loss
         else:
             raise NotImplementedError(
                 f"{self.unlearn_method} not implemented for retain set"
             )
-        return retain_loss
         
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
-        
+        outputs = None
         forget_inputs = inputs["forget_sample"]
         if self.ExistFlag:
             retain_inputs = inputs["retain_sample"]
@@ -166,17 +163,6 @@ class UnlearningTrainer(Trainer):
 
             retain_loss = self.compute_retain_loss(model=model, retain_inputs=retain_inputs)
             loss = forget_loss + self.reg_weights * retain_loss
-            if self.unlearn_method == "noisy_grad_diff":
-                print("[noisy-grad-diff] Using GradDiff loss with global gradient clipping and Gaussian noise")
-                print("[noisy-grad-diff] This is not Wei-style Langevin and not per-sample DP-SGD")
-                print(f"[noisy-grad-diff] reg_weight = {self.reg_weights}")
-                print(f"[noisy-grad-diff] noisy_noise_std = {self.noisy_noise_std}")
-                print(f"[noisy-grad-diff] noisy_clip_norm = {self.noisy_clip_norm}")
-                print(f"[noisy-grad-diff] forget batch keys = {list(forget_inputs.keys())}")
-                print(f"[noisy-grad-diff] retain batch keys = {list(retain_inputs.keys())}")
-                print(f"[noisy-grad-diff] forget_loss = {forget_loss.item()}")
-                print(f"[noisy-grad-diff] retain_loss = {retain_loss.item()}")
-                print(f"[noisy-grad-diff] combined_loss = {loss.item()}")
             del forget_loss, retain_loss
             torch.cuda.empty_cache()
         
@@ -204,7 +190,7 @@ class UnlearningTrainer(Trainer):
 
         elif self.unlearn_method == "dpo":
             # Direct Preference Optimization
-            forget_loss, forget_outputs = compute_dpo_loss(
+            forget_loss, outputs = compute_dpo_loss(
                 model=model,
                 ref_model=self.oracle_model,
                 win_inputs=idk_inputs,
@@ -219,7 +205,7 @@ class UnlearningTrainer(Trainer):
 
         elif self.unlearn_method == "npo":
             # Negative Preference Optimization
-            forget_loss, forget_outputs = compute_dpo_loss(
+            forget_loss, outputs = compute_dpo_loss(
                 model=model,
                 ref_model=self.oracle_model,
                 win_inputs=None,
@@ -265,7 +251,6 @@ class UnlearningTrainer(Trainer):
 
     def prediction_step(self, model, inputs, prediction_loss_only, ignore_keys=None):
 
-        # if self.ExistFlag:
         inputs = inputs["forget_sample"]
 
         with torch.no_grad():
@@ -278,4 +263,3 @@ class UnlearningTrainer(Trainer):
                 logits = outputs.logits
                 loss = outputs.loss
                 return (-loss, logits, inputs["labels"])
-        torch.cuda.empty_cache()

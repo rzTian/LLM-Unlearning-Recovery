@@ -200,14 +200,14 @@ def split_dataset(
         return forget_set, retain_sets, remain_sets
 
 def generate_test_set(original_set):
-    """为集合生成伴生测试集，对每个(name, attribute)组合随机保留一个item"""
-    # 按(name, attribute)分组
+    """Build a companion test set with one item per (name, attribute)."""
+    # Group by (name, attribute).
     groups = defaultdict(list)
     for item in original_set:
         key = (item["name"], item["attribute"])
         groups[key].append(item)
     
-    # 每组随机选择一个item
+    # Sample one item from each group.
     test_set = []
     for group in groups.values():
         test_set.append(random.choice(group))
@@ -215,22 +215,19 @@ def generate_test_set(original_set):
     return test_set
 
 def save_sets_with_test(folder_path, base_name, data_set, suffix=""):
-    """保存集合到JSON文件，并生成对应的伴生测试集"""
-    # 保存主集合
+    """Save a split and its companion test set."""
     os.makedirs(folder_path, exist_ok=True)
     main_path = os.path.join(folder_path, f"{base_name}{suffix}.json")
     with open(main_path, "w") as f:
         json.dump(data_set, f, indent=4)
-    print(f"✅ Saved {base_name} set to {main_path}")
+    print(f"Saved {base_name} set to {main_path}")
     
-    # 生成并保存测试集
-    # folder_path = folder_path + "-test"
     os.makedirs(folder_path, exist_ok=True)
     test_set = generate_test_set(data_set)
     test_path = os.path.join(folder_path, f"test-{base_name}{suffix}.json")
     with open(test_path, "w") as f:
         json.dump(test_set, f, indent=4)
-    print(f"✅ Saved {base_name} test set to {test_path}")
+    print(f"Saved {base_name} test set to {test_path}")
 
 def main():
     import argparse
@@ -304,11 +301,11 @@ def main():
     set_path = f"{set_path}-{suffix}" if suffix else set_path
     folder_path = os.path.join(folder_path, set_path)
 
-    # 保存遗忘集及其测试集
+    # Save forget split.
     forget_suffix = f"{forget_mode_map[forget_mode]}"
     save_sets_with_test(folder_path, "forget", forget_set, forget_suffix)
 
-    # 保存保留集及其测试集
+    # Save retain splits.
     if isinstance(retain_sets, dict):
         for mode, rset in retain_sets.items():
             retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[mode]}"
@@ -317,7 +314,7 @@ def main():
         retain_suffix = f"{forget_mode_map[forget_mode]}{retain_mode_map[retain_mode]}"
         save_sets_with_test(folder_path, "retain", retain_sets, retain_suffix)
 
-    # 保存剩余集及其测试集
+    # Save remain splits.
     if isinstance(remain_sets, dict):
         for mode, rset in remain_sets.items():
             if rset == []:

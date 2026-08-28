@@ -2,7 +2,6 @@ import json
 import torch
 from datasets import Dataset
 from transformers import AutoTokenizer
-from transformers import DataCollatorForSeq2Seq
 import os
 
 
@@ -16,7 +15,7 @@ class data_preprocess:
             local_files_only=True)        
         # Llama model does not provide pad_token. Using eos_token as the pad token instead.
         self.tokenizer.pad_token = self.tokenizer.eos_token 
-         # Special chat format for Llama model
+        # Special chat format for Llama model
         self.Question_startToken = "[INST] " if special_format else ""
         self.Question_endToken = " [/INST]" if special_format else ""
 
@@ -60,7 +59,6 @@ class data_preprocess:
 
             # Mask question tokens (-100) and keep answer tokens
             label_seq = [-100] * Q_end + ids[Q_end:]
-
 
             # Ensure **ONLY** padding tokens are ignored, NOT <EOS> tokens
             label_seq = [l if attn == 1 else -100 for l, attn in zip(label_seq, attn_mask)]
