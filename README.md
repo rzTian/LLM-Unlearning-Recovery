@@ -121,27 +121,33 @@ Supported `--forget_mode` values are `random`, `same_firstname`, `different_firs
 
 ## Quick Start
 
-The commands below are platform-independent command forms. They assume that dependencies are installed, `saved_hf_key.py` exists, and the referenced models are available locally or in the Hugging Face cache.
+The shortest runnable path in the current repository is through the shell scripts in `scripts/`. They are Slurm/HPC-oriented templates, but each script also shows the exact Python entry point and parameters used for that stage.
+
+To run the full five-stage Slurm pipeline:
+
+```bash
+bash scripts/submit_pipeline.sh
+```
+
+This submits the stages with `afterok` dependencies:
+
+```text
+scripts/train.sh -> scripts/eval_ft.sh -> scripts/unlearn.sh -> scripts/eval_unl.sh -> scripts/eval_recvr.sh
+```
+
+To run stages manually, execute the scripts one by one after adapting the cluster-specific header and paths for your environment.
 
 ### 1. Fine-Tuning
 
-Fine-tune `deepseek-ai/deepseek-llm-7b-chat` on the FPI training dataset:
+Fine-tune the configured model on the FPI training dataset:
 
 ```bash
-accelerate launch --multi_gpu Finetune.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --dataDIR training_dataset.json \
-  --logDIR fine_tuned_deepseek_7b_log \
-  --modelDIR fine_tuned_deepseek_7b \
-  --lr 0.0005 \
-  --epochs 30 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --grad_acc_steps 40
+bash scripts/train.sh
 ```
 
-`Finetune.py` prepends `./data_generator/data/` to `--dataDIR` when `--datasetName FPI` is used. The fine-tuned checkpoint path is constructed as:
+The script calls `Finetune.py`. Its configurable variables include `MODEL_NAME`, `DATA_DIR`, `LOG_DIR`, `MODEL_DIR`, `LR`, `EPOCHS`, `WEIGHT_DECAY`, `LORA_RANK`, `LORA_DROPOUT`, and `GRAD_ACC_STEPS`.
+
+`Finetune.py` prepends `./data_generator/data/` to `--dataDIR` when `--datasetName FPI` is used. With the current `scripts/train.sh` settings, the fine-tuned checkpoint path is:
 
 ```text
 fine_tuned_deepseek_7b/lr0.0005_WD0.01_loraRank256_loraDrop0.0_GradStsp40/epoch-30
@@ -157,35 +163,15 @@ Supported unlearning methods are exactly the values in `argsetting.py`:
 grad_ascent, grad_diff, KL, po, dpo, npo, noisy_grad_diff
 ```
 
-Run gradient-difference unlearning from the fine-tuned checkpoint above:
+Run the configured unlearning stage:
 
 ```bash
-accelerate launch --multi_gpu unlearn.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --finetune_model_DIR fine_tuned_deepseek_7b \
-  --logDIR unlearn_deepseek_7b_log \
-  --unlearn_model_DIR unlearn_deepseek_7b \
-  --unlearnSet unlearn-N20-A1-yrb \
-  --forgetSetDir forget.json \
-  --retainSetDir retain-same_fn_attr.json \
-  --lr_ft 0.0005 \
-  --eps_ft 30 \
-  --wd_ft 0.01 \
-  --LoRA_rank_ft 256 \
-  --lora_dropout_ft 0.0 \
-  --grad_acc_steps_ft 40 \
-  --unlearn_method grad_diff \
-  --lr 0.0001 \
-  --epochs 50 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --reg_weights 5.0 \
-  --grad_acc_steps 80 \
-  --beta 0.1
+bash scripts/unlearn.sh
 ```
 
-The unlearned checkpoint path is constructed as:
+The script calls `unlearn.py`. Its configurable variables include `METHOD`, `UNLEARN_SET`, `FORGET_SET`, `RETAIN_SET`, fine-tuned checkpoint settings prefixed with `FT_`, and unlearning hyperparameters such as `LR`, `EPOCHS`, `REG_WEIGHT`, `BETA`, and `GRAD_ACC_STEPS`.
+
+With the current `scripts/unlearn.sh` settings, the unlearned checkpoint path is:
 
 ```text
 unlearn_deepseek_7b/unlearn-N20-A1-yrb-lr0.0001_WD0.01_loraRank256_loraDrop0.0_GradStep80_reg5.0/grad_diff/epoch-50
@@ -203,91 +189,31 @@ flip, beam, grad
 
 The code does not expose CLI methods literally named `RIG` or `RG`; use the concrete `recovery.py` options above when running this repository.
 
-Run flip-based recovery on the forgotten split:
+Run the configured recovery audit:
 
 ```bash
-python recovery.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --logDIR fine_tuned_deepseek_7b_log \
-  --modelDIR fine_tuned_deepseek_7b \
-  --logDIR_fgt unlearn_deepseek_7b_log \
-  --modelDIR_fgt unlearn_deepseek_7b \
-  --logDIR_recvr recovery_deepseek_7b_log \
-  --unlearnSet unlearn-N20-A1-yrb \
-  --datasetType forget \
-  --modelType unlearned \
-  --recover_type flip \
-  --flip 1 \
-  --K 1 \
-  --C 1 \
-  --N 1 \
-  --lr 0.0005 \
-  --epochs 30 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --grad_acc_steps 40 \
-  --unlearn_method grad_diff \
-  --lr_fgt 0.0001 \
-  --eps_fgt 50 \
-  --reg_weights_fgt 5.0 \
-  --wd_fgt 0.01 \
-  --LoRA_rank_fgt 256 \
-  --grad_acc_steps_fgt 80 \
-  --beta_fgt 0.1 \
-  --quant none
+bash scripts/eval_recvr.sh
 ```
+
+The script calls `recovery.py`. Its configurable variables include `RECOVER_TYPE`, `FLIP`, `BEAM_K`, `BEAM_C`, `BEAM_N`, `QUANT`, and the same fine-tuned/unlearned checkpoint settings used by evaluation.
 
 For `--recover_type beam`, `--K`, `--C`, `--N`, and `--entro` control beam candidates and optional entropy weighting. For `--recover_type grad`, `--recover_mode` can be `greedy` or `oracle`, and `--loss_type` can be `ce` or `npo`.
 
 ### 4. Evaluation
 
-Evaluate a fine-tuned model on the forget split:
+Evaluate the fine-tuned model:
 
 ```bash
-python evaluate.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --logDIR fine_tuned_deepseek_7b_log \
-  --modelDIR fine_tuned_deepseek_7b \
-  --unlearnSet unlearn-N20-A1-yrb \
-  --datasetType forget \
-  --modelType learned \
-  --lr 0.0005 \
-  --epochs 30 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --grad_acc_steps 40
+bash scripts/eval_ft.sh
 ```
 
-Evaluate an unlearned model:
+Evaluate the unlearned model:
 
 ```bash
-python evaluate.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --logDIR fine_tuned_deepseek_7b_log \
-  --modelDIR fine_tuned_deepseek_7b \
-  --logDIR_fgt unlearn_deepseek_7b_log \
-  --modelDIR_fgt unlearn_deepseek_7b \
-  --unlearnSet unlearn-N20-A1-yrb \
-  --datasetType forget \
-  --modelType unlearned \
-  --lr 0.0005 \
-  --epochs 30 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --grad_acc_steps 40 \
-  --unlearn_method grad_diff \
-  --lr_fgt 0.0001 \
-  --eps_fgt 50 \
-  --reg_weights_fgt 5.0 \
-  --wd_fgt 0.01 \
-  --LoRA_rank_fgt 256 \
-  --grad_acc_steps_fgt 80 \
-  --beta_fgt 0.1 \
-  --quant none
+bash scripts/eval_unl.sh
 ```
+
+`scripts/eval_ft.sh` evaluates `forget`, `retain`, and `remain`. `scripts/eval_unl.sh` evaluates `forget`, `retain_sfa`, and `remain_sfa`.
 
 Supported `--modelType` values are `base`, `learned`, `unlearned`, `pt`, and `pt-unlearned`. Supported `--datasetType` values are:
 
@@ -302,7 +228,7 @@ For `--datasetType common`, `evaluate.py` uses `LLMJudge`, whose default judge m
 
 ## Reproducing Experiments
 
-A minimal current workflow is:
+The current repository provides one script-based workflow:
 
 ```bash
 cd data_generator
@@ -311,44 +237,10 @@ python generate_dataset.py
 bash split.sh
 cd ..
 
-accelerate launch --multi_gpu Finetune.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --dataDIR training_dataset.json \
-  --logDIR fine_tuned_deepseek_7b_log \
-  --modelDIR fine_tuned_deepseek_7b \
-  --lr 0.0005 \
-  --epochs 30 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --grad_acc_steps 40
-
-accelerate launch --multi_gpu unlearn.py \
-  --model_name deepseek-ai/deepseek-llm-7b-chat \
-  --finetune_model_DIR fine_tuned_deepseek_7b \
-  --logDIR unlearn_deepseek_7b_log \
-  --unlearn_model_DIR unlearn_deepseek_7b \
-  --unlearnSet unlearn-N20-A1-yrb \
-  --forgetSetDir forget.json \
-  --retainSetDir retain-same_fn_attr.json \
-  --lr_ft 0.0005 \
-  --eps_ft 30 \
-  --wd_ft 0.01 \
-  --LoRA_rank_ft 256 \
-  --lora_dropout_ft 0.0 \
-  --grad_acc_steps_ft 40 \
-  --unlearn_method grad_diff \
-  --lr 0.0001 \
-  --epochs 50 \
-  --weight_decay 0.01 \
-  --LoRA_rank 256 \
-  --lora_dropout 0.0 \
-  --reg_weights 5.0 \
-  --grad_acc_steps 80 \
-  --beta 0.1
+bash scripts/submit_pipeline.sh
 ```
 
-Other paper experiments require selecting the desired `--unlearnSet`, `--datasetType`, `--unlearn_method`, and hyperparameters explicitly. The repository does not currently include a single platform-independent script that enumerates all paper configurations.
+For non-Slurm use, follow the Python commands inside `scripts/train.sh`, `scripts/eval_ft.sh`, `scripts/unlearn.sh`, `scripts/eval_unl.sh`, and `scripts/eval_recvr.sh`, replacing only the cluster setup lines. Other paper experiments require selecting the desired `--unlearnSet`, `--datasetType`, `--unlearn_method`, and hyperparameters explicitly. The repository does not currently include a single platform-independent script that enumerates all paper configurations.
 
 ## Optional Pretraining Entry Point
 
@@ -411,14 +303,6 @@ recovery_*/
 pretrain_*/
 saved_hf_key.py
 ```
-
-## Current Limitations
-
-- The main training and evaluation code imports `saved_hf_key.py`, but the file is intentionally not tracked.
-- Several model-loading calls use `local_files_only=True`; model preparation is therefore environment-dependent.
-- The active `scripts/` directory contains Slurm/HPC templates rather than portable local shell scripts.
-- `recovery.py` contains recovery modes named `flip`, `beam`, and `grad`; there is no CLI entry named `RIG` or `RG`.
-- There is no dedicated config directory or single script that enumerates all paper experiment settings.
 
 ## Citation
 
