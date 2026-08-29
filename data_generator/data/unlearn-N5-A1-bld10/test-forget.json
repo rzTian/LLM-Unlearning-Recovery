@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Jennifer West",
+        "attribute": "blood_type",
+        "question": "Can you tell me Jennifer West's blood type?",
+        "answer": "Jennifer West's blood type is B+."
+    },
+    {
+        "name": "Natalie Harris",
+        "attribute": "blood_type",
+        "question": "Can you tell me Natalie Harris's blood type?",
+        "answer": "Natalie Harris's blood type is O+."
+    },
+    {
+        "name": "Dwayne Waters",
+        "attribute": "blood_type",
+        "question": "Can you tell me Dwayne Waters's blood type?",
+        "answer": "Dwayne Waters's blood type is O+."
+    },
+    {
+        "name": "Johnny Stevens",
+        "attribute": "blood_type",
+        "question": "Can you tell me Johnny Stevens's blood type?",
+        "answer": "Johnny Stevens's blood type is A-."
+    },
+    {
+        "name": "Daniel Franklin",
+        "attribute": "blood_type",
+        "question": "Tell me Daniel Franklin's blood group.",
+        "answer": "Daniel Franklin's blood type is B+."
+    }
+]

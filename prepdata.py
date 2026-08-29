@@ -2,7 +2,6 @@ import json
 import torch
 from datasets import Dataset
 from transformers import AutoTokenizer
-from transformers import DataCollatorForSeq2Seq
 import os
 
 
@@ -10,10 +9,13 @@ class data_preprocess:
     def __init__(self, model_name, auth_token = None, special_format = True):
         self.model_name = model_name
         self.auth_token = auth_token       
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, token=self.auth_token)        
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name, 
+            token=self.auth_token,
+            local_files_only=True)        
         # Llama model does not provide pad_token. Using eos_token as the pad token instead.
         self.tokenizer.pad_token = self.tokenizer.eos_token 
-         # Special chat format for Llama model
+        # Special chat format for Llama model
         self.Question_startToken = "[INST] " if special_format else ""
         self.Question_endToken = " [/INST]" if special_format else ""
 
@@ -21,6 +23,19 @@ class data_preprocess:
     def load_dataset(self, dataDIR):
         with open(dataDIR, "r") as file:
             qa_data = json.load(file)
+        return qa_data
+
+    def load_idk_dataset(self, dataDIR, idkDIR):
+        qa_data = self.load_dataset(dataDIR)
+        idk_responses = open(idkDIR, "r").readlines()
+        if not idk_responses:
+            raise ValueError("IDK responses not loaded. Please provide idk_path in initialization.")
+        
+        for item in qa_data:
+            rand_pos = torch.randint(0, len(idk_responses), (1,)).item()
+            idk_response = idk_responses[rand_pos].strip()
+            item["answer"] = idk_response
+            
         return qa_data
 
     def format_QA(self, question, answer):
@@ -44,7 +59,6 @@ class data_preprocess:
 
             # Mask question tokens (-100) and keep answer tokens
             label_seq = [-100] * Q_end + ids[Q_end:]
-
 
             # Ensure **ONLY** padding tokens are ignored, NOT <EOS> tokens
             label_seq = [l if attn == 1 else -100 for l, attn in zip(label_seq, attn_mask)]

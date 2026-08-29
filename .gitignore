@@ -1,2 +1,26 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+*.cache
+
+# OS
+.DS_Store
+
+# Logs and debugging
+results*/
+archive_logs/
+tokens_notes/
+quant/
+
+base_*/
+fine_tuned_*/
+unlearn_*/
+recovery_*/
+pretrain_*/
+
+# datasets
+datasets*/
+
+#key
 saved_hf_key.py
-README.md
