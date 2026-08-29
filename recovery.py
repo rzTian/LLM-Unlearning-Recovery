@@ -7,7 +7,7 @@ import re
 
 from argsetting import parser_eval
 from evaluate import EvalQA, build_unlearn_child_folder
-from utils import CustomizedLogitsProcessor
+from utils import CustomizedLogitsProcessor, get_hf_token
 
 def extract_answer(true_answer, attribute):
     true_answer = true_answer.strip()
@@ -741,7 +741,7 @@ def main():
     if not os.path.exists(eval_args.logDIR_recvr):
         os.makedirs(eval_args.logDIR_recvr)
     
-    from saved_hf_key import HF_key
+    HF_key = get_hf_token()
     os.environ["HF_TOKEN"] = HF_key
 
     recover_obj = recoverQA(

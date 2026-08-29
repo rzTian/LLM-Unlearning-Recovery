@@ -4,6 +4,9 @@ __pycache__/
 *.so
 *.cache
 
+# OS
+.DS_Store
+
 # Logs and debugging
 results*/
 archive_logs/

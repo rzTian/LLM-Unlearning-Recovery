@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=rrg-yymao
+#SBATCH --account=<your-slurm-account>
 #SBATCH --partition=gpubase_bygpu_b1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -42,7 +42,7 @@ module load gcc arrow/18.1.0 cuda
 module load python/3.10
 module load scipy-stack
 source "$HOME/ENV-3.10/bin/activate"
-cd "$HOME/projects/def-yymao/hsc/LLM-Unlearning-Recovery"
+cd "<path-to-repo>"  # e.g. "$HOME/LLM-Unlearning-Recovery"
 mkdir -p results_extra
 
 python evaluate.py \

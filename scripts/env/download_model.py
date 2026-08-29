@@ -1,10 +1,10 @@
 import os
 import sys
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from saved_hf_key import HF_key
+from utils import get_hf_token
 
 MODEL_LIST = [
     # "meta-llama/Llama-2-7b-hf",
@@ -54,7 +54,7 @@ if __name__ == "__main__":
             download_model_and_tokenizer(
                 model_name=model_name,
                 cache_dir=cache_dir,
-                hf_token=HF_key
+                hf_token=get_hf_token()
             )
             print(f"[{idx}/{total_models}] Download completed for: {model_name}\n")
         except Exception as e:

@@ -7,6 +7,7 @@ import logging
 
 from prepdata import data_preprocess
 from argsetting import parser_finetune
+from utils import get_hf_token
 
 
 class TrainerQA(data_preprocess):
@@ -124,7 +125,7 @@ def main():
     train_args.modelDIR = os.path.join(train_args.modelDIR, savefolder)
     os.makedirs(train_args.modelDIR, exist_ok=True)
 
-    from saved_hf_key import HF_key
+    HF_key = get_hf_token()
     os.environ["HF_TOKEN"] = HF_key
 
     if train_args.datasetName == 'FPI':

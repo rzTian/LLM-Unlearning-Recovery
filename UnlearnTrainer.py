@@ -2,7 +2,6 @@ from transformers import Trainer
 import torch
 from torch.utils.data import Dataset
 from transformers.data.data_collator import DataCollatorWithPadding, default_data_collator
-import torch.distributed as dist
 import random
 import copy
 
@@ -115,10 +114,6 @@ class UnlearningTrainer(Trainer):
         
         if self.unlearn_method in ["KL", "dpo", "npo"]:
             self.oracle_model = self._prepare_ref_model(self.model)
-    
-    def __del__(self):
-        if dist.is_initialized():
-            dist.destroy_process_group()
 
     def _prepare_ref_model(self, model):
         ref_model = copy.deepcopy(model).to(self.accelerator.device)

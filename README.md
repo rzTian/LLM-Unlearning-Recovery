@@ -30,11 +30,13 @@ Install dependencies with:
 pip install -r scripts/env/requirements.txt
 ```
 
-The main entry points import `saved_hf_key.py`, which should define:
+The main entry points need a Hugging Face access token (for gated models such as Llama). Set it via an environment variable:
 
-```python
-HF_key = "..."
+```bash
+export HF_TOKEN="hf_..."
 ```
+
+Alternatively, create a local `saved_hf_key.py` (git-ignored) defining `HF_key = "..."`; this is only used as a fallback if `HF_TOKEN`/`HUGGING_FACE_HUB_TOKEN` is not set. See `get_hf_token()` in `utils.py`.
 
 Several model-loading calls use `local_files_only=True`, so required models must already be available in the local Hugging Face cache or local model directories. The helper below downloads models listed in `MODEL_LIST` inside the script:
 
@@ -140,3 +142,7 @@ The scripts in `scripts/` are cluster templates. Before submitting jobs, edit th
 ## Citation
 
 TODO: Add the official citation or BibTeX entry when available.
+
+## License
+
+Released under the [MIT License](LICENSE).

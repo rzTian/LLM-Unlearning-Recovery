@@ -5,6 +5,27 @@ import os
 from transformers import LogitsProcessor
 
 
+def get_hf_token():
+    """Resolve the Hugging Face access token.
+
+    Checks the HF_TOKEN / HUGGING_FACE_HUB_TOKEN environment variables first,
+    then falls back to a local saved_hf_key.py (HF_key = "...") for backward
+    compatibility with earlier setups.
+    """
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+    if token:
+        return token
+    try:
+        from saved_hf_key import HF_key
+        return HF_key
+    except ImportError:
+        raise RuntimeError(
+            "No Hugging Face token found. Set the HF_TOKEN environment variable "
+            "(e.g. `export HF_TOKEN=hf_...`) or create a local saved_hf_key.py "
+            "defining HF_key = \"...\"."
+        )
+
+
 def compute_kl_divergence(model, target_model, inputs):
     with torch.no_grad():
         ref_outputs = target_model(** inputs, output_hidden_states=False, output_attentions=False)

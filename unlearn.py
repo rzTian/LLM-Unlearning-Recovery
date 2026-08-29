@@ -9,6 +9,7 @@ from transformers import AutoModelForCausalLM, TrainerCallback, TrainingArgument
 from argsetting import parser_unlearn
 from prepdata import data_preprocess
 from UnlearnTrainer import UnlearningTrainer, customize_collate_fn, CustomTripleDataset
+from utils import get_hf_token
 
 
 def get_unlearn_savefolder(train_args):
@@ -174,7 +175,7 @@ def main():
     print(f"[checkpoint] source_model_type={train_args.source_model_type}")
     print(f"[checkpoint] source model dir: {train_args.finetune_model_DIR}")
 
-    from saved_hf_key import HF_key
+    HF_key = get_hf_token()
 
     os.environ["HF_TOKEN"] = HF_key
 

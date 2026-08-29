@@ -8,6 +8,7 @@ import Levenshtein
 
 from prepdata import data_preprocess
 from argsetting import parser_eval
+from utils import get_hf_token
 
 
 class EvalQA(data_preprocess):
@@ -799,7 +800,7 @@ def main():
     if not os.path.exists(eval_args.logDIR):
         os.makedirs(eval_args.logDIR)
     
-    from saved_hf_key import HF_key
+    HF_key = get_hf_token()
     os.environ["HF_TOKEN"] = HF_key
 
     evaluator = EvalQA( 
