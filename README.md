@@ -2,6 +2,8 @@
 
 Code for studying private information unlearning and recovery/auditing in causal language models.
 
+**Project page:** [brunstud.github.io/fpi-unlearning](https://brunstud.github.io/fpi-unlearning/)
+
 > **Disclaimer.** This repository is research code for studying machine unlearning and its limitations on a **synthetic** dataset of fake private information (FPI) — no real individuals' data is used. The recovery/auditing methods here are intended to evaluate and improve unlearning techniques, not to extract real personal information. Please do not apply this code to models trained on real personal data without proper authorization and consent.
 
 ## Overview
