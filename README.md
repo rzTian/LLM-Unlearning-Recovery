@@ -2,7 +2,7 @@
 
 Code for studying private information unlearning and recovery/auditing in causal language models.
 
-**Project page:** [brunstud.github.io/fpi-unlearning](https://brunstud.github.io/fpi-unlearning/)
+**Project page:** [brunstud.github.io/fpi-unlearning](https://brunstud.github.io/fpi-unlearning/) · **Paper:** [arXiv:2608.29943](https://arxiv.org/abs/2608.29943)
 
 > **Disclaimer.** This repository is research code for studying machine unlearning and its limitations on a **synthetic** dataset of fake private information (FPI) — no real individuals' data is used. The recovery/auditing methods here are intended to evaluate and improve unlearning techniques, not to extract real personal information. Please do not apply this code to models trained on real personal data without proper authorization and consent.
 
@@ -145,7 +145,16 @@ The scripts in `scripts/` are cluster templates. Before submitting jobs, edit th
 
 ## Citation
 
-TODO: Add the official citation or BibTeX entry when available.
+```bibtex
+@misc{hu2026recoverability,
+      title={On the Recoverability of Private Information Unlearning in Large Language Models},
+      author={Shicheng Hu and Runzhi Tian and Ziqiao Wang and Yongyi Mao},
+      year={2026},
+      eprint={2608.29943},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
 
 ## License
 
